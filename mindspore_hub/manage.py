@@ -14,6 +14,9 @@
 # ============================================================================
 """Manage network in mindspore_hub."""
 
+import os
+
+
 CACHE_DIR = '~/.cache'
 
 
@@ -35,7 +38,7 @@ def get_hub_dir():
     Returns:
         str, return a string of path.
     """
-    return CACHE_DIR
+    return os.path.abspath(os.path.expanduser(CACHE_DIR))
 
 
 def listall(sync=False):

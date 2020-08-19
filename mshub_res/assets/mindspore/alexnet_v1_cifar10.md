@@ -34,9 +34,9 @@ file-format: ckpt
 
 used-for: inference
 
-train-backend: ascend/gpu
+train-backend: gpu
 
-infer-backend: ascend/gpu
+infer-backend: gpu
 
 mindspore-version: 0.6
 
