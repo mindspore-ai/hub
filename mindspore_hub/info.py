@@ -13,7 +13,7 @@
 # limitations under the License.
 # ============================================================================
 """
-The information of network in hub.
+The information of network in mindspore_hub.
 """
 
 class CellInfo:

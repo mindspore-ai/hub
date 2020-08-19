@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ============================================================================
-"""Manage network in hub."""
+"""Manage network in mindspore_hub."""
 
 CACHE_DIR = '~/.cache'
 
@@ -43,7 +43,7 @@ def listall(sync=False):
     List all model.
 
     Args:
-        sync (bool): Whether synchronize information from hub repo. Default: False.
+        sync (bool): Whether synchronize information from mindspore_hub repo. Default: False.
 
     Returns:
         list, a list of model.

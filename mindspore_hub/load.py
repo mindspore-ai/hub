@@ -15,7 +15,7 @@
 """
 Loading network or model.
 
-Loding network definition or prtrained model from mindspore hub.
+Loding network definition or prtrained model from mindspore mindspore_hub.
 """
 
 import sys
@@ -152,7 +152,7 @@ def load(name, *args, pretrained=True, force_reload=False, **kwargs):
 
 def load_weights(network, network_name=None, force_reload=True, **kwargs):
     """
-    Load a k from MindSpore hub, with pertained weights.
+    Load a k from MindSpore mindspore_hub, with pertained weights.
 
     Args:
         network (Cell): Cell network.
