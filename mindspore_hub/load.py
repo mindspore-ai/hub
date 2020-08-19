@@ -22,14 +22,15 @@ import sys
 import os
 import shutil
 import importlib.util
+import logging as logger
 from mindspore import nn
+from mindspore.train.serialization import load_checkpoint, load_param_into_net
 from .info import CellInfo
-from ._utils.download import download_url_to_file, extract_file
+from ._utils.download import _download_repo_from_url, extract_file, _download_file_from_url
 
 
 HUB_CONFIG_FILE = 'mindsporehub.py'
 ENTRY_POINT = 'create_net'
-
 
 
 def _generate_repo_url(link):
@@ -107,7 +108,7 @@ def _get_network_from_url(info, *args, **kwargs):
     try:
         name = os.path.basename(url)
         file_path = par_path + '/' + name
-        if download_url_to_file(url, par_path):
+        if _download_repo_from_url(url, par_path):
             extract_file(file_path, path)
             shutil.rmtree(backup_path)
         else:
@@ -146,25 +147,51 @@ def load(name, *args, pretrained=True, force_reload=False, **kwargs):
         raise TypeError('`create_net should be return a `Cell` type network, but got {}.'.format(type(net)))
 
     if pretrained:
-        load_weights(net, network_name=name, force_reload=force_reload)
+        load_weights(net, handle=name, force_reload=force_reload)
     return net
 
 
-def load_weights(network, network_name=None, force_reload=True, **kwargs):
+def load_weights(network, handle=None, force_reload=True):
     """
     Load a k from MindSpore mindspore_hub, with pertained weights.
 
     Args:
         network (Cell): Cell network.
-        network_name (str, optional): Cell network name get from network. Default: None.
+        handle (str, optional): uid or url link. Default: None.
         force_reload (bool, optional): Whether to force a fresh download unconditionally. Default: False.
-        kwargs (dict, optional): The corresponding kwargs for download for model.
-            - device_target (str): Runtime device target. Default: 'ascend'.
-            - dataset (str): Dataset to train the network. Default: 'cifar10'.
-            - version (str): MindSpore version to save the checkpoint. Default: Latest version.
-            - pre_trained (bool). Direct init for random weight parameters or not. Default: True.
-            - include_top (bool). Default: True.
-            - fine_tune( bool). Default: True.
 
     """
-    raise NotImplementedError('`load_weights` has not be implemented.')
+    if not isinstance(network, nn.Cell):
+        logger.error("Failed to combine the net and the parameters.")
+        msg = ("Argument net should be a Cell, but got {}.".format(type(network)))
+        raise TypeError(msg)
+
+    if handle.startwith('http'):
+        if len(handle.split('/')) < 2:
+            raise ValueError('Wrong url.')
+        net_name, md_name = _get_md_and_name_from_name(handle)
+        uid = md_name[:-3]
+    else:
+        net_name, md_name = _get_md_and_name_from_name(handle)
+        uid = handle
+    path = _generate_store_path(uid)
+    _create_if_not_exist(path)
+    _download_file_from_url(HUB_CONFIG_FILE + md_name, path)
+    md_path = path + '/' + md_name.split('/')[-1]
+
+    cell = CellInfo(net_name)
+    cell.update(md_path)
+
+    download_url = cell.asset[cell.asset_id]['asset-link']
+    asset_sha256 = cell.asset[cell.asset_id]["asset-sha256"]
+
+    if force_reload:
+        ckpt_path = _download_file_from_url(download_url, asset_sha256, path)
+    else:
+        ckpt_name = os.path.basename(download_url.split("/")[-1])
+        ckpt_path = os.path.join(path, ckpt_name)
+        if not os.path.exists(ckpt_path):
+            ckpt_path = _download_file_from_url(download_url, asset_sha256, path)
+
+    param_dict = load_checkpoint(ckpt_path)
+    load_param_into_net(network, param_dict)
