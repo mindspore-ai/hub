@@ -16,6 +16,9 @@
 The information of network in mindspore_hub.
 """
 
+from ._utils.check import ValidMarkdown
+
+
 class CellInfo:
     """
     Information of network.
@@ -37,9 +40,41 @@ class CellInfo:
         self.tags = None
         self.img = None
         self.backend = None
-        self.allow_cache_ckpt = None
+        self.allow_cache_ckpt = False
         self.dataset = None
         self.license = None
         self.have_cache = False
         self.path = None
         self.ckpt_path = None
+        # self.asset is a list of dict
+        # each dict contains key: asset-link, asset-sha256, file-format
+        self.asset = None
+        self.backbone_name = None
+        self.accuracy = None
+        self.used_for = None
+        self.model_version = None
+        self.mindspore_version = None
+        self.asset_id = 0
+
+    def update(self, md_path):
+        """Update the info of CellInfo with json file."""
+        json_dict = ValidMarkdown(md_path).check_markdown_file()
+        self.backbone_name = json_dict.get('backbone-name')
+        self.type = json_dict.get('module-type')
+        self.fine_tunable = json_dict.get('fine-tunable')
+        self.input_shape = json_dict.get('input-shape')
+        self.author = json_dict.get('author')
+        self.update_time = json_dict.get('update-time')
+        self.repo_link = json_dict.get('repo-link')
+        self.user_id = json_dict.get('user-id')
+        self.format = json_dict.get('file-format')
+        self.backend = json_dict.get('backend')
+        if json_dict.get('allow-cache-ckpt') is not None:
+            self.allow_cache_ckpt = json_dict.get('allow-cache-ckpt')
+        self.dataset = json_dict.get('train-dataset')
+        self.license = json_dict.get('license')
+        self.accuracy = json_dict.get('accuracy')
+        self.used_for = json_dict.get('used-for')
+        self.model_version = json_dict.get('model-version')
+        self.mindspore_version = json_dict.get('mindspore-version')
+        self.asset = json_dict.get('asset')

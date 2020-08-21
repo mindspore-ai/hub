@@ -6,7 +6,7 @@ model-name: AlexNet
 
 backbone-name: AlexNet
 
-module-type: CV-图像分类
+module-type: CV
 
 fine-tunable: True
 
@@ -16,7 +16,7 @@ model-version: 1.0
 
 train-dataset: cifar10
 
-accuracy: []
+accuracy: 0.99
 
 
 
@@ -24,7 +24,7 @@ author: [network-fo]
 
 update-time: 2020-07-20
 
-repo-link: https//gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/alexnet
+repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/alexnet
 
 user-id: mindspore
 
@@ -40,15 +40,15 @@ infer-backend: ascend/gpu
 
 mindspore-version: 0.6
 
-asset: 
-  - 
-    file-format: ckpt   
+asset:
+  -
+    file-format: ckpt
     asset-link: https://download.mindspore.cn/model_zoo/official/cv/alexnet/alexnet_ascend_0.5.0_cifar10_official_classification_20200716/alexnet.ckpt
     asset-sha256: 722e13be6cd6186dddcd68d5c0a50776d9a8ad8e79db3870556f68d4d2f179e4
   -
-    file-format: geir
-    asset-link: blabla
-    asset-sha256: []
+    file-format: ckpt
+    asset-link: https://download.mindspore.cn/model_zoo/official/cv/alexnet/alexnet_ascend_0.5.0_cifar10_official_classification_20200716/alexnet.ckpt
+    asset-sha256: 722e13be6cd6186dddcd68d5c0a50776d9a8ad8e79db3870556f68d4d2f179e4
 
 license: Apache2.0
 
