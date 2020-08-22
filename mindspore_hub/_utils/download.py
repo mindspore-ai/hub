@@ -175,7 +175,7 @@ def extract_file(file_path, dst):
             name = cached_tarfile.infolist()[0].filename
 
     if isinstance(name, str):
-        path = dst + '/' + name
+        path = os.path.join(dst, name)
         if os.path.isdir(path):
             files = os.listdir(path)
             for item in files:
