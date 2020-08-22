@@ -24,7 +24,7 @@ author: [network-fo]
 
 update-time: 2020-07-20
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/alexnet
+repo-link: https://gitee.com/mindspore/mindspore/tree/r0.6/model_zoo/official/cv/alexnet
 
 user-id: mindspore
 
@@ -34,7 +34,7 @@ train-backend: gpu
 
 infer-backend: gpu
 
-mindspore-version: 0.6
+mindspore-version: r0.6
 
 asset:
   -

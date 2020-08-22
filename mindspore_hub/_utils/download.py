@@ -21,6 +21,8 @@ import tarfile
 import re
 import subprocess
 import hashlib
+import errno
+import stat
 import urllib
 from urllib.request import urlretrieve, HTTPError, URLError
 from tempfile import TemporaryDirectory
@@ -31,6 +33,15 @@ REPO_INFO_LEN = 5
 REAL_PATH = os.path.split(os.path.realpath(__file__))[0]
 SPARSE_SHELL_PATH = os.path.join(REAL_PATH, "sparse_download.sh")
 FULL_SHELL_PATH = os.path.join(REAL_PATH, "full_download.sh")
+MAX_FILE_SIZE = 5 * 1024 * 1024 * 1024 # 5GB
+SUFFIX_LIST = ['.ckpt', '.air', '.geir', '.meta', '.onnx', '.md']
+
+
+def handle_remove_read_only(func, path, exc):
+    exc_value = exc[1]
+    if func in (os.rmdir, os.remove, os.unlink) and exc_value.errno == errno.EACCES:
+        os.chmod(path, stat.S_IRWXU| stat.S_IRWXG| stat.S_IRWXO) # 0777
+        func(path)
 
 
 def _unpacking_targz(input_filename, save_path):
@@ -49,7 +60,7 @@ def _remove_path_if_exists(path):
         if os.path.isfile(path):
             os.remove(path)
         else:
-            shutil.rmtree(path)
+            shutil.rmtree(path, ignore_errors=False, onerror=handle_remove_read_only)
 
 
 def _create_path_if_not_exists(path):
@@ -152,7 +163,7 @@ def _download_repo_from_url(url, path=get_hub_dir()):
         cmd = [arg["bash"], arg["shell_path"], arg["git_dir"], arg["path"],
                arg["model_path"], arg["git_ssh"], arg["branch"]]
         out = subprocess.check_output(cmd, shell=False)
-        ret = out.decode('utf-8').find("succeed") > 0
+        ret = "succeed" in out.decode('utf-8')
         return ret
 
 
@@ -236,7 +247,26 @@ def _download_file_from_url(url, hash_sha256=None, save_path=get_hub_dir()):
         raise Exception(e.errno, e.reason, url)
     print('\nDownload finished!')
 
-    filesize = os.path.getsize(file_path)
-    # turn the file size to Mb format
-    print('File size = %.2f Mb' % (filesize / 1024 / 1024))
+    # Check file integrity
+    if hash_sha256:
+        result = sha256sum(file_path, hash_sha256)
+        if not result:
+            raise Exception('INTEGRITY ERROR: File: {} is not integral'.format(file_path))
+
+    # Check file size
+    # Get file size and turn the file size to Mb format
+    file_size = os.path.getsize(file_path)
+    print('File size = %.2f Mb' % (file_size / 1024 / 1024))
+    # Start check
+    if file_size > MAX_FILE_SIZE:
+        os.remove(file_path)
+        raise Exception('SIZE ERROR: Download file is too large,'
+                        'the max size is {}Mb'.format(MAX_FILE_SIZE / 1024 / 1024))
+
+    # Check file type
+    suffix = os.path.splitext(file_path)[1]
+    if suffix not in SUFFIX_LIST:
+        os.remove(file_path)
+        raise Exception('SUFFIX ERROR: File: {} with Suffix: {} '
+                        'can not be recognized'.format(file_path, suffix))
     return file_path
