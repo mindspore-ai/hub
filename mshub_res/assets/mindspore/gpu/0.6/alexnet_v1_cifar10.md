@@ -28,10 +28,6 @@ repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/
 
 user-id: mindspore
 
-
-
-file-format: ckpt
-
 used-for: inference
 
 train-backend: gpu
