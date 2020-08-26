@@ -43,7 +43,7 @@ The full process of publishing consists of:
 1. Creating the model, and upload to a place which can be accessed
 1. Adding a model generation python file named ``mindspore_hub_conf.py`` under the repo
 1. Writing documentation, which is a markdown file and an example is located in ``examples``
-1. Using the check script in ``tools/validator.py`` to self-checking the markdown file's pattern is good or not
+1. Using the check script in ``tools/md_validator.py`` to self-checking the markdown file's pattern is good or not
 1. Creating a publishing request.
 
 See sections below for more details.
@@ -78,17 +78,25 @@ mobilenetv2
 ```
 
 The Content in this file must include a function which name ``create_network``, this function's first args is the model
-name which is supported to create. This name should match the ``model_name`` in markdown file. You should check the 
-values in ``**kwargs``.
+name which is supported to create. **This name's lower case should match the ``model_name`` in markdown file**. 
+You should check the values in `*args` and ``**kwargs``.
 ```python
-from src.mobilenetv2 import mobilenet_v2
+import src.resnet as src_resnet
 
-def mobilenet_v2(**kwargs):
-    mobilenet_v2(**kwargs)
+def resnet50(*args, **kwargs):
+    return src_resnet.resnet50(*args, **kwargs)
+
+def resnet101(*args, **kwargs):
+    return src_resnet.resnet101(*args, **kwargs)
 
 
-def create_network(name, **kwargs):
-    return eval(name)(**kwargs)
+def create_network(name, *args, **kwargs):
+    if name == "resnet50":
+        return resnet50(*args, **kwargs)
+    elif name == "resnet101":
+        return resnet101(*args, **kwargs)
+    else:
+        raise NotImplementedError(f"{name} is not implemented in the repo")
 ```
 
 ### Documentation
@@ -101,6 +109,13 @@ will be shown in the detail page in MindSpore Hub Website. You should make sure 
 
 You can download the example markdown file in the ``examples/commit_example.md``, change the information accordingly. 
 After that, you can use the check file tool in the ``tools`` to check whether this markdown file is good or not.
+
+#### **IMPORTANT**
+
+The content in the markdown file should be the same as the example file. For example, we use ``---`` to split the file 
+into two parts, first one is loaded by yaml format. The other is markdown format.
+
+The ``asset`` item is the list of dicts. So you should total use the same pattern to write the asset.
 
 #### Where to put the markdown file?
 

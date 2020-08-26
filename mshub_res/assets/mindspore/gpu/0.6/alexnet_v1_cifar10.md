@@ -6,7 +6,7 @@ model-name: AlexNet
 
 backbone-name: AlexNet
 
-module-type: CV
+module-type: CV-classification
 
 fine-tunable: True
 
@@ -42,7 +42,7 @@ asset:
     asset-link: https://download.mindspore.cn/model_zoo/official/cv/alexnet/alexnet_ascend_0.5.0_cifar10_official_classification_20200716/alexnet.ckpt
     asset-sha256: 722e13be6cd6186dddcd68d5c0a50776d9a8ad8e79db3870556f68d4d2f179e4
   -
-    file-format: ckpt
+    file-format: air
     asset-link: https://download.mindspore.cn/model_zoo/official/cv/alexnet/alexnet_ascend_0.5.0_cifar10_official_classification_20200716/alexnet.ckpt
     asset-sha256: 722e13be6cd6186dddcd68d5c0a50776d9a8ad8e79db3870556f68d4d2f179e4
 
@@ -74,13 +74,13 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "model_zoo/official/cv/alexnet"
+model = "mindspore/ascend/0.6/alexnet_v1_cifar10"
 image_shape = mshub.get_desired_input_shape(model)
 
 image = Image.open('cifar10/a.jpg')
 transforms = py_transforms.ComposeOp([py_transforms.ToTensor()])
 
-network = mshub.load('model_zoo/official/cv/alexnet')
+network = mshub.load(model)
 network.set_train(False)
 out = network(transforms(image))
 ```

@@ -30,14 +30,14 @@ from mindspore_hub._utils.whitelist import verify_url
 
 
 class ValidMarkdown:
-    """
+    r"""
     Check MarkDown files in hub and extract info.
     """
     def __init__(self, filename):
         self.filename = filename
         self.required_user_fields = ['backbone-name', 'module-type', 'fine-tunable', 'input-shape',
                                      'model-version', 'train-dataset', 'author', 'update-time',
-                                     'repo-link', 'user-id', 'file-format', 'used-for', 'infer-backend',
+                                     'repo-link', 'user-id', 'used-for', 'infer-backend',
                                      'mindspore-version', 'asset', 'license']
         self.optional_backend_fields = 'train-backend'
         self.optional_image_fields = ['featured-image']
@@ -47,7 +47,7 @@ class ValidMarkdown:
         self.valid_module_type = ['audio', 'cv', 'nlp', 'recommend', 'other']
         self.valid_train_dataset = ['imagenet', 'coco', 'cifar10', 'cifar100', 'WMT', 'zh-wiki',
                                     'Gigaword corpus', 'captcha 0.1.1', 'criteo', 'voc2007']
-        self.valid_file_format = ['mindir', 'ckpt', 'onnx', 'lite']
+        self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
         self.valid_backend = ['cpu', 'gpu', 'ascend']
 
@@ -56,19 +56,20 @@ class ValidMarkdown:
         # If necessary, please add it, like 'Model Description'.
         self.required_sections = []
 
-    def validate_asset(self, asset_link):
+    def _validate_asset(self, assets):
         require_keys = ["file-format", "asset-link", "asset-sha256"]
-        for asset in asset_link:
-            self.validate_repo_link(asset['asset-link'])
+        for asset in assets:
             for k in require_keys:
                 if k not in asset:
                     raise ValueError('field: {} is required in {}, but not found.'
                                      .format(k, self.filename))
+            self._validate_repo_link(asset['asset-link'])
+            self._validate_file_format(asset['file-format'])
 
-    def validate_repo_link(self, link):
-        '''
+    def _validate_repo_link(self, link):
+        r"""
         Make sure the github or gitee repo exists
-        '''
+        """
         if not verify_url(link):
             raise ValueError('url: {} is not trust in {}'.format(link, self.filename))
 
@@ -81,64 +82,68 @@ class ValidMarkdown:
         except HTTPError:
             raise ValueError('{} is not valid url in {}'.format(link, self.filename))
 
-    def validate_train_dataset(self, train_dataset):
-        '''
+    def _validate_train_dataset(self, train_dataset):
+        r"""
         Only allow train_dataset in predefined set
-        '''
+        """
         if train_dataset not in self.valid_train_dataset:
             raise ValueError('train_dataset {} is not valid in {}. Choose from {}'
                              .format(train_dataset, self.filename, self.valid_train_dataset))
 
-    def validate_file_format(self, file_format):
-        '''
+    def _validate_file_format(self, file_format):
+        r"""
         Only allow file_format in predefined set
-        '''
-        if file_format not in self.valid_file_format:
+        """
+        if file_format.lower() not in self.valid_file_format:
             raise ValueError('file_format {} is not valid in {}. Choose from {}'
                              .format(file_format, self.filename, self.valid_file_format))
 
-    def validate_used_for(self, used_for):
-        '''
+    def _validate_used_for(self, used_for):
+        r"""
         Only allow used_for in predefined set
-        '''
-        if used_for not in self.valid_used_for:
+        """
+        if used_for.lower() not in self.valid_used_for:
             raise ValueError('used_for {} is not valid in {}. Choose from {}'
                              .format(used_for, self.filename, self.valid_used_for))
 
-    def validate_backend(self, backend):
-        '''
+    def _validate_backend(self, backend):
+        r"""
         Only allow file_format in predefined set
-        '''
+        """
         backend_lst = backend.split('/')
         for bk in backend_lst:
             if bk.lower() not in self.valid_backend:
                 raise ValueError('backend {} is not valid in {}. Choose from {}'
                                  .format(bk, self.filename, self.valid_backend))
 
-    def validate_module_type(self, module_type):
-        '''
+    def _validate_module_type(self, module_type):
+        r"""
         Only allow module_type in predefined set
-        '''
-        if module_type.lower() not in self.valid_module_type:
+        """
+        items = module_type.lower().split('-')
+        if len(items) > 2:
+            raise Exception("module-type could only no more than one '-' ")
+        first_class = items[0]
+        if first_class not in self.valid_module_type:
             raise ValueError('module_type {} is not valid in {}. Valid module_type set is {}'
                              .format(module_type, self.filename, self.valid_module_type))
 
-    def validate_image(self, image_name):
-        '''
+    def _validate_image(self, image_name):
+        r"""
         Make sure reference image exists in images/
-        '''
+        """
         images = [os.path.basename(i) for i in glob.glob('images/*')]\
             + ['no-image']
         if image_name not in images:
             raise ValueError('Image {} referenced in {} not found in images/'
                              .format(image_name, self.filename))
 
-    def validate_header(self, header):
-        '''
+    def _validate_header(self, header):
+        r"""
         Make sure the header is in the required format
-        '''
+        """
         for field in self.required_user_fields:
-            if field not in header.keys():
+            if field not in header:
                 raise ValueError('field: {} is required in {}, but not found.'
                                  .format(field, self.filename))
 
@@ -151,17 +156,16 @@ class ValidMarkdown:
             if not isinstance(i, int):
                 raise TypeError("`input-shape` must be `list` of `int`, but got {}".format(header['input-shape']))
 
-        self.validate_repo_link(header['repo-link'])
-        self.validate_train_dataset(header['train-dataset'])
-        self.validate_file_format(header['file-format'])
-        self.validate_used_for(header['used-for'])
-        self.validate_backend(header['infer-backend'])
-        self.validate_module_type(header['module-type'])
-        self.validate_asset(header['asset'])
+        self._validate_repo_link(header['repo-link'])
+        self._validate_train_dataset(header['train-dataset'])
+        self._validate_used_for(header['used-for'])
+        self._validate_backend(header['infer-backend'])
+        self._validate_module_type(header['module-type'])
+        self._validate_asset(header['asset'])
 
         for field in self.optional_image_fields:
             if field in header.keys():
-                self.validate_image(header[field])
+                self._validate_image(header[field])
 
         if self.optional_accuracy_field in header.keys():
             if not isinstance(header[self.optional_accuracy_field], numbers.Number):
@@ -174,21 +178,21 @@ class ValidMarkdown:
                                 format(header[self.optional_allow_cache_ckpt_field]))
 
         if self.optional_backend_fields in header.keys():
-            self.validate_backend(header[self.optional_backend_fields])
+            self._validate_backend(header[self.optional_backend_fields])
 
         for k in header.keys():
             if k not in ('repo-link', 'asset'):
-                self.no_extra_colon(k, header[k])
+                self._no_extra_colon(k, header[k])
 
-    def no_extra_colon(self, field, value):
+    def _no_extra_colon(self, field, value):
         if ':' in str(value):
             raise ValueError('Remove extra \':\' in field {} with value {} in file {}'
                              .format(field, value, self.filename))
 
     def validate_markdown(self, markdown):
-        '''
+        r"""
         Validate MarkDown with required sections.
-        '''
+        """
         m = mistune.Markdown()
         blocks = m.block(mistune.preprocessing(markdown))
 
@@ -203,36 +207,42 @@ class ValidMarkdown:
             raise ValueError("Missing required sections: {}".format(self.required_sections))
 
     def check_markdown_file(self):
-        '''
+        r"""
         Check MarkDown file with yaml.
-        '''
-        print('Checking {}...'.format(self.filename))
-        header = []
-        markdown = []
-        header_read = False
-        with open(self.filename, 'r') as file:
-            for line in file:
-                if line.startswith('---'):
-                    header_read = not header_read
-                    continue
-                if header_read:
-                    header += [line]
-                else:
-                    markdown += [line]
+        """
+        print('Checking {}...'.format(self.filename), end="")
+        try:
+            header = []
+            markdown = []
+            header_read = False
+            with open(self.filename, 'r') as file:
+                for line in file:
+                    if line.startswith('---'):
+                        header_read = not header_read
+                        continue
+                    if header_read:
+                        header += [line]
+                    else:
+                        markdown += [line]
 
-        # checks that it's valid yamp
-        header = yaml.load(''.join(header), Loader=yaml.FullLoader)
-        assert header, "Failed to parse a valid yaml header"
-        self.validate_header(header)
+            # checks that it's valid yamp
+            header = yaml.load(''.join(header), Loader=yaml.FullLoader)
+            if not header:
+                raise TypeError("Failed to parse a valid yaml header")
+            self._validate_header(header)
 
+            # check markdown
+            markdown = "".join(markdown)
+            self.validate_markdown(markdown)
 
-        # check markdown
-        markdown = "".join(markdown)
-        self.validate_markdown(markdown)
+            header_dict = dict(header)
+            header_dict["markdown_name"] = os.path.basename(os.path.splitext(self.filename)[0])
+            header_dict["uid"] = get_repo_info_from_url(header_dict.get("repo-link")).get("uid")
+        except (TypeError, ValueError) as e:
+            print("\033[1;31m Failed\033[0m")
+            raise e
 
-        header_dict = dict(header)
-        header_dict["markdown_name"] = os.path.basename(os.path.splitext(self.filename)[0])
-        header_dict["uid"] = get_repo_info_from_url(header_dict.get("repo-link")).get("uid")
+        print("\033[1;32mPassed!")
         return header_dict
 
     def extract_info_to_json(self, json_path):
