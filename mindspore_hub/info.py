@@ -22,13 +22,10 @@ from ._utils.check import ValidMarkdown
 class CellInfo:
     """
     Information of network.
-
-    Args:
-        name (str): Network name or url.
     """
-    def __init__(self, name):
+    def __init__(self):
         # do something to read information bellow.
-        self.name = name
+        self.name = None
         self.type = None
         self.fine_tunable = False
         self.input_shape = None
@@ -58,6 +55,7 @@ class CellInfo:
     def update(self, md_path):
         """Update the info of CellInfo with json file."""
         json_dict = ValidMarkdown(md_path).check_markdown_file()
+        self.name = json_dict.get('model-name')
         self.backbone_name = json_dict.get('backbone-name')
         self.type = json_dict.get('module-type')
         self.fine_tunable = json_dict.get('fine-tunable')

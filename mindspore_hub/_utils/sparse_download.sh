@@ -14,7 +14,7 @@
 # limitations under the License.
 # ============================================================================
 
-#1.git_dir  2.save_path:.cache 3.model_path: model_zoo/official/cv/mobilenetv2  4.repo git 5.branch
+#1.git_dir  2.save_path:.mscache 3.model_path: model_zoo/official/cv/mobilenetv2  4.repo git 5.branch
 git_dir=$1
 save_path=$2
 model_path=$3

@@ -44,6 +44,22 @@ def handle_remove_read_only(func, path, exc):
         func(path)
 
 
+def url_exist(url):
+    """
+    Whether the url exist.
+    """
+    opener = urllib.request.build_opener()
+    opener.addheaders = [('User-Agent', 'Mozilla/5.0')]
+    try:
+        opener.open(url)
+        return True
+    except HTTPError as e:
+        print(e.code)
+    except URLError as e:
+        print(e.reason)
+    return False
+
+
 def _unpacking_targz(input_filename, save_path):
     """
     Unpacking the input filename to dirs.

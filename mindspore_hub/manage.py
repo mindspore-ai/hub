@@ -17,10 +17,10 @@
 import os
 
 
-CACHE_DIR = '~/.cache'
+CACHE_DIR = '~/.mscache'
 
 
-def set_hub_dir(dir_path='~/.cache'):
+def set_hub_dir(dir_path='~/.mscache'):
     """
     Set the path of cache.
 

@@ -57,7 +57,7 @@ class ValidMarkdown:
         self.required_sections = []
 
     def _validate_asset(self, assets):
-        require_keys = ["file-format", "asset-link", "asset-sha256"]
+        require_keys = ["asset-link", "asset-sha256"]
         for asset in assets:
             for k in require_keys:
                 if k not in asset:
