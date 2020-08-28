@@ -207,7 +207,7 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
 
 def load_weights(network, handle=None, force_reload=True):
     """
-    Load a k from MindSpore mindspore_hub, with pertained weights.
+    Load a model from MindSpore mindspore_hub, with pertained weights.
 
     Args:
         network (Cell): Cell network.

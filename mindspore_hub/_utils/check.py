@@ -132,8 +132,8 @@ class ValidMarkdown:
         r"""
         Make sure reference image exists in images/
         """
-        images = [os.path.basename(i) for i in glob.glob('images/*')]\
-            + ['no-image']
+        images = [os.path.basename(i) for i in glob.glob('images/*')] \
+                 + ['no-image']
         if image_name not in images:
             raise ValueError('Image {} referenced in {} not found in images/'
                              .format(image_name, self.filename))
@@ -184,6 +184,13 @@ class ValidMarkdown:
             if k not in ('repo-link', 'asset'):
                 self._no_extra_colon(k, header[k])
 
+        branch = get_repo_info_from_url(header.get("repo-link")).get("branch")
+        if branch != header.get("mindspore-version"):
+            raise ValueError('field: mindspore-version is `{}`, but got version `{}` '
+                             'from field repo-link: {} in {}'
+                             .format(header.get("mindspore-version"), branch,
+                                     header.get("repo-link"), self.filename))
+
     def _no_extra_colon(self, field, value):
         if ':' in str(value):
             raise ValueError('Remove extra \':\' in field {} with value {} in file {}'
@@ -229,6 +236,12 @@ class ValidMarkdown:
             header = yaml.load(''.join(header), Loader=yaml.FullLoader)
             if not header:
                 raise TypeError("Failed to parse a valid yaml header")
+
+            module_type_list = header['module-type'].split('-', 1)
+            header['module-type'] = module_type_list[0]
+            if len(module_type_list) > 1:
+                header['module-type-detail'] = module_type_list[1]
+
             self._validate_header(header)
 
             # check markdown

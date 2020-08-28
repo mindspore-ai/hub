@@ -36,7 +36,6 @@ class CellInfo:
         self.update_time = None
         self.repo_link = None
         self.user_id = None
-        self.format = None
         self.tags = None
         self.img = None
         self.backend = None
@@ -67,7 +66,6 @@ class CellInfo:
         self.update_time = json_dict.get('update-time')
         self.repo_link = json_dict.get('repo-link')
         self.user_id = json_dict.get('user-id')
-        self.format = json_dict.get('file-format')
         self.backend = json_dict.get('backend')
         if json_dict.get('allow-cache-ckpt') is not None:
             self.allow_cache_ckpt = json_dict.get('allow-cache-ckpt')
