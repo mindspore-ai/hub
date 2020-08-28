@@ -4,8 +4,7 @@
 This location is used for storage the documents for [MindSpore Hub Website](http://www.mindspore.cn)
 
 Please note that publishing a model to MindSpore Hub is in "testing stage". If you
-are interested in publishing your own model to MindSpore Hub, please follow the directions below and 
-we will process your submission as soon as possible. And the MindSpore Hub Website will be updated in
+are interested in publishing your own model to MindSpore Hub, please follow the directions below and we will process your submission as soon as possible. And the MindSpore Hub Website will be updated in
 less than 24 hours.
 
 ### Terms of service
@@ -15,9 +14,7 @@ You should agree to the MindSpore Hub Terms before submitting a model into MindS
 **All the Model committed to the MindSpore Hub should use the Apache 2.0 License**
 
 ### UID
-Model uid is alphanumeric token, in the pattern of ``publisher/backend/mindspore_version/markdown_file_name``, 
-in which ``markdown_file_name`` is consisted of ``[model_name]_[model_version]_[dataset]``. Which could be the input of 
-the ``hub.load`` interface.
+Model uid is alphanumeric token, in the pattern of ``publisher/backend/mindspore_version/markdown_file_name``, in which ``markdown_file_name`` is consisted of ``[model_name]_[model_version]_[dataset]``. Which could be the input of the ``hub.load`` interface.
 
 See example below:
 
@@ -31,10 +28,8 @@ See example below:
 
 ### Model storage and Model Cache/Optimization
 
-We don't restrict the location of the model file. But we suggest you set the term of ``allow_cache_ckpt`` to be 
-``true`` in the markdown file you commit, so that we will cache the model file in our own file storage server to
- accelerate the download and will try to **optimize** the model, speeding up for the Edge Devices, 
- Mobile Phone for example.
+We don't restrict the location of the model file. But we suggest you set the term of ``allow_cache_ckpt`` to be ``true`` in the markdown file you commit, so that we will cache the model file in our own file storage server to
+ accelerate the download and will try to **optimize** the model, speeding up for the Edge Devices, Mobile Phone for example.
 
 ## How to publish
 
@@ -52,8 +47,7 @@ See sections below for more details.
 
 #### Exporting a model
 
-The MindSpore Hub repository supports multiple kinds of model file-formats, 
-including:
+The MindSpore Hub repository supports multiple kinds of model file-formats, including:
 
 * [MindSpore CKPT](https://www.mindspore.cn/api/zh-CN/master/api/python/mindspore/mindspore.train.html?highlight=save_checkpoint#mindspore.train.serialization.save_checkpoint)
 * [AIR](https://www.mindspore.cn/api/zh-CN/master/api/python/mindspore/mindspore.train.html?highlight=export#mindspore.train.serialization.export)
@@ -77,8 +71,7 @@ mobilenetv2
 |- mindspore_hub_conf.py
 ```
 
-The Content in this file must include a function which name ``create_network``, this function's first args is the model
-name which is supported to create. **This name's lower case should match the ``model_name`` in markdown file**. 
+The Content in this file must include a function which name ``create_network``, this function's first args is the model name which is supported to create. **This name's lower case should match the ``model_name`` in markdown file**.
 You should check the values in `*args` and ``**kwargs``.
 ```python
 import src.resnet as src_resnet
@@ -103,17 +96,14 @@ def create_network(name, *args, **kwargs):
 #### [model_name]\_[model_version]\_[dataset].md
 
 If you want to publish your model in MindSpore Model Hub, you should commit a pull request, along with a markdown file.
-This markdown file can be split into two parts, first one is the meta information of the model, including the repo link 
-and binary file link, these information will be shown in the MindSpore Hub Website. Second one is the detail information
+This markdown file can be split into two parts, first one is the meta information of the model, including the repo link and binary file link, these information will be shown in the MindSpore Hub Website. Second one is the detail information
 will be shown in the detail page in MindSpore Hub Website. You should make sure your Usage section can be run.
 
-You can download the example markdown file in the ``examples/commit_example.md``, change the information accordingly. 
-After that, you can use the check file tool in the ``tools`` to check whether this markdown file is good or not.
+You can download the example markdown file in the ``examples/commit_example.md``, change the information accordingly. After that, you can use the check file tool in the ``tools`` to check whether this markdown file is good or not.
 
 #### **IMPORTANT**
 
-The content in the markdown file should be the same as the example file. For example, we use ``---`` to split the file 
-into two parts, first one is loaded by yaml format. The other is markdown format.
+The content in the markdown file should be the same as the example file. For example, we use ``---`` to split the file into two parts, first one is loaded by yaml format. The other is markdown format.
 
 The ``asset`` item is the list of dicts. So you should total use the same pattern to write the asset.
 
@@ -129,7 +119,7 @@ The ``asset`` item is the list of dicts. So you should total use the same patter
 
 #### Assets folder structure
 
-```shell script
+```shell
 assets
 |────publisher
 |      └──publisher_intro.md
@@ -163,8 +153,7 @@ python mshub_res/tools/validator.py
 ```
 ### Advance
 
-You can add some images as static file in your pull request for showing in the markdown file. You can have static folder 
-under your folder as a publisher.
+You can add some images as static file in your pull request for showing in the markdown file. You can have static folder under your folder as a publisher.
 
 ```shell script
 assets
