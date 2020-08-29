@@ -23,37 +23,7 @@ class CellInfo:
     """
     Information of network.
     """
-    def __init__(self):
-        # do something to read information bellow.
-        self.name = None
-        self.type = None
-        self.fine_tunable = False
-        self.input_shape = None
-        self.author = None
-        self.update_time = None
-        self.repo_link = None
-        self.user_id = None
-        self.tags = None
-        self.img = None
-        self.backend = None
-        self.allow_cache_ckpt = False
-        self.dataset = None
-        self.license = None
-        self.have_cache = False
-        self.path = None
-        self.ckpt_path = None
-        # self.asset is a list of dict
-        # each dict contains key: asset-link, asset-sha256, file-format
-        self.asset = None
-        self.backbone_name = None
-        self.accuracy = None
-        self.used_for = None
-        self.model_version = None
-        self.mindspore_version = None
-        self.asset_id = 0
-
-    def update(self, md_path):
-        """Update the info of CellInfo with json file."""
+    def __init__(self, md_path):
         json_dict = ValidMarkdown(md_path).check_markdown_file()
         self.name = json_dict.get('model-name')
         self.backbone_name = json_dict.get('backbone-name')

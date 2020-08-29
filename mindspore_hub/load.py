@@ -84,6 +84,13 @@ def _create_if_not_exist(path):
         os.makedirs(path)
 
 
+def _get_uid_from_url(url):
+    """Get uid from given url."""
+    values = url.split('/')
+    values[-1] = values[-1].split('.')[0]
+    return os.path.join(*values[-4:])
+
+
 def _get_md_from_url(url):
     """Get markdown name and network name from url."""
     values = url.split('/')
@@ -92,7 +99,10 @@ def _get_md_from_url(url):
 
 def _get_md_from_uid(uid):
     """Get markdown name and network name from given name."""
-    return uid.split('/')[-1] + '.md'
+    values = uid.split('/')
+    if len(values) != 4:
+        raise ValueError('Not input correct name.')
+    return values[-1] + '.md'
 
 
 def _get_uid_and_md_name(name):
@@ -108,6 +118,19 @@ def _get_uid_and_md_name(name):
         uid = name
         md_name = _get_md_from_uid(name)
     return uid, md_name
+
+
+def _get_md_file(uid, name, cache_path, force_reload):
+    """Get the path of markdown file."""
+    md_path = os.path.join(cache_path, name)
+    tmp_dir = tempfile.TemporaryDirectory(dir=get_hub_dir())
+    if force_reload or (not os.path.isfile(md_path)):
+        if not force_reload:
+            print(f'Warning. Can\'t find markdown cache, will reloading.')
+        tmp_path = _download_file_from_url(os.path.join(HUB_MD_DIR, uid + '.md'), None, tmp_dir.name)
+        _delete_if_exist(md_path)
+        os.rename(tmp_path, md_path)
+    return md_path
 
 
 def load(name, *args, pretrained=True, force_reload=True, **kwargs):
@@ -138,23 +161,11 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
         raise NotImplementedError('Load local path has not be supported.')
 
     uid, md_name = _get_uid_and_md_name(name)
-    dirs = os.path.join(*uid.split('/')[:-1])
-    target_path = os.path.join(hub_dir, dirs)
+    target_path = os.path.dirname(os.path.join(hub_dir, uid))
     _create_if_not_exist(target_path)
 
-    md_path = os.path.join(target_path, md_name)
-    tmp_dir = tempfile.TemporaryDirectory(dir=hub_dir)
-    base_path = None
-    if force_reload or (not os.path.isfile(md_path)):
-        if not force_reload:
-            print(f'Warning. Can\'t find markdown cache, will reloading.')
-        base_path = tmp_dir.name
-        tmp_path = _download_file_from_url(os.path.join(HUB_MD_DIR, dirs, md_name), None, base_path)
-        _delete_if_exist(md_path)
-        os.rename(tmp_path, md_path)
-
-    info = CellInfo()
-    info.update(md_path)
+    md_path = _get_md_file(uid, md_name, target_path, force_reload)
+    info = CellInfo(md_path)
     basename = os.path.basename(info.repo_link)
     net_dir = os.path.join(target_path, basename)
 
@@ -162,13 +173,14 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
         if not force_reload:
             print(f'Warning. Can\'t find net cache, will reloading.')
         _create_if_not_exist(os.path.dirname(net_dir))
-        _download_repo_from_url(info.repo_link, base_path)
+        tmp_dir = tempfile.TemporaryDirectory(dir=get_hub_dir())
+        _download_repo_from_url(info.repo_link, tmp_dir.name)
         _delete_if_exist(net_dir)
-        os.rename(os.path.join(base_path, basename), net_dir)
+        os.rename(os.path.join(tmp_dir.name, basename), net_dir)
 
     net = _get_network_from_cache(info.name, net_dir, *args, **kwargs)
     if not isinstance(net, nn.Cell):
-        raise TypeError('`create_net should be return a `Cell` type network, but got {}.'.format(type(net)))
+        raise TypeError('`create_net` should be return a `Cell` type network, but got {}.'.format(type(net)))
 
     if pretrained:
         load_weights(net, handle=name, force_reload=force_reload)
@@ -192,23 +204,11 @@ def load_weights(network, handle=None, force_reload=True):
     hub_dir = get_hub_dir()
     _create_if_not_exist(hub_dir)
     uid, md_name = _get_uid_and_md_name(handle)
-    dirs = os.path.join(*uid.split('/')[:-1])
-    target_path = os.path.join(hub_dir, dirs)
+    target_path = os.path.dirname(os.path.join(hub_dir, uid))
     _create_if_not_exist(target_path)
 
-    md_path = os.path.join(target_path, md_name)
-    tmp_dir = tempfile.TemporaryDirectory(dir=hub_dir)
-    base_path = None
-    if force_reload or (not os.path.isfile(md_path)):
-        if not force_reload:
-            print(f'Warning. Can\'t find markdown cache, will reloading.')
-        base_path = tmp_dir.name
-        tmp_path = _download_file_from_url(os.path.join(HUB_MD_DIR, dirs, md_name), None, base_path)
-        os.rename(tmp_path, md_path)
-
-
-    cell = CellInfo()
-    cell.update(md_path)
+    md_path = _get_md_file(uid, md_name, target_path, force_reload)
+    cell = CellInfo(md_path)
 
     download_url = cell.asset[cell.asset_id]['asset-link']
     asset_sha256 = cell.asset[cell.asset_id]["asset-sha256"]
