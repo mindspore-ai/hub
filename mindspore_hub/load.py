@@ -20,14 +20,16 @@ Loding network definition or prtrained model from mindspore mindspore_hub.
 
 import sys
 import os
+import re
 import shutil
 import importlib.util
 import logging as logger
 import warnings
+import tempfile
 from mindspore import nn
 from mindspore.train.serialization import load_checkpoint, load_param_into_net
 from .info import CellInfo
-from ._utils.download import _download_file_from_url, _download_repo_from_url
+from ._utils.download import _download_file_from_url, _download_repo_from_url # url_exist
 from .manage import get_hub_dir
 
 
@@ -36,22 +38,12 @@ ENTRY_POINT = 'create_network'
 HUB_MD_DIR = 'https://gitee.com/mindspore/hub/raw/master/mshub_res/assets/'
 
 
-def _generate_store_path(name):
-    """
-    Generate store path.
-    """
-    values = name.split('/')
-    publisher = values[0]
-    model_name = values[1].split('_')[0]
-    cache_path = os.path.abspath(os.path.expanduser(get_hub_dir()))
-    return os.path.join(cache_path, publisher, model_name)
-
-
-def _get_network_from_cache(path, *args, **kwargs):
+def _get_network_from_cache(name, path, *args, **kwargs):
     """
     Load network from cache.
 
     Args:
+        name (str): Network name.
         path (str): The path of network.
         args (tuple): The arguments of init network.
         kwargs (dict): The key arguments of init network.
@@ -67,37 +59,23 @@ def _get_network_from_cache(path, *args, **kwargs):
     spec = importlib.util.spec_from_file_location(HUB_CONFIG_FILE, config_path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    net = None
     cwd = os.getcwd()
     os.chdir(path)
     if not hasattr(module, ENTRY_POINT):
         raise KeyError('Can\'t find `create_net` function.')
     func = getattr(module, ENTRY_POINT)
-    net = func(*args, **kwargs)
+    net = func(name, *args, **kwargs)
     os.chdir(cwd)
     return net
 
 
-def _backup(path, backup_path):
-    """Backup files."""
-    if os.path.exists(backup_path):
-        shutil.rmtree(backup_path)
-    if os.path.exists(path):
-        os.rename(path, backup_path)
-
-
-def _recover_backup(path, backup_path):
-    """Recover files."""
-    if os.path.exists(path):
-        shutil.rmtree(path)
-    if os.path.exists(backup_path):
-        os.rename(backup_path, path)
-
-
-def _delete_backup(path):
+def _delete_if_exist(path):
     """Delete backpu files"""
     if os.path.exists(path):
-        shutil.rmtree(path)
+        if os.path.isdir(path):
+            shutil.rmtree(path)
+        else:
+            os.remove(path)
 
 
 def _create_if_not_exist(path):
@@ -106,50 +84,30 @@ def _create_if_not_exist(path):
         os.makedirs(path)
 
 
-def _get_network_from_url(url, path, *args, **kwargs):
-    """
-    Load network from url.
-
-    Args:
-        url (str): The url of network.
-        path (str): The path of network.
-        args (tuple): The arguments of init network.
-        kwargs (dict): The key arguments of init network.
-
-    Returns:
-        Cell, return network.
-    """
-    net = None
-    network_dir = os.path.join(path, os.path.basename(url))
-    backup_path = network_dir + '.bk'
-    _backup(network_dir, backup_path)
-    try:
-        _create_if_not_exist(path)
-        if _download_repo_from_url(url, path):
-            _delete_backup(backup_path)
-        else:
-            _recover_backup(network_dir, backup_path)
-    except Exception as err:
-        _recover_backup(network_dir, backup_path)
-        raise IOError(err)
-    net = _get_network_from_cache(network_dir, *args, **kwargs)
-    return net
-
-
-def _get_md_and_name_from_url(url):
+def _get_md_from_url(url):
     """Get markdown name and network name from url."""
     values = url.split('/')
-    values[-1] = values[-1].split('.')[0]
-    name = values[-1]
-    md_name = os.path.join(*values[-2:]) + '.md'
-    return name, md_name
+    return values[-1].split('.')[0] + '.md'
 
 
-def _get_md_and_name_from_name(name):
+def _get_md_from_uid(uid):
     """Get markdown name and network name from given name."""
-    md_name = name + '.md'
-    net_name = name.split('/')[-1]
-    return net_name, md_name
+    return uid.split('/')[-1] + '.md'
+
+
+def _get_uid_and_md_name(name):
+    """Get uid and markdown name."""
+    if re.match(r'^https?:/{2}\w.+$', name):
+        # if not url_exist(name):
+            # raise Exception('Please make sure the URL exists or the network connection is normal.')
+        if len(name.split('/')) < 7:
+            raise ValueError('Please make sure input correct url.')
+        uid = _get_uid_from_url(name)
+        md_name = _get_md_from_url(name)
+    else:
+        uid = name
+        md_name = _get_md_from_uid(name)
+    return uid, md_name
 
 
 def load(name, *args, pretrained=True, force_reload=True, **kwargs):
@@ -172,31 +130,43 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
     if not isinstance(pretrained, bool):
         raise TypeError('`pretrained` must be a bool type.')
 
+    hub_dir = get_hub_dir()
+    _create_if_not_exist(hub_dir)
+
     if os.path.exists(os.path.expanduser(name)):
         warnings.warn('Use local network directory, `pretrained` maybe not work.')
-        raise NotImplementedError('Load given path has not be supported.')
-    md_name = None
-    uid = None
-    if name.startswith('http'):
-        if len(name.split('/')) < 2:
-            raise ValueError('Wrong url.')
-        net_name, md_name = _get_md_and_name_from_url(name)
-        uid = md_name[:-3]
-    else:
-        net_name, md_name = _get_md_and_name_from_name(name)
-        uid = name
-    path = _generate_store_path(uid)
-    _create_if_not_exist(path)
-    _download_file_from_url(os.path.join(HUB_MD_DIR, md_name), None, path)
-    md_path = os.path.join(path, md_name.split('/')[-1])
+        raise NotImplementedError('Load local path has not be supported.')
 
-    info = CellInfo(net_name)
+    uid, md_name = _get_uid_and_md_name(name)
+    dirs = os.path.join(*uid.split('/')[:-1])
+    target_path = os.path.join(hub_dir, dirs)
+    _create_if_not_exist(target_path)
+
+    md_path = os.path.join(target_path, md_name)
+    tmp_dir = tempfile.TemporaryDirectory(dir=hub_dir)
+    base_path = None
+    if force_reload or (not os.path.isfile(md_path)):
+        if not force_reload:
+            print(f'Warning. Can\'t find markdown cache, will reloading.')
+        base_path = tmp_dir.name
+        tmp_path = _download_file_from_url(os.path.join(HUB_MD_DIR, dirs, md_name), None, base_path)
+        _delete_if_exist(md_path)
+        os.rename(tmp_path, md_path)
+
+    info = CellInfo()
     info.update(md_path)
-    net = None
-    if not force_reload and os.path.exists(path):
-        net = _get_network_from_cache(os.path.join(path, os.path.basename(info.repo_link)), *args, **kwargs)
-    else:
-        net = _get_network_from_url(info.repo_link, path, *args, **kwargs)
+    basename = os.path.basename(info.repo_link)
+    net_dir = os.path.join(target_path, basename)
+
+    if force_reload or (not os.path.isdir(net_dir)):
+        if not force_reload:
+            print(f'Warning. Can\'t find net cache, will reloading.')
+        _create_if_not_exist(os.path.dirname(net_dir))
+        _download_repo_from_url(info.repo_link, base_path)
+        _delete_if_exist(net_dir)
+        os.rename(os.path.join(base_path, basename), net_dir)
+
+    net = _get_network_from_cache(info.name, net_dir, *args, **kwargs)
     if not isinstance(net, nn.Cell):
         raise TypeError('`create_net should be return a `Cell` type network, but got {}.'.format(type(net)))
 
@@ -219,32 +189,37 @@ def load_weights(network, handle=None, force_reload=True):
         msg = ("Argument net should be a Cell, but got {}.".format(type(network)))
         raise TypeError(msg)
 
-    if handle.startswith('http'):
-        if len(handle.split('/')) < 2:
-            raise ValueError('Wrong url.')
-        net_name, md_name = _get_md_and_name_from_name(handle)
-        uid = md_name[:-3]
-    else:
-        net_name, md_name = _get_md_and_name_from_name(handle)
-        uid = handle
-    path = _generate_store_path(uid)
-    _create_if_not_exist(path)
-    _download_file_from_url(HUB_MD_DIR + md_name, None, path)
-    md_path = os.path.join(path, md_name.split('/')[-1])
+    hub_dir = get_hub_dir()
+    _create_if_not_exist(hub_dir)
+    uid, md_name = _get_uid_and_md_name(handle)
+    dirs = os.path.join(*uid.split('/')[:-1])
+    target_path = os.path.join(hub_dir, dirs)
+    _create_if_not_exist(target_path)
 
-    cell = CellInfo(net_name)
+    md_path = os.path.join(target_path, md_name)
+    tmp_dir = tempfile.TemporaryDirectory(dir=hub_dir)
+    base_path = None
+    if force_reload or (not os.path.isfile(md_path)):
+        if not force_reload:
+            print(f'Warning. Can\'t find markdown cache, will reloading.')
+        base_path = tmp_dir.name
+        tmp_path = _download_file_from_url(os.path.join(HUB_MD_DIR, dirs, md_name), None, base_path)
+        os.rename(tmp_path, md_path)
+
+
+    cell = CellInfo()
     cell.update(md_path)
 
     download_url = cell.asset[cell.asset_id]['asset-link']
     asset_sha256 = cell.asset[cell.asset_id]["asset-sha256"]
 
     if force_reload:
-        ckpt_path = _download_file_from_url(download_url, asset_sha256, path)
+        ckpt_path = _download_file_from_url(download_url, asset_sha256, target_path)
     else:
         ckpt_name = os.path.basename(download_url.split("/")[-1])
-        ckpt_path = os.path.join(path, ckpt_name)
+        ckpt_path = os.path.join(target_path, ckpt_name)
         if not os.path.exists(ckpt_path):
-            ckpt_path = _download_file_from_url(download_url, asset_sha256, path)
+            ckpt_path = _download_file_from_url(download_url, asset_sha256, target_path)
 
     param_dict = load_checkpoint(ckpt_path)
     load_param_into_net(network, param_dict)
