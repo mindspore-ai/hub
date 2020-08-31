@@ -74,3 +74,4 @@ class CellInfo:
         self.model_version = json_dict.get('model-version')
         self.mindspore_version = json_dict.get('mindspore-version')
         self.asset = json_dict.get('asset')
+        self.asset_id = json_dict.get('asset-id')

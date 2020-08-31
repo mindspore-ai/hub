@@ -57,7 +57,7 @@ class ValidMarkdown:
         self.required_sections = []
 
     def _validate_asset(self, assets):
-        require_keys = ["asset-link", "asset-sha256"]
+        require_keys = ["asset-link", "asset-sha256", "file-format"]
         for asset in assets:
             for k in require_keys:
                 if k not in asset:
@@ -251,6 +251,11 @@ class ValidMarkdown:
             header_dict = dict(header)
             header_dict["markdown_name"] = os.path.basename(os.path.splitext(self.filename)[0])
             header_dict["uid"] = get_repo_info_from_url(header_dict.get("repo-link")).get("uid")
+            asset_id = 0
+            for idx in range(len(header_dict["asset"])):
+                if header_dict["asset"][idx]["file-format"].lower() == "ckpt":
+                    asset_id = idx
+            header_dict["asset-id"] = asset_id
         except (TypeError, ValueError) as e:
             print("\033[1;31m Failed\033[0m")
             raise e
