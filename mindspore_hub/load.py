@@ -64,7 +64,7 @@ def _get_network_from_cache(name, path, *args, **kwargs):
     if not hasattr(module, ENTRY_POINT):
         raise KeyError('Can\'t find `create_net` function.')
     func = getattr(module, ENTRY_POINT)
-    net = func(name, *args, **kwargs)
+    net = func(name.lower(), *args, **kwargs)
     os.chdir(cwd)
     return net
 

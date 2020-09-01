@@ -6,7 +6,7 @@ model-name: GoogleNet
 
 backbone-name: GoogleNet
 
-module-type: CV
+module-type: cv-classification
 
 fine-tunable: True
 
@@ -42,7 +42,7 @@ asset:
     asset-link: https://download.mindspore.cn/model_zoo/official/cv/googlenet/goolenet_ascend_0.2.0_cifar10_official_classification_20200713/googlenet.ckpt
     asset-sha256: 114e5acc31dad444fa8ed2aafa02ca34734419f602b9299f3b53013dfc71b0f7
   -
-    file-format: geir
+    file-format: air
     asset-link: https://download.mindspore.cn/model_zoo/official/cv/googlenet/goolenet_ascend_0.2.0_cifar10_official_classification_20200713/googlenet.geir
     asset-sha256: a092a28211fcab98fdabdf00c95098587b8d84d0f33c2a4d29e2f6c43d3b0b60
 
