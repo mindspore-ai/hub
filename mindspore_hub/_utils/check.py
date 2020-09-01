@@ -184,13 +184,6 @@ class ValidMarkdown:
             if k not in ('repo-link', 'asset'):
                 self._no_extra_colon(k, header[k])
 
-        branch = get_repo_info_from_url(header.get("repo-link")).get("branch")
-        if branch != header.get("mindspore-version"):
-            raise ValueError('field: mindspore-version is `{}`, but got version `{}` '
-                             'from field repo-link: {} in {}'
-                             .format(header.get("mindspore-version"), branch,
-                                     header.get("repo-link"), self.filename))
-
     def _no_extra_colon(self, field, value):
         if ':' in str(value):
             raise ValueError('Remove extra \':\' in field {} with value {} in file {}'

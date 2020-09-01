@@ -38,12 +38,12 @@ mindspore-version: 0.2
 
 asset:
   -
-    file-format: ckpt
-    asset-link: https://download.mindspore.cn/model_zoo/official/cv/googlenet/goolenet_ascend_0.2.0_cifar10_official_classification_20200713/googlenet.ckpt
+    file-format: ckpt  
+    asset-link: https://download.mindspore.cn/model_zoo/official/cv/googlenet/goolenet_ascend_0.2.0_cifar10_official_classification_20200713/googlenet.ckpt  
     asset-sha256: 114e5acc31dad444fa8ed2aafa02ca34734419f602b9299f3b53013dfc71b0f7
   -
-    file-format: air
-    asset-link: https://download.mindspore.cn/model_zoo/official/cv/googlenet/goolenet_ascend_0.2.0_cifar10_official_classification_20200713/googlenet.geir
+    file-format: air  
+    asset-link: https://download.mindspore.cn/model_zoo/official/cv/googlenet/goolenet_ascend_0.2.0_cifar10_official_classification_20200713/googlenet.geir  
     asset-sha256: a092a28211fcab98fdabdf00c95098587b8d84d0f33c2a4d29e2f6c43d3b0b60
 
 license: Apache2.0
@@ -80,7 +80,9 @@ image_shape = mshub.get_desired_input_shape(model)
 image = Image.open('cifar10/a.jpg')
 transforms = py_transforms.ComposeOp([py_transforms.ToTensor()])
 
-network = mshub.load('mindspore/ascend/0.2/googlenet_v1_cifar10')
+# initialize the number of classes based on the pre-trained model
+network = mshub.load('mindspore/ascend/0.2/googlenet_v1_cifar10',
+                     num_classes=10)
 network.set_train(False)
 out = network(transforms(image))
 ```
