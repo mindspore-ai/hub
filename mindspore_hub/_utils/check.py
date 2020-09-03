@@ -268,7 +268,7 @@ def sanity_check(json_path, check_dir=''):
     with open(json_path, "w") as json_file:
         for each_file in glob.glob(check_dir):
             # Skip documentation
-            if os.path.basename(each_file) in ('README.md', 'README.en.md'):
+            if os.path.basename(each_file) in ('README_CN.md', 'README.md'):
                 continue
             headers = ValidMarkdown(each_file).check_markdown_file()
             json_str = json.dumps(headers, sort_keys=False, default=str, ensure_ascii=False)

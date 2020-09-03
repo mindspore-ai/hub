@@ -31,13 +31,13 @@ def test_check_md_of_dir(check_dir='../mshub_res/assets/mindspore/gpu/0.6/'):
     check_dir = os.path.join(check_dir, '*.md')
     for each_file in glob.glob(check_dir):
         # Skip documentation
-        if os.path.basename(each_file) in ('README.md', 'README.en.md'):
+        if os.path.basename(each_file) in ('README_CN.md', 'README.md'):
             continue
         ValidMarkdown(each_file).check_markdown_file()
 
 def test_check_all_md_of_dir(check_dir='../mshub_res/assets/'):
     """check all markdown files of dir."""
-    skip_check_list = ['README.md', 'README.en.md']
+    skip_check_list = ['README_CN.md', 'README.md']
     def record(folder, md_list):
         for name in os.listdir(folder):
             if os.path.isdir(os.path.join(folder, name)):
@@ -90,7 +90,7 @@ def skip_test_load_weights():
     repo_link = 'https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/alexnet'
     _download_repo_from_url(repo_link, path)
 
-    net = _get_network_from_cache(path+'/alexnet')
+    net = _get_network_from_cache('alexnet', path+'/alexnet')
     load_weights(net, handle='mindspore/alexnet_v1_cifar10', force_reload=True)
     print(net)
 
