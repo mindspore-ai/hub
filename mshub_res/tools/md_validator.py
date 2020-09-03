@@ -28,7 +28,7 @@ def parse_args():
 
 def check_md_of_path(check_dir='../assets/'):
     """check all markdown files of dir."""
-    skip_check_list = ['README.md', 'README.en.md']
+    skip_check_list = ['README_CN.md', 'README.md']
     if not os.path.exists(check_dir):
         print(f"{check_dir} does not exist!")
 

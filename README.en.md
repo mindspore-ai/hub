@@ -1,2 +1,0 @@
-# Hub
-MindSpore Hub
