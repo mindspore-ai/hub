@@ -75,11 +75,14 @@ asset_sha256: <required>
 
 license: [Apache2.0] <required>
 
+summary: [Description of the model， one line description] <required>
+
 ---
 
-## Summary
 
-[Description of the model]
+## Introduction
+
+[Detailed Description of the model]
 
 ## Usage
 

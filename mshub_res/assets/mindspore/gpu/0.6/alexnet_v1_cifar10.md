@@ -47,10 +47,12 @@ asset:
     asset-sha256: 722e13be6cd6186dddcd68d5c0a50776d9a8ad8e79db3870556f68d4d2f179e4
 
 license: Apache2.0
+summary: AlexNet used to classify 10 classes of cifar10
 
 ---
 
-## Summary
+
+## Introduction
 
 This MindSpore Hub model uses the implementation of AlexNet from the MindSpore model zoo on Gitee at model_zoo/official/cv/alexnet.
 
