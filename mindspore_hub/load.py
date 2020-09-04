@@ -195,6 +195,12 @@ def load_weights(network, handle=None, force_reload=True):
         network (Cell): Cell network.
         handle (str, optional): uid or url link. Default: None.
         force_reload (bool, optional): Whether to force a fresh download unconditionally. Default: False.
+
+    Examples:
+        >>> uid = 'mindspore/ascend/0.2/googlenet_v1_cifar10'
+        >>> load_weights(net, handle=uid, force_reload=True)
+        >>> url = 'https://hub.mindspore.com/mindspore/ascend/0.2/googlenet_v1_cifar10'
+        >>> load_weights(net, handle=url, force_reload=True)
     """
     if not isinstance(network, nn.Cell):
         logger.error("Failed to combine the net and the parameters.")
