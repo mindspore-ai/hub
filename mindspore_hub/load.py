@@ -138,13 +138,17 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
     Load network with given name.
 
     Args:
-        name (str): Network name or url.
+        name (str): Network uid or url.
         args (tuple): Arguments for network initialization.
         pretrained (bool): Whether load pretrained model. Default: True.
         force_reload (bool): Whether reload network from url. Default: True.
         kwargs (dict): Keyworded arguments for network initialization.
+
     Returns:
         Cell, a network.
+
+    Examples:
+        >>> net = mindspore_hub.load('mindspore/ascend/0.2/googlenet_v1_cifar10', 10, pretrained=True)
     """
     if not isinstance(name, str):
         raise TypeError('Network name must be a string of name or a url.')
