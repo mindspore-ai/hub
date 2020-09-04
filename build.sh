@@ -41,7 +41,7 @@ cd $BASEPATH || exit
 rm -rf build
 mk_new_dir "${OUTPUT_PATH}"
 ${PYTHON} ${BASEPATH}/setup.py bdist_wheel
-mv MindSporeHub.egg-info build
+mv *.egg-info build
 mv ${BASEPATH}/dist/*whl ${OUTPUT_PATH}
 rm -rf ${BASEPATH}/dist
 write_checksum
