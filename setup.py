@@ -17,9 +17,14 @@
 """setup package."""
 import os
 from setuptools import setup, find_packages
+from setuptools.command.egg_info import egg_info
+from setuptools.command.build_py import build_py
 
-version = '0.1.0'
-package_name = "MindSporeHub"
+
+version = '0.7.0'
+package_name = "mindspore-hub"
+cur_dir = os.path.dirname(os.path.realpath(__file__))
+pkg_dir = os.path.join(cur_dir, 'build')
 
 pwd = os.path.dirname(os.path.realpath(__file__))
 
@@ -39,8 +44,42 @@ required_package = [
 package_data = {
     '': [
         '*.pyd',
+        '*.sh',
     ]
 }
+
+
+def update_permissions(path):
+    """
+    Update permissions.
+
+    Args:
+        path (str): Target directory path.
+    """
+    for dirpath, dirnames, filenames in os.walk(path):
+        for dirname in dirnames:
+            dir_fullpath = os.path.join(dirpath, dirname)
+            os.chmod(dir_fullpath, stat.S_IREAD | stat.S_IWRITE | stat.S_IEXEC | stat.S_IRGRP | stat.S_IXGRP)
+        for filename in filenames:
+            file_fullpath = os.path.join(dirpath, filename)
+            os.chmod(file_fullpath, stat.S_IREAD)
+
+
+class EggInfo(egg_info):
+    """Egg info."""
+    def run(self):
+        super().run()
+        egg_info_dir = os.path.join(cur_dir, 'mindspore-hub.egg-info')
+        update_permissions(egg_info_dir)
+
+
+class BuildPy(build_py):
+    """BuildPy."""
+    def run(self):
+        super().run()
+        mindarmour_dir = os.path.join(pkg_dir, 'lib', 'mindspore-hub')
+        update_permissions(mindarmour_dir)
+
 
 setup(
     name=package_name,
@@ -60,6 +99,10 @@ setup(
     packages=find_packages(),
     package_data=package_data,
     include_package_data=True,
+    cmdclass={
+        'egg_info': EggInfo,
+        'build_py': BuildPy,
+    },
     python_requires='>=3.7',
     install_requires=required_package,
     license='Apache 2.0',
