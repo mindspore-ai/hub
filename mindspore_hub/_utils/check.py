@@ -38,7 +38,7 @@ class ValidMarkdown:
         self.required_user_fields = ['backbone-name', 'module-type', 'fine-tunable', 'input-shape',
                                      'model-version', 'train-dataset', 'author', 'update-time',
                                      'repo-link', 'user-id', 'used-for', 'infer-backend',
-                                     'mindspore-version', 'asset', 'license']
+                                     'mindspore-version', 'asset', 'license', 'summary']
         self.optional_backend_fields = 'train-backend'
         self.optional_image_fields = ['featured-image']
         self.optional_accuracy_field = 'accuracy'
@@ -61,7 +61,7 @@ class ValidMarkdown:
         for asset in assets:
             for k in require_keys:
                 if k not in asset:
-                    raise ValueError('field: {} is required in {}, but not found.'
+                    raise ValueError('field: ``{}`` is required in {}, but not found.'
                                      .format(k, self.filename))
             self._validate_repo_link(asset['asset-link'])
             self._validate_file_format(asset['file-format'])
@@ -71,7 +71,7 @@ class ValidMarkdown:
         Make sure the github or gitee repo exists
         """
         if not verify_url(link):
-            raise ValueError('url: {} is not trust in {}'.format(link, self.filename))
+            raise ValueError('url: ``{}`` is not trust in {}'.format(link, self.filename))
 
         ctx = ssl.create_default_context()
         ctx.check_hostname = False
@@ -80,14 +80,14 @@ class ValidMarkdown:
             req = Request(link, headers={'User-Agent': 'ms.hub'})
             urlopen(req, context=ctx)
         except HTTPError:
-            raise ValueError('{} is not valid url in {}'.format(link, self.filename))
+            raise ValueError('``{}`` is not valid url in {}'.format(link, self.filename))
 
     def _validate_train_dataset(self, train_dataset):
         r"""
         Only allow train_dataset in predefined set
         """
         if train_dataset not in self.valid_train_dataset:
-            raise ValueError('train_dataset {} is not valid in {}. Choose from {}'
+            raise ValueError('train_dataset ``{}`` is not valid in {}. Choose from {}'
                              .format(train_dataset, self.filename, self.valid_train_dataset))
 
     def _validate_file_format(self, file_format):
@@ -95,16 +95,18 @@ class ValidMarkdown:
         Only allow file_format in predefined set
         """
         if file_format.lower() not in self.valid_file_format:
-            raise ValueError('file_format {} is not valid in {}. Choose from {}'
+            raise ValueError('file_format ``{}`` is not valid in {}. Choose from {}'
                              .format(file_format, self.filename, self.valid_file_format))
 
     def _validate_used_for(self, used_for):
         r"""
         Only allow used_for in predefined set
         """
-        if used_for.lower() not in self.valid_used_for:
-            raise ValueError('used_for {} is not valid in {}. Choose from {}'
-                             .format(used_for, self.filename, self.valid_used_for))
+        used_for_list = used_for.split('/')
+        for item in used_for_list:
+            if item.lower() not in self.valid_used_for:
+                raise ValueError('used_for ``{}`` is not valid in {}. Choose from {}'
+                                 .format(item, self.filename, self.valid_used_for))
 
     def _validate_backend(self, backend):
         r"""
@@ -113,7 +115,7 @@ class ValidMarkdown:
         backend_lst = backend.split('/')
         for bk in backend_lst:
             if bk.lower() not in self.valid_backend:
-                raise ValueError('backend {} is not valid in {}. Choose from {}'
+                raise ValueError('backend ``{}`` is not valid in {}. Choose from {}'
                                  .format(bk, self.filename, self.valid_backend))
 
     def _validate_module_type(self, module_type):
@@ -125,7 +127,7 @@ class ValidMarkdown:
             raise Exception("module-type could only no more than one '-' ")
         first_class = items[0]
         if first_class not in self.valid_module_type:
-            raise ValueError('module_type {} is not valid in {}. Valid module_type set is {}'
+            raise ValueError('module_type ``{}`` is not valid in {}. Valid module_type set is {}'
                              .format(module_type, self.filename, self.valid_module_type))
 
     def _validate_image(self, image_name):
@@ -135,7 +137,7 @@ class ValidMarkdown:
         images = [os.path.basename(i) for i in glob.glob('images/*')] \
                  + ['no-image']
         if image_name not in images:
-            raise ValueError('Image {} referenced in {} not found in images/'
+            raise ValueError('Image ``{}`` referenced in {} not found in images/'
                              .format(image_name, self.filename))
 
     def _validate_header(self, header):
@@ -144,7 +146,7 @@ class ValidMarkdown:
         """
         for field in self.required_user_fields:
             if field not in header:
-                raise ValueError('field: {} is required in {}, but not found.'
+                raise ValueError("field: ``{}`` is required in {}, but not found."
                                  .format(field, self.filename))
 
         if not isinstance(header['fine-tunable'], bool):
@@ -186,7 +188,7 @@ class ValidMarkdown:
 
     def _no_extra_colon(self, field, value):
         if ':' in str(value):
-            raise ValueError('Remove extra \':\' in field {} with value {} in file {}'
+            raise ValueError('Remove extra \':\' in field ``{}`` with value ``{}`` in file ``{}``'
                              .format(field, value, self.filename))
 
     def validate_markdown(self, markdown):
@@ -253,7 +255,7 @@ class ValidMarkdown:
             print("\033[1;31m Failed\033[0m")
             raise e
 
-        print("\033[1;32mPassed!")
+        print("\033[1;32mPassed!\033[0m")
         return header_dict
 
     def extract_info_to_json(self, json_path):

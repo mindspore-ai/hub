@@ -47,9 +47,11 @@ asset:
     asset-sha256: 1849a8a78e9182d32567ea4fef1834ac765ce537ca6de3b1ec822efd6fb9b10b
 
 license: Apache2.0
+summary: resnet50 used to classify 10 classes of cifar10
 ---
 
-## Summary
+
+## Introduction
 
 This MindSpore Hub model uses the implementation of Resnet50 from the MindSpore model zoo on Gitee at model_zoo/official/cv/resnet.
 

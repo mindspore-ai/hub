@@ -34,7 +34,7 @@ train-backend: ascend
 
 infer-backend: ascend
 
-mindspore-version: 0.2
+mindspore-version: 0.7
 
 asset:
   -
@@ -47,10 +47,11 @@ asset:
     asset-sha256: a092a28211fcab98fdabdf00c95098587b8d84d0f33c2a4d29e2f6c43d3b0b60
 
 license: Apache2.0
-
+summary: GoogLeNet used to classify the 10 classes of cifar10.
 ---
 
-## Summary
+
+## Introduction
 
 This MindSpore Hub model uses the implementation of GoogleNet from the MindSpore model zoo on Gitee at model_zoo/official/cv/googlenet.
 
