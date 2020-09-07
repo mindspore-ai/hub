@@ -82,16 +82,28 @@ def test_download_repo_of_dir():
     ret = _download_repo_from_url(git_url, path)
     assert ret
 
-def skip_test_load_weights():
+def test_load_weights_input_uid():
     """test load_weights."""
     set_hub_dir('.cache')
     path = get_hub_dir()
 
-    repo_link = 'https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/alexnet'
+    repo_link = 'https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet'
     _download_repo_from_url(repo_link, path)
 
-    net = _get_network_from_cache('alexnet', path+'/alexnet')
-    load_weights(net, handle='mindspore/alexnet_v1_cifar10', force_reload=True)
+    net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
+    load_weights(net, handle='mindspore/ascend/0.2/googlenet_v1_cifar10', force_reload=True)
+    print(net)
+
+def test_load_weights_input_url():
+    """test load_weights."""
+    set_hub_dir('.cache')
+    path = get_hub_dir()
+
+    repo_link = 'https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet'
+    _download_repo_from_url(repo_link, path)
+
+    net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
+    load_weights(net, handle='https://hub.mindspore.com/mindspore/ascend/0.2/googlenet_v1_cifar10', force_reload=True)
     print(net)
 
 def test_auto_rename():
