@@ -46,7 +46,7 @@ class ValidMarkdown:
 
         self.valid_module_type = ['audio', 'cv', 'nlp', 'recommend', 'other']
         self.valid_train_dataset = ['imagenet', 'coco', 'cifar10', 'cifar100', 'WMT', 'zh-wiki',
-                                    'Gigaword corpus', 'captcha 0.1.1', 'criteo', 'voc2007']
+                                    'Gigaword corpus', 'captcha 0.1.1', 'criteo', 'voc2007', 'cn-wiki']
         self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
         self.valid_backend = ['cpu', 'gpu', 'ascend']
@@ -155,7 +155,7 @@ class ValidMarkdown:
         if not isinstance(header['input-shape'], list):
             raise TypeError("`input-shape` must be `list` of `int`, but got {}".format(header['input-shape']))
         for i in header['input-shape']:
-            if not isinstance(i, int):
+            if not isinstance(i, int) and not isinstance(i, list):
                 raise TypeError("`input-shape` must be `list` of `int`, but got {}".format(header['input-shape']))
 
         self._validate_repo_link(header['repo-link'])
