@@ -21,8 +21,8 @@ class TestLoad:
     """Test load function."""
     def test_load(self):
         """Test normal cases."""
-        names = ('mindspore/ascend/0.2/googlenet_v1_cifar10',
-                 'https://hub.mindspore.com/mindspore/ascend/0.2/googlenet_v1_cifar10')
+        names = ('mindspore/ascend/0.7/googlenet_v1_cifar10',
+                 'https://hub.mindspore.com/mindspore/ascend/0.7/googlenet_v1_cifar10')
         pretraineds = (True, False)
         force_reloads = (True, False)
         for name in names:
@@ -50,7 +50,7 @@ class TestLoad:
         with pytest.raises(TypeError):
             load(name)
 
-        name = 'mindspore/ascend/0.2/googlenet_v1_cifar10'
+        name = 'mindspore/ascend/0.7/googlenet_v1_cifar10'
         pretrained = 'True'
         with pytest.raises(TypeError):
             load(name, pretrained=pretrained)

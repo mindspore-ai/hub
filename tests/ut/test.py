@@ -91,7 +91,7 @@ def test_load_weights_input_uid():
     _download_repo_from_url(repo_link, path)
 
     net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
-    load_weights(net, handle='mindspore/ascend/0.2/googlenet_v1_cifar10', force_reload=True)
+    load_weights(net, handle='mindspore/ascend/0.7/googlenet_v1_cifar10', force_reload=True)
     print(net)
 
 def test_load_weights_input_url():
@@ -103,7 +103,7 @@ def test_load_weights_input_url():
     _download_repo_from_url(repo_link, path)
 
     net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
-    load_weights(net, handle='https://hub.mindspore.com/mindspore/ascend/0.2/googlenet_v1_cifar10', force_reload=True)
+    load_weights(net, handle='https://hub.mindspore.com/mindspore/ascend/0.7/googlenet_v1_cifar10', force_reload=True)
     print(net)
 
 def test_auto_rename():
