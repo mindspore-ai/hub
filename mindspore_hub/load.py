@@ -135,14 +135,14 @@ def _get_md_file(uid, name, cache_path, force_reload):
 
 def load(name, *args, pretrained=True, force_reload=True, **kwargs):
     """
-    Load network with given name.
+    Load network with the given name.
 
     Args:
-        name (str): Network uid or url.
+        name (str): Uid or url of the network.
         args (tuple): Arguments for network initialization.
-        pretrained (bool): Whether load pretrained model. Default: True.
-        force_reload (bool): Whether reload network from url. Default: True.
-        kwargs (dict): Keyworded arguments for network initialization.
+        pretrained (bool): Whether to load the pretrained model. Default: True.
+        force_reload (bool): Whether to reload the network from url. Default: True.
+        kwargs (dict): Keyword arguments for network initialization.
 
     Returns:
         Cell, a network.
@@ -197,7 +197,7 @@ def load_weights(network, handle=None, force_reload=True):
 
     Args:
         network (Cell): Cell network.
-        handle (str, optional): uid or url link. Default: None.
+        handle (str, optional): Uid or url link. Default: None.
         force_reload (bool, optional): Whether to force a fresh download unconditionally. Default: False.
 
     Examples:
