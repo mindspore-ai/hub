@@ -77,8 +77,8 @@ class BuildPy(build_py):
     """BuildPy."""
     def run(self):
         super().run()
-        mindarmour_dir = os.path.join(pkg_dir, 'lib', 'mindspore-hub')
-        update_permissions(mindarmour_dir)
+        hub_dir = os.path.join(pkg_dir, 'lib', 'mindspore-hub')
+        update_permissions(hub_dir)
 
 
 setup(

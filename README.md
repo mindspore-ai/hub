@@ -29,7 +29,32 @@ Current pre-trained models in MindSpore Hub mainly cover four mainstream task sc
  - **Flexible model loading**： Access and experience pre-trained models quickly by searching models of interest on MindSpore Hub Website.
  - **Easy-to-use transfer learning**: Achieve transfer learning in one step via MindSpore's flexbile interface. 
 
+## Environment Requirements
+
+### System Requirements and Software Dependencies
+
+| Version | Operating System | Executable File Installation Dependencies | Source Code Compilation and Installation Dependencies |
+| ---- | :--- | :--- | :--- |
+| MindSpore Hub master | - Ubuntu 18.04 x86_64 <br> - Ubuntu 18.04 aarch64 <br> - EulerOS 2.8 aarch64 <br> - EulerOS 2.5 x86_64 <br> | - [Python](https://www.python.org/downloads/) 3.7.5 <br> - MindSpore master <br> - For details about other dependency items, see [setup.py](https://gitee.com/mindspore/hub/blob/master/setup.py). | Same as the executable file installation dependencies. |
+
+- When the network is connected, dependency items in the `setup.py` file are automatically downloaded during .whl package installation. In other cases, you need to manually install dependency items.
+
 ## Installation
+
+#### Installation for development
+
+1. Download source code from Gitee.
+
+```bash
+git clone https://gitee.com/mindspore/hub.git
+```
+
+2. Compile and install in MindSpore Hub directory.
+
+```bash
+$ cd hub
+$ python setup.py install
+```
 
 ### Binaries
 
@@ -37,7 +62,7 @@ Install MindSpore Hub using `pip` command. `hub` depends on the MindSpore versio
 
 1. Please download whl package from [MindSpore Hub download page](https://www.mindspore.cn/versions).
    ```shell script
-   pip install #TODO
+   pip install mindspore_hub-{version}-py3-none-any.whl
    ```
 
 2. Run the following command in a network-enabled environment to verify the installation. 
