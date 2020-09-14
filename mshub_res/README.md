@@ -145,11 +145,11 @@ the file can be pulled into the master branch of
 ### Validating the documentation
 
 
-After adding the markdown file, you can use the validator tool in the ``mshub_res/tools/validator.py`` to validate
+After adding the markdown file, you can use the validator tool in the ``mshub_res/tools/md_validator.py`` to validate
 the markdown file you write before you creating a pull request.
 
 ```
-python mshub_res/tools/validator.py
+python mshub_res/tools/md_validator.py
 ```
 ### Advance
 

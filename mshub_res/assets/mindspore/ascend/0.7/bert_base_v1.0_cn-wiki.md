@@ -6,7 +6,7 @@ model-name: bert_base
 
 backbone-name: BertModel
 
-module-type: NLP
+module-type: nlp
 
 fine-tunable: True
 
@@ -17,13 +17,13 @@ model-version: 1.0
 train-dataset: cn-wiki
 
 
-author: mindspore
+author: MindSpore team
 
 update-time: 2020-09-07
 
 repo-link: https://gitee.com/mindspore/mindspore/tree/r0.7/model_zoo/official/nlp/bert
 
-user-id: mindspore
+user-id: MindSpore
 
 used-for: inference/transfer-learning
 

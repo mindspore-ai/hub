@@ -20,13 +20,13 @@ accuracy: 0.934
 
 
 
-author: mindspore team
+author: MindSpore team
 
 update-time: 2020-08-25
 
 repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet
 
-user-id: mindspore
+user-id: MindSpore
 
 used-for: inference
 
@@ -75,15 +75,14 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "model_zoo/official/cv/googlenet"
+model = "mindspore/ascend/0.7/googlenet_v1_cifar10"
 image_shape = mshub.get_desired_input_shape(model)
 
 image = Image.open('cifar10/a.jpg')
 transforms = py_transforms.ComposeOp([py_transforms.ToTensor()])
 
 # initialize the number of classes based on the pre-trained model
-network = mshub.load('mindspore/ascend/0.2/googlenet_v1_cifar10',
-                     num_classes=10)
+network = mshub.load(model, num_classes=10)
 network.set_train(False)
 out = network(transforms(image))
 ```
