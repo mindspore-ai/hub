@@ -5,7 +5,10 @@
 
 - [What Is MindSpore Hub](#what-is-mindspore-hub)
     - [Features](#features)
+- [Environment Requirements](#environment-requirements)
+    - [System Requirements and Software Dependencies](#system-requirements-and-software-dependencies)
 - [Installation](#installation)
+    - [Installation for development](#installation-for-development)
     - [Binaries](#binaries)
 - [Quickstart](#quickstart)
 - [Docs](#docs)
@@ -41,20 +44,20 @@ Current pre-trained models in MindSpore Hub mainly cover four mainstream task sc
 
 ## Installation
 
-#### Installation for development
+### Installation for development
 
 1. Download source code from Gitee.
 
-```bash
-git clone https://gitee.com/mindspore/hub.git
-```
+   ```bash
+   git clone https://gitee.com/mindspore/hub.git
+   ```
 
 2. Compile and install in MindSpore Hub directory.
 
-```bash
-$ cd hub
-$ python setup.py install
-```
+   ```bash
+   $ cd hub
+   $ python setup.py install
+   ```
 
 ### Binaries
 
