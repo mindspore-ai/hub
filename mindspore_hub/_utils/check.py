@@ -48,7 +48,7 @@ class ValidMarkdown:
         self.valid_train_dataset = ['imagenet', 'coco', 'cifar10', 'cifar100', 'WMT', 'zh-wiki',
                                     'Gigaword corpus', 'captcha 0.1.1', 'criteo', 'voc2007', 'cn-wiki',
                                     'openimage']
-        self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir']
+        self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir', 'mslite']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
         self.valid_backend = ['cpu', 'gpu', 'ascend']
 

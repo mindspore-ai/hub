@@ -39,9 +39,6 @@ repo-link: [link] <required>
 user-id: [] <required>
 
 
-
-file-format: [mindir/ckpt/onnx/air] <required>
-
 used-for: [inference/extract-feature/transfer-learning] <required>
 
 featured-image: [path_to_image] <optional>
@@ -57,11 +54,11 @@ allow-cache-ckpt: [True/False] # will try to optimize the model to run in mobile
 
 assets
   -
-    file-format: [ckpt/geir/air/onnx] <required>
+    file-format: [mindir/ckpt/onnx/air/mslite] <required>
     asset-link: []  <required>
     asset_sha256: [] <required>
   -
-    file-format: [ckpt/mindir/air/onnx] <optional>
+    file-format: [mindir/ckpt/onnx/air/mslite] <required>
     asset-link: []  <optional>
     asset_sha256: [] <optional>
   -
