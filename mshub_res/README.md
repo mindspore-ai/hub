@@ -53,6 +53,7 @@ The MindSpore Hub repository supports multiple kinds of model file-formats, incl
 * [AIR](https://www.mindspore.cn/api/zh-CN/master/api/python/mindspore/mindspore.train.html?highlight=export#mindspore.train.serialization.export)
 * [MindIR](https://www.mindspore.cn/api/zh-CN/master/api/python/mindspore/mindspore.train.html?highlight=export#mindspore.train.serialization.export)
 * [ONNX](https://www.mindspore.cn/api/zh-CN/master/api/python/mindspore/mindspore.train.html?highlight=export#mindspore.train.serialization.export)
+* [MSLite](https://www.mindspore.cn/lite/tutorial/zh-CN/master/use/converter_tool.html)
 
 ### Codes
 
