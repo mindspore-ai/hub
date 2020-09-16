@@ -6,7 +6,7 @@ model-name: ssd
 
 backbone-name: mobilenetV2
 
-module-type: CV
+module-type: cv-object_detection
 
 fine-tunable: True
 
@@ -20,13 +20,13 @@ map(0.95): 0.23
 
 
 
-author: [network-fo]
+author: MindSpore team
 
 update-time: 2020-09-10
 
 repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/ssd
 
-user-id: mindspore
+user-id: MindSpore
 
 used-for: inference
 

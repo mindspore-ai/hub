@@ -6,7 +6,7 @@ model-name: AlexNet
 
 backbone-name: AlexNet
 
-module-type: CV-classification
+module-type: cv-classification
 
 fine-tunable: True
 
@@ -16,17 +16,14 @@ model-version: 1.0
 
 train-dataset: cifar10
 
-accuracy: 0.99
 
-
-
-author: [network-fo]
+author: MindSpore team
 
 update-time: 2020-07-20
 
 repo-link: https://gitee.com/mindspore/mindspore/tree/r0.6/model_zoo/official/cv/alexnet
 
-user-id: mindspore
+user-id: MindSpore
 
 used-for: inference
 
@@ -34,7 +31,7 @@ train-backend: gpu
 
 infer-backend: gpu
 
-mindspore-version: r0.6
+mindspore-version: 0.6
 
 asset:
   -

@@ -2,17 +2,17 @@
 
 ---
 
-model-name: mobilenet
+model-name: mobilenetV2
 
-backbone-name: mobilenet
+backbone-name: mobilenetV2
 
-module-type: CV
+module-type: cv
 
 fine-tunable: True
 
 input-shape: [224, 224, 3]
 
-model-version: 2
+model-version: 1.0
 
 train-dataset: openimage
 
@@ -20,13 +20,13 @@ f1: 0.55
 
 
 
-author: [network-fo]
+author: MindSpore team
 
 update-time: 2020-09-10
 
 repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/mobilenetv2
 
-user-id: mindspore
+user-id: MindSpore
 
 used-for: inference
 
@@ -76,7 +76,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/ascend/0.7/mobilenet_v2_openimage"
+model = "mindspore/ascend/0.7/mobilenetv2_v1.0_openimage"
 image_shape = mshub.get_desired_input_shape(model)
 
 image = Image.open('openimage/a.jpg')

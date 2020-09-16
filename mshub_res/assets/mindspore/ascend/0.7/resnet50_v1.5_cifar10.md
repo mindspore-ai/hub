@@ -6,7 +6,7 @@ model-name: resnet50
 
 backbone-name: resnet50
 
-module-type: CV
+module-type: cv
 
 fine-tunable: True
 
@@ -20,13 +20,13 @@ accuracy: 0.91
 
 
 
-author: [network-fo]
+author: MindSpore team
 
 update-time: 2020-08-26
 
 repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/resnet
 
-user-id: mindspore
+user-id: MindSpore
 
 used-for: inference
 
@@ -81,7 +81,7 @@ image_shape = mshub.get_desired_input_shape(model)
 image = Image.open('cifar10/a.jpg')
 transforms = py_transforms.ComposeOp([py_transforms.ToTensor()])
 
-network = mshub.load(model)
+network = mshub.load(model, class_num=10)
 network.set_train(False)
 out = network(transforms(image))
 ```
