@@ -71,7 +71,7 @@ MindSpore Hub是MindSpore生态的预训练模型应用工具，作为模型开�
 2. 在能联网的环境中执行以下命令，验证安装结果。
    ```python
    import mindspore_hub as mshub
-   model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10")
+   model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10", num_classes=10)
    ```
 
 ## 快速入门
@@ -107,3 +107,16 @@ MindSpore Hub是MindSpore社区的一部分，关于社区的交流、贡献与�
 ## 许可证
 
 [Apache License 2.0](LICENSE)
+
+## FAQ
+- 遇到`SSL: CERTIFICATE_VERIFY_FAILED`怎么办？
+  由于你的网络环境，例如你使用代理连接互联网，往往会由于证书配置问题导致python出现ssl verification failed的问题，此时有两种解决方法：
+  - 配置好SSL证书**（推荐）**
+  - 在加载mindspore_hub前增加如下代码进行折中（最快解决）
+```python
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
+import mindpsore_hub as mshub
+model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10", num_classes=10)
+```
