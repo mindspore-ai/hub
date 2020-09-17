@@ -71,7 +71,7 @@ Install MindSpore Hub using `pip` command. `hub` depends on the MindSpore versio
 2. Run the following command in a network-enabled environment to verify the installation. 
    ```python
    import mindspore_hub as mshub
-   model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10")
+   model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10", num_classes=10)
    ```
 
 ## Quickstart
@@ -107,3 +107,15 @@ The release notes, see our [RELEASE](RELEASE.md)。
 ## License
 
 [Apache License 2.0](LICENSE)
+
+## FAQ
+- What to do when `SSL: CERTIFICATE_VERIFY_FAILED` occurs?
+When you behind a proxy, it sometimes will have some ssl verification fail problems. You can add the certificate into
+system to fix this problem. The fastest method is to disable python's ssl verification. Before import mindspore_hub, please add the codes.
+```python
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
+import mindpsore_hub as mshub
+model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10", num_classes=10)
+``` 
