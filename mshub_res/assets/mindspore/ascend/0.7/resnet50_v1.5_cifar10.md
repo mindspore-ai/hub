@@ -68,22 +68,17 @@ from mindspore import context, Tensor, nn
 from mindspore.train.model import Model
 from mindspore.common import dtype as mstype
 from mindspore.dataset.transforms import py_transforms
-from PIL import Image
-import cv2
 
 context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
 model = "mindspore/ascend/0.7/resnet50_v1.5_cifar10"
-image_shape = mshub.get_desired_input_shape(model)
-
-image = Image.open('cifar10/a.jpg')
-transforms = py_transforms.ComposeOp([py_transforms.ToTensor()])
-
 network = mshub.load(model, class_num=10)
 network.set_train(False)
-out = network(transforms(image))
+
+# Use as the same as MindSpore Model to inference.
+# ...
 ```
 
 ## Citation
