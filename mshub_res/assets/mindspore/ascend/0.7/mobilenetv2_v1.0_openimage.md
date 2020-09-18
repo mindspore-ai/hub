@@ -39,9 +39,10 @@ mindspore-version: 0.7
 asset:
   -
     file-format: ckpt
-    asset-link: https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2.ckpt
+    asset-link: https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2_ascend.ckpt
     asset-sha256: 0ce485e2ed61602d8bf15332db9801f114e820c142744b18f02491879421ecb3
 
+  -
     file-format: mindir
     asset-link: https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2.mindir
     asset-sha256: aba47ddc769ffac130bcea855e9b3553e15e4ed83c716314fa15f546ebac9d45
@@ -77,14 +78,9 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_id=0)
 
 model = "mindspore/ascend/0.7/mobilenetv2_v1.0_openimage"
-image_shape = mshub.get_desired_input_shape(model)
 
-image = Image.open('openimage/a.jpg')
-transforms = py_transforms.ComposeOp([py_transforms.ToTensor()])
-
-network = mshub.load(model)
+network = mshub.load(model, num_classes=601, include_top=True, activation="Sigmoid")
 network.set_train(False)
-out = network(transforms(image))
 ```
 
 ## Citation
