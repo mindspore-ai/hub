@@ -49,11 +49,11 @@ See sections below for more details.
 
 The MindSpore Hub repository supports multiple kinds of model file-formats, including:
 
-* [MindSpore CKPT](https://www.mindspore.cn/api/zh-CN/master/api/python/mindspore/mindspore.train.html?highlight=save_checkpoint#mindspore.train.serialization.save_checkpoint)
-* [AIR](https://www.mindspore.cn/api/zh-CN/master/api/python/mindspore/mindspore.train.html?highlight=export#mindspore.train.serialization.export)
-* [MindIR](https://www.mindspore.cn/api/zh-CN/master/api/python/mindspore/mindspore.train.html?highlight=export#mindspore.train.serialization.export)
-* [ONNX](https://www.mindspore.cn/api/zh-CN/master/api/python/mindspore/mindspore.train.html?highlight=export#mindspore.train.serialization.export)
-* [MSLite](https://www.mindspore.cn/lite/tutorial/zh-CN/master/use/converter_tool.html)
+* [MindSpore CKPT](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.save_checkpoint)
+* [AIR](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.export)
+* [MindIR](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.export)
+* [ONNX](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.export)
+* [MSLite](https://www.mindspore.cn/tutorial/lite/en/master/use/converter_tool.html)
 
 ### Codes
 
