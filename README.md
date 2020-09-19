@@ -63,7 +63,7 @@ Current pre-trained models in MindSpore Hub mainly cover four mainstream task sc
 
 Install MindSpore Hub using `pip` command. `hub` depends on the MindSpore version used in current environment. 
 
-1. Please download whl package from [MindSpore Hub download page](https://www.mindspore.cn/versions).
+1. Please download whl package from [MindSpore Hub download page](https://www.mindspore.cn/versions/en).
    ```shell script
    pip install mindspore_hub-{version}-py3-none-any.whl
    ```
