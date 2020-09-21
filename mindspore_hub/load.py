@@ -187,6 +187,8 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
         raise TypeError('`create_net` should be return a `Cell` type network, but got {}.'.format(type(net)))
 
     if pretrained:
+        if not info.asset:
+            raise ValueError(f'`pretrained` must be False when {info.name} has no asset.')
         load_weights(net, handle=name, force_reload=force_reload)
     return net
 

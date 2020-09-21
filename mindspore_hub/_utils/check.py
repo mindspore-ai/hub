@@ -38,7 +38,7 @@ class ValidMarkdown:
         self.required_user_fields = ['backbone-name', 'module-type', 'fine-tunable', 'input-shape',
                                      'model-version', 'train-dataset', 'author', 'update-time',
                                      'repo-link', 'user-id', 'used-for', 'infer-backend',
-                                     'mindspore-version', 'asset', 'license', 'summary']
+                                     'mindspore-version', 'license', 'summary']
         self.optional_backend_fields = 'train-backend'
         self.optional_image_fields = ['featured-image']
         self.optional_accuracy_field = 'accuracy'
@@ -164,7 +164,8 @@ class ValidMarkdown:
         self._validate_used_for(header['used-for'])
         self._validate_backend(header['infer-backend'])
         self._validate_module_type(header['module-type'])
-        self._validate_asset(header['asset'])
+        if header.get('asset', None):
+            self._validate_asset(header['asset'])
 
         for field in self.optional_image_fields:
             if field in header.keys():
