@@ -116,6 +116,6 @@ system to fix this problem. The fastest method is to disable python's ssl verifi
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
-import mindpsore_hub as mshub
+import mindspore_hub as mshub
 model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10", num_classes=10)
 ``` 
