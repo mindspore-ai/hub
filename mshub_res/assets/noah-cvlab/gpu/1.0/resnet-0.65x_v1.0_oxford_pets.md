@@ -42,7 +42,7 @@ asset:
 
 license: Apache2.0
 
-summary: AlexNet used to classify 37 classes of Oxford-IIIT Pet
+summary: ResNet-0.65x derived by adversarial pruning method, and is used to classify 37 classes of Oxford-IIIT Pet
 
 ---
 
