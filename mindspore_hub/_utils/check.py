@@ -219,16 +219,20 @@ class ValidMarkdown:
             header = []
             markdown = []
             header_read = False
+            flag_num = 0
             with open(self.filename, 'r') as file:
                 for line in file:
                     if line.startswith('---'):
                         header_read = not header_read
+                        flag_num += 1
                         continue
                     if header_read:
                         header += [line]
                     else:
                         markdown += [line]
 
+            if flag_num != 2:
+                raise TypeError("MarkDown file: {} should have two '---'.".format(self.filename))
             # checks that it's valid yamp
             header = yaml.load(''.join(header), Loader=yaml.FullLoader)
             if not header:
