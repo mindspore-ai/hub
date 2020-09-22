@@ -6,7 +6,7 @@ model-name: GhostNet-600
 
 backbone-name: GhostNet-600
 
-module-type: CV-classification
+module-type: cv-classification
 
 fine-tunable: True
 

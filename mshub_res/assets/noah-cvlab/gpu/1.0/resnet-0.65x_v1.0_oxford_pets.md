@@ -6,7 +6,7 @@ model-name: ResNet50-0.65x
 
 backbone-name: resnet50
 
-module-type: CV-classification
+module-type: cv-classification
 
 fine-tunable: True
 

@@ -2,11 +2,11 @@
 
 ---
 
-model-name: ghostnet_ssd
+model-name: GhostNet_SSD
 
 backbone-name: ghostnet1.3x
 
-module-type: CV
+module-type: cv-object_detection
 
 fine-tunable: True
 
