@@ -14,8 +14,6 @@ input-shape: [[1, 128], [1, 128], [1, 128], [1, 128]]
 
 model-version: 1.0
 
-train-dataset: WMT
-
 
 author: MindSpore team
 

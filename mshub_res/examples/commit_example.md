@@ -24,7 +24,7 @@ input-shape: [224, 224, 3] <required>
 
 model-version: [1.0] <required>
 
-train-dataset: [imagenet/coco/...] <required>
+train-dataset: [cifar10/mnist/...] <optional>
 
 accuracy: []<optional>
 
@@ -54,19 +54,19 @@ allow-cache-ckpt: [True/False] # will try to optimize the model to run in mobile
 
 assets
   -
-    file-format: [mindir/ckpt/onnx/air/mslite] <required>
-    asset-link: []  <required>
-    asset_sha256: [] <required>
+    file-format: [mindir/ckpt/onnx/air/mslite] <optional>
+    asset-link: []  <optional>
+    asset_sha256: [] <optional>
   -
-    file-format: [mindir/ckpt/onnx/air/mslite] <required>
+    file-format: [mindir/ckpt/onnx/air/mslite] <optional>
     asset-link: []  <optional>
     asset_sha256: [] <optional>
   -
     ...
 
-asset-link: [] <required>
+asset-link: [] <optional>
 
-asset_sha256: <required>
+asset_sha256: <optional>
 
 
 
