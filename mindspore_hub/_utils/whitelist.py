@@ -17,6 +17,7 @@ import socket
 from urllib.parse import urlparse
 
 _WHITE_LIST = ('https://download.mindspore.cn',
+               'https://www.mindspore.cn',
                'https://gitee.com/mindspore/mindspore',
                'https://github.com/mindspore-ai/mindspore')
 _WHITE_LIST_INFO = None
