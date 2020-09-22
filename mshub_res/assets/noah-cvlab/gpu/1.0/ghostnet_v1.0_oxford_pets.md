@@ -6,7 +6,7 @@ model-name: GhostNet
 
 backbone-name: GhostNet
 
-module-type: CV-classification
+module-type: cv-classification
 
 fine-tunable: True
 
@@ -50,7 +50,12 @@ summary: AlexNet used to classify 37 classes of Oxford-IIIT Pet
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of GhostNet from the MindSpore model zoo on Gitee at model_zoo/official/cv/ghostnet.
+This MindSpore Hub model uses the implementation of
+GhostNet from the MindSpore model zoo on Gitee at
+model_zoo/official/cv/ghostnet. The GhostNet architecture is based on
+Ghost module structure which generate more features from cheap operations.
+Base on a set of intrinsic features. Experiments conducted on benchmarks
+demonstrate the superiority of GhostNet in terms of speed and accuracy
 
 
 ### Performance
@@ -64,7 +69,7 @@ This MindSpore Hub model uses the implementation of GhostNet from the MindSpore 
 | Parameters (M)             | 5.2                                                   | 11.9 |
 | FLOPs (M) | 142 | 591 |
 | Accuracy (Top1) | 73.9 |80.2   |
-
+![flops_latency](../../static/images/ghostnet_static_img.png)
 #### GhostNet on Oxford-IIIT Pet
 
 | Parameters                 |                                        |   |

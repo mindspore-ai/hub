@@ -6,7 +6,7 @@ model-name: GhostNet_int8
 
 backbone-name: GhostNet
 
-module-type: CV-classification
+module-type: cv-classification
 
 fine-tunable: True
 
