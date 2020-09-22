@@ -59,19 +59,54 @@ import mindspore
 import mindspore.dataset.engine.datasets as de
 from mindspore import context, Tensor
 from mindspore.common import dtype as mstype
+from model_zoo.official.nlp.bert.src.bert_model import BertConfig
 
 context.set_context(mode=context.GRAPH_MODE, device_target="Ascend", device_id=0)
 model = "mindspore/ascend/0.7/bert_nezha_v1.0_cn-wiki"
-network = mshub.load(model, is_training=False, batch_size=1)
-network.set_train(False)
-columns_list=["input_ids", "input_mask", "segment_ids"]
-ds = de.TFRecordDataset(data_files, None, columns_list=["input_ids", "input_mask", "segment_ids"])
+
+bert_nezha_cfg = BertConfig(
+    seq_length=128,
+    vocab_size=21128,
+    hidden_size=1024,
+    num_hidden_layers=24,
+    num_attention_heads=16,
+    intermediate_size=4096,
+    hidden_act="gelu",
+    hidden_dropout_prob=0.0,
+    attention_probs_dropout_prob=0.0,
+    max_position_embeddings=512,
+    type_vocab_size=2,
+    initializer_range=0.02,
+    use_relative_positions=True,
+    dtype=mstype.float32,
+    compute_type=mstype.float16
+)
+
+
+Class MLM(nn.cell):
+    def __init__(self, config):
+        super(MLM, self).__init__()
+        network = mshub.load(model, is_training=False)
+        network.set_train(False)
+        self.bert = network
+        self.cls1 = GetMaskedLMOutput(config)
+
+    def construct(self, input_ids, input_mask, token_type_id, masked_pos):
+        sequence_output, _, embedding_table = self.bert(input_ids, token_type_id, input_mask)
+        prediction_scores = self.cls1(sequence_output, embedding_table, masked_pos)
+        return prediction_scores
+
+columns_list=["input_ids", "input_mask", "segment_ids", "masked_lm_positions"]
+# data_files can be cn-wiki tfrecord
+ds = de.TFRecordDataset(data_files, None, columns_list=["input_ids", "input_mask", "segment_ids", "masked_lm_positions"])
+mlm_net = MLM(bert_nezha_cfg)
 for data in ds.create_dict_iterator():
     input_data = []
     for i in columns_list:
         input_data.append(Tensor(data[i]))
-    input_ids, input_mask, segment_ids = input_data
-    out = network(input_ids, segment_ids, input_mask)
+    input_ids, input_mask, segment_ids, masked_lm_positions = input_data
+    out = mlm_net(input_ids, input_mask, segment_ids, masked_lm_positions)
+# For more downstream tasks, please refer to https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/bert
 ```
 
 ## Citation
