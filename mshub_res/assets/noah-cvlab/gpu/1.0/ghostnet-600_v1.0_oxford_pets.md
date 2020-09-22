@@ -44,7 +44,7 @@ asset:
 
 license: Apache2.0
 
-summary: AlexNet used to classify 37 classes of Oxford-IIIT Pet
+summary: GhostNet-600 used to classify 37 classes of Oxford-IIIT Pet
 
 ---
 
