@@ -39,14 +39,10 @@ summary: transformer_large used to do machine translation.
 
 This MindSpore Hub model uses the implementation of TransformerModel from the MindSpore model zoo on Gitee at model_zoo/official/nlp/transformer.
 
-This model has been trained on wmt-ende using the code published on Gitee. This model support dynamic input shape depanding on the input sequence length, max sequence length is 128. 
+This model support dynamic input shape depanding on the input sequence length, max sequence length is 128. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/nlp/transformer/README.md).
 
 All Parameters in the module are trainable.
 
-## Usage
-
-Refer to the readme description and code of modelzoo for specific usage:
-https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/transformer
  
 ## Citation
 Paper: Ashish Vaswani, Noam Shazeer, Niki Parmar, JakobUszkoreit, Llion Jones, Aidan N Gomez, Ł ukaszKaiser, and Illia Polosukhin. 2017. Attention is all you need. In NIPS 2017, pages 5998–6008.
