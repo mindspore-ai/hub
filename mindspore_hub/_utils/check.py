@@ -35,9 +35,8 @@ class ValidMarkdown:
     """
     def __init__(self, filename):
         self.filename = filename
-        self.required_user_fields = ['backbone-name', 'module-type', 'fine-tunable', 'input-shape',
-                                     'model-version', 'train-dataset', 'author', 'update-time',
-                                     'repo-link', 'user-id', 'used-for', 'infer-backend',
+        self.required_user_fields = ['backbone-name', 'module-type', 'fine-tunable', 'input-shape', 'model-version',
+                                     'author', 'update-time', 'repo-link', 'user-id', 'used-for', 'infer-backend',
                                      'mindspore-version', 'license', 'summary']
         self.optional_backend_fields = 'train-backend'
         self.optional_image_fields = ['featured-image']
@@ -45,8 +44,7 @@ class ValidMarkdown:
         self.optional_allow_cache_ckpt_field = 'allow-cache-ckpt'
 
         self.valid_module_type = ['audio', 'cv', 'nlp', 'recommend', 'other']
-        self.valid_train_dataset = ['imagenet', 'coco', 'cifar10', 'cifar100', 'WMT', 'zh-wiki',
-                                    'Gigaword corpus', 'captcha 0.1.1', 'criteo', 'voc2007', 'cn-wiki',
+        self.valid_train_dataset = ['cifar10', 'cifar100', 'zh-wiki', 'Gigaword corpus', 'captcha 0.1.1', 'cn-wiki',
                                     'openimage', 'Oxford-IIIT Pet', 'mnist']
         self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir', 'mslite']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
@@ -160,7 +158,8 @@ class ValidMarkdown:
                 raise TypeError("`input-shape` must be `list` of `int`, but got {}".format(header['input-shape']))
 
         self._validate_repo_link(header['repo-link'])
-        self._validate_train_dataset(header['train-dataset'])
+        if header.get('train-dataset', None):
+            self._validate_train_dataset(header['train-dataset'])
         self._validate_used_for(header['used-for'])
         self._validate_backend(header['infer-backend'])
         self._validate_module_type(header['module-type'])

@@ -39,8 +39,9 @@ def auto_rename(source_file_path, save_path, md_path):
     if os.path.isfile(source_file_path):
         # Create new file name
         file_format = os.path.splitext(source_file_path)[-1]
-        name_list = [info_dict['backbone-name'], info_dict['train-backend'], info_dict['mindspore-version'],
-                     info_dict['train-dataset']]
+        name_list = [info_dict['backbone-name'], info_dict['train-backend'], info_dict['mindspore-version']]
+        if info_dict.get('train-dataset', None):
+            name_list.append(info_dict['train-dataset'])
         now_time = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
         name_list.append(now_time)
         new_file_name = '_'.join([str(x) for x in name_list]) + file_format

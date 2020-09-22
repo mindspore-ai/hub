@@ -14,8 +14,6 @@ input-shape: [3, 300, 300]
 
 model-version: 1.0
 
-train-dataset: coco
-
 mAP: 0.241
 
 
