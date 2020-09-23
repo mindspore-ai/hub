@@ -34,9 +34,10 @@ infer-backend: ascend
 
 mindspore-version: 1.0
 
-
 license: Apache2.0
-summary: resnet50_thor used to classify 1000 classes of imagenet2012
+
+summary: resnet50_thor for image classification
+
 ---
 
 
@@ -44,9 +45,7 @@ summary: resnet50_thor used to classify 1000 classes of imagenet2012
 
 This MindSpore Hub model uses the implementation of resnet50_thor from the MindSpore model zoo on Gitee at model_zoo/official/cv/resnet_thor.
 
-This model has been trained on imagenet2012 using the code published on Gitee.
-
-All Parameters in the module are trainable.
+More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/resnet_thor/README.md).
 
 
 ## Citation
