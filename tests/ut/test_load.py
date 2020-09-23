@@ -21,8 +21,8 @@ class TestLoad:
     """Test load function."""
     def test_load(self):
         """Test normal cases."""
-        names = ('mindspore/ascend/0.7/googlenet_v1_cifar10',
-                 'https://www.mindspore.cn/resources/hub/mindspore/ascend/0.7/googlenet_v1_cifar10')
+        names = ('mindspore/ascend/0.7/lenet_v1_mnist',
+                 'https://www.mindspore.cn/resources/hub/mindspore/ascend/0.7/lenet_v1_mnist')
         pretraineds = (True, False)
         force_reloads = (True, False)
         for name in names:
