@@ -77,7 +77,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/ascend/0.7/mobilenetv2_v1.0_openimage"
+model = "mindspore/ascend/1.0/mobilenetv2_v1.0_openimage"
 
 network = mshub.load(model, num_classes=601, include_top=True, activation="Sigmoid")
 network.set_train(False)
