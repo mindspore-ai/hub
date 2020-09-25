@@ -56,24 +56,28 @@ All Parameters in the module are trainable.
 ```python
 import mindspore_hub as mshub
 import mindspore
+import mindspore.common.dtype as mstype
 import mindspore.dataset.engine.datasets as de
+import mindspore.dataset.transforms.c_transforms as C
 from mindspore import context, Tensor, nn
 from mindspore.train.model import Model
+from model_zoo.official.nlp.tinybert.src.dataset import create_tinybert_dataset
 
 context.set_context(mode=context.GRAPH_MODE, device_target="Ascend", device_id=0)
 model = "mindspore/ascend/1.0/tinybert_v1.0_cn-wiki"
 network = mshub.load(model, is_training=False)
 network.set_train(False)
+# data dir can be glue datset dir
+dataset = create_tinybert_dataset('td', data_dir=data_dir)
 
-columns_list=["input_ids", "input_mask", "segment_ids", "masked_lm_positions"]
-# data_files can be cn-wiki tfrecord
-ds = de.TFRecordDataset(data_files, None, columns_list=["input_ids", "input_mask", "segment_ids"])
-for data in ds.create_dict_iterator():
+columns_list = ["input_ids", "input_mask", "segment_ids", "label_ids"]
+for data in dataset.create_dict_iterator():
     input_data = []
     for i in columns_list:
-        input_data.append(Tensor(data[i]))
-    input_ids, input_mask, segment_ids = input_data
-    out = network(input_ids, input_mask, segment_ids)
+        input_data.append(data[i])
+    input_ids, input_mask, token_type_id, label_ids = input_data
+    logits = network(input_ids, token_type_id, input_mask)
+    print("net output: ", logits)
 # For more downstream tasks, please refer to https://gitee.com/mindspore/mindspore/tree/v1.0/model_zoo/official/nlp/tinybert
 ```
 

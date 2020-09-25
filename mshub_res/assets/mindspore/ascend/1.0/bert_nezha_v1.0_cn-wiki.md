@@ -59,6 +59,7 @@ import mindspore
 import mindspore.dataset.engine.datasets as de
 from mindspore import context, Tensor
 from mindspore.common import dtype as mstype
+from mindspore.ops import operations as P
 from model_zoo.official.nlp.bert.src.bert_model import BertConfig
 from model_zoo.official.nlp.bert.src import GetMaskedLMOutput
 
@@ -91,15 +92,22 @@ class MLM(nn.Cell):
         network.set_train(False)
         self.bert = network
         self.cls1 = GetMaskedLMOutput(config)
+        self.cast = P.Cast()
+        self.argmax = P.Argmax(axis=-1, output_type=mstype.int32)
 
     def construct(self, input_ids, input_mask, token_type_id, masked_pos):
+        input_ids = self.cast(input_ids, mstype.int32)
+        input_mask = self.cast(input_mask, mstype.int32)
+        token_type_id = self.cast(token_type_id, mstype.int32)
+        masked_pos = self.cast(masked_pos, mstype.int32)
         sequence_output, _, embedding_table = self.bert(input_ids, token_type_id, input_mask)
         prediction_scores = self.cls1(sequence_output, embedding_table, masked_pos)
-        return prediction_scores
+        index = self.argmax(prediction_scores)
+        return index
 
 columns_list=["input_ids", "input_mask", "segment_ids", "masked_lm_positions"]
 # data_files can be cn-wiki tfrecord
-ds = de.TFRecordDataset(data_files, None, columns_list=["input_ids", "input_mask", "segment_ids", "masked_lm_positions"])
+ds = de.TFRecordDataset(data_files, None, columns_list=columns_list)
 mlm_net = MLM(bert_nezha_cfg)
 for data in ds.create_dict_iterator():
     input_data = []
@@ -107,6 +115,7 @@ for data in ds.create_dict_iterator():
         input_data.append(Tensor(data[i]))
     input_ids, input_mask, segment_ids, masked_lm_positions = input_data
     out = mlm_net(input_ids, input_mask, segment_ids, masked_lm_positions)
+    print("net output: ", out)
 # For more downstream tasks, please refer to https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/bert
 ```
 
