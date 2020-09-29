@@ -40,11 +40,11 @@ asset:
   -
     file-format: ckpt
     asset-link: https://download.mindspore.cn/model_zoo/official/cv/resnet/resnet50_v1.5_ascend_0.3.0_cifar10_official_classification_20200718/resnet50.ckpt
-    asset-sha256: 0fc976f5a3da2c15195e77023657d7d5f8635e23d6def443380c750e3d99247f
+    asset-sha256: 242da26be495f09ac8571811ba163ca22cda86025e800f1c04c4cddeaa3fa55b
   -
     file-format: air
     asset-link: https://download.mindspore.cn/model_zoo/official/cv/resnet/resnet50_v1.5_ascend_0.3.0_cifar10_official_classification_20200718/resnet50.geir
-    asset-sha256: 1849a8a78e9182d32567ea4fef1834ac765ce537ca6de3b1ec822efd6fb9b10b
+    asset-sha256: b06031e2970316597f4f3c4f89ccfd859b9ef665fd21e001a5e8d46a886dbf67
 
 license: Apache2.0
 summary: resnet50 used to classify 10 classes of cifar10
