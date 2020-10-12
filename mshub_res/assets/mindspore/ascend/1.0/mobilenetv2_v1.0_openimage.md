@@ -34,6 +34,8 @@ infer-backend: ascend
 
 mindspore-version: 1.0
 
+mindspore-lite: true
+
 asset:
   -
     file-format: ckpt
@@ -129,31 +131,47 @@ network.set_train(False)
    Convert the image data to be detected into the Tensor format of the MindSpore model.
 
      ```cpp
-     // Convert the Bitmap image passed in from the JAVA layer to Mat for OpenCV processing
-     BitmapToMat(env, srcBitmap, matImageSrc);
-     // Processing such as zooming the picture size.
-     matImgPreprocessed = PreProcessImageData(matImageSrc);
+    if (!BitmapToLiteMat(env, srcBitmap, &lite_mat_bgr)) {
+     MS_PRINT("BitmapToLiteMat error");
+     return NULL;
+    }
+    if (!PreProcessImageData(lite_mat_bgr, &lite_norm_mat_cut)) {
+     MS_PRINT("PreProcessImageData error");
+     return NULL;
+    }
 
-     ImgDims inputDims;
-     inputDims.channel = matImgPreprocessed.channels();
-     inputDims.width = matImgPreprocessed.cols;
-     inputDims.height = matImgPreprocessed.rows;
-     float *dataHWC = new float[inputDims.channel * inputDims.width * inputDims.height]
+    ImgDims inputDims;
+    inputDims.channel = lite_norm_mat_cut.channel_;
+    inputDims.width = lite_norm_mat_cut.width_;
+    inputDims.height = lite_norm_mat_cut.height_;
 
-     // Copy the image data to be detected to the dataHWC array.
-     // The dataHWC[image_size] array here is the intermediate variable of the input MindSpore model tensor.
-     float *ptrTmp = reinterpret_cast<float *>(matImgPreprocessed.data);
-     for(int i = 0; i < inputDims.channel * inputDims.width * inputDims.height; i++){
-        dataHWC[i] = ptrTmp[i];
-     }
+    // Get the mindsore inference environment which created in loadModel().
+    void **labelEnv = reinterpret_cast<void **>(netEnv);
+    if (labelEnv == nullptr) {
+     MS_PRINT("MindSpore error, labelEnv is a nullptr.");
+     return NULL;
+    }
+    MSNetWork *labelNet = static_cast<MSNetWork *>(*labelEnv);
 
-     // Assign dataHWC[image_size] to the input tensor variable.
-     auto msInputs = mSession->GetInputs();
-     auto inTensor = msInputs.front();
-     memcpy(inTensor->MutableData(), dataHWC,
+    auto mSession = labelNet->session();
+    if (mSession == nullptr) {
+     MS_PRINT("MindSpore error, Session is a nullptr.");
+     return NULL;
+    }
+    MS_PRINT("MindSpore get session.");
+
+    auto msInputs = mSession->GetInputs();
+    if (msInputs.size() == 0) {
+     MS_PRINT("MindSpore error, msInputs.size() equals 0.");
+     return NULL;
+    }
+    auto inTensor = msInputs.front();
+
+    float *dataHWC = reinterpret_cast<float *>(lite_norm_mat_cut.data_ptr_);
+    // Copy dataHWC to the model input tensor.
+    memcpy(inTensor->MutableData(), dataHWC,
          inputDims.channel * inputDims.width * inputDims.height * sizeof(float));
-     delete[] (dataHWC);
-     ```
+    ```
 
 3. Perform inference on the input tensor based on the model, obtain the output tensor, and perform post-processing.
 
@@ -179,40 +197,59 @@ network.set_train(False)
    - Perform post-processing of the output data.
 
      ```cpp
-     std::string ProcessRunnetResult(std::unordered_map<std::string,
-             mindspore::tensor::MSTensor *> msOutputs, int runnetRet) {
+     std::string ProcessRunnetResult(const int RET_CATEGORY_SUM, const char *const labels_name_map[],
+              std::unordered_map<std::string, mindspore::tensor::MSTensor *> msOutputs) {
+      // Get the branch of the model output.
+      // Use iterators to get map elements.
+      std::unordered_map<std::string, mindspore::tensor::MSTensor *>::iterator iter;
+      iter = msOutputs.begin();
 
-       std::unordered_map<std::string, mindspore::tensor::MSTensor *>::iterator iter;
-       iter = msOutputs.begin();
+      // The mobilenetv2.ms model output just one branch.
+      auto outputTensor = iter->second;
 
-       // The mobilenetv2.ms model output just one branch.
-       auto outputTensor = iter->second;
-       int tensorNum = outputTensor->ElementsNum();
-       MS_PRINT("Number of tensor elements:%d", tensorNum);
+      int tensorNum = outputTensor->ElementsNum();
+      MS_PRINT("Number of tensor elements:%d", tensorNum);
 
-       // Get a pointer to the first score.
-       float *temp_scores = static_cast<float * >(outputTensor->MutableData());
+      // Get a pointer to the first score.
+      float *temp_scores = static_cast<float *>(outputTensor->MutableData());
+      // RescaleProbs(temp_scores);
+      float scores[RET_CATEGORY_SUM];
+      for (int i = 0; i < RET_CATEGORY_SUM; ++i) {
+       scores[i] = temp_scores[i];
+      }
 
-       float scores[RET_CATEGORY_SUM];
-       for (int i = 0; i < RET_CATEGORY_SUM; ++i) {
-         if (temp_scores[i] > 0.5) {
-           MS_PRINT("MindSpore scores[%d] : [%f]", i, temp_scores[i]);
-         }
-         scores[i] = temp_scores[i];
-       }
-
-       // Score for each category.
-       // Converted to text information that needs to be displayed in the APP.
-       std::string categoryScore = "";
-       for (int i = 0; i < RET_CATEGORY_SUM; ++i) {
-         categoryScore += labels_name_map[i];
-         categoryScore += ":";
-         std::string score_str = std::to_string(scores[i]);
-         categoryScore += score_str;
-         categoryScore += ";";
-       }
-       return categoryScore;
+      float unifiedThre = 0.5;
+      float probMax = 1.0;
+      for (size_t i = 0; i < RET_CATEGORY_SUM; ++i) {
+       float threshold = g_thres_map[i];
+       float tmpProb = scores[i];
+       if (tmpProb < threshold) {
+        tmpProb = tmpProb / threshold * unifiedThre;
+       } else {
+        tmpProb = (tmpProb - threshold) / (probMax - threshold) * unifiedThre + unifiedThre;
+      }
+       scores[i] = tmpProb;
      }
+
+      for (int i = 0; i < RET_CATEGORY_SUM; ++i) {
+      if (scores[i] > 0.5) {
+          MS_PRINT("MindSpore scores[%d] : [%f]", i, scores[i]);
+       }
+      }
+
+      // Score for each category.
+      // Converted to text information that needs to be displayed in the APP.
+      std::string categoryScore = "";
+      for (int i = 0; i < RET_CATEGORY_SUM; ++i) {
+       categoryScore += labels_name_map[i];
+       categoryScore += ":";
+       std::string score_str = std::to_string(scores[i]);
+       categoryScore += score_str;
+       categoryScore += ";";
+      }
+        return categoryScore;
+     }
+     
      ```
 
 
