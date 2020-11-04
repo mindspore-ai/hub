@@ -76,10 +76,10 @@ Install MindSpore Hub using `pip` command. `hub` depends on the MindSpore versio
 
 ## Quickstart
 
-See the [Quick Start](https://www.mindspore.cn/tutorial/en/master/advanced_use/hub_tutorial.html) to implement model loading and fine-tuning.
+See the [Loading the Model from Hub](https://www.mindspore.cn/tutorial/training/en/master/use/load_model_for_inference_and_transfer.html#loading-the-model-from-hub) to implement model loading and fine-tuning.
 
 ## Docs
-For more information about installation guide, tutorials and APIs, please check out the [User Documentation](https://www.mindspore.cn/tutorial/en/master/advanced_use/hub_tutorial.html).
+For more information about installation guide, tutorials and APIs, please check out the [Loading the Model from Hub](https://www.mindspore.cn/tutorial/training/en/master/use/load_model_for_inference_and_transfer.html#loading-the-model-from-hub) and [Publishing Models using MindSpore Hub](https://www.mindspore.cn/tutorial/training/en/master/use/publish_model.html).
 
 ## Community
 As one part of MindSpore community, the following information in MindSpore Hub including governance, communication and contributing is consistent with the content in MindSpore community. 
