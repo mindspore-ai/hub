@@ -38,7 +38,7 @@ release = _read_file('RELEASE.md')
 
 required_package = [
     'PyYAML >= 5.3',
-    'mistune >= 0.8.4',
+    'mistune == 0.8.4',
 ]
 
 package_data = {
