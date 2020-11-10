@@ -57,7 +57,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "noah-cvlab/ascend/1.0/ghostnet_ssd_v1.0"
+model = "noah-cvlab/ascend/0.7/ghostnet_ssd_v1.0"
 network = mshub.load(model)
 network.set_train(False)
 
