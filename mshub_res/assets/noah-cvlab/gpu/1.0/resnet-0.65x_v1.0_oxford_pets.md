@@ -1,4 +1,4 @@
-# ResNet50 Adv Quant
+# ResNet50 Adv Pruning
 
 ---
 
@@ -22,7 +22,7 @@ author: Noah CVLab
 
 update-time: 2020-09-08
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/resnet50_adv_pruning
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/resnet50_adv_pruning>
 
 user-id: noah-cvlab
 
@@ -34,11 +34,16 @@ infer-backend: gpu
 
 mindspore-version: 1.0
 
+mindspore-lite: true
+
 asset:
-  -
-    file-format: ckpt
-    asset-link: https://download.mindspore.cn/model_zoo/research/cv/resnet50_adv_pruning/resnet50-pet-0.65x-80.24.ckpt
-    asset-sha256: b41eb489a62c8c12ff88b7f028bc4a943f29f8e25a0a9ec69b9ed070681340cc
+
+- file-format: ckpt
+  asset-link: <https://download.mindspore.cn/model_zoo/research/cv/resnet50_adv_pruning/resnet50-pet-0.65x-80.24.ckpt>
+  asset-sha256: b41eb489a62c8c12ff88b7f028bc4a943f29f8e25a0a9ec69b9ed070681340cc
+- file-format: mslite
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/adversarial_pruning_lite/adversarial_pruning.ms>
+  asset-sha256: 5c279f018a7e3d3b8cb2ec90717513dae3d4519a8de03447851d68b95ae2eca7
 
 license: Apache2.0
 
@@ -46,11 +51,9 @@ summary: ResNet-0.65x derived by adversarial pruning method, and is used to clas
 
 ---
 
-
 ## Introduction
 
 This MindSpore Hub model uses the implementation of Adversarial Pruning on ResNet from the MindSpore model zoo on Gitee at model_zoo/official/cv/adversarial_pruning.
-
 
 ## Usage
 
@@ -71,4 +74,4 @@ network.set_train(False)
 
 ## Citation
 
-1. Yehui Tang, Yunhe Wang, Yixing Xu, Dacheng Tao, Chunjing Xu, Chao Xu, Chang Xu. Scientific Control for Reliable Neural Network Pruning. Submitted to NeurIPS 2020.
+1. Yehui Tang, Yunhe Wang, Yixing Xu, Dacheng Tao, Chunjing Xu, Chao Xu, Chang Xu. Scientific Control for Reliable Neural Network Pruning. Accepted by NeurIPS 2020.
