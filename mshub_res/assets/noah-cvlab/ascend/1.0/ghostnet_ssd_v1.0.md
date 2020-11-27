@@ -1,57 +1,50 @@
-# GhostNet_INT8
+# GhostNet-SSD
 
 ---
 
-model-name: GhostNet_int8
+model-name: GhostNet_SSD
 
-backbone-name: GhostNet
+backbone-name: ghostnet1.3x
 
-module-type: cv-classification
+module-type: cv-object_detection
 
 fine-tunable: True
 
-input-shape: [224, 224, 3]
+input-shape: [3, 300, 300]
 
 model-version: 1.0
 
-train-dataset: Oxford-IIIT Pet
-
-accuracy: 0.8245
+mAP: 0.241
 
 author: Noah CVLab
 
 update-time: 2020-09-08
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/ghostnet_quant>
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/ssd_ghostnet>
 
 user-id: noah-cvlab
 
 used-for: inference
 
-train-backend: gpu
+train-backend: ascend
 
-infer-backend: gpu
+infer-backend: ascend
 
 mindspore-version: 1.0
 
 mindspore-lite: true
 
-asset:
-
-- file-format: ckpt
-  asset-link: <https://download.mindspore.cn/model_zoo/research/cv/ghostnet_quant/ghostnet_1x_pets_int8.ckpt>
-  asset-sha256: e10180c9cfecb35cb261bc8668f2632990630570f189b108495168d23e935922
-
 license: Apache2.0
-summary: GhostNet_INT8 used to classify 37 classes of Oxford-IIIT Pet
+
+summary: ssd_ghostnet is ssd model with ghostnet backbone
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of GhostNet_INT8 from the MindSpore model zoo on Gitee at model_zoo/official/cv/ghostnet_int8.
+This MindSpore Hub model uses the implementation of ssd_ghostnet from the MindSpore model zoo on Gitee at model_zoo/official/cv/ssd_ghostnet.
 
-Quantization refers to techniques for performing computations and storing tensors at lower bitwidths than floating point precision. For 8bit quantization, we quantize the weights into [-128,127] and the activations into [0,255]. We finetune the model a few epochs after post-quantization to achieve better performance.
+All Parameters in the module are trainable.
 
 ## Usage
 
@@ -60,12 +53,13 @@ import mindspore_hub as mshub
 from mindspore import context
 
 context.set_context(mode=context.GRAPH_MODE,
-                    device_target="GPU",
+                    device_target="Ascend",
                     device_id=0)
 
-model = "noah-cvlab/gpu/1.0/ghostnet_int8_v1.0_oxford_pets"
-network = mshub.load(model, num_classes=37)
+model = "noah-cvlab/ascend/1.0/ghostnet_ssd_v1.0"
+network = mshub.load(model)
 network.set_train(False)
+
 ```
 
 ## Lite Inference  Usage
@@ -99,7 +93,7 @@ network.set_train(False)
     - Load the model file and build a computational graph for inference.
 
     ```cpp
-    void MSNetWork::CreateSessionMS(char* modelBuffer, size_t bufferLen, std::string name, mindspore::lite::Context* ctx)
+    void MSNetWork::CreateSessionMS(char* modelBuffer, size_t bufferLen, std::string name,    mindspore::lite::Context* ctx)
     {
       CreateSession(modelBuffer, bufferLen, ctx);
       session = mindspore::session::LiteSession::CreateSession(ctx);
@@ -113,14 +107,14 @@ network.set_train(False)
     - Convert the image data to be detected into the Tensor format of the MindSpore model.
 
     ```cpp
-    float *width;
-    float *hight;
-    if (!BitmapToLiteMat(env, srcBitmap, &lite_mat_bgr, width, hight)) {
-      MS_PRINT("BitmapToLiteMat error");
+    if (!ObjectBitmapToLiteMat(env, srcBitmap, &lite_mat_bgr)) {
+      MS_PRINT("ObjectBitmapToLiteMat error");
       return NULL;
     }
-    if (!PreProcessImageData(lite_mat_bgr, &lite_norm_mat_cut, width, hight)) {
-      MS_PRINT("PreProcessImageData error");
+    int srcImageWidth = lite_mat_bgr.width_;
+    int srdImageHeight = lite_mat_bgr.height;
+    if (!ObjectPreProcessImageData(lite_mat_bgr, &lite_norm_mat_cut)) {
+      MS_PRINT("ObjectPreProcessImageData error");
       return NULL;
     }
 
@@ -180,15 +174,14 @@ network.set_train(False)
     - Perform post-processing of the output data.
 
     ```cpp
-    // `RET_CATEGORY_SUM` is the number of labels, and `labels_name_map` is the name correspondingly.
-    // Give your own `RET_CATEGORY_SUM` and `labels_name_map` needed in the project.
-    std::string retStr = ProcessRunnetResult(RET_CATEGORY_SUM, labels_name_map, msOutputs);
+    std::string retStr = ProcessRunnetResult(msOutputs, srcImageWidth, srcImageHeight);
     ```
 
 4. The process of image and output data can refer to methods showing bellow.
 
     ```cpp
-    bool BitmapToLiteMat(JNIEnv *env, const jobject &srcBitmap, LiteMat *lite_mat, float *width, float *hight) {
+
+    bool ObjectBitmapToLiteMat(JNIEnv *env, const jobject &srcBitmap, LiteMat *lite_mat) {
       bool ret = false;
       AndroidBitmapInfo info;
       void *pixels = nullptr;
@@ -198,12 +191,11 @@ network.set_train(False)
         MS_PRINT("Image Err, Request RGBA");
         return false;
       }
-      *width = info.width;
-      *hight = info.hight;
       AndroidBitmap_lockPixels(env, srcBitmap, &pixels);
-      if (info.stride == info.width*4) {
+      if (info.stride == info.width * 4) {
         ret = InitFromPixel(reinterpret_cast<const unsigned char *>(pixels),
-                            LPixelType::RGBA2RGB, LDataType::UINT8, info.width, info.height, lite_mat_bgr);
+                            LPixelType::RGBA2RGB, LDataType::UINT8,
+                            info.width, info.height, lite_mat_bgr);
         if (!ret) {
           MS_PRINT("Init From RGBA error");
         }
@@ -217,7 +209,8 @@ network.set_train(False)
           data += info.stride;
         }
         ret = InitFromPixel(reinterpret_cast<const unsigned char *>(pixels_ptr),
-                            LPixelType::RGBA2RGB, LDataType::UINT8, info.width, info.height, lite_mat_bgr);
+                            LPixelType::RGBA2RGB, LDataType::UINT8,
+                            info.width, info.height, lite_mat_bgr);
         if (!ret) {
           MS_PRINT("Init From RGBA error");
         }
@@ -227,75 +220,54 @@ network.set_train(False)
       return ret;
     }
 
-    bool PreProcessImageData(const LiteMat &lite_mat_bgr, LiteMat *lite_norm_mat_ptr, float *width, float *hight) {
+    bool ObjectPreProcessImageData(const LiteMat &lite_mat_bgr, LiteMat *lite_norm_mat_ptr) {
       bool ret = false;
       LiteMat lite_mat_resize;
-      LiteMat &lite_norm_mat = *lite_norm_mat_ptr;
-      // scale the image to hava a length of 256.
-      float length = (*width) >= (*hight) ? *width : *hight;
-      ret = ResizeBilinear(lite_mat_bgr, lite_mat_resize, 256 * (*width) / length, 256 * (*hight) / length);
-      if (!ret) {
-        MS_PRINT("ResizeBilinear error");
-        return false;
-      }
-      LiteMat lite_mat_crop;
-      // crop the image to 224 * 224.
-      ret = Crop(lite_mat_resize, lite_mat_crop,0, 0, 224, 224);
+      LiteMat &lite_norm_mat_cut = *lite_norm_mat_ptr;
+      ret = ResizeBilinear(lite_mat_bgr, lite_mat_resize, 300, 300);
       if (!ret) {
         MS_PRINT("ResizeBilinear error");
         return false;
       }
       LiteMat lite_mat_convert_float;
-      ret = ConvertTo(lite_mat_crop, lite_mat_convert_float, 1.0 / 255.0);
+      ret = ConvertTo(lite_mat_resize, lite_mat_convert_float, 1.0 / 255.0);
       if (!ret) {
         MS_PRINT("ConvertTo error");
         return false;
       }
 
-      /*
-      * The mean data and variance data shown below is just for reference.
-      * You are encouraged to caculate it from the dataset.
-      */
       std::vector<float> means = {0.485, 0.456, 0.406};
       std::vector<float> stds = {0.229, 0.224, 0.225};
-      SubStractMeanNormalize(lite_mat_convert_float, lite_norm_mat, means, stds);
+      SubStractMeanNormalize(lite_mat_convert_float, lite_norm_mat_cut, means, stds);
       return true;
     }
 
-    std::string ProcessRunnetResult(const int RET_CATEGORY_SUM, const char *const labels_name_map[],
-                                    std::unordered_map<std::string, mindspore::tensor::MSTensor *> msOutputs) {
-      // Get the branch of the model output.
-      // Use iterators to get map elements.
+    std::string ProcessRunnetResult(std::unordered_map<std::string, mindspore::tensor::MSTensor *> msOutputs,
+                                    int srcImageWidth, int srcImageHeight) {
       std::unordered_map<std::string, mindspore::tensor::MSTensor *>::iterator iter;
       iter = msOutputs.begin();
+      auto branch2_string = iter->first;
+      auto branch2_tensor = iter->second;
 
-      // The ghostnet_int8.ms model output just one branch.
-      auto outputTensor = iter->second;
+      ++iter;
+      auto branch1_string = iter->first;
+      auto branch1_tensor = iter->second;
+      MS_PRINT("%s %s", branch1_string.c_str(), branch2_string.c_str());
 
-      int tensorNum = outputTensor->ElementsNum();
-      MS_PRINT("Number of tensor elements:%d", tensorNum);
+      float *tmpscores2 = reinterpret_cast<float *>(branch1_tensor->MutableData());
+      float *tmpdata = reinterpret_cast<float *>(branch2_tensor->MutableData());
 
-      // Get a pointer to the first score.
-      float *scores = static_cast<float *>(outputTensor->MutableData());
+      // Using ssd model util to process model branch outputs.
+      SSDModelUtil ssdUtil(srcImageWidth, srcImageHeight);
 
-      // Output the category with the highest probability and convert to text information that needs to be displayed in the APP.
-      std::string categoryScore = "";
-      float max_score = 0;
-      int idx = 0;
-      for (int i = 0; i < RET_CATEGORY_SUM; ++i) {
-        if (scores[i] > max_score) {
-          max_score = scores[i];
-          idx = i;
-        }
-        categoryScore += labels_name_map[i];
-        categoryScore += ":";
-        std::string score_str = std::to_string(scores[idx]);
-        categoryScore += score_str;
-        categoryScore += ";";
-      return categoryScore;
+      std::string retStr = ssdUtil.getDecodeResult(tmpscores2, tmpdata);
+      MS_PRINT("retStr %s", retStr.c_str());
+
+      return retStr;
     }
     ```
 
 ## Citation
 
-1. Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020, pp. 1580-1589
+1. [Paper](https://arxiv.org/abs/1512.02325):   Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed, Cheng-Yang Fu, Alexander C. Berg.European Conference on Computer Vision (ECCV), 2016 (In press).
+2. [Paper](https://openaccess.thecvf.com/content_CVPR_2020/html/Han_GhostNet_More_Features_From_Cheap_Operations_CVPR_2020_paper.html):   Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020, pp. 1580-1589.
