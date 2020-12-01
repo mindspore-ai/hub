@@ -69,6 +69,9 @@ class ValidMarkdown:
         r"""
         Make sure the github or gitee repo exists
         """
+        if link is None:
+            return
+        link = link.strip('<>')
         if not verify_url(link):
             raise ValueError('url: ``{}`` is not trust in {}'.format(link, self.filename))
 
@@ -250,7 +253,11 @@ class ValidMarkdown:
 
             header_dict = dict(header)
             header_dict["markdown_name"] = os.path.basename(os.path.splitext(self.filename)[0])
-            header_dict["uid"] = get_repo_info_from_url(header_dict.get("repo-link")).get("uid")
+            git_info = get_repo_info_from_url(header_dict.get("repo-link"))
+            if git_info is None:
+                header_dict["uid"] = ''
+            else:
+                header_dict["uid"] = get_repo_info_from_url(header_dict.get("repo-link")).get("uid")
             asset_id = 0
             if header_dict.get("asset", None):
                 for idx in range(len(header_dict["asset"])):
