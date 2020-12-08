@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2020-09-04
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/deeplabv3
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/deeplabv3>
 
 user-id: MindSpore
 
@@ -34,9 +34,9 @@ mindspore-version: 1.0
 
 license: Apache2.0
 
-summary: DeepLabv3 used to image semantic segmentation.
----
+summary: DeepLabv3 used to image semantic segmentation
 
+---
 
 ## Introduction
 
@@ -45,6 +45,7 @@ This MindSpore Hub model uses the implementation of DeepLabv3 from the MindSpore
 All Parameters in the module are trainable.
 
 ## Usage
+
 ```python
 import mindspore_hub as mshub
 model = "mindspore/ascend/1.0/deeplabv3_v1"
@@ -52,8 +53,8 @@ model = "mindspore/ascend/1.0/deeplabv3_v1"
 network = mshub.load(model, pretrained=False, num_classes=21)
 #...
 ```
-Refer to the readme description of modelzoo for specific usage: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/deeplabv3 
 
+Refer to the readme description of modelzoo for specific usage: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/deeplabv3>
 
 ## Citation
 
