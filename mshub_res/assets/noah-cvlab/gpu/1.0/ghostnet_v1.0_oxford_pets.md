@@ -41,6 +41,9 @@ asset:
 - file-format: ckpt
   asset-link: <https://download.mindspore.cn/model_zoo/research/cv/ghostnet/ghostnet_1x_pets.ckpt>
   asset-sha256: 722e13be6cd6186dddcd68d5c0a50776d9a8ad8e79db3870556f68d4d2f179e4
+- file-format: mslite
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/ghostnet_lite/ghostnet.ms>
+  asset-sha256: 1cff3c6586fa840eab0223634df8ade44226ae8b3245052b90e1437c68bf1380
 
 license: Apache2.0
 

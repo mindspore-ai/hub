@@ -42,6 +42,10 @@ asset:
   asset-link: <https://download.mindspore.cn/model_zoo/research/cv/ghostnet_quant/ghostnet_1x_pets_int8.ckpt>
   asset-sha256: e10180c9cfecb35cb261bc8668f2632990630570f189b108495168d23e935922
 
+- file-format: mslite
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/ghostnet_lite/ghostnet_int8.ms>
+  asset-sha256: 2abb226473d98605c4daca54758ec8df9e76525d02a76b5bcee4e1d14bb3ff32
+
 license: Apache2.0
 summary: GhostNet_INT8 used to classify 37 classes of Oxford-IIIT Pet
 
