@@ -34,6 +34,12 @@ mindspore-version: 1.0
 
 mindspore-lite: true
 
+asset:
+
+- file-format: mslite
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/deeplabv3_lite/deeplabv3.ms>
+  asset-sha256: 1158a5eadfa6bb729500f7de89c33b1e264f4514a70780055afa1355541b5766
+
 license: Apache2.0
 
 summary: DeepLabv3 used to image semantic segmentation
@@ -42,7 +48,7 @@ summary: DeepLabv3 used to image semantic segmentation
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of DeepLabv3 from the MindSpore model zoo on Gitee at model_zoo/official/cv/deeplabv3.
+This MindSpore Hub model uses the implementation of DeepLabv3 from the MindSpore model zoo on Gitee at model_zoo/official/cv/deeplabv3, and is trained to complete image segmentation tasks.
 
 All Parameters in the module are trainable.
 

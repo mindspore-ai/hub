@@ -34,6 +34,12 @@ mindspore-version: 1.0
 
 mindspore-lite: true
 
+asset:
+
+- file-format: mslite
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/ssd_ghostnet_lite/ssd.ms>
+  asset-sha256: f7663907e1006fe1458d702c05177ff3107c4b4ee94d4bfbc3d753e359443660
+
 license: Apache2.0
 
 summary: ssd_ghostnet is ssd model with ghostnet backbone

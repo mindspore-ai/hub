@@ -42,6 +42,10 @@ asset:
   asset-link: <https://download.mindspore.cn/model_zoo/research/cv/ghostnet/ghostnet600M_pets.ckpt>
   asset-sha256: a37ea724eed747ef2f36961e1fdb0deec892643cb2b1d6826ea738539259c139
 
+- file-format: mslite
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/ghostnet_lite/ghostnet600.ms>
+  asset-sha256: 6503b41666fd871532cdf558e9a3fe25f1d5dc0236dd116e4738c847a46e813c
+
 license: Apache2.0
 
 summary: GhostNet-600 used to classify 37 classes of Oxford-IIIT Pet
