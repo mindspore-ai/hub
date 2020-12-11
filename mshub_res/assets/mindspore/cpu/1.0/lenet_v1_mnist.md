@@ -18,13 +18,11 @@ train-dataset: mnist
 
 accuracy: 0.986
 
-
-
 author: MindSpore team
 
 update-time: 2020-10-29
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/lenet
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/lenet>
 
 user-id: MindSpore
 
@@ -37,15 +35,17 @@ infer-backend: cpu
 mindspore-version: 1.0
 
 asset:
-  -
+
+-
     file-format: ckpt  
-    asset-link: https://download.mindspore.cn/model_zoo/official/cv/lenet/lenet_cpu_1.0.0_mnist_official_classification_20201029/lenet.ckpt
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/lenet/lenet_cpu_1.0.0_mnist_official_classification_20201029/lenet.ckpt>
     asset-sha256: b0771234226405a68f1c9ce3ecbffb1ee371dd3cb13ae85b7a26870031c05ec8
 
 license: Apache2.0
-summary: LeNet used to classify the 10 classes of mnist.
----
 
+summary: LeNet used to classify the 10 classes of mnist.
+
+---
 
 ## Introduction
 
@@ -69,7 +69,7 @@ context.set_context(mode=context.GRAPH_MODE, device_target="CPU")
 
 model = "mindspore/cpu/1.0/lenet_v1_mnist"
 # initialize the number of classes based on the pre-trained model
-network = mshub.load(model, num_classes=10)
+network = mshub.load(model)
 network.set_train(False)
 
 # Use as the same as MindSpore Model to inference.
