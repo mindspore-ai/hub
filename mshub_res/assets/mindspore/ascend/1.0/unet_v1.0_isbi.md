@@ -1,4 +1,4 @@
-# UNET2D 
+# UNET2D
 
 ---
 
@@ -16,13 +16,11 @@ model-version: 1
 
 dice_coeff: 0.908
 
-
-
 author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/unet
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/unet>
 
 user-id: MindSpore
 
@@ -36,9 +34,9 @@ mindspore-version: 1.0
 
 license: Apache2.0
 
-summary: unet used to 2D image segmentation of ISBI challenge.
----
+summary: unet used to 2D image segmentation of ISBI challenge
 
+---
 
 ## Introduction
 
@@ -51,8 +49,8 @@ All parameters in the module are trainable.
 ## Usage
 
 Refer to the readme description and code of modelzoo for specific usage:
-https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/unet/README.md
+<https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/unet/README.md>
 
 ## Citation
 
-Paper: Olaf Ronneberger, Philipp Fischer, Thomas Brox. "U-Net: Convolutional Networks for Biomedical Image Segmentation." *	conditionally accepted at MICCAI 2015*. 2015.
+Paper: Olaf Ronneberger, Philipp Fischer, Thomas Brox. "U-Net: Convolutional Networks for Biomedical Image Segmentation." *conditionally accepted at MICCAI 2015*. 2015.

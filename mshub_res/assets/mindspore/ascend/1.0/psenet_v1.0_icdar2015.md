@@ -1,4 +1,4 @@
-# PSENET 
+# PSENET
 
 ---
 
@@ -16,13 +16,11 @@ model-version: 1
 
 hmean: 0.806
 
-
-
 author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/psenet
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/psenet>
 
 user-id: MindSpore
 
@@ -37,8 +35,8 @@ mindspore-version: 1.0
 license: Apache2.0
 
 summary: psenet used to cv text detection of ICDAR2015
----
 
+---
 
 ## Introduction
 
@@ -51,7 +49,7 @@ All parameters in the module are trainable.
 ## Usage
 
 Refer to the readme description and code of modelzoo for specific usage:
-https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/psenet/README.md
+<https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/psenet/README.md>
 
 ## Citation
 

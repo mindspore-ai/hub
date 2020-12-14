@@ -14,12 +14,11 @@ input-shape: [224, 224, 3]
 
 model-version: 1.0
 
-
 author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/resnext50
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/resnext50>
 
 user-id: MindSpore
 
@@ -37,13 +36,11 @@ summary: resnext50 for image classification
 
 ---
 
-
 ## Introduction
 
 This MindSpore Hub model uses the implementation of ResNeXt50 from the MindSpore model zoo on Gitee at model_zoo/official/cv/resnext50.
 
 More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/resnext50/README.md).
-
 
 ## Citation
 
