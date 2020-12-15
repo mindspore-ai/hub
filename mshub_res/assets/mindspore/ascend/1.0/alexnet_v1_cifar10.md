@@ -16,15 +16,13 @@ model-version: 1.0
 
 train-dataset: cifar10
 
-accuracy: 0.884
-
-
+accuracy: 0.881
 
 author: MindSpore team
 
-update-time: 2020-09-21
+update-time: 2020-12-15
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/alexnet
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/alexnet>
 
 user-id: MindSpore
 
@@ -34,18 +32,18 @@ train-backend: ascend
 
 infer-backend: ascend
 
-mindspore-version: 0.7
+mindspore-version: 1.0
 
 asset:
-  -
+
+-
     file-format: ckpt  
-    asset-link: https://download.mindspore.cn/model_zoo/official/cv/alexnet/alexnet_ascend_0.5.0_cifar10_official_classification_20200716/alexnet.ckpt
-    asset-sha256: 722e13be6cd6186dddcd68d5c0a50776d9a8ad8e79db3870556f68d4d2f179e4
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/alexnet/alexnet_ascend_1.0_cifar10_official_classification_20201214/alexnet.ckpt>
+    asset-sha256: 0203d68bcff7d02aaee42bd6a42b5fe1306ab8fb2a82feb1ec06d8e62284600a
 
 license: Apache2.0
 summary: AlexNet used to classify the 10 classes of cifar10.
 ---
-
 
 ## Introduction
 
@@ -69,7 +67,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/ascend/0.7/alexnet_v1_cifar10"
+model = "mindspore/ascend/1.0/alexnet_v1_cifar10"
 # initialize the number of classes based on the pre-trained model
 network = mshub.load(model, num_classes=10)
 network.set_train(False)
