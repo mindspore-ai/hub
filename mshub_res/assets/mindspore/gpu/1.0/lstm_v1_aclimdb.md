@@ -6,7 +6,7 @@ model-name: lstm
 
 backbone-name: SentimentNet
 
-module-type: nlp 
+module-type: nlp
 
 fine-tunable: True
 
@@ -16,12 +16,11 @@ model-version: 1.0
 
 accuracy: 0.82
 
-
 author: MindSpore team
 
 update-time: 2020-08-26
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/lstm
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/lstm>
 
 user-id: MindSpore
 
@@ -35,8 +34,8 @@ mindspore-version: 1.0
 
 license: Apache2.0
 summary: lstm used to classify 2 classes of aclimdb
----
 
+---
 
 ## Introduction
 

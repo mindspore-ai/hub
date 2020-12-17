@@ -18,13 +18,11 @@ train-dataset: cifar10
 
 accuracy: 0.934
 
-
-
 author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet>
 
 user-id: MindSpore
 
@@ -37,15 +35,17 @@ infer-backend: ascend
 mindspore-version: 1.0
 
 asset:
+
   -
     file-format: ckpt  
-    asset-link: https://download.mindspore.cn/model_zoo/official/cv/googlenet/googlenet_gpu_1.0_cifar10_official_classification_20200922/googlenet.ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/googlenet/googlenet_gpu_1.0_cifar10_official_classification_20200922/googlenet.ckpt>  
     asset-sha256: a08d13bbc78c3a60e075489558e01402efcc8379a54d8f0bdefa4307b41ffce3
 
 license: Apache2.0
-summary: GoogLeNet used to classify the 10 classes of cifar10.
----
 
+summary: GoogLeNet used to classify the 10 classes of cifar10.
+
+---
 
 ## Introduction
 
