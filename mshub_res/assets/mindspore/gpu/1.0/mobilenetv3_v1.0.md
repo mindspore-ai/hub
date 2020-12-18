@@ -14,12 +14,11 @@ input-shape: [224, 224, 3]
 
 model-version: 1.0
 
-
 author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/mobilenetv3
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/mobilenetv3>
 
 user-id: MindSpore
 
@@ -34,15 +33,14 @@ mindspore-version: 1.0
 license: Apache2.0
 
 summary: mobilenetv3 for image classification
----
 
+---
 
 ## Introduction
 
 This MindSpore Hub model uses the implementation of MobileNetV3 from the MindSpore model zoo on Gitee at model_zoo/official/cv/mobilenetv3.
 
-More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/mobilenetv3/README.md).
-
+More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/mobilenetv3/Readme.md).
 
 ## Citation
 
