@@ -170,7 +170,7 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
 
     md_path = _get_md_file(uid, md_name, target_path, force_reload)
     info = CellInfo(md_path)
-    basename = os.path.basename(info.repo_link)
+    basename = os.path.basename(info.repo_link).strip("<>")
     net_dir = os.path.join(target_path, basename)
 
     if force_reload or (not os.path.isdir(net_dir)):
@@ -222,7 +222,7 @@ def load_weights(network, handle=None, force_reload=True):
     md_path = _get_md_file(uid, md_name, target_path, force_reload)
     cell = CellInfo(md_path)
 
-    download_url = cell.asset[cell.asset_id]['asset-link']
+    download_url = cell.asset[cell.asset_id]['asset-link'].strip("<>")
     asset_sha256 = cell.asset[cell.asset_id]["asset-sha256"]
 
     if force_reload:
