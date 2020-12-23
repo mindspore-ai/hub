@@ -6,7 +6,7 @@ model-name: mobilenetV2
 
 backbone-name: mobilenetV2
 
-module-type: cv-scene_detection
+module-type: cv-classification
 
 fine-tunable: True
 
