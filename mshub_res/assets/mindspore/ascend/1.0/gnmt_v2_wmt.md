@@ -1,4 +1,4 @@
-# Transformer
+# GNMT
 
 ---
 
