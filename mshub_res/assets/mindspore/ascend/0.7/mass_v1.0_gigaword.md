@@ -1,4 +1,4 @@
-# MASS 
+# MASS
 
 ---
 
@@ -16,12 +16,11 @@ model-version: 1.0
 
 train-dataset: Gigaword corpus
 
-
 author: MindSpore team
 
 update-time: 2020-09-21
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/r0.7/model_zoo/official/nlp/mass
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r0.7/model_zoo/official/nlp/mass>
 
 user-id: MindSpore
 
@@ -34,9 +33,10 @@ infer-backend: ascend
 mindspore-version: 0.7
 
 asset:
-  -
+
+-
     file-format: ckpt
-    asset-link: https://download.mindspore.cn/model_zoo/official/nlp/mass/mass_ascend_0.3.0_gigaword_corpus_official_text_summarization_20200716.tar.gz
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/mass/mass_ascend_0.3.0_gigaword_corpus_official_text_summarization_20200716.tar.gz>
     asset-sha256: 1cec4ec74dcf8e182b97e97a96e0d71a3911ec1b2aa25583a5930240ef962571
 
 license: Apache2.0
@@ -63,7 +63,7 @@ from mindspore.common import dtype as mstype
 
 context.set_context(mode=context.GRAPH_MODE, device_target="Ascend", device_id=0)
 
-model = "mindspore/ascend/0.7/mass_v1.0_gigaword.md"
+model = "mindspore/ascend/0.7/mass_v1.0_gigaword"
 
 network = mshub.load(model, config="./config.json", is_training=False)
 network.set_train(False)
@@ -76,6 +76,7 @@ for data in ds.create_dict_iterator():
     source_eos_ids, source_eos_mask, target_sos_ids, target_sos_mask, target_eos_ids, target_eos_mask = input_data
     out = network(source_eos_ids, source_eos_mask, target_sos_ids, target_sos_mask, target_eos_ids, target_eos_mask)
 ```
- 
+
 ## Citation
+
 Paper: Song, Kaitao, Xu Tan, Tao Qin, Jianfeng Lu and Tie-Yan Liu. “MASS: Masked Sequence to Sequence Pre-training for Language Generation.” ICML (2019).
