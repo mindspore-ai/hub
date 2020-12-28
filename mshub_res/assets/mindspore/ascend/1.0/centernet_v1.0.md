@@ -16,7 +16,7 @@ model-version: 1
 
 author: MindSpore team
 
-update-time: 2020-12.21
+update-time: 2020-12-21
 
 repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/centernet>
 
