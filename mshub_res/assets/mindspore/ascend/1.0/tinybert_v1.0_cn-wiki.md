@@ -16,12 +16,11 @@ model-version: 1.0
 
 train-dataset: cn-wiki
 
-
 author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/tinybert
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/tinybert>
 
 user-id: MindSpore
 
@@ -34,9 +33,10 @@ infer-backend: ascend
 mindspore-version: 1.0
 
 asset:
+
   -
     file-format: ckpt
-    asset-link: https://download.mindspore.cn/model_zoo/official/nlp/tinybert/tinybert_ascend_1.0_cn-wiki_official_nlp_20200922/tinybert.ckpt
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/tinybert/tinybert_ascend_1.0_cn-wiki_official_nlp_20200922/tinybert.ckpt>
     asset-sha256: 7f528d70605affc5c2fc0901a729444dc45cfa5bd72fc2fb742c8a3ff4d878b6
 
 license: Apache2.0
@@ -78,8 +78,9 @@ for data in dataset.create_dict_iterator():
     input_ids, input_mask, token_type_id, label_ids = input_data
     logits = network(input_ids, token_type_id, input_mask)
     print("net output: ", logits)
-# For more downstream tasks, please refer to https://gitee.com/mindspore/mindspore/tree/v1.0/model_zoo/official/nlp/tinybert
+# For more downstream tasks, please refer to https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/tinybert
 ```
 
 ## Citation
-Paper: Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805. 
+
+Paper: Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805.
