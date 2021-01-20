@@ -30,41 +30,44 @@ For individual contributor, please refer to [ICLA online document](https://www.m
 
 Please follow this style to make MindSpore easy to review, maintain and develop.
 
-* Coding guidelines
+- Coding guidelines
 
     The *Python* coding style suggested by [Python PEP 8 Coding Style](https://pep8.org/) and *C++* coding style suggested by [Google C++ Coding Guidelines](http://google.github.io/styleguide/cppguide.html) are used in MindSpore community.
 
-* Unittest guidelines
+- Unittest guidelines
 
-    The *Python* unittest style suggested by [pytest](http://www.pytest.org/en/latest/) and *C++* unittest style suggested by [Googletest Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) are used in MindSpore community.
+    The *Python* unittest style suggested by [pytest](http://www.pytest.org/en/latest/) and *C++* unittest style suggested by [Googletest Primer](https://github.com/google/googletest/blob/master/docs/primer.md) are used in MindSpore community.
 
 ### Fork-Pull development model
 
-* Fork MindSpore Hub repository
+- Fork MindSpore Hub repository
 
     Before submitting code to MindSpore project, please make sure that this project have been forked to your own repository. It means that there will be parallel development between MindSpore Hub repository and your own repository, so be careful to avoid the inconsistency between them.
 
-* Clone the remote repository
+- Clone the remote repository
 
     If you want to download the code to the local machine, `git` is the best way:
+
     ```shell
     # For Gitee
     git clone https://gitee.com/{insert_your_forked_repo}/hub.git
     git remote add upstream https://gitee.com/mindspore/hub.git
     ```
 
-* Develop code locally
+- Develop code locally
 
     To avoid inconsistency between multiple branches, checking out to a new branch is `SUGGESTED`:
+
     ```shell
     git checkout -b {new_branch_name} origin/master
     ```
 
     Then you can change the code arbitrarily.
 
-* Push the code to the remote repository
+- Push the code to the remote repository
 
     After updating the code, you should push the update in the formal way:
+
     ```shell
     git add .
     git status # Check the update status
@@ -73,7 +76,7 @@ Please follow this style to make MindSpore easy to review, maintain and develop.
     git push origin {new_branch_name}
     ```
 
-* Pull a request to MindSpore repository
+- Pull a request to MindSpore repository
 
     In the last step, your need to pull a compare request between your new branch and MindSpore `master` branch. After finishing the pull request, the Jenkins CI will be automatically set up for building test.
 
@@ -98,11 +101,11 @@ When reporting issues, refer to this format:
 
 ### Propose PRs
 
-* Raise your idea as an *issue* [Gitee](https://gitee.com/mindspore/hub/issues)
-* If it is a new feature that needs lots of design details, a design proposal should also be submitted.
-* After reaching consensus in the issue discussions and design proposal reviews, complete the development on the forked repo and submit a PR.
-* None of PRs is not permitted until it receives **2+ LGTM** from approvers. Please NOTICE that approver is NOT allowed to add *LGTM* on his own PR.
-* After PR is sufficiently discussed, it will get merged, abandoned or rejected depending on the outcome of the discussion.
+- Raise your idea as an *issue* [Gitee](https://gitee.com/mindspore/hub/issues)
+- If it is a new feature that needs lots of design details, a design proposal should also be submitted.
+- After reaching consensus in the issue discussions and design proposal reviews, complete the development on the forked repo and submit a PR.
+- None of PRs is not permitted until it receives **2+ LGTM** from approvers. Please NOTICE that approver is NOT allowed to add *LGTM* on his own PR.
+- After PR is sufficiently discussed, it will get merged, abandoned or rejected depending on the outcome of the discussion.
 
 **PRs advisory:**
 
@@ -112,5 +115,6 @@ When reporting issues, refer to this format:
 - For bug-fix PRs, make sure all related issues being linked.
 
 ## For Model Committer
+
 You should refer to [mshub_res/README](https://gitee.com/mindspore/hub/blob/master/mshub_res/README.md) before
 you upload your own model into mindspore model hub.
