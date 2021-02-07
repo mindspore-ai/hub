@@ -16,12 +16,11 @@ model-version: 1.0
 
 train-dataset: cn-wiki
 
-
 author: MindSpore team
 
 update-time: 2020-09-23
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/bert
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/bert>
 
 user-id: MindSpore
 
@@ -34,13 +33,16 @@ infer-backend: ascend
 mindspore-version: 1.0
 
 asset:
+
   -
-    file-format: ckpt
-    asset-link: https://download.mindspore.cn/model_zoo/official/nlp/bert/bert_nezha_ascend_0.5.0_cn-wiki_official_nlp_20200720/bert_NEZHA_large.ckpt
-    asset-sha256: 9318c64997db20c1e1cc51bf4e9c70b44ca7d724382f6cb96192647f2cebac78
+    file-format: ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/bert/bert_nezha_ascend_0.5.0_cn-wiki_official_nlp_20200720/bert_NEZHA_large.ckpt>  
+    asset-sha256: 9318c64997db20c1e1cc51bf4e9c70b44ca7d724382f6cb96192647f2cebac78  
 
 license: Apache2.0
+
 summary: bert_nezha used to do classification, sequence labeling or squad tasks on various dataset.
+
 ---
 
 ## Introduction
@@ -120,4 +122,5 @@ for data in ds.create_dict_iterator():
 ```
 
 ## Citation
+
 Paper: Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu. NEZHA: Neural Contextualized Representation for Chinese Language Understanding. arXiv preprint arXiv:1909.00204.

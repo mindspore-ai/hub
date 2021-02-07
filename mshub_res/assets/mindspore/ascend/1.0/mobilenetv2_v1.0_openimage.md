@@ -22,7 +22,7 @@ author: MindSpore team
 
 update-time: 2020-09-10
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/mobilenetv2
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/mobilenetv2>
 
 user-id: MindSpore
 
@@ -37,24 +37,27 @@ mindspore-version: 1.0
 mindspore-lite: true
 
 asset:
-  -
-    file-format: ckpt
-    asset-link: https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2_ascend.ckpt
-    asset-sha256: 0ce485e2ed61602d8bf15332db9801f114e820c142744b18f02491879421ecb3
-  -
-    file-format: mindir
-    asset-link: https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2.mindir
-    asset-sha256: aba47ddc769ffac130bcea855e9b3553e15e4ed83c716314fa15f546ebac9d45
-  -
-    file-format: mslite
-    asset-link: https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2.ms
-    asset-sha256: 1158a5eadfa6bb729500f7de89c33b1e264f4514a70780055afa1355541b5766
+
+-
+    file-format: ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2_ascend.ckpt>  
+    asset-sha256: 0ce485e2ed61602d8bf15332db9801f114e820c142744b18f02491879421ecb3  
+
+-
+    file-format: mindir  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2.mindir>  
+    asset-sha256: aba47ddc769ffac130bcea855e9b3553e15e4ed83c716314fa15f546ebac9d45  
+
+-
+    file-format: mslite  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2.ms>  
+    asset-sha256: 1158a5eadfa6bb729500f7de89c33b1e264f4514a70780055afa1355541b5766  
 
 license: Apache2.0
 
-summary: mobilenetv2 used to classify 600 classes of openimage
----
+summary: mobilenetv2 used to classify 600 classes of openimage.
 
+---
 
 ## Introduction
 
@@ -87,6 +90,7 @@ network.set_train(False)
 ```
 
 ## Lite Inference  Usage
+
 1. Load the MindSpore Lite model file and build the context, session, and computational graph for inference.
 
    - Load a model file. Create and configure the context for model inference.
@@ -249,10 +253,8 @@ network.set_train(False)
       }
         return categoryScore;
      }
-     
+
      ```
-
-
 
 ## Citation
 

@@ -10,16 +10,15 @@ module-type: cv-object_detection
 
 fine-tunable: True
 
-input-shape: [608, 608, 3] 
+input-shape: [608, 608, 3]
 
 model-version: 1
-
 
 author: MindSpore team
 
 update-time: 2020-09-19
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/yolov3_darknet53_quant
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/yolov3_darknet53_quant>
 
 user-id: MindSpore
 
@@ -37,7 +36,6 @@ summary: yolov3_darknet53_quant used to do object detection, and reduce the size
 
 ---
 
-
 ## Introduction
 
 This MindSpore Hub model uses the implementation of yolov3_darknet53_quant from the MindSpore model zoo on Gitee at model_zoo/official/cv/yolov3_darknet53_quant.
@@ -45,7 +43,6 @@ This MindSpore Hub model uses the implementation of yolov3_darknet53_quant from 
 yolov3_darknet53_quant supports 10 different input shapes for improving accuracy. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/yolov3_darknet53_quant/README.md).
 
 All parameters in the module are trainable.
-
 
 ## Citation
 

@@ -35,9 +35,9 @@ mindspore-version: 1.0
 asset:
 
 -
-    file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/cnnctc/cnnctc_ascend_1.1.0_mjsynth_and_synthtext_official_text_recognition_20210111/cnnctc.ckpt>
-    asset-sha256: c13a66f3edccb06a7b0f2e44ebe2080dba4760ceb7c7824670452e4c8c62cc3c
+    file-format: ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/cnnctc/cnnctc_ascend_1.1.0_mjsynth_and_synthtext_official_text_recognition_20210111/cnnctc.ckpt>  
+    asset-sha256: c13a66f3edccb06a7b0f2e44ebe2080dba4760ceb7c7824670452e4c8c62cc3c  
 
 license: Apache2.0
 

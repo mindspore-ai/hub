@@ -30,18 +30,17 @@ infer-backend: ascend
 
 mindspore-version: 1.0
 
-license: Apache2.0
-summary: gnmt_v2 used to do machine translation.
-
 asset:
 
 -
-    file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/gnmt_v2/gnmt_v2_ascend_1.0_wmt_corpus_official_text_summarization_20201110/gnmt_ascend.ckpt>
-    asset-sha256: 0ee1a22237143ae175c90f68c4970ae55fef0a683bc0ac6f5aacd78b6486bc8b
+    file-format: ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/gnmt_v2/gnmt_v2_ascend_1.0_wmt_corpus_official_text_summarization_20201110/gnmt_ascend.ckpt>  
+    asset-sha256: 0ee1a22237143ae175c90f68c4970ae55fef0a683bc0ac6f5aacd78b6486bc8b  
 
 license: Apache2.0
+
 summary: gnmt_v2 used to do machine translation.
+
 ---
 
 ## Introduction

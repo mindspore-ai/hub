@@ -40,7 +40,7 @@ summary: GAT used to text classification.
 
 This MindSpore Hub model uses the implementation of GAT from the MindSpore model zoo on Gitee at model_zoo/official/gnn/gat.
 
-More details pleas refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/gnn/gat/README.md)
+More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/gnn/gat/README.md)
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/ascend/1.0/gat_v1.0_citeseer"
+model = "mindspore/ascend/0.7/gat_v1.0_citeseer"
 
 config = GatConfig
 config.feature_size = 3703

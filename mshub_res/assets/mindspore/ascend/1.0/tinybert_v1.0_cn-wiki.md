@@ -35,12 +35,14 @@ mindspore-version: 1.0
 asset:
 
   -
-    file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/tinybert/tinybert_ascend_1.0_cn-wiki_official_nlp_20200922/tinybert.ckpt>
-    asset-sha256: 7f528d70605affc5c2fc0901a729444dc45cfa5bd72fc2fb742c8a3ff4d878b6
+    file-format: ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/tinybert/tinybert_ascend_1.0_cn-wiki_official_nlp_20200922/tinybert.ckpt>  
+    asset-sha256: 7f528d70605affc5c2fc0901a729444dc45cfa5bd72fc2fb742c8a3ff4d878b6  
 
 license: Apache2.0
+
 summary: tinybert used to do classification, sequence labeling or squad tasks on various dataset.
+
 ---
 
 ## Introduction
@@ -67,7 +69,7 @@ context.set_context(mode=context.GRAPH_MODE, device_target="Ascend", device_id=0
 model = "mindspore/ascend/1.0/tinybert_v1.0_cn-wiki"
 network = mshub.load(model, is_training=False)
 network.set_train(False)
-# data dir can be glue datset dir
+# data dir can be glue dataset dir
 dataset = create_tinybert_dataset('td', data_dir=data_dir)
 
 columns_list = ["input_ids", "input_mask", "segment_ids", "label_ids"]

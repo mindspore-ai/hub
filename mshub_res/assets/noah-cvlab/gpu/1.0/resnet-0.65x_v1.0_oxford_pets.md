@@ -38,12 +38,12 @@ mindspore-lite: true
 
 asset:
 
-- file-format: ckpt
-  asset-link: <https://download.mindspore.cn/model_zoo/research/cv/resnet50_adv_pruning/resnet50-pet-0.65x-80.24.ckpt>
-  asset-sha256: b41eb489a62c8c12ff88b7f028bc4a943f29f8e25a0a9ec69b9ed070681340cc
-- file-format: mslite
-  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/adversarial_pruning_lite/adversarial_pruning.ms>
-  asset-sha256: 5c279f018a7e3d3b8cb2ec90717513dae3d4519a8de03447851d68b95ae2eca7
+- file-format: ckpt  
+  asset-link: <https://download.mindspore.cn/model_zoo/research/cv/resnet50_adv_pruning/resnet50-pet-0.65x-80.24.ckpt>  
+  asset-sha256: b41eb489a62c8c12ff88b7f028bc4a943f29f8e25a0a9ec69b9ed070681340cc  
+- file-format: mslite  
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/adversarial_pruning_lite/adversarial_pruning.ms>  
+  asset-sha256: 5c279f018a7e3d3b8cb2ec90717513dae3d4519a8de03447851d68b95ae2eca7  
 
 license: Apache2.0
 
@@ -182,7 +182,7 @@ network.set_train(False)
     std::string retStr = ProcessRunnetResult(RET_CATEGORY_SUM, labels_name_map, output);
     ```
 
-4. The process of image and output data can refer to methods showing bellow.
+4. The process of image and output data can refer to methods showing below.
 
     ```cpp
     bool BitmapToLiteMat(JNIEnv *env, const jobject &srcBitmap, LiteMat *lite_mat) {
@@ -240,7 +240,7 @@ network.set_train(False)
 
       /*
       * The mean data and variance data shown below is just for reference.
-      * You are encouraged to caculate it from the dataset.
+      * You are encouraged to calculate it from the dataset.
       */
       std::vector<float> means = {0.491, 0.482, 0.447};
       std::vector<float> stds = {0.247, 0.243, 0.262};

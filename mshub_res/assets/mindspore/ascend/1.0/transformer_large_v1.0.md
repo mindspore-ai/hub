@@ -14,12 +14,11 @@ input-shape: [[1, 128], [1, 128], [1, 128], [1, 128]]
 
 model-version: 1.0
 
-
 author: MindSpore team
 
 update-time: 2020-09-21
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/transformer
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/transformer>
 
 user-id: MindSpore
 
@@ -32,7 +31,9 @@ infer-backend: ascend
 mindspore-version: 1.0
 
 license: Apache2.0
+
 summary: transformer_large used to do machine translation.
+
 ---
 
 ## Introduction
@@ -43,6 +44,6 @@ This model support dynamic input shape depanding on the input sequence length, m
 
 All Parameters in the module are trainable.
 
- 
 ## Citation
+
 Paper: Ashish Vaswani, Noam Shazeer, Niki Parmar, JakobUszkoreit, Llion Jones, Aidan N Gomez, Ł ukaszKaiser, and Illia Polosukhin. 2017. Attention is all you need. In NIPS 2017, pages 5998–6008.

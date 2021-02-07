@@ -18,13 +18,11 @@ train-dataset: cifar10
 
 accuracy: 0.93
 
-
-
 author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/vgg16
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/vgg16>
 
 user-id: MindSpore
 
@@ -34,22 +32,25 @@ train-backend: ascend
 
 infer-backend: ascend
 
-mindspore-version: 0.7
+mindspore-version: 1.0
 
 asset:
-  -
+
+-
     file-format: ckpt  
-    asset-link: https://download.mindspore.cn/model_zoo/official/cv/vgg/vgg16_ascend_1.0_cifar10_official_classification_20200923/vgg16.ckpt
-    asset-sha256: 8f24d2782b3f6ec0380c1ea597ba24c1cf8749d1b0411e147263e266788869e4
-  -
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/vgg/vgg16_ascend_1.0_cifar10_official_classification_20200923/vgg16.ckpt>  
+    asset-sha256: 8f24d2782b3f6ec0380c1ea597ba24c1cf8749d1b0411e147263e266788869e4  
+
+-
     file-format: air  
-    asset-link: https://download.mindspore.cn/model_zoo/official/cv/vgg/vgg16_ascend_1.0_cifar10_official_classification_20200923/vgg16.geir
-    asset-sha256: 2ebff88197f0fdefbb3249fa8770a48fe8242b3e69333a2e76af147158108cf9
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/vgg/vgg16_ascend_1.0_cifar10_official_classification_20200923/vgg16.geir>  
+    asset-sha256: 2ebff88197f0fdefbb3249fa8770a48fe8242b3e69333a2e76af147158108cf9  
 
 license: Apache2.0
-summary: VGG16 used to classify the 10 classes of cifar10.
----
 
+summary: VGG16 used to classify the 10 classes of cifar10.
+
+---
 
 ## Introduction
 

@@ -28,9 +28,9 @@ user-id: MindSpore
 
 used-for: inference
 
-train-backend: ascend
+train-backend: gpu
 
-infer-backend: ascend
+infer-backend: gpu
 
 mindspore-version: 1.0
 
@@ -39,11 +39,11 @@ asset:
   -
     file-format: ckpt  
     asset-link: <https://download.mindspore.cn/model_zoo/official/cv/googlenet/googlenet_gpu_1.0_cifar10_official_classification_20200922/googlenet.ckpt>  
-    asset-sha256: a08d13bbc78c3a60e075489558e01402efcc8379a54d8f0bdefa4307b41ffce3
+    asset-sha256: a08d13bbc78c3a60e075489558e01402efcc8379a54d8f0bdefa4307b41ffce3  
 
 license: Apache2.0
 
-summary: GoogLeNet used to classify the 10 classes of cifar10.
+summary: GoogleNet used to classify the 10 classes of cifar10.
 
 ---
 
@@ -66,10 +66,10 @@ from mindspore.common import dtype as mstype
 from mindspore.dataset.transforms import py_transforms
 
 context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
+                    device_target="GPU",
                     device_id=0)
 
-model = "mindspore/ascend/1.0/googlenet_v1_cifar10"
+model = "mindspore/gpu/1.0/googlenet_v1_cifar10"
 # initialize the number of classes based on the pre-trained model
 network = mshub.load(model, num_classes=10)
 network.set_train(False)

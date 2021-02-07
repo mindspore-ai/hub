@@ -16,13 +16,11 @@ model-version: 1.0
 
 mAP: 0.241
 
-
-
 author: Noah CVLab
 
 update-time: 2020-09-08
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/ssd_ghostnet
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/ssd_ghostnet>
 
 user-id: noah-cvlab
 
@@ -39,7 +37,6 @@ license: Apache2.0
 summary: ssd_ghostnet is ssd model with ghostnet backbone
 
 ---
-
 
 ## Introduction
 

@@ -38,11 +38,13 @@ asset:
 
 -
     file-format: ckpt  
-    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/alexnet/alexnet_ascend_1.0_cifar10_official_classification_20201214/alexnet.ckpt>
-    asset-sha256: 0203d68bcff7d02aaee42bd6a42b5fe1306ab8fb2a82feb1ec06d8e62284600a
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/alexnet/alexnet_ascend_1.0_cifar10_official_classification_20201214/alexnet.ckpt>  
+    asset-sha256: 0203d68bcff7d02aaee42bd6a42b5fe1306ab8fb2a82feb1ec06d8e62284600a  
 
 license: Apache2.0
+
 summary: AlexNet used to classify the 10 classes of cifar10.
+
 ---
 
 ## Introduction

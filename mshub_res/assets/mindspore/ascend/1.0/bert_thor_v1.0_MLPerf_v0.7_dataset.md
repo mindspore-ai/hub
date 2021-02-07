@@ -16,12 +16,11 @@ model-version: 1.0
 
 train-dataset: MLPerf v0.7 dataset
 
-
 author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/bert_thor
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/bert_thor>
 
 user-id: MindSpore
 
@@ -34,13 +33,16 @@ infer-backend: ascend
 mindspore-version: 1.0
 
 asset:
+
   -
-    file-format: ckpt
-    asset-link: https://download.mindspore.cn/model_zoo/official/nlp/bert_thor/bert_thor_ascend_1.0_mlperf_v0.7_dataset_official_nlp_20200922/bert_thor.ckpt
-    asset-sha256: 225354d0f82eda03ee9779e325042f1527fa92bf7f517a3d1b50794a9473586d
+    file-format: ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/bert_thor/bert_thor_ascend_1.0_mlperf_v0.7_dataset_official_nlp_20200922/bert_thor.ckpt>  
+    asset-sha256: 225354d0f82eda03ee9779e325042f1527fa92bf7f517a3d1b50794a9473586d  
 
 license: Apache2.0
+
 summary: bert_thor used to do classification, sequence labeling or squad tasks on various dataset.
+
 ---
 
 ## Introduction
@@ -76,6 +78,7 @@ for data in ds.create_dict_iterator():
     input_ids, input_mask, segment_ids = input_data
     out = network(input_ids, segment_ids, input_mask)
 ```
- 
+
 ## Citation
-Paper: Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805. 
+
+Paper: Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805.

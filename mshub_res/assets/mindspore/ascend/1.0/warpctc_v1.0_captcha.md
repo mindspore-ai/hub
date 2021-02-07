@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2020-09-23
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/cv/warpctc
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/cv/warpctc>
 
 user-id: MindSpore
 
@@ -48,4 +48,4 @@ All Parameters in the module are trainable.
 ## Usage
 
 Refer to the readme description and code of modelzoo for specific usage:
-https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/cv/warpctc
+<https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/cv/warpctc>

@@ -19,13 +19,11 @@ model-version: 1.0
 
 Auc Score: 0.7473
 
-
-
 author: MindSpore team
 
 update-time: 2020-09-21
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/recommend/wide_and_deep_multitable
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/recommend/wide_and_deep_multitable>
 
 user-id: MindSpore
 
@@ -40,13 +38,12 @@ mindspore-version: 0.7
 license: Apache2.0
 
 summary: wide_and_deep_multitable used in recommend system
----
 
+---
 
 ## Introduction
 
 This MindSpore Hub model uses the implementation of wide&deep from the MindSpore model zoo on Gitee at model_zoo/official/recommend/wide_and_deep_multitable.
-
 
 ## Citation
 

@@ -34,9 +34,9 @@ mindspore-lite: true
 
 asset:
 
-- file-format: mslite
-  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_scene_detection_lite/mobilenetv2.ms>
-  asset-sha256: 0bf5fc563c18044a67ad467f401e8c036cb381e20ab9631e0ad9c49b1a9c6a7c
+- file-format: mslite  
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_scene_detection_lite/mobilenetv2.ms>  
+  asset-sha256: 0bf5fc563c18044a67ad467f401e8c036cb381e20ab9631e0ad9c49b1a9c6a7c  
 
 license: Apache2.0
 
@@ -191,7 +191,7 @@ network.set_train(False)
     std::string retStr = ProcessRunnetResult(RET_CATEGORY_SUM, labels_name_map, msOutputs);
     ```
 
-4. The process of image and output data can refer to methods showing bellow.
+4. The process of image and output data can refer to methods showing below.
 
     ```cpp
 

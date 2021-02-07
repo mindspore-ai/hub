@@ -31,7 +31,9 @@ infer-backend: ascend
 mindspore-version: 0.7
 
 license: Apache2.0
+
 summary: mass used to do conversation response on various dataset.
+
 ---
 
 ## Introduction

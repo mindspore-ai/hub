@@ -36,9 +36,9 @@ mindspore-lite: true
 
 asset:
 
-- file-format: mslite
-  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/deeplabv3_lite/deeplabv3.ms>
-  asset-sha256: 1158a5eadfa6bb729500f7de89c33b1e264f4514a70780055afa1355541b5766
+- file-format: mslite  
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/deeplabv3_lite/deeplabv3.ms>  
+  asset-sha256: 1158a5eadfa6bb729500f7de89c33b1e264f4514a70780055afa1355541b5766  
 
 license: Apache2.0
 
@@ -107,7 +107,7 @@ Refer to the readme description of modelzoo for specific usage: <https://gitee.c
       model.freeBuffer();
       return;
     }
-    // Note: when use model.freeBuffer(), the model can not be complile graph again.
+    // Note: when use model.freeBuffer(), the model can not be compile graph again.
     model.freeBuffer();
     ```
 
@@ -165,7 +165,7 @@ Refer to the readme description of modelzoo for specific usage: <https://gitee.c
     dstBitmap = scaleBitmapAndKeepRatio(dstBitmap, (int) resource_height, (int) resource_weight);
     ```
 
-4. The process of image and output data can refer to methods showing bellow.
+4. The process of image and output data can refer to methods showing below.
 
     ```Java
     Bitmap scaleBitmapAndKeepRatio(Bitmap targetBmp, int reqHeightInPixels, int reqWidthInPixels) {
@@ -222,7 +222,7 @@ Refer to the readme description of modelzoo for specific usage: <https://gitee.c
             float value = inputBuffer.getFloat((y * imageWidth * NUM_CLASSES + x * NUM_CLASSES + i) * 4);
             if (i == 0 || value > maxVal) {
               maxVal = value;
-              // Check wether a pixel belongs to a person whose label is 15.
+              // Check whether a pixel belongs to a person whose label is 15.
               if (i == 15) {
                 mSegmentBits[x][y] = i;
               } else {

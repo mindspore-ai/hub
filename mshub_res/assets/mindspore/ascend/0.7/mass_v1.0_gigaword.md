@@ -35,12 +35,14 @@ mindspore-version: 0.7
 asset:
 
 -
-    file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/mass/mass_ascend_0.3.0_gigaword_corpus_official_text_summarization_20200716.tar.gz>
-    asset-sha256: 1cec4ec74dcf8e182b97e97a96e0d71a3911ec1b2aa25583a5930240ef962571
+    file-format: ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/mass/mass_ascend_0.3.0_gigaword_corpus_official_text_summarization_20200716.tar.gz>  
+    asset-sha256: 1cec4ec74dcf8e182b97e97a96e0d71a3911ec1b2aa25583a5930240ef962571  
 
 license: Apache2.0
+
 summary: mass used to do text summary on various dataset.
+
 ---
 
 ## Introduction
