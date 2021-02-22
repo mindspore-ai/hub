@@ -35,9 +35,9 @@ mindspore-version: 1.0
 asset:
 
 -
-    file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/psenet/psenet_ascend_1.1.0_icdar2015_official_text_detection_20210111/psenet.ckpt>
-    asset-sha256: f5cf126c1059b9d4aa1ad9f30a954a385882ea79f25ea3d19c13c67ead4f1a2y
+    file-format: ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/psenet/psenet_ascend_1.1.0_icdar2015_official_text_detection_20210111/psenet.ckpt>  
+    asset-sha256: f5cf126c1059b9d4aa1ad9f30a954a385882ea79f25ea3d19c13c67ead4f1a2y  
 
 license: Apache2.0
 

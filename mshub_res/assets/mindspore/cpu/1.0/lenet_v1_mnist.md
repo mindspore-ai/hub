@@ -38,8 +38,8 @@ asset:
 
 -
     file-format: ckpt  
-    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/lenet/lenet_cpu_1.0.0_mnist_official_classification_20201029/lenet.ckpt>
-    asset-sha256: b0771234226405a68f1c9ce3ecbffb1ee371dd3cb13ae85b7a26870031c05ec8
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/lenet/lenet_cpu_1.0.0_mnist_official_classification_20201029/lenet.ckpt>  
+    asset-sha256: b0771234226405a68f1c9ce3ecbffb1ee371dd3cb13ae85b7a26870031c05ec8  
 
 license: Apache2.0
 

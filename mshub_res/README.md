@@ -4,8 +4,7 @@
 
 This location is used for storage the documents for [MindSpore Hub Website](http://www.mindspore.cn)
 
-Please note that publishing a model to MindSpore Hub is in "testing stage". If you
-are interested in publishing your own model to MindSpore Hub, please follow the directions below and we will process your submission as soon as possible. And the MindSpore Hub Website will be updated in
+Please note that publishing a model to MindSpore Hub is in "testing stage". If you are interested in publishing your own model to MindSpore Hub, please follow the directions below and we will process your submission as soon as possible. And the MindSpore Hub Website will be updated in
 less than 24 hours.
 
 ### Terms of service
@@ -32,8 +31,7 @@ See example below:
 
 ### Model storage and Model Cache/Optimization
 
-We don't restrict the location of the model file. But we suggest you set the term of ``allow_cache_ckpt`` to be ``true`` in the markdown file you commit, so that we will cache the model file in our own file storage server to
- accelerate the download and will try to **optimize** the model, speeding up for the Edge Devices, Mobile Phone for example.
+We don't restrict the location of the model file. But we suggest you set the term of ``allow_cache_ckpt`` to be ``true`` in the markdown file you commit, so that we will cache the model file in our own file storage server to accelerate the download and will try to **optimize** the model, speeding up for the Edge Devices, Mobile Phone for example.
 
 ## How to publish
 
@@ -102,8 +100,7 @@ def create_network(name, *args, **kwargs):
 #### [model_name]\_[model_version]\_[dataset].md
 
 If you want to publish your model in MindSpore Model Hub, you should commit a pull request, along with a markdown file.
-This markdown file can be split into two parts, first one is the meta information of the model, including the repo link and binary file link, these information will be shown in the MindSpore Hub Website. Second one is the detail information
-will be shown in the detail page in MindSpore Hub Website. You should make sure your Usage section can be run.
+This markdown file can be split into two parts, first one is the meta information of the model, including the repo link and binary file link, these information will be shown in the MindSpore Hub Website. Second one is the detail information will be shown in the detail page in MindSpore Hub Website. You should make sure your Usage section can be run.
 
 You can download the example markdown file in the ``examples/commit_example.md``, change the information accordingly. After that, you can use the check file tool in the ``tools`` to check whether this markdown file is good or not.
 
@@ -143,15 +140,11 @@ How to submit the model
 
 #### Submitting the model
 
-After the right location of the markdown file is identified (see the
-[Writing the documentation](#Documentation) section above),
-the file can be pulled into the master branch of
-[mindspore/hub](https://gitee.com/mindspore/hub)
+After the right location of the markdown file is identified (see the [Writing the documentation](#Documentation) section above), the file can be pulled into the master branch of [mindspore/hub](https://gitee.com/mindspore/hub)
 
 ### Validating the documentation
 
-After adding the markdown file, you can use the validator tool in the ``mshub_res/tools/md_validator.py`` to validate
-the markdown file you write before you creating a pull request.
+After adding the markdown file, you can use the validator tool in the ``mshub_res/tools/md_validator.py`` to validate the markdown file you write before you creating a pull request.
 
 ```shell script
 python mshub_res/tools/md_validator.py

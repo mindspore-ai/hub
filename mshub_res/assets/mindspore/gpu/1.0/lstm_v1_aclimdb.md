@@ -33,6 +33,7 @@ infer-backend: gpu
 mindspore-version: 1.0
 
 license: Apache2.0
+
 summary: lstm used to classify 2 classes of aclimdb
 
 ---

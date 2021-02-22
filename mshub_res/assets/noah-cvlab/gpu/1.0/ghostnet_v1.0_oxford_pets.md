@@ -38,12 +38,12 @@ mindspore-lite: true
 
 asset:
 
-- file-format: ckpt
-  asset-link: <https://download.mindspore.cn/model_zoo/research/cv/ghostnet/ghostnet_1x_pets.ckpt>
-  asset-sha256: 722e13be6cd6186dddcd68d5c0a50776d9a8ad8e79db3870556f68d4d2f179e4
-- file-format: mslite
-  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/ghostnet_lite/ghostnet.ms>
-  asset-sha256: 1cff3c6586fa840eab0223634df8ade44226ae8b3245052b90e1437c68bf1380
+- file-format: ckpt  
+  asset-link: <https://download.mindspore.cn/model_zoo/research/cv/ghostnet/ghostnet_1x_pets.ckpt>  
+  asset-sha256: 722e13be6cd6186dddcd68d5c0a50776d9a8ad8e79db3870556f68d4d2f179e4  
+- file-format: mslite  
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/ghostnet_lite/ghostnet.ms>  
+  asset-sha256: 1cff3c6586fa840eab0223634df8ade44226ae8b3245052b90e1437c68bf1380  
 
 license: Apache2.0
 
@@ -58,7 +58,7 @@ GhostNet from the MindSpore model zoo on Gitee at
 model_zoo/official/cv/ghostnet. The GhostNet architecture is based on
 Ghost module structure which generate more features from cheap operations.
 Base on a set of intrinsic features. Experiments conducted on benchmarks
-demonstrate the superiority of GhostNet in terms of speed and accuracy
+demonstrate the superiority of GhostNet in terms of speed and accuracy.
 
 ### Performance
 
@@ -67,7 +67,7 @@ demonstrate the superiority of GhostNet in terms of speed and accuracy
 | Parameters                 |                                        |   |
 | -------------------------- | -------------------------------------- |---------------------------------- |
 | Model Version              | GhostNet                                             |GhostNet-600|
-| uploaded Date              | 09/08/2020 (month/day/year)  ；                        | 09/08/2020 (month/day/year) |
+| Uploaded Date              | 09/08/2020 (month/day/year)                          | 09/08/2020 (month/day/year) |
 | Dataset                    | ImageNet2012                                                    | ImageNet2012|
 | Parameters (M)             | 5.2                                                   | 11.9 |
 | FLOPs (M) | 142 | 591 |
@@ -79,7 +79,7 @@ demonstrate the superiority of GhostNet in terms of speed and accuracy
 | Parameters                 |                                        |   |
 | -------------------------- | -------------------------------------- |---------------------------------- |
 | Model Version              | GhostNet                                             |GhostNet-600|
-| uploaded Date              | 09/08/2020 (month/day/year)  ；                        | 09/08/2020 (month/day/year) |
+| Uploaded Date              | 09/08/2020 (month/day/year)                         | 09/08/2020 (month/day/year) |
 | Dataset                    | Oxford-IIIT Pet                                                   | Oxford-IIIT Pet|
 | Parameters (M)             | 3.9                                                    | 10.6 |
 | FLOPs (M) | 140 | 590 |
@@ -159,12 +159,12 @@ network.set_train(False)
 
     ```cpp
     float *width;
-    float *hight;
-    if (!BitmapToLiteMat(env, srcBitmap, &lite_mat_bgr, width, hight)) {
+    float *height;
+    if (!BitmapToLiteMat(env, srcBitmap, &lite_mat_bgr, width, height)) {
       MS_PRINT("BitmapToLiteMat error");
       return NULL;
     }
-    if (!PreProcessImageData(lite_mat_bgr, &lite_norm_mat_cut, width, hight)) {
+    if (!PreProcessImageData(lite_mat_bgr, &lite_norm_mat_cut, width, height)) {
       MS_PRINT("PreProcessImageData error");
       return NULL;
     }
@@ -230,10 +230,10 @@ network.set_train(False)
     std::string retStr = ProcessRunnetResult(RET_CATEGORY_SUM, labels_name_map, msOutputs);
     ```
 
-4. The process of image and output data can refer to methods showing bellow.
+4. The process of image and output data can refer to methods showing below.
 
     ```cpp
-    bool BitmapToLiteMat(JNIEnv *env, const jobject &srcBitmap, LiteMat *lite_mat, float *width, float *hight) {
+    bool BitmapToLiteMat(JNIEnv *env, const jobject &srcBitmap, LiteMat *lite_mat, float *width, float *height) {
       bool ret = false;
       AndroidBitmapInfo info;
       void *pixels = nullptr;
@@ -244,7 +244,7 @@ network.set_train(False)
         return false;
       }
       *width = info.width;
-      *hight = info.hight;
+      *height = info.height;
       AndroidBitmap_lockPixels(env, srcBitmap, &pixels);
       if (info.stride == info.width*4) {
         ret = InitFromPixel(reinterpret_cast<const unsigned char *>(pixels),
@@ -272,13 +272,13 @@ network.set_train(False)
       return ret;
     }
 
-    bool PreProcessImageData(const LiteMat &lite_mat_bgr, LiteMat *lite_norm_mat_ptr, float *width, float *hight) {
+    bool PreProcessImageData(const LiteMat &lite_mat_bgr, LiteMat *lite_norm_mat_ptr, float *width, float *height) {
       bool ret = false;
       LiteMat lite_mat_resize;
       LiteMat &lite_norm_mat = *lite_norm_mat_ptr;
       // scale the image to hava a length of 256.
-      float length = (*width) >= (*hight) ? *width : *hight;
-      ret = ResizeBilinear(lite_mat_bgr, lite_mat_resize, 256 * (*width) / length, 256 * (*hight) / length);
+      float length = (*width) >= (*height) ? *width : *height;
+      ret = ResizeBilinear(lite_mat_bgr, lite_mat_resize, 256 * (*width) / length, 256 * (*height) / length);
       if (!ret) {
         MS_PRINT("ResizeBilinear error");
         return false;
@@ -299,7 +299,7 @@ network.set_train(False)
 
       /*
       * The mean data and variance data shown below is just for reference.
-      * You are encouraged to caculate it from the dataset.
+      * You are encouraged to calculate it from the dataset.
       */
       std::vector<float> means = {0.485, 0.456, 0.406};
       std::vector<float> stds = {0.229, 0.224, 0.225};

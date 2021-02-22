@@ -71,7 +71,9 @@ asset-link: [] <optional>
 asset_sha256: <optional>
 
 license: [Apache2.0] <required>
+
 summary: [Description of the model， one line description] <required>
+
 ---
 
 ## Introduction

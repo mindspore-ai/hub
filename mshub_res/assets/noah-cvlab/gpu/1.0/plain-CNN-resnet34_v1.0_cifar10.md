@@ -38,9 +38,9 @@ mindspore-version: 1.0
 
 asset:
 
-- file-format: mslite
-  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/residual_distill_lite/residual_distill_res34_cifar10_bs_1_update.ms>
-  asset-sha256: 0b01adaf85e471fb8a6f4ba03b3307df65b169a37855ecdb2b74e295bb4552e0
+- file-format: mslite  
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/residual_distill_lite/residual_distill_res34_cifar10_bs_1_update.ms>  
+  asset-sha256: 0b01adaf85e471fb8a6f4ba03b3307df65b169a37855ecdb2b74e295bb4552e0  
 
 license: Apache2.0
 
@@ -162,7 +162,7 @@ This MindSpore Hub model uses the implementation of Residual Distillation on Res
     std::string retStr = ProcessRunnetResult(RET_CATEGORY_SUM, labels_name_map, output);
     ```
 
-4. The process of image and output data can refer to methods showing bellow.
+4. The process of image and output data can refer to methods showing below.
 
     ```cpp
     bool BitmapToLiteMat(JNIEnv *env, const jobject &srcBitmap, LiteMat *lite_mat) {
@@ -220,7 +220,7 @@ This MindSpore Hub model uses the implementation of Residual Distillation on Res
 
       /*
       * The mean data and variance data shown below is just for reference.
-      * You are encouraged to caculate it from the dataset.
+      * You are encouraged to calculate it from the dataset.
       */
       std::vector<float> means = {0.491, 0.482, 0.447};
       std::vector<float> stds = {0.247, 0.243, 0.262};

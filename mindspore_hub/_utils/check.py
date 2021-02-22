@@ -217,6 +217,11 @@ class ValidMarkdown:
         Check MarkDown file with yaml.
         """
         print('Checking {}...'.format(self.filename), end="")
+        # Markdown validation only supports English files.
+        # For Chinese files, check corresponding Eng ones instead.
+        if self.filename[-5:-3] == "cn":
+            self.filename = self.filename[:-6] + self.filename[-3:]
+
         try:
             header = []
             markdown = []

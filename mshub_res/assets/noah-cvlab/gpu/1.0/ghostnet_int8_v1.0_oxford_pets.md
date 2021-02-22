@@ -38,15 +38,16 @@ mindspore-lite: true
 
 asset:
 
-- file-format: ckpt
-  asset-link: <https://download.mindspore.cn/model_zoo/research/cv/ghostnet_quant/ghostnet_1x_pets_int8.ckpt>
-  asset-sha256: e10180c9cfecb35cb261bc8668f2632990630570f189b108495168d23e935922
+- file-format: ckpt  
+  asset-link: <https://download.mindspore.cn/model_zoo/research/cv/ghostnet_quant/ghostnet_1x_pets_int8.ckpt>  
+  asset-sha256: e10180c9cfecb35cb261bc8668f2632990630570f189b108495168d23e935922  
 
-- file-format: mslite
-  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/ghostnet_lite/ghostnet_int8.ms>
-  asset-sha256: 2abb226473d98605c4daca54758ec8df9e76525d02a76b5bcee4e1d14bb3ff32
+- file-format: mslite  
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/ghostnet_lite/ghostnet_int8.ms>  
+  asset-sha256: 2abb226473d98605c4daca54758ec8df9e76525d02a76b5bcee4e1d14bb3ff32  
 
 license: Apache2.0
+
 summary: GhostNet_INT8 used to classify 37 classes of Oxford-IIIT Pet
 
 ---
@@ -118,12 +119,12 @@ network.set_train(False)
 
     ```cpp
     float *width;
-    float *hight;
-    if (!BitmapToLiteMat(env, srcBitmap, &lite_mat_bgr, width, hight)) {
+    float *height;
+    if (!BitmapToLiteMat(env, srcBitmap, &lite_mat_bgr, width, height)) {
       MS_PRINT("BitmapToLiteMat error");
       return NULL;
     }
-    if (!PreProcessImageData(lite_mat_bgr, &lite_norm_mat_cut, width, hight)) {
+    if (!PreProcessImageData(lite_mat_bgr, &lite_norm_mat_cut, width, height)) {
       MS_PRINT("PreProcessImageData error");
       return NULL;
     }
@@ -189,10 +190,10 @@ network.set_train(False)
     std::string retStr = ProcessRunnetResult(RET_CATEGORY_SUM, labels_name_map, msOutputs);
     ```
 
-4. The process of image and output data can refer to methods showing bellow.
+4. The process of image and output data can refer to methods showing below.
 
     ```cpp
-    bool BitmapToLiteMat(JNIEnv *env, const jobject &srcBitmap, LiteMat *lite_mat, float *width, float *hight) {
+    bool BitmapToLiteMat(JNIEnv *env, const jobject &srcBitmap, LiteMat *lite_mat, float *width, float *height) {
       bool ret = false;
       AndroidBitmapInfo info;
       void *pixels = nullptr;
@@ -203,7 +204,7 @@ network.set_train(False)
         return false;
       }
       *width = info.width;
-      *hight = info.hight;
+      *height = info.height;
       AndroidBitmap_lockPixels(env, srcBitmap, &pixels);
       if (info.stride == info.width*4) {
         ret = InitFromPixel(reinterpret_cast<const unsigned char *>(pixels),
@@ -231,13 +232,13 @@ network.set_train(False)
       return ret;
     }
 
-    bool PreProcessImageData(const LiteMat &lite_mat_bgr, LiteMat *lite_norm_mat_ptr, float *width, float *hight) {
+    bool PreProcessImageData(const LiteMat &lite_mat_bgr, LiteMat *lite_norm_mat_ptr, float *width, float *height) {
       bool ret = false;
       LiteMat lite_mat_resize;
       LiteMat &lite_norm_mat = *lite_norm_mat_ptr;
       // scale the image to hava a length of 256.
-      float length = (*width) >= (*hight) ? *width : *hight;
-      ret = ResizeBilinear(lite_mat_bgr, lite_mat_resize, 256 * (*width) / length, 256 * (*hight) / length);
+      float length = (*width) >= (*height) ? *width : *height;
+      ret = ResizeBilinear(lite_mat_bgr, lite_mat_resize, 256 * (*width) / length, 256 * (*height) / length);
       if (!ret) {
         MS_PRINT("ResizeBilinear error");
         return false;
@@ -258,7 +259,7 @@ network.set_train(False)
 
       /*
       * The mean data and variance data shown below is just for reference.
-      * You are encouraged to caculate it from the dataset.
+      * You are encouraged to calculate it from the dataset.
       */
       std::vector<float> means = {0.485, 0.456, 0.406};
       std::vector<float> stds = {0.229, 0.224, 0.225};

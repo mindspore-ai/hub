@@ -16,12 +16,11 @@ model-version: 1.0
 
 train-dataset: cn-wiki
 
-
 author: MindSpore team
 
 update-time: 2020-09-23
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/bert
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/bert>
 
 user-id: MindSpore
 
@@ -34,13 +33,16 @@ infer-backend: ascend
 mindspore-version: 1.0
 
 asset:
+
   -
-    file-format: ckpt
-    asset-link: https://download.mindspore.cn/model_zoo/official/nlp/bert/bert_base_ascend_0.5.0_cn-wiki_official_nlp_20200720/bert_base.ckpt
-    asset-sha256: 1cec4ec74dcf8e182b97e97a96e0d71a3911ec1b2aa25583a5930240ef962571
+    file-format: ckpt  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/bert/bert_base_ascend_0.5.0_cn-wiki_official_nlp_20200720/bert_base.ckpt>  
+    asset-sha256: 1cec4ec74dcf8e182b97e97a96e0d71a3911ec1b2aa25583a5930240ef962571  
 
 license: Apache2.0
+
 summary: bert_base used to do classification, sequence labeling or squad tasks on various dataset.
+
 ---
 
 ## Introduction
@@ -95,7 +97,7 @@ class MLM(nn.Cell):
         self.cls1 = GetMaskedLMOutput(config)
         self.cast = P.Cast()
         self.argmax = P.Argmax(axis=-1, output_type=mstype.int32)
-    
+
     def construct(self, input_ids, input_mask, token_type_id, masked_pos):
         input_ids = self.cast(input_ids, mstype.int32)
         input_mask = self.cast(input_mask, mstype.int32)
@@ -119,6 +121,7 @@ for data in ds.create_dict_iterator():
     print("net output: ", out)
 # For more downstream tasks, please refer to https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/bert
 ```
- 
+
 ## Citation
-Paper: Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805. 
+
+Paper: Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805.

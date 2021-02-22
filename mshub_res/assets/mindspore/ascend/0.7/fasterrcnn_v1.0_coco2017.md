@@ -14,15 +14,13 @@ input-shape: [768, 1280, 3]
 
 model-version: 1
 
-map(0.5): 0.576
-
-
+mAP(0.5): 0.576
 
 author: MindSpore team
 
 update-time: 2020-09-10
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/faster_rcnn
+repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/faster_rcnn>
 
 user-id: MindSpore
 
@@ -37,8 +35,8 @@ mindspore-version: 0.7
 license: Apache2.0
 
 summary: fasterrcnn used to detect 80 classes of coco2017
----
 
+---
 
 ## Introduction
 

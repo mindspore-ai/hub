@@ -40,7 +40,7 @@ summary: GCN used to text classification.
 
 This MindSpore Hub model uses the implementation of GCN from the MindSpore model zoo on Gitee at model_zoo/official/gnn/gcn.
 
-More details pleas refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/gnn/gcn/README.md)
+More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/gnn/gcn/README.md)
 
 ## Usage
 
@@ -57,7 +57,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/ascend/1.0/gcn_v1.0_citeseer"
+model = "mindspore/ascend/0.7/gcn_v1.0_citeseer"
 
 config = ConfigGCN
 input_dim = 3703

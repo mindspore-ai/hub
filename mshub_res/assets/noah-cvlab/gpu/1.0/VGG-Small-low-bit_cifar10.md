@@ -38,9 +38,9 @@ mindspore-version: 1.0
 
 asset:
 
-- file-format: mslite
-  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/low_bit_quant/low_bit_quant_bs_1.ms>
-  asset-sha256: 81c17f9c60696bc286418563dc5dbfa240886cbd97d646596b07fc842c467d85
+- file-format: mslite  
+  asset-link: <https://download.mindspore.cn/model_zoo/official/lite/low_bit_quant/low_bit_quant_bs_1.ms>  
+  asset-sha256: 81c17f9c60696bc286418563dc5dbfa240886cbd97d646596b07fc842c467d85  
 
 license: Apache2.0
 
@@ -162,7 +162,7 @@ This MindSpore Hub model uses the implementation of Searching for Low-Bit Weight
     std::string retStr = ProcessRunnetResult(RET_CATEGORY_SUM, labels_name_map, output);
     ```
 
-4. The process of image and output data can refer to methods showing bellow.
+4. The process of image and output data can refer to methods showing below.
 
     ```cpp
     bool BitmapToLiteMat(JNIEnv *env, const jobject &srcBitmap, LiteMat *lite_mat) {
@@ -220,7 +220,7 @@ This MindSpore Hub model uses the implementation of Searching for Low-Bit Weight
 
       /*
       * The mean data and variance data shown below is just for reference.
-      * You are encouraged to caculate it from the dataset.
+      * You are encouraged to calculate it from the dataset.
       */
       std::vector<float> means = {0.491, 0.482, 0.447};
       std::vector<float> stds = {0.247, 0.243, 0.262};
