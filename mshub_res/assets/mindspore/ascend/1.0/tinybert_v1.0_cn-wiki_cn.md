@@ -80,7 +80,7 @@ for data in dataset.create_dict_iterator():
     input_ids, input_mask, token_type_id, label_ids = input_data
     logits = network(input_ids, token_type_id, input_mask)
     print("net output: ", logits)
-# 更多下游任务，请参考https://gitee.com/mindspore/mindspore/tree/v1.0/model_zoo/official/nlp/tinybert
+# 更多下游任务，请参考https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/tinybert
 ```
 
 ## 参考论文
