@@ -85,7 +85,7 @@ context.set_context(mode=context.GRAPH_MODE,
 
 model = "mindspore/ascend/1.0/mobilenetv2_v1.0_openimage"
 
-network = mshub.load(model, num_classes=601, include_top=True, activation="Sigmoid")
+network = mshub.load(model, num_classes=500, include_top=True, activation="Sigmoid")
 network.set_train(False)
 ```
 
