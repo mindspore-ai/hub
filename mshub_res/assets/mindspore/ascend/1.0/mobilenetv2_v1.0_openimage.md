@@ -22,7 +22,7 @@ author: MindSpore team
 
 update-time: 2020-09-10
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/mobilenetv2>
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/cv/mobilenetv2>
 
 user-id: MindSpore
 
@@ -40,8 +40,8 @@ asset:
 
 -
     file-format: ckpt  
-    asset-link: <https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/mobilenetv2_ascend.ckpt>  
-    asset-sha256: 0ce485e2ed61602d8bf15332db9801f114e820c142744b18f02491879421ecb3  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/1.1/mobilenetv2_ascend.ckpt>  
+    asset-sha256: 808636dd9da7a34ad70296fb4be023ee024d27bbba51b637b80ea2a979e5e12c  
 
 -
     file-format: mindir  
