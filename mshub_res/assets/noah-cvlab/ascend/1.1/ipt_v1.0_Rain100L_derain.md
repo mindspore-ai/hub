@@ -28,9 +28,9 @@ user-id: noah-cvlab
 
 used-for: inference
 
-train-backend: gpu
+train-backend: ascend
 
-infer-backend: gpu
+infer-backend: ascend
 
 mindspore-version: 1.1
 
@@ -59,11 +59,11 @@ from mindspore import context
 
 from src.args import args
 
-context.set_context(mode=context.PYNATIVE_MODE,
-                    device_target="GPU",
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="ASCEND",
                     device_id=0)
 
-model = "noah-cvlab/gpu/1.1/ ipt_v1.0_Rain100L_derain"
+model = "noah-cvlab/ascend/1.1/ipt_v1.0_Rain100L_derain"
 network = mshub.load(model, args)
 
 network.set_train(False)

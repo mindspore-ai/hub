@@ -63,7 +63,7 @@ context.set_context(mode=context.PYNATIVE_MODE,
                     device_target="GPU",
                     device_id=0)
 
-model = "noah-cvlab/gpu/1.0/IPT_sr3"
+model = "noah-cvlab/gpu/1.1/ipt_v1.0_Set14_SR_x3"
 network = mshub.load(model, args)
 
 network.set_train(False)
