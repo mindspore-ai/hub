@@ -50,6 +50,10 @@ summary: IPT used to do derain of Rain100L dataset of PSNR 41.98dB
 
 ---
 
+## Introduction
+
+This MindSpore Hub model uses the implementation of IPT from the MindSpore model zoo on Gitee at model_zoo/research/cv/IPT.
+
 ## Usage
 
 ```python

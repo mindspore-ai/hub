@@ -1,8 +1,8 @@
-# IPT-super-resolution-x2
+# IPT-SRx2
 
 ---
 
-model-name: IPT-super-resolution
+model-name: IPT-SRx2
 
 backbone-name: IPT
 
@@ -49,6 +49,10 @@ license: Apache2.0
 summary: IPT used to do x2 super-resolution of Set14 dataset of PSNR 34.54dB
 
 ---
+
+## Introduction
+
+This MindSpore Hub model uses the implementation of IPT from the MindSpore model zoo on Gitee at model_zoo/research/cv/IPT.
 
 ## Usage
 
