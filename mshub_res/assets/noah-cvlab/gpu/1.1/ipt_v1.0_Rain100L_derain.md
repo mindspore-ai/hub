@@ -1,8 +1,8 @@
-# IPT
+# IPT-deraining
 
 ---
 
-model-name: IPT
+model-name: IPT-deraining
 
 backbone-name: IPT
 
