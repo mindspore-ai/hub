@@ -1,8 +1,8 @@
-# IPT
+# IPT-super-resolution-x3
 
 ---
 
-model-name: IPT
+model-name: IPT-super-resolution-x3
 
 backbone-name: IPT
 
