@@ -46,7 +46,7 @@ class ValidMarkdown:
         self.valid_module_type = ['audio', 'cv', 'nlp', 'recommend', 'other']
         self.valid_train_dataset = ['cifar10', 'cifar100', 'zh-wiki', 'Gigaword corpus', 'captcha 0.1.1', 'cn-wiki',
                                     'openimage', 'Oxford-IIIT Pet', 'mnist', 'MLPerf v0.7 dataset',
-                                    'Rain100L', 'Set14', 'Set5']
+                                    'Rain100L', 'Set14', 'Set5', 'en-wiki']
         self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir', 'mslite']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
         self.valid_backend = ['cpu', 'gpu', 'ascend']
