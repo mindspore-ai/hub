@@ -12,15 +12,15 @@ fine-tunable: True
 
 input-shape: [[1, 128], [1, 128], [1, 128]]
 
-model-version: 1.0
+model-version: 1.2
 
-train-dataset: cn-wiki
+train-dataset: en-wiki
 
 author: MindSpore team
 
-update-time: 2020-09-22
+update-time: 2021-03-26
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.0/model_zoo/official/nlp/tinybert>
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.2/model_zoo/official/nlp/tinybert>
 
 user-id: MindSpore
 
@@ -30,14 +30,20 @@ train-backend: ascend
 
 infer-backend: ascend
 
-mindspore-version: 1.0
+mindspore-version: 1.2
 
 asset:
 
   -
     file-format: ckpt  
-    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/tinybert/tinybert_ascend_1.0_cn-wiki_official_nlp_20200922/tinybert.ckpt>  
-    asset-sha256: 7f528d70605affc5c2fc0901a729444dc45cfa5bd72fc2fb742c8a3ff4d878b6  
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/tinybert/tinybert_ascend_1.2_en-wiki_official_nlp_20210326/bert_base_ascend_1.2_en-wiki.ckpt>
+    asset-sha256: a62718990ca7dd8ce8982f9f2dc57a4dcd03e05945f234b6467539436907a03a
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/tinybert/tinybert_ascend_1.2_en-wiki_official_nlp_20210326/bert_base_finetune_ascend_1.2_sst2.ckpt>
+    asset-sha256: 286596339651a16b6fa70dd077e4cc11e0baef9a318eaa2ada4457de63d98d07
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/tinybert/tinybert_ascend_1.2_en-wiki_official_nlp_20210326/bert_base_finetune_ascend_1.2_mnli.ckpt>
+    asset-sha256: e8892e2491b238bfac88dd9843a7cb17a322a5c57dc194bbcfb2801ba6b68e62
+    asset-link: <https://download.mindspore.cn/model_zoo/official/nlp/tinybert/tinybert_ascend_1.2_en-wiki_official_nlp_20210326/bert_base_finetune_ascend_1.2_qnli.ckpt>  
+    asset-sha256: 89eb32e1d9e54bde96f239406b9701bd8457e2be814e4338e5d2507b88110f20  
 
 license: Apache2.0
 
@@ -49,7 +55,7 @@ summary: tinybert used to do classification, sequence labeling or squad tasks on
 
 This MindSpore Hub model uses the implementation of TinyBertModel from the MindSpore model zoo on Gitee at model_zoo/official/nlp/tinybert.
 
-This model has been trained on cn-wiki using the code published on Gitee.
+This model has been trained on en-wiki using the code published on Gitee.
 
 All Parameters in the module are trainable.
 
@@ -66,7 +72,7 @@ from mindspore.train.model import Model
 from model_zoo.official.nlp.tinybert.src.dataset import create_tinybert_dataset
 
 context.set_context(mode=context.GRAPH_MODE, device_target="Ascend", device_id=0)
-model = "mindspore/ascend/1.0/tinybert_v1.0_cn-wiki"
+model = "mindspore/ascend/1.0/tinybert_v1.2_en-wiki"
 network = mshub.load(model, is_training=False)
 network.set_train(False)
 # data dir can be glue dataset dir
