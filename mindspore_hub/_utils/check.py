@@ -48,6 +48,7 @@ class ValidMarkdown:
                                     'sentence', 'sst2', 'zhwiki', 'citeseer', 'imagenet2017',
                                     'musictag', 'yelp', 'movilens', 'subj', 'criteio',
                                     'amazonbeauty', 'voc2017', 'mr', 'icdar', 'wmtende',
+                                    'MJSynth', 'Speech Commands Version1', 'MagnaTagATune', 'ml-1m', 'wmtende',
                                     'imagenet2012', 'cora', 'icdar2015', 'coco2014',
                                     'captcha', 'coco2017', 'dpbedia', 'imagenet', 'isbi', 'cn-wiki',
                                     'openimage', 'Oxford-IIIT Pet', 'mnist', 'MLPerf v0.7 dataset',
