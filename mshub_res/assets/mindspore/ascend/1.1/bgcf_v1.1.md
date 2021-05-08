@@ -47,7 +47,7 @@ summary: BGCF used to recommend items.
 
 This MindSpore Hub model uses the implementation of BGCF from the MindSpore model zoo on Gitee at model_zoo/official/gnn/bgcf.
 
-More details pleas refer to the MindSpore model zoo on Gitee [model_zoo/official/gnn/bgcf](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/official/gnn/bgcf/README.md)
+More details please refer to the MindSpore model zoo on Gitee [model_zoo/official/gnn/bgcf](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/official/gnn/bgcf/README.md)
 
 All parameters in the module are trainable.
 
@@ -60,7 +60,7 @@ from mindspore import context, Tensor, nn
 from mindspore.train.model import Model
 from mindspore.common import dtype as mstype
 from mindspore.dataset.transforms import py_transforms
-from src.config import parser_args
+from model_zoo.official.gnn.bgcf.src.config import parser_args
 
 context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
