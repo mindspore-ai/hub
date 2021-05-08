@@ -18,8 +18,6 @@ train-dataset: mnist
 
 accuracy: 0.986
 
-
-
 author: MindSpore team
 
 update-time: 2020-09-21
@@ -37,15 +35,17 @@ infer-backend: ascend
 mindspore-version: 0.7
 
 asset:
+
   -
-    file-format: ckpt  
-    asset-link: https://download.mindspore.cn/model_zoo/official/cv/lenet/lenet_ascend_0.5.0_mnist_official_classification_20200716/lenet.ckpt
+    file-format: ckpt
+    asset-link: <https://download.mindspore.cn/model_zoo/official/cv/lenet/lenet_ascend_0.5.0_mnist_official_classification_20200716/lenet.ckpt>
     asset-sha256: 7adc21461aa42d10b065eb8be9a5b420b0d1336f6b33a84086e94fd5de8c48c5
 
 license: Apache2.0
-summary: LeNet used to classify the 10 classes of mnist.
----
 
+summary: LeNet used to classify the 10 classes of mnist.
+
+---
 
 ## Introduction
 
