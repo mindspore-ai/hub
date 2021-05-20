@@ -60,7 +60,7 @@ from mindspore import context, Tensor, nn
 from mindspore.train.model import Model
 from mindspore.common import dtype as mstype
 from mindspore.dataset.transforms import py_transforms
-from src.config import parser_args
+from model_zoo.official.gnn.bgcf.src.config import parser_args
 
 context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
