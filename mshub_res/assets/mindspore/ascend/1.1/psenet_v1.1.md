@@ -62,7 +62,7 @@ from mindspore import context, Tensor, nn
 from mindspore.train.model import Model
 from mindspore.common import dtype as mstype
 from mindspore.dataset.transforms import py_transforms
-from src.config import config
+from model_zoo.official.cv.psenet.src.config import config
 
 context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
