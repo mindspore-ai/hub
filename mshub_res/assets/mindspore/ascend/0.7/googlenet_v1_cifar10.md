@@ -24,7 +24,7 @@ author: MindSpore team
 
 update-time: 2020-08-25
 
-repo-link: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet
+repo-link: https://gitee.com/mindspore/mindspore/tree/r0.7/model_zoo/official/cv/googlenet
 
 user-id: MindSpore
 

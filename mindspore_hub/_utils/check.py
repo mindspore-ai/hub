@@ -35,9 +35,8 @@ class ValidMarkdown:
     """
     def __init__(self, filename):
         self.filename = filename
-        self.required_user_fields = ['backbone-name', 'module-type', 'fine-tunable', 'input-shape',
-                                     'model-version', 'train-dataset', 'author', 'update-time',
-                                     'repo-link', 'user-id', 'used-for', 'infer-backend',
+        self.required_user_fields = ['backbone-name', 'module-type', 'fine-tunable', 'input-shape', 'model-version',
+                                     'author', 'update-time', 'repo-link', 'user-id', 'used-for', 'infer-backend',
                                      'mindspore-version', 'license', 'summary']
         self.optional_backend_fields = 'train-backend'
         self.optional_image_fields = ['featured-image']
@@ -45,9 +44,15 @@ class ValidMarkdown:
         self.optional_allow_cache_ckpt_field = 'allow-cache-ckpt'
 
         self.valid_module_type = ['audio', 'cv', 'nlp', 'recommend', 'other']
-        self.valid_train_dataset = ['imagenet', 'coco', 'cifar10', 'cifar100', 'WMT', 'zh-wiki',
-                                    'Gigaword corpus', 'captcha 0.1.1', 'criteo', 'voc2007', 'cn-wiki',
-                                    'openimage', 'Oxford-IIIT Pet']
+        self.valid_train_dataset = ['widerface', 'cifar10', 'cifar100', 'zh-wiki', 'Gigaword corpus', 'captcha 0.1.1',
+                                    'sentence', 'sst2', 'zhwiki', 'citeseer', 'imagenet2017',
+                                    'musictag', 'yelp', 'movilens', 'subj', 'criteio',
+                                    'amazonbeauty', 'voc2017', 'mr', 'icdar', 'wmtende',
+                                    'MJSynth', 'Speech Commands Version1', 'MagnaTagATune', 'ml-1m', 'wmtende',
+                                    'imagenet2012', 'cora', 'icdar2015', 'coco2014',
+                                    'captcha', 'coco2017', 'dpbedia', 'imagenet', 'isbi', 'cn-wiki',
+                                    'openimage', 'Oxford-IIIT Pet', 'mnist', 'MLPerf v0.7 dataset',
+                                    'Rain100L', 'Set14', 'Set5', 'en-wiki', 'imagenet', 'coco', 'WMT']
         self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir', 'mslite']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
         self.valid_backend = ['cpu', 'gpu', 'ascend']
@@ -71,6 +76,9 @@ class ValidMarkdown:
         r"""
         Make sure the github or gitee repo exists
         """
+        if link is None:
+            return
+        link = link.strip('<>')
         if not verify_url(link):
             raise ValueError('url: ``{}`` is not trust in {}'.format(link, self.filename))
 
@@ -160,7 +168,8 @@ class ValidMarkdown:
                 raise TypeError("`input-shape` must be `list` of `int`, but got {}".format(header['input-shape']))
 
         self._validate_repo_link(header['repo-link'])
-        self._validate_train_dataset(header['train-dataset'])
+        if header.get('train-dataset', None):
+            self._validate_train_dataset(header['train-dataset'])
         self._validate_used_for(header['used-for'])
         self._validate_backend(header['infer-backend'])
         self._validate_module_type(header['module-type'])
@@ -215,20 +224,29 @@ class ValidMarkdown:
         Check MarkDown file with yaml.
         """
         print('Checking {}...'.format(self.filename), end="")
+        # Markdown validation only supports English files.
+        # For Chinese files, check corresponding Eng ones instead.
+        if self.filename[-5:-3] == "cn":
+            self.filename = self.filename[:-6] + self.filename[-3:]
+
         try:
             header = []
             markdown = []
             header_read = False
+            flag_num = 0
             with open(self.filename, 'r') as file:
                 for line in file:
                     if line.startswith('---'):
                         header_read = not header_read
+                        flag_num += 1
                         continue
                     if header_read:
                         header += [line]
                     else:
                         markdown += [line]
 
+            if flag_num != 2:
+                raise TypeError("MarkDown file: {} should have two '---'.".format(self.filename))
             # checks that it's valid yamp
             header = yaml.load(''.join(header), Loader=yaml.FullLoader)
             if not header:
@@ -247,12 +265,17 @@ class ValidMarkdown:
 
             header_dict = dict(header)
             header_dict["markdown_name"] = os.path.basename(os.path.splitext(self.filename)[0])
-            header_dict["uid"] = get_repo_info_from_url(header_dict.get("repo-link")).get("uid")
+            git_info = get_repo_info_from_url(header_dict.get("repo-link"))
+            if git_info is None:
+                header_dict["uid"] = ''
+            else:
+                header_dict["uid"] = get_repo_info_from_url(header_dict.get("repo-link")).get("uid")
             asset_id = 0
-            for idx in range(len(header_dict["asset"])):
-                if header_dict["asset"][idx]["file-format"].lower() == "ckpt":
-                    asset_id = idx
-            header_dict["asset-id"] = asset_id
+            if header_dict.get("asset", None):
+                for idx in range(len(header_dict["asset"])):
+                    if header_dict["asset"][idx]["file-format"].lower() == "ckpt":
+                        asset_id = idx
+                header_dict["asset-id"] = asset_id
         except (TypeError, ValueError) as e:
             print("\033[1;31m Failed\033[0m")
             raise e
