@@ -44,8 +44,18 @@ class ValidMarkdown:
         self.optional_allow_cache_ckpt_field = 'allow-cache-ckpt'
 
         self.valid_module_type = ['audio', 'cv', 'nlp', 'recommend', 'other']
-        self.valid_train_dataset = ['cifar10', 'cifar100', 'zh-wiki', 'Gigaword corpus', 'captcha 0.1.1', 'cn-wiki',
-                                    'openimage', 'Oxford-IIIT Pet', 'mnist', 'MLPerf v0.7 dataset']
+        self.valid_train_dataset = ['widerface', 'cifar10', 'cifar100', 'zh-wiki', 'Gigaword corpus', 'captcha 0.1.1',
+                                    'sentence', 'sst2', 'zhwiki', 'citeseer', 'imagenet2017', "icpr2018",
+                                    "apple2orange", "apple2orange", "horse2zebra", "horse2zebra", "atis_intent",
+                                    "mrda", "swda", "udc", "baidu", "cub200", "KingsCollege", "StMarysChurch",
+                                    "omniglot", "sop", "sop", "coc02017",
+                                    'musictag', 'yelp', 'movilens', 'subj', 'criteio',
+                                    'amazonbeauty', 'voc2017', 'mr', 'icdar', 'wmtende',
+                                    'MJSynth', 'Speech Commands Version1', 'MagnaTagATune', 'ml-1m', 'wmtende',
+                                    'imagenet2012', 'cora', 'icdar2015', 'coco2014',
+                                    'captcha', 'coco2017', 'dpbedia', 'imagenet', 'isbi', 'cn-wiki',
+                                    'openimage', 'Oxford-IIIT Pet', 'mnist', 'MLPerf v0.7 dataset',
+                                    'Rain100L', 'Set14', 'Set5', 'en-wiki']
         self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir', 'mslite']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
         self.valid_backend = ['cpu', 'gpu', 'ascend']
@@ -69,6 +79,9 @@ class ValidMarkdown:
         r"""
         Make sure the github or gitee repo exists
         """
+        if link is None:
+            return
+        link = link.strip('<>')
         if not verify_url(link):
             raise ValueError('url: ``{}`` is not trust in {}'.format(link, self.filename))
 
@@ -214,6 +227,11 @@ class ValidMarkdown:
         Check MarkDown file with yaml.
         """
         print('Checking {}...'.format(self.filename), end="")
+        # Markdown validation only supports English files.
+        # For Chinese files, check corresponding Eng ones instead.
+        if self.filename[-5:-3] == "cn":
+            self.filename = self.filename[:-6] + self.filename[-3:]
+
         try:
             header = []
             markdown = []
@@ -250,7 +268,11 @@ class ValidMarkdown:
 
             header_dict = dict(header)
             header_dict["markdown_name"] = os.path.basename(os.path.splitext(self.filename)[0])
-            header_dict["uid"] = get_repo_info_from_url(header_dict.get("repo-link")).get("uid")
+            git_info = get_repo_info_from_url(header_dict.get("repo-link"))
+            if git_info is None:
+                header_dict["uid"] = ''
+            else:
+                header_dict["uid"] = get_repo_info_from_url(header_dict.get("repo-link")).get("uid")
             asset_id = 0
             if header_dict.get("asset", None):
                 for idx in range(len(header_dict["asset"])):

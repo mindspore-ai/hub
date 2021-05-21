@@ -91,6 +91,9 @@ def get_repo_info_from_url(git_url):
     """
     Get repo information from url.
     """
+    if git_url is None:
+        return None
+    git_url = git_url.strip('<>')
     git_url = git_url.rstrip('/')
     webs_name = re.findall(".*http[s]?://(.*).com.*", git_url)
     if len(webs_name) != 1:
