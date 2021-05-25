@@ -49,7 +49,7 @@ summary: bert_base used to do classification, sequence labeling or squad tasks o
 
 This MindSpore Hub model uses the implementation of textrcnn from the MindSpore model zoo on Gitee at model_zoo/research/nlp/textrcnn.
 
-textrcnn is a audio network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/research/nlp/textrcnn](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/research/nlp/textrcnn/README.md).
+textrcnn is a audio network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/research/nlp/textrcnn](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/research/nlp/textrcnn/readme.md).
 
 All parameters in the module are trainable.
 
