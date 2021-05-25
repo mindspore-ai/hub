@@ -48,7 +48,7 @@ summary: yolov4_darknet53 used to do object detection
 
 This MindSpore Hub model uses the implementation of yolov4 from the MindSpore model zoo on Gitee at model_zoo/official/cv/yolov4.
 
-yolov4 is a audio network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/yolov4](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/official/cv/yolov4/README.md).
+yolov4 is a audio network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/yolov4](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/official/cv/yolov4/README.MD).
 
 All parameters in the module are trainable.
 
