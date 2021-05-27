@@ -1,10 +1,10 @@
-# TextCNN
+# DS-CNN
 
 ---
 
-model-name: textcnn
+model-name: dscnn
 
-backbone-name: textcnn
+backbone-name: dscnn
 
 module-type: nlp
 
@@ -14,13 +14,13 @@ input-shape: [[1, 128], [1, 128], [1, 128]]
 
 model-version: 1.1
 
-train-dataset: sst2
+train-dataset: Speech Commands Version1
 
 author: MindSpore team
 
 update-time: 2021-04-15
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/official/nlp/textcnn>
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/research/nlp/dscnn>
 
 user-id: MindSpore
 
@@ -36,8 +36,8 @@ asset:
 
   -
     file-format: ckpt  
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.1/textcnn_asecnd_v111_sst2_offical_nlp_bs64_acc82/textcnn_asecnd_v111_sst2_offical_nlp_bs64_acc82.ckpt>
-    asset-sha256: 39e91986eb3f91c7d71f46b45250843a034a1e14385d6210ec785908349f44e0
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.1/dscnn_ascend_v111_reseach_nlp_bs100_acc93/dscnn_ascend_v111_reseach_nlp_bs100_acc93.ckpt>
+    asset-sha256: 24e20615fe5da2609ce451f1f2fcd3c39d7f6b4046da84bc8362a85ac144462d
 
 license: Apache2.0
 
@@ -47,9 +47,9 @@ summary: bert_base used to do classification, sequence labeling or squad tasks o
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of textcnn from the MindSpore model zoo on Gitee at model_zoo/official/nlp/textcnn.
+This MindSpore Hub model uses the implementation of dscnn from the MindSpore model zoo on Gitee at model_zoo/research/nlp/dscnn.
 
-textcnn is a audio network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/nlp/textcnn](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/official/nlp/textcnn/README.md).
+dscnn is a audio network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/research/nlp/dscnn](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/research/nlp/dscnn/README.md).
 
 All parameters in the module are trainable.
 
@@ -67,9 +67,9 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/ascend/1.1/textcnn_v1.1_sst2"
+model = "mindspore/ascend/1.1/dscnn_v1.1_Speech Commands Version1"
 # initialize the number of classes based on the pre-trained model
-network = mshub.load(model, vocab_len=15463, word_len=51, num_classes=2, vec_length=40)
+network = mshub.load(model)
 network.set_train(False)
 
 # Use as the same as MindSpore Model to inference.
@@ -78,4 +78,5 @@ network.set_train(False)
 
 ## Citation
 
-1. Kim Y. Convolutional neural networks for sentence classification[J]. arXiv preprint arXiv:1408.5882, 2014.
+1. Zhang, Yundong, Naveen Suda, Liangzhen Lai, and Vikas Chandra.
+   "Hello edge: Keyword spotting on microcontrollers." arXiv preprint arXiv:1711.07128 (2017).

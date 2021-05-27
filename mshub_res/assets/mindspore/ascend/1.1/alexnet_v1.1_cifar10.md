@@ -69,7 +69,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/ascend/1.1/alexnet_v1.1_cifar10"
+model = "mindspore/ascend/1.1/AlexNet_v1.1_cifar10"
 # initialize the number of classes based on the pre-trained model
 network = mshub.load(model, num_classes=10)
 network.set_train(False)

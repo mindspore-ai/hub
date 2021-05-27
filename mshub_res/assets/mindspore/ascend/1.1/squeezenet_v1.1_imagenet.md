@@ -80,5 +80,5 @@ network.set_train(False)
 
 ## Citation
 
-1. Krizhevsky A, Sutskever I, Hinton G E. ImageNet Classification with Deep ConvolutionalNeural Networks. Advances In Neural Information Processing Systems.2012.
-2. Krizhevsky A, Hinton G. Learning multiple layers of features from tiny images[J].2009.
+1. Forrest N. Iandola and Song Han and Matthew W. Moskewicz and Khalid Ashraf and William J. Dally and Kurt Keutzer.
+   "SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size"
