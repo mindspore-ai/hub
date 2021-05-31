@@ -48,7 +48,7 @@ class ValidMarkdown:
                                     'sentence', 'sst2', 'zhwiki', 'citeseer', 'imagenet2017', "icpr2018",
                                     "apple2orange", "apple2orange", "horse2zebra", "horse2zebra", "atis_intent",
                                     "mrda", "swda", "udc", "baidu", "cub200", "KingsCollege", "StMarysChurch",
-                                    "omniglot", "sop", "sop", "coc02017",
+                                    "omniglot", "sop", "coc02017", 'movilensd', 'Criteo', 'voc2012',
                                     'musictag', 'yelp', 'movilens', 'subj', 'criteio',
                                     'amazonbeauty', 'voc2017', 'mr', 'icdar', 'wmtende',
                                     'MJSynth', 'Speech Commands Version1', 'MagnaTagATune', 'ml-1m', 'wmtende',
