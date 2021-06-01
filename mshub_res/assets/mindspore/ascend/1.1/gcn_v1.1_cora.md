@@ -14,6 +14,8 @@ input-shape: [2708, 1433, 7]
 
 model-version: 1.1
 
+train-dataset: cora
+
 author: MindSpore team
 
 update-time: 2021-04-15

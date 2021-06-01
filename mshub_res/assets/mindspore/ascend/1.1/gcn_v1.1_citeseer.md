@@ -14,6 +14,8 @@ input-shape: [3327, 3703, 6]
 
 model-version: 1.1
 
+train-dataset: citeseer
+
 author: MindSpore team
 
 update-time: 2021-04-15
