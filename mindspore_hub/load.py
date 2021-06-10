@@ -15,7 +15,7 @@
 """
 Loading network or model.
 
-Loding network definition or prtrained model from mindspore mindspore_hub.
+Loading network definition or pretrained model from mindspore mindspore_hub.
 """
 
 import sys
@@ -134,7 +134,7 @@ def _get_md_file(uid, name, cache_path, force_reload):
 
 
 def load(name, *args, pretrained=True, force_reload=True, **kwargs):
-    """
+    r"""
     Load network with the given name.
 
     Args:
@@ -148,7 +148,37 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
         Cell, a network.
 
     Examples:
-        >>> net = mindspore_hub.load('mindspore/ascend/0.2/googlenet_v1_cifar10', 10, pretrained=True)
+        >>> net = mindspore_hub.load('mindspore/ascend/1.1/alexnet_v1.1_cifar10', 10, pretrained=True)
+        >>> # For details about how to call the parameters of the network,
+        >>> # please refer to the "Usage" in the md file of the network.
+        >>> #
+        >>> # 1. To find the corresponding md file, there are two methods:
+        >>> #
+        >>> # 1.1. Find the corresponding md file from the local hub source code.
+        >>> # 1.1.1. Use 'git clone' command to copy the hub repository from
+        >>> # Mindspore/hub<https://gitee.com/mindspore/hub.git>. Assume that the hub repository is cloned to <D:\hub\>.
+        >>> # 1.1.2. The preceding address is <D:\hub\mshub_res\assets\mindspore\ascend\1.1\alexnet_v1.1_cifar10.md>.
+        >>> #
+        >>> # 1.2. Find the corresponding md file from the website.
+        >>> # 1.2.1. The prefix is fixed: <https://gitee.com/mindspore/hub/mshub_res/assets/>
+        >>> # + <address where you want to load the md file>.
+        >>> # 1.2.2. The preceding address is
+        >>> # <https://gitee.com/mindspore/hub/mshub_res/assets/mindspore/ascend/1.1/alexnet_v1.1_cifar10.md>.
+        >>> #
+        >>> # 2. Want to find more information about this network?
+        >>> # 2.1. Go to the corresponding website to learn more.
+        >>> # 2.2. To obtain the corresponding website, perform the following steps:
+        >>> # 2.2.1. After you have found the md file, there is a repo-link in the md file that allows
+        >>> # you to directly access the web page of the corresponding network.
+        >>> # 2.2.2. The web page corresponding to the preceding code is
+        >>> # <https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/official/cv/alexnet>.
+        >>> #
+        >>> # 2.3. The web page of operation 2.2 contains a "mindspore_hub_conf.py",
+        >>> # which is invoked by the load function. Therefore, to call more parameters,
+        >>> # or if you want to DIY interfaces to be called, you can modify this file.
+        >>> # It is recommended that you back up the mindspore_hub_conf.py file.
+        >>> # 2.4. In addition to the function of mindspore_hub_conf.py, you can also call files in the src files of the
+        >>> # corresponding web page. More Alexnet network information can be obtained from here.
     """
     if not isinstance(name, str):
         raise TypeError('Network name must be a string of name or a url.')
