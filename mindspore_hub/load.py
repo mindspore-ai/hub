@@ -160,10 +160,11 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
         >>> # 1.1.2. The preceding address is <D:\hub\mshub_res\assets\mindspore\ascend\1.1\alexnet_v1.1_cifar10.md>.
         >>> #
         >>> # 1.2. Find the corresponding md file from the website.
-        >>> # 1.2.1. The prefix is fixed: <https://gitee.com/mindspore/hub/mshub_res/assets/>
+        >>> # 1.2.1. The prefix is fixed: <https://gitee.com/mindspore/hub/tree/master/mshub_res/assets/>
         >>> # + <address where you want to load the md file>.
         >>> # 1.2.2. The preceding address is
-        >>> # <https://gitee.com/mindspore/hub/mshub_res/assets/mindspore/ascend/1.1/alexnet_v1.1_cifar10.md>.
+        >>> # <https://gitee.com/mindspore/hub/tree/master/mshub_res/assets/
+        >>> # mindspore/ascend/1.1/alexnet_v1.1_cifar10.md>.
         >>> #
         >>> # 2. Want to find more information about this network?
         >>> # 2.1. Go to the corresponding website to learn more.
