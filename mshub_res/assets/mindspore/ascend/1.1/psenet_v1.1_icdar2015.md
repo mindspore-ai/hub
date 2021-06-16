@@ -6,7 +6,7 @@ model-name: psenet
 
 backbone-name: resnet50
 
-module-type: cv-text-detection
+module-type: cv
 
 fine-tunable: True
 
