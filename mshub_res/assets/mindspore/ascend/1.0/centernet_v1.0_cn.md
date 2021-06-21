@@ -6,7 +6,7 @@
 
 骨干网络：DLA-34
 
-模块类型：cv-multi-person_pose_detection
+模块类型：cv
 
 可微调：True
 
