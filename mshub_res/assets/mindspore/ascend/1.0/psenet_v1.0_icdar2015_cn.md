@@ -6,7 +6,7 @@
 
 骨干网络：ResNet-50
 
-模块类型：cv-text-detection
+模块类型：cv
 
 可微调：True
 

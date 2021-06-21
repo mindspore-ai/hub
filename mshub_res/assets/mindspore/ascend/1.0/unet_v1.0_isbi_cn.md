@@ -6,7 +6,7 @@
 
 骨干网络：U-Net
 
-模块类型：cv-image-segmentation
+模块类型：cv-semantic_segmentation
 
 可微调：True
 
