@@ -54,8 +54,10 @@ class ValidMarkdown:
                                     'MJSynth', 'Speech Commands Version1', 'MagnaTagATune', 'ml-1m', 'wmtende',
                                     'imagenet2012', 'cora', 'icdar2015', 'coco2014',
                                     'captcha', 'coco2017', 'dpbedia', 'imagenet', 'isbi', 'cn-wiki',
-                                    'openimage', 'Oxford-IIIT Pet', 'mnist', 'MLPerf v0.7 dataset',
-                                    'Rain100L', 'Set14', 'Set5', 'en-wiki']
+                                    'openimage', 'Oxford-IIIT Pet', 'mnist', 'MLPerf v0.7 dataset', "agnews",
+                                    "movielens", "humanface", "dbpedia", "muti30k", "fsns", "gigaword", "openweb",
+                                    "criteo", "3datasets", "mindlarge", "outbrain", "gym", "luna16", "aclimdbv1",
+                                    "speech", 'Rain100L', 'Set14', 'Set5', 'en-wiki']
         self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir', 'mslite']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
         self.valid_backend = ['cpu', 'gpu', 'ascend']
