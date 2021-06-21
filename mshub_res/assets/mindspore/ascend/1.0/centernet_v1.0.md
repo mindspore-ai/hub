@@ -6,7 +6,7 @@ model-name: centernet
 
 backbone-name: dla34
 
-module-type: cv-multi-person_pose_detection
+module-type: cv
 
 fine-tunable: True
 
