@@ -6,7 +6,7 @@ model-name: unet2d
 
 backbone-name: unet
 
-module-type: cv-image-segmentation
+module-type: cv-semantic_segmentation
 
 fine-tunable: True
 
