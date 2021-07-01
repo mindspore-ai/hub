@@ -73,7 +73,7 @@ network = mshub.load(model)
 network.set_train(False)
 
 # Use as the same as MindSpore Model to inference.
-# ...
+
 ```
 
 ## Citation
