@@ -72,7 +72,7 @@ context.set_context(mode=context.GRAPH_MODE,
 
 model = "mindspore/ascend/1.1/psenet_v1.1_icdar2015"
 
-network = mshub.load(model, config=config)
+network = mshub.load(model)
 network.set_train(False)
 # Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/psenet>.
 ```
