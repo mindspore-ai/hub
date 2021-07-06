@@ -22,7 +22,7 @@ author: MindSpore team
 
 update-time: 2021-06-29
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.2/model_zoo/official/cv/ssdmobilenetv1fpn>
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.2/model_zoo/official/cv/ssd>
 
 user-id: MindSpore
 
@@ -51,7 +51,7 @@ summary: ssdmobilenetv1fpn is used for cv
 
 This MindSpore Hub model uses the implementation of ssdmobilenetv1fpn from the MindSpore model zoo on Gitee at model_zoo/official/cv/ssdmobilenetv1fpn.
 
-ssdmobilenetv1fpn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/ssdmobilenetv1fpn](ssdmobilenetv1fpn check readme link failed, now readmelink is https://gitee.com/mindspore/mindspore/blob/r1.2/model_zoo/official/cv/ssdmobilenetv1fpn/README.md and https://gitee.com/mindspore/mindspore/blob/r1.2/model_zoo/official/cv/ssdmobilenetv1fpn/README_CN.md).
+ssdmobilenetv1fpn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/ssdmobilenetv1fpn](https://gitee.com/mindspore/mindspore/blob/r1.2/model_zoo/official/cv/ssd/README.md).
 
 All parameters in the module are trainable.
 
