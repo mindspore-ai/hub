@@ -51,7 +51,7 @@ summary: ssdresnet50fpn is used for cv
 
 This MindSpore Hub model uses the implementation of ssdresnet50fpn from the MindSpore model zoo on Gitee at model_zoo/official/cv/ssdresnet50fpn.
 
-ssdresnet50fpn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/ssdresnet50fpn](https://gitee.com/mindspore/mindspore/blob/r1.2/model_zoo/official/cv/ssdresnet50fpn/README.md).
+ssdresnet50fpn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/ssdresnet50fpn](https://gitee.com/mindspore/mindspore/blob/r1.2/model_zoo/official/cv/ssd/README.md).
 
 All parameters in the module are trainable.
 
