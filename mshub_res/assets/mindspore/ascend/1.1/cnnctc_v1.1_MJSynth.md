@@ -59,12 +59,7 @@ All parameters in the module are trainable.
 
 ```python
 import mindspore_hub as mshub
-import mindspore
-from mindspore import context, Tensor, nn
-from mindspore.train.model import Model
-from mindspore.common import dtype as mstype
-from mindspore.dataset.transforms import py_transforms
-from model_zoo.official.cv.cnnctc.src.config import Config_CNNCTC
+from mindspore import context
 
 context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
@@ -72,10 +67,9 @@ context.set_context(mode=context.GRAPH_MODE,
 
 model = "mindspore/ascend/1.1/cnnctc_v1.1_MJSynth"
 
-config = Config_CNNCTC
-network = mshub.load(model, config.NUM_CLASS, config.HIDDEN_SIZE, config.FINAL_FEATURE_WIDTH)
+network = mshub.load(model)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/cnnctc>.
+
 ```
 
 ## Citation

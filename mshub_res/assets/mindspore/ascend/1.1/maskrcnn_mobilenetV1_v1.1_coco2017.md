@@ -67,7 +67,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/ascend/1.1/maskrcnn_Mobilenetv1_v1.1_coco2017"
+model = "mindspore/ascend/1.1/maskrcnn_mobilenetV1_v1.1_coco2017"
 # initialize the number of classes based on the pre-trained model
 network = mshub.load(model)
 network.set_train(False)

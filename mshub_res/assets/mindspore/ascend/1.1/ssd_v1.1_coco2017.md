@@ -2,7 +2,7 @@
 
 ---
 
-model-name: ssd
+model-name: ssd300
 
 backbone-name: ssd300
 

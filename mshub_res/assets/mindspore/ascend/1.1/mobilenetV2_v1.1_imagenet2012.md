@@ -73,7 +73,7 @@ context.set_context(mode=context.GRAPH_MODE,
 
 model = "mindspore/ascend/1.1/mobilenetV2_v1.1_imagenet2012"
 # initialize the number of classes based on the pre-trained model
-network = mshub.load(model)
+network = mshub.load(model, num_classes=1000)
 network.set_train(False)
 
 # Use as the same as MindSpore Model to inference.
