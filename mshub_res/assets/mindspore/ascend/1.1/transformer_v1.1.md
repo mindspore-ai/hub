@@ -2,7 +2,7 @@
 
 ---
 
-model-name: transformer
+model-name: transformer_large
 
 backbone-name: TransformerModel
 
