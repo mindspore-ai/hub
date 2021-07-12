@@ -51,7 +51,7 @@ summary: AlexNet used to classify the 10 classes of cifar10.
 
 This MindSpore Hub model uses the implementation of shufflenetv1 from the MindSpore model zoo on Gitee at model_zoo/official/cv/shufflenetv1.
 
-shufflenetv1 is a audio network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/shufflenetv1](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/official/cv/shufflenetv1/README.md).
+shufflenetv1 is a audio network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/shufflenetv1](https://gitee.com/mindspore/mindspore/blob/r1.1/model_zoo/official/cv/shufflenetv1/README_CN.md).
 
 All parameters in the module are trainable.
 
