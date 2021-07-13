@@ -38,10 +38,10 @@ MindSpore Hub网站将在24小时内更新。
 整个发布过程包括：
 
 1. 创建模型并上传到可访问的地址。
-1. 在repo下添加一个模型生成文件（.python），文件名为``mindspore_hub_conf.py``。
-1. 编写Markdown文档，示例位于``examples``。
-1. 使用``tools/md_validator.py``中的检查脚本自检Markdown文件的模式是否可用。
-1. 创建发布请求。
+2. 在repo下添加一个模型生成文件（.python），文件名为``mindspore_hub_conf.py``。
+3. 编写Markdown文档，示例位于``examples``。
+4. 使用``tools/md_validator.py``中的检查脚本自检Markdown文件的模式是否可用。
+5. 创建发布请求。
 
 更多详细，请参阅以下章节。
 
@@ -51,11 +51,11 @@ MindSpore Hub网站将在24小时内更新。
 
 MindSpore Hub仓库支持多种模型文件格式，包括：
 
-* [MindSpore CKPT](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.save_checkpoint)
-* [AIR](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.export)
-* [MindIR](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.export)
-* [ONNX](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.export)
-* [MSLite](https://www.mindspore.cn/tutorial/lite/en/master/use/converter_tool.html)
+* [MindSpore CKPT](https://www.mindspore.cn/docs/api/zh-CN/master/api_python/mindspore.train.html#mindspore.train.serialization.save_checkpoint)
+* [AIR](https://www.mindspore.cn/docs/api/zh-CN/master/api_python/mindspore.train.html#mindspore.train.serialization.export)
+* [MindIR](https://www.mindspore.cn/docs/api/zh-CN/master/api_python/mindspore.train.html#mindspore.train.serialization.export)
+* [ONNX](https://www.mindspore.cn/docs/api/zh-CN/master/api_python/mindspore.train.html#mindspore.train.serialization.export)
+* [MSLite](https://www.mindspore.cn/lite/docs/zh-CN/master/use/converter_tool.html)
 
 ### 代码
 
