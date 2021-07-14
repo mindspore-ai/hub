@@ -16,7 +16,7 @@ model-version: v1.2
 
 train-dataset: coco2017
 
-accuracy: 33
+accuracy: 40
 
 author: MindSpore team
 
@@ -38,8 +38,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.2/openpose_ascend_v120_coco2017_official_cv_bs10_acc33/openpose_ascend_v120_coco2017_official_cv_bs10_acc33.ckpt>
-    asset-sha256: 2f565f0ddb905e9b6079c5442612db2c08b44a8b97521924bd299b09517db549
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.2/openpose_ascend_v120_coco2017_official_cv_bs10_acc40/openpose_ascend_v120_coco2017_official_cv_bs10_acc40.ckpt>
+    asset-sha256: 3097e36da32bf8d7581563bdf3c70b89608919284adbf4233057fbb9a1b165b5
 
 license: Apache2.0
 
