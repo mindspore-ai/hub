@@ -23,7 +23,7 @@ See example below:
 
 | UID | Url |
 | ------ | --- |
-| mindspore/ascend/1.0/alexnet_v1_cifar10 | https://gitee.com/mindspore/hub/blob/master/mshub_res/assets/mindspore/ascend/1.0/alexnet_v1_cifar10.md |
+| mindspore/ascend/1.0/alexnet_v1_cifar10 | <https://gitee.com/mindspore/hub/blob/r1.3/mshub_res/assets/mindspore/ascend/1.0/alexnet_v1_cifar10.md> |
 
 | UID | repo_path|
 | --- | ---      |
@@ -38,10 +38,10 @@ We don't restrict the location of the model file. But we suggest you set the ter
 The full process of publishing consists of:
 
 1. Creating the model, and upload to a place which can be accessed
-1. Adding a model generation python file named ``mindspore_hub_conf.py`` under the repo
-1. Writing documentation, which is a markdown file and an example is located in ``examples``
-1. Using the check script in ``tools/md_validator.py`` to self-checking the markdown file's pattern is good or not
-1. Creating a publishing request.
+2. Adding a model generation python file named ``mindspore_hub_conf.py`` under the repo
+3. Writing documentation, which is a markdown file and an example is located in ``examples``
+4. Using the check script in ``tools/md_validator.py`` to self-checking the markdown file's pattern is good or not
+5. Creating a publishing request.
 
 See sections below for more details.
 
@@ -51,11 +51,11 @@ See sections below for more details.
 
 The MindSpore Hub repository supports multiple kinds of model file-formats, including:
 
-* [MindSpore CKPT](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.save_checkpoint)
-* [AIR](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.export)
-* [MindIR](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.export)
-* [ONNX](https://www.mindspore.cn/doc/api_python/en/master/mindspore/mindspore.train.html#mindspore.train.serialization.export)
-* [MSLite](https://www.mindspore.cn/tutorial/lite/en/master/use/converter_tool.html)
+* [MindSpore CKPT](https://www.mindspore.cn/docs/api/en/r1.3/api_python/mindspore.train.html#mindspore.train.serialization.save_checkpoint)
+* [AIR](https://www.mindspore.cn/docs/api/en/r1.3/api_python/mindspore.train.html#mindspore.train.serialization.export)
+* [MindIR](https://www.mindspore.cn/docs/api/en/r1.3/api_python/mindspore.train.html#mindspore.train.serialization.export)
+* [ONNX](https://www.mindspore.cn/docs/api/en/r1.3/api_python/mindspore.train.html#mindspore.train.serialization.export)
+* [MSLite](https://www.mindspore.cn/lite/docs/en/r1.3/use/converter_tool.html)
 
 ### Codes
 
