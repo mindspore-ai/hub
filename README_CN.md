@@ -79,11 +79,11 @@ MindSpore Hub是MindSpore生态的预训练模型应用工具，作为模型开�
 
 ## 快速入门
 
-参考[从Hub加载模型](https://www.mindspore.cn/tutorial/training/zh-CN/master/use/load_model_for_inference_and_transfer.html#hub)实现模型加载以及模型微调迁移。
+参考[从Hub加载模型](https://www.mindspore.cn/hub/docs/zh-CN/master/loading_model_from_hub.html)实现模型加载以及模型微调迁移。
 
 ## 文档
 
-有关安装指南、教程和API的更多详细信息，请参阅[从Hub加载模型](https://www.mindspore.cn/tutorial/training/zh-CN/master/use/load_model_for_inference_and_transfer.html#hub)和[发布模型](https://www.mindspore.cn/tutorial/training/zh-CN/master/use/publish_model.html)。
+有关安装指南、教程和API的更多详细信息，请参阅[从Hub加载模型](https://www.mindspore.cn/hub/docs/zh-CN/master/loading_model_from_hub.html)和[发布模型](https://www.mindspore.cn/hub/docs/zh-CN/master/publish_model.html)。
 
 ## 社区
 
