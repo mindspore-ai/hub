@@ -15,7 +15,7 @@
 """
 Loading network or model.
 
-Loding network definition or prtrained model from mindspore mindspore_hub.
+Loading network definition or prtrained model from mindspore mindspore_hub.
 """
 
 import sys
@@ -203,9 +203,9 @@ def load_weights(network, handle=None, force_reload=True):
         force_reload (bool, optional): Whether to force a fresh download unconditionally. Default: False.
 
     Examples:
-        >>> uid = 'mindspore/ascend/0.2/googlenet_v1_cifar10'
+        >>> uid = 'mindspore/ascend/1.2/googlenet_v1_cifar10'
         >>> load_weights(net, handle=uid, force_reload=True)
-        >>> url = 'https://hub.mindspore.com/mindspore/ascend/0.2/googlenet_v1_cifar10'
+        >>> url = 'https://gitee.com/mindspore/hub/tree/master/mshub_res/assets/mindspore/ascend/1.2/googlenet_v1.2_cifar10.md'
         >>> load_weights(net, handle=url, force_reload=True)
     """
     if not isinstance(network, nn.Cell):
