@@ -24,10 +24,10 @@ from mindspore_hub._utils.auto_rename import auto_rename
 from mindspore_hub.load import load_weights
 from mindspore_hub.load import _get_network_from_cache
 
-def test_check_md(file_path='../mshub_res/assets/mindspore/gpu/0.6/alexnet_v1_cifar10.md'):
+def test_check_md(file_path='../mshub_res/assets/mindspore/gpu/1.0/googlenet_v1_cifar10.md'):
     ValidMarkdown(file_path).check_markdown_file()
 
-def test_check_md_of_dir(check_dir='../mshub_res/assets/mindspore/gpu/0.6/'):
+def test_check_md_of_dir(check_dir='../mshub_res/assets/mindspore/gpu/1.0/'):
     check_dir = os.path.join(check_dir, '*.md')
     for each_file in glob.glob(check_dir):
         # Skip documentation
@@ -51,8 +51,8 @@ def test_check_all_md_of_dir(check_dir='../mshub_res/assets/'):
 
 def test_download_ckpt():
     """test download ckpt."""
-    md_path = '../mshub_res/assets/mindspore/gpu/0.6/alexnet_v1_cifar10.md'
-    cell = CellInfo("alexnet")
+    md_path = '../mshub_res/assets/mindspore/gpu/1.0/googlenet_v1_cifar10.md'
+    cell = CellInfo("googlenet")
     cell.update(md_path)
 
     asset_link = cell.asset[cell.asset_id]['asset-link']
@@ -65,15 +65,15 @@ def test_download_ckpt():
 
 
 def test_download_repo():
-    git_url = 'https://github.com/jluleilei/testnet'
+    git_url = 'https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet'
     set_hub_dir('.cache')
     path = get_hub_dir()
     ret = _download_repo_from_url(git_url, path)
     assert ret
 
 def test_download_repo_of_dir():
-    md_path = '../mshub_res/assets/mindspore/gpu/0.6/alexnet_v1_cifar10.md'
-    cell = CellInfo("alexnet")
+    md_path = '../mshub_res/assets/mindspore/gpu/1.0/googlenet_v1_cifar10.md'
+    cell = CellInfo("googlenet")
     cell.update(md_path)
 
     git_url = cell.repo_link
@@ -91,7 +91,7 @@ def test_load_weights_input_uid():
     _download_repo_from_url(repo_link, path)
 
     net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
-    load_weights(net, handle='mindspore/ascend/0.7/googlenet_v1_cifar10', force_reload=True)
+    load_weights(net, handle='mindspore/ascend/1.0/googlenet_v1_cifar10', force_reload=True)
     print(net)
 
 def test_load_weights_input_url():
@@ -103,13 +103,13 @@ def test_load_weights_input_url():
     _download_repo_from_url(repo_link, path)
 
     net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
-    load_weights(net, handle='https://hub.mindspore.com/mindspore/ascend/0.7/googlenet_v1_cifar10', force_reload=True)
+    load_weights(net, handle='https://hub.mindspore.com/mindspore/ascend/1.0/googlenet_v1_cifar10', force_reload=True)
     print(net)
 
 def test_auto_rename():
     test_download_ckpt()
-    source_file_path = '.cache/alexnet.ckpt'
+    source_file_path = '.cache/googlenet.ckpt'
     save_path = './cache1'
-    md_path = '../mshub_res/assets/mindspore/gpu/0.6/alexnet_v1_cifar10.md'
+    md_path = '../mshub_res/assets/mindspore/gpu/1.0/googlenet_v1_cifar10.md'
     des_file_path = auto_rename(source_file_path, save_path, md_path)
     assert os.path.exists(des_file_path)
