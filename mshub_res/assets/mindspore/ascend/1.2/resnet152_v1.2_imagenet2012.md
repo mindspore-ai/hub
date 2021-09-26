@@ -2,9 +2,9 @@
 
 ---
 
-model-name: resnet
+model-name: resnet152
 
-backbone-name: resnet
+backbone-name: resnet152
 
 module-type: cv
 
@@ -16,11 +16,11 @@ model-version: v1.2
 
 train-dataset: imagenet2012
 
-accuracy: 78
+accuracy: 78.72
 
 author: MindSpore team
 
-update-time: 2021-06-29
+update-time: 2021-09-14
 
 repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.2/model_zoo/official/cv/resnet152>
 
@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.2/resnet152_ascend_v120_imagenet2012_official_cv_bs32_top1acc78_top5acc94/resnet152_ascend_v120_imagenet2012_official_cv_bs32_top1acc78_top5acc94.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.2/resnet152_ascend_v120_imagenet2012_official_cv_bs32_top1acc78.72__top5acc94.34/resnet152_ascend_v120_imagenet2012_official_cv_bs32_top1acc78.72__top5acc94.34.ckpt>
     asset-sha256: 840c362b02beed6ae85f09b0dd09c41a5e70c012b396ca3f942e41d1b272c67d
 
 license: Apache2.0
@@ -58,8 +58,14 @@ All parameters in the module are trainable.
 ## Usage
 
 ```python
+import mindspore
 import mindspore_hub as mshub
+from mindspore import Tensor
+from mindspore import nn
 from mindspore import context
+from mindspore.train.model import Model
+from mindspore.common import dtype as mstype
+from mindspore.dataset.transforms import py_transforms
 
 context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
