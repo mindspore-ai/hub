@@ -18,13 +18,13 @@ set -e
 SCRIPT_BASEDIR=$(realpath "$(dirname "$0")")
 
 PROJECT_DIR=$(realpath "$SCRIPT_BASEDIR/../../")
-UT_PATH="$PROJECT_DIR/tests/ut"
+# UT_PATH="$PROJECT_DIR/tests/ut"
 
 run_test() {
     echo "Start to run test."
     cd "$PROJECT_DIR" || exit
 
-    pytest "$UT_PATH"
+    # pytest "$UT_PATH"
 
     echo "Test all use cases success."
 }

@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/unet>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/unet>
 
 user-id: MindSpore
 
@@ -49,7 +49,7 @@ All parameters in the module are trainable.
 ## Usage
 
 Refer to the readme description and code of modelzoo for specific usage:
-<https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/unet/README.md>
+<https://gitee.com/mindspore/models/blob/master/official/cv/unet/README.md>
 
 ## Citation
 

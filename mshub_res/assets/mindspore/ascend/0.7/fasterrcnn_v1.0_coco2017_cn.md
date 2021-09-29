@@ -20,7 +20,7 @@ mAP(0.5)：0.576
 
 更新时间：2020-9-10
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/faster_rcnn>
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/cv/faster_rcnn>
 
 用户ID：MindSpore
 

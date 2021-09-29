@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-19
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gcn>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/gnn/gcn>
 
 user-id: MindSpore
 
@@ -40,7 +40,7 @@ summary: GCN used to text classification.
 
 This MindSpore Hub model uses the implementation of GCN from the MindSpore model zoo on Gitee at model_zoo/official/gnn/gcn.
 
-More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/gnn/gcn/README.md)
+More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/models/blob/master/official/gnn/gcn/README.md)
 
 ## Usage
 
@@ -64,7 +64,7 @@ input_dim = 3703
 class_num = 6
 network = mshub.load(model, config, input_dim, class_num)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gcn>.
+# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/models/tree/master/official/gnn/gcn>.
 ```
 
 ## Citation

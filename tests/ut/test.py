@@ -65,7 +65,7 @@ def test_download_ckpt():
 
 
 def test_download_repo():
-    git_url = 'https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet'
+    git_url = 'https://gitee.com/mindspore/models/tree/master/official/cv/googlenet'
     set_hub_dir('.cache')
     path = get_hub_dir()
     ret = _download_repo_from_url(git_url, path)
@@ -87,7 +87,7 @@ def test_load_weights_input_uid():
     set_hub_dir('.cache')
     path = get_hub_dir()
 
-    repo_link = 'https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet'
+    repo_link = 'https://gitee.com/mindspore/models/tree/master/official/cv/googlenet'
     _download_repo_from_url(repo_link, path)
 
     net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
@@ -99,7 +99,7 @@ def test_load_weights_input_url():
     set_hub_dir('.cache')
     path = get_hub_dir()
 
-    repo_link = 'https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/googlenet'
+    repo_link = 'https://gitee.com/mindspore/models/tree/master/official/cv/googlenet'
     _download_repo_from_url(repo_link, path)
 
     net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
