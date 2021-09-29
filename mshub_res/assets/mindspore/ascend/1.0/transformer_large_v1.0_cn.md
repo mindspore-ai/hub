@@ -40,7 +40,7 @@ MindSpore版本：1.0
 
 该MindSpore Hub模型使用码云上MindSpore ModelZoo中的TransformerModel实现，目录为model_zoo/official/nlp/transformer。
 
-该模型支持的动态输入形状取决于输入序列长度，最大序列长度为128。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/nlp/transformer/README.md)。
+该模型支持的动态输入形状取决于输入序列长度，最大序列长度为128。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/models/blob/master/official/nlp/transformer/README.md)。
 
 模块中所有参数均可训练。
 

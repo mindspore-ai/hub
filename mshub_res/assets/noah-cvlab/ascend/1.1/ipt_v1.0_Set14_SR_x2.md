@@ -22,7 +22,7 @@ author: Noah CVLab
 
 update-time: 2021-03-05
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/IPT>
+repo-link: <https://gitee.com/mindspore/models/tree/master/research/cv/IPT>
 
 user-id: noah-cvlab
 

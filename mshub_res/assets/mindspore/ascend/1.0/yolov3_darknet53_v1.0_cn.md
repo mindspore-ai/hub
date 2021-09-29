@@ -18,7 +18,7 @@
 
 更新时间：2020-9-22
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/yolov3_darknet53>
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/cv/yolov3_darknet53>
 
 用户ID：MindSpore
 
@@ -40,7 +40,7 @@ MindSpore版本：1.0
 
 该MindSpore Hub模型使用码云上MindSpore ModelZoo中的yolov3_darknet53实现，目录为model_zoo/official/cv/yolov3_darknet53。
 
-yolov3_darknet53支持10种不同的输入形状，提高了准确率。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/yolov3_darknet53/README.md)。
+yolov3_darknet53支持10种不同的输入形状，提高了准确率。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/models/blob/master/official/cv/yolov3_darknet53/README.md)。
 
 模块中所有参数均可训练。
 

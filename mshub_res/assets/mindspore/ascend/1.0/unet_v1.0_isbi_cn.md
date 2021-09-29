@@ -20,7 +20,7 @@ Dice系数：0.908
 
 更新时间：2020-9-22
 
-代码仓链接： <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/unet>
+代码仓链接： <https://gitee.com/mindspore/models/tree/master/official/cv/unet>
 
 用户ID：MindSpore
 
@@ -49,7 +49,7 @@ MindSpore版本：1.0
 ## 用法
 
 具体用法请参考ModelZoo的README描述和代码：
-<https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/unet/README.md>
+<https://gitee.com/mindspore/models/blob/master/official/cv/unet/README.md>
 
 ## 参考论文
 

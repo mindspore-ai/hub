@@ -18,7 +18,7 @@
 
 更新时间：2020-9-19
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/recommend/deepfm>
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/recommend/deepfm>
 
 用户ID：MindSpore
 
@@ -40,7 +40,7 @@ MindSpore版本：1.0
 
 该MindSpore Hub模型使用码云上MindSpore ModelZoo中的DeepFM实现，目录为model_zoo/official/recommend/deepfm。
 
-DeepFM是一个推荐网络。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/recommend/deepfm/README.md)。
+DeepFM是一个推荐网络。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/models/blob/master/official/recommend/deepfm/README.md)。
 
 模块中所有参数均可训练。
 
