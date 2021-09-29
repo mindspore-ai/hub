@@ -22,7 +22,7 @@ author: Noah CVLab
 
 update-time: 2021-03-31
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/renas>
+repo-link: <https://gitee.com/mindspore/models/tree/master/research/cv/renas>
 
 user-id: noah-cvlab
 

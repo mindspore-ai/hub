@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-19
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/recommend/deepfm>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/recommend/deepfm>
 
 user-id: MindSpore
 
@@ -40,7 +40,7 @@ summary: deepfm used in recommend system
 
 This MindSpore Hub model uses the implementation of deepfm from the MindSpore model zoo on Gitee at model_zoo/official/recommend/deepfm.
 
-deepfm is a recommend network. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/recommend/deepfm/README.md).
+deepfm is a recommend network. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/models/blob/master/official/recommend/deepfm/README.md).
 
 All parameters in the module are trainable.
 

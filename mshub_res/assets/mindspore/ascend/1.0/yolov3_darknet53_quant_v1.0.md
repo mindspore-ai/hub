@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-19
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/yolov3_darknet53_quant>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/yolov3_darknet53_quant>
 
 user-id: MindSpore
 
@@ -40,7 +40,7 @@ summary: yolov3_darknet53_quant used to do object detection, and reduce the size
 
 This MindSpore Hub model uses the implementation of yolov3_darknet53_quant from the MindSpore model zoo on Gitee at model_zoo/official/cv/yolov3_darknet53_quant.
 
-yolov3_darknet53_quant supports 10 different input shapes for improving accuracy. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/yolov3_darknet53_quant/README.md).
+yolov3_darknet53_quant supports 10 different input shapes for improving accuracy. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/models/blob/master/official/cv/yolov3_darknet53_quant/README.md).
 
 All parameters in the module are trainable.
 

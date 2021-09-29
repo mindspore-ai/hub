@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2020-09-22
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/resnet_thor>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/resnet_thor>
 
 user-id: MindSpore
 
@@ -42,7 +42,7 @@ summary: resnet50_thor for image classification
 
 This MindSpore Hub model uses the implementation of resnet50_thor from the MindSpore model zoo on Gitee at model_zoo/official/cv/resnet_thor.
 
-More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/resnet_thor/README.md).
+More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/models/blob/master/official/cv/resnet_thor/README.md).
 
 ## Citation
 

@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-19
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gat>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/gnn/gat>
 
 user-id: MindSpore
 
@@ -40,7 +40,7 @@ summary: GAT used to text classification.
 
 This MindSpore Hub model uses the implementation of GAT from the MindSpore model zoo on Gitee at model_zoo/official/gnn/gat.
 
-More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/gnn/gat/README.md)
+More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/models/blob/master/official/gnn/gat/README.md)
 
 All parameters in the module are trainable.
 
@@ -68,7 +68,7 @@ config.num_nodes = 2708
 network = mshub.load(model, config.feature_size, config.num_class, config.num_nodes,
                      config.hid_units, config.n_heads, 0.0, 0.0)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gat>.
+# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/models/tree/master/official/gnn/gat>.
 ```
 
 ## Citation

@@ -23,7 +23,7 @@
 
 更新时间：2020-9-21
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/recommend/wide_and_deep_multitable>
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/recommend/wide_and_deep_multitable>
 
 用户ID：MindSpore
 

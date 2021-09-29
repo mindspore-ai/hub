@@ -20,7 +20,7 @@
 
 更新时间：2020-9-21
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/densenet>。
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/cv/densenet>。
 
 用户ID：MindSpore
 
@@ -40,7 +40,7 @@ MindSpore版本：1.0
 
 ## 简介
 
-该MindSpore Hub模型使用码云上MindSpore ModelZoo中的DenseNet121实现，目录为[model_zoo/official/cv/densenet](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/densenet)。
+该MindSpore Hub模型使用码云上MindSpore ModelZoo中的DenseNet121实现，目录为[model_zoo/official/cv/densenet](https://gitee.com/mindspore/models/tree/master/official/cv/densenet)。
 
 ## 参考论文
 

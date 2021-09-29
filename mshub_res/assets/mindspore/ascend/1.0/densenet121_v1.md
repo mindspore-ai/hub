@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2020-09-21
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/densenet>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/densenet>
 
 user-id: MindSpore
 
@@ -40,7 +40,7 @@ summary: DenseNet121 used to classify the 1000 classes.
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of DenseNet121 from the MindSpore model zoo on Gitee at [model_zoo/official/cv/densenet](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/densenet).
+This MindSpore Hub model uses the implementation of DenseNet121 from the MindSpore model zoo on Gitee at [model_zoo/official/cv/densenet](https://gitee.com/mindspore/models/tree/master/official/cv/densenet).
 
 ## Citation
 
