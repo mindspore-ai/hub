@@ -44,7 +44,9 @@ class ValidMarkdown:
         self.optional_allow_cache_ckpt_field = 'allow-cache-ckpt'
 
         self.valid_module_type = ['gnn', 'rl', 'audio', 'cv', 'nlp', 'recommend', 'other']
-        self.valid_train_dataset = ['widerface', 'cifar10', 'cifar100', 'zh-wiki', 'Gigaword corpus', 'captcha 0.1.1',
+        self.valid_train_dataset = ['lsun', 'pemsd7m', 'baiduzijianshujuji', 'dbpedia', 'muti30k', 'ms1mv2',
+                                    'celeba', 'widerface', 'cifar10', 'cifar100', 'zh-wiki',
+                                    'Gigaword corpus', 'captcha 0.1.1',
                                     'sentence', 'sst2', 'zhwiki', 'citeseer', 'imagenet2017', "icpr2018",
                                     "apple2orange", "apple2orange", "horse2zebra", "horse2zebra", "atis_intent",
                                     "mrda", "swda", "udc", "baidu", "cub200", "KingsCollege", "StMarysChurch",

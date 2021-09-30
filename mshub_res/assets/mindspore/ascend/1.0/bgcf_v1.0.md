@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-19
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/bgcf>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/gnn/bgcf>
 
 user-id: MindSpore
 
@@ -40,7 +40,7 @@ summary: BGCF used to recommend items.
 
 This MindSpore Hub model uses the implementation of BGCF from the MindSpore model zoo on Gitee at model_zoo/official/gnn/bgcf.
 
-More details pleas refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/gnn/bgcf/README.md)
+More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/gnn/bgcf/README.md)
 
 All parameters in the module are trainable.
 
@@ -66,7 +66,7 @@ config.num_user = 7068
 config.num_item = 3570
 network = mshub.load(model, [config.input_dim, config.num_user, config.num_item], config.embedded_dimension, config.activation, [0.0, 0.0, 0.0], config.num_user, config.num_item, config.input_dim)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/bgcf>.
+# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/models/tree/master/official/gnn/bgcf>.
 ```
 
 ## Citation

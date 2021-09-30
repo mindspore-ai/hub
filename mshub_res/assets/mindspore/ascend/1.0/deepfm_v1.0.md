@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-19
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/recommend/deepfm>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/recommend/deepfm>
 
 user-id: MindSpore
 

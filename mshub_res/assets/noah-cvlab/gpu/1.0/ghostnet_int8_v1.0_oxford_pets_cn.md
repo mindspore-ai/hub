@@ -22,7 +22,7 @@
 
 更新时间：2020-9-8
 
-代码仓链接： <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/ghostnet_quant>
+代码仓链接： <https://gitee.com/mindspore/models/tree/master/research/cv/ghostnet_quant>
 
 用户ID：noah-cvlab
 

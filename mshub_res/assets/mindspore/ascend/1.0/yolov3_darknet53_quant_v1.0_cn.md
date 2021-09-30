@@ -18,7 +18,7 @@
 
 更新时间：2020-9-19
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/yolov3_darknet53_quant>。
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/cv/yolov3_darknet53_quant>。
 
 用户ID：MindSpore
 

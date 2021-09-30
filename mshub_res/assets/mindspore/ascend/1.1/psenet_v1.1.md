@@ -72,7 +72,7 @@ model = "mindspore/ascend/1.1/psenet_v1.1"
 
 network = mshub.load(model)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/psenet>.
+# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/models/tree/master/official/cv/psenet>.
 ```
 
 ## Citation
