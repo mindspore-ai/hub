@@ -119,7 +119,7 @@ for data in ds.create_dict_iterator():
     input_ids, input_mask, segment_ids, masked_lm_positions = input_data
     out = mlm_net(input_ids, input_mask, segment_ids, masked_lm_positions)
     print("net output: ", out)
-# For more downstream tasks, please refer to https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/bert
+# For more downstream tasks, please refer to https://gitee.com/mindspore/models/tree/master/official/nlp/bert
 ```
 
 ## Citation

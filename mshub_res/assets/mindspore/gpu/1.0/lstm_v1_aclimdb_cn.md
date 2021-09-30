@@ -20,7 +20,7 @@
 
 更新时间：2020-8-26
 
-代码仓链接： <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/lstm>
+代码仓链接： <https://gitee.com/mindspore/models/tree/master/official/nlp/lstm>
 
 用户ID：MindSpore
 

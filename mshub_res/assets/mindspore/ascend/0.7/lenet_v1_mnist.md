@@ -22,7 +22,7 @@ author: MindSpore team
 
 update-time: 2020-09-21
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/lenet>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/lenet>
 
 user-id: MindSpore
 

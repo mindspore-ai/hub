@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-10
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/yolov3_resnet18>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/yolov3_resnet18>
 
 user-id: MindSpore
 
@@ -40,7 +40,7 @@ summary: yolov3_resnet18 with the shape 352 * 640 for object detection
 
 This MindSpore Hub model uses the implementation of yolov3_resnet18 from the MindSpore model zoo on Gitee at model_zoo/official/cv/yolov3_resnet18.
 
-yolov3_resnet18 is a one-stage object detection network. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/blob/master/model_zoo/official/cv/yolov3_resnet18/README.md).
+yolov3_resnet18 is a one-stage object detection network. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/models/blob/master/official/cv/yolov3_resnet18/README.md).
 
 All parameters in the module are trainable.
 
