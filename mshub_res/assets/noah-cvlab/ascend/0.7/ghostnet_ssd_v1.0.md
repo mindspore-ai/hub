@@ -20,7 +20,7 @@ author: Noah CVLab
 
 update-time: 2020-09-08
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/ssd_ghostnet>
+repo-link: <https://gitee.com/mindspore/models/tree/master/research/cv/ssd_ghostnet>
 
 user-id: noah-cvlab
 

@@ -18,7 +18,7 @@
 
 更新时间：2020-9-19
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gat>。
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/gnn/gat>。
 
 用户ID：MindSpore
 
@@ -68,7 +68,7 @@ config.num_nodes = 3327
 network = mshub.load(model, config.feature_size, config.num_class, config.num_nodes,
                      config.hid_units, config.n_heads, 0.0, 0.0)
 network.set_train(False)
-# 推理与MindSpore模型相同，请参考 <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gat>。
+# 推理与MindSpore模型相同，请参考 <https://gitee.com/mindspore/models/tree/master/official/gnn/gat>。
 ```
 
 ## 参考论文

@@ -22,7 +22,7 @@ author: Noah CVLab
 
 update-time: 2020-09-08
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/ghostnet_quant>
+repo-link: <https://gitee.com/mindspore/models/tree/master/research/cv/ghostnet_quant>
 
 user-id: noah-cvlab
 

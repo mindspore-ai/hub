@@ -22,7 +22,7 @@
 
 更新时间： 2020-12-15
 
-代码仓链接： <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/alexnet>
+代码仓链接： <https://gitee.com/mindspore/models/tree/master/official/cv/alexnet>
 
 用户ID： MindSpore
 

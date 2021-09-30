@@ -18,7 +18,7 @@
 
 更新时间：2020-9-10
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/yolov3_resnet18>
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/cv/yolov3_resnet18>
 
 用户ID：MindSpore
 

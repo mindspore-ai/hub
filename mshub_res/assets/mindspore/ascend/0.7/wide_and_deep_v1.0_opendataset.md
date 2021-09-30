@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2020-09-21
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/recommend/wide_and_deep>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/recommend/wide_and_deep>
 
 user-id: MindSpore
 

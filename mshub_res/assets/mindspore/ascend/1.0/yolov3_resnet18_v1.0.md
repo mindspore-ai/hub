@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-10
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/yolov3_resnet18>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/yolov3_resnet18>
 
 user-id: MindSpore
 

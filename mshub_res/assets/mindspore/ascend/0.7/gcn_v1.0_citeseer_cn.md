@@ -18,7 +18,7 @@
 
 更新时间：2020-9-19
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gcn>。
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/gnn/gcn>。
 
 用户ID：MindSpore
 
@@ -64,7 +64,7 @@ input_dim = 3703
 class_num = 6
 network = mshub.load(model, config, input_dim, class_num)
 network.set_train(False)
-# 推理与MindSpore模型相同，请参考 <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gcn>。
+# 推理与MindSpore模型相同，请参考 <https://gitee.com/mindspore/models/tree/master/official/gnn/gcn>。
 ```
 
 ## 参考论文

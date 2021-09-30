@@ -20,7 +20,7 @@
 
 更新时间：2020-9-4
 
-代码仓链接： <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/deeplabv3>
+代码仓链接： <https://gitee.com/mindspore/models/tree/master/official/cv/deeplabv3>
 
 用户ID：MindSpore
 
@@ -62,7 +62,7 @@ network = mshub.load(model, pretrained=False, num_classes=21)
 #...
 ```
 
-具体用法请参考ModelZoo的README描述： <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/deeplabv3>
+具体用法请参考ModelZoo的README描述： <https://gitee.com/mindspore/models/tree/master/official/cv/deeplabv3>
 
 ## Lite推理用法
 

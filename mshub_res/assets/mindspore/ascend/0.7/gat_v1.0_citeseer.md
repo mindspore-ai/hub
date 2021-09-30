@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-19
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gat>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/gnn/gat>
 
 user-id: MindSpore
 
@@ -68,7 +68,7 @@ config.num_nodes = 3327
 network = mshub.load(model, config.feature_size, config.num_class, config.num_nodes,
                      config.hid_units, config.n_heads, 0.0, 0.0)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gat>.
+# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/models/tree/master/official/gnn/gat>.
 ```
 
 ## Citation

@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-09-23
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/resnet>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/resnet>
 
 user-id: MindSpore
 
