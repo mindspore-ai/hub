@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2020-09-04
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/deeplabv3>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/deeplabv3>
 
 user-id: MindSpore
 
@@ -54,7 +54,7 @@ network = mshub.load(model, pretrained=False, num_classes=21)
 #...
 ```
 
-Refer to the readme description of modelzoo for specific usage: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/deeplabv3>
+Refer to the readme description of modelzoo for specific usage: <https://gitee.com/mindspore/models/tree/master/official/cv/deeplabv3>
 
 ## Citation
 

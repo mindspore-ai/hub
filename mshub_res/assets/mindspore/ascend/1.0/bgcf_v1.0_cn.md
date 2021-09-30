@@ -18,7 +18,7 @@
 
 更新时间：2020-9-19
 
-代码仓链接：<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/bgcf>
+代码仓链接：<https://gitee.com/mindspore/models/tree/master/official/gnn/bgcf>
 
 用户ID：MindSpore
 
@@ -66,7 +66,7 @@ config.num_user = 7068
 config.num_item = 3570
 network = mshub.load(model, [config.input_dim, config.num_user, config.num_item], config.embedded_dimension, config.activation, [0.0, 0.0, 0.0], config.num_user, config.num_item, config.input_dim)
 network.set_train(False)
-# 推理与MindSpore模型相同，请参考 <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/bgcf>.
+# 推理与MindSpore模型相同，请参考 <https://gitee.com/mindspore/models/tree/master/official/gnn/bgcf>.
 ```
 
 ## 参考论文

@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-12-23
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/gnmt_v2>
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/official/nlp/gnmt_v2>
 
 user-id: MindSpore
 
@@ -47,7 +47,7 @@ summary: gnmt_v2 used to do machine translation.
 
 This MindSpore Hub model uses the implementation of GNMTv2 from the MindSpore model zoo on Gitee at model_zoo/official/nlp/gnmt_v2.
 
-This model support dynamic input shape depanding on the input sequence length, max sequence length is 128. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/gnmt_v2/README.md).
+This model support dynamic input shape depanding on the input sequence length, max sequence length is 128. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/official/nlp/gnmt_v2/README.md).
 
 All Parameters in the module are trainable.
 
@@ -68,7 +68,7 @@ model = "mindspore/ascend/1.0/gnmt_v2_wmt"
 
 network = mshub.load(model, is_training=False)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/gnmt_v2>.
+# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/models/tree/master/official/nlp/gnmt_v2>.
 ```
 
 ## Citation

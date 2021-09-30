@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2020-12-21
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/centernet>
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/research/cv/centernet>
 
 user-id: MindSpore
 
@@ -40,14 +40,14 @@ summary: centernet for multi-person pose detection
 
 This MindSpore Hub model uses the implementation of centernet from the MindSpore model zoo on Gitee at model_zoo/research/cv/centernet.
 
-CenterNet is an anchor-free detection network. Object is modeled as a single center point of its bounding box, and the detector uses keypoint estimation to find center points and regresses to all other object properties. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/centernet/README.md).
+CenterNet is an anchor-free detection network. Object is modeled as a single center point of its bounding box, and the detector uses keypoint estimation to find center points and regresses to all other object properties. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/research/cv/centernet/README.md).
 
 All parameters in the module are trainable.
 
 ## Usage
 
 Refer to the readme description and code of modelzoo for specific usage:
-<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/centernet>
+<https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/research/cv/centernet>
 
 ## Citation
 
