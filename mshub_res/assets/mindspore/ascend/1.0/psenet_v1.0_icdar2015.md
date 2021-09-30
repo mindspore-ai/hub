@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2020-12-31
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/psenet>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/psenet>
 
 user-id: MindSpore
 
@@ -49,7 +49,7 @@ summary: psenet used to test detection of ICDAR2015
 
 This MindSpore Hub model uses the implementation of PseNet from the MindSpore model zoo on Gitee at model_zoo/official/cv/psenet.
 
-This model has been trained on ICDAR2015 using the code published on Gitee. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/psenet/README.md).
+This model has been trained on ICDAR2015 using the code published on Gitee. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/models/tree/master/official/cv/psenet/README.md).
 
 All parameters in the module are trainable.
 
@@ -72,7 +72,7 @@ model = "mindspore/ascend/1.0/psenet_v1.0_icdar2015"
 
 network = mshub.load(model, config=config)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/psenet>.
+# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/models/tree/master/official/cv/psenet>.
 ```
 
 ## Citation

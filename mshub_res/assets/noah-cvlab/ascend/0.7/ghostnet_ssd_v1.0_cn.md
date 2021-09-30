@@ -20,7 +20,7 @@ mAP：0.241
 
 更新时间：2020-9-8
 
-代码仓链接： <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/ssd_ghostnet>
+代码仓链接： <https://gitee.com/mindspore/models/tree/master/research/cv/ssd_ghostnet>
 
 用户ID：noah-cvlab
 

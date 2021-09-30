@@ -113,7 +113,7 @@ columns_list=["input_ids", "input_mask", "segment_ids", "masked_lm_positions"]
 # ds = de.TFRecordDataset(data_files, None, columns_list=columns_list)
 mlm_net = MLM(bert_base_cfg)
 
-# For more downstream tasks, please refer to https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/bert
+# For more downstream tasks, please refer to https://gitee.com/mindspore/models/tree/master/official/nlp/bert
 ```
 
 ## Citation

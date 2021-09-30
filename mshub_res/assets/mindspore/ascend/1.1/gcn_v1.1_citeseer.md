@@ -71,7 +71,7 @@ input_dim = 3703
 class_num = 6
 network = mshub.load(model, config, input_dim, class_num)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/gnn/gcn>.
+# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/models/tree/master/official/gnn/gcn>.
 ```
 
 ## Citation

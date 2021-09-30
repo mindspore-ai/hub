@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2020-12-31
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/cnnctc>
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/official/cv/cnnctc>
 
 user-id: MindSpore
 
@@ -49,7 +49,7 @@ summary: cnnctc used to test detection of MJSyncth and SynthText
 
 This MindSpore Hub model uses the implementation of CNNCTC from the MindSpore model zoo on Gitee at model_zoo/official/cv/cnnctc.
 
-This model has been trained on MJSyncth and SynthText using the code published on Gitee. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/cnnctc/README.md).
+This model has been trained on MJSyncth and SynthText using the code published on Gitee. More details please refer to the [MindSpore model zoo on Gitee](https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/official/cv/cnnctc/README.md).
 
 All parameters in the module are trainable.
 
@@ -73,7 +73,7 @@ model = "mindspore/ascend/1.0/cnnctc_v1.0_mjsynth_synthtext"
 config = Config_CNNCTC
 network = mshub.load(model, config.NUM_CLASS, config.HIDDEN_SIZE, config.FINAL_FEATURE_WIDTH)
 network.set_train(False)
-# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/cnnctc>.
+# Use as the same as MindSpore Model to inference, please refer to <https://gitee.com/mindspore/models/tree/master/official/cv/cnnctc>.
 ```
 
 ## Citation

@@ -18,7 +18,7 @@
 
 更新时间：2020-12-21
 
-代码仓链接： <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/centernet>
+代码仓链接： <https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/research/cv/centernet>
 
 用户ID：MindSpore
 
@@ -40,14 +40,14 @@ MindSpore版本：1.0
 
 该MindSpore Hub模型使用码云上MindSpore ModelZoo中的centernet实现，目录为model_zoo/research/cv/centernet。
 
-CenterNet是一个无锚点检测网络。对象作为边框的单个中心点进行建模，检测器使用关键点估计找到中心点并回归到所有其他对象属性。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/centernet/README.md)。
+CenterNet是一个无锚点检测网络。对象作为边框的单个中心点进行建模，检测器使用关键点估计找到中心点并回归到所有其他对象属性。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/research/cv/centernet/README.md)。
 
 模块中所有参数均可训练。
 
 ## 用法
 
 具体用法请参考ModelZoo的README描述和代码：
-<https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/centernet>
+<https://gitee.com/mindspore/models/tree/master/research/cv/centernet>
 
 ## 参考论文
 

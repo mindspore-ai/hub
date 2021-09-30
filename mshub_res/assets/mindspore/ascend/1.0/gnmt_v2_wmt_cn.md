@@ -18,7 +18,7 @@
 
 更新时间：2020-12-23
 
-代码仓链接： <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/gnmt_v2>
+代码仓链接： <https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/official/nlp/gnmt_v2>
 
 用户ID：MindSpore
 
@@ -47,7 +47,7 @@ MindSpore版本：1.0
 
 该MindSpore Hub模型使用码云上MindSpore ModelZoo中的GNMTv2实现，目录为model_zoo/official/nlp/gnmt_v2。
 
-该模型支持的动态输入形状取决于输入序列长度，最大序列长度为128。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/gnmt_v2/README.md)。
+该模型支持的动态输入形状取决于输入序列长度，最大序列长度为128。更多详情参见[码云MindSpore ModelZoo](https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/official/nlp/gnmt_v2/README.md)。
 
 模块中所有参数均可训练。
 
@@ -68,7 +68,7 @@ model = "mindspore/ascend/1.0/gnmt_v2_wmt"
 
 network = mshub.load(model, is_training=False)
 network.set_train(False)
-# 推理与MindSpore模型相同，请参考https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/nlp/gnmt_v2
+# 推理与MindSpore模型相同，请参考https://gitee.com/mindspore/models/tree/master/official/nlp/gnmt_v2
 ```
 
 ## 参考论文

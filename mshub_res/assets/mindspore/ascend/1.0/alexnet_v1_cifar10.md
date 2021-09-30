@@ -22,7 +22,7 @@ author: MindSpore team
 
 update-time: 2020-12-15
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/master/model_zoo/official/cv/alexnet>
+repo-link: <https://gitee.com/mindspore/models/tree/master/official/cv/alexnet>
 
 user-id: MindSpore
 
