@@ -2,9 +2,9 @@
 
 ---
 
-model-name: resnet152
+model-name: resnet18
 
-backbone-name: resnet152
+backbone-name: resnet
 
 module-type: cv
 
@@ -12,17 +12,17 @@ fine-tunable: True
 
 input-shape: [227, 227, 3]
 
-model-version: v1.2
+model-version: v1.3
 
-train-dataset: imagenet2012
+train-dataset: cifar10
 
-accuracy: 78.72
+accuracy: 94.02
 
 author: MindSpore team
 
-update-time: 2021-09-14
+update-time: 2021-09-27
 
-repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.2/model_zoo/official/cv/resnet152>
+repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.3/model_zoo/official/cv/resnet>
 
 user-id: MindSpore
 
@@ -32,14 +32,14 @@ train-backend: ascend
 
 infer-backend: ascend
 
-mindspore-version: v1.2
+mindspore-version: v1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.2/resnet152_ascend_v120_imagenet2012_official_cv_bs32_top1acc78.72__top5acc94.34/resnet152_ascend_v120_imagenet2012_official_cv_bs32_top1acc78.72__top5acc94.34.ckpt>
-    asset-sha256: 840c362b02beed6ae85f09b0dd09c41a5e70c012b396ca3f942e41d1b272c67d
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/resnet18_ascend_v130_cifar10_official_cv_bs32_acc94.02/resnet18_ascend_v130_cifar10_official_cv_bs32_acc94.02.ckpt>
+    asset-sha256: e668e52ba28d5a90d8eb4166457f506c49b08d6fbc331823766a7ea3ea92fdcc
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ summary: resnet is used for cv
 
 This MindSpore Hub model uses the implementation of resnet from the MindSpore model zoo on Gitee at model_zoo/official/cv/resnet.
 
-resnet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/resnet](https://gitee.com/mindspore/mindspore/blob/r1.2/model_zoo/official/cv/resnet152/README-CN.md).
+resnet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/resnet](https://gitee.com/mindspore/mindspore/blob/r1.3/model_zoo/official/cv/resnet/README.md).
 
 All parameters in the module are trainable.
 
@@ -71,7 +71,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/ascend/1.2/resnet152_v1.2_imagenet2012"
+model = "mindspore/ascend/1.3/resnet18_v1.3_cifar10"
 # initialize the number of classes based on the pre-trained model
 network = mshub.load(model)
 network.set_train(False)
