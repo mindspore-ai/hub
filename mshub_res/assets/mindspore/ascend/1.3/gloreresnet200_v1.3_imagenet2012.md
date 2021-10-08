@@ -73,7 +73,7 @@ context.set_context(mode=context.GRAPH_MODE,
 
 model = "mindspore/ascend/1.3/gloreresnet200_v1.3_imagenet2012"
 # initialize the number of classes based on the pre-trained model
-network = mshub.load(model)
+network = mshub.load(model, use_glore=True)
 network.set_train(False)
 
 # ...

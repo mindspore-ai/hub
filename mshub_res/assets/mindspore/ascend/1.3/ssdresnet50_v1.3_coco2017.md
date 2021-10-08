@@ -16,11 +16,11 @@ model-version: v1.3
 
 train-dataset: coco2017
 
-accuracy: 88
+accuracy: 32.2
 
 author: MindSpore team
 
-update-time: 2021-09-27
+update-time: 2021-09-29
 
 repo-link: <https://gitee.com/mindspore/mindspore/tree/r1.3/model_zoo/research/cv/ssd_resnet50>
 
@@ -38,8 +38,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/ssdresnet50_ascend_v130_coco2017_research_cv_bs_32_acc31/ssdresnet50_ascend_v130_coco2017_research_cv_bs_32_acc31.ckpt>
-    asset-sha256: f420875499369b9ef0c4fe22e274963afc203aa4e2d31237cd36ab4365d70c12
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/ssdresnet50_ascend_v130_coco2017_research_cv_bs32_acc32.2/ssdresnet50_ascend_v130_coco2017_research_cv_bs32_acc32.2.ckpt>
+    asset-sha256: fa1e8c98113823174646d933ffa5f0edae7f7da0f66ca6eca697d7b6008e9226
 
 license: Apache2.0
 
