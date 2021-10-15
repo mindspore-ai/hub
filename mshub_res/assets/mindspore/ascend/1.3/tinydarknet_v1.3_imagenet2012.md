@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/tinydarknet_ascend_v130_imagenet2012_official_cv_bs128_acctop1%3D59.0_top5%3D81.84/tinydarknet_ascend_v130_imagenet2012_official_cv_bs128_acctop1%3D59.0_top5%3D81.84.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/tinydarknet_ascend_v130_imagenet2012_official_cv_bs128_acctop1%3D59.0_top5%3D81.84/tinydarknet_ascend_v130_imagenet2012_official_cv_bs128_acctop1%3D59.0_top5%3D81.84.ckpt>
     asset-sha256: 00a1544972eaeecec147e15dfa49c1796368c054776d59a73a7e905c285b6256
 
 license: Apache2.0

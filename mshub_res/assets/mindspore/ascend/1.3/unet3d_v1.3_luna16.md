@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/unet3d_ascend_v130_luna16_official_cv_bs1_acc96/unet3d_ascend_v130_luna16_official_cv_bs1_acc96.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/unet3d_ascend_v130_luna16_official_cv_bs1_acc96/unet3d_ascend_v130_luna16_official_cv_bs1_acc96.ckpt>
     asset-sha256: 557eb7c3914428458f037bdf6d9320015021ebb3ccdb9740fe01823eed41027a
 
 license: Apache2.0

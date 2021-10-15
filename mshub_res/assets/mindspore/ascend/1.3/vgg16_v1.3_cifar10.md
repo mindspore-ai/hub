@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/vgg16_ascend_v130_cifar10_official_cv_bs64_acc93.44/vgg16_ascend_v130_cifar10_official_cv_bs64_acc93.44.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/vgg16_ascend_v130_cifar10_official_cv_bs64_acc93.44/vgg16_ascend_v130_cifar10_official_cv_bs64_acc93.44.ckpt>
     asset-sha256: 0ad3742ac1e20bd06c50fe5bfce0d23e4df3e5baf976e360412093a23546f969
 
 license: Apache2.0

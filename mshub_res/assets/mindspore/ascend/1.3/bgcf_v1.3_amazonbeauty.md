@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/bgcf_ascend_v130_amazonbeauty_official_gnn_bs5000_recall20acc15.32_nndcg20acc9.16/bgcf_ascend_v130_amazonbeauty_official_gnn_bs5000_recall20acc15.32_nndcg20acc9.16.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/bgcf_ascend_v130_amazonbeauty_official_gnn_bs5000_recall20acc15.32_nndcg20acc9.16/bgcf_ascend_v130_amazonbeauty_official_gnn_bs5000_recall20acc15.32_nndcg20acc9.16.ckpt>
     asset-sha256: 1ba27594e030d343d1c71cb5bc7ae6323d39c8d187226c88e9931d96ad786ba1
 
 license: Apache2.0

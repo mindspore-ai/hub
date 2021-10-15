@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/ncf_ascend_v130_movielens_official_recommend_bs256_acchr%3D70.25_ndcg%3D42.23/ncf_ascend_v130_movielens_official_recommend_bs256_acchr%3D70.25_ndcg%3D42.23.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/ncf_ascend_v130_movielens_official_recommend_bs256_acchr%3D70.25_ndcg%3D42.23/ncf_ascend_v130_movielens_official_recommend_bs256_acchr%3D70.25_ndcg%3D42.23.ckpt>
     asset-sha256: ff7bd040b8e269a8a81b1dcc2f96e157bc4c279c7ecc84fe9c9a9f166690e99d
 
 license: Apache2.0

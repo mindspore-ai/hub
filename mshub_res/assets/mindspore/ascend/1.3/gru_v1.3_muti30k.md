@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/gru_ascend_v130_muti30k_official_nlp_bs16_acc30/gru_ascend_v130_muti30k_official_nlp_bs16_acc30.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/gru_ascend_v130_muti30k_official_nlp_bs16_acc30/gru_ascend_v130_muti30k_official_nlp_bs16_acc30.ckpt>
     asset-sha256: 4d0e2582626ed286b9753b8e2b79dcd1c54dc87170f3ddae050796edb5ce8eeb
 
 license: Apache2.0

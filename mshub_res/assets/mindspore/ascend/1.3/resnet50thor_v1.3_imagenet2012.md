@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/resnet50thor_ascend_v130_imagenet2012_official_cv_bs32_top1acc76.08__top5acc92.81/resnet50thor_ascend_v130_imagenet2012_official_cv_bs32_top1acc76.08__top5acc92.81.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/resnet50thor_ascend_v130_imagenet2012_official_cv_bs32_top1acc76.08__top5acc92.81/resnet50thor_ascend_v130_imagenet2012_official_cv_bs32_top1acc76.08__top5acc92.81.ckpt>
     asset-sha256: ad9b3b0bef58cbc204493b84dd0da3972acdceb4d273233a99f890adbc905ffc
 
 license: Apache2.0

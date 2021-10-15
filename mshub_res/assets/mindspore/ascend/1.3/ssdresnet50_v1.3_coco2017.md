@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/ssdresnet50_ascend_v130_coco2017_research_cv_bs_32_acc31/ssdresnet50_ascend_v130_coco2017_research_cv_bs_32_acc31.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/ssdresnet50_ascend_v130_coco2017_research_cv_bs_32_acc31/ssdresnet50_ascend_v130_coco2017_research_cv_bs_32_acc31.ckpt>
     asset-sha256: f420875499369b9ef0c4fe22e274963afc203aa4e2d31237cd36ab4365d70c12
 
 license: Apache2.0

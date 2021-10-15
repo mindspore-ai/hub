@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/naml_ascend_v130_mindlarge_official_recommend_bs64_acc67/naml_ascend_v130_mindlarge_official_recommend_bs64_acc67.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/naml_ascend_v130_mindlarge_official_recommend_bs64_acc67/naml_ascend_v130_mindlarge_official_recommend_bs64_acc67.ckpt>
     asset-sha256: 9d553eae6ce96f019148b69ed4ce3ebb665503d7f1eda7c4907e23242479cdce
 
 license: Apache2.0

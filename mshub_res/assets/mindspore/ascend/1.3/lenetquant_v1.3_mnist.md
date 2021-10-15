@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/lenetquant_ascend_v130_mnist_official_cv_bs64_acc98.79/lenetquant_ascend_v130_mnist_official_cv_bs64_acc98.79.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/lenetquant_ascend_v130_mnist_official_cv_bs64_acc98.79/lenetquant_ascend_v130_mnist_official_cv_bs64_acc98.79.ckpt>
     asset-sha256: 92c14388fdf4ea90811de5031652b2e58570a5abf7c3653b0e958fb0e30f3546
 
 license: Apache2.0

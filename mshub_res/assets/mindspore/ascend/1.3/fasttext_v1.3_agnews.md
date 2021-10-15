@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/fasttext_ascend_v130_agnews_official_nlp_bs512_acc92/fasttext_ascend_v130_agnews_official_nlp_bs512_acc92.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/fasttext_ascend_v130_agnews_official_nlp_bs512_acc92/fasttext_ascend_v130_agnews_official_nlp_bs512_acc92.ckpt>
     asset-sha256: 067f30b7b6cd19bb8a79601f1da365a1189881a3050f82d610b4f107c4d75d97
 
 license: Apache2.0

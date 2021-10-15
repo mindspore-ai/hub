@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/yolov5shape640_ascend_v130_coco2017_official_cv_bs8_acc36.6/yolov5shape640_ascend_v130_coco2017_official_cv_bs8_acc36.6.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/yolov5shape640_ascend_v130_coco2017_official_cv_bs8_acc36.6/yolov5shape640_ascend_v130_coco2017_official_cv_bs8_acc36.6.ckpt>
     asset-sha256: 9e17460882efdf587ee451fcc401d4359f0d1f31eb40825a59c339e65e1ca89b
 
 license: Apache2.0

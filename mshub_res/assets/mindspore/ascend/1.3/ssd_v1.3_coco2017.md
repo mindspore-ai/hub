@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/ssd_ascend_v130_coco2017_official_cv_bs32_acc23/ssd_ascend_v130_coco2017_official_cv_bs32_acc23.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/ssd_ascend_v130_coco2017_official_cv_bs32_acc23/ssd_ascend_v130_coco2017_official_cv_bs32_acc23.ckpt>
     asset-sha256: d0b0449bab807e03528c88498425921a7a43a8d97fdd92bed6cf25d5b3379b07
 
 license: Apache2.0

@@ -45,6 +45,7 @@ class ValidMarkdown:
 
         self.valid_module_type = ['gnn', 'rl', 'audio', 'cv', 'nlp', 'recommend', 'other']
         self.valid_train_dataset = ['lsun', 'pemsd7m', 'baiduzijianshujuji', 'dbpedia', 'muti30k', 'ms1mv2',
+                                    "facades", "sony", "cityscapes", "lsunbedrooms",
                                     'celeba', 'widerface', 'cifar10', 'cifar100', 'zh-wiki',
                                     'Gigaword corpus', 'captcha 0.1.1',
                                     'sentence', 'sst2', 'zhwiki', 'citeseer', 'imagenet2017', "icpr2018",

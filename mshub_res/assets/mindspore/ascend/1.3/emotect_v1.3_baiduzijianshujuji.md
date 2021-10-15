@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/emotect_ascend_v130_baiduzijianshujuji_official_nlp_bs32_acc90/emotect_ascend_v130_baiduzijianshujuji_official_nlp_bs32_acc90.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/emotect_ascend_v130_baiduzijianshujuji_official_nlp_bs32_acc90/emotect_ascend_v130_baiduzijianshujuji_official_nlp_bs32_acc90.ckpt>
     asset-sha256: 5b0ddb04f17f27d706007353d15faf93b627dcaf0ce7fcfcf1b61d4f2ddc228b
 
 license: Apache2.0

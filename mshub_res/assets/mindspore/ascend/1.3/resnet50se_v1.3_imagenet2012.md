@@ -4,7 +4,7 @@
 
 model-name: se_resnet50
 
-backbone-name:se_ resnet50
+backbone-name: se_resnet50
 
 module-type: cv
 
@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/resnet50se_ascend_v130_imagenet2012_official_cv_bs32_top1acc76.75__top5acc93.43/resnet50se_ascend_v130_imagenet2012_official_cv_bs32_top1acc76.75__top5acc93.43.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/resnet50se_ascend_v130_imagenet2012_official_cv_bs32_top1acc76.75__top5acc93.43/resnet50se_ascend_v130_imagenet2012_official_cv_bs32_top1acc76.75__top5acc93.43.ckpt>
     asset-sha256: fae985bd431915d4f743375fced2bad4ad5f40aadd31b3c840151e11528d8d60
 
 license: Apache2.0
