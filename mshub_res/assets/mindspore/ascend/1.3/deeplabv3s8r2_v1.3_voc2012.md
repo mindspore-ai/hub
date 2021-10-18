@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/deeplabv3s8r2_ascend_v130_voc2012_official_cv_bs16_s8acc78.51_ns8mul79.26_ns8mulflip79.37/deeplabv3s8r2_ascend_v130_voc2012_official_cv_bs16_s8acc78.51_ns8mul79.26_ns8mulflip79.37.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/deeplabv3s8r2_ascend_v130_voc2012_official_cv_bs16_s8acc78.51_ns8mul79.26_ns8mulflip79.37/deeplabv3s8r2_ascend_v130_voc2012_official_cv_bs16_s8acc78.51_ns8mul79.26_ns8mulflip79.37.ckpt>
     asset-sha256: bb00c4455d1b1eaf91ed8c8f1e755b68cfdf8b2c0d5f8a32a611caaa5ae91b0d
 
 license: Apache2.0

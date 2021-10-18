@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/simplepose_ascend_v130_coco2017_official_cv_bs64_acc70/simplepose_ascend_v130_coco2017_official_cv_bs64_acc70.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/simplepose_ascend_v130_coco2017_official_cv_bs64_acc70/simplepose_ascend_v130_coco2017_official_cv_bs64_acc70.ckpt>
     asset-sha256: 206c944b9a756c17475c97864469cfb3c5e56b8737ecf6dccaf544b9fc75f0df
 
 license: Apache2.0

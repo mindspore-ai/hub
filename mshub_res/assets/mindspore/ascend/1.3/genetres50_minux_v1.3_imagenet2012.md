@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/genetres50_minux_ascend_v130_imagenet2012_research_cv_bs256_top1acc77.75__top5acc93.64/genetres50_minux_ascend_v130_imagenet2012_research_cv_bs256_top1acc77.75__top5acc93.64.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/genetres50_minux_ascend_v130_imagenet2012_research_cv_bs256_top1acc77.75__top5acc93.64/genetres50_minux_ascend_v130_imagenet2012_research_cv_bs256_top1acc77.75__top5acc93.64.ckpt>
     asset-sha256: 6b568bebdf808db1bdfd9d013bd45ecd132f5788275d4bd0a4b30884165015bd
 
 license: Apache2.0

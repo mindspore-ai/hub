@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/alexnet_ascend_v130_cifar10_official_cv_bs32_acc89.38/alexnet_ascend_v130_cifar10_official_cv_bs32_acc89.38.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/alexnet_ascend_v130_cifar10_official_cv_bs32_acc89.38/alexnet_ascend_v130_cifar10_official_cv_bs32_acc89.38.ckpt>
     asset-sha256: 84569e4934f9a49093d50ba43f851a761fb35a8dad72c991ae928e0646a261c7
 
 license: Apache2.0

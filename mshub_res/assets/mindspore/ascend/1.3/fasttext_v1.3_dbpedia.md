@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/fasttext_ascend_v130_dbpedia_official_nlp_bs4096_acc98/fasttext_ascend_v130_dbpedia_official_nlp_bs4096_acc98.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/fasttext_ascend_v130_dbpedia_official_nlp_bs4096_acc98/fasttext_ascend_v130_dbpedia_official_nlp_bs4096_acc98.ckpt>
     asset-sha256: 3798190b1dbb78c4e76baac2b1228bab6c0e5ba5dfdede664fab47abc02d0b1e
 
 license: Apache2.0

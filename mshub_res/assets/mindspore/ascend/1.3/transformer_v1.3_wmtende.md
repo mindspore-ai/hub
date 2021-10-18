@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/transformer_ascend_v130_wmtende_official_nlp_bs96_acc27.21/transformer_ascend_v130_wmtende_official_nlp_bs96_acc27.21.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/transformer_ascend_v130_wmtende_official_nlp_bs96_acc27.21/transformer_ascend_v130_wmtende_official_nlp_bs96_acc27.21.ckpt>
     asset-sha256: b322b9e912295d6f6dae34381488c8fa8676fd4759aae178f77b05acebb3dc0f
 
 license: Apache2.0

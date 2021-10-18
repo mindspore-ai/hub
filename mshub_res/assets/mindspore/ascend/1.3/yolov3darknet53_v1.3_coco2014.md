@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/yolov3darknet53_ascend_v130_coco2014_official_cv_bs32_acc31.3/yolov3darknet53_ascend_v130_coco2014_official_cv_bs32_acc31.3.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/yolov3darknet53_ascend_v130_coco2014_official_cv_bs32_acc31.3/yolov3darknet53_ascend_v130_coco2014_official_cv_bs32_acc31.3.ckpt>
     asset-sha256: b85b72bff16a6cad1a71c768e48e500589f24715897d8b35ac743ae11faa07b3
 
 license: Apache2.0

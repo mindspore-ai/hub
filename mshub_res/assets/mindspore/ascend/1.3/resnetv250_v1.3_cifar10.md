@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/resnetv250_ascend_v130_cifar10_research_cv_bs32_top1acc95.2__top5acc99.82/resnetv250_ascend_v130_cifar10_research_cv_bs32_top1acc95.2__top5acc99.82.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/resnetv250_ascend_v130_cifar10_research_cv_bs32_top1acc95.2__top5acc99.82/resnetv250_ascend_v130_cifar10_research_cv_bs32_top1acc95.2__top5acc99.82.ckpt>
     asset-sha256: d88993343168c69ee523052b7cd605fd0c7cb426dff6f033d7e2be068d05a9a3
 
 license: Apache2.0

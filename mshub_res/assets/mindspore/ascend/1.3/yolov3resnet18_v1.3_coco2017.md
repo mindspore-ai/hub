@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/yolov3resnet18_ascend_v130_coco2017_official_cv_bs32_class0acc88.51_class0recall65.59_class1acc92.57_class1recall69.82/yolov3resnet18_ascend_v130_coco2017_official_cv_bs32_class0acc88.51_class0recall65.59_class1acc92.57_class1recall69.82.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/yolov3resnet18_ascend_v130_coco2017_official_cv_bs32_class0acc88.51_class0recall65.59_class1acc92.57_class1recall69.82/yolov3resnet18_ascend_v130_coco2017_official_cv_bs32_class0acc88.51_class0recall65.59_class1acc92.57_class1recall69.82.ckpt>
     asset-sha256: 87532719501410d5c50065231c1213b7ba36094f04db931795ed3fbeb7474dba
 
 license: Apache2.0

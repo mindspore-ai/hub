@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/hardnet_ascend_v130_imagenet2012_research_cv_bs256_top1acc77.65__top5acc93.25/hardnet_ascend_v130_imagenet2012_research_cv_bs256_top1acc77.65__top5acc93.25.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/hardnet_ascend_v130_imagenet2012_research_cv_bs256_top1acc77.65__top5acc93.25/hardnet_ascend_v130_imagenet2012_research_cv_bs256_top1acc77.65__top5acc93.25.ckpt>
     asset-sha256: 299aad036e2bab5a7dc97b621756b9a0985e2ecb03e26ff7492565c655ce7dc9
 
 license: Apache2.0

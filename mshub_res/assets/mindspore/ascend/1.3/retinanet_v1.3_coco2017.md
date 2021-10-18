@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/retinanet_ascend_v130_coco2017_official_cv_bs32_acc35/retinanet_ascend_v130_coco2017_official_cv_bs32_acc35.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/retinanet_ascend_v130_coco2017_official_cv_bs32_acc35/retinanet_ascend_v130_coco2017_official_cv_bs32_acc35.ckpt>
     asset-sha256: 2fda03174122089d884f7fde4115d51145a25d44cca6f9c02f0653a83d17cab6
 
 license: Apache2.0

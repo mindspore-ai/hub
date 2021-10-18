@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/gnmtv2_ascend_v130_wmtende_official_nlp_bs6400_acc24/gnmtv2_ascend_v130_wmtende_official_nlp_bs6400_acc24.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/gnmtv2_ascend_v130_wmtende_official_nlp_bs6400_acc24/gnmtv2_ascend_v130_wmtende_official_nlp_bs6400_acc24.ckpt>
     asset-sha256: 48546b769601e39e380c2ec3916930501195e200fe84f1ef04d91725b4380e1a
 
 license: Apache2.0

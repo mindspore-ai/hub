@@ -38,7 +38,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/temp/lstm_ascend_v130_aclimdbv1_official_nlp_bs64_acc83.27/lstm_ascend_v130_aclimdbv1_official_nlp_bs64_acc83.27.ckpt>
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/lstm_ascend_v130_aclimdbv1_official_nlp_bs64_acc83.27/lstm_ascend_v130_aclimdbv1_official_nlp_bs64_acc83.27.ckpt>
     asset-sha256: 1753803072319f6538e5850d309afcad306f15b3b0fee995ce2234f1a2bb7e7e
 
 license: Apache2.0
