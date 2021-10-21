@@ -12,7 +12,7 @@ fine-tunable: True
 
 input-shape: [227, 227, 3]
 
-model-version: v1.2
+model-version: 1.2
 
 train-dataset: subj
 
