@@ -41,7 +41,7 @@ asset:
 
 license: Apache2.0
 
-summary: bert_base used to do classification, sequence labeling or squad tasks on various dataset.
+summary: FCN-4 is a convolutional neural network architecture, its name FCN-4 comes from the fact that it has 4 layers. Its layers consists of Convolutional layers, Max Pooling layers, Activation layers, Fully connected layers.
 
 ---
 

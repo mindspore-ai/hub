@@ -41,7 +41,7 @@ asset:
 
 license: Apache2.0
 
-summary: bert_base used to do classification, sequence labeling or squad tasks on various dataset.
+summary: NCF is a general framework for collaborative filtering of recommendations in which a neural network architecture is used to model user-item interactions.  It replaces the inner product with a multi-layer perceptron that can learn an arbitrary function from data.
 
 ---
 

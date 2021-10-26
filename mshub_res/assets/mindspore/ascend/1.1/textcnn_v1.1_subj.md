@@ -41,7 +41,7 @@ asset:
 
 license: Apache2.0
 
-summary: bert_base used to do classification, sequence labeling or squad tasks on various dataset.
+summary: TextCNN is an algorithm that uses convolutional neural networks to classify text.TextCNN is very suitable for the semantic analysis of short texts such as Weibo/News/E-commerce reviews and video bullet screens.
 
 ---
 
