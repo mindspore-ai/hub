@@ -4,7 +4,7 @@
 
 model-name: faster_rcnn
 
-backbone-name: faster_rcnn
+backbone-name: resnet50
 
 module-type: cv
 
