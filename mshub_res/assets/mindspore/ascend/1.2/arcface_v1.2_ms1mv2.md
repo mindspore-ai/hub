@@ -34,7 +34,7 @@ train-backend: ascend
 
 infer-backend: ascend
 
-mindspore-version: v1.2
+mindspore-version: 1.2
 
 asset:
 
