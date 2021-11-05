@@ -41,7 +41,7 @@ asset:
 
 license: Apache2.0
 
-summary: bert_base used to do classification, sequence labeling or squad tasks on various dataset.
+summary: FastText is a fast text classification algorithm, which is simple and efficient. It speeds up training and testing while maintaining high precision, and widly used in various tasks of text classification.
 
 ---
 
@@ -78,4 +78,4 @@ network.set_train(False)
 
 ## Citation
 
-Paper: Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805.
+Paper: "Bag of Tricks for Efficient Text Classification", 2016, A. Joulin, E. Grave, P. Bojanowski, and T. Mikolov
