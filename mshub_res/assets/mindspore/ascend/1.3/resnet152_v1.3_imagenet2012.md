@@ -51,7 +51,7 @@ summary: resnet152 is used for cv
 
 This MindSpore Hub model uses the implementation of resnet152 from the MindSpore model zoo on Gitee at model_zoo/official/cv/resnet152.
 
-resnet152 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/resnet152](resnet152 check readme link failed, now readmelink is https://gitee.com/mindspore/mindspore/blob/r1.3/model_zoo/official/cv/resnet152/README.md and https://gitee.com/mindspore/mindspore/blob/r1.3/model_zoo/official/cv/resnet152/README-CN.md).
+resnet152 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/resnet152](https://gitee.com/mindspore/mindspore/blob/r1.3/model_zoo/official/cv/resnet152/README-CN.md).
 
 All parameters in the module are trainable.
 
