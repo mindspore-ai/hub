@@ -18,7 +18,7 @@ train-dataset: Rain100L
 
 accuracy: 41.98
 
-author: Noah CVLab
+author: Noah's Ark Lab
 
 update-time: 2021-03-05
 

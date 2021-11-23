@@ -16,7 +16,7 @@ model-version: 1.0
 
 mAP: 0.241
 
-author: Noah CVLab
+author: Noah's Ark Lab
 
 update-time: 2020-09-08
 

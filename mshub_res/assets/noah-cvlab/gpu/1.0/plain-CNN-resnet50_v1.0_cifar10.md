@@ -18,7 +18,7 @@ train-dataset: cifar10
 
 accuracy: 0.9446
 
-author: Noah CVLab
+author: Noah's Ark Lab
 
 update-time: 2020-11-17
 

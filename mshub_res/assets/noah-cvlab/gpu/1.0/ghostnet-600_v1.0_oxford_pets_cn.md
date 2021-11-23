@@ -18,7 +18,7 @@
 
 准确率： 0.869
 
-作者：Noah CVLab
+作者：Noah's Ark Lab
 
 更新时间：2020-9-8
 
