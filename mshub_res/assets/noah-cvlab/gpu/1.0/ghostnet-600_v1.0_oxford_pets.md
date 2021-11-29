@@ -18,7 +18,7 @@ train-dataset: Oxford-IIIT Pet
 
 accuracy: 0.869
 
-author: Noah CVLab
+author: Noah's Ark Lab
 
 update-time: 2020-09-08
 

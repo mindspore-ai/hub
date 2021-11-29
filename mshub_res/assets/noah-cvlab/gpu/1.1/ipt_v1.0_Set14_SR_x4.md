@@ -18,7 +18,7 @@ train-dataset: Set14
 
 accuracy: 29.01
 
-author: Noah CVLab
+author: Noah's Ark Lab
 
 update-time: 2021-03-05
 
