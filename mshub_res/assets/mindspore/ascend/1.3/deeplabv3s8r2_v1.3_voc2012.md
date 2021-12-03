@@ -4,7 +4,7 @@
 
 model-name: deeplab_v3_s8
 
-backbone-name: deeplabv3
+backbone-name: ResNet101
 
 module-type: cv
 
@@ -54,6 +54,8 @@ This MindSpore Hub model uses the implementation of deeplabv3 from the MindSpore
 deeplabv3 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/deeplabv3](https://gitee.com/mindspore/mindspore/blob/r1.3/model_zoo/official/cv/deeplabv3/README.md).
 
 All parameters in the module are trainable.
+
+backbone: [ResNet101](https://download.mindspore.cn/model_zoo/r1.3/resnet101_ascend_v130_imagenet2012_official_cv_bs32_acc78.58/)
 
 ## Usage
 

@@ -4,7 +4,7 @@
 
 model-name: ssd_resnet50
 
-backbone-name: ssd_resnet50
+backbone-name: ResNet50
 
 module-type: cv
 
@@ -54,6 +54,8 @@ This MindSpore Hub model uses the implementation of ssd_resnet50 from the MindSp
 ssd_resnet50 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/research/cv/ssd_resnet50](https://gitee.com/mindspore/mindspore/blob/r1.3/model_zoo/research/cv/ssd_resnet50/README.md).
 
 All parameters in the module are trainable.
+
+backbone: [ResNet50](https://download.mindspore.cn/model_zoo/r1.3/resnet50_ascend_v130_imagenet2012_official_cv_bs256_top1acc76.97__top5acc_93.44/)
 
 ## Usage
 

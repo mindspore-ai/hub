@@ -4,7 +4,7 @@
 
 model-name: yolov3_resnet18
 
-backbone-name: yolov3_resnet18
+backbone-name: ResNet18
 
 module-type: cv
 
@@ -54,6 +54,8 @@ This MindSpore Hub model uses the implementation of yolov3_resnet18 from the Min
 yolov3_resnet18 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/yolov3_resnet18](https://gitee.com/mindspore/mindspore/blob/r1.3/model_zoo/official/cv/yolov3_resnet18/README.md).
 
 All parameters in the module are trainable.
+
+backbone: [ResNet18](https://download.mindspore.cn/model_zoo/r1.3/resnet18_ascend_v130_imagenet2012_official_cv_bs256_top1acc70.47__top5acc89.61/)
 
 ## Usage
 
