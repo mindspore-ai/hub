@@ -4,7 +4,7 @@
 
 model-name: maskrcnn
 
-backbone-name: maskrcnn
+backbone-name: ResNet50
 
 module-type: cv
 
@@ -54,6 +54,8 @@ This MindSpore Hub model uses the implementation of maskrcnn from the MindSpore 
 maskrcnn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/maskrcnn](https://gitee.com/mindspore/mindspore/blob/r1.3/model_zoo/official/cv/maskrcnn/README.md).
 
 All parameters in the module are trainable.
+
+backbone: [ResNet50](https://download.mindspore.cn/model_zoo/r1.3/resnet50_ascend_v130_imagenet2012_official_cv_bs32_acc77.06/)
 
 ## Usage
 

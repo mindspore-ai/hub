@@ -4,7 +4,7 @@
 
 model-name: maskrcnn_mobilenetv1
 
-backbone-name: maskrcnn_mobilenetv1
+backbone-name: MobileNetv1
 
 module-type: cv
 
@@ -54,6 +54,8 @@ This MindSpore Hub model uses the implementation of maskrcnn_mobilenetv1 from th
 maskrcnn_mobilenetv1 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [model_zoo/official/cv/maskrcnn_mobilenetv1](https://gitee.com/mindspore/mindspore/blob/r1.3/model_zoo/official/cv/maskrcnn_mobilenetv1/README.md).
 
 All parameters in the module are trainable.
+
+backbone: [MobileNetv1](https://download.mindspore.cn/model_zoo/r1.3/mobilenetv1_ascend_v130_imagenet2012_official_cv_bs256_acc0/)
 
 ## Usage
 
