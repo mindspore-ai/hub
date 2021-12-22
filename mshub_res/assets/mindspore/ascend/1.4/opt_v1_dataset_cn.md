@@ -10,28 +10,23 @@
 
 可微调: True
 
-input-shape: [, 2048]
+input-shape: [90, 2048]
 
 模型版本: 1.0
 
-预训练数据集:
-CC3M 提供大约300万个图像-文本对，我们将英文字幕翻译成中文。
-
-COCO Captions 提供大约40万个图像-文本对，我们将英文字幕翻译成中文。
-
-AIC 提供大约100万个中文的图像-文本对。
+预训练数据集: CC3M，COCO Captions，AIC，我们将英文字幕翻译成中文。
 
 检索数据集: COCO Captions
 
 图像描述数据集：COCO Captions
 
-准确率:
+准确率: 0.00
 
 作者: 中国科学院自动化所iva组
 
 更新时间: 2021-12-2
 
-代码仓链接:
+代码仓链接:  https://gitee.com/mindspore/models/tree/master/research/mm/opt
 
 用户ID: MindSpore
 
@@ -43,7 +38,7 @@ AIC 提供大约100万个中文的图像-文本对。
 
 mindspore版本: 1.4
 
-asset:
+asset:  
 
 -
     file-format: ckpt  

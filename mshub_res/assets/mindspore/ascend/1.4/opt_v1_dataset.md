@@ -6,32 +6,27 @@ model-name: OPT
 
 backbone-name: BertModel
 
-module-type: Cross-Modal Understanding and Generation
+module-type: cross-modal Understanding and Generation
 
 fine-tunable: True
 
-input-shape: [, 2048]
+input-shape: [90, 2048]
 
 model-version: 1.0
 
-pretrain-dataset:
-CC3M provides about 3 million image-text pairs. We translate English captions into Chinese.
-
-COCO Captions provides about 415K image-text pairs. We translate English captions into Chinese.
-
-AIC provides about 1 million Chinese image-text pairs.
+pretrain-dataset: CC3M, COCO Captions, AIC. We translate English captions into Chinese.
 
 retrieval-dataset: COCO Captions
 
 caption-dataset: COCO Captions
 
-accuracy:
+accuracy:  0.00
 
 author: casia iva team
 
 update-time: 2021-12-2
 
-repo-link:
+repo-link:  
 
 user-id: MindSpore
 
@@ -43,7 +38,7 @@ infer-backend: ascend
 
 mindspore-version: 1.0
 
-asset:
+asset:  
 
 -
     file-format: ckpt  
