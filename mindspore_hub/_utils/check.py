@@ -43,7 +43,7 @@ class ValidMarkdown:
         self.optional_accuracy_field = 'accuracy'
         self.optional_allow_cache_ckpt_field = 'allow-cache-ckpt'
 
-        self.valid_module_type = ['gnn', 'rl', 'audio', 'cv', 'nlp', 'recommend', 'other']
+        self.valid_module_type = ['gnn', 'rl', 'audio', 'cv', 'nlp', 'recommend', 'cross', 'other']
         self.valid_train_dataset = ['lsun', 'pemsd7m', 'baiduzijianshujuji', 'dbpedia', 'muti30k', 'ms1mv2',
                                     "facades", "sony", "cityscapes", "lsunbedrooms",
                                     'celeba', 'widerface', 'cifar10', 'cifar100', 'zh-wiki',
@@ -60,7 +60,7 @@ class ValidMarkdown:
                                     'openimage', 'Oxford-IIIT Pet', 'mnist', 'MLPerf v0.7 dataset', "agnews",
                                     "movielens", "humanface", "dbpedia", "muti30k", "fsns", "gigaword", "openweb",
                                     "criteo", "3datasets", "mindlarge", "outbrain", "gym", "luna16", "aclimdbv1",
-                                    "speech", 'Rain100L', 'Set14', 'Set5', 'en-wiki']
+                                    "speech", 'Rain100L', 'Set14', 'Set5', 'en-wiki', 'CC3M', 'COCO Captions', 'AIC']
         self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir', 'mslite']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
         self.valid_backend = ['cpu', 'gpu', 'ascend']
