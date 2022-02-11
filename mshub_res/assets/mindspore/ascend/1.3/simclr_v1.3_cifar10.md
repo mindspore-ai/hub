@@ -38,8 +38,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/simclr_ascend_v130_cifar10_official_cv_bs128_acc84/simclr_ascend_v130_cifar10_official_cv_bs128_acc84.ckpt>
-    asset-sha256: f990e701d64215c504bde64fd99a2d2c1f6c18926fb616866d303d962809a9c1
+    asset-link: <https://download.mindspore.cn/model_zoo/r1.3/simclr_encoder_ascend_v130_cifar10_official_cv_bs128_acc84.96/simclr_encoder_ascend_v130_cifar10_official_cv_bs128_acc84.96.ckpt>
+    asset-sha256: 1a1c57d30a456fe89cb7a873f41632cc65147b4e2a2e93a0c2a8f31ebadfc71e
 
 license: Apache2.0
 
