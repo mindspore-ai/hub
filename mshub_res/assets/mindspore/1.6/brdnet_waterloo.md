@@ -1,57 +1,57 @@
-# Auto-DeepLab
+# brdnet
 
 ---
 
-model-name: Auto-DeepLab
+model-name: brdnet
 
-backbone-name: Auto-DeepLab
+backbone-name: brdnet
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.3
+model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: waterloo
 
-evaluation: 0.5macc75 | 1.0macc77 | 1.5macc78
+evaluation: PSNR36.14
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/Auto-DeepLab>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/brdnet>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.3
+mindspore-version: 1.6
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/autodeeplab_ascend_v130_cityscapes_research_cv_0.5macc75_1.0macc77_1.5macc78.ckpt>
-    asset-sha256: acf76d476fc4e42dc078ff8ab2050bdff34cdb8280fb6e2778c48c628c00e39f
+    asset-link: <https://download.mindspore.cn/models/r1.6/brdnet_ascend_v160_waterloo_official_cv_PSNR36.14.ckpt>
+    asset-sha256: ceb72d439465d2b8b1cbe65dbcf63a1f47755412669128289b92d537ec4893c9
 
 license: Apache2.0
 
-summary: Auto-DeepLab is used for cv
+summary: brdnet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of Auto-DeepLab from the MindSpore model zoo on Gitee at research/cv/Auto-DeepLab.
+This MindSpore Hub model uses the implementation of brdnet from the MindSpore model zoo on Gitee at official/cv/brdnet.
 
-Auto-DeepLab is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/Auto-DeepLab](https://gitee.com/mindspore/models/blob/r1.3/research/cv/Auto-DeepLab/README.md).
+brdnet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/brdnet](https://gitee.com/mindspore/models/blob/r1.6/official/cv/brdnet/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Chenxi Liu, Liang-Chieh Chen, Florian Schroff, Hartwig Adam, Wei Hua, Alan L. Yuille, Li Fei-Fei; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 82-92
+Ct A ,  Yong X ,  Wz C . Image denoising using deep CNN with batch renormalization[J]. Neural Networks, 2020, 121:461-473.
 
 ## Disclaimer
 

@@ -1,51 +1,51 @@
-# wide_and_deep
+# cspdarknet53
 
 ---
 
-model-name: wide_and_deep
+model-name: cspdarknet53
 
-backbone-name: wide_and_deep
+backbone-name: cspdarknet53
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
-model-version: 1.5
+model-version: 1.3
 
-train-dataset: criteo
+train-dataset: imagenet2012
 
-evaluation: acc78.88
+evaluation: top1acc78.48 | top5acc94.00
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.5/official/recommend/wide_and_deep>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/official/cv/cspdarknet53>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.5
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.5/wideanddeep_dynamicshape_ascend_v150_criteo_official_recommend_acc78.88.ckpt>
-    asset-sha256: 98e97d16ca19a9871d4c5aa81acc4e38d033d7b54403d66d2f84d6b68cc07591
+    asset-link: <https://download.mindspore.cn/models/r1.3/cspdarknet53_ascend_v130_imagenet2012_official_cv_top1acc78.48_top5acc94.00.ckpt>
+    asset-sha256: 03a80383ab6b3dda366af837b2bf1edcb54255d7a21cc613bbb107525d242025
 
 license: Apache2.0
 
-summary: wide_and_deep is used for recommend
+summary: cspdarknet53 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of wide_and_deep from the MindSpore model zoo on Gitee at official/recommend/wide_and_deep.
+This MindSpore Hub model uses the implementation of cspdarknet53 from the MindSpore model zoo on Gitee at official/cv/cspdarknet53.
 
-wide_and_deep is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [official/recommend/wide_and_deep](https://gitee.com/mindspore/models/blob/r1.5/official/recommend/wide_and_deep/README.md).
+cspdarknet53 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/cspdarknet53](https://gitee.com/mindspore/models/blob/r1.3/official/cv/cspdarknet53/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.5/wideanddeep_dynamicshape_criteo"
+model = "mindspore/1.3/cspdarknet53_imagenet2012"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Wide & Deep Learning for Recommender System
+Chien-Yao Wang, Hong-Yuan Mark Liao, Yueh-Hua Wu, Ping-Yang Chen, Jun-Wei Hsieh, and I-Hau Yeh. CSPNet: A new backbone that can enhance learning capability of cnn. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshop (CVPR Workshop), 2020. 2, 7
 
 ## Disclaimer
 

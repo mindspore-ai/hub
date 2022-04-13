@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: reside
 
-evaluation: SSIM46
+evaluation: SSIM0.462
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/aecrnet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/aecrnet_ascend_v160_reside_research_cv_SSIM46.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/aecrnet_ascend_v160_reside_research_cv_SSIM0.462.ckpt>
     asset-sha256: cdfb291c14241b830ec97f00b8f45442948342b245fb0e943e40d57720763b8f
 
 license: Apache2.0
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Contrastive Learning for Compact Single Image Dehazing, CVPR2021
+[Contrastive Learning for Compact Single Image Dehazing, CVPR2021](https://arxiv.org/abs/2104.09367)
 
 ## Disclaimer
 

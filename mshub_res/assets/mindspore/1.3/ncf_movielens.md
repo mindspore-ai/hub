@@ -14,11 +14,11 @@ model-version: 1.3
 
 train-dataset: movielens
 
-evaluation: hr70.25 | ndcg42.23
+evaluation: hr69.56 | ndcg41.54
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.3/official/recommend/ncf>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/ncf_ascend_v130_movielens_official_recommend_hr70.25_ndcg42.23.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.3/ncf_ascend_v130_movielens_official_recommend_hr69.56_ndcg41.54.ckpt>
     asset-sha256: ff7bd040b8e269a8a81b1dcc2f96e157bc4c279c7ecc84fe9c9a9f166690e99d
 
 license: Apache2.0

@@ -1,26 +1,26 @@
-# wide_and_deep
+# yolov3_darknet53
 
 ---
 
-model-name: wide_and_deep
+model-name: yolov3_darknet53
 
-backbone-name: wide_and_deep
+backbone-name: yolov3_darknet53
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
 model-version: 1.3
 
-train-dataset: criteo
+train-dataset: coco2014
 
-evaluation: acc80.76
+evaluation: map31.8
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.3/official/recommend/wide_and_deep>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/official/cv/yolov3_darknet53>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/wideanddeep_ps_ascend_v130_criteo_official_recommend_acc80.76.ckpt>
-    asset-sha256: 01a521846a22c35ff3bef3f53ef5cb4efdc8c4717e4ca5b2efd3c2d4c04663f6
+    asset-link: <https://download.mindspore.cn/models/r1.3/yolov3darknet53shape416_ascend_v130_coco2014_official_cv_map31.8.ckpt>
+    asset-sha256: 4ce32fac5ba1b8469527da8e3e6b7862988546beed6e1c90c0d2a82644d40256
 
 license: Apache2.0
 
-summary: wide_and_deep is used for recommend
+summary: yolov3_darknet53 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of wide_and_deep from the MindSpore model zoo on Gitee at official/recommend/wide_and_deep.
+This MindSpore Hub model uses the implementation of yolov3_darknet53 from the MindSpore model zoo on Gitee at official/cv/yolov3_darknet53.
 
-wide_and_deep is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [official/recommend/wide_and_deep](https://gitee.com/mindspore/models/blob/r1.3/official/recommend/wide_and_deep/README.md).
+yolov3_darknet53 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/yolov3_darknet53](https://gitee.com/mindspore/models/blob/r1.3/official/cv/yolov3_darknet53/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.3/wideanddeep_ps_criteo"
+model = "mindspore/1.3/yolov3darknet53shape416_coco2014"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Wide & Deep Learning for Recommender System
+YOLOv3: An Incremental Improvement. Joseph Redmon, Ali Farhadi,
 
 ## Disclaimer
 

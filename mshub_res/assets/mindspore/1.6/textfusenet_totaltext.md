@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: totaltext
 
-evaluation: totaltext81 | ctw1500acc81
+evaluation: acc82.3
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/textfusenet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/textfusenet_ascend_v160_totaltext_research_cv_totaltext81_ctw1500acc81.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/textfusenet_ascend_v160_totaltext_research_cv_acc82.3.ckpt>
     asset-sha256: 2971951ea94b225b12fa9ec9b044510b46eefa17f026866f16961fe017acc6c9
 
 license: Apache2.0

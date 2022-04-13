@@ -14,11 +14,11 @@ model-version: 1.3
 
 train-dataset: dukemtmc
 
-evaluation: mAP67
+evaluation: mAP74
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/osnet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/osnet_ascend_v130_dukemtmc_research_cv_mAP67.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.3/osnet_ascend_v130_dukemtmc_research_cv_mAP74.ckpt>
     asset-sha256: 8bb1f05441d45cb6d4de816fdc6132f6096a35e1792156bf6b36b9f8d1f5abaa
 
 license: Apache2.0

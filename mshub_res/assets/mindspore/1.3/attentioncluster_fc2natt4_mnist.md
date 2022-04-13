@@ -1,57 +1,57 @@
-# Auto-DeepLab
+# AttentionCluster
 
 ---
 
-model-name: Auto-DeepLab
+model-name: AttentionCluster
 
-backbone-name: Auto-DeepLab
+backbone-name: AttentionCluster
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: mnist
 
-evaluation: 0.5macc75 | 1.0macc77 | 1.5macc78
+evaluation: top1acc68.17 | top5acc93.39
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/Auto-DeepLab>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/AttentionCluster>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/autodeeplab_ascend_v160_cityscapes_research_cv_0.5macc75_1.0macc77_1.5macc78.ckpt>
-    asset-sha256: acf76d476fc4e42dc078ff8ab2050bdff34cdb8280fb6e2778c48c628c00e39f
+    asset-link: <https://download.mindspore.cn/models/r1.3/attentioncluster_fc2natt4_ascend_v130_mnist_research_cv_top1acc68.17_top5acc93.39.ckpt>
+    asset-sha256: 8a27a3c8960823736bcf4d64e1f9080acc020bac168a834d455f750c4e492292
 
 license: Apache2.0
 
-summary: Auto-DeepLab is used for cv
+summary: AttentionCluster is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of Auto-DeepLab from the MindSpore model zoo on Gitee at research/cv/Auto-DeepLab.
+This MindSpore Hub model uses the implementation of AttentionCluster from the MindSpore model zoo on Gitee at research/cv/AttentionCluster.
 
-Auto-DeepLab is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/Auto-DeepLab](https://gitee.com/mindspore/models/blob/r1.6/research/cv/Auto-DeepLab/README.md).
+AttentionCluster is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/AttentionCluster](https://gitee.com/mindspore/models/blob/r1.3/research/cv/AttentionCluster/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Chenxi Liu, Liang-Chieh Chen, Florian Schroff, Hartwig Adam, Wei Hua, Alan L. Yuille, Li Fei-Fei; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 82-92
+[Attention Clusters: Purely Attention Based Local Feature Integration for Video Classification](https://arxiv.org/abs/1711.09550)
 
 ## Disclaimer
 

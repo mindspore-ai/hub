@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: ava
 
-evaluation: srcc65.71
+evaluation: SRCC72
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/nima>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/nima_ascend_v160_ava_official_cv_srcc65.71.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/nima_ascend_v160_ava_official_cv_SRCC72.ckpt>
     asset-sha256: 8bffc3b6182d3ae4e4c3e0375f939f857ae8a651a81ab06f136d467a4f0fc5eb
 
 license: Apache2.0
