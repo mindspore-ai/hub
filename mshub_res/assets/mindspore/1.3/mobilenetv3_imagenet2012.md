@@ -1,26 +1,26 @@
-# wide_and_deep
+# mobilenetv3
 
 ---
 
-model-name: wide_and_deep
+model-name: mobilenetv3
 
-backbone-name: wide_and_deep
+backbone-name: mobilenetv3
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
 model-version: 1.3
 
-train-dataset: criteo
+train-dataset: imagenet2012
 
-evaluation: acc78.88
+evaluation: top1acc74.42
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.3/official/recommend/wide_and_deep>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/official/cv/mobilenetv3>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/wideanddeep_dynamicshape_ascend_v130_criteo_official_recommend_acc78.88.ckpt>
-    asset-sha256: 98e97d16ca19a9871d4c5aa81acc4e38d033d7b54403d66d2f84d6b68cc07591
+    asset-link: <https://download.mindspore.cn/models/r1.3/mobilenetv3_ascend_v130_imagenet2012_official_cv_top1acc74.42.ckpt>
+    asset-sha256: f67f803c26e7ad40d9db4180fb74e1e996bde689b41db1778a934f4fe45308a5
 
 license: Apache2.0
 
-summary: wide_and_deep is used for recommend
+summary: mobilenetv3 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of wide_and_deep from the MindSpore model zoo on Gitee at official/recommend/wide_and_deep.
+This MindSpore Hub model uses the implementation of mobilenetv3 from the MindSpore model zoo on Gitee at official/cv/mobilenetv3.
 
-wide_and_deep is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [official/recommend/wide_and_deep](https://gitee.com/mindspore/models/blob/r1.3/official/recommend/wide_and_deep/README.md).
+mobilenetv3 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/mobilenetv3](https://gitee.com/mindspore/models/blob/r1.3/official/cv/mobilenetv3/Readme.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.3/wideanddeep_dynamicshape_criteo"
+model = "mindspore/1.3/mobilenetv3_imagenet2012"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Wide & Deep Learning for Recommender System
+Howard, Andrew, Mark Sandler, Grace Chu, Liang-Chieh Chen, Bo Chen, Mingxing Tan, Weijun Wang et al. "Searching for mobilenetv3." In Proceedings of the IEEE International Conference on Computer Vision, pp. 1314-1324. 2019.
 
 ## Disclaimer
 

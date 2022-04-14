@@ -1,26 +1,26 @@
-# wide_and_deep
+# c3d
 
 ---
 
-model-name: wide_and_deep
+model-name: c3d
 
-backbone-name: wide_and_deep
+backbone-name: c3d
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: criteo
+train-dataset: ucf101
 
-evaluation: acc79.34
+evaluation: top1acc79.51
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/recommend/wide_and_deep>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/c3d>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/wideanddeep_hostdevice_ascend_v160_criteo_official_recommend_acc79.34.ckpt>
-    asset-sha256: 3155f6edc2168cd84c887a5a43eab90a358dcd48a649eef677dbc5377dc2cf11
+    asset-link: <https://download.mindspore.cn/models/r1.6/c3d_ascend_v160_ucf101_official_cv_top1acc79.51.ckpt>
+    asset-sha256: 44e707636ce4ada89ee1f97ce1fecbe1a0373b7dfe21a6d711c1db827676002f
 
 license: Apache2.0
 
-summary: wide_and_deep is used for recommend
+summary: c3d is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of wide_and_deep from the MindSpore model zoo on Gitee at official/recommend/wide_and_deep.
+This MindSpore Hub model uses the implementation of c3d from the MindSpore model zoo on Gitee at official/cv/c3d.
 
-wide_and_deep is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [official/recommend/wide_and_deep](https://gitee.com/mindspore/models/blob/r1.6/official/recommend/wide_and_deep/README.md).
+c3d is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/c3d](https://gitee.com/mindspore/models/blob/r1.6/official/cv/c3d/README.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.6/wideanddeep_hostdevice_criteo"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-Wide & Deep Learning for Recommender System
+Learning Spatiotemporal Features with 3D Convolutional Networks
 
 ## Disclaimer
 

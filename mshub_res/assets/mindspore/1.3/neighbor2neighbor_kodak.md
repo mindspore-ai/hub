@@ -14,11 +14,11 @@ model-version: 1.3
 
 train-dataset: kodak
 
-evaluation: PSNR32 | SSIM88.31
+evaluation: PSNR32 | SSIM0.883
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/Neighbor2Neighbor>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/neighbor2neighbor_ascend_v130_kodak_research_cv_PSNR32_SSIM88.31.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.3/neighbor2neighbor_ascend_v130_kodak_research_cv_PSNR32_SSIM0.883.ckpt>
     asset-sha256: 6cfd9d193826c3a0c4d95fd5633171d438e28d1b4607c388434142ab161ee1cb
 
 license: Apache2.0

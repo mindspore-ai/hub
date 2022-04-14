@@ -14,11 +14,11 @@ model-version: 1.5
 
 train-dataset: fsns
 
-evaluation: acc91
+evaluation: acc98
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.5/official/cv/cnn_direction_model>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.5/cnndirectionmodel_ascend_v150_fsns_official_cv_acc91.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.5/cnndirectionmodel_ascend_v150_fsns_official_cv_acc98.ckpt>
     asset-sha256: 7dffb4205b94d111f5a0d60065cbd78912013645926c8960813ce4b1fe13725c
 
 license: Apache2.0

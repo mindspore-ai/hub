@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: aclimdbv1
 
-evaluation: acc86.18
+evaluation: acc83.27
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/nlp/lstm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/lstm_ascend_v160_aclimdbv1_official_nlp_acc86.18.ckpt>
-    asset-sha256: 7cc4125a91a2e792037cb17da99c2662c1b62ac9a4cc73f65fa6f43ba07e8ac6
+    asset-link: <https://download.mindspore.cn/models/r1.6/lstm_ascend_v160_aclimdbv1_official_nlp_acc83.27.ckpt>
+    asset-sha256: 1753803072319f6538e5850d309afcad306f15b3b0fee995ce2234f1a2bb7e7e
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Andrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng, Christopher Potts. Learning Word Vectors for Sentiment Analysis. Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies. 2011
+Andrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng, Christopher Potts. [Learning Word Vectors for Sentiment Analysis](https://www.aclweb.org/anthology/P11-1015/). Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies. 2011
 
 ## Disclaimer
 

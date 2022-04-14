@@ -14,11 +14,11 @@ model-version: 1.3
 
 train-dataset: div2k
 
-evaluation: psnry34.77 | ssimy92.85
+evaluation: psnry34.77 | ssimy0.9285
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/IRN>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/irn_ascend_v130_div2k_research_cv_psnry34.77_ssimy92.85.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.3/irn_ascend_v130_div2k_research_cv_psnry34.77_ssimy0.9285.ckpt>
     asset-sha256: 054d792d4b392cc87c045e43e29817770d52dff4b4efa0dbce6feadfb82159e0
 
 license: Apache2.0

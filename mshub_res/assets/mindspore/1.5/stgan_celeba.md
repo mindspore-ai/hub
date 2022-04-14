@@ -1,26 +1,26 @@
-# wide_and_deep
+# STGAN
 
 ---
 
-model-name: wide_and_deep
+model-name: STGAN
 
-backbone-name: wide_and_deep
+backbone-name: STGAN
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
 model-version: 1.5
 
-train-dataset: criteo
+train-dataset: celeba
 
-evaluation: acc79.34
+evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.5/official/recommend/wide_and_deep>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/STGAN>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.5/wideanddeep_hostdevice_ascend_v150_criteo_official_recommend_acc79.34.ckpt>
-    asset-sha256: 3155f6edc2168cd84c887a5a43eab90a358dcd48a649eef677dbc5377dc2cf11
+    asset-link: <https://download.mindspore.cn/models/r1.5/stgan_ascend_v150_celeba_research_cv.ckpt>
+    asset-sha256: c73ce0878942c2b753f9c028c2d1bf000bb56af6fcfb45b70b62195016bc96be
 
 license: Apache2.0
 
-summary: wide_and_deep is used for recommend
+summary: STGAN is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of wide_and_deep from the MindSpore model zoo on Gitee at official/recommend/wide_and_deep.
+This MindSpore Hub model uses the implementation of STGAN from the MindSpore model zoo on Gitee at research/cv/STGAN.
 
-wide_and_deep is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [official/recommend/wide_and_deep](https://gitee.com/mindspore/models/blob/r1.5/official/recommend/wide_and_deep/README.md).
+STGAN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/STGAN](https://gitee.com/mindspore/models/blob/r1.5/research/cv/STGAN/README.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.5/wideanddeep_hostdevice_criteo"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-Wide & Deep Learning for Recommender System
+Liu M, Ding Y, Xia M, et al. STGAN: A Unified Selective Transfer Network for Arbitrary Image Attribute Editing[C]. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). IEEE, 2019: 3668-3677.
 
 ## Disclaimer
 

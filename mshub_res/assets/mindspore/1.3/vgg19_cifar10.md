@@ -1,51 +1,51 @@
-# wide_and_deep
+# vgg19
 
 ---
 
-model-name: wide_and_deep
+model-name: vgg19
 
-backbone-name: wide_and_deep
+backbone-name: vgg19
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: criteo
+train-dataset: cifar10
 
-evaluation: acc78.88
+evaluation: acc93.78
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/recommend/wide_and_deep>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/vgg19>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/wideanddeep_dynamicshape_ascend_v160_criteo_official_recommend_acc78.88.ckpt>
-    asset-sha256: 98e97d16ca19a9871d4c5aa81acc4e38d033d7b54403d66d2f84d6b68cc07591
+    asset-link: <https://download.mindspore.cn/models/r1.3/vgg19_ascend_v130_cifar10_research_cv_acc93.78.ckpt>
+    asset-sha256: be9a7860d521b6036cb8fde0183eb5c577817987d3ca8fde5e459af3d77e941c
 
 license: Apache2.0
 
-summary: wide_and_deep is used for recommend
+summary: vgg19 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of wide_and_deep from the MindSpore model zoo on Gitee at official/recommend/wide_and_deep.
+This MindSpore Hub model uses the implementation of vgg19 from the MindSpore model zoo on Gitee at research/cv/vgg19.
 
-wide_and_deep is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [official/recommend/wide_and_deep](https://gitee.com/mindspore/models/blob/r1.6/official/recommend/wide_and_deep/README.md).
+vgg19 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/vgg19](https://gitee.com/mindspore/models/blob/r1.3/research/cv/vgg19/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/wideanddeep_dynamicshape_criteo"
+model = "mindspore/1.3/vgg19_cifar10"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Wide & Deep Learning for Recommender System
+Simonyan K, zisserman A. Very Deep Convolutional Networks for Large-Scale Image Recognition[J]. arXiv preprint arXiv:1409.1556, 2014.
 
 ## Disclaimer
 

@@ -14,11 +14,11 @@ model-version: 1.3
 
 train-dataset: lits2017
 
-evaluation: acc96
+evaluation: acc97.7
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/UNet3+>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/unet3plus_ascend_v130_lits2017_research_cv_acc96.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.3/unet3plus_ascend_v130_lits2017_research_cv_acc97.7.ckpt>
     asset-sha256: bcad7cb89d81da57d53b49928f6d0af96bb5d26552170bc4900402b8171d02b0
 
 license: Apache2.0

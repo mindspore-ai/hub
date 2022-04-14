@@ -1,26 +1,26 @@
-# wide_and_deep
+# retinaface
 
 ---
 
-model-name: wide_and_deep
+model-name: retinaface
 
-backbone-name: wide_and_deep
+backbone-name: retinaface
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: criteo
+train-dataset: widerface
 
-evaluation: acc80.76
+evaluation: easy95.19 | medium93.74 | hard83.94
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/recommend/wide_and_deep>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/retinaface>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/wideanddeep_ps_ascend_v160_criteo_official_recommend_acc80.76.ckpt>
-    asset-sha256: 01a521846a22c35ff3bef3f53ef5cb4efdc8c4717e4ca5b2efd3c2d4c04663f6
+    asset-link: <https://download.mindspore.cn/models/r1.6/retinafaceresnet50_ascend_v160_widerface_research_cv_easy95.19_medium93.74_hard83.94.ckpt>
+    asset-sha256: d7a67c8289bec78788b5ab625f006b8d74992c77c25310ec5a9dd0e16722e2aa
 
 license: Apache2.0
 
-summary: wide_and_deep is used for recommend
+summary: retinaface is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of wide_and_deep from the MindSpore model zoo on Gitee at official/recommend/wide_and_deep.
+This MindSpore Hub model uses the implementation of retinaface from the MindSpore model zoo on Gitee at research/cv/retinaface.
 
-wide_and_deep is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [official/recommend/wide_and_deep](https://gitee.com/mindspore/models/blob/r1.6/official/recommend/wide_and_deep/README.md).
+retinaface is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/retinaface](https://gitee.com/mindspore/models/blob/r1.6/research/cv/retinaface/README_CN.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.6/wideanddeep_ps_criteo"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-Wide & Deep Learning for Recommender System
+Jiankang Deng, Jia Guo, Yuxiang Zhou, Jinke Yu, Irene Kotsia, Stefanos Zafeiriou. "RetinaFace: Single-stage Dense Face Localisation in the Wild". 2019.
 
 ## Disclaimer
 

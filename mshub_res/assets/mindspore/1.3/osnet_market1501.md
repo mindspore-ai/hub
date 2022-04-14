@@ -14,11 +14,11 @@ model-version: 1.3
 
 train-dataset: market1501
 
-evaluation: mAP80
+evaluation: mAP83
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/osnet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/osnet_ascend_v130_market1501_research_cv_mAP80.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.3/osnet_ascend_v130_market1501_research_cv_mAP83.ckpt>
     asset-sha256: 6501a276300a2e2b063e51269fa50d82dc9c0adcf704495eb499041ab64e267c
 
 license: Apache2.0
