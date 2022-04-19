@@ -1,57 +1,57 @@
-# delf
+# SPPNet
 
 ---
 
-model-name: delf
+model-name: SPPNet
 
-backbone-name: delf
+backbone-name: SPPNet
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: gldv2
+train-dataset: imagenet2012
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: top1acc64.41 | top5acc85.51
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/SPPNet>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.5/sppnet_zfnet_ascend_v150_imagenet2012_research_cv_top1acc64.41_top5acc85.51.ckpt>
+    asset-sha256: f3d5b38c4c48426c9d6ddbb347ffb5253b7e61430b5724ccc0ce9bf0cb249298
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: SPPNet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of SPPNet from the MindSpore model zoo on Gitee at research/cv/SPPNet.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+SPPNet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/SPPNet](https://gitee.com/mindspore/models/blob/r1.5/research/cv/SPPNet/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
+K. He, X. Zhang, S. Ren and J. Sun, "Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 37, no. 9, pp. 1904-1916, 1 Sept. 2015, doi: 10.1109/TPAMI.2015.2389824.
 
 ## Disclaimer
 

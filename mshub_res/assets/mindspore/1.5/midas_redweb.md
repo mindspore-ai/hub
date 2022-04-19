@@ -1,57 +1,57 @@
-# delf
+# midas
 
 ---
 
-model-name: delf
+model-name: midas
 
-backbone-name: delf
+backbone-name: midas
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: gldv2
+train-dataset: redweb
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: sintelacc31.30 | tumacc14.57 | kittiacc24.04
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/midas>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.5/midas_ascend_v150_redweb_research_cv_sintelacc31.30_tumacc14.57_kittiacc24.04.ckpt>
+    asset-sha256: a8e090947fb777033547ec7ba00a00d68e691f2a150fb18ca106fde133a0b363
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: midas is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of midas from the MindSpore model zoo on Gitee at research/cv/midas.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+midas is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/midas](https://gitee.com/mindspore/models/blob/r1.5/research/cv/midas/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
+[Towards Robust Monocular Depth Estimation:Mixing Datasets for Zero-shot Cross-dataset Transfer](https://arxiv.org/pdf/1907.01341v3.pdf)
 
 ## Disclaimer
 

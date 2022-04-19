@@ -1,57 +1,57 @@
-# delf
+# sdne
 
 ---
 
-model-name: delf
+model-name: sdne
 
-backbone-name: delf
+backbone-name: sdne
 
-module-type: cv
+module-type: gnn
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: gldv2
+train-dataset: wiki
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: map66.74
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/gnn/sdne>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.5/sdne_ascend_v150_wiki_research_gnn_map66.74.ckpt>
+    asset-sha256: a86649be4a355ccc87952c18f9c8a0316004d7eb2e2ddf7c2882177537797236
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: sdne is used for gnn
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of sdne from the MindSpore model zoo on Gitee at research/gnn/sdne.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+sdne is a gnn network. More details please refer to the MindSpore model zoo on Gitee at [research/gnn/sdne](https://gitee.com/mindspore/models/blob/r1.5/research/gnn/sdne/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
+Wang D ,  Cui P ,  Zhu W. Structural Deep Network Embedding[C]// Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. August 2016.
 
 ## Disclaimer
 

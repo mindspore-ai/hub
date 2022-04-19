@@ -1,10 +1,10 @@
-# delf
+# TNT
 
 ---
 
-model-name: delf
+model-name: TNT
 
-backbone-name: delf
+backbone-name: TNT
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: gldv2
+train-dataset: imagenet2012
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: top1acc81.03 | top5acc95.41
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/TNT>
 
 user-id: MindSpore
 
@@ -32,26 +32,22 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.6/tnt_ascend_v160_imagenet2012_research_cv_top1acc81.03_top5acc95.41.ckpt>
+    asset-sha256: 028493c50c666b32c37a036c217c0416a81cc822c591a6662f7136606d66b38d
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: TNT is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of TNT from the MindSpore model zoo on Gitee at research/cv/TNT.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+TNT is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/TNT](https://gitee.com/mindspore/models/blob/r1.6/research/cv/TNT/README_CN.md).
 
 All parameters in the module are trainable.
-
-## Citation
-
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
 
 ## Disclaimer
 

@@ -1,57 +1,53 @@
-# delf
+# DDRNet
 
 ---
 
-model-name: delf
+model-name: DDRNet
 
-backbone-name: delf
+backbone-name: DDRNet
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: gldv2
+train-dataset: imagenet2012
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: top1acc76.36 | top5acc93.24
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/DDRNet>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.3/ddrnet_ascend_v130_imagenet2012_research_cv_top1acc76.36_top5acc93.24.ckpt>
+    asset-sha256: 6acbc32e242e674a61b812adfb1a7972348e013f0c8bd0beccaeca0446305997
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: DDRNet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of DDRNet from the MindSpore model zoo on Gitee at research/cv/DDRNet.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+DDRNet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/DDRNet](https://gitee.com/mindspore/models/blob/r1.3/research/cv/DDRNet/README_CN.md).
 
 All parameters in the module are trainable.
-
-## Citation
-
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
 
 ## Disclaimer
 
