@@ -1,10 +1,10 @@
-# delf
+# EGnet
 
 ---
 
-model-name: delf
+model-name: EGnet
 
-backbone-name: delf
+backbone-name: EGnet
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: gldv2
+train-dataset: dutstr
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: sodacc87.68 | ecssdacc94.20 | pascalsacc88.55 | dutomronacc77.71 | hkuis92.80
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/EGnet>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.6/egnet_resnet_ascend_v160_dutstr_research_cv_sodacc87.68_ecssdacc94.20_pascalsacc88.55_dutomronacc77.71_hkuis92.80.ckpt>
+    asset-sha256: cb7ba865a6c6fccbbe00158e79ff57c5cf9e928a7f887452ea027d536690e65d
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: EGnet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of EGnet from the MindSpore model zoo on Gitee at research/cv/EGnet.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+EGnet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/EGnet](https://gitee.com/mindspore/models/blob/r1.6/research/cv/EGnet/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
+Zhao J X, Liu J J, Fan D P, et al. EGNet: Edge guidance network for salient object detection[C]//Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019: 8779-8788.
 
 ## Disclaimer
 

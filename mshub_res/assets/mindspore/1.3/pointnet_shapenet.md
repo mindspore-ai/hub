@@ -1,57 +1,57 @@
-# delf
+# pointnet
 
 ---
 
-model-name: delf
+model-name: pointnet
 
-backbone-name: delf
+backbone-name: pointnet
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: gldv2
+train-dataset: shapenet
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: acc86.96
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/pointnet>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.3/pointnet_ascend_v130_shapenet_research_cv_acc86.96.ckpt>
+    asset-sha256: 5ec22ef8af05c86a4e2c69db7da097c8d2d337455ad42065e54dcc1ada9b77ed
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: pointnet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of pointnet from the MindSpore model zoo on Gitee at research/cv/pointnet.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+pointnet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/pointnet](https://gitee.com/mindspore/models/blob/r1.3/research/cv/pointnet/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
+Qi, Charles R., et al. "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation" arXiv preprint arXiv:1612.00593 (2017).
 
 ## Disclaimer
 

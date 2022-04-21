@@ -18,7 +18,7 @@ evaluation: oxford5kmap91.85 | paris6k87.87
 
 author: MindSpore team
 
-update-time: 2022-03-23
+update-time: 2022-04-18
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/delf>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.3/delf_ascend_v130_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: 5158fb46a95179157bcb7ba8110985b80c906a253d98a6a82667b113b64a1f77
+    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." *2017 IEEE International Conference on Computer Vision (ICCV)* IEEE, 2017.
+Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
 
 ## Disclaimer
 

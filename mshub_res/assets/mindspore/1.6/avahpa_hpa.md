@@ -1,10 +1,10 @@
-# delf
+# AVA_hpa
 
 ---
 
-model-name: delf
+model-name: AVA_hpa
 
-backbone-name: delf
+backbone-name: AVA_hpa
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: gldv2
+train-dataset: hpa
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: macroF1acc70.05 | microF1acc77.97 | auc94.23
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/AVA_hpa>
 
 user-id: MindSpore
 
@@ -32,26 +32,22 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.6/avahpa_ascend_v160_hpa_research_cv_macroF1acc70.05_microF1acc77.97_auc94.23.ckpt>
+    asset-sha256: 50d6c1d61a750a3524076c1088bda669d492713a6b8be9d71dd9c6b5e2656102
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: AVA_hpa is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of AVA_hpa from the MindSpore model zoo on Gitee at research/cv/AVA_hpa.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+AVA_hpa is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/AVA_hpa](https://gitee.com/mindspore/models/blob/r1.6/research/cv/AVA_hpa/README.md).
 
 All parameters in the module are trainable.
-
-## Citation
-
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
 
 ## Disclaimer
 

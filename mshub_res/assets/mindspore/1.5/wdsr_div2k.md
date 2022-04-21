@@ -1,57 +1,58 @@
-# delf
+# wdsr
 
 ---
 
-model-name: delf
+model-name: wdsr
 
-backbone-name: delf
+backbone-name: wdsr
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: gldv2
+train-dataset: div2k
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: psnr35.35
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/wdsr>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.5/wdsr_ascend_v150_div2k_research_cv_psnr35.35.ckpt>
+    asset-sha256: 2edcb77de7a0180158d2322f36454fa4a81701b1c9477f6380d8161a81a1e429
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: wdsr is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of wdsr from the MindSpore model zoo on Gitee at research/cv/wdsr.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+wdsr is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/wdsr](https://gitee.com/mindspore/models/blob/r1.5/research/cv/wdsr/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
+1. Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee, "Enhanced Deep Residual Networks for Single Image Super-Resolution," *2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with CVPR 2017.
+2. Jiahui Yu, Yuchen Fan, Jianchao Yang, Ning Xu, Zhaowen Wang, Xinchao Wang, Thomas Huang, "Wide Activation for Efficient and Accurate Image Super-Resolution", arXiv preprint arXiv:1808.08718.
 
 ## Disclaimer
 

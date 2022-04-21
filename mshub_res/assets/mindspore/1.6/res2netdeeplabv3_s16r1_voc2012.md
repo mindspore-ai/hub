@@ -1,10 +1,10 @@
-# delf
+# res2net_deeplabv3
 
 ---
 
-model-name: delf
+model-name: res2net_deeplabv3
 
-backbone-name: delf
+backbone-name: res2net_deeplabv3
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: gldv2
+train-dataset: voc2012
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: mIoU78.69
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/res2net_deeplabv3>
 
 user-id: MindSpore
 
@@ -32,26 +32,43 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.6/res2netdeeplabv3_s16r1_ascend_v160_voc2012_research_cv_mIoU78.69.ckpt>
+    asset-sha256: 777215fadccf09da5c3911aebfb9451db75635c3fdf910efb8ade0e950815d54
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: res2net_deeplabv3 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of res2net_deeplabv3 from the MindSpore model zoo on Gitee at research/cv/res2net_deeplabv3.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+res2net_deeplabv3 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/res2net_deeplabv3](https://gitee.com/mindspore/models/blob/r1.6/research/cv/res2net_deeplabv3/README.md).
 
 All parameters in the module are trainable.
 
+## Usage
+
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.6/res2netdeeplabv3_s16r1_voc2012"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
+
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
+Chen L C, Papandreou G, Schroff F, et al. Rethinking atrous convolution for semantic image segmentation[J]. arXiv preprint arXiv:1706.05587, 2017.
 
 ## Disclaimer
 

@@ -1,10 +1,10 @@
-# delf
+# res2net
 
 ---
 
-model-name: delf
+model-name: res2net
 
-backbone-name: delf
+backbone-name: res2net
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: gldv2
+train-dataset: cifar10
 
-evaluation: oxford5kmap91.85 | paris6k87.87
+evaluation: top1acc94.86 | top5acc99.88
 
 author: MindSpore team
 
 update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/res2net>
 
 user-id: MindSpore
 
@@ -32,26 +32,43 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_gldv2_research_cv_oxford5kmap91.85_paris6k87.87.ckpt>
-    asset-sha256: e75b91b9a11d2d35ca3f5cee5199b30c08df495b4d70c48df264a04afd10eed3
+    asset-link: <https://download.mindspore.cn/models/r1.6/res2net50_ascend_v160_cifar10_research_cv_top1acc94.86_top5acc99.88.ckpt>
+    asset-sha256: 51493adc602d5024ea4b6476f55a3bff12723355fbd20da5e3262f4b72e51d2c
 
 license: Apache2.0
 
-summary: delf is used for cv
+summary: res2net is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
+This MindSpore Hub model uses the implementation of res2net from the MindSpore model zoo on Gitee at research/cv/res2net.
 
-delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
+res2net is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/res2net](https://gitee.com/mindspore/models/blob/r1.6/research/cv/res2net/README.md).
 
 All parameters in the module are trainable.
 
+## Usage
+
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.6/res2net50_cifar10"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
+
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
+Gao, Shang-Hua and Cheng, Ming-Ming and Zhao, Kai and Zhang, Xin-Yu and Yang, Ming-Hsuan and Torr, Philip. "Res2Net: A New Multi-scale Backbone Architecture"，TPAMI21
 
 ## Disclaimer
 
