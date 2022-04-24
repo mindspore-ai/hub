@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# resnet50_adv_pruning
 
 ---
 
-model-name: HRNetW48_seg
+model-name: resnet50_adv_pruning
 
-backbone-name: HRNetW48_seg
+backbone-name: resnet50_adv_pruning
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: imagenet2012
 
-evaluation: miou79.21
+evaluation: top1acc80.2
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/resnet50_adv_pruning>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/resnet50advpruning_ascend_v150_imagenet2012_research_cv_top1acc80.2.ckpt>
+    asset-sha256: b41eb489a62c8c12ff88b7f028bc4a943f29f8e25a0a9ec69b9ed070681340cc
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: resnet50_adv_pruning is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of resnet50_adv_pruning from the MindSpore model zoo on Gitee at research/cv/resnet50_adv_pruning.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+resnet50_adv_pruning is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/resnet50_adv_pruning](https://gitee.com/mindspore/models/blob/r1.5/research/cv/resnet50_adv_pruning/Readme.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Yehui Tang, Yunhe Wang, Yixing Xu, Dacheng Tao, Chunjing Xu, Chao Xu, Chang Xu. Scientific Control for Reliable Neural Network Pruning. Submitted to NeurIPS 2020.
 
 ## Disclaimer
 

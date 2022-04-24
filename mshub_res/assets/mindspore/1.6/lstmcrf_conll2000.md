@@ -1,26 +1,26 @@
-# HRNetW48_seg
+# lstm_crf
 
 ---
 
-model-name: HRNetW48_seg
+model-name: lstm_crf
 
-backbone-name: HRNetW48_seg
+backbone-name: lstm_crf
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: conll2000
 
-evaluation: miou79.21
+evaluation: f1acc93.48
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/nlp/lstm_crf>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/lstmcrf_ascend_v160_conll2000_research_nlp_f1acc93.48.ckpt>
+    asset-sha256: 81617b85c25cc8268d0b9f5da33138078d25df900f9d2f71ca0d315ea6e71914
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: lstm_crf is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of lstm_crf from the MindSpore model zoo on Gitee at research/nlp/lstm_crf.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+lstm_crf is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/lstm_crf](https://gitee.com/mindspore/models/blob/r1.6/research/nlp/lstm_crf/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+[Paper](https://arxiv.org/abs/1508.01991):  Zhiheng Huang, Wei Xu, Kai Yu. [Bidirectional LSTM-CRF Models for Sequence Tagging](https://arxiv.org/abs/1508.01991).
 
 ## Disclaimer
 

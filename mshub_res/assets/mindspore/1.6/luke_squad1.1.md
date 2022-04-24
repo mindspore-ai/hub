@@ -1,26 +1,26 @@
-# HRNetW48_seg
+# luke
 
 ---
 
-model-name: HRNetW48_seg
+model-name: luke
 
-backbone-name: HRNetW48_seg
+backbone-name: luke
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: squad1.1
 
-evaluation: miou79.21
+evaluation: f1score94.69
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/nlp/luke>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/luke_ascend_v160_squad1.1_research_nlp_f1score94.69.ckpt>
+    asset-sha256: fec2119ce687bf49c749c57ff00a92df844aabc490588e8d7caef346fe5988d1
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: luke is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of luke from the MindSpore model zoo on Gitee at research/nlp/luke.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+luke is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/luke](https://gitee.com/mindspore/models/blob/r1.6/research/nlp/luke/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+https://link.zhihu.com/?target=https%3A//www.aclweb.org/anthology/2020.emnlp-main.523.pdf
 
 ## Disclaimer
 

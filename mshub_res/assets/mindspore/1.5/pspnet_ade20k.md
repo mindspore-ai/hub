@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# PSPNet
 
 ---
 
-model-name: HRNetW48_seg
+model-name: PSPNet
 
-backbone-name: HRNetW48_seg
+backbone-name: PSPNet
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: ade20k
 
-evaluation: miou79.21
+evaluation: miou41.57 | allacc79.71
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/PSPNet>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/pspnet_ascend_v150_ade20k_research_cv_miou41.57_allacc79.71.ckpt>
+    asset-sha256: 2eacbc1c5b10f6bc5ca9b5c8ac3799c12a2b888ae66cf701ecf3e80ba3008d6f
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: PSPNet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of PSPNet from the MindSpore model zoo on Gitee at research/cv/PSPNet.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+PSPNet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/PSPNet](https://gitee.com/mindspore/models/blob/r1.5/research/cv/PSPNet/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+[paper](https://arxiv.org/abs/1612.01105) from CVPR2017
 
 ## Disclaimer
 

@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# TCN
 
 ---
 
-model-name: HRNetW48_seg
+model-name: TCN
 
-backbone-name: HRNetW48_seg
+backbone-name: TCN
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: addingproblem
 
-evaluation: miou79.21
+evaluation: acc1.72e-05
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/TCN>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.3/tcn_ascend_v130_addingproblem_research_cv_acc1.72e-05.ckpt>
+    asset-sha256: 5c84192038bee4aeb986576803a28a0807e5bdd58c9a4fb1bac7a1506c6e06c3
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: TCN is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of TCN from the MindSpore model zoo on Gitee at research/cv/TCN.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+TCN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/TCN](https://gitee.com/mindspore/models/blob/r1.3/research/cv/TCN/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling
 
 ## Disclaimer
 

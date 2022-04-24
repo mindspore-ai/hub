@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# CascadeRCNN
 
 ---
 
-model-name: HRNetW48_seg
+model-name: CascadeRCNN
 
-backbone-name: HRNetW48_seg
+backbone-name: CascadeRCNN
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: coco2017
 
-evaluation: miou79.21
+evaluation: map37.3 | ap50acc55.5
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/CascadeRCNN>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/cascadercnn_ascend_v160_coco2017_research_cv_map37.3_ap50acc55.5.ckpt>
+    asset-sha256: 18204a922b382758a16cd57d30481a6f5c4d06aaabfe228aa3c8804521d2a019
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: CascadeRCNN is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of CascadeRCNN from the MindSpore model zoo on Gitee at research/cv/CascadeRCNN.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+CascadeRCNN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/CascadeRCNN](https://gitee.com/mindspore/models/blob/r1.6/research/cv/CascadeRCNN/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Cai Z, Vasconcelos N. Cascade r-cnn: Delving into high quality object detection[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2018: 6154-6162.
 
 ## Disclaimer
 

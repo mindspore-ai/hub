@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# u2net
 
 ---
 
-model-name: HRNetW48_seg
+model-name: u2net
 
-backbone-name: HRNetW48_seg
+backbone-name: u2net
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: dutstr
 
-evaluation: miou79.21
+evaluation: acc99.05
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/u2net>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.3/u2net_ascend_v130_dutstr_research_cv_acc99.05.ckpt>
+    asset-sha256: c3a725b159817161fc3dfd9d4a6758e3cda530ea0927be8d908262be3a88e86c
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: u2net is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of u2net from the MindSpore model zoo on Gitee at research/cv/u2net.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+u2net is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/u2net](https://gitee.com/mindspore/models/blob/r1.3/research/cv/u2net/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+[**U<sup>2</sup>-Net: Going deeper with nested U-structure for salient object detection** ](http://arxiv.org/abs/2005.09007)
 
 ## Disclaimer
 

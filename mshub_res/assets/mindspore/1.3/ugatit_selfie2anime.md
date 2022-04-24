@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# U-GAT-IT
 
 ---
 
-model-name: HRNetW48_seg
+model-name: U-GAT-IT
 
-backbone-name: HRNetW48_seg
+backbone-name: U-GAT-IT
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: selfie2anime
 
-evaluation: miou79.21
+evaluation: no
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/U-GAT-IT>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.3/ugatit_ascend_v130_selfie2anime_research_cv.ckpt>
+    asset-sha256: f1b9815892e87eb040d86f2a0862819bbb7f3e84087aa430d2b6dae44160ff53
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: U-GAT-IT is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of U-GAT-IT from the MindSpore model zoo on Gitee at research/cv/U-GAT-IT.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+U-GAT-IT is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/U-GAT-IT](https://gitee.com/mindspore/models/blob/r1.3/research/cv/U-GAT-IT/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Kim J, Kim M, Kang H, et al. U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation[C]//International Conference on Learning Representations. 2019.
 
 ## Disclaimer
 

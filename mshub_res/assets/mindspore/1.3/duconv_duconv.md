@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# duconv
 
 ---
 
-model-name: HRNetW48_seg
+model-name: duconv
 
-backbone-name: HRNetW48_seg
+backbone-name: duconv
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: duconv
 
-evaluation: miou79.21
+evaluation: F1score31.71
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/official/nlp/duconv>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.3/duconv_ascend_v130_duconv_official_nlp_F1score31.71.ckpt>
+    asset-sha256: f952f93f26fe7f889b3e03d1d2be438ad6083baa3d6618f042133c904baf694a
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: duconv is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of duconv from the MindSpore model zoo on Gitee at official/nlp/duconv.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+duconv is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/duconv](https://gitee.com/mindspore/models/blob/r1.3/official/nlp/duconv/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Wu W, Guo Z, Zhou X, et al. Proactive human-machine conversation with explicit conversation goals[J]. arXiv preprint arXiv:1906.05572, 2019.
 
 ## Disclaimer
 

@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# stnet
 
 ---
 
-model-name: HRNetW48_seg
+model-name: stnet
 
-backbone-name: HRNetW48_seg
+backbone-name: stnet
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: kinetics400
 
-evaluation: miou79.21
+evaluation: acc69.16
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/stnet>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.3/stnet_ascend_v130_kinetics400_research_cv_acc69.16.ckpt>
+    asset-sha256: 1371a005a884c1258e448c823ad4668268dea65b2a10e900a0adf1937045e169
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: stnet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of stnet from the MindSpore model zoo on Gitee at research/cv/stnet.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+stnet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/stnet](https://gitee.com/mindspore/models/blob/r1.3/research/cv/stnet/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+"StNet: Local and Global Spatial-Temporal Modeling for Action Recognition."
 
 ## Disclaimer
 

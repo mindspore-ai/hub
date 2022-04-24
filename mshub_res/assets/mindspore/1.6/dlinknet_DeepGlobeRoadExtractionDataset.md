@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# dlinknet
 
 ---
 
-model-name: HRNetW48_seg
+model-name: dlinknet
 
-backbone-name: HRNetW48_seg
+backbone-name: dlinknet
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: DeepGlobeRoadExtractionDataset
 
-evaluation: miou79.21
+evaluation: acc98.14 | acccls89.39 | iou98.08
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/dlinknet>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/dlinknet_ascend_v160_DeepGlobeRoadExtractionDataset_research_cv_acc98.14_acccls89.39_iou98.08.ckpt>
+    asset-sha256: 102594a59fdc3d53c44aa2bd5573ca5a38a77697c2c7016221917b8f21e9834d
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: dlinknet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of dlinknet from the MindSpore model zoo on Gitee at research/cv/dlinknet.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+dlinknet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/dlinknet](https://gitee.com/mindspore/models/blob/r1.6/research/cv/dlinknet/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+chen Zhou, Chuang Zhang, Ming Wu; Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2018, pp. 182-186
 
 ## Disclaimer
 

@@ -1,26 +1,26 @@
-# HRNetW48_seg
+# seq2seq
 
 ---
 
-model-name: HRNetW48_seg
+model-name: seq2seq
 
-backbone-name: HRNetW48_seg
+backbone-name: seq2seq
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: wmt14
 
-evaluation: miou79.21
+evaluation: BLUE12.9
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/nlp/seq2seq>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/seq2seq_ascend_v160_wmt14_research_nlp_BLUE12.9.ckpt>
+    asset-sha256: f1ea7717ccefafda74727f16b8a3f04b8011c7c298ade859884db17eeeb2897b
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: seq2seq is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of seq2seq from the MindSpore model zoo on Gitee at research/nlp/seq2seq.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+seq2seq is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/seq2seq](https://gitee.com/mindspore/models/blob/r1.6/research/nlp/seq2seq/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Ilya Sutskever, Oriol Vinyals, and Quoc V. Le. 2014. Sequence to sequence learning with neural networks. In Proceedings of the 27th International Conference on Neural Information Processing Systems - Volume 2 (NIPS'14). MIT Press, Cambridge, MA, USA, 3104–3112.
 
 ## Disclaimer
 

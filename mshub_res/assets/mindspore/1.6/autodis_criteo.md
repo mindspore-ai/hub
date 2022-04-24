@@ -1,26 +1,26 @@
-# HRNetW48_seg
+# autodis
 
 ---
 
-model-name: HRNetW48_seg
+model-name: autodis
 
-backbone-name: HRNetW48_seg
+backbone-name: autodis
 
-module-type: cv
+module-type: recommend
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: criteo
 
-evaluation: miou79.21
+evaluation: acc80.90
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/autodis>
 
 user-id: MindSpore
 
@@ -32,26 +32,43 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/autodis_ascend_v160_criteo_research_recommend_acc80.90.ckpt>
+    asset-sha256: 741137e75c0f59f47010d63a614cfd6487a1a744cc7a143a1613a7fc66aac2c4
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: autodis is used for recommend
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of autodis from the MindSpore model zoo on Gitee at research/recommend/autodis.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+autodis is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/autodis](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/autodis/README.md).
 
 All parameters in the module are trainable.
 
+## Usage
+
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.6/autodis_criteo"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
+
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Huifeng Guo*, Bo Chen*, Ruiming Tang, Zhenguo Li, Xiuqiang He. AutoDis: Automatic Discretization for Embedding Numerical Features in CTR Prediction
 
 ## Disclaimer
 

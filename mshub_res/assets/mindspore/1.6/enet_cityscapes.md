@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# E-NET
 
 ---
 
-model-name: HRNetW48_seg
+model-name: E-NET
 
-backbone-name: HRNetW48_seg
+backbone-name: E-NET
 
 module-type: cv
 
@@ -14,13 +14,13 @@ model-version: 1.6
 
 train-dataset: cityscapes
 
-evaluation: miou79.21
+evaluation: iou62.22
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/E-NET>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/enet_ascend_v160_cityscapes_research_cv_iou62.22.ckpt>
+    asset-sha256: fdb076643575d5cf94da289d80965d211a2c53dc58796c0cdbd9019d54c99c95
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: E-NET is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of E-NET from the MindSpore model zoo on Gitee at research/cv/E-NET.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+E-NET is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/E-NET](https://gitee.com/mindspore/models/blob/r1.6/research/cv/E-NET/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+A. Paszke, A. Chaurasia, S. Kim, and E. Culurciello."ENet: A deep neural network architecture for real-time semantic segmentation."
 
 ## Disclaimer
 

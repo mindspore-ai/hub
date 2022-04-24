@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# yolox
 
 ---
 
-model-name: HRNetW48_seg
+model-name: yolox
 
-backbone-name: HRNetW48_seg
+backbone-name: yolox
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: coco2017
 
-evaluation: miou79.21
+evaluation: map47.3
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/yolox>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/yolox_ascend_v150_coco2017_research_cv_map47.3.ckpt>
+    asset-sha256: 31ee25297c89aa6632de562c891a8fb8f85cfb52d86a2145de303452b591cdb6
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: yolox is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of yolox from the MindSpore model zoo on Gitee at research/cv/yolox.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+yolox is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/yolox](https://gitee.com/mindspore/models/blob/r1.5/research/cv/yolox/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+YOLOX: Exceeding YOLO Series in 2021
 
 ## Disclaimer
 

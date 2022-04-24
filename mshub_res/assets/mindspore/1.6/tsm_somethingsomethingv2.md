@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# tsm
 
 ---
 
-model-name: HRNetW48_seg
+model-name: tsm
 
-backbone-name: HRNetW48_seg
+backbone-name: tsm
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: somethingsomethingv2
 
-evaluation: miou79.21
+evaluation: top1acc58.0 | top5acc85.0
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/tsm>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/tsm_ascend_v160_somethingsomethingv2_research_cv_top1acc58.0_top5acc85.0.ckpt>
+    asset-sha256: 7bbf6027e8311ec5ead1e5f98ff5acb92020b325de000dba765f058810d0e5b4
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: tsm is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of tsm from the MindSpore model zoo on Gitee at research/cv/tsm.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+tsm is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/tsm](https://gitee.com/mindspore/models/blob/r1.6/research/cv/tsm/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Lin, Ji, Chuang Gan and Song Han. “TSM: Temporal Shift Module for Efficient Video Understanding.” 2019 IEEE/CVF International Conference on Computer Vision (ICCV) (2019): 7082-7092.
 
 ## Disclaimer
 

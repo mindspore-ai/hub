@@ -1,26 +1,26 @@
-# IRN
+# autodis
 
 ---
 
-model-name: IRN
+model-name: autodis
 
-backbone-name: IRN
+backbone-name: autodis
 
-module-type: cv
+module-type: recommend
 
 fine-tunable: True
 
 model-version: 1.3
 
-train-dataset: div2k
+train-dataset: criteo
 
-evaluation: psnry34.77 | ssimy0.9285
+evaluation: acc80.90
 
 author: MindSpore team
 
-update-time: 2022-04-12
+update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/IRN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/recommend/autodis>
 
 user-id: MindSpore
 
@@ -32,26 +32,43 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/irn_x4_ascend_v130_div2k_research_cv_psnry34.77_ssimy0.9285.ckpt>
-    asset-sha256: 054d792d4b392cc87c045e43e29817770d52dff4b4efa0dbce6feadfb82159e0
+    asset-link: <https://download.mindspore.cn/models/r1.3/autodis_ascend_v130_criteo_research_recommend_acc80.90.ckpt>
+    asset-sha256: 741137e75c0f59f47010d63a614cfd6487a1a744cc7a143a1613a7fc66aac2c4
 
 license: Apache2.0
 
-summary: IRN is used for cv
+summary: autodis is used for recommend
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of IRN from the MindSpore model zoo on Gitee at research/cv/IRN.
+This MindSpore Hub model uses the implementation of autodis from the MindSpore model zoo on Gitee at research/recommend/autodis.
 
-IRN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/IRN](https://gitee.com/mindspore/models/blob/r1.3/research/cv/IRN/README.md).
+autodis is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/autodis](https://gitee.com/mindspore/models/blob/r1.3/research/recommend/autodis/README.md).
 
 All parameters in the module are trainable.
 
+## Usage
+
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.3/autodis_criteo"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
+
 ## Citation
 
-Mingqing Xiao, Shuxin Zheng, Chang Liu, Yaolong Wang, Di He, Guolin Ke, Jiang Bian, Zhouchen Lin, and Tie-Yan Liu. 2020. Invertible Image Rescaling. In European Conference on Computer Vision (ECCV).
+Huifeng Guo*, Bo Chen*, Ruiming Tang, Zhenguo Li, Xiuqiang He. AutoDis: Automatic Discretization for Embedding Numerical Features in CTR Prediction
 
 ## Disclaimer
 

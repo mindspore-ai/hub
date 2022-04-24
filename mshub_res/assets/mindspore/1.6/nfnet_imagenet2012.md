@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# NFNet
 
 ---
 
-model-name: HRNetW48_seg
+model-name: NFNet
 
-backbone-name: HRNetW48_seg
+backbone-name: NFNet
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: imagenet2012
 
-evaluation: miou79.21
+evaluation: top1acc83.26
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/NFNet>
 
 user-id: MindSpore
 
@@ -32,26 +32,22 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/nfnet_ascend_v160_imagenet2012_research_cv_top1acc83.26.ckpt>
+    asset-sha256: 773b0098a124e13beaee3a14b3dfc09b73139cc185f11fc43d9d2124d6905c26
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: NFNet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of NFNet from the MindSpore model zoo on Gitee at research/cv/NFNet.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+NFNet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/NFNet](https://gitee.com/mindspore/models/blob/r1.6/research/cv/NFNet/README_CN.md).
 
 All parameters in the module are trainable.
-
-## Citation
-
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
 
 ## Disclaimer
 

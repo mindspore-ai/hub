@@ -1,26 +1,26 @@
-# HRNetW48_seg
+# tprr
 
 ---
 
-model-name: HRNetW48_seg
+model-name: tprr
 
-backbone-name: HRNetW48_seg
+backbone-name: tprr
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: hotpotqa
 
-evaluation: miou79.21
+evaluation: pem91.88 | top1pem88.0 | jointf1acc71.5
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/nlp/tprr>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/tprr_rerankdownstream_ascend_v160_hotpotqa_research_nlp_pem91.88_top1pem88.0_jointf1acc71.5.ckpt>
+    asset-sha256: 181b797382d232390960a074695354e583b145b544ad9e130aee64a66cb3b3ce
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: tprr is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of tprr from the MindSpore model zoo on Gitee at research/nlp/tprr.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+tprr is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/tprr](https://gitee.com/mindspore/models/blob/r1.6/research/nlp/tprr/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+[Answer Complex Questions: Path Ranker Is All You Need](https://dl.acm.org/doi/abs/10.1145/3404835.3462942)
 
 ## Disclaimer
 

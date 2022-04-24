@@ -1,74 +1,57 @@
-# yolov4
+# PSPNet
 
 ---
 
-model-name: yolov4
+model-name: PSPNet
 
-backbone-name: yolov4
+backbone-name: PSPNet
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: coco2017
+train-dataset: voc2012
 
-evaluation: acc39.3
+evaluation: miou74.15 | allacc94.01
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/yolov4>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/PSPNet>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/yolov4shape416_ascend_v160_coco2017_official_cv_acc39.3.ckpt>
-    asset-sha256: 86e0cbb81173d2634066a010ea2615482a45f1372da8d3397d5bb8c1e25a27f9
+    asset-link: <https://download.mindspore.cn/models/r1.3/pspnet_ascend_v130_voc2012_research_cv_miou74.15_allacc94.01.ckpt>
+    asset-sha256: 38ea9ed6abdeb1e3904df8d1a1fdb1690dfb5f41fca34bc3dd19fc9202cd1683
 
 license: Apache2.0
 
-summary: yolov4 is used for cv
+summary: PSPNet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of yolov4 from the MindSpore model zoo on Gitee at official/cv/yolov4.
+This MindSpore Hub model uses the implementation of PSPNet from the MindSpore model zoo on Gitee at research/cv/PSPNet.
 
-yolov4 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/yolov4](https://gitee.com/mindspore/models/blob/r1.6/official/cv/yolov4/README.md).
+PSPNet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/PSPNet](https://gitee.com/mindspore/models/blob/r1.3/research/cv/PSPNet/README.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.6/yolov4shape416_coco2017"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-Bochkovskiy A, Wang C Y, Liao H Y M. YOLOv4: Optimal Speed and Accuracy of Object Detection[J]. arXiv preprint arXiv:2004.10934, 2020.
+[paper](https://arxiv.org/abs/1612.01105) from CVPR2017
 
 ## Disclaimer
 

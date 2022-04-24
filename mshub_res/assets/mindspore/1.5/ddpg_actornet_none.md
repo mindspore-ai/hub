@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# ddpg
 
 ---
 
-model-name: HRNetW48_seg
+model-name: ddpg
 
-backbone-name: HRNetW48_seg
+backbone-name: ddpg
 
-module-type: cv
+module-type: rl
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: none
 
-evaluation: miou79.21
+evaluation: avgReward-9.11
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/rl/ddpg>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/ddpg_actornet_ascend_v150_none_research_rl_avgReward-9.11.ckpt>
+    asset-sha256: 12b909d84788bade9404b59ce6c99c2806d03335c4a20a2117ede31144db291f
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: ddpg is used for rl
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of ddpg from the MindSpore model zoo on Gitee at research/rl/ddpg.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+ddpg is a rl network. More details please refer to the MindSpore model zoo on Gitee at [research/rl/ddpg](https://gitee.com/mindspore/models/blob/r1.5/research/rl/ddpg/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Timothy P. Lillicrap,Jonathan J. Hunt,Alexander Pritzel,Nicolas Heess,Tom Erez,Yuval Tassa,David Silver,Daan Wierstra. Continuous control with deep reinforcement learning.[J]. CoRR,2015,abs/1509.02971
 
 ## Disclaimer
 

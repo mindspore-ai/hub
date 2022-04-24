@@ -1,26 +1,26 @@
-# yolov4
+# ddpg
 
 ---
 
-model-name: yolov4
+model-name: ddpg
 
-backbone-name: yolov4
+backbone-name: ddpg
 
-module-type: cv
+module-type: rl
 
 fine-tunable: True
 
 model-version: 1.5
 
-train-dataset: coco2017
+train-dataset: none
 
-evaluation: acc39.3
+evaluation: avgReward-9.11
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.5/official/cv/yolov4>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/rl/ddpg>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.5/yolov4shape416_ascend_v150_coco2017_official_cv_acc39.3.ckpt>
-    asset-sha256: 86e0cbb81173d2634066a010ea2615482a45f1372da8d3397d5bb8c1e25a27f9
+    asset-link: <https://download.mindspore.cn/models/r1.5/ddpg_critictarget_ascend_v150_none_research_rl_avgReward-9.11.ckpt>
+    asset-sha256: 5a29533932cff174e456780d2dfc4d4350d5c7f36297294f46592e8a3106c998
 
 license: Apache2.0
 
-summary: yolov4 is used for cv
+summary: ddpg is used for rl
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of yolov4 from the MindSpore model zoo on Gitee at official/cv/yolov4.
+This MindSpore Hub model uses the implementation of ddpg from the MindSpore model zoo on Gitee at research/rl/ddpg.
 
-yolov4 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/yolov4](https://gitee.com/mindspore/models/blob/r1.5/official/cv/yolov4/README.md).
+ddpg is a rl network. More details please refer to the MindSpore model zoo on Gitee at [research/rl/ddpg](https://gitee.com/mindspore/models/blob/r1.5/research/rl/ddpg/README_CN.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.5/yolov4shape416_coco2017"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-Bochkovskiy A, Wang C Y, Liao H Y M. YOLOv4: Optimal Speed and Accuracy of Object Detection[J]. arXiv preprint arXiv:2004.10934, 2020.
+Timothy P. Lillicrap,Jonathan J. Hunt,Alexander Pritzel,Nicolas Heess,Tom Erez,Yuval Tassa,David Silver,Daan Wierstra. Continuous control with deep reinforcement learning.[J]. CoRR,2015,abs/1509.02971
 
 ## Disclaimer
 

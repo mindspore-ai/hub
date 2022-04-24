@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# ManiDP
 
 ---
 
-model-name: HRNetW48_seg
+model-name: ManiDP
 
-backbone-name: HRNetW48_seg
+backbone-name: ManiDP
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: cifar10
 
-evaluation: miou79.21
+evaluation: acc92.0
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/ManiDP>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/manidp_ascend_v160_cifar10_research_cv_acc92.0.ckpt>
+    asset-sha256: 3ba6e1e064231e5afd7bb776c52442a9bacb4e48195c9c93d1f7e4c3ddc279eb
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: ManiDP is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of ManiDP from the MindSpore model zoo on Gitee at research/cv/ManiDP.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+ManiDP is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/ManiDP](https://gitee.com/mindspore/models/blob/r1.6/research/cv/ManiDP/Readme.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Yehui Tang, Yunhe Wang, Yixing Xu, Yiping Deng, Chao Xu, Dacheng Tao, Chang Xu. Manifold Regularized Dynamic Network Pruning. Submitted to CVPR 2021.
 
 ## Disclaimer
 

@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# dcgan
 
 ---
 
-model-name: HRNetW48_seg
+model-name: dcgan
 
-backbone-name: HRNetW48_seg
+backbone-name: dcgan
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: imagenet2012
 
-evaluation: miou79.21
+evaluation: top1acc77.77
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/dcgan>
 
 user-id: MindSpore
 
@@ -32,26 +32,43 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/dcgan_ascend_v160_imagenet2012_research_cv_top1acc77.77.ckpt>
+    asset-sha256: 664a5492b7b00af0fa474ed319ddf17ed02011f3ba7b495b260f74c3b5dcd2f7
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: dcgan is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of dcgan from the MindSpore model zoo on Gitee at research/cv/dcgan.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+dcgan is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/dcgan](https://gitee.com/mindspore/models/blob/r1.6/research/cv/dcgan/README.md).
 
 All parameters in the module are trainable.
 
+## Usage
+
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.6/dcgan_imagenet2012"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
+
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Radford A, Metz L, Chintala S. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks[J]. Computer ence, 2015.
 
 ## Disclaimer
 
