@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# HourNAS
 
 ---
 
-model-name: HRNetW48_seg
+model-name: HourNAS
 
-backbone-name: HRNetW48_seg
+backbone-name: HourNAS
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: cifar10
 
-evaluation: miou79.21
+evaluation: top1acc96.1
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/HourNAS>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.3/hournas_ascend_v130_cifar10_research_cv_top1acc96.1.ckpt>
+    asset-sha256: 2ce9cb49fd381a3a2d51a7f5b29e2039a00e178e1ec119d4505b0ed671379663
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: HourNAS is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of HourNAS from the MindSpore model zoo on Gitee at research/cv/HourNAS.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+HourNAS is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HourNAS](https://gitee.com/mindspore/models/blob/r1.3/research/cv/HourNAS/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Zhaohui Yang, Yunhe Wang, Xinghao Chen, Jianyuan Guo, Wei Zhang, Chao Xu, Chunjing Xu, Dacheng Tao, Chang Xu. HourNAS: Extremely Fast Neural Architecture Search Through an Hourglass Lens. In CVPR 2021.
 
 ## Disclaimer
 

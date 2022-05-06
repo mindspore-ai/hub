@@ -1,26 +1,26 @@
-# HRNetW48_seg
+# ktnet
 
 ---
 
-model-name: HRNetW48_seg
+model-name: ktnet
 
-backbone-name: HRNetW48_seg
+backbone-name: ktnet
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: squad
 
-evaluation: miou79.21
+evaluation: f1score90.93
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/nlp/ktnet>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/ktnet_ascend_v160_squad_research_nlp_f1score90.93.ckpt>
+    asset-sha256: 55043602000bfc4e709f0156285ebe70b542a7240b2179ba021348c852f5048e
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: ktnet is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of ktnet from the MindSpore model zoo on Gitee at research/nlp/ktnet.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+ktnet is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/ktnet](https://gitee.com/mindspore/models/blob/r1.6/research/nlp/ktnet/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Yang A ,  Wang Q ,  Liu J , et al. Enhancing Pre-Trained Language Representations with Rich Knowledge for Machine Reading Comprehension[C]// Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 2019.
 
 ## Disclaimer
 

@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# augvit
 
 ---
 
-model-name: HRNetW48_seg
+model-name: augvit
 
-backbone-name: HRNetW48_seg
+backbone-name: augvit
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: cifar10
 
-evaluation: miou79.21
+evaluation: acc98.0
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/augvit>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/augvit_ascend_v160_cifar10_research_cv_acc98.0.ckpt>
+    asset-sha256: f0e7b7b07ae7bfce70fb0fa3eed51814d4e90f420a9281bc2b49069e4deeffa4
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: augvit is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of augvit from the MindSpore model zoo on Gitee at research/cv/augvit.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+augvit is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/augvit](https://gitee.com/mindspore/models/blob/r1.6/research/cv/augvit/readme.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Yehui Tang, Kai Han, Chang Xu, An Xiao, Yiping Deng, Chao Xu, Yunhe Wang. Augmented Shortcuts for Vision Transformers. NeurIPS 2021.
 
 ## Disclaimer
 

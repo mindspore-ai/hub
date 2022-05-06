@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# REDNet30
 
 ---
 
-model-name: HRNetW48_seg
+model-name: REDNet30
 
-backbone-name: HRNetW48_seg
+backbone-name: REDNet30
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: bsd300
 
-evaluation: miou79.21
+evaluation: psnr27.15 | ssim0.7783
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/REDNet30>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/rednet30_ascend_v150_bsd300_research_cv_psnr27.15_ssim0.7783.ckpt>
+    asset-sha256: 535f724f7417fefb3edbcc9cf81555178b33e73f1897c40e89d0dde4e0159a5b
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: REDNet30 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of REDNet30 from the MindSpore model zoo on Gitee at research/cv/REDNet30.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+REDNet30 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/REDNet30](https://gitee.com/mindspore/models/blob/r1.5/research/cv/REDNet30/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Mao X J ,  Shen C ,  Yang Y B . [Image Restoration Using Very Deep Convolutional Encoder-Decoder Networks with Symmetric Skip Connections[J]](https://arxiv.org/pdf/1603.09056v2.pdf).  2016.
 
 ## Disclaimer
 

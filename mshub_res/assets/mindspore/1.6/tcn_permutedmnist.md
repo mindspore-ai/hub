@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# TCN
 
 ---
 
-model-name: HRNetW48_seg
+model-name: TCN
 
-backbone-name: HRNetW48_seg
+backbone-name: TCN
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: permutedmnist
 
-evaluation: miou79.21
+evaluation: acc97.45
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/TCN>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/tcn_ascend_v160_permutedmnist_research_cv_acc97.45.ckpt>
+    asset-sha256: e0f4e3ff1eba6400f371a6c38a3c34a93f3c47b843b47fcbc5589c5bbfef9c6a
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: TCN is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of TCN from the MindSpore model zoo on Gitee at research/cv/TCN.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+TCN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/TCN](https://gitee.com/mindspore/models/blob/r1.6/research/cv/TCN/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling
 
 ## Disclaimer
 

@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# DeepID
 
 ---
 
-model-name: HRNetW48_seg
+model-name: DeepID
 
-backbone-name: HRNetW48_seg
+backbone-name: DeepID
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: youtubeface
 
-evaluation: miou79.21
+evaluation: acc96.82
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/DeepID>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/deepid_ascend_v160_youtubeface_research_cv_acc96.82.ckpt>
+    asset-sha256: 95b49d68c57f11284b49089cd8cb4c55896c5c0f2d1f0af2c720f08ab811ed86
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: DeepID is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of DeepID from the MindSpore model zoo on Gitee at research/cv/DeepID.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+DeepID is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/DeepID](https://gitee.com/mindspore/models/blob/r1.6/research/cv/DeepID/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Sun Y, Wang X, Tang X. Deep learning face representation from predicting 10,000 classes[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2014: 1891-1898.
 
 ## Disclaimer
 

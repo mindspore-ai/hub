@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# ctcmodel
 
 ---
 
-model-name: HRNetW48_seg
+model-name: ctcmodel
 
-backbone-name: HRNetW48_seg
+backbone-name: ctcmodel
 
-module-type: cv
+module-type: audio
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: timit
 
-evaluation: miou79.21
+evaluation: bestpathLER30.38 | prefixsearchLER30.05
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/audio/ctcmodel>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.3/ctcmodel_ascend_v130_timit_research_audio_bestpathLER30.38_prefixsearchLER30.05.ckpt>
+    asset-sha256: 761c07b1d379ccd020690788dcbc54bcac9ea25662ab412711c8e5042f672569
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: ctcmodel is used for audio
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of ctcmodel from the MindSpore model zoo on Gitee at research/audio/ctcmodel.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+ctcmodel is a audio network. More details please refer to the MindSpore model zoo on Gitee at [research/audio/ctcmodel](https://gitee.com/mindspore/models/blob/r1.3/research/audio/ctcmodel/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Alex Graves, Santiago Fernández, Faustino J. Gomez, Jürgen Schmidhuber: Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks. ICML 2006: 369-376
 
 ## Disclaimer
 

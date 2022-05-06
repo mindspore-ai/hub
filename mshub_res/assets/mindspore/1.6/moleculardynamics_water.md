@@ -1,26 +1,26 @@
-# HRNetW48_seg
+# molecular_dynamics
 
 ---
 
-model-name: HRNetW48_seg
+model-name: molecular_dynamics
 
-backbone-name: HRNetW48_seg
+backbone-name: molecular_dynamics
 
-module-type: cv
+module-type: hpc
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: water
 
-evaluation: miou79.21
+evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/hpc/molecular_dynamics>
 
 user-id: MindSpore
 
@@ -32,26 +32,27 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/moleculardynamics_ascend_v160_water_research_hpc.ckpt>
+    asset-sha256: 75e23f40dd5077257331f93f1d85b70aa071e843acd604a382b39590662b0b39
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: molecular_dynamics is used for hpc
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of molecular_dynamics from the MindSpore model zoo on Gitee at research/hpc/molecular_dynamics.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+molecular_dynamics is a hpc network. More details please refer to the MindSpore model zoo on Gitee at [research/hpc/molecular_dynamics](https://gitee.com/mindspore/models/blob/r1.6/research/hpc/molecular_dynamics/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+1. L Zhang, J Han, H Wang, R Car, W E. Deep potential molecular dynamics: a scalable model with the accuracy of quantum mechanics. Physical review letters 120 (14), 143001 (2018).
+2. H Wang, L Zhang, J Han, W E. DeePMD-kit: A deep learning package for many-body potential energy representation and molecular dynamics. Computer Physics Communications 228, 178-184 (2018).
 
 ## Disclaimer
 

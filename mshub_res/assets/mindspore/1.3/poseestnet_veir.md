@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# PAMTRI
 
 ---
 
-model-name: HRNetW48_seg
+model-name: PAMTRI
 
-backbone-name: HRNetW48_seg
+backbone-name: PAMTRI
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: veir
 
-evaluation: miou79.21
+evaluation: acc82.2
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/PAMTRI>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.3/poseestnet_ascend_v130_veir_research_cv_acc82.2.ckpt>
+    asset-sha256: 34e7ca1eaccc6cbad0d3b150cddd80002c6ef5b7b54ca733f88c2e7bb3b585af
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: PAMTRI is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of PAMTRI from the MindSpore model zoo on Gitee at research/cv/PAMTRI.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+PAMTRI is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/PAMTRI](https://gitee.com/mindspore/models/blob/r1.3/research/cv/PAMTRI/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Tang Z ,  Naphade M ,  Birchfield S , et al. PAMTRI: Pose-Aware Multi-Task Learning for Vehicle Re-Identification Using Highly Randomized Synthetic Data[J]. IEEE, 2020.
 
 ## Disclaimer
 

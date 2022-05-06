@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# AutoSlim
 
 ---
 
-model-name: HRNetW48_seg
+model-name: AutoSlim
 
-backbone-name: HRNetW48_seg
+backbone-name: AutoSlim
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: imagenet2012
 
-evaluation: miou79.21
+evaluation: acc71.36
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-18
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/AutoSlim>
 
 user-id: MindSpore
 
@@ -32,26 +32,43 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/autoslim_ascend_v160_imagenet2012_research_cv_acc71.36.ckpt>
+    asset-sha256: dfee0700c0a5ee6604a8e6f75102bfca7eb38d2010da0c0f0059f8e442312a64
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: AutoSlim is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of AutoSlim from the MindSpore model zoo on Gitee at research/cv/AutoSlim.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+AutoSlim is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/AutoSlim](https://gitee.com/mindspore/models/blob/r1.6/research/cv/AutoSlim/README.md).
 
 All parameters in the module are trainable.
 
+## Usage
+
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.6/autoslim_imagenet2012"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
+
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Jiahui Yu, Thomas Huang."AutoSlim: Towards One-Shot Architecture Search for Channel Numbers".2019.
 
 ## Disclaimer
 

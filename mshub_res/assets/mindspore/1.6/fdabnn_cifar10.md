@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# FDA-BNN
 
 ---
 
-model-name: HRNetW48_seg
+model-name: FDA-BNN
 
-backbone-name: HRNetW48_seg
+backbone-name: FDA-BNN
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: cifar10
 
-evaluation: miou79.21
+evaluation: top1acc86.6 | top5acc99.5
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/FDA-BNN>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/fdabnn_ascend_v160_cifar10_research_cv_top1acc86.6_top5acc99.5.ckpt>
+    asset-sha256: 8c6c14514ebd75e7992400b2839b1135438736941408889698120a3e0be56101
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: FDA-BNN is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of FDA-BNN from the MindSpore model zoo on Gitee at research/cv/FDA-BNN.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+FDA-BNN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/FDA-BNN](https://gitee.com/mindspore/models/blob/r1.6/research/cv/FDA-BNN/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Yixing Xu,  Kai Han, Chang Xu, Yehui Tang, Chunjing Xu, Yunhe Wang. Learning Frequency Domain Approximation for Binary Neural Networks. Accepted by NeurIPS 2021.
 
 ## Disclaimer
 

@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# ghostnet_quant
 
 ---
 
-model-name: HRNetW48_seg
+model-name: ghostnet_quant
 
-backbone-name: HRNetW48_seg
+backbone-name: ghostnet_quant
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: imagenet2012
 
-evaluation: miou79.21
+evaluation: top1acc82.5
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/ghostnet_quant>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/ghostnetquant_ascend_v150_imagenet2012_research_cv_top1acc82.5.ckpt>
+    asset-sha256: e10180c9cfecb35cb261bc8668f2632990630570f189b108495168d23e935922
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: ghostnet_quant is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of ghostnet_quant from the MindSpore model zoo on Gitee at research/cv/ghostnet_quant.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+ghostnet_quant is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/ghostnet_quant](https://gitee.com/mindspore/models/blob/r1.5/research/cv/ghostnet_quant/Readme.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu. GhostNet: More Features from Cheap Operations. CVPR 2020.
 
 ## Disclaimer
 

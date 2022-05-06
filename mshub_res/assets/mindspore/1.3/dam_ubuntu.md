@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# dam
 
 ---
 
-model-name: HRNetW48_seg
+model-name: dam
 
-backbone-name: HRNetW48_seg
+backbone-name: dam
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: cityscapes
+train-dataset: ubuntu
 
-evaluation: miou79.21
+evaluation: R2@1acc93.8 | R10@1acc76.7 | R10@2acc87.4 | R10@5acc96.9
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/nlp/dam>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.3/dam_ascend_v130_ubuntu_research_nlp_R2@1acc93.8_R10@1acc76.7_R10@2acc87.4_R10@5acc96.9.ckpt>
+    asset-sha256: dbe73ef2fa0982a908ae88dee4772f5a8201a1b63c8403bee75096c62b73a776
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: dam is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of dam from the MindSpore model zoo on Gitee at research/nlp/dam.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+dam is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/dam](https://gitee.com/mindspore/models/blob/r1.3/research/nlp/dam/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Zhou, Xiangyang , et al. "Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network." Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) 2018.
 
 ## Disclaimer
 

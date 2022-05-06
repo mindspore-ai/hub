@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# ernie
 
 ---
 
-model-name: HRNetW48_seg
+model-name: ernie
 
-backbone-name: HRNetW48_seg
+backbone-name: ernie
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: bdqa
 
-evaluation: miou79.21
+evaluation: F1score84.96
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/official/nlp/ernie>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/ernie_ascend_v150_bdqa_official_nlp_F1score84.96.ckpt>
+    asset-sha256: 9340b190d46ca523fbc5c921f58b01062367e05de25632d031a04dd6ae90dfb6
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: ernie is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of ernie from the MindSpore model zoo on Gitee at official/nlp/ernie.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+ernie is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/ernie](https://gitee.com/mindspore/models/blob/r1.5/official/nlp/ernie/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+[ERNIE: Enhanced Representation through Knowledge Integration](https://arxiv.org/abs/1904.09223): Yu Sun, Shuohuan Wang, Yukun Li, Shikun Feng, Xuyi Chen, Han Zhang, Xin Tian, Danxiang Zhu, Hao Tian, Hua Wu.
 
 ## Disclaimer
 

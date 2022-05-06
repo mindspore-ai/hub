@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# renas
 
 ---
 
-model-name: HRNetW48_seg
+model-name: renas
 
-backbone-name: HRNetW48_seg
+backbone-name: renas
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: cifar10
 
-evaluation: miou79.21
+evaluation: acc94.1
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/renas>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/renas_ascend_v150_cifar10_research_cv_acc94.1.ckpt>
+    asset-sha256: 5d5add9adef4f3792facb6d018a2905986c6381a61a97c5be049e5936a125e5f
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: renas is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of renas from the MindSpore model zoo on Gitee at research/cv/renas.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+renas is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/renas](https://gitee.com/mindspore/models/blob/r1.5/research/cv/renas/Readme.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Yixing Xu, Yunhe Wang, Kai Han, Yehui Tang, Shangling Jui, Chunjing Xu, Chang Xu. ReNAS: Relativistic Evaluation of Neural Architecture Search. Submitted to CVPR 2021.
 
 ## Disclaimer
 

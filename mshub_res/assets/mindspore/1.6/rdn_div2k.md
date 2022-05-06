@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# RDN
 
 ---
 
-model-name: HRNetW48_seg
+model-name: RDN
 
-backbone-name: HRNetW48_seg
+backbone-name: RDN
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: div2k
 
-evaluation: miou79.21
+evaluation: psnr38.3 | ssim0.961
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/RDN>
 
 user-id: MindSpore
 
@@ -32,26 +32,22 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/rdn_ascend_v160_div2k_official_cv_psnr38.3_ssim0.961.ckpt>
+    asset-sha256: 36cbce25c04256f1b0652c3f25ba704faf135dc2ad395020de3b8db7e05e23ef
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: RDN is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of RDN from the MindSpore model zoo on Gitee at official/cv/RDN.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+RDN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/RDN](https://gitee.com/mindspore/models/blob/r1.6/official/cv/RDN/README.md).
 
 All parameters in the module are trainable.
-
-## Citation
-
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
 
 ## Disclaimer
 

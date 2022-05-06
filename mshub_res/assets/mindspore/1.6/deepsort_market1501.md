@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# Deepsort
 
 ---
 
-model-name: HRNetW48_seg
+model-name: Deepsort
 
-backbone-name: HRNetW48_seg
+backbone-name: Deepsort
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: market1501
 
-evaluation: miou79.21
+evaluation: MOTA51.8 | MOTP0.189 | MT210 | ML68 | IDs859 | FM1388 | FP19264 | FN33114
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/Deepsort>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/deepsort_ascend_v160_market1501_official_cv_MOTA51.8_MOTP0.189_MT210_ML68_IDs859_FM1388_FP19264_FN33114.ckpt>
+    asset-sha256: dc6c1db2b07eb12a59feb1727f7e1c0e2a4e4c7e8b441cdd26234e53912ae781
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: Deepsort is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of Deepsort from the MindSpore model zoo on Gitee at official/cv/Deepsort.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+Deepsort is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/Deepsort](https://gitee.com/mindspore/models/blob/r1.6/official/cv/Deepsort/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Nicolai Wojke, Alex Bewley, Dietrich Paulus. "SIMPLE ONLINE AND REALTIME TRACKING WITH A DEEP ASSOCIATION METRIC". *Presented at ICIP 2016*.
 
 ## Disclaimer
 

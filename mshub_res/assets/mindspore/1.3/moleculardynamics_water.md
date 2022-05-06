@@ -1,26 +1,26 @@
-# IRN
+# molecular_dynamics
 
 ---
 
-model-name: IRN
+model-name: molecular_dynamics
 
-backbone-name: IRN
+backbone-name: molecular_dynamics
 
-module-type: cv
+module-type: hpc
 
 fine-tunable: True
 
 model-version: 1.3
 
-train-dataset: div2k
+train-dataset: water
 
-evaluation: psnry34.77 | ssimy0.9285
+evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-04-12
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/IRN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/hpc/molecular_dynamics>
 
 user-id: MindSpore
 
@@ -32,26 +32,27 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.3/irn_x4_ascend_v130_div2k_research_cv_psnry34.77_ssimy0.9285.ckpt>
-    asset-sha256: 054d792d4b392cc87c045e43e29817770d52dff4b4efa0dbce6feadfb82159e0
+    asset-link: <https://download.mindspore.cn/models/r1.3/moleculardynamics_ascend_v130_water_research_hpc.ckpt>
+    asset-sha256: 75e23f40dd5077257331f93f1d85b70aa071e843acd604a382b39590662b0b39
 
 license: Apache2.0
 
-summary: IRN is used for cv
+summary: molecular_dynamics is used for hpc
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of IRN from the MindSpore model zoo on Gitee at research/cv/IRN.
+This MindSpore Hub model uses the implementation of molecular_dynamics from the MindSpore model zoo on Gitee at research/hpc/molecular_dynamics.
 
-IRN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/IRN](https://gitee.com/mindspore/models/blob/r1.3/research/cv/IRN/README.md).
+molecular_dynamics is a hpc network. More details please refer to the MindSpore model zoo on Gitee at [research/hpc/molecular_dynamics](https://gitee.com/mindspore/models/blob/r1.3/research/hpc/molecular_dynamics/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Mingqing Xiao, Shuxin Zheng, Chang Liu, Yaolong Wang, Di He, Guolin Ke, Jiang Bian, Zhouchen Lin, and Tie-Yan Liu. 2020. Invertible Image Rescaling. In European Conference on Computer Vision (ECCV).
+1. L Zhang, J Han, H Wang, R Car, W E. Deep potential molecular dynamics: a scalable model with the accuracy of quantum mechanics. Physical review letters 120 (14), 143001 (2018).
+2. H Wang, L Zhang, J Han, W E. DeePMD-kit: A deep learning package for many-body potential energy representation and molecular dynamics. Computer Physics Communications 228, 178-184 (2018).
 
 ## Disclaimer
 

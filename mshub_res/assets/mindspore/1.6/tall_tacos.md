@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# tall
 
 ---
 
-model-name: HRNetW48_seg
+model-name: tall
 
-backbone-name: HRNetW48_seg
+backbone-name: tall
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: tacos
 
-evaluation: miou79.21
+evaluation: acc49.77
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/tall>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/tall_ascend_v160_tacos_research_cv_acc49.77.ckpt>
+    asset-sha256: 8c0efe6ac77283e6836cdecd4e8a7fdef18175b16751cd19615d936178877213
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: tall is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of tall from the MindSpore model zoo on Gitee at research/cv/tall.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+tall is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/tall](https://gitee.com/mindspore/models/blob/r1.6/research/cv/tall/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+[TALL](https://openaccess.thecvf.com/content_iccv_2017/html/Gao_TALL_Temporal_Activity_ICCV_2017_paper.html)
 
 ## Disclaimer
 

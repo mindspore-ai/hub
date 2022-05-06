@@ -1,57 +1,57 @@
-# HRNetW48_seg
+# ktnet
 
 ---
 
-model-name: HRNetW48_seg
+model-name: ktnet
 
-backbone-name: HRNetW48_seg
+backbone-name: ktnet
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: record
 
-evaluation: miou79.21
+evaluation: f1score70.72
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/nlp/ktnet>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/ktnet_ascend_v150_record_research_nlp_f1score70.72.ckpt>
+    asset-sha256: 336bb72ac1724bae7d32699c0f4ef6fa737e185f9ed89bdc1b3b885398206238
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: ktnet is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of ktnet from the MindSpore model zoo on Gitee at research/nlp/ktnet.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+ktnet is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/ktnet](https://gitee.com/mindspore/models/blob/r1.5/research/nlp/ktnet/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Yang A , Wang Q , Liu J , et al. Enhancing Pre-Trained Language Representations with Rich Knowledge for Machine Reading Comprehension[C]// Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics. 2019(https://www.aclweb.org/anthology/P19-1226/).
 
 ## Disclaimer
 

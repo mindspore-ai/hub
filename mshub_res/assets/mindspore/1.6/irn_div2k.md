@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/irn_ascend_v160_div2k_research_cv_psnry34.77_ssimy0.9285.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/irn_x4_ascend_v160_div2k_research_cv_psnry34.77_ssimy0.9285.ckpt>
     asset-sha256: 054d792d4b392cc87c045e43e29817770d52dff4b4efa0dbce6feadfb82159e0
 
 license: Apache2.0

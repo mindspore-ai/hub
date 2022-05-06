@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# ssim-ae
 
 ---
 
-model-name: HRNetW48_seg
+model-name: ssim-ae
 
-backbone-name: HRNetW48_seg
+backbone-name: ssim-ae
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: mvtecadmetalnut
 
-evaluation: miou79.21
+evaluation: ok91.4 | nok91.4 | avg77.4
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/ssim-ae>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/ssimae_ascend_v160_mvtecadmetalnut_official_cv_ok91.4_nok91.4_avg77.4.ckpt>
+    asset-sha256: 88f0861bf0a915b76afaa1d5f4435e55cd43777f65854f767a6069bae72ebe39
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: ssim-ae is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of ssim-ae from the MindSpore model zoo on Gitee at official/cv/ssim-ae.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+ssim-ae is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/ssim-ae](https://gitee.com/mindspore/models/blob/r1.6/official/cv/ssim-ae/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Improving Unsupervised Defect Segmentation by Applying Structural Similarity To Autoencoders
 
 ## Disclaimer
 

@@ -1,10 +1,10 @@
-# HRNetW48_seg
+# VehicleNet
 
 ---
 
-model-name: HRNetW48_seg
+model-name: VehicleNet
 
-backbone-name: HRNetW48_seg
+backbone-name: VehicleNet
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: vehiclenetdataset
 
-evaluation: miou79.21
+evaluation: mAP83.71 | rank1acc94.34
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/VehicleNet>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/vehiclenet_ascend_v160_vehiclenetdataset_research_cv_mAP83.71_rank1acc94.34.ckpt>
+    asset-sha256: e38499b0dbc409d74bfd266533b7d3c3f0ee020811fb3bf6c60869c82eb36028
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: VehicleNet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of VehicleNet from the MindSpore model zoo on Gitee at research/cv/VehicleNet.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+VehicleNet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/VehicleNet](https://gitee.com/mindspore/models/blob/r1.6/research/cv/VehicleNet/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Zheng Z, Tao R, Wei Y , et al. VehicleNet: Learning Robust Visual Representation for Vehicle Re-identification[J]. 2020.
 
 ## Disclaimer
 

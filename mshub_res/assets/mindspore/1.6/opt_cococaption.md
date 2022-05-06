@@ -1,26 +1,26 @@
-# HRNetW48_seg
+# opt
 
 ---
 
-model-name: HRNetW48_seg
+model-name: opt
 
-backbone-name: HRNetW48_seg
+backbone-name: opt
 
-module-type: cv
+module-type: mm
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: cityscapes
+train-dataset: cococaption
 
-evaluation: miou79.21
+evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-04-27
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/mm/opt>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.6/opt_ascend_v160_cococaption_research_mm.ckpt>
+    asset-sha256: 6a259dc936facab67b3088f0af41608ff48f35ee7f7cb2712424b995dea0b6be
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: opt is used for mm
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of opt from the MindSpore model zoo on Gitee at research/mm/opt.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+opt is a mm network. More details please refer to the MindSpore model zoo on Gitee at [research/mm/opt](https://gitee.com/mindspore/models/blob/r1.6/research/mm/opt/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+Liu J, Zhu X, Liu F, et al. OPT: Omni-Perception Pre-Trainer for Cross-Modal Understanding and Generation[J]. arXiv preprint arXiv:2107.00249, 2021.
 
 ## Disclaimer
 

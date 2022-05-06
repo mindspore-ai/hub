@@ -1,57 +1,53 @@
-# HRNetW48_seg
+# resnet50_bam
 
 ---
 
-model-name: HRNetW48_seg
+model-name: resnet50_bam
 
-backbone-name: HRNetW48_seg
+backbone-name: resnet50_bam
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.5
 
-train-dataset: cityscapes
+train-dataset: imagenet2012
 
-evaluation: miou79.21
+evaluation: top1acc75.9 | top5acc92.4
 
 author: MindSpore team
 
 update-time: 2022-04-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/HRNetW48_seg>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.5/research/cv/resnet50_bam>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.5
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hrnetw48seg_ascend_v160_cityscapes_research_cv_miou79.21.ckpt>
-    asset-sha256: e36e05b484f8be0e4477261703853750205c38f7eb7cb1c034c990d360531e22
+    asset-link: <https://download.mindspore.cn/models/r1.5/resnet50bam_ascend_v150_imagenet2012_research_cv_top1acc75.9_top5acc92.4.ckpt>
+    asset-sha256: 4e1c0f5b06ec9a2909ed999c850b6b9b2bd60eefcad16a2bc4569b800e754e20
 
 license: Apache2.0
 
-summary: HRNetW48_seg is used for cv
+summary: resnet50_bam is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of HRNetW48_seg from the MindSpore model zoo on Gitee at research/cv/HRNetW48_seg.
+This MindSpore Hub model uses the implementation of resnet50_bam from the MindSpore model zoo on Gitee at research/cv/resnet50_bam.
 
-HRNetW48_seg is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/HRNetW48_seg](https://gitee.com/mindspore/models/blob/r1.6/research/cv/HRNetW48_seg/README_CN.md).
+resnet50_bam is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/resnet50_bam](https://gitee.com/mindspore/models/blob/r1.5/research/cv/resnet50_bam/README_CN.md).
 
 All parameters in the module are trainable.
-
-## Citation
-
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
 
 ## Disclaimer
 
