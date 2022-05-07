@@ -135,7 +135,7 @@ def _get_md_file(uid, name, cache_path, force_reload):
 
 def load(name, *args, pretrained=True, force_reload=True, **kwargs):
     r"""
-    Load network with the given name.
+    Load network with the given name. After loading, it can be used for inference verification, migration learning, etc.
 
     Args:
         name (str): Uid or url of the network.

@@ -1,11 +1,11 @@
 mindspore_hub
 =========================
 
-MindSpore Hub是MindSpore生态系统的与训练模型应用工具，作为模型开发者和应用开发者的通道。
+MindSpore Hub是MindSpore生态系统的预训练模型应用工具，作为模型开发者和应用开发者的通道。
 
 .. py:function:: mindspore_hub.load(name, *args, pretrained=True, force_reload=True, **kwargs)
 
-    使用给定**name**加载网络。
+    用于加载指定网络。加载完成后，可用于推理验证、迁移学习等。
 
     **参数：**
 
