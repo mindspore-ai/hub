@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc77.13 | top5acc93.59
+evaluation: top1acc77.12 | top5acc93.58
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/ibnnet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/ibnnet_ascend_v160_imagenet2012_research_cv_top1acc77.13_top5acc93.59.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/ibnnet_ascend_v160_imagenet2012_research_cv_top1acc77.12_top5acc93.58.ckpt>
     asset-sha256: c9ab6f1198b1b930fb2df92715134de798e103c1dd66bca06f3ee826b1a9983e
 
 license: Apache2.0

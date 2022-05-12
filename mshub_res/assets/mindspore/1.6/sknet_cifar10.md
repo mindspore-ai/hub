@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: cifar10
 
-evaluation: acc94
+evaluation: acc94.42
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/sknet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/sknet_ascend_v160_cifar10_research_cv_acc94.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/sknet_ascend_v160_cifar10_research_cv_acc94.42.ckpt>
     asset-sha256: 278db3c641d1be970d4fce82478f5e5b56f62ce4cbc8f122743a4093ba84014a
 
 license: Apache2.0

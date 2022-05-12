@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc69.63 | top5acc88.72
+evaluation: top1acc69.51 | top5acc88.76
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/shufflenetv2>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/shufflenetv2_ascend_v160_imagenet2012_official_cv_top1acc69.63_top5acc88.72.ckpt>
-    asset-sha256: e1100bc808f1cbb37664d776085b4d82b19b5c9853c44f143366d76f6414bcbb
+    asset-link: <https://download.mindspore.cn/models/r1.6/shufflenetv2_ascend_v160_imagenet2012_official_cv_top1acc69.51_top5acc88.76.ckpt>
+    asset-sha256: 20614d59b2d1845d54e5f579af0fbe95ffceb2f187ede155777a5fef40d6165b
 
 license: Apache2.0
 

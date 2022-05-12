@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc74.51 | top5acc91.97
+evaluation: top1acc74.06 | top5acc91.77
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/pnasnet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/pnasnet_ascend_v160_imagenet2012_research_cv_top1acc74.51_top5acc91.97.ckpt>
-    asset-sha256: 3181cd398f1333c34796f37f0e8084aaa2989ea2b2222344fea28e68029b4aa7
+    asset-link: <https://download.mindspore.cn/models/r1.6/pnasnet_ascend_v160_imagenet2012_research_cv_top1acc74.06_top5acc91.77.ckpt>
+    asset-sha256: 976311df78fba263aadda6e95e9e320e91779fb1740747ec1d3accfc8e26922a
 
 license: Apache2.0
 

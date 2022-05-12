@@ -18,7 +18,7 @@ evaluation: acc71.56
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/tgcn>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.6/tgcn_ascend_v160_sztaxi_research_cv_acc71.56.ckpt>
-    asset-sha256: c79c54aff6d58c82d097fc3754788017cd03ca916a585a775b6c692a7c9a0d41
+    asset-sha256: 365eb16501de008890c90a723adf9a9f40995e40498b5d35ecd906119a56498c
 
 license: Apache2.0
 
@@ -45,7 +45,7 @@ summary: tgcn is used for cv
 
 This MindSpore Hub model uses the implementation of tgcn from the MindSpore model zoo on Gitee at research/cv/tgcn.
 
-tgcn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/tgcn](https://gitee.com/mindspore/models/blob/r1.6/research/cv/tgcn/README_CN.md).
+tgcn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/tgcn](https://gitee.com/mindspore/models/blob/r1.6/research/cv/tgcn/README.md).
 
 All parameters in the module are trainable.
 

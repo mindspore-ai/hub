@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc73.81 | top5acc91.77
+evaluation: top1acc73.8 | top5acc91.77
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/ghostnet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/ghostnet_ascend_v160_imagenet2012_research_cv_top1acc73.81_top5acc91.77.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/ghostnet_ascend_v160_imagenet2012_research_cv_top1acc73.8_top5acc91.77.ckpt>
     asset-sha256: 612f2fee612654057734283a50ff9eb9c967ee838c1b2f3b9b555e1689f53851
 
 license: Apache2.0

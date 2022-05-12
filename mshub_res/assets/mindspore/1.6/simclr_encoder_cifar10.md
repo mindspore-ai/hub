@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: cifar10
 
-evaluation: acc84.96
+evaluation: acc84.98
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/simclr>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/simclr_encoder_ascend_v160_cifar10_official_cv_acc84.96.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/simclr_encoder_ascend_v160_cifar10_official_cv_acc84.98.ckpt>
     asset-sha256: 1a1c57d30a456fe89cb7a873f41632cc65147b4e2a2e93a0c2a8f31ebadfc71e
 
 license: Apache2.0

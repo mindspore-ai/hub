@@ -18,7 +18,7 @@ evaluation: acc87.7
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/StackedHourglass>
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Stacked Hourglass Networks for Human Pose Estimation
+[Stacked Hourglass Networks for Human Pose Estimation](https://arxiv.org/abs/1603.06937v2)
 
 ## Disclaimer
 

@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: coco2017
 
-evaluation: mAP41.5 | AP50acc59.8 | AP75acc59.8
+evaluation: mAP41.6 | AP50acc60.1 | AP75acc44.5
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/centernet_det>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/centernetdet_ascend_v160_coco2017_research_cv_mAP41.5_AP50acc59.8_AP75acc59.8.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/centernetdet_ascend_v160_coco2017_research_cv_mAP41.6_AP50acc60.1_AP75acc44.5.ckpt>
     asset-sha256: 39ccffb7eae3cbcf2821fe093e3f48c9acde272669a7d9f90a2f08964514f4fd
 
 license: Apache2.0

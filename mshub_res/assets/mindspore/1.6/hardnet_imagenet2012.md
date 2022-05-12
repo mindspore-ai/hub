@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc77.61 | top5acc93.61
+evaluation: top1acc77.65 | top5acc93.27
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/hardnet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hardnet_ascend_v160_imagenet2012_research_cv_top1acc77.61_top5acc93.61.ckpt>
-    asset-sha256: 9bda86bcba49a46f9f986431dba148f266437dd0196f0ebe50e3192cf4f01b0f
+    asset-link: <https://download.mindspore.cn/models/r1.6/hardnet_ascend_v160_imagenet2012_research_cv_top1acc77.65_top5acc93.27.ckpt>
+    asset-sha256: 299aad036e2bab5a7dc97b621756b9a0985e2ecb03e26ff7492565c655ce7dc9
 
 license: Apache2.0
 

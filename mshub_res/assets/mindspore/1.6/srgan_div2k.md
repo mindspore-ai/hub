@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: div2k
 
-evaluation: psnr27.22
+evaluation: PSNR27.07
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/SRGAN>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/srgan_ascend_v160_div2k_research_cv_psnr27.22.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/srgan_ascend_v160_div2k_research_cv_PSNR27.07.ckpt>
     asset-sha256: 5ec7e2e43b4e9abdee38e5bdb8f3703571c884f4827629065bd504822641ecc9
 
 license: Apache2.0

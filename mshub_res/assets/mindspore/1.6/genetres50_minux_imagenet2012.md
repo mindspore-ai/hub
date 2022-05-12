@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc77.75 | top5acc93.64
+evaluation: top1acc77.76 | top5acc93.64
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/GENet_Res50>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/genetres50_minux_ascend_v160_imagenet2012_research_cv_top1acc77.75_top5acc93.64.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/genetres50_minux_ascend_v160_imagenet2012_research_cv_top1acc77.76_top5acc93.64.ckpt>
     asset-sha256: 6b568bebdf808db1bdfd9d013bd45ecd132f5788275d4bd0a4b30884165015bd
 
 license: Apache2.0
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Gather-Excite: Exploiting Feature Context in Convolutional Neural Networks
+https://arxiv.org/abs/1810.12348
 
 ## Disclaimer
 

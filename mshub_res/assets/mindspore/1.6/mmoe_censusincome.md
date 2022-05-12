@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: censusincome
 
-evaluation: incomeauc99.85 | maritalauc100
+evaluation: incomeauc100 | maritalauc100
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/mmoe>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/mmoe_ascend_v160_censusincome_research_recommend_incomeauc99.85_maritalauc100.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/mmoe_ascend_v160_censusincome_research_recommend_incomeauc100_maritalauc100.ckpt>
     asset-sha256: 882ff75c70f07637e809b3c68461cb3a665cb8e7b3f2ad60623e8ab2a0460127
 
 license: Apache2.0

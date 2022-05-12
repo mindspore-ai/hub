@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: icdar2015
 
-evaluation: acc81
+evaluation: acc81.25
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/east>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/east_ascend_v160_icdar2015_official_cv_acc81.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/east_ascend_v160_icdar2015_official_cv_acc81.25.ckpt>
     asset-sha256: 4fa8a1a81a9d49db853cb483b2763e06219726158a8db96dcccbcd36d5d9ee52
 
 license: Apache2.0

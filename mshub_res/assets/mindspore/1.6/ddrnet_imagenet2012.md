@@ -18,7 +18,7 @@ evaluation: top1acc76.36 | top5acc93.24
 
 author: MindSpore team
 
-update-time: 2022-04-18
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/DDRNet>
 

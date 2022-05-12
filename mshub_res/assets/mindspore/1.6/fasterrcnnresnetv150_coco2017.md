@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: coco2017
 
-evaluation: mAP@.5IoU60.6
+evaluation: AP50acc60.6
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/faster_rcnn>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/fasterrcnnresnetv150_ascend_v160_coco2017_official_cv_mAP@.5IoU60.6.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/fasterrcnnresnetv150_ascend_v160_coco2017_official_cv_AP50acc60.6.ckpt>
     asset-sha256: f8efcd9fe8900ee6b6cd9bab1c7b6f650c290e8d70a3557e619404fd828dfa9f
 
 license: Apache2.0

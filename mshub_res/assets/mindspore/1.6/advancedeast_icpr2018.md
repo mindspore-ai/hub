@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: icpr2018
 
-evaluation: F1acc61.52
+evaluation: F1score61.68
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/advanced_east>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/advancedeast_ascend_v160_icpr2018_research_cv_F1acc61.52.ckpt>
-    asset-sha256: 29da691de69194138d3ab0f74ae62299cff4e3d7432e6e511f70706c238edc9e
+    asset-link: <https://download.mindspore.cn/models/r1.6/advancedeast_ascend_v160_icpr2018_research_cv_F1score61.68.ckpt>
+    asset-sha256: 7f316624c1d840b2f1c9f72829759bc9d317ccdb1a11aa60a50f3f95071540ea
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-EAST:An Efficient and Accurate Scene Text Detector.
+[EAST:An Efficient and Accurate Scene Text Detector](https://arxiv.org/abs/1704.03155v2).
 
 ## Disclaimer
 

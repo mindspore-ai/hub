@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: coco2017
 
-evaluation: acc72.3
+evaluation: mAP72.29
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/simple_baselines>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/simplebaselines_ascend_v160_coco2017_research_cv_acc72.3.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/simplebaselines_ascend_v160_coco2017_research_cv_mAP72.29.ckpt>
     asset-sha256: 31ad53e844b3a5301b8663e9b228c4eecdb904494ab605a1e9886f3956fbd00c
 
 license: Apache2.0
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Bin Xiao, Haiping Wu, Yichen Wei."Simple baselines for human pose estimation and tracking"
+https://arxiv.org/pdf/1804.06208.pdf
 
 ## Disclaimer
 

@@ -18,7 +18,7 @@ evaluation: mAP40.2
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/faster_rcnn>
 

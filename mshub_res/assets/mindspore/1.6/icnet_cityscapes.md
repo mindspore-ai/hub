@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: cityscapes
 
-evaluation: avgmiou69.54
+evaluation: avgmiou69.4
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/ICNet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/icnet_ascend_v160_cityscapes_research_cv_avgmiou69.54.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/icnet_ascend_v160_cityscapes_research_cv_avgmiou69.4.ckpt>
     asset-sha256: 2a16822fefb0627b455c73a57321a9da24e2483b11487e173bcdc6c07841d867
 
 license: Apache2.0
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-ICNet for Real-Time Semantic Segmentation on High-Resolution Images
+[paper](https://arxiv.org/abs/1704.08545) from ECCV2018
 
 ## Disclaimer
 

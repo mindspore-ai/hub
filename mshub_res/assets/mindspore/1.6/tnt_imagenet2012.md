@@ -18,7 +18,7 @@ evaluation: top1acc81.03 | top5acc95.41
 
 author: MindSpore team
 
-update-time: 2022-04-18
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/TNT>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.6/tnt_ascend_v160_imagenet2012_research_cv_top1acc81.03_top5acc95.41.ckpt>
-    asset-sha256: 028493c50c666b32c37a036c217c0416a81cc822c591a6662f7136606d66b38d
+    asset-sha256: 94dd6f5b772d6b87c3cb017beffe9c5784a237d7e08217355828084690eb90c5
 
 license: Apache2.0
 

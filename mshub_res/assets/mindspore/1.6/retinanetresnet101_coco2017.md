@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: coco2017
 
-evaluation: acc36.39
+evaluation: mAP36.39
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/retinanet_resnet101>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/retinanetresnet101_ascend_v160_coco2017_research_cv_acc36.39.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/retinanetresnet101_ascend_v160_coco2017_research_cv_mAP36.39.ckpt>
     asset-sha256: c58400d46600ce74f4cb1f28f513ead9defb7ad4fe100a7dada92d5a77d313c7
 
 license: Apache2.0

@@ -18,7 +18,7 @@ evaluation: MAE112.11
 
 author: MindSpore team
 
-update-time: 2022-04-12
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/MCNN>
 

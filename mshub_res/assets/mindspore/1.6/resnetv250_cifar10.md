@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: cifar10
 
-evaluation: acc95.2
+evaluation: top1acc95.2
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/resnetv2>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/resnetv250_ascend_v160_cifar10_research_cv_acc95.2.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/resnetv250_ascend_v160_cifar10_research_cv_top1acc95.2.ckpt>
     asset-sha256: d88993343168c69ee523052b7cd605fd0c7cb426dff6f033d7e2be068d05a9a3
 
 license: Apache2.0

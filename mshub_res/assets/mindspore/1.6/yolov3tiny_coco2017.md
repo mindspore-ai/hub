@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: coco2017
 
-evaluation: mAP17.7 | mAP50acc36
+evaluation: mAP17.5 | AP50acc35.8
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/yolov3_tiny>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/yolov3tiny_ascend_v160_coco2017_research_cv_mAP17.7_mAP50acc36.ckpt>
-    asset-sha256: c4a5b747c28373bd2100abd732fca582c13ddf74d5dab5b5fd92fd9ce303c4a7
+    asset-link: <https://download.mindspore.cn/models/r1.6/yolov3tiny_ascend_v160_coco2017_research_cv_mAP17.5_AP50acc35.8.ckpt>
+    asset-sha256: 13103c502b9c7f0d9dfa811ef2b39ba5aed04f7e61d6f27aad05a738774630dc
 
 license: Apache2.0
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Joseph Redmon, Ali Farhadi. arXiv preprint arXiv:1804.02767, 2018.2, 4, 7, 11.
+Joseph Redmon, Ali Farhadi. arXiv preprint arXiv:1804.02767, 2018. 2, 4, 7, 11.
 
 ## Disclaimer
 

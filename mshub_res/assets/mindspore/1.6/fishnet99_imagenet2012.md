@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc77.88 | top5acc93.88
+evaluation: top1acc78.22 | top5acc94.02
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/fishnet99>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/fishnet99_ascend_v160_imagenet2012_research_cv_top1acc77.88_top5acc93.88.ckpt>
-    asset-sha256: 95e536ca3b4b1f1fa9061b5f9cf75bdc15fb2a1fc8e1a820442516c980ebf7d3
+    asset-link: <https://download.mindspore.cn/models/r1.6/fishnet99_ascend_v160_imagenet2012_research_cv_top1acc78.22_top5acc94.02.ckpt>
+    asset-sha256: aa663ae5de67b24a6c447ce5b35f0873649d03eb31269703dfc4d087cf8f595c
 
 license: Apache2.0
 

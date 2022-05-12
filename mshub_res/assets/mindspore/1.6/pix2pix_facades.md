@@ -1,10 +1,10 @@
-# stgcn
+# Pix2Pix
 
 ---
 
-model-name: stgcn
+model-name: Pix2Pix
 
-backbone-name: stgcn
+backbone-name: Pix2Pix
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: pemsd7m
+train-dataset: facades
 
-evaluation: mae3.22 | mape8.37 | rmse6.09
+evaluation: -
 
 author: MindSpore team
 
 update-time: 2022-05-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/stgcn>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/Pix2Pix>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/stgcn_cheb45_ascend_v160_pemsd7m_research_cv_mae3.22_mape8.37_rmse6.09.ckpt>
-    asset-sha256: 75da728efa227e2c6333d5a529d190c8dfb14eea475c7e4dc780d08acd0d2645
+    asset-link: <https://download.mindspore.cn/models/r1.6/pix2pix_ascend_v160_facades_research_cv.ckpt>
+    asset-sha256: 185b0679425ec6ac60b1d393023ec7b3f0c760feaa49e7d2a23c157a96a25b8d
 
 license: Apache2.0
 
-summary: stgcn is used for cv
+summary: Pix2Pix is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of stgcn from the MindSpore model zoo on Gitee at research/cv/stgcn.
+This MindSpore Hub model uses the implementation of Pix2Pix from the MindSpore model zoo on Gitee at research/cv/Pix2Pix.
 
-stgcn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/stgcn](https://gitee.com/mindspore/models/blob/r1.6/research/cv/stgcn/README_CN.md).
+Pix2Pix is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/Pix2Pix](https://gitee.com/mindspore/models/blob/r1.6/research/cv/Pix2Pix/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Bing yu, Haoteng Yin, and Zhanxing Zhu. "Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting." Proceedings of the 27th International Joint Conference on Artificial Intelligence. 2017.
+Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, and Alexei A. Efros. "Image-to-Image Translation with Conditional Adversarial Networks", in CVPR 2017.
 
 ## Disclaimer
 

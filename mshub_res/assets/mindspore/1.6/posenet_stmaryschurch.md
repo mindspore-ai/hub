@@ -18,7 +18,7 @@ evaluation: 2.0m | 5.93d
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/posenet>
 

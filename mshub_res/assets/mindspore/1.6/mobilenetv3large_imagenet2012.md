@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc74.55 | top5acc91.76
+evaluation: top1acc74.54 | top5acc91.77
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/mobilenetv3_large>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/mobilenetv3large_ascend_v160_imagenet2012_research_cv_top1acc74.55_top5acc91.76.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/mobilenetv3large_ascend_v160_imagenet2012_research_cv_top1acc74.54_top5acc91.77.ckpt>
     asset-sha256: 7f979e6256886df0070f9f4286ec0b32f21119b1430a127afddefeb10dd7bc31
 
 license: Apache2.0
