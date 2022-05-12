@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc79.95 | top5acc94.89
+evaluation: top1acc79.94 | top5acc94.89
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/glore_res200>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/gloreres200_ascend_v160_imagenet2012_research_cv_top1acc79.95_top5acc94.89.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/gloreres200_ascend_v160_imagenet2012_research_cv_top1acc79.94_top5acc94.89.ckpt>
     asset-sha256: 106bba976cc6f7d5d59a74a63062d5600165090763fcfebc96af507b15c24dfb
 
 license: Apache2.0

@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc58.51 | top5acc80.82
+evaluation: top1acc58.52 | top5acc80.82
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/squeezenet1_1>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/squeezenet11_ascend_v160_imagenet2012_research_cv_top1acc58.51_top5acc80.82.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/squeezenet11_ascend_v160_imagenet2012_research_cv_top1acc58.52_top5acc80.82.ckpt>
     asset-sha256: c50c0293a9efbe2a9338bf41df6e8c399c4ef40511e9d27a5ebef83deea61252
 
 license: Apache2.0

@@ -18,7 +18,7 @@ evaluation: top1acc79.94 | top5acc94.66
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/resnext152_64x4d>
 

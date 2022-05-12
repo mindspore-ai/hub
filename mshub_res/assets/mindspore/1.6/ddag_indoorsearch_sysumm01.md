@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: sysumm01
 
-evaluation: rank1acc64 | mAP68
+evaluation: rank1acc65.43 | mAP70.52
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/DDAG>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/ddag_indoorsearch_ascend_v160_sysumm01_research_cv_rank1acc64_mAP68.ckpt>
-    asset-sha256: cf886e258622971503d06db8611b8ecddb1f7f0a5e1a7237a53068679200454f
+    asset-link: <https://download.mindspore.cn/models/r1.6/ddag_indoorsearch_ascend_v160_sysumm01_research_cv_rank1acc65.43_mAP70.52.ckpt>
+    asset-sha256: 049c877488fb0d177e9161b09ef977b30bf01147b4f0fc096beb1159d805e5ec
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-*Dynamic Dual-Attentive Aggregation Learning for Visible-Infrared Person Re-Identification* in ECCV 2020
+*Dynamic Dual-Attentive Aggregation Learning for Visible-Infrared Person Re-Identification* in ECCV 2020.
 
 ## Disclaimer
 

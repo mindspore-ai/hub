@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: ms1mv2
 
-evaluation: ijbb95.06 | ijbc96.39
+evaluation: IJBB97.67 | IJBC98.36
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/arcface>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/arcface_ascend_v160_ms1mv2_research_cv_ijbb95.06_ijbc96.39.ckpt>
-    asset-sha256: 5897d6d1b98411e170625377871b1daf658f6ba477765ba3c9872a24097a629f
+    asset-link: <https://download.mindspore.cn/models/r1.6/arcface_ascend_v160_ms1mv2_research_cv_IJBB97.67_IJBC98.36.ckpt>
+    asset-sha256: 74799449762fecad3b1d1a74bad8169bcf53094efde7d21e8566119bc39aea7c
 
 license: Apache2.0
 

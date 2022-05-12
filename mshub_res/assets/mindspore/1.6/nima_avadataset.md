@@ -1,10 +1,10 @@
-# resnet
+# nima
 
 ---
 
-model-name: resnet
+model-name: nima
 
-backbone-name: resnet
+backbone-name: nima
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: imagenet2012
+train-dataset: avadataset
 
-evaluation: top1acc73.61 | top5acc91.74
+evaluation: SRCC65.61
 
 author: MindSpore team
 
 update-time: 2022-05-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/resnet>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/nima>
 
 user-id: MindSpore
 
@@ -32,45 +32,27 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/resnet34_ascend_v160_imagenet2012_official_cv_top1acc73.61_top5acc91.74.ckpt>
-    asset-sha256: c17234dbfa8d3d41e816ab3caf306fb18728b445e39805e599e6e648e9805090
+    asset-link: <https://download.mindspore.cn/models/r1.6/nima_ascend_v160_avadataset_official_cv_SRCC65.61.ckpt>
+    asset-sha256: 9eee582c67afb2b4c3b0e6125c1b631462103a579e7b426f5401425dcafcd774
 
 license: Apache2.0
 
-summary: resnet is used for cv
+summary: nima is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of resnet from the MindSpore model zoo on Gitee at official/cv/resnet.
+This MindSpore Hub model uses the implementation of nima from the MindSpore model zoo on Gitee at official/cv/nima.
 
-resnet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/resnet](https://gitee.com/mindspore/models/blob/r1.6/official/cv/resnet/README.md).
+nima is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/nima](https://gitee.com/mindspore/models/blob/r1.6/official/cv/nima/README.md).
 
 All parameters in the module are trainable.
-
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.6/resnet34_imagenet2012"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
 
 ## Citation
 
 1. Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun."Deep Residual Learning for Image Recognition"
-2. Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu."Squeeze-and-Excitation Networks"
-3. Tong He, Zhi Zhang, Hang Zhang, Zhongyue Zhang, Junyuan Xie, Mu Li."Bag of Tricks for Image Classification with Convolutional Neural Networks"
+2. H. Talebi and P. Milanfar, "NIMA: Neural Image Assessment"
 
 ## Disclaimer
 

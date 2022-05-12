@@ -18,7 +18,7 @@ evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/CycleGAN>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.6/cyclegan_GA_ascend_v160_apple2orange_research_cv.ckpt>
-    asset-sha256: 44bc99276b91d5113636c37a03e75d15daf6c836e6cc59be07507223f69f9a5d
+    asset-sha256: 60c70d7be7f745db333a2064f67b8e7db056e653789a87fef135ee01828d3c18
 
 license: Apache2.0
 

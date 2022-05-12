@@ -1,57 +1,57 @@
-# stgcn
+# Inception-v2
 
 ---
 
-model-name: stgcn
+model-name: Inception-v2
 
-backbone-name: stgcn
+backbone-name: Inception-v2
 
 module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.3
 
-train-dataset: pemsd7m
+train-dataset: imagenet2012
 
-evaluation: mae3.22 | mape8.37 | rmse6.09
+evaluation: top1acc76.35 | top5acc92.97
 
 author: MindSpore team
 
 update-time: 2022-05-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/stgcn>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.3/research/cv/Inception-v2>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.3
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/stgcn_cheb45_ascend_v160_pemsd7m_research_cv_mae3.22_mape8.37_rmse6.09.ckpt>
-    asset-sha256: 75da728efa227e2c6333d5a529d190c8dfb14eea475c7e4dc780d08acd0d2645
+    asset-link: <https://download.mindspore.cn/models/r1.3/inceptionv2_ascend_v130_imagenet2012_research_cv_top1acc76.35_top5acc92.97.ckpt>
+    asset-sha256: f7fb2c861e56154b8f1a85dd49c05b322211fc823e0e776d98ed3157a8f742f1
 
 license: Apache2.0
 
-summary: stgcn is used for cv
+summary: Inception-v2 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of stgcn from the MindSpore model zoo on Gitee at research/cv/stgcn.
+This MindSpore Hub model uses the implementation of Inception-v2 from the MindSpore model zoo on Gitee at research/cv/Inception-v2.
 
-stgcn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/stgcn](https://gitee.com/mindspore/models/blob/r1.6/research/cv/stgcn/README_CN.md).
+Inception-v2 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/Inception-v2](https://gitee.com/mindspore/models/blob/r1.3/research/cv/Inception-v2/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Bing yu, Haoteng Yin, and Zhanxing Zhu. "Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting." Proceedings of the 27th International Joint Conference on Artificial Intelligence. 2017.
+Min Sun, Ali Farhadi, Steve Seitz.Ranking Domain-Specific Highlights by Analyzing Edited Videos[J].2014.
 
 ## Disclaimer
 

@@ -18,7 +18,7 @@ evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/LearningToSeeInTheDark>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.6/learningtoseeinthedark_ascend_v160_sony_research_cv.ckpt>
-    asset-sha256: 039f394fe9dff0ed09600179f0135bffebf7699f64152993778bfeb72fcd5f20
+    asset-sha256: 1fcb252685e9e734250f44ba566bf7af9503fd5341032bf64a78cec2235b5b37
 
 license: Apache2.0
 

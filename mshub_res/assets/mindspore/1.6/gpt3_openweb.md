@@ -18,7 +18,7 @@ evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/nlp/gpt>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.6/gpt3_ascend_v160_openweb_official_nlp.ckpt>
-    asset-sha256: e4d4e4d4023b7475972250d8126a4e183eb60f3d87f11df1f1e09d414c58e448
+    asset-sha256: 0e9cdf716666b5d6e674bc710a4c36f7d915f74148840b68f5e294ab3c0c475f
 
 license: Apache2.0
 

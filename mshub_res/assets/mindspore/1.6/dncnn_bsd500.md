@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: bsd500
 
-evaluation: bsd68acc29 | set12acc30
+evaluation: bsd68psnr29.24 | set12psnr30.46
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/DnCNN>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/dncnn_ascend_v160_bsd500_research_cv_bsd68acc29_set12acc30.ckpt>
-    asset-sha256: e02c3010a0e6f8b5750e5de1fb5c12fa98ab932133cb1dbb62dfdd77f69607cd
+    asset-link: <https://download.mindspore.cn/models/r1.6/dncnn_ascend_v160_bsd500_research_cv_bsd68psnr29.24_set12psnr30.46.ckpt>
+    asset-sha256: cfa317bb9f00c78831054578ac6a2b36fcb3cebfce8a873d1dc0aade9f2f9960
 
 license: Apache2.0
 

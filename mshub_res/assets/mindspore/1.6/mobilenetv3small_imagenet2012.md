@@ -1,10 +1,10 @@
-# stgcn
+# mobilenetV3_small_x1_0
 
 ---
 
-model-name: stgcn
+model-name: mobilenetV3_small_x1_0
 
-backbone-name: stgcn
+backbone-name: mobilenetV3_small_x1_0
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: pemsd7m
+train-dataset: imagenet2012
 
-evaluation: mae3.22 | mape8.37 | rmse6.09
+evaluation: top1acc67.36 | top5acc87.06
 
 author: MindSpore team
 
 update-time: 2022-05-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/stgcn>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/mobilenetV3_small_x1_0>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/stgcn_cheb45_ascend_v160_pemsd7m_research_cv_mae3.22_mape8.37_rmse6.09.ckpt>
-    asset-sha256: 75da728efa227e2c6333d5a529d190c8dfb14eea475c7e4dc780d08acd0d2645
+    asset-link: <https://download.mindspore.cn/models/r1.6/mobilenetv3small_ascend_v160_imagenet2012_research_cv_top1acc67.36_top5acc87.06.ckpt>
+    asset-sha256: 9ee313b165fc63e2b714fc4c059c4688e965965c11309696c7ed9dcfdeda2ba1
 
 license: Apache2.0
 
-summary: stgcn is used for cv
+summary: mobilenetV3_small_x1_0 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of stgcn from the MindSpore model zoo on Gitee at research/cv/stgcn.
+This MindSpore Hub model uses the implementation of mobilenetV3_small_x1_0 from the MindSpore model zoo on Gitee at research/cv/mobilenetV3_small_x1_0.
 
-stgcn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/stgcn](https://gitee.com/mindspore/models/blob/r1.6/research/cv/stgcn/README_CN.md).
+mobilenetV3_small_x1_0 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/mobilenetV3_small_x1_0](https://gitee.com/mindspore/models/blob/r1.6/research/cv/mobilenetV3_small_x1_0/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Bing yu, Haoteng Yin, and Zhanxing Zhu. "Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting." Proceedings of the 27th International Joint Conference on Artificial Intelligence. 2017.
+Howard, Andrew, Mark Sandler, Grace Chu, Liang-Chieh Chen, Bo Chen, Mingxing Tan, Weijun Wang et al."Searching for mobilenetv3."In Proceedings of the IEEE International Conference on Computer Vision, pp. 1314-1324.2019.
 
 ## Disclaimer
 

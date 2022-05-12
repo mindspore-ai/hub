@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: losloop
 
-evaluation: acc91.21
+evaluation: acc91.2
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/tgcn>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/tgcn_ascend_v160_losloop_research_cv_acc91.21.ckpt>
-    asset-sha256: 0b3162244fffca2e0ca5658e59ac4d80aaecf216dd4b4cf16c962e82da9cd26c
+    asset-link: <https://download.mindspore.cn/models/r1.6/tgcn_ascend_v160_losloop_research_cv_acc91.2.ckpt>
+    asset-sha256: 43cb19bb2c0dc1ee4ddbc72856e7f9193baee73010e4934783256d6494918b3e
 
 license: Apache2.0
 
@@ -45,13 +45,13 @@ summary: tgcn is used for cv
 
 This MindSpore Hub model uses the implementation of tgcn from the MindSpore model zoo on Gitee at research/cv/tgcn.
 
-tgcn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/tgcn](https://gitee.com/mindspore/models/blob/r1.6/research/cv/tgcn/README_CN.md).
+tgcn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/tgcn](https://gitee.com/mindspore/models/blob/r1.6/research/cv/tgcn/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-3848-3858.Zhao L, Song Y, Zhang C, et al. T-gcn: A temporal graph convolutional network for traffic prediction[J]. IEEE Transactions on Intelligent Transportation Systems, 2019, 21(9): 3848-3858.
+Zhao L, Song Y, Zhang C, et al. T-gcn: A temporal graph convolutional network for traffic prediction[J]. IEEE Transactions on Intelligent Transportation Systems, 2019, 21(9): 3848-3858.
 
 ## Disclaimer
 

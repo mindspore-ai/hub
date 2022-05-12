@@ -18,7 +18,7 @@ evaluation: acc99.05
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/u2net>
 

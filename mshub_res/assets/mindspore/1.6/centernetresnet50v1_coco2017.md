@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: coco2017
 
-evaluation: mAP30.8
+evaluation: map30.7
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/centernet_resnet50_v1>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/centernetresnet50v1_ascend_v160_coco2017_research_cv_mAP30.8.ckpt>
-    asset-sha256: a3bf9973d423847b59a2fc56d17e630650e95fb6862019c29b9a7bb92268c962
+    asset-link: <https://download.mindspore.cn/models/r1.6/centernetresnet50v1_ascend_v160_coco2017_research_cv_map30.7.ckpt>
+    asset-sha256: 2d4cbadbf45b4ead5abba04af5ed8620f3d9f097c724b0b744bdf3b1a376b16c
 
 license: Apache2.0
 

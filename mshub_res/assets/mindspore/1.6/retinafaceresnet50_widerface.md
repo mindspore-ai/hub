@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: widerface
 
-evaluation: easy95.19 | medium93.74 | hard83.94
+evaluation: easy94.89 | medium93.36 | hard84.13
 
 author: MindSpore team
 
-update-time: 2022-04-12
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/retinaface>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/retinafaceresnet50_ascend_v160_widerface_research_cv_easy95.19_medium93.74_hard83.94.ckpt>
-    asset-sha256: d7a67c8289bec78788b5ab625f006b8d74992c77c25310ec5a9dd0e16722e2aa
+    asset-link: <https://download.mindspore.cn/models/r1.6/retinafaceresnet50_ascend_v160_widerface_research_cv_easy94.89_medium93.36_hard84.13.ckpt>
+    asset-sha256: 95d218806b032412451a7e7fd1982c59a80be42d7926020e6e4f0e561b0d7b1f
 
 license: Apache2.0
 

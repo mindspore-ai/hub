@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: omniglot
 
-evaluation: acc99.63
+evaluation: acc99.61
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/ProtoNet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/protonet_ascend_v160_omniglot_research_cv_acc99.63.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/protonet_ascend_v160_omniglot_research_cv_acc99.61.ckpt>
     asset-sha256: f2494972445dbe2c26d5d66dbe94cca5d047a6870aa28f5c42900c5e4562376a
 
 license: Apache2.0
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Prototypical Networks for Few-shot Learning
+[Prototypical Networks for Few-shot Learning](https://arxiv.org/abs/1703.05175)
 
 ## Disclaimer
 

@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc79 | top5acc94
+evaluation: top1acc78.97 | top5acc94.31
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/SE_ResNeXt50>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/seresnext50_ascend_v160_imagenet2012_research_cv_top1acc79_top5acc94.ckpt>
-    asset-sha256: ba9443c3aa8ca6aa55fe4cbd23afb3aedd94573c1cea8d613ffad810baed55a6
+    asset-link: <https://download.mindspore.cn/models/r1.6/seresnext50_ascend_v160_imagenet2012_research_cv_top1acc78.97_top5acc94.31.ckpt>
+    asset-sha256: 2f0eb13f7bdc2482b8113f8f75f65e4080dd3b88926e3429c81d34c19211103e
 
 license: Apache2.0
 

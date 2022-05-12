@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc74.66 | top5acc92.08
+evaluation: top1acc74.77 | top5acc92.25
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/proxylessnas>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/proxylessnas_ascend_v160_imagenet2012_research_cv_top1acc74.66_top5acc92.08.ckpt>
-    asset-sha256: ee73221e47911a3c80c4d24e861205a6591c8b37ba0aa5b78e34444d4ab058b9
+    asset-link: <https://download.mindspore.cn/models/r1.6/proxylessnas_ascend_v160_imagenet2012_research_cv_top1acc74.77_top5acc92.25.ckpt>
+    asset-sha256: f4c61970d728594a3125339c9da9e8232d6fd8bf758747793b55881dd915ad21
 
 license: Apache2.0
 

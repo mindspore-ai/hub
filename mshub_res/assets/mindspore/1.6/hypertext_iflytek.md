@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: iflytek
 
-evaluation: acc58
+evaluation: acc57.06
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/nlp/hypertext>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/hypertext_ascend_v160_iflytek_research_nlp_acc58.ckpt>
-    asset-sha256: 720524602cfb91b3b2a759e420ccb54de686cb2508fa99b82c8af71314926be3
+    asset-link: <https://download.mindspore.cn/models/r1.6/hypertext_ascend_v160_iflytek_research_nlp_acc57.06.ckpt>
+    asset-sha256: 5ceb01874a40117fe62c6ba7bb3bc9f5a8f2a16b8a0070243d0c9b2b1c3b5d1f
 
 license: Apache2.0
 

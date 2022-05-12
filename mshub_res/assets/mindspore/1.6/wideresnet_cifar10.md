@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: cifar10
 
-evaluation: acc96.33
+evaluation: acc96.32
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/wideresnet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/wideresnet_ascend_v160_cifar10_research_cv_acc96.33.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/wideresnet_ascend_v160_cifar10_research_cv_acc96.32.ckpt>
     asset-sha256: 441c0aaa59b9e164be0666d5a318fc438532e7fd13730cfa0b6cb677a8217442
 
 license: Apache2.0
@@ -45,13 +45,13 @@ summary: wideresnet is used for cv
 
 This MindSpore Hub model uses the implementation of wideresnet from the MindSpore model zoo on Gitee at research/cv/wideresnet.
 
-wideresnet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/wideresnet](https://gitee.com/mindspore/models/blob/r1.6/research/cv/wideresnet/README_CN.md).
+wideresnet is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/wideresnet](https://gitee.com/mindspore/models/blob/r1.6/research/cv/wideresnet/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Sergey Zagoruyko."Wide Residual Netwoks"
+[Sergey Zagoruyko."Wide Residual Netwoks"](https://arxiv.org/pdf/1605.07146.pdf)
 
 ## Disclaimer
 

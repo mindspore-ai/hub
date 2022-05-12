@@ -18,7 +18,7 @@ evaluation: mae3.2 | mape8.32 | rmse6.08
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/stgcn>
 

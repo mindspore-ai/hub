@@ -18,7 +18,7 @@ evaluation: top1acc78.07 | top5acc93.93
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/GENet_Res50>
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Gather-Excite: Exploiting Feature Context in Convolutional Neural Networks
+https://arxiv.org/abs/1810.12348
 
 ## Disclaimer
 

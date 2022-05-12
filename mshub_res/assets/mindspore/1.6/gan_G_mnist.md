@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: mnist
 
-evaluation: likelihood220.47 | se2.33
+evaluation: likelihood224.61 | se2.27
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/gan>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/gan_G_ascend_v160_mnist_research_cv_likelihood220.47_se2.33.ckpt>
-    asset-sha256: 78dd2421ad81e2088cbb43ee11a019eb3ac74c27e1e75fff597cb3f659840c6b
+    asset-link: <https://download.mindspore.cn/models/r1.6/gan_G_ascend_v160_mnist_research_cv_likelihood224.61_se2.27.ckpt>
+    asset-sha256: c1dec359395c05b810ad2b7a3edc367834e931d282ba481bd3fd13710156c95a
 
 license: Apache2.0
 
