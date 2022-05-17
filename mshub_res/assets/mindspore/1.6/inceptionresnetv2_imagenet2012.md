@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/inceptionresnetv2_ascend_v160_imagenet2012_research_cv_top1acc80.04_top5acc94.54.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/inceptionresnetv2_ascend_v160_imagenet2012_research_cv_top1acc79.54_top5acc94.62.ckpt>
     asset-sha256: cf282d78635945173a79accf2068b0c651aff1253eeae556f31428190b7e3dbd
 
 license: Apache2.0
