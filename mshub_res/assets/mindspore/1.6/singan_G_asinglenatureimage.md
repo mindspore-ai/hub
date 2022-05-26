@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: SingleNatureImage
+train-dataset: asinglenatureimage
 
-evaluation: no
+evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-04-18
+update-time: 2022-05-24
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/SinGAN>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/singan_Generator_ascend_v160_SingleNatureImage_research_cv.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/singan_G_ascend_v160_asinglenatureimage_research_cv.ckpt>
     asset-sha256: cde25ce4ecd6f7b9e1cfb2901267b76f7b23e65a1350017d3b55294d0b93aeb3
 
 license: Apache2.0

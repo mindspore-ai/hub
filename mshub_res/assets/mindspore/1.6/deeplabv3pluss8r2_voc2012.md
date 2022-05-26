@@ -1,26 +1,26 @@
-# transformer
+# deeplabv3plus
 
 ---
 
-model-name: transformer
+model-name: deeplabv3plus
 
-backbone-name: transformer
+backbone-name: deeplabv3plus
 
-module-type: nlp
+module-type: cv
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: wmt
+train-dataset: voc2012
 
-evaluation: acc27.21
+evaluation: s8acc79.46 | s8multiscale80.2 | s8multiscaleflip80.18
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/nlp/transformer>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/deeplabv3plus>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/transformer_ascend_v160_wmt_official_nlp_acc27.21.ckpt>
-    asset-sha256: b322b9e912295d6f6dae34381488c8fa8676fd4759aae178f77b05acebb3dc0f
+    asset-link: <https://download.mindspore.cn/models/r1.6/deeplabv3pluss8r2_ascend_v160_voc2012_official_cv_s8acc79.46_s8multiscale80.2_s8multiscaleflip80.18.ckpt>
+    asset-sha256: 0f88983cbaac5616228ea51add940d6595890e3b7fc084fb620179b26f516a20
 
 license: Apache2.0
 
-summary: transformer is used for nlp
+summary: deeplabv3plus is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of transformer from the MindSpore model zoo on Gitee at official/nlp/transformer.
+This MindSpore Hub model uses the implementation of deeplabv3plus from the MindSpore model zoo on Gitee at official/cv/deeplabv3plus.
 
-transformer is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/transformer](https://gitee.com/mindspore/models/blob/r1.6/official/nlp/transformer/README.md).
+deeplabv3plus is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/deeplabv3plus](https://gitee.com/mindspore/models/blob/r1.6/official/cv/deeplabv3plus/README_CN.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/transformer_wmt"
+model = "mindspore/1.6/deeplabv3pluss8r2_voc2012"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Ashish Vaswani, Noam Shazeer, Niki Parmar, JakobUszkoreit, Llion Jones, Aidan N Gomez, Ł ukaszKaiser, and Illia Polosukhin. 2017. Attention is all you need. In NIPS 2017, pages 5998–6008.
+Chen, Liang-Chieh, et al. "Encoder-decoder with atrous separable convolution for semantic image segmentation." Proceedings of the European conference on computer vision (ECCV). 2018.
 
 ## Disclaimer
 
