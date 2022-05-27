@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc75.9 | top5acc92.4
+evaluation: top1acc78.27 | top5acc93.99
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-05-24
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/resnet50_bam>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/resnet50bam_ascend_v160_imagenet2012_research_cv_top1acc75.9_top5acc92.4.ckpt>
-    asset-sha256: 4e1c0f5b06ec9a2909ed999c850b6b9b2bd60eefcad16a2bc4569b800e754e20
+    asset-link: <https://download.mindspore.cn/models/r1.6/resnet50bam_ascend_v160_imagenet2012_research_cv_top1acc78.27_top5acc93.99.ckpt>
+    asset-sha256: fe3222a85020953003c95132108d38e39923f71a0ab8a820a3946072fb591550
 
 license: Apache2.0
 

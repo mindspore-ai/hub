@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: imagenet2012
 
-evaluation: top1acc80
+evaluation: top1acc80.37 | top5acc95.17
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-05-24
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/efficientnet-b3>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/efficientnetb3_ascend_v160_imagenet2012_research_cv_top1acc80.ckpt>
-    asset-sha256: 1409576e02e431ab6b71e1f96c3aa56ebb8b87a1f6d3fd96a1973c64b917c0b9
+    asset-link: <https://download.mindspore.cn/models/r1.6/efficientnetb3_ascend_v160_imagenet2012_research_cv_top1acc80.37_top5acc95.17.ckpt>
+    asset-sha256: 7c7b1973e39709159893534e201ca9bda2d860b7370e74729e570f979135270f
 
 license: Apache2.0
 

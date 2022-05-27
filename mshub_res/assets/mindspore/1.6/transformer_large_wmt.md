@@ -1,26 +1,26 @@
-# efficientnet-b2
+# transformer
 
 ---
 
-model-name: efficientnet-b2
+model-name: transformer
 
-backbone-name: efficientnet-b2
+backbone-name: transformer
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: imagenet2012
+train-dataset: wmt
 
-evaluation: top1acc79.66 | top5acc94.82
+evaluation: bleu28.7
 
 author: MindSpore team
 
 update-time: 2022-05-24
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/efficientnet-b2>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/nlp/transformer>
 
 user-id: MindSpore
 
@@ -32,26 +32,43 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/efficientnetb2_ascend_v160_imagenet2012_research_cv_top1acc79.66_top5acc94.82.ckpt>
-    asset-sha256: 717dd4ed2df8eb2b549649c4d69bbfb66f2876cc5ea11617557527a67ce49a33
+    asset-link: <https://download.mindspore.cn/models/r1.6/transformer_large_ascend_v160_wmt_official_nlp_bleu28.7.ckpt>
+    asset-sha256: cc8142f052bd9b5adda54aefb538288a57eb19dccd6e60da81dfd52048188e0b
 
 license: Apache2.0
 
-summary: efficientnet-b2 is used for cv
+summary: transformer is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of efficientnet-b2 from the MindSpore model zoo on Gitee at research/cv/efficientnet-b2.
+This MindSpore Hub model uses the implementation of transformer from the MindSpore model zoo on Gitee at official/nlp/transformer.
 
-efficientnet-b2 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/efficientnet-b2](https://gitee.com/mindspore/models/blob/r1.6/research/cv/efficientnet-b2/README_CN.md).
+transformer is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/transformer](https://gitee.com/mindspore/models/blob/r1.6/official/nlp/transformer/README.md).
 
 All parameters in the module are trainable.
 
+## Usage
+
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.6/transformer_large_wmt"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
+
 ## Citation
 
-Mingxing Tan, Quoc V. Le. EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. 2019.
+Ashish Vaswani, Noam Shazeer, Niki Parmar, JakobUszkoreit, Llion Jones, Aidan N Gomez, Ł ukaszKaiser, and Illia Polosukhin. 2017. Attention is all you need. In NIPS 2017, pages 5998–6008.
 
 ## Disclaimer
 
