@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: cityscapes
 
-evaluation: acc70
+evaluation: acc70.73
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-06-06
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/erfnet>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/erfnet_ascend_v160_cityscapes_official_cv_acc70.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/erfnet_ascend_v160_cityscapes_official_cv_acc70.73.ckpt>
     asset-sha256: c356bab8810edfd54b6b9817eb37bdb6fb034e00da29f7a62ca9394aa58a05cc
 
 license: Apache2.0

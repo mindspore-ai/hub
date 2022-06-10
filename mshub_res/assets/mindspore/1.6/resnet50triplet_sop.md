@@ -1,10 +1,10 @@
-# Neighbor2Neighbor
+# metric_learn
 
 ---
 
-model-name: Neighbor2Neighbor
+model-name: metric_learn
 
-backbone-name: Neighbor2Neighbor
+backbone-name: metric_learn
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: kodak
+train-dataset: sop
 
-evaluation: PSNR32.0 | SSIM0.875
+evaluation: acc73.3
 
 author: MindSpore team
 
 update-time: 2022-06-06
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/Neighbor2Neighbor>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/metric_learn>
 
 user-id: MindSpore
 
@@ -32,26 +32,27 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/neighbor2neighbor_ascend_v160_kodak_research_cv_PSNR32.0_SSIM0.875.ckpt>
-    asset-sha256: d99d97edf7e4d2544294da536e2b38d920aa67fec7697c5671d734c063bf7704
+    asset-link: <https://download.mindspore.cn/models/r1.6/resnet50triplet_ascend_v160_sop_research_cv_acc73.3.ckpt>
+    asset-sha256: afb1636be408e209c33dbd372e44a1a34200c71d4446754ab9e60378fa6aaab1
 
 license: Apache2.0
 
-summary: Neighbor2Neighbor is used for cv
+summary: metric_learn is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of Neighbor2Neighbor from the MindSpore model zoo on Gitee at research/cv/Neighbor2Neighbor.
+This MindSpore Hub model uses the implementation of metric_learn from the MindSpore model zoo on Gitee at research/cv/metric_learn.
 
-Neighbor2Neighbor is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/Neighbor2Neighbor](https://gitee.com/mindspore/models/blob/r1.6/research/cv/Neighbor2Neighbor/README_CN.md).
+metric_learn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/metric_learn](https://gitee.com/mindspore/models/blob/r1.6/research/cv/metric_learn/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Huang T , Li S , Jia X , et al. Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images[J]. 2021.
+1. CVPR2015 F Schroff, Kalenichenko D,Philbin J."FaceNet: A Unified Embedding for Face Recognition and Clustering"
+2. CVPR2017 Chen W, Chen X, Zhang J."Beyond triplet loss: A deep quadruplet network for person re-identification"
 
 ## Disclaimer
 

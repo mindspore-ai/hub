@@ -1,10 +1,10 @@
-# Neighbor2Neighbor
+# delf
 
 ---
 
-model-name: Neighbor2Neighbor
+model-name: delf
 
-backbone-name: Neighbor2Neighbor
+backbone-name: delf
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: kodak
+train-dataset: googlelandmarksdatasetv2
 
-evaluation: PSNR32.0 | SSIM0.875
+evaluation: oxford5kmAP89.74 | paris6kmAP84.37
 
 author: MindSpore team
 
 update-time: 2022-06-06
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/Neighbor2Neighbor>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/neighbor2neighbor_ascend_v160_kodak_research_cv_PSNR32.0_SSIM0.875.ckpt>
-    asset-sha256: d99d97edf7e4d2544294da536e2b38d920aa67fec7697c5671d734c063bf7704
+    asset-link: <https://download.mindspore.cn/models/r1.6/delf_ascend_v160_googlelandmarksdatasetv2_research_cv_oxford5kmAP89.74_paris6kmAP84.37.ckpt>
+    asset-sha256: b6b09fde4b2db29e8be9a0f40893aa264815adda3d66c86741b92b17fb1e770c
 
 license: Apache2.0
 
-summary: Neighbor2Neighbor is used for cv
+summary: delf is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of Neighbor2Neighbor from the MindSpore model zoo on Gitee at research/cv/Neighbor2Neighbor.
+This MindSpore Hub model uses the implementation of delf from the MindSpore model zoo on Gitee at research/cv/delf.
 
-Neighbor2Neighbor is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/Neighbor2Neighbor](https://gitee.com/mindspore/models/blob/r1.6/research/cv/Neighbor2Neighbor/README_CN.md).
+delf is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/delf](https://gitee.com/mindspore/models/blob/r1.6/research/cv/delf/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Huang T , Li S , Jia X , et al. Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images[J]. 2021.
+Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
 
 ## Disclaimer
 
