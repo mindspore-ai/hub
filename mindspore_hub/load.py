@@ -23,7 +23,6 @@ import os
 import re
 import shutil
 import importlib.util
-import logging as logger
 import warnings
 import tempfile
 from mindspore import nn
@@ -32,10 +31,55 @@ from .info import CellInfo
 from ._utils.download import _download_file_from_url, _download_repo_from_url # url_exist
 from .manage import get_hub_dir
 
-
 HUB_CONFIG_FILE = 'mindspore_hub_conf.py'
 ENTRY_POINT = 'create_network'
-HUB_MD_DIR = 'https://gitee.com/mindspore/hub/raw/master/mshub_res/assets/'
+
+
+def _create_if_not_exist(path):
+    """ Create not exist directory."""
+    if not os.path.exists(path):
+        os.makedirs(path)
+
+
+def _delete_if_exist(path):
+    """Delete backpu files"""
+    if os.path.exists(path):
+        if os.path.isdir(path):
+            shutil.rmtree(path)
+        else:
+            os.remove(path)
+
+
+def _get_md_file(source, uid, name, cache_path, force_reload):
+    """Get the path of markdown file."""
+    md_path = os.path.join(cache_path, name)
+    tmp_dir = tempfile.TemporaryDirectory(dir=get_hub_dir())
+    if force_reload or (not os.path.isfile(md_path)):
+        if not force_reload:
+            print(f'Warning. Can\'t find markdown cache, will reloading.')
+        if source == 'gitee':
+            hub_repo = 'https://gitee.com/mindspore/hub/'
+        else:
+            hub_repo = 'https://github.com/mindspore-ai/hub/'
+        url = os.path.join(hub_repo, 'raw/master/mshub_res/assets/', uid + '.md')
+        tmp_path = _download_file_from_url(url, None, tmp_dir.name)
+        _delete_if_exist(md_path)
+        os.rename(tmp_path, md_path)
+    return md_path
+
+
+def _get_md_from_uid(uid):
+    """Get markdown name and network name from given name."""
+    values = uid.split('/')
+    if len(values) not in (3, 4):
+        raise ValueError('Not input correct name.')
+    return values[-1] + '.md'
+
+
+def _get_md_from_url(url):
+    """Get markdown name and network name from url."""
+    values = url.split('/')
+    return values[-1].split('.')[0] + '.md'
 
 
 def _get_network_from_cache(name, path, *args, **kwargs):
@@ -69,47 +113,9 @@ def _get_network_from_cache(name, path, *args, **kwargs):
     return net
 
 
-def _delete_if_exist(path):
-    """Delete backpu files"""
-    if os.path.exists(path):
-        if os.path.isdir(path):
-            shutil.rmtree(path)
-        else:
-            os.remove(path)
-
-
-def _create_if_not_exist(path):
-    """ Create not exist directory."""
-    if not os.path.exists(path):
-        os.makedirs(path)
-
-
-def _get_uid_from_url(url):
-    """Get uid from given url."""
-    values = url.split('/')
-    values[-1] = values[-1].split('.')[0]
-    return os.path.join(*values[-4:])
-
-
-def _get_md_from_url(url):
-    """Get markdown name and network name from url."""
-    values = url.split('/')
-    return values[-1].split('.')[0] + '.md'
-
-
-def _get_md_from_uid(uid):
-    """Get markdown name and network name from given name."""
-    values = uid.split('/')
-    if len(values) != 4:
-        raise ValueError('Not input correct name.')
-    return values[-1] + '.md'
-
-
 def _get_uid_and_md_name(name):
     """Get uid and markdown name."""
     if re.match(r'^https?:/{2}\w.+$', name):
-        # if not url_exist(name):
-            # raise Exception('Please make sure the URL exists or the network connection is normal.')
         if len(name.split('/')) < 7:
             raise ValueError('Please make sure input correct url.')
         uid = _get_uid_from_url(name)
@@ -120,26 +126,21 @@ def _get_uid_and_md_name(name):
     return uid, md_name
 
 
-def _get_md_file(uid, name, cache_path, force_reload):
-    """Get the path of markdown file."""
-    md_path = os.path.join(cache_path, name)
-    tmp_dir = tempfile.TemporaryDirectory(dir=get_hub_dir())
-    if force_reload or (not os.path.isfile(md_path)):
-        if not force_reload:
-            print(f'Warning. Can\'t find markdown cache, will reloading.')
-        tmp_path = _download_file_from_url(os.path.join(HUB_MD_DIR, uid + '.md'), None, tmp_dir.name)
-        _delete_if_exist(md_path)
-        os.rename(tmp_path, md_path)
-    return md_path
+def _get_uid_from_url(url):
+    """Get uid from given url."""
+    values = url.split('/')
+    values[-1] = values[-1].split('.')[0]
+    return os.path.join(*values[-3:])
 
 
-def load(name, *args, pretrained=True, force_reload=True, **kwargs):
+def load(name, *args, source='gitee', pretrained=True, force_reload=True, **kwargs):
     r"""
     Load network with the given name. After loading, it can be used for inference verification, migration learning, etc.
 
     Args:
-        name (str): Uid or url of the network.
+        name (str): Uid or url of the network or local path.
         args (tuple): Arguments for network initialization.
+        source (str): Whether to parse `name` as gitee model URI, github model URI or local resource. Default: gitee.
         pretrained (bool): Whether to load the pretrained model. Default: True.
         force_reload (bool): Whether to reload the network from url. Default: True.
         kwargs (dict): Keyword arguments for network initialization.
@@ -148,7 +149,8 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
         Cell, a network.
 
     Examples:
-        >>> net = mindspore_hub.load('mindspore/ascend/1.1/alexnet_v1.1_cifar10', 10, pretrained=True)
+        >>> import mindspore_hub
+        >>> net = mindspore_hub.load('mindspore/1.3/alexnet_cifar10', 10, pretrained=True)
         >>> # For details about how to call the parameters of the network,
         >>> # please refer to the "Usage" in the md file of the network.
         >>> #
@@ -157,14 +159,14 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
         >>> # 1.1. Find the corresponding md file from the local hub source code.
         >>> # 1.1.1. Use 'git clone' command to copy the hub repository from
         >>> # Mindspore/hub<https://gitee.com/mindspore/hub.git>. Assume that the hub repository is cloned to <D:\hub\>.
-        >>> # 1.1.2. The preceding address is <D:\hub\mshub_res\assets\mindspore\ascend\1.1\alexnet_v1.1_cifar10.md>.
+        >>> # 1.1.2. The preceding address is <D:\hub\mshub_res\assets\mindspore\1.3\alexnet_cifar10.md>.
         >>> #
         >>> # 1.2. Find the corresponding md file from the website.
         >>> # 1.2.1. The prefix is fixed: <https://gitee.com/mindspore/hub/tree/master/mshub_res/assets/>
         >>> # + <address where you want to load the md file>.
         >>> # 1.2.2. The preceding address is
         >>> # <https://gitee.com/mindspore/hub/tree/master/mshub_res/assets/
-        >>> # mindspore/ascend/1.1/alexnet_v1.1_cifar10.md>.
+        >>> # mindspore/1.3/alexnet_cifar10.md>.
         >>> #
         >>> # 2. Want to find more information about this network?
         >>> # 2.1. Go to the corresponding website to learn more.
@@ -172,7 +174,7 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
         >>> # 2.2.1. After you have found the md file, there is a repo-link in the md file that allows
         >>> # you to directly access the web page of the corresponding network.
         >>> # 2.2.2. The web page corresponding to the preceding code is
-        >>> # <https://gitee.com/mindspore/mindspore/tree/r1.1/model_zoo/official/cv/alexnet>.
+        >>> # <https://gitee.com/mindspore/models/tree/r1.3/official/cv/alexnet>.
         >>> #
         >>> # 2.3. The web page of operation 2.2 contains a "mindspore_hub_conf.py",
         >>> # which is invoked by the load function. Therefore, to call more parameters,
@@ -188,18 +190,19 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
     if not isinstance(pretrained, bool):
         raise TypeError('`pretrained` must be a bool type.')
 
-    hub_dir = get_hub_dir()
-    _create_if_not_exist(hub_dir)
+    if source == 'local':
+        warnings.warn('Use local directory, `pretrained` maybe not work.')
+        name = os.path.realpath(os.path.expanduser(name))
+        target_path = os.path.dirname(name)
+        md_path = name
+    else:
+        hub_dir = get_hub_dir()
+        _create_if_not_exist(hub_dir)
+        uid, md_name = _get_uid_and_md_name(name)
+        target_path = os.path.dirname(os.path.join(hub_dir, uid))
+        _create_if_not_exist(target_path)
+        md_path = _get_md_file(source, uid, md_name, target_path, force_reload)
 
-    if os.path.exists(os.path.expanduser(name)):
-        warnings.warn('Use local network directory, `pretrained` maybe not work.')
-        raise NotImplementedError('Load local path has not be supported.')
-
-    uid, md_name = _get_uid_and_md_name(name)
-    target_path = os.path.dirname(os.path.join(hub_dir, uid))
-    _create_if_not_exist(target_path)
-
-    md_path = _get_md_file(uid, md_name, target_path, force_reload)
     info = CellInfo(md_path)
     basename = os.path.basename(info.repo_link).strip("<>")
     net_dir = os.path.join(target_path, basename)
@@ -220,37 +223,41 @@ def load(name, *args, pretrained=True, force_reload=True, **kwargs):
     if pretrained:
         if not info.asset:
             raise ValueError(f'`pretrained` must be False when {info.name} has no asset.')
-        load_weights(net, handle=name, force_reload=force_reload)
+        param_dict = load_weights(name, source=source, force_reload=force_reload)
+        load_param_into_net(net, param_dict)
     return net
 
 
-def load_weights(network, handle=None, force_reload=True):
+def load_weights(name, source='gitee', force_reload=True):
     """
     Load a model from MindSpore mindspore_hub, with pertained weights.
 
     Args:
-        network (Cell): Cell network.
-        handle (str, optional): Uid or url link. Default: None.
+        name (str): Uid or url of the network.
+        source (str): Whether to parse `name` as gitee model URI, github model URI or local resource. Default: gitee.
         force_reload (bool, optional): Whether to force a fresh download unconditionally. Default: False.
 
+    Returns:
+        param_dict (dict) : Parameter dict for network weights.
+
     Examples:
-        >>> uid = 'mindspore/ascend/1.2/googlenet_v1_cifar10'
-        >>> load_weights(net, handle=uid, force_reload=True)
-        >>> url = 'https://gitee.com/mindspore/hub/tree/master/mshub_res/assets/mindspore/ascend/1.2/googlenet_v1.2_cifar10.md'
-        >>> load_weights(net, handle=url, force_reload=True)
+        >>> uid = 'mindspore/1.3/alexnet_cifar10'
+        >>> param_dict = load_weights(uid, source='gitee', force_reload=True)
+        >>> url = 'https://gitee.com/mindspore/hub/blob/master/mshub_res/assets/mindspore/1.3/alexnet_cifar10.md'
+        >>> param_dict = load_weights(url, source='gitee', force_reload=True)
     """
-    if not isinstance(network, nn.Cell):
-        logger.error("Failed to combine the net and the parameters.")
-        msg = ("Argument net should be a Cell, but got {}.".format(type(network)))
-        raise TypeError(msg)
+    if source == 'local':
+        name = os.path.realpath(os.path.expanduser(name))
+        target_path = os.path.dirname(name)
+        md_path = name
+    else:
+        hub_dir = get_hub_dir()
+        _create_if_not_exist(hub_dir)
+        uid, md_name = _get_uid_and_md_name(name)
+        target_path = os.path.dirname(os.path.join(hub_dir, uid))
+        _create_if_not_exist(target_path)
+        md_path = _get_md_file(source, uid, md_name, target_path, force_reload)
 
-    hub_dir = get_hub_dir()
-    _create_if_not_exist(hub_dir)
-    uid, md_name = _get_uid_and_md_name(handle)
-    target_path = os.path.dirname(os.path.join(hub_dir, uid))
-    _create_if_not_exist(target_path)
-
-    md_path = _get_md_file(uid, md_name, target_path, force_reload)
     cell = CellInfo(md_path)
 
     download_url = cell.asset[cell.asset_id]['asset-link'].strip("<>")
@@ -265,4 +272,4 @@ def load_weights(network, handle=None, force_reload=True):
             ckpt_path = _download_file_from_url(download_url, asset_sha256, target_path)
 
     param_dict = load_checkpoint(ckpt_path)
-    load_param_into_net(network, param_dict)
+    return param_dict

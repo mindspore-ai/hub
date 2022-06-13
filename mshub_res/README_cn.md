@@ -17,17 +17,17 @@ MindSpore Hub网站将在24小时内更新。
 
 ### UID
 
-模型UID是一个字母数字令牌，格式为``发布者/后端/MindSpore版本/Markdown文件名``，其中``Markdown文件名``由``[模型名称]_[模型版本]_[数据集]``组成，可以是``hub.load``接口的输入。
+模型UID是一个字母数字令牌，格式为``发布者/MindSpore版本/Markdown文件名``，其中``Markdown文件名``由``[模型名称]_[数据集]``组成，可以是``hub.load``接口的输入。
 
 示例：
 
 | UID | URL |
 | ------ | --- |
-| mindspore/ascend/1.0/alexnet_v1_cifar10 | https://gitee.com/mindspore/hub/blob/master/mshub_res/assets/mindspore/ascend/1.0/alexnet_v1_cifar10.md |
+| mindspore/1.6/alexnet_cifar10 | https://gitee.com/mindspore/hub/blob/master/mshub_res/assets/mindspore/1.6/alexnet_cifar10.md |
 
 | UID | 代码仓路径 |
 | --- | ---      |
-|mindspore/ascend/1.0/alexnet_v1_cifar10 | [repo_root]/mshub_res/assets/mindspore/ascend/1.0/alexnet_v1_cifar10.md |
+| mindspore/1.6/alexnet_cifar10 | [repo_root]/mshub_res/assets/mindspore/1.6/alexnet_cifar10.md |
 
 ### 模型存储、模型缓存和优化
 
@@ -97,7 +97,7 @@ def create_network(name, *args, **kwargs):
 
 ### 资料文档
 
-#### [模型名称]\_[模型版本]\_[数据集].md
+#### [模型名称]\_[数据集].md
 
 如果您想在MindSpore Model Hub中发布模型，请提交一个拉取请求，以及一个Markdown文件。
 这个Markdown文件包含两部分，第一部分是模型的元信息，包括代码仓链接和二进制文件链接。这些信息将在MindSpore Hub网站中显示。第二部分是在MindSpore Hub网站的详情页显示的详细信息。
@@ -115,11 +115,11 @@ Markdown文件中的内容应与示例文件保持一致。例如，我们使用
 
 1. 找到资源下发布者的目录，例如`.../assets/publisher/...`。
 
-2. 找到发布者对应不同后端和MindSpore版本的目录，例如`.../assets/mindspore/ascend/1.0/...`
+2. 找到发布者对应不同后端和MindSpore版本的目录，例如`.../assets/mindspore/1.6/...`
 
 3. 在这个目录下放一个.md结尾的Markdown文件。
 
-``.../assets/mindspore/ascend/1.0/alexnet_v1_cifar10.md``
+``.../assets/mindspore/1.6/alexnet_cifar10.md``
 
 #### 资源文件夹结构
 
@@ -127,12 +127,10 @@ Markdown文件中的内容应与示例文件保持一致。例如，我们使用
 assets
 |────publisher
 |      └──publisher_intro.md
-|      └──ascend
-|      |   └──1.0
-|      └──gpu
-|          └──1.0
-|              └──[model_name]_[model_version]_[dataset].md
-|              └──[model_name2]_[model_version2]_[dataset2].md
+|      └──1.5
+|      └──1.6
+|          └──[model_name]_[dataset].md
+|          └──[model_name2]_[dataset2].md
 ```
 
 ### 提交
@@ -159,24 +157,20 @@ python mshub_res/tools/md_validator.py
 assets
 |────publisher
 |      └──publisher_intro.md
-|      └──ascend
-|      |   └──1.0
-|      └──gpu
-|      |   └──1.0
-|      |       └──[model_name]_[model_version]_[dataset].md
-|      |       └──[model_name2]_[model_version2]_[dataset2].md
+|      └──1.5
+|      └──1.6
+|      |   └──[model_name]_[dataset].md
+|      |   └──[model_name2]_[dataset2].md
 |      └──static
 |          └──images
 |               └──image1.jpg
 |
 |────publisher2
 |      └──publisher_intro.md
-|      └──ascend
-|      |   └──1.0
-|      └──gpu
-|      |   └──1.0
-|      |       └──[model_name]_[model_version]_[dataset].md
-|      |       └──[model_name2]_[model_version2]_[dataset2].md
+|      └──1.5
+|      └──1.6
+|      |   └──[model_name]_[dataset].md
+|      |   └──[model_name2]_[dataset2].md
 |      └──static
 |          └──images
 |               └──image1.jpg

@@ -13,16 +13,24 @@
 # limitations under the License.
 # ============================================================================
 """test load"""
+
+# import ssl
 import pytest
 from mindspore_hub import load
+
+# ssl._create_default_https_context = ssl._create_unverified_context
 
 
 class TestLoad:
     """Test load function."""
     def test_load(self):
-        """Test normal cases."""
-        names = ('mindspore/ascend/0.7/lenet_v1_mnist',
-                 'https://www.mindspore.cn/resources/hub/mindspore/ascend/0.7/lenet_v1_mnist')
+        """
+        Feature: Test normal cases.
+        Description: mindspore_hub.load function
+        Expectation: success.
+        """
+        names = ('mindspore/1.6/lenet_mnist',
+                 'https://gitee.com/mindspore/hub/blob/master/mshub_res/assets/mindspore/1.6/lenet_mnist.md')
         pretraineds = (True, False)
         force_reloads = (True, False)
         for name in names:
@@ -31,26 +39,34 @@ class TestLoad:
                     load(name, 10, pretrained=pretrained, force_reload=force_reload)
 
     def test_load_name(self):
-        """Test wrong name."""
+        """
+        Feature: Test wrong name.
+        Description: mindspore_hub.load function
+        Expectation: ValueError or Exception.
+        """
         with pytest.raises(ValueError):
             load('https://www.baidu.com')
 
-        with pytest.raises(ValueError):
+        with pytest.raises(Exception):
             load('test/test/test')
 
         with pytest.raises(Exception):
-            load('mindspore/gpu/0.6/test')
+            load('mindspore/1.6/test')
 
         with pytest.raises(Exception):
             load('https://gitee.com/mindspore/hub/raw/master/mshub_res/assets/mindspore')
 
     def test_load_type(self):
-        """Test wrong type."""
+        """
+        Feature: Test wrong type.
+        Description: args: name, pretrained, force_reload
+        Expectation: TypeError.
+        """
         name = 1
         with pytest.raises(TypeError):
             load(name)
 
-        name = 'mindspore/ascend/0.7/googlenet_v1_cifar10'
+        name = 'mindspore/1.3/googlenet_cifar10'
         pretrained = 'True'
         with pytest.raises(TypeError):
             load(name, pretrained=pretrained)

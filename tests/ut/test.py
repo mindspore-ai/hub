@@ -24,10 +24,22 @@ from mindspore_hub._utils.auto_rename import auto_rename
 from mindspore_hub.load import load_weights
 from mindspore_hub.load import _get_network_from_cache
 
-def test_check_md(file_path='../mshub_res/assets/mindspore/gpu/1.0/googlenet_v1_cifar10.md'):
+
+def test_check_md(file_path='../mshub_res/assets/mindspore/1.3/googlenet_cifar10.md'):
+    """
+    Feature: Check markdown file.
+    Description: file_path, mindspore/1.3/googlenet_cifar10.md
+    Expectation: success.
+    """
     ValidMarkdown(file_path).check_markdown_file()
 
-def test_check_md_of_dir(check_dir='../mshub_res/assets/mindspore/gpu/1.0/'):
+
+def test_check_md_of_dir(check_dir='../mshub_res/assets/mindspore/1.3/'):
+    """
+    Feature: Check markdown file if dir.
+    Description: check_dir, mindspore/1.3/
+    Expectation: success.
+    """
     check_dir = os.path.join(check_dir, '*.md')
     for each_file in glob.glob(check_dir):
         # Skip documentation
@@ -35,23 +47,35 @@ def test_check_md_of_dir(check_dir='../mshub_res/assets/mindspore/gpu/1.0/'):
             continue
         ValidMarkdown(each_file).check_markdown_file()
 
+
 def test_check_all_md_of_dir(check_dir='../mshub_res/assets/'):
-    """check all markdown files of dir."""
+    """
+    Feature: Check all markdown files of dir.
+    Description: check_dir, /mshub_res/assets/
+    Expectation: success.
+    """
     skip_check_list = ['README_CN.md', 'README.md']
+
     def record(folder, md_list):
         for name in os.listdir(folder):
             if os.path.isdir(os.path.join(folder, name)):
                 record(os.path.join(folder, name), md_list)
             elif name.endswith('.md') and name not in skip_check_list:
                 md_list.append(os.path.join(folder, name))
+
     markdown_list = []
     record(check_dir, markdown_list)
     for each_file in markdown_list:
         ValidMarkdown(each_file).check_markdown_file()
 
+
 def test_download_ckpt():
-    """test download ckpt."""
-    md_path = '../mshub_res/assets/mindspore/gpu/1.0/googlenet_v1_cifar10.md'
+    """
+    Feature: Test download ckpt.
+    Description: _download_file_from_url function
+    Expectation: success.
+    """
+    md_path = '../mshub_res/assets/mindspore/1.3/googlenet_cifar10.md'
     cell = CellInfo("googlenet")
     cell.update(md_path)
 
@@ -65,14 +89,25 @@ def test_download_ckpt():
 
 
 def test_download_repo():
+    """
+    Feature: Test download repo link.
+    Description: _download_repo_from_url function
+    Expectation: success.
+    """
     git_url = 'https://gitee.com/mindspore/models/tree/master/official/cv/googlenet'
     set_hub_dir('.cache')
     path = get_hub_dir()
     ret = _download_repo_from_url(git_url, path)
     assert ret
 
+
 def test_download_repo_of_dir():
-    md_path = '../mshub_res/assets/mindspore/gpu/1.0/googlenet_v1_cifar10.md'
+    """
+    Feature: Test download repo link of dir.
+    Description: _download_repo_from_url function
+    Expectation: success.
+    """
+    md_path = '../mshub_res/assets/mindspore/1.3/googlenet_cifar10.md'
     cell = CellInfo("googlenet")
     cell.update(md_path)
 
@@ -82,34 +117,52 @@ def test_download_repo_of_dir():
     ret = _download_repo_from_url(git_url, path)
     assert ret
 
+
 def test_load_weights_input_uid():
-    """test load_weights."""
+    """
+    Feature: Test load_weights.
+    Description: load_weights function
+    Expectation: success.
+    """
     set_hub_dir('.cache')
     path = get_hub_dir()
 
     repo_link = 'https://gitee.com/mindspore/models/tree/master/official/cv/googlenet'
     _download_repo_from_url(repo_link, path)
 
-    net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
-    load_weights(net, handle='mindspore/ascend/1.0/googlenet_v1_cifar10', force_reload=True)
+    net = _get_network_from_cache('GoogleNet', path + '/googlenet', 10)
+    # handle = 'mindspore/1.3/googlenet_cifar10'
+    load_weights(net, source='gitee', force_reload=True)
     print(net)
+
 
 def test_load_weights_input_url():
-    """test load_weights."""
+    """
+    Feature: Test load_weights.
+    Description: load_weights function
+    Expectation: success.
+    """
     set_hub_dir('.cache')
     path = get_hub_dir()
 
     repo_link = 'https://gitee.com/mindspore/models/tree/master/official/cv/googlenet'
     _download_repo_from_url(repo_link, path)
 
-    net = _get_network_from_cache('GoogleNet', path+'/googlenet', 10)
-    load_weights(net, handle='https://hub.mindspore.com/mindspore/ascend/1.0/googlenet_v1_cifar10', force_reload=True)
+    net = _get_network_from_cache('GoogleNet', path + '/googlenet', 10)
+    # handle = 'https://hub.mindspore.com/mindspore/1.3/googlenet_cifar10'
+    load_weights(net, source='gitee', force_reload=True)
     print(net)
 
+
 def test_auto_rename():
+    """
+    Feature: Test auto_rename.
+    Description: load_weights function
+    Expectation: success.
+    """
     test_download_ckpt()
     source_file_path = '.cache/googlenet.ckpt'
     save_path = './cache1'
-    md_path = '../mshub_res/assets/mindspore/gpu/1.0/googlenet_v1_cifar10.md'
+    md_path = '../mshub_res/assets/mindspore/1.3/googlenet_v1_cifar10.md'
     des_file_path = auto_rename(source_file_path, save_path, md_path)
     assert os.path.exists(des_file_path)

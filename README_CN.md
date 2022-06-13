@@ -74,7 +74,7 @@ MindSpore Hub是MindSpore生态的预训练模型应用工具，作为模型开�
 
    ```python
    import mindspore_hub as mshub
-   model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10", num_classes=10)
+   model = mshub.load("mindspore/1.6/googlenet_cifar10", num_classes=10)
    ```
 
 ## 快速入门
@@ -124,5 +124,5 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 import mindspore_hub as mshub
-model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10", num_classes=10)
+model = mshub.load("mindspore/1.6/googlenet_cifar10", num_classes=10)
 ```

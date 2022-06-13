@@ -12,29 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ============================================================================
-"""Manage network in mindspore_hub."""
+"""test list"""
 
-import os
-
-CACHE_DIR = '~/.mscache'
+from mindspore_hub import hub_list
 
 
-def set_hub_dir(dir_path='~/.mscache'):
-    """
-    Set the path of cache.
+class TestLoad:
+    """Test list function."""
 
-    Args:
-        dir (str): The path of cache.
-    """
-    global CACHE_DIR
-    CACHE_DIR = dir_path
-
-
-def get_hub_dir():
-    """
-    Get the path of cache.
-
-    Returns:
-        str, return a string of path.
-    """
-    return os.path.abspath(os.path.expanduser(CACHE_DIR))
+    def test_list(self):
+        """
+        Feature: Test normal cases.
+        Description: mindspore_hub.list function
+        Expectation: success.
+        """
+        versions = (None, 'master', 'r1.6')
+        force_reloads = (True, False)
+        for version in versions:
+            for force_reload in force_reloads:
+                hub_list(version, force_reload)
