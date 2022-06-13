@@ -1,10 +1,10 @@
-# Neighbor2Neighbor
+# fastscnn
 
 ---
 
-model-name: Neighbor2Neighbor
+model-name: fastscnn
 
-backbone-name: Neighbor2Neighbor
+backbone-name: fastscnn
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: kodak
+train-dataset: cityscapes
 
-evaluation: PSNR32.0 | SSIM0.875
+evaluation: mIoU54.84
 
 author: MindSpore team
 
 update-time: 2022-06-06
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/Neighbor2Neighbor>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/fastscnn>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/neighbor2neighbor_ascend_v160_kodak_research_cv_PSNR32.0_SSIM0.875.ckpt>
-    asset-sha256: d99d97edf7e4d2544294da536e2b38d920aa67fec7697c5671d734c063bf7704
+    asset-link: <https://download.mindspore.cn/models/r1.6/fastscnn_ascend_v160_cityscapes_official_cv_mIoU54.84.ckpt>
+    asset-sha256: 4529bc0f99b9c689a4ea097711374d1bf7d9146714d0042b8592575c71415139
 
 license: Apache2.0
 
-summary: Neighbor2Neighbor is used for cv
+summary: fastscnn is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of Neighbor2Neighbor from the MindSpore model zoo on Gitee at research/cv/Neighbor2Neighbor.
+This MindSpore Hub model uses the implementation of fastscnn from the MindSpore model zoo on Gitee at official/cv/fastscnn.
 
-Neighbor2Neighbor is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/Neighbor2Neighbor](https://gitee.com/mindspore/models/blob/r1.6/research/cv/Neighbor2Neighbor/README_CN.md).
+fastscnn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/fastscnn](https://gitee.com/mindspore/models/blob/r1.6/official/cv/fastscnn/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Huang T , Li S , Jia X , et al. Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images[J]. 2021.
+Poudel R , Liwicki S , Cipolla R . Fast-SCNN: Fast Semantic Segmentation Network[J]. 2019.
 
 ## Disclaimer
 

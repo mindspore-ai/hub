@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: MattingHumanDatasets
 
-evaluation: avesad5.47
+evaluation: avesad5.49
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-06-06
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/semantic_human_matting>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/semantichumanmatting_ascend_v160_MattingHumanDatasets_official_cv_avesad5.47.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/semantichumanmatting_ascend_v160_MattingHumanDatasets_official_cv_avesad5.49.ckpt>
     asset-sha256: 1a11ded55674d2757cf16e6d4001c724ff16824a6a22d973485d352b3df2e8c6
 
 license: Apache2.0
