@@ -12,8 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ============================================================================
-"""MindSpore Hub is a pre-trained model application tool of the MindSpore ecosystem, serving as a channel for model developers and application developers."""
+"""MindSpore Hub is a pre-trained model application tool of the MindSpore ecosystem,
+serving as a channel for model developers and application developers."""
 
 from .load import load
+from .list import hub_list
 
-__all__ = ['load']
+__all__ = ['load', 'hub_list']

@@ -1,0 +1,10 @@
+# Python files
+*__pycache__*
+.pytest_cache
+
+# Mac files
+*.DS_Store
+
+# Editor
+.vscode
+.idea/

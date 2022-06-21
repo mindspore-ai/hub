@@ -31,6 +31,7 @@ class UrlInfo:
         self.ip = socket.gethostbyname(parsed.netloc)
         self.path = parsed.path
 
+
 def _get_whitelist_info():
     global _WHITE_LIST_INFO
     if _WHITE_LIST_INFO is None:
@@ -39,6 +40,7 @@ def _get_whitelist_info():
             info = UrlInfo(url)
             _WHITE_LIST_INFO.add(info)
     return _WHITE_LIST_INFO
+
 
 def verify_url(url):
     """

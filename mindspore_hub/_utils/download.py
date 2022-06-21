@@ -275,7 +275,12 @@ def _download_file_from_url(url, hash_sha256=None, save_path=get_hub_dir()):
     # Check file size
     # Get file size and turn the file size to Mb format
     file_size = os.path.getsize(file_path)
-    print('File size = %.2f Mb' % (file_size / 1024 / 1024))
+    if file_size < 1024 * 10:
+        print('File size = %.2f kb' % (file_size / 1024))
+    elif file_size < 1024 * 1024 * 1024:
+        print('File size = %.2f Mb' % (file_size / 1024 / 1024))
+    else:
+        print('File size = %.2f Gb' % (file_size / 1024 / 1024 / 1024))
     # Start check
     if file_size > MAX_FILE_SIZE:
         os.remove(file_path)

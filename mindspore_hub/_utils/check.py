@@ -27,40 +27,28 @@ import yaml
 import mistune
 from mindspore_hub._utils.download import get_repo_info_from_url
 from mindspore_hub._utils.whitelist import verify_url
+from mindspore_hub._utils.valid_dataset import _valid_dataset
 
 
 class ValidMarkdown:
     r"""
     Check MarkDown files in hub and extract info.
     """
+
     def __init__(self, filename):
         self.filename = filename
-        self.required_user_fields = ['backbone-name', 'module-type', 'fine-tunable', 'input-shape', 'model-version',
-                                     'author', 'update-time', 'repo-link', 'user-id', 'used-for', 'infer-backend',
+        self.required_user_fields = ['backbone-name', 'module-type', 'fine-tunable', 'model-version',
+                                     'author', 'update-time', 'repo-link', 'user-id', 'used-for',
                                      'mindspore-version', 'license', 'summary']
         self.optional_backend_fields = 'train-backend'
         self.optional_image_fields = ['featured-image']
         self.optional_accuracy_field = 'accuracy'
+        self.optional_evaluation_field = 'evaluation'
         self.optional_allow_cache_ckpt_field = 'allow-cache-ckpt'
 
-        self.valid_module_type = ['gnn', 'rl', 'audio', 'cv', 'nlp', 'recommend', 'cross', 'other']
-        self.valid_train_dataset = ['lsun', 'pemsd7m', 'baiduzijianshujuji', 'dbpedia', 'muti30k', 'ms1mv2',
-                                    "facades", "sony", "cityscapes", "lsunbedrooms",
-                                    'celeba', 'widerface', 'cifar10', 'cifar100', 'zh-wiki',
-                                    'Gigaword corpus', 'captcha 0.1.1',
-                                    'sentence', 'sst2', 'zhwiki', 'citeseer', 'imagenet2017', "icpr2018",
-                                    "apple2orange", "apple2orange", "horse2zebra", "horse2zebra", "atis_intent",
-                                    "mrda", "swda", "udc", "baidu", "cub200", "KingsCollege", "StMarysChurch",
-                                    "omniglot", "sop", "coc02017", 'movilensd', 'Criteo', 'voc2012',
-                                    'musictag', 'yelp', 'movilens', 'subj', 'criteio',
-                                    'amazonbeauty', 'voc2017', 'mr', 'icdar', 'wmtende',
-                                    'MJSynth', 'Speech Commands Version1', 'MagnaTagATune', 'ml-1m', 'wmtende',
-                                    'imagenet2012', 'cora', 'icdar2015', 'coco2014',
-                                    'captcha', 'coco2017', 'dpbedia', 'imagenet', 'isbi', 'cn-wiki',
-                                    'openimage', 'Oxford-IIIT Pet', 'mnist', 'MLPerf v0.7 dataset', "agnews",
-                                    "movielens", "humanface", "dbpedia", "muti30k", "fsns", "gigaword", "openweb",
-                                    "criteo", "3datasets", "mindlarge", "outbrain", "gym", "luna16", "aclimdbv1",
-                                    "speech", 'Rain100L', 'Set14', 'Set5', 'en-wiki', 'CC3M', 'COCO Captions', 'AIC']
+        self.valid_module_type = ['gnn', 'rl', 'audio', 'cv', 'cvtmodel', 'nlp',
+                                  'recommend', 'cross', 'hpc', 'mm', 'other']
+        self.valid_train_dataset = _valid_dataset
         self.valid_file_format = ['air', 'ckpt', 'onnx', 'mindir', 'mslite']
         self.valid_used_for = ['inference', 'extract-feature', 'transfer-learning']
         self.valid_backend = ['cpu', 'gpu', 'ascend']
@@ -103,9 +91,14 @@ class ValidMarkdown:
         r"""
         Only allow train_dataset in predefined set
         """
-        if train_dataset not in self.valid_train_dataset:
-            raise ValueError('train_dataset ``{}`` is not valid in {}. Choose from {}'
-                             .format(train_dataset, self.filename, self.valid_train_dataset))
+        if '_' in train_dataset:
+            datasets = train_dataset.split('_')
+        else:
+            datasets = [train_dataset]
+        for dataset_item in datasets:
+            if dataset_item not in self.valid_train_dataset:
+                raise ValueError('train_dataset ``{}`` is not valid in {}. Choose from {}'
+                                 .format(train_dataset, self.filename, self.valid_train_dataset))
 
     def _validate_file_format(self, file_format):
         r"""
@@ -151,8 +144,7 @@ class ValidMarkdown:
         r"""
         Make sure reference image exists in images/
         """
-        images = [os.path.basename(i) for i in glob.glob('images/*')] \
-                 + ['no-image']
+        images = [os.path.basename(i) for i in glob.glob('images/*')] + ['no-image']
         if image_name not in images:
             raise ValueError('Image ``{}`` referenced in {} not found in images/'
                              .format(image_name, self.filename))
@@ -169,17 +161,10 @@ class ValidMarkdown:
         if not isinstance(header['fine-tunable'], bool):
             raise TypeError("`fine-tunable` must be `bool`, but got {}".format(header['fine-tunable']))
 
-        if not isinstance(header['input-shape'], list):
-            raise TypeError("`input-shape` must be `list` of `int`, but got {}".format(header['input-shape']))
-        for i in header['input-shape']:
-            if not isinstance(i, int) and not isinstance(i, list):
-                raise TypeError("`input-shape` must be `list` of `int`, but got {}".format(header['input-shape']))
-
         self._validate_repo_link(header['repo-link'])
         if header.get('train-dataset', None):
             self._validate_train_dataset(header['train-dataset'])
         self._validate_used_for(header['used-for'])
-        self._validate_backend(header['infer-backend'])
         self._validate_module_type(header['module-type'])
         if header.get('asset', None):
             self._validate_asset(header['asset'])
@@ -198,11 +183,8 @@ class ValidMarkdown:
                 raise TypeError("`allow-cache-ckpt` must be `bool`, but got {}".
                                 format(header[self.optional_allow_cache_ckpt_field]))
 
-        if self.optional_backend_fields in header.keys():
-            self._validate_backend(header[self.optional_backend_fields])
-
         for k in header.keys():
-            if k not in ('repo-link', 'asset'):
+            if k not in ('repo-link', 'asset', 'evaluation'):
                 self._no_extra_colon(k, header[k])
 
     def _no_extra_colon(self, field, value):
@@ -248,6 +230,8 @@ class ValidMarkdown:
                         header_read = not header_read
                         flag_num += 1
                         continue
+                    if 'evaluation: -' in line:
+                        line = line.replace('-', 'no')
                     if header_read:
                         header += [line]
                     else:

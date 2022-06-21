@@ -73,7 +73,7 @@ Install MindSpore Hub using `pip` command. `hub` depends on the MindSpore versio
 
    ```python
    import mindspore_hub as mshub
-   model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10", num_classes=10)
+   model = mshub.load("mindspore/1.6/googlenet_v1_cifar10", num_classes=10)
    ```
 
 ## Quickstart
@@ -121,5 +121,5 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 import mindspore_hub as mshub
-model = mshub.load("mindspore/ascend/0.7/googlenet_v1_cifar10", num_classes=10)
+model = mshub.load("mindspore/1.6/googlenet_cifar10", num_classes=10)
 ```

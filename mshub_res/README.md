@@ -17,17 +17,17 @@ All the Model committed to the MindSpore Hub should use the Apache 2.0 License
 
 ### UID
 
-Model uid is alphanumeric token, in the pattern of ``publisher/backend/mindspore_version/markdown_file_name``, in which ``markdown_file_name`` is consisted of ``[model_name]_[model_version]_[dataset]``. Which could be the input of the ``hub.load`` interface.
+Model uid is alphanumeric token, in the pattern of ``publisher/mindspore_version/markdown_file_name``, in which ``markdown_file_name`` is consisted of ``[model_name]_[dataset]``. Which could be the input of the ``hub.load`` interface.
 
 See example below:
 
 | UID | Url |
 | ------ | --- |
-| mindspore/ascend/1.0/alexnet_v1_cifar10 | https://gitee.com/mindspore/hub/blob/master/mshub_res/assets/mindspore/ascend/1.0/alexnet_v1_cifar10.md |
+| mindspore/1.6/alexnet_cifar10 | https://gitee.com/mindspore/hub/blob/master/mshub_res/assets/mindspore/1.6/alexnet_cifar10.md |
 
 | UID | repo_path|
 | --- | ---      |
-|mindspore/ascend/1.0/alexnet_v1_cifar10 | [repo_root]/mshub_res/assets/mindspore/ascend/1.0/alexnet_v1_cifar10.md |
+| mindspore/1.6/alexnet_cifar10 | [repo_root]/mshub_res/assets/mindspore/1.6/alexnet_cifar10.md |
 
 ### Model storage and Model Cache/Optimization
 
@@ -97,7 +97,7 @@ def create_network(name, *args, **kwargs):
 
 ### Documentation
 
-#### [model_name]\_[model_version]\_[dataset].md
+#### [model_name]\_[dataset].md
 
 If you want to publish your model in MindSpore Model Hub, you should commit a pull request, along with a markdown file.
 This markdown file can be split into two parts, first one is the meta information of the model, including the repo link and binary file link, these information will be shown in the MindSpore Hub Website. Second one is the detail information will be shown in the detail page in MindSpore Hub Website. You should make sure your Usage section can be run.
@@ -115,10 +115,10 @@ The ``asset`` item is the list of dicts. So you should total use the same patter
 1. It has to be submitted inside the publisher directory,
    e.g. `.../assets/publisher/...`.
 2. It has to be submitted inside the publisher directory, under the folder of specific backend and mindspore version
-   e.g. `.../assets/mindspore/ascend/1.0/...`
+   e.g. `.../assets/mindspore/1.6/...`
 3. It has to end with `.md`.
 
-``.../assets/mindspore/ascend/1.0/alexnet_v1_cifar10.md``
+``.../assets/mindspore/1.6/alexnet_cifar10.md``
 
 #### Assets folder structure
 
@@ -126,12 +126,10 @@ The ``asset`` item is the list of dicts. So you should total use the same patter
 assets
 |────publisher
 |      └──publisher_intro.md
-|      └──ascend
-|      |   └──1.0
-|      └──gpu
-|          └──1.0
-|              └──[model_name]_[model_version]_[dataset].md
-|              └──[model_name2]_[model_version2]_[dataset2].md
+|      └──1.5
+|      └──1.6
+|          └──[model_name]_[dataset].md
+|          └──[model_name2]_[dataset2].md
 ```
 
 ### Submission
@@ -158,24 +156,20 @@ You can add some images as static file in your pull request for showing in the m
 assets
 |────publisher
 |      └──publisher_intro.md
-|      └──ascend
-|      |   └──1.0
-|      └──gpu
-|      |   └──1.0
-|      |       └──[model_name]_[model_version]_[dataset].md
-|      |       └──[model_name2]_[model_version2]_[dataset2].md
+|      └──1.5
+|      └──1.6
+|      |   └──[model_name]_[dataset].md
+|      |   └──[model_name2]_[dataset2].md
 |      └──static
 |          └──images
 |               └──image1.jpg
 |
 |────publisher2
 |      └──publisher_intro.md
-|      └──ascend
-|      |   └──1.0
-|      └──gpu
-|      |   └──1.0
-|      |       └──[model_name]_[model_version]_[dataset].md
-|      |       └──[model_name2]_[model_version2]_[dataset2].md
+|      └──1.5
+|      └──1.6
+|      |   └──[model_name]_[dataset].md
+|      |   └──[model_name2]_[dataset2].md
 |      └──static
 |          └──images
 |               └──image1.jpg
