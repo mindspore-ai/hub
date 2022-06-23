@@ -18,6 +18,7 @@ import os
 import shutil
 import zipfile
 import tarfile
+import tempfile
 import re
 import subprocess
 import hashlib
@@ -25,22 +26,20 @@ import errno
 import stat
 import urllib
 from urllib.request import urlretrieve, HTTPError, URLError
-from tempfile import TemporaryDirectory
 from mindspore_hub.manage import get_hub_dir
-
 
 REPO_INFO_LEN = 5
 REAL_PATH = os.path.split(os.path.realpath(__file__))[0]
 SPARSE_SHELL_PATH = os.path.join(REAL_PATH, "sparse_download.sh")
 FULL_SHELL_PATH = os.path.join(REAL_PATH, "full_download.sh")
-MAX_FILE_SIZE = 5 * 1024 * 1024 * 1024 # 5GB
+MAX_FILE_SIZE = 5 * 1024 * 1024 * 1024  # 5GB
 SUFFIX_LIST = ['.ckpt', '.air', '.geir', '.meta', '.onnx', '.md']
 
 
 def handle_remove_read_only(func, path, exc):
     exc_value = exc[1]
     if func in (os.rmdir, os.remove, os.unlink) and exc_value.errno == errno.EACCES:
-        os.chmod(path, stat.S_IRWXU| stat.S_IRWXG| stat.S_IRWXO) # 0777
+        os.chmod(path, stat.S_IRWXU | stat.S_IRWXG | stat.S_IRWXO)  # 0777
         func(path)
 
 
@@ -161,7 +160,6 @@ def _download_repo_from_url(url, path=get_hub_dir()):
     _create_path_if_not_exists(path)
 
     repo_infos = get_repo_info_from_url(url)
-
     arg = dict()
     arg["bash"] = "bash"
     arg["git_ssh"] = repo_infos["git_ssh"]
@@ -170,7 +168,7 @@ def _download_repo_from_url(url, path=get_hub_dir()):
     arg["branch"] = repo_infos["branch"]
     is_repo = repo_infos["is_repo"]
 
-    with TemporaryDirectory() as git_dir:
+    with tempfile.TemporaryDirectory() as git_dir:
         arg["git_dir"] = git_dir
 
         # is repo or dir of repo
@@ -188,7 +186,7 @@ def _download_repo_from_url(url, path=get_hub_dir()):
 
 def extract_file(file_path, dst):
     """
-    Extrace file to specified path.
+    Extract file to specified path.
 
     Args:
         file_path (str): The path of compressed file.
