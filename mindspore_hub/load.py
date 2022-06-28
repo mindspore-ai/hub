@@ -28,7 +28,7 @@ import tempfile
 from mindspore import nn
 from mindspore.train.serialization import load_checkpoint, load_param_into_net
 from .info import CellInfo
-from ._utils.download import _download_file_from_url, _download_repo_from_url # url_exist
+from ._utils.download import _download_file_from_url, _download_repo_from_url  # url_exist
 from .manage import get_hub_dir
 
 HUB_CONFIG_FILE = 'mindspore_hub_conf.py'
@@ -206,12 +206,13 @@ def load(name, *args, source='gitee', pretrained=True, force_reload=True, **kwar
     info = CellInfo(md_path)
     basename = os.path.basename(info.repo_link).strip("<>")
     net_dir = os.path.join(target_path, basename)
+    hub_dir = get_hub_dir()
 
     if force_reload or (not os.path.isdir(net_dir)):
         if not force_reload:
             print(f'Warning. Can\'t find net cache, will reloading.')
         _create_if_not_exist(os.path.dirname(net_dir))
-        tmp_dir = tempfile.TemporaryDirectory(dir=get_hub_dir())
+        tmp_dir = tempfile.TemporaryDirectory(dir=hub_dir)
         _download_repo_from_url(info.repo_link, tmp_dir.name)
         _delete_if_exist(net_dir)
         os.rename(os.path.join(tmp_dir.name, basename), net_dir)

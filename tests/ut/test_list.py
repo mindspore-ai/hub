@@ -26,7 +26,7 @@ class TestLoad:
         Description: mindspore_hub.list function
         Expectation: success.
         """
-        versions = (None, 'master', 'r1.6')
+        versions = (None, 'master')
         force_reloads = (True, False)
         for version in versions:
             for force_reload in force_reloads:

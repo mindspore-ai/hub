@@ -24,6 +24,7 @@ import tempfile
 import subprocess
 from ._utils.download import _download_repo_from_url
 from .manage import get_hub_dir
+from .load import _create_if_not_exist
 
 HUB_CONFIG_FILE = 'mindspore_hub_conf.py'
 ENTRY_POINT = 'create_network'
@@ -72,6 +73,7 @@ def hub_list(version=None, force_reload=True):
     if force_reload or (not os.path.isdir(res_dir)):
         if not force_reload:
             print(f'Warning. Can\'t find net cache, will reloading.')
+        _create_if_not_exist(os.path.dirname(res_dir))
         tmp_dir = tempfile.TemporaryDirectory(dir=hub_dir)
         _download_repo_from_url(repo_link, tmp_dir.name)
         _delete_if_exist(res_dir)
@@ -89,6 +91,5 @@ def hub_list(version=None, force_reload=True):
             asset = md_file[:-len('.md')]
             if asset not in assets:
                 assets.append(asset)
-
     assets.sort()
     return assets
