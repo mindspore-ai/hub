@@ -35,7 +35,7 @@ from .manage import get_hub_dir
 
 HUB_CONFIG_FILE = 'mindspore_hub_conf.py'
 ENTRY_POINT = 'create_network'
-HUB_MD_DIR = 'https://gitee.com/mindspore/hub/raw/master/mshub_res/assets/'
+HUB_MD_DIR = 'https://gitee.com/mindspore/hub/raw/r1.6/mshub_res/assets/'
 
 
 def _get_network_from_cache(name, path, *args, **kwargs):
