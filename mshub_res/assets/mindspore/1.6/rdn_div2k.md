@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: div2k
 
-evaluation: psnr38.3 | ssim0.961
+evaluation: PSNR38.2 | SSIM0.9611
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/RDN>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/rdn_ascend_v160_div2k_official_cv_psnr38.3_ssim0.961.ckpt>
-    asset-sha256: 36cbce25c04256f1b0652c3f25ba704faf135dc2ad395020de3b8db7e05e23ef
+    asset-link: <https://download.mindspore.cn/models/r1.6/rdn_ascend_v160_div2k_official_cv_PSNR38.2_SSIM0.9611.ckpt>
+    asset-sha256: 497b58c96ae06c2dc30813a98ddf17dabc8bcad23baa8a546d98fdd09cab4c07
 
 license: Apache2.0
 

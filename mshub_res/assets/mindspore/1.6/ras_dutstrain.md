@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: dutstrain
 
-evaluation: ECSSD91 | DUTStest81 | DUTOMRON75 | HKUIS90
+evaluation: ECSSC91.7 | DUTSTest81.5 | DUTOMRON74.2 | HKUIS90.1
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/ras>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/ras_ascend_v160_dutstrain_research_cv_ECSSD91_DUTStest81_DUTOMRON75_HKUIS90.ckpt>
-    asset-sha256: 01874ed4b95de1e7e08c304bbb8e1ef7158b6b9919f0217c8efdfe9b6c9eca5f
+    asset-link: <https://download.mindspore.cn/models/r1.6/ras_ascend_v160_dutstrain_research_cv_ECSSC91.7_DUTSTest81.5_DUTOMRON74.2_HKUIS90.1.ckpt>
+    asset-sha256: 54bd0ce2ea705da50b83807b7aaa51d956592f556180e8fada1446daa022a20f
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Reverse Attention-Based Residual Network for Salient Object Detection
+https://ieeexplore.ieee.org/abstract/document/8966594
 
 ## Disclaimer
 

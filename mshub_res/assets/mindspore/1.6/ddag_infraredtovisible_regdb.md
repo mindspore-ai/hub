@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: regdb
+train-dataset: rgbdb
 
-evaluation: rank1acc68 | mAP61
+evaluation: rank1acc71.84 | mAP65.0
 
 author: MindSpore team
 
-update-time: 2022-03-30
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/DDAG>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/ddag_infraredtovisible_ascend_v160_regdb_research_cv_rank1acc68_mAP61.ckpt>
-    asset-sha256: 7e35eb2e7b9431df5c776740dde0f7076c98d82c3b814287ffcb72db96f052fe
+    asset-link: <https://download.mindspore.cn/models/r1.6/ddag_infraredtovisible_ascend_v160_regdb_research_cv_rank1acc71.84_mAP65.0.ckpt>
+    asset-sha256: 5f84f21760958dcad1c10d3c9f841a030bf365387bc2149ecbc7c5f087622185
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-*Dynamic Dual-Attentive Aggregation Learning for Visible-Infrared Person Re-Identification* in ECCV 2020
+*Dynamic Dual-Attentive Aggregation Learning for Visible-Infrared Person Re-Identification* in ECCV 2020.
 
 ## Disclaimer
 
