@@ -1,10 +1,14 @@
+# MindSpore
+build/
+output
+
 # Python files
 *__pycache__*
 .pytest_cache
 
-# Mac files
-*.DS_Store
-
 # Editor
 .vscode
 .idea/
+
+# Mac files
+*.DS_Store

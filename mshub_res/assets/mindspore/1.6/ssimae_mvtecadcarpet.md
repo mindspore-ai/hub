@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: mvtecadcarpet
 
-evaluation: ok100 | nok100 | avg83.8
+evaluation: ok98.9 | nok98.9 | avg85.5
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/ssim-ae>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/ssimae_ascend_v160_mvtecadcarpet_official_cv_ok100_nok100_avg83.8.ckpt>
-    asset-sha256: 403ffb10e1497fd5e5dbf4c0116a8cf3f286e5b5954904b443abfad91045fa7f
+    asset-link: <https://download.mindspore.cn/models/r1.6/ssimae_ascend_v160_mvtecadcarpet_official_cv_ok98.9_nok98.9_avg85.5.ckpt>
+    asset-sha256: 55cc9d480881684ebdf692914d90b46547c6d2b95cb01503c1b122f30c04dcfe
 
 license: Apache2.0
 

@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: mvtecadbottle
 
-evaluation: ok98.4 | nok98.4 | avg96.4
+evaluation: ok98.4 | nok98.4 | avg97.6
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/ssim-ae>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/ssimae_ascend_v160_mvtecadbottle_official_cv_ok98.4_nok98.4_avg96.4.ckpt>
-    asset-sha256: af7c607f44ddb8a921a72538308b071416da2d3639121e12bcd0b5725c9fce30
+    asset-link: <https://download.mindspore.cn/models/r1.6/ssimae_ascend_v160_mvtecadbottle_official_cv_ok98.4_nok98.4_avg97.6.ckpt>
+    asset-sha256: 4ae51863ae56e79cf0ae4d3cc746eed6bea5da03b58838636ec7b341e9509bb8
 
 license: Apache2.0
 

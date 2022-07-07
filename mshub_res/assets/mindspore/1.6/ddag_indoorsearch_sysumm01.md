@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: sysumm01
 
-evaluation: rank1acc65.43 | mAP70.52
+evaluation: rank1acc65.47 | mAP69.97
 
 author: MindSpore team
 
-update-time: 2022-05-12
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/DDAG>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/ddag_indoorsearch_ascend_v160_sysumm01_research_cv_rank1acc65.43_mAP70.52.ckpt>
-    asset-sha256: 049c877488fb0d177e9161b09ef977b30bf01147b4f0fc096beb1159d805e5ec
+    asset-link: <https://download.mindspore.cn/models/r1.6/ddag_indoorsearch_ascend_v160_sysumm01_research_cv_rank1acc65.47_mAP69.97.ckpt>
+    asset-sha256: acb4cc606e44f0ac918653a7f8ede0a40c15f719611f7b844084c1daa619c37a
 
 license: Apache2.0
 

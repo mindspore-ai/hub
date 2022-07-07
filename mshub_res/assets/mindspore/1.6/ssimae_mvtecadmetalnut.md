@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: mvtecadmetalnut
 
-evaluation: ok91.4 | nok91.4 | avg77.4
+evaluation: ok80.6 | nok80.6 | avg72.2
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/ssim-ae>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/ssimae_ascend_v160_mvtecadmetalnut_official_cv_ok91.4_nok91.4_avg77.4.ckpt>
-    asset-sha256: 88f0861bf0a915b76afaa1d5f4435e55cd43777f65854f767a6069bae72ebe39
+    asset-link: <https://download.mindspore.cn/models/r1.6/ssimae_ascend_v160_mvtecadmetalnut_official_cv_ok80.6_nok80.6_avg72.2.ckpt>
+    asset-sha256: 98e9a0c832a0fdf1f9ccd59f85a3f35a34ef7a86fd0b16f684f94b41a94d69ef
 
 license: Apache2.0
 

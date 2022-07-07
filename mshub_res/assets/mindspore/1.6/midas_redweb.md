@@ -14,11 +14,11 @@ model-version: 1.6
 
 train-dataset: redweb
 
-evaluation: sintelacc31.30 | tumacc14.57 | kittiacc24.04
+evaluation: Sintel32.43 | TUM14.57 | Kitti24.78
 
 author: MindSpore team
 
-update-time: 2022-04-18
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/midas>
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/midas_ascend_v160_redweb_research_cv_sintelacc31.30_tumacc14.57_kittiacc24.04.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.6/midas_ascend_v160_redweb_research_cv_Sintel32.43_TUM14.57_Kitti24.78.ckpt>
     asset-sha256: a8e090947fb777033547ec7ba00a00d68e691f2a150fb18ca106fde133a0b363
 
 license: Apache2.0
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Towards Robust Monocular Depth Estimation:Mixing Datasets for Zero-shot Cross-dataset Transfer](https://arxiv.org/pdf/1907.01341v3.pdf)
+Ranftl*, Katrin Lasinger*, David Hafner, Konrad Schindler, and Vladlen Koltun.
 
 ## Disclaimer
 

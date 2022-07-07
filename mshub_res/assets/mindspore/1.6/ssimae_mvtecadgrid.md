@@ -18,7 +18,7 @@ evaluation: ok94.7 | nok94.7 | avg96.2
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/ssim-ae>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.6/ssimae_ascend_v160_mvtecadgrid_official_cv_ok94.7_nok94.7_avg96.2.ckpt>
-    asset-sha256: 668a41443ea0f359c67cc983185866a858325b5a0c8ae9b384912e70c4ae0e7b
+    asset-sha256: 198b734df47c398e52fc1b143b6fb8732a4cb35bc9c2d1a80f23b1c2c4e38bfe
 
 license: Apache2.0
 

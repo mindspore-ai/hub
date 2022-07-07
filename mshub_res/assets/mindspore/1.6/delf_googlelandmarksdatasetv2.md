@@ -18,7 +18,7 @@ evaluation: oxford5kmAP89.74 | paris6kmAP84.37
 
 author: MindSpore team
 
-update-time: 2022-06-06
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/cv/delf>
 

@@ -18,7 +18,7 @@ evaluation: ok100 | nok100 | avg61.3
 
 author: MindSpore team
 
-update-time: 2022-04-24
+update-time: 2022-07-04
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.6/official/cv/ssim-ae>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.6/ssimae_ascend_v160_mvtecadcable_official_cv_ok100_nok100_avg61.3.ckpt>
-    asset-sha256: 4716f175e92a2e876a9058ac93dba826c906b8c7dbd03704f57962237262fd03
+    asset-sha256: 5b88daf1135287120815bd8ab11b54fc9aa357b03cd4fe106bf8b32292c7412d
 
 license: Apache2.0
 
