@@ -1,3 +1,23 @@
+# Release 1.8.0
+
+## Major Features and Improvements
+
+* Update 'load' API to support different hub sources, and remove platform from hub name. Use the newly added 'source' parameter to specify the source of the asset, which can be assigned 'gitee' and 'local'.
+* Add 'hub_list' API to list all supported assets.
+* Update version of model assets to 1.8.0.
+
+## Bugfixes
+
+* ...
+
+## Thanks to our Contributors
+
+Thanks goes to these wonderful people:
+fanglei hzf liyanliu96 leonwanghui wuxuejian yanzhenxiang2020 yoonlee666 zhouyaqiang0 zhaoting chenhaozhe1 qiuyunlei zhouyaqiang2 guoqi5 leiyuning zhunaipan peng.yuanpeng steven.dingjian yingjiangyong liangxhao daiyuxin
+...
+
+Contributions of any kind are welcome!
+
 # Release 1.6.0
 
 ## Major Features and Improvements
