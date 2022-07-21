@@ -1,51 +1,51 @@
-# EDCN
+# vgg16
 
 ---
 
-model-name: EDCN
+model-name: vgg16
 
-backbone-name: EDCN
+backbone-name: vgg16
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
-train-dataset: criteo
+train-dataset: cifar10
 
-evaluation: acc80.64
+evaluation: acc93.44
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/vgg16>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/vgg16_ascend_v180_cifar10_official_cv_acc93.44.ckpt>
+    asset-sha256: 0ad3742ac1e20bd06c50fe5bfce0d23e4df3e5baf976e360412093a23546f969
 
 license: Apache2.0
 
-summary: EDCN is used for recommend
+summary: vgg16 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
+This MindSpore Hub model uses the implementation of vgg16 from the MindSpore model zoo on Gitee at official/cv/vgg16.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+vgg16 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/vgg16](https://gitee.com/mindspore/models/blob/r1.8/official/cv/vgg16/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/vgg16_cifar10"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+Simonyan K, zisserman A. Very Deep Convolutional Networks for Large-Scale Image Recognition[J]. arXiv preprint arXiv:1409.1556, 2014.
 
 ## Disclaimer
 

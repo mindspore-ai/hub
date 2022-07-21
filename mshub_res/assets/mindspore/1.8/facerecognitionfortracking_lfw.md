@@ -1,51 +1,51 @@
-# EDCN
+# FaceRecognitionForTracking
 
 ---
 
-model-name: EDCN
+model-name: FaceRecognitionForTracking
 
-backbone-name: EDCN
+backbone-name: FaceRecognitionForTracking
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
-train-dataset: criteo
+train-dataset: lfw
 
-evaluation: acc80.64
+evaluation: FAR0.1recall62
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/FaceRecognitionForTracking>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/facerecognitionfortracking_ascend_v180_lfw_research_cv_FAR0.1recall62.ckpt>
+    asset-sha256: e1ff7aab52774fea4d997b7afb83de5ec3a9aef5f49657111df8d3220c69cf05
 
 license: Apache2.0
 
-summary: EDCN is used for recommend
+summary: FaceRecognitionForTracking is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
+This MindSpore Hub model uses the implementation of FaceRecognitionForTracking from the MindSpore model zoo on Gitee at research/cv/FaceRecognitionForTracking.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+FaceRecognitionForTracking is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/FaceRecognitionForTracking](https://gitee.com/mindspore/models/blob/r1.8/research/cv/FaceRecognitionForTracking/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/facerecognitionfortracking_lfw"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun. "Deep Residual Learning for Image Recognition"
 
 ## Disclaimer
 

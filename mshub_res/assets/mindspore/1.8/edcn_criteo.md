@@ -10,30 +10,30 @@ module-type: recommend
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
 train-dataset: criteo
 
-evaluation: acc80.64
+evaluation: acc81
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/recommend/EDCN>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/edcn_ascend_v180_criteo_research_recommend_acc81.ckpt>
+    asset-sha256: 33a5c3334d3781ac8718e4a3aa442d1c9a1a6813d49d1ff40d3a0e415225229b
 
 license: Apache2.0
 
@@ -45,7 +45,7 @@ summary: EDCN is used for recommend
 
 This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.8/research/recommend/EDCN/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/edcn_criteo"
 network = mshub.load(model)
 network.set_train(False)
 

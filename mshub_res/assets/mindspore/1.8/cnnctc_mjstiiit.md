@@ -1,51 +1,51 @@
-# EDCN
+# cnnctc
 
 ---
 
-model-name: EDCN
+model-name: cnnctc
 
-backbone-name: EDCN
+backbone-name: cnnctc
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
-train-dataset: criteo
+train-dataset: mjstiiit
 
-evaluation: acc80.64
+evaluation: acc85.97
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/cnnctc>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/cnnctc_ascend_v180_mjstiiit_official_cv_acc85.97.ckpt>
+    asset-sha256: 3468204da46492286ed466c9bab9572443b4e7d359396a5e38b42ceb3d0a6c6f
 
 license: Apache2.0
 
-summary: EDCN is used for recommend
+summary: cnnctc is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
+This MindSpore Hub model uses the implementation of cnnctc from the MindSpore model zoo on Gitee at official/cv/cnnctc.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+cnnctc is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/cnnctc](https://gitee.com/mindspore/models/blob/r1.8/official/cv/cnnctc/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/cnnctc_mjstiiit"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+J. Baek, G. Kim, J. Lee, S. Park, D. Han, S. Yun, S. J. Oh, and H. Lee, “What is wrong with scene text recognition model comparisons? dataset and model analysis,” ArXiv, vol. abs/1904.01906, 2019.
 
 ## Disclaimer
 

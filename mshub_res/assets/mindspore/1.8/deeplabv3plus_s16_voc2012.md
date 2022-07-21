@@ -1,51 +1,51 @@
-# EDCN
+# deeplabv3plus
 
 ---
 
-model-name: EDCN
+model-name: deeplabv3plus
 
-backbone-name: EDCN
+backbone-name: deeplabv3plus
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
-train-dataset: criteo
+train-dataset: voc2012
 
-evaluation: acc80.64
+evaluation: s16acc78.68 | s16multiscale79.69 | s16multiscaleflip79.93
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/deeplabv3plus>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/deeplabv3plus_s16_ascend_v180_voc2012_research_cv_s16acc78.68_s16multiscale79.69_s16multiscaleflip79.93.ckpt>
+    asset-sha256: 40799dc071ec20d0376635d2cbe42c00159c594384625d6c33e4c65caa81eab4
 
 license: Apache2.0
 
-summary: EDCN is used for recommend
+summary: deeplabv3plus is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
+This MindSpore Hub model uses the implementation of deeplabv3plus from the MindSpore model zoo on Gitee at research/cv/deeplabv3plus.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+deeplabv3plus is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/deeplabv3plus](https://gitee.com/mindspore/models/blob/r1.8/research/cv/deeplabv3plus/README_CN.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/deeplabv3plus_s16_voc2012"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+Chen, Liang-Chieh, et al. "Encoder-decoder with atrous separable convolution for semantic image segmentation." Proceedings of the European conference on computer vision (ECCV). 2018.
 
 ## Disclaimer
 

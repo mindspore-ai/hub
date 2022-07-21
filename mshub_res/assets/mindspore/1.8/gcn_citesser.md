@@ -1,51 +1,51 @@
-# EDCN
+# gcn
 
 ---
 
-model-name: EDCN
+model-name: gcn
 
-backbone-name: EDCN
+backbone-name: gcn
 
-module-type: recommend
+module-type: gnn
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
-train-dataset: criteo
+train-dataset: citesser
 
-evaluation: acc80.64
+evaluation: acc71.9
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/gnn/gcn>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/gcn_ascend_v180_citesser_official_gnn_acc71.9.ckpt>
+    asset-sha256: 00cc8132de8f255591564040dbd655fc23e5826e0f6e350bd4e20ec85e910bf3
 
 license: Apache2.0
 
-summary: EDCN is used for recommend
+summary: gcn is used for gnn
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
+This MindSpore Hub model uses the implementation of gcn from the MindSpore model zoo on Gitee at official/gnn/gcn.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+gcn is a gnn network. More details please refer to the MindSpore model zoo on Gitee at [official/gnn/gcn](https://gitee.com/mindspore/models/blob/r1.8/official/gnn/gcn/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/gcn_citesser"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+Thomas N. Kipf, Max Welling. 2016. Semi-Supervised Classification with Graph Convolutional Networks. In ICLR 2016.
 
 ## Disclaimer
 
