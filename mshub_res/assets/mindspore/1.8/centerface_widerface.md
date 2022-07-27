@@ -1,51 +1,51 @@
-# EDCN
+# centerface
 
 ---
 
-model-name: EDCN
+model-name: centerface
 
-backbone-name: EDCN
+backbone-name: centerface
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
-train-dataset: criteo
+train-dataset: widerface
 
-evaluation: acc80.64
+evaluation: easy92.4 | medium91.7 | hard77.9
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/centerface>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/centerface_ascend_v180_widerface_official_cv_easy92.4_medium91.7_hard77.9.ckpt>
+    asset-sha256: 9e2809d1561c0450a0ef063cbacd7690f688931a8bce4fdc6579aa26237de908
 
 license: Apache2.0
 
-summary: EDCN is used for recommend
+summary: centerface is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
+This MindSpore Hub model uses the implementation of centerface from the MindSpore model zoo on Gitee at official/cv/centerface.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+centerface is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/centerface](https://gitee.com/mindspore/models/blob/r1.8/official/cv/centerface/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/centerface_widerface"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+CenterFace: Joint Face Detection and Alignment Using Face as Point. Xu, Yuanyuan(Huaqiao University) and Yan, Wan(StarClouds) and Sun, Haixin(Xiamen University) and Yang, Genke(Shanghai Jiaotong University) and Luo, Jiliang(Huaqiao University)
 
 ## Disclaimer
 

@@ -1,51 +1,51 @@
-# EDCN
+# fcn-4
 
 ---
 
-model-name: EDCN
+model-name: fcn-4
 
-backbone-name: EDCN
+backbone-name: fcn-4
 
-module-type: recommend
+module-type: audio
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
-train-dataset: criteo
+train-dataset: musictagging
 
-evaluation: acc80.64
+evaluation: acc90.89
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/audio/fcn-4>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/fcn4_ascend_v180_musictagging_research_audio_acc90.89.ckpt>
+    asset-sha256: bdb7116d2dc25ae80381a882b9d8a75f857e53a920561015e3a9245cf469d284
 
 license: Apache2.0
 
-summary: EDCN is used for recommend
+summary: fcn-4 is used for audio
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
+This MindSpore Hub model uses the implementation of fcn-4 from the MindSpore model zoo on Gitee at research/audio/fcn-4.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+fcn-4 is a audio network. More details please refer to the MindSpore model zoo on Gitee at [research/audio/fcn-4](https://gitee.com/mindspore/models/blob/r1.8/research/audio/fcn-4/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/fcn4_musictagging"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+"Keunwoo Choi, George Fazekas, and Mark Sandler, “Automatic tagging using deep convolutional neural networks,” in International Society of Music Information Retrieval Conference. ISMIR, 2016."
 
 ## Disclaimer
 

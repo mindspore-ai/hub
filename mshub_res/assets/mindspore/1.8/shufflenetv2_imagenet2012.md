@@ -1,51 +1,51 @@
-# EDCN
+# shufflenetv2
 
 ---
 
-model-name: EDCN
+model-name: shufflenetv2
 
-backbone-name: EDCN
+backbone-name: shufflenetv2
 
-module-type: recommend
+module-type: cv
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
-train-dataset: criteo
+train-dataset: imagenet2012
 
-evaluation: acc80.64
+evaluation: top1acc69.49 | top5acc88.65
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/shufflenetv2>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/shufflenetv2_ascend_v180_imagenet2012_official_cv_top1acc69.49_top5acc88.65.ckpt>
+    asset-sha256: fa0df70441b6c7d051f4bd7ade689c63670dd866104a86c1de37c8d4354ca5c2
 
 license: Apache2.0
 
-summary: EDCN is used for recommend
+summary: shufflenetv2 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
+This MindSpore Hub model uses the implementation of shufflenetv2 from the MindSpore model zoo on Gitee at official/cv/shufflenetv2.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+shufflenetv2 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/shufflenetv2](https://gitee.com/mindspore/models/blob/r1.8/official/cv/shufflenetv2/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/shufflenetv2_imagenet2012"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+Ma, N., Zhang, X., Zheng, H. T., & Sun, J. (2018). Shufflenet v2: Practical guidelines for efficient cnn architecture design. In Proceedings of the European conference on computer vision (ECCV) (pp. 116-131).
 
 ## Disclaimer
 

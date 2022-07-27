@@ -1,0 +1,62 @@
+# predrnn++
+
+---
+
+model-name: predrnn++
+
+backbone-name: predrnn++
+
+module-type: cv
+
+fine-tunable: True
+
+model-version: 1.8
+
+train-dataset: movingmnist
+
+evaluation: mse47.9 | ssim0.878
+
+author: MindSpore team
+
+update-time: 2022-07-19
+
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/predrnn++>
+
+user-id: MindSpore
+
+used-for: inference
+
+mindspore-version: 1.8
+
+asset:
+
+-
+    file-format: ckpt
+    asset-link: <https://download.mindspore.cn/models/r1.8/predrnnplusplus_ascend_v180_movingmnist_official_cv_mse47.9_ssim0.878.ckpt>
+    asset-sha256: e91e621f513240dbf5aec744e72c8b99099f7d8298a0d3a0dff9cf723714407b
+
+license: Apache2.0
+
+summary: predrnn++ is used for cv
+
+---
+
+## Introduction
+
+This MindSpore Hub model uses the implementation of predrnn++ from the MindSpore model zoo on Gitee at official/cv/predrnn++.
+
+predrnn++ is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/predrnn++](https://gitee.com/mindspore/models/blob/r1.8/official/cv/predrnn++/README.md).
+
+All parameters in the module are trainable.
+
+## Citation
+
+Yunbo Wang, Zhifeng Gao, Mingsheng Long, Jian-Min Wang, Philip S. Yu, "PredRNN++: Towards A Resolution of the Deep-in-Time Dilemma in Spatiotemporal Predictive Learning", arXiv:1804.06300v2 [cs.LG] 19 Nov 2018
+
+## Disclaimer
+
+MindSpore ("we") do not own any ownership or intellectual property rights of the datasets, and the trained models are provided on an "as is" and "as available" basis. We make no representations or warranties of any kind of the datasets and trained models (collectively, “materials”) and will not be liable for any loss, damage, expense or cost arising from the materials. Please ensure that you have permission to use the dataset under the appropriate license for the dataset and in accordance with the terms of the relevant license agreement. The trained models provided are only for research and education purposes.
+
+To Dataset Owners: If you do not wish to have a dataset included in MindSpore, or wish to update it in any way, we will remove or update the content at your request. Please contact us through GitHub or Gitee. Your understanding and contributions to the community are greatly appreciated.
+
+MindSpore is available under the Apache 2.0 license, please see the LICENSE file.

@@ -1,51 +1,51 @@
-# EDCN
+# gpt
 
 ---
 
-model-name: EDCN
+model-name: gpt
 
-backbone-name: EDCN
+backbone-name: gpt
 
-module-type: recommend
+module-type: nlp
 
 fine-tunable: True
 
-model-version: 1.6
+model-version: 1.8
 
-train-dataset: criteo
+train-dataset: openweb
 
-evaluation: acc80.64
+evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-07-21
+update-time: 2022-07-19
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.6/research/recommend/EDCN>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/gpt>
 
 user-id: MindSpore
 
 used-for: inference
 
-mindspore-version: 1.6
+mindspore-version: 1.8
 
 asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.6/edcn_ascend_v160_criteo_research_recommend_acc80.64.ckpt>
-    asset-sha256: 80530e74c733c90186d62a34049730ed1f58cfa8048cd83d7e0abe7be19f9dfe
+    asset-link: <https://download.mindspore.cn/models/r1.8/gpt3_ascend_v180_openweb_official_nlp.ckpt>
+    asset-sha256: 0e9cdf716666b5d6e674bc710a4c36f7d915f74148840b68f5e294ab3c0c475f
 
 license: Apache2.0
 
-summary: EDCN is used for recommend
+summary: gpt is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of EDCN from the MindSpore model zoo on Gitee at research/recommend/EDCN.
+This MindSpore Hub model uses the implementation of gpt from the MindSpore model zoo on Gitee at official/nlp/gpt.
 
-EDCN is a recommend network. More details please refer to the MindSpore model zoo on Gitee at [research/recommend/EDCN](https://gitee.com/mindspore/models/blob/r1.6/research/recommend/EDCN/README.md).
+gpt is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/gpt](https://gitee.com/mindspore/models/blob/r1.8/official/nlp/gpt/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.6/edcn_criteo"
+model = "mindspore/1.8/gpt3_openweb"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+Tom B.Brown, Benjamin Mann, Nick Ryder et al. Language Models are Few-Shot Learners. arXiv preprint arXiv:2005.14165
 
 ## Disclaimer
 
