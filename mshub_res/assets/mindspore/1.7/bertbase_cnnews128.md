@@ -2,11 +2,11 @@
 
 ---
 
-model-name: bert
+model-name: bert_base
 
 backbone-name: bert
 
-module-type: nlp
+module-type: nlp-reading_comprehension
 
 fine-tunable: True
 
