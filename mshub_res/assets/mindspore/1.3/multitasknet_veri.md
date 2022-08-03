@@ -1,8 +1,8 @@
-# PAMTRI
+# MultiTaskNet
 
 ---
 
-model-name: PAMTRI
+model-name: MultiTaskNet
 
 backbone-name: PAMTRI
 

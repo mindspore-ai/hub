@@ -1,8 +1,8 @@
-# res2net
+# res2net101
 
 ---
 
-model-name: res2net
+model-name: res2net101
 
 backbone-name: res2net
 

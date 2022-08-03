@@ -1,8 +1,8 @@
-# bert
+# bert_bilstm_crf
 
 ---
 
-model-name: bert
+model-name: bert_bilstm_crf
 
 backbone-name: bert
 

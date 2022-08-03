@@ -4,7 +4,7 @@
 
 model-name: retinaface
 
-backbone-name: retinaface
+backbone-name: ResNet50
 
 module-type: cv
 

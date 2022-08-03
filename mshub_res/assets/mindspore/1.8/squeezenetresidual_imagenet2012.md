@@ -1,8 +1,8 @@
-# squeezenet
+# squeezenet_residual
 
 ---
 
-model-name: squeezenet
+model-name: squeezenet_residual
 
 backbone-name: squeezenet
 

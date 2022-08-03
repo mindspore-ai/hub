@@ -1,8 +1,8 @@
-# ssd
+# ssd_resnet50_fpn
 
 ---
 
-model-name: ssd
+model-name: ssd_resnet50_fpn
 
 backbone-name: ssd
 

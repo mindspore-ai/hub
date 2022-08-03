@@ -1,8 +1,8 @@
-# resnet
+# resnet50
 
 ---
 
-model-name: resnet
+model-name: resnet50
 
 backbone-name: resnet
 

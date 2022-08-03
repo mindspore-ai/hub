@@ -1,8 +1,8 @@
-# resnet_thor
+# resnet50_thor
 
 ---
 
-model-name: resnet_thor
+model-name: resnet50_thor
 
 backbone-name: resnet_thor
 

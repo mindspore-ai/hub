@@ -1,8 +1,8 @@
-# PAMTRI
+# PoseEstNet
 
 ---
 
-model-name: PAMTRI
+model-name: PoseEstNet
 
 backbone-name: PAMTRI
 
