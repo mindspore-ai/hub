@@ -1,8 +1,8 @@
-# unet
+# unet_nested
 
 ---
 
-model-name: unet
+model-name: unet_nested
 
 backbone-name: unet
 

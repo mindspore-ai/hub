@@ -1,8 +1,8 @@
-# bert
+# bert_finetuning
 
 ---
 
-model-name: bert
+model-name: bert_finetuning
 
 backbone-name: bert
 

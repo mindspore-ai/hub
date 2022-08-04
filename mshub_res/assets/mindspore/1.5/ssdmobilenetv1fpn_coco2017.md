@@ -1,8 +1,8 @@
-# ssd
+# ssd_mobilenet_v1_fpn
 
 ---
 
-model-name: ssd
+model-name: ssd_mobilenet_v1_fpn
 
 backbone-name: ssd
 

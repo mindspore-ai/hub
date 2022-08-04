@@ -1,8 +1,8 @@
-# bert
+# bert_base
 
 ---
 
-model-name: bert
+model-name: bert_base
 
 backbone-name: bert
 

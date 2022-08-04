@@ -1,8 +1,8 @@
-# resnet
+# resnet152
 
 ---
 
-model-name: resnet
+model-name: resnet152
 
 backbone-name: resnet
 

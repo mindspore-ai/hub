@@ -1,8 +1,8 @@
-# ssd
+# ssd_vgg16
 
 ---
 
-model-name: ssd
+model-name: ssd_vgg16
 
 backbone-name: ssd
 

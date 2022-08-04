@@ -1,8 +1,8 @@
-# densenet
+# densenet121
 
 ---
 
-model-name: densenet
+model-name: densenet121
 
 backbone-name: densenet
 

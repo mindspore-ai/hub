@@ -1,8 +1,8 @@
-# resnext
+# resnext101
 
 ---
 
-model-name: resnext
+model-name: resnext101
 
 backbone-name: resnext
 

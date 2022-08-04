@@ -1,8 +1,8 @@
-# yolov5
+# yolov5s
 
 ---
 
-model-name: yolov5
+model-name: yolov5s
 
 backbone-name: yolov5
 
