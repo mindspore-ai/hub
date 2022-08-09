@@ -1,26 +1,26 @@
-# bert_bilstm_crf
+# bert_thor
 
 ---
 
-model-name: bert_bilstm_crf
+model-name: bert_thor
 
-backbone-name: bert
+backbone-name: bert_thor
 
-module-type: nlp
+module-type: nlp-natural_language_understanding
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: ner
+train-dataset: MLPerf-v0.7
 
-evaluation: f1acc99.30
+evaluation: acc70.0
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/bert>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/bert_thor>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/bertbilstmcrf_ascend_v180_ner_official_nlp_f1acc99.30.ckpt>
-    asset-sha256: 6770bbf492aa57a57be8418d32aeee9a220a05b0ed27344e3e272df455a06be9
+    asset-link: <https://download.mindspore.cn/models/r1.8/bertthor_ascend_v180_mlperf_official_nlp_acc70.0.ckpt>
+    asset-sha256: c6d83e5a7c453a7bfee81b39667d96960036f3b92d6c625c12daaa1f5aa2bbbb
 
 license: Apache2.0
 
-summary: bert is used for nlp
+summary: bert_thor is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of bert from the MindSpore model zoo on Gitee at official/nlp/bert.
+This MindSpore Hub model uses the implementation of bert_thor from the MindSpore model zoo on Gitee at official/nlp/bert_thor.
 
-bert is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/bert](https://gitee.com/mindspore/models/blob/r1.8/official/nlp/bert/README.md).
+bert_thor is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/bert_thor](https://gitee.com/mindspore/models/blob/r1.8/official/nlp/bert_thor/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,17 +59,12 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.8/bertbilstmcrf_ner"
+model = "mindspore/1.8/bertthor_mlperf"
 network = mshub.load(model)
 network.set_train(False)
 
 # ...
 ```
-
-## Citation
-
-1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805.
-2. Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu. NEZHA: Neural Contextualized Representation for Chinese Language Understanding. arXiv preprint arXiv:1909.00204.
 
 ## Disclaimer
 

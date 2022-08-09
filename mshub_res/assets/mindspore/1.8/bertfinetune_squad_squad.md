@@ -1,24 +1,24 @@
-# bert_finetuning
+# bert_finetune
 
 ---
 
-model-name: bert_finetuning
+model-name: bert_finetune
 
 backbone-name: bert
 
-module-type: nlp
+module-type: nlp-natural_language_understanding
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: squadv1.1
+train-dataset: SQuAD1.1
 
-evaluation: F1score88.45 | exactmatch81
+evaluation: F1score86.87 | exactmatch79.52
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/bert>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/bertfinetuning_squad_ascend_v180_squadv1.1_official_nlp_F1score88.45_exactmatch81.ckpt>
-    asset-sha256: 9e4e1a8e0cd905f9d7caf5d04fec1b0e94fcd210682f21c8bfbb354f3660bc97
+    asset-link: <https://download.mindspore.cn/models/r1.8/bertfinetune_squad_ascend_v180_squad_official_nlp_F1score86.87_exactmatch79.52.ckpt>
+    asset-sha256: fe917faa15ff136270831f3090030961c084fa95d2495aac651b27650c3db862
 
 license: Apache2.0
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.8/bertfinetuning_squad_squadv1.1"
+model = "mindspore/1.8/bertfinetune_squad_squad"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,8 +68,8 @@ network.set_train(False)
 
 ## Citation
 
-1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova.BERT：深度双向Transformer语言理解预训练). arXiv preprint arXiv:1810.04805.
-2. Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu.NEZHA：面向汉语理解的神经语境表示. arXiv preprint arXiv:1909.00204.
+1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding]((https://arxiv.org/abs/1810.04805)). arXiv preprint arXiv:1810.04805.
+2. Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu. [NEZHA: Neural Contextualized Representation for Chinese Language Understanding](https://arxiv.org/abs/1909.00204). arXiv preprint arXiv:1909.00204.
 
 ## Disclaimer
 

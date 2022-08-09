@@ -6,19 +6,19 @@ model-name: textfusenet
 
 backbone-name: textfusenet
 
-module-type: cv
+module-type: cv-scene_text_detection
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: totaltext
+train-dataset: TotalText
 
-evaluation: acc82.3
+evaluation: acc82.46
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/textfusenet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/textfusenet_ascend_v180_totaltext_research_cv_acc82.3.ckpt>
-    asset-sha256: 2971951ea94b225b12fa9ec9b044510b46eefa17f026866f16961fe017acc6c9
+    asset-link: <https://download.mindspore.cn/models/r1.8/textfusenet_ascend_v180_totaltext_research_cv_acc82.46.ckpt>
+    asset-sha256: ec88457127fa6c8dbe39bd787b7352a51fa748f6106dee7c353d65f66005b7c1
 
 license: Apache2.0
 

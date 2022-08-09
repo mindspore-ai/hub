@@ -1,26 +1,26 @@
-# semantic_human_matting
+# EfficientDet_d0
 
 ---
 
-model-name: semantic_human_matting
+model-name: EfficientDet_d0
 
-backbone-name: semantic_human_matting
+backbone-name: EfficientDet_d0
 
-module-type: cv-image_matting
+module-type: cv-object_detection
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: Matting Human Datasets
+train-dataset: coco2017
 
-evaluation: acc6.55
+evaluation: mAP22.1
 
 author: MindSpore team
 
 update-time: 2022-08-08
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/semantic_human_matting>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/EfficientDet_d0>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/semantichumanmatting_ascend_v180_mattinghumandatasets_official_cv_acc6.55.ckpt>
-    asset-sha256: f7423467525c7b2114782e934117519b52af0923a9ac5cc3a8e31f2c8b8d21f9
+    asset-link: <https://download.mindspore.cn/models/r1.8/efficientdetd0_ascend_v180_coco2017_research_cv_mAP22.1.ckpt>
+    asset-sha256: c8fc381224e19b160a249b265ad1c7a5ff6ecc7512244aeffcddb0544e39c215
 
 license: Apache2.0
 
-summary: semantic_human_matting is used for cv
+summary: EfficientDet_d0 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of semantic_human_matting from the MindSpore model zoo on Gitee at official/cv/semantic_human_matting.
+This MindSpore Hub model uses the implementation of EfficientDet_d0 from the MindSpore model zoo on Gitee at research/cv/EfficientDet_d0.
 
-semantic_human_matting is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/semantic_human_matting](https://gitee.com/mindspore/models/blob/r1.8/official/cv/semantic_human_matting/README.md).
+EfficientDet_d0 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/EfficientDet_d0](https://gitee.com/mindspore/models/blob/r1.8/research/cv/EfficientDet_d0/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[Semantic Human Matting](https://arxiv.org/pdf/1809.01354.pdf): Quan Chen, Tiezheng Ge, Yanyu Xu, Zhiqiang Zhang, Xinxin Yang, Kun Gai.
+Mingxing Tan, Ruoming Pang, Quoc V. Le
 
 ## Disclaimer
 

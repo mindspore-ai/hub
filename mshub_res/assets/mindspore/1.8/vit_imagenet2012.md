@@ -6,19 +6,19 @@ model-name: vit
 
 backbone-name: vit
 
-module-type: cv
+module-type: cv-classification
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: acc74.17
+evaluation: acc73.81
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/vit>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/vit_ascend_v180_imagenet2012_official_cv_acc74.17.ckpt>
-    asset-sha256: c24895695e24c1cbb2deb12e4aeb43080cc4e420247cbbe571a70994a6366264
+    asset-link: <https://download.mindspore.cn/models/r1.8/vit_ascend_v180_imagenet2012_official_cv_acc73.81.ckpt>
+    asset-sha256: 21e4fc49a6a2a7e8a90a22df02ce5b3aad1440e19f7f16eda76dc5460be8f76b
 
 license: Apache2.0
 

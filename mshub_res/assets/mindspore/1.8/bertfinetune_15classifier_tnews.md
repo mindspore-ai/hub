@@ -1,24 +1,24 @@
-# bert_finetuning
+# bert_finetune
 
 ---
 
-model-name: bert_finetuning
+model-name: bert_finetune
 
 backbone-name: bert
 
-module-type: nlp
+module-type: nlp-natural_language_understanding
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: cluener
+train-dataset: tnews
 
-evaluation: acc92.48
+evaluation: acc55.39
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/bert>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/bertfinetuning_nercrf_ascend_v180_cluener_official_nlp_acc92.48.ckpt>
-    asset-sha256: 2dbc96564c533fab13e185e03e7a50861d25824a72562b263a7f36df107f43b8
+    asset-link: <https://download.mindspore.cn/models/r1.8/bertfinetune_15classifier_ascend_v180_tnews_official_nlp_acc55.39.ckpt>
+    asset-sha256: c43aca751ef39cdae1349d1e77c5e210e1caaffda3d724a1c0ae1a5d77fd50af
 
 license: Apache2.0
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.8/bertfinetuning_nercrf_cluener"
+model = "mindspore/1.8/bertfinetune_15classifier_tnews"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,8 +68,8 @@ network.set_train(False)
 
 ## Citation
 
-1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova.BERT：深度双向Transformer语言理解预训练). arXiv preprint arXiv:1810.04805.
-2. Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu.NEZHA：面向汉语理解的神经语境表示. arXiv preprint arXiv:1909.00204.
+1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding]((https://arxiv.org/abs/1810.04805)). arXiv preprint arXiv:1810.04805.
+2. Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu. [NEZHA: Neural Contextualized Representation for Chinese Language Understanding](https://arxiv.org/abs/1909.00204). arXiv preprint arXiv:1909.00204.
 
 ## Disclaimer
 
