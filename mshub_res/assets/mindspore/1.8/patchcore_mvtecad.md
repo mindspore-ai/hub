@@ -1,26 +1,26 @@
-# semantic_human_matting
+# patchcore
 
 ---
 
-model-name: semantic_human_matting
+model-name: patchcore
 
-backbone-name: semantic_human_matting
+backbone-name: patchcore
 
-module-type: cv-image_matting
+module-type: cv-defect_detection
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: Matting Human Datasets
+train-dataset: MVTec AD
 
-evaluation: acc6.55
+evaluation: meanimage-level98.28 | meanpixel-level97.72
 
 author: MindSpore team
 
 update-time: 2022-08-08
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/semantic_human_matting>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/patchcore>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/semantichumanmatting_ascend_v180_mattinghumandatasets_official_cv_acc6.55.ckpt>
-    asset-sha256: f7423467525c7b2114782e934117519b52af0923a9ac5cc3a8e31f2c8b8d21f9
+    asset-link: <https://download.mindspore.cn/models/r1.8/patchcore_ascend_v180_mvtecad_official_cv_meanimage-level98.28_meanpixel-level97.72.ckpt>
+    asset-sha256: 1342f00c640e2309eef894789239615f36db0fa75a3e93dbb12c13330b256d31
 
 license: Apache2.0
 
-summary: semantic_human_matting is used for cv
+summary: patchcore is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of semantic_human_matting from the MindSpore model zoo on Gitee at official/cv/semantic_human_matting.
+This MindSpore Hub model uses the implementation of patchcore from the MindSpore model zoo on Gitee at official/cv/patchcore.
 
-semantic_human_matting is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/semantic_human_matting](https://gitee.com/mindspore/models/blob/r1.8/official/cv/semantic_human_matting/README.md).
+patchcore is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/patchcore](https://gitee.com/mindspore/models/blob/r1.8/official/cv/patchcore/README_CN.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-[Semantic Human Matting](https://arxiv.org/pdf/1809.01354.pdf): Quan Chen, Tiezheng Ge, Yanyu Xu, Zhiqiang Zhang, Xinxin Yang, Kun Gai.
+Karsten Roth, Latha Pemula, Joaquin Zepeda, Bernhard Scholkopf, Thomas Brox, Peter Gehler.Towards Total Recall in Industrial Anomaly Detection.2021.
 
 ## Disclaimer
 

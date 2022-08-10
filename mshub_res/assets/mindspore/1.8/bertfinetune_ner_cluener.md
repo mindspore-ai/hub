@@ -1,26 +1,26 @@
-# crnn_seq2seq_ocr
+# bert_finetune
 
 ---
 
-model-name: crnn_seq2seq_ocr
+model-name: bert_finetune
 
-backbone-name: crnn_seq2seq_ocr
+backbone-name: bert
 
-module-type: cv-scene_text_recognition
+module-type: nlp-natural_language_understanding
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: FSNS
+train-dataset: cluener
 
-evaluation: annotationprecision84 | characterprecision97
+evaluation: acc92.27
 
 author: MindSpore team
 
 update-time: 2022-08-08
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/crnn_seq2seq_ocr>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/bert>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/crnnseq2seqocr_ascend_v180_fsns_official_cv_annotationprecision84_characterprecision97.ckpt>
-    asset-sha256: dddac2d2b3636ce2e53e41c6996ba45e666960e5670592dabd4da260e3a7a08c
+    asset-link: <https://download.mindspore.cn/models/r1.8/bertfinetune_ner_ascend_v180_cluener_official_nlp_acc92.27.ckpt>
+    asset-sha256: d1cc6a35ea67933f742ecf6b7baf10daabb6cd907439bd2133d3b315d9f12b5f
 
 license: Apache2.0
 
-summary: crnn_seq2seq_ocr is used for cv
+summary: bert is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of crnn_seq2seq_ocr from the MindSpore model zoo on Gitee at official/cv/crnn_seq2seq_ocr.
+This MindSpore Hub model uses the implementation of bert from the MindSpore model zoo on Gitee at official/nlp/bert.
 
-crnn_seq2seq_ocr is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/crnn_seq2seq_ocr](https://gitee.com/mindspore/models/blob/r1.8/official/cv/crnn_seq2seq_ocr/README.md).
+bert is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/bert](https://gitee.com/mindspore/models/blob/r1.8/official/nlp/bert/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,12 +59,17 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.8/crnnseq2seqocr_fsns"
+model = "mindspore/1.8/bertfinetune_ner_cluener"
 network = mshub.load(model)
 network.set_train(False)
 
 # ...
 ```
+
+## Citation
+
+1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding]((https://arxiv.org/abs/1810.04805)). arXiv preprint arXiv:1810.04805.
+2. Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu. [NEZHA: Neural Contextualized Representation for Chinese Language Understanding](https://arxiv.org/abs/1909.00204). arXiv preprint arXiv:1909.00204.
 
 ## Disclaimer
 

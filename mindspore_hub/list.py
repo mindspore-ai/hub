@@ -80,7 +80,7 @@ def hub_list(version=None, force_reload=True):
         os.rename(os.path.join(tmp_dir.name, 'hub.git', 'mshub_res'), res_dir)
 
     # branch_versions = _get_all_branch_version(hub_dir)
-    branch_versions = ('master', 'r1.0', 'r1.0.1', 'r1.1', 'r1.2', 'r1.3', 'r1.4', 'r1.5', 'r1.6')
+    branch_versions = ('master', 'r1.8')
     if version not in branch_versions:
         raise ValueError('`version` must be a correct version: '
                          f'{branch_versions}.')

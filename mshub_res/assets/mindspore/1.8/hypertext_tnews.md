@@ -6,19 +6,19 @@ model-name: hypertext
 
 backbone-name: hypertext
 
-module-type: nlp
+module-type: nlp-text_classification
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: tnews
+train-dataset: TNEWS
 
-evaluation: acc91.3
+evaluation: acc81.39
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/nlp/hypertext>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/hypertext_ascend_v180_tnews_research_nlp_acc91.3.ckpt>
-    asset-sha256: 704f893b690a8eb55f9ad4e4263eaed59890756e6f2a16674d0a5ffbbb3a674f
+    asset-link: <https://download.mindspore.cn/models/r1.8/hypertext_ascend_v180_tnews_research_nlp_acc81.39.ckpt>
+    asset-sha256: 93e49a8deda35b34715cc33da91e027e5cfa895e36d721e74868eb533eb9d5cc
 
 license: Apache2.0
 

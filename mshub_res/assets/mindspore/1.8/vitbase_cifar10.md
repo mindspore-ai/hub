@@ -6,7 +6,7 @@ model-name: vit_base
 
 backbone-name: vit_base
 
-module-type: cv
+module-type: cv-classification
 
 fine-tunable: True
 
@@ -14,11 +14,11 @@ model-version: 1.8
 
 train-dataset: cifar10
 
-evaluation: acc98.71
+evaluation: acc99.01
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/vit_base>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/vitbase_ascend_v180_cifar10_research_cv_acc98.71.ckpt>
-    asset-sha256: 86646358bde1d63ce8a073ea0543f3cea94e95e1752ea621cb3c66a4b101a678
+    asset-link: <https://download.mindspore.cn/models/r1.8/vitbase_ascend_v180_cifar10_research_cv_acc99.01.ckpt>
+    asset-sha256: 1b41fb35762e0e53c3ad7fe63ab3499a61c73839ff77bbcf2ce47c2c40fa2996
 
 license: Apache2.0
 
@@ -45,7 +45,7 @@ summary: vit_base is used for cv
 
 This MindSpore Hub model uses the implementation of vit_base from the MindSpore model zoo on Gitee at research/cv/vit_base.
 
-vit_base is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/vit_base](https://gitee.com/mindspore/models/blob/r1.8/research/cv/vit_base/README_CN.md).
+vit_base is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/vit_base](https://gitee.com/mindspore/models/blob/r1.8/research/cv/vit_base/README.md).
 
 All parameters in the module are trainable.
 
