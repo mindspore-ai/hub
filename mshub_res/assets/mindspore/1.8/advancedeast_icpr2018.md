@@ -6,19 +6,19 @@ model-name: advanced_east
 
 backbone-name: advanced_east
 
-module-type: cv
+module-type: cv-scene_text_detection
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: icpr2018
+train-dataset: ICPR2018
 
-evaluation: F1score61.68
+evaluation: F1score61.94
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/advanced_east>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/advancedeast_ascend_v180_icpr2018_research_cv_F1score61.68.ckpt>
-    asset-sha256: 7f316624c1d840b2f1c9f72829759bc9d317ccdb1a11aa60a50f3f95071540ea
+    asset-link: <https://download.mindspore.cn/models/r1.8/advancedeast_ascend_v180_icpr2018_research_cv_F1score61.94.ckpt>
+    asset-sha256: a6121b9b4e2a5acb6ec0881bb193baabe1eb0e82320ed1ac0d015d7823f98695
 
 license: Apache2.0
 

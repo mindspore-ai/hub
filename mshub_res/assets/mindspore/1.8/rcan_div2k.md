@@ -1,26 +1,26 @@
-# semantic_human_matting
+# RCAN
 
 ---
 
-model-name: semantic_human_matting
+model-name: RCAN
 
-backbone-name: semantic_human_matting
+backbone-name: RCAN
 
-module-type: cv-image_matting
+module-type: cv-super_resolution
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: Matting Human Datasets
+train-dataset: DIV2K
 
-evaluation: acc6.55
+evaluation: PSNR38.26 | SSIM0.9614
 
 author: MindSpore team
 
 update-time: 2022-08-08
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/semantic_human_matting>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/RCAN>
 
 user-id: MindSpore
 
@@ -32,26 +32,22 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/semantichumanmatting_ascend_v180_mattinghumandatasets_official_cv_acc6.55.ckpt>
-    asset-sha256: f7423467525c7b2114782e934117519b52af0923a9ac5cc3a8e31f2c8b8d21f9
+    asset-link: <https://download.mindspore.cn/models/r1.8/rcan_ascend_v180_div2k_research_cv_PSNR38.26_SSIM0.9614.ckpt>
+    asset-sha256: f75418c61a5daa58c3e3499ad0551033bf3a1cce217054c7e01ab42615977286
 
 license: Apache2.0
 
-summary: semantic_human_matting is used for cv
+summary: RCAN is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of semantic_human_matting from the MindSpore model zoo on Gitee at official/cv/semantic_human_matting.
+This MindSpore Hub model uses the implementation of RCAN from the MindSpore model zoo on Gitee at research/cv/RCAN.
 
-semantic_human_matting is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/semantic_human_matting](https://gitee.com/mindspore/models/blob/r1.8/official/cv/semantic_human_matting/README.md).
+RCAN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/RCAN](https://gitee.com/mindspore/models/blob/r1.8/research/cv/RCAN/README.md).
 
 All parameters in the module are trainable.
-
-## Citation
-
-[Semantic Human Matting](https://arxiv.org/pdf/1809.01354.pdf): Quan Chen, Tiezheng Ge, Yanyu Xu, Zhiqiang Zhang, Xinxin Yang, Kun Gai.
 
 ## Disclaimer
 

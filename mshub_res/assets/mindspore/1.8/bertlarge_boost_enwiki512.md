@@ -1,26 +1,26 @@
-# semantic_human_matting
+# bert_large
 
 ---
 
-model-name: semantic_human_matting
+model-name: bert_large
 
-backbone-name: semantic_human_matting
+backbone-name: bert_thor
 
-module-type: cv-image_matting
+module-type: nlp-natural_language_understanding
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: Matting Human Datasets
+train-dataset: en-wiki-512
 
-evaluation: acc6.55
+evaluation: acc71.0
 
 author: MindSpore team
 
 update-time: 2022-08-08
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/semantic_human_matting>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/bert_thor>
 
 user-id: MindSpore
 
@@ -32,26 +32,39 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/semantichumanmatting_ascend_v180_mattinghumandatasets_official_cv_acc6.55.ckpt>
-    asset-sha256: f7423467525c7b2114782e934117519b52af0923a9ac5cc3a8e31f2c8b8d21f9
+    asset-link: <https://download.mindspore.cn/models/r1.8/bertlarge_boost_ascend_v180_enwiki512_official_nlp_acc71.0.ckpt>
+    asset-sha256: f80414b9d68628bf3c182a837d7c1ef10c4d6c3cf590e33e8f0c837b1ee98e56
 
 license: Apache2.0
 
-summary: semantic_human_matting is used for cv
+summary: bert_thor is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of semantic_human_matting from the MindSpore model zoo on Gitee at official/cv/semantic_human_matting.
+This MindSpore Hub model uses the implementation of bert_thor from the MindSpore model zoo on Gitee at official/nlp/bert_thor.
 
-semantic_human_matting is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/semantic_human_matting](https://gitee.com/mindspore/models/blob/r1.8/official/cv/semantic_human_matting/README.md).
+bert_thor is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/bert_thor](https://gitee.com/mindspore/models/blob/r1.8/official/nlp/bert_thor/README.md).
 
 All parameters in the module are trainable.
 
-## Citation
+## Usage
 
-[Semantic Human Matting](https://arxiv.org/pdf/1809.01354.pdf): Quan Chen, Tiezheng Ge, Yanyu Xu, Zhiqiang Zhang, Xinxin Yang, Kun Gai.
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.8/bertlarge_boost_enwiki512"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
 
 ## Disclaimer
 

@@ -6,19 +6,19 @@ model-name: east
 
 backbone-name: east
 
-module-type: cv
+module-type: cv-scene_text_detection
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: icdar2015
+train-dataset: ICDAR2015
 
-evaluation: acc81.25
+evaluation: acc84.47
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/east>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/east_ascend_v180_icdar2015_official_cv_acc81.25.ckpt>
-    asset-sha256: 4fa8a1a81a9d49db853cb483b2763e06219726158a8db96dcccbcd36d5d9ee52
+    asset-link: <https://download.mindspore.cn/models/r1.8/east_ascend_v180_icdar2015_official_cv_acc84.47.ckpt>
+    asset-sha256: 4acb0688794b68d5304bee7d48fc22bee13c1b01b1ccf92127005f4998592c4f
 
 license: Apache2.0
 

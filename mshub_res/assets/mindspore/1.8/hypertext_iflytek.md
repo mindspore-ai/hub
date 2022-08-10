@@ -6,19 +6,19 @@ model-name: hypertext
 
 backbone-name: hypertext
 
-module-type: nlp
+module-type: nlp-text_classification
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: iflytek
+train-dataset: IFLYTEK
 
-evaluation: acc57.06
+evaluation: acc57.78
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/nlp/hypertext>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/hypertext_ascend_v180_iflytek_research_nlp_acc57.06.ckpt>
-    asset-sha256: 5ceb01874a40117fe62c6ba7bb3bc9f5a8f2a16b8a0070243d0c9b2b1c3b5d1f
+    asset-link: <https://download.mindspore.cn/models/r1.8/hypertext_ascend_v180_iflytek_research_nlp_acc57.78.ckpt>
+    asset-sha256: 88c270a0af745744466433dcabd21e1b33c017817428645aa263d460a3830f3c
 
 license: Apache2.0
 

@@ -1,24 +1,24 @@
-# bert_finetuning
+# bert_finetune
 
 ---
 
-model-name: bert_finetuning
+model-name: bert_finetune
 
 backbone-name: bert
 
-module-type: nlp
+module-type: nlp-natural_language_understanding
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: cola
+train-dataset: ChineseNER
 
-evaluation: acc55.71
+evaluation: F1score96.07
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/bert>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/bertfinetuning_classifier_ascend_v180_cola_official_nlp_acc55.71.ckpt>
-    asset-sha256: 954952abff015a8686840dca6920282d75c20ee2b75eee341d4151e3c84e5d66
+    asset-link: <https://download.mindspore.cn/models/r1.8/bertfinetune_bilstmcrf_ascend_v180_chinesener_official_nlp_F1score96.07.ckpt>
+    asset-sha256: a16876856ec3bddfa17a4e3db7292d7fae7ce62939f00f29e30268dd8911e6c6
 
 license: Apache2.0
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.8/bertfinetuning_classifier_cola"
+model = "mindspore/1.8/bertfinetune_bilstmcrf_chinesener"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,8 +68,8 @@ network.set_train(False)
 
 ## Citation
 
-1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova.BERT：深度双向Transformer语言理解预训练). arXiv preprint arXiv:1810.04805.
-2. Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu.NEZHA：面向汉语理解的神经语境表示. arXiv preprint arXiv:1909.00204.
+1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding]((https://arxiv.org/abs/1810.04805)). arXiv preprint arXiv:1810.04805.
+2. Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu. [NEZHA: Neural Contextualized Representation for Chinese Language Understanding](https://arxiv.org/abs/1909.00204). arXiv preprint arXiv:1909.00204.
 
 ## Disclaimer
 

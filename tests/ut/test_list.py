@@ -12,21 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ============================================================================
-"""test list"""
+"""test hub_list"""
 
 from mindspore_hub import hub_list
 
 
-class TestLoad:
-    """Test list function."""
+class TestHubList:
+    """Test hub_list function."""
 
-    def test_list(self):
+    def test_hub_list(self):
         """
         Feature: Test normal cases.
-        Description: mindspore_hub.list function
+        Description: mindspore_hub.hub_list function
         Expectation: success.
         """
-        versions = (None, 'master')
+        versions = (None, 'master', 'r1.8')
         force_reloads = (True, False)
         for version in versions:
             for force_reload in force_reloads:

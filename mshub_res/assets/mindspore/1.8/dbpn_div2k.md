@@ -6,19 +6,19 @@ model-name: DBPN
 
 backbone-name: DBPN
 
-module-type: cv
+module-type: cv-super_resolution
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: div2k
+train-dataset: DIV2K
 
-evaluation: PSNR31.93
+evaluation: psnr31.62
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/DBPN>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/dbpn_ascend_v180_div2k_research_cv_PSNR31.93.ckpt>
-    asset-sha256: 75d74c46e4efc3a4f2e81df53a3ab8817618d8193a6032a971fe02a5e307ef77
+    asset-link: <https://download.mindspore.cn/models/r1.8/dbpn_ascend_v180_div2k_research_cv_psnr31.62.ckpt>
+    asset-sha256: e29dd3bade3d6e25e6790c02add96a865cdfdb66c9f76063d440ea87eea2b217
 
 license: Apache2.0
 

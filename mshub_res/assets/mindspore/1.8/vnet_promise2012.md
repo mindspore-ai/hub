@@ -6,19 +6,19 @@ model-name: vnet
 
 backbone-name: vnet
 
-module-type: cv
+module-type: cv-semantic_segmentation
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: promise2012
+train-dataset: PROMISE 2012
 
-evaluation: dice85 | hausdorffdistance10
+evaluation: AvgDice87.49 | AvgHausdorffDistance10.54
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-08
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/vnet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/vnet_ascend_v180_promise2012_research_cv_dice85_hausdorffdistance10.ckpt>
-    asset-sha256: 6afc96e827a5ced76fbe95f93f02dbfea6be024d3261eb4f335e1897b07c8ad9
+    asset-link: <https://download.mindspore.cn/models/r1.8/vnet_ascend_v180_promise2012_research_cv_AvgDice87.49_AvgHausdorffDistance10.54.ckpt>
+    asset-sha256: 68654d1382eade1ebc6cbb70347c5448d4c9895bbf015dadbc781633c352233c
 
 license: Apache2.0
 
