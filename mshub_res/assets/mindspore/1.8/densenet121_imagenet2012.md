@@ -6,19 +6,19 @@ model-name: densenet121
 
 backbone-name: densenet
 
-module-type: cv
+module-type: cv-classification
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc75.54 | top5acc92.73
+evaluation: top1acc75.13
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/densenet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/densenet121_ascend_v180_imagenet2012_official_cv_top1acc75.54_top5acc92.73.ckpt>
-    asset-sha256: 032146e64d981fcc6c08925adcb348e50a3b6b8f653226b5147ef76560d4367a
+    asset-link: <https://download.mindspore.cn/models/r1.8/densenet121_ascend_v180_imagenet2012_official_cv_top1acc75.13.ckpt>
+    asset-sha256: 25f1d54f9af1e010d1c16ca0bb3b5d126932dd60c8f758ba96f7c1b8b22d55a2
 
 license: Apache2.0
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Densely Connected Convolutional Networks
+https://arxiv.org/abs/1608.06993
 
 ## Disclaimer
 

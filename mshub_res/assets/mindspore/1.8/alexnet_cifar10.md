@@ -6,7 +6,7 @@ model-name: alexnet
 
 backbone-name: alexnet
 
-module-type: cv
+module-type: cv-classification
 
 fine-tunable: True
 
@@ -14,11 +14,11 @@ model-version: 1.8
 
 train-dataset: cifar10
 
-evaluation: acc89.38
+evaluation: acc88.0
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/alexnet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/alexnet_ascend_v180_cifar10_official_cv_acc89.38.ckpt>
-    asset-sha256: 84569e4934f9a49093d50ba43f851a761fb35a8dad72c991ae928e0646a261c7
+    asset-link: <https://download.mindspore.cn/models/r1.8/alexnet_ascend_v180_cifar10_official_cv_acc88.0.ckpt>
+    asset-sha256: f5f74f1bff1de9c46da58fb0b13fd81dfa0208cc49c3108dadf2f313eac349f2
 
 license: Apache2.0
 

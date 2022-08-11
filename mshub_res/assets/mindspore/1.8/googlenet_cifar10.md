@@ -6,7 +6,7 @@ model-name: googlenet
 
 backbone-name: googlenet
 
-module-type: cv
+module-type: cv-classification
 
 fine-tunable: True
 
@@ -14,11 +14,11 @@ model-version: 1.8
 
 train-dataset: cifar10
 
-evaluation: acc92.53
+evaluation: acc92.1
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/googlenet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/googlenet_ascend_v180_cifar10_official_cv_acc92.53.ckpt>
-    asset-sha256: b2f7fe14782a3ab88ad3534ed5f419b4bbc3b477706258bd6ed8f90f529775e7
+    asset-link: <https://download.mindspore.cn/models/r1.8/googlenet_ascend_v180_cifar10_official_cv_acc92.1.ckpt>
+    asset-sha256: 5c7b8383a489bb3410242371f829cebfe83469201f44e9f2c36b797fe5112a29
 
 license: Apache2.0
 
