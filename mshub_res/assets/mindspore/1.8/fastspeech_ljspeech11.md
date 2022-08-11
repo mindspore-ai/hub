@@ -1,26 +1,26 @@
-# fasttext
+# FastSpeech
 
 ---
 
-model-name: fasttext
+model-name: FastSpeech
 
-backbone-name: fasttext
+backbone-name: FastSpeech
 
-module-type: nlp-natural_language_understanding
+module-type: audio-TTS
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: DBPedia Ontology Classification Dataset
+train-dataset: LJSpeech-1.1
 
-evaluation: acc98.6
+evaluation: Frechet203.9 | Kernel0.0239
 
 author: MindSpore team
 
 update-time: 2022-08-10
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/fasttext>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/audio/FastSpeech>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/fasttext_ascend_v180_dbpedia_official_nlp_acc98.6.ckpt>
-    asset-sha256: 9a7a2495d0d4fb52b37459bca8d4e8e1d4f960a61af30af2af2a63adf3bcec05
+    asset-link: <https://download.mindspore.cn/models/r1.8/fastspeech_ascend_v180_ljspeech11_research_audio_Frechet203.9_Kernel0.0239.ckpt>
+    asset-sha256: 0671311718e41aae5d14b16ca938187b1a690c6d5dce047693b3e022f550a183
 
 license: Apache2.0
 
-summary: fasttext is used for nlp
+summary: FastSpeech is used for audio
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of fasttext from the MindSpore model zoo on Gitee at official/nlp/fasttext.
+This MindSpore Hub model uses the implementation of FastSpeech from the MindSpore model zoo on Gitee at research/audio/FastSpeech.
 
-fasttext is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/fasttext](https://gitee.com/mindspore/models/blob/r1.8/official/nlp/fasttext/README.md).
+FastSpeech is a audio network. More details please refer to the MindSpore model zoo on Gitee at [research/audio/FastSpeech](https://gitee.com/mindspore/models/blob/r1.8/research/audio/FastSpeech/README.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.8/fasttext_dbpedia"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-"Bag of Tricks for Efficient Text Classification", 2016, A. Joulin, E. Grave, P. Bojanowski, and T. Mikolov
+FastSpeech: Fast, Robust and Controllable Text to Speech.
 
 ## Disclaimer
 

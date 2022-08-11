@@ -1,26 +1,26 @@
-# gru
+# crnn
 
 ---
 
-model-name: gru
+model-name: crnn
 
-backbone-name: gru
+backbone-name: crnn
 
-module-type: nlp-natural_language_understanding
+module-type: cv-scene_text_recognition
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: Multi30k
+train-dataset: CRNN-DS
 
-evaluation: bleu30.0
+evaluation: SVT80.99 | IIIT5K80.33
 
 author: MindSpore team
 
 update-time: 2022-08-10
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/gru>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/crnn>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/gru_ascend_v180_muti30k_official_nlp_bleu30.0.ckpt>
-    asset-sha256: 3b4442d48f6bac7eb022d7963f7391330ceff4caa75eee4ff2ff948b3e4a17ed
+    asset-link: <https://download.mindspore.cn/models/r1.8/crnn_ascend_v180_crnnds_official_cv_SVT80.99_IIIT5K80.33.ckpt>
+    asset-sha256: 5d982fd1c8816fa8ac0163ef92d9f0c9291e34af5284c9a0821ebabd55b05f2a
 
 license: Apache2.0
 
-summary: gru is used for nlp
+summary: crnn is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of gru from the MindSpore model zoo on Gitee at official/nlp/gru.
+This MindSpore Hub model uses the implementation of crnn from the MindSpore model zoo on Gitee at official/cv/crnn.
 
-gru is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/gru](https://gitee.com/mindspore/models/blob/r1.8/official/nlp/gru/README.md).
+crnn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/crnn](https://gitee.com/mindspore/models/blob/r1.8/official/cv/crnn/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.8/gru_muti30k"
+model = "mindspore/1.8/crnn_crnnds"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,9 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-1. "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation", 2014, Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, Yoshua Bengio
-2. "Sequence to Sequence Learning with Neural Networks", 2014, Ilya Sutskever, Oriol Vinyals, Quoc V. Le
-3. "Neural Machine Translation by Jointly Learning to Align and Translate", 2014, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio
+Baoguang Shi, Xiang Bai, Cong Yao, "An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition", ArXiv, vol. abs/1507.05717, 2015.
 
 ## Disclaimer
 

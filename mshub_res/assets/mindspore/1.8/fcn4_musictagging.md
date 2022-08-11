@@ -6,19 +6,19 @@ model-name: fcn-4
 
 backbone-name: fcn-4
 
-module-type: audio
+module-type: audio-tagging
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: musictagging
+train-dataset: Music-Tagging
 
-evaluation: acc90.89
+evaluation: acc90.0
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/audio/fcn-4>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/fcn4_ascend_v180_musictagging_research_audio_acc90.89.ckpt>
-    asset-sha256: bdb7116d2dc25ae80381a882b9d8a75f857e53a920561015e3a9245cf469d284
+    asset-link: <https://download.mindspore.cn/models/r1.8/fcn4_ascend_v180_musictagging_research_audio_acc90.0.ckpt>
+    asset-sha256: 4988f3e1400cb8cdab363fb4768644570b87ef882c3cf0b6f847a1cd8218ae8b
 
 license: Apache2.0
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-"Keunwoo Choi, George Fazekas, and Mark Sandler, “Automatic tagging using deep convolutional neural networks,” in International Society of Music Information Retrieval Conference. ISMIR, 2016."
+Keunwoo Choi, George Fazekas, and Mark Sandler, “Automatic tagging using deep convolutional neural networks,” in International Society of Music Information Retrieval Conference. ISMIR, 2016.
 
 ## Disclaimer
 

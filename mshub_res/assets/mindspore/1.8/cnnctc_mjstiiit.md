@@ -6,19 +6,19 @@ model-name: cnnctc
 
 backbone-name: cnnctc
 
-module-type: cv
+module-type: cv-scene_text_recognition
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: mjstiiit
+train-dataset: MJ-ST-IIIT
 
-evaluation: acc85.97
+evaluation: acc84.0
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/cnnctc>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/cnnctc_ascend_v180_mjstiiit_official_cv_acc85.97.ckpt>
-    asset-sha256: 3468204da46492286ed466c9bab9572443b4e7d359396a5e38b42ceb3d0a6c6f
+    asset-link: <https://download.mindspore.cn/models/r1.8/cnnctc_ascend_v180_mjstiiit_official_cv_acc84.0.ckpt>
+    asset-sha256: 93bf15cb0429aa70c57e313f285f90e2bd08c874bac9a517cdce50a849ce1d56
 
 license: Apache2.0
 

@@ -1,26 +1,26 @@
-# ctpn
+# deeptext
 
 ---
 
-model-name: ctpn
+model-name: deeptext
 
-backbone-name: ctpn
+backbone-name: deeptext
 
-module-type: cv
+module-type: cv-scene_text_detection
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: icdar2013
+train-dataset: ICDAR2013 | SCUT-FORU | CocoTextv2
 
-evaluation: precision90 | recall86 | Fmeasure88
+evaluation: F1score84.5
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/ctpn>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/deeptext>
 
 user-id: MindSpore
 
@@ -32,26 +32,43 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/ctpn_ascend_v180_icdar2013_official_cv_precision90_recall86_Fmeasure88.ckpt>
-    asset-sha256: a1cfaecc174c435683a889aef141e6edcb5b35535666f683c7f57d35c827565a
+    asset-link: <https://download.mindspore.cn/models/r1.8/deeptext_ascend_v180_icdar2013_official_cv_F1score84.5.ckpt>
+    asset-sha256: abda476ba56abe26597d477bf9472749a0e4819d86cfd596a9a3e0e1d37647bc
 
 license: Apache2.0
 
-summary: ctpn is used for cv
+summary: deeptext is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of ctpn from the MindSpore model zoo on Gitee at official/cv/ctpn.
+This MindSpore Hub model uses the implementation of deeptext from the MindSpore model zoo on Gitee at official/cv/deeptext.
 
-ctpn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/ctpn](https://gitee.com/mindspore/models/blob/r1.8/official/cv/ctpn/README.md).
+deeptext is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/deeptext](https://gitee.com/mindspore/models/blob/r1.8/official/cv/deeptext/README.md).
 
 All parameters in the module are trainable.
 
+## Usage
+
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.8/deeptext_icdar2013"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
+
 ## Citation
 
-Zhi Tian, Weilin Huang, Tong He, Pan He, Yu Qiao, "Detecting Text in Natural Image with Connectionist Text Proposal Network", ArXiv, vol. abs/1609.03605, 2016.
+Zhuoyao Zhong, Lianwen Jin, Shuangping Huang, South China University of Technology (SCUT), Published in ICASSP 2017.
 
 ## Disclaimer
 
