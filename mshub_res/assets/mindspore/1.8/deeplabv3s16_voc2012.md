@@ -6,7 +6,7 @@ model-name: deeplabv3
 
 backbone-name: deeplabv3
 
-module-type: cv
+module-type: cv-semantic_segmentation
 
 fine-tunable: True
 
@@ -14,11 +14,11 @@ model-version: 1.8
 
 train-dataset: voc2012
 
-evaluation: acc78.68
+evaluation: acc77.21
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/deeplabv3>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/deeplabv3s16_ascend_v180_voc2012_official_cv_acc78.68.ckpt>
-    asset-sha256: 46e997f97de3d6d4e35405be59bbb621c12d3ce62a688939f9046179473bfd9e
+    asset-link: <https://download.mindspore.cn/models/r1.8/deeplabv3s16_ascend_v180_voc2012_official_cv_acc77.21.ckpt>
+    asset-sha256: d9be34e37edcfed4d9410c97cc7a5d1287ff8f78d16188f1cff0d9d08ed58ab0
 
 license: Apache2.0
 

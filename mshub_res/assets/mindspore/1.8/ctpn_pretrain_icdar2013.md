@@ -1,26 +1,26 @@
-# fasttext
+# ctpn
 
 ---
 
-model-name: fasttext
+model-name: ctpn
 
-backbone-name: fasttext
+backbone-name: ctpn
 
-module-type: nlp-natural_language_understanding
+module-type: cv-object_detection
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: DBPedia Ontology Classification Dataset
+train-dataset: ICDAR2013
 
-evaluation: acc98.6
+evaluation: acc87.69
 
 author: MindSpore team
 
 update-time: 2022-08-10
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/fasttext>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/ctpn>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/fasttext_ascend_v180_dbpedia_official_nlp_acc98.6.ckpt>
-    asset-sha256: 9a7a2495d0d4fb52b37459bca8d4e8e1d4f960a61af30af2af2a63adf3bcec05
+    asset-link: <https://download.mindspore.cn/models/r1.8/ctpn_pretrain_ascend_v180_icdar2013_official_cv_acc87.69.ckpt>
+    asset-sha256: 781e805fa3e5a56d43cf83127aff0caad6cb227b0c30176ee08c7f2ad36e9914
 
 license: Apache2.0
 
-summary: fasttext is used for nlp
+summary: ctpn is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of fasttext from the MindSpore model zoo on Gitee at official/nlp/fasttext.
+This MindSpore Hub model uses the implementation of ctpn from the MindSpore model zoo on Gitee at official/cv/ctpn.
 
-fasttext is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [official/nlp/fasttext](https://gitee.com/mindspore/models/blob/r1.8/official/nlp/fasttext/README.md).
+ctpn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/ctpn](https://gitee.com/mindspore/models/blob/r1.8/official/cv/ctpn/README.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.8/fasttext_dbpedia"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-"Bag of Tricks for Efficient Text Classification", 2016, A. Joulin, E. Grave, P. Bojanowski, and T. Mikolov
+Zhi Tian, Weilin Huang, Tong He, Pan He, Yu Qiao, "Detecting Text in Natural Image with Connectionist Text Proposal Network", ArXiv, vol. abs/1609.03605, 2016.
 
 ## Disclaimer
 

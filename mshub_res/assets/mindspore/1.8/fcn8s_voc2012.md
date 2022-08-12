@@ -6,7 +6,7 @@ model-name: FCN8s
 
 backbone-name: FCN8s
 
-module-type: cv
+module-type: cv-semantic_segmentation
 
 fine-tunable: True
 
@@ -14,11 +14,11 @@ model-version: 1.8
 
 train-dataset: voc2012
 
-evaluation: meanIoU64.57
+evaluation: meanIoU62.7
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/FCN8s>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/fcn8s_ascend_v180_voc2012_official_cv_meanIoU64.57.ckpt>
-    asset-sha256: e941446770369cad03e60a4154c3a6dc8e8ab20c19fa37ce2bd6f59fb9b97663
+    asset-link: <https://download.mindspore.cn/models/r1.8/fcn8s_ascend_v180_voc2012_official_cv_meanIoU62.7.ckpt>
+    asset-sha256: 154d6c082afa42ab0028f453bbb9716ac38164de359f9bcd0a47124f145a00ff
 
 license: Apache2.0
 

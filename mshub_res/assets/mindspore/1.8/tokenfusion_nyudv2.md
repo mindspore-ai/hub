@@ -1,26 +1,26 @@
-# deeptext
+# TokenFusion
 
 ---
 
-model-name: deeptext
+model-name: TokenFusion
 
-backbone-name: deeptext
+backbone-name: TokenFusion
 
-module-type: cv
+module-type: cv-object_detection
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: icdar2013_scutforu_cocotextv2
+train-dataset: NYUDv2
 
-evaluation: F1score85
+evaluation: acc54.8
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/deeptext>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/TokenFusion>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/deeptext_ascend_v180_icdar2013_scutforu_cocotextv2_official_cv_F1score85.ckpt>
-    asset-sha256: 0ac5e5cbfd40ddcd16e30b7baa1904ac7ec20c5e3f8f8850aa20fac9baf03f37
+    asset-link: <https://download.mindspore.cn/models/r1.8/tokenfusion_ascend_v180_nyudv2_research_cv_acc54.8.ckpt>
+    asset-sha256: aca709e5907ec3fca31fc003ca6b1d1e4d073a06e2a029ec84d9c5e13921bb2b
 
 license: Apache2.0
 
-summary: deeptext is used for cv
+summary: TokenFusion is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of deeptext from the MindSpore model zoo on Gitee at official/cv/deeptext.
+This MindSpore Hub model uses the implementation of TokenFusion from the MindSpore model zoo on Gitee at research/cv/TokenFusion.
 
-deeptext is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/deeptext](https://gitee.com/mindspore/models/blob/r1.8/official/cv/deeptext/README.md).
+TokenFusion is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/TokenFusion](https://gitee.com/mindspore/models/blob/r1.8/research/cv/TokenFusion/README.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.8/deeptext_icdar2013_scutforu_cocotextv2"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-Zhuoyao Zhong, Lianwen Jin, Shuangping Huang, South China University of Technology (SCUT), Published in ICASSP 2017.
+Yikai Wang, Xinghao Chen, Lele Cao, Wenbing Huang, Fuchun Sun, Yunhe Wang. Multimodal Token Fusion for Vision Transformers. In CVPR 2022.
 
 ## Disclaimer
 

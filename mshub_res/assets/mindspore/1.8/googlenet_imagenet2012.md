@@ -6,19 +6,19 @@ model-name: googlenet
 
 backbone-name: googlenet
 
-module-type: cv
+module-type: cv-classification
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc72.97 | top5acc90.97
+evaluation: top1acc69.8
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/googlenet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/googlenet_ascend_v180_imagenet2012_official_cv_top1acc72.97_top5acc90.97.ckpt>
-    asset-sha256: c35b3baff0b4413988a95fa3691733a58d1695b66bf2ae47030c41e539885240
+    asset-link: <https://download.mindspore.cn/models/r1.8/googlenet_ascend_v180_imagenet2012_official_cv_top1acc69.8.ckpt>
+    asset-sha256: bf5f4e4d85ad5664ba0cfca0733f1a344812b4a3ecead820d1fc3dffe1bf4b33
 
 license: Apache2.0
 

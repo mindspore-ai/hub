@@ -6,19 +6,19 @@ model-name: alexnet
 
 backbone-name: alexnet
 
-module-type: cv
+module-type: cv-classification
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc57.45 | top5acc80
+evaluation: acc57.0
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/alexnet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/alexnet_ascend_v180_imagenet2012_official_cv_top1acc57.45_top5acc80.ckpt>
-    asset-sha256: 363ce17938585048f0725d57372bcef2d167b4e4346cb39f1128434686f2b69f
+    asset-link: <https://download.mindspore.cn/models/r1.8/alexnet_ascend_v180_imagenet2012_official_cv_acc57.0.ckpt>
+    asset-sha256: b9f6ce9e1312405b4d0ccb9a31f9e0b03d4d40e30f54006ac38a6d0bc2a35a05
 
 license: Apache2.0
 
