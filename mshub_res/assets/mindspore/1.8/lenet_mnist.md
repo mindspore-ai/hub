@@ -6,19 +6,19 @@ model-name: lenet
 
 backbone-name: lenet
 
-module-type: cv
+module-type: cv-classification
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: mnist
+train-dataset: Mnist
 
-evaluation: acc98.49
+evaluation: acc98.05
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/lenet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/lenet_ascend_v180_mnist_official_cv_acc98.49.ckpt>
-    asset-sha256: f0734abb1f74d3e4d96ed9baf3fd6f17596943d58cbb17509506fae4518fceef
+    asset-link: <https://download.mindspore.cn/models/r1.8/lenet_ascend_v180_mnist_official_cv_acc98.05.ckpt>
+    asset-sha256: 44f26ea72e5bd8da4d8a75d230b67d28066d738df3c9d61c48460a0b0ee25902
 
 license: Apache2.0
 

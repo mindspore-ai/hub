@@ -6,7 +6,7 @@ model-name: centernet
 
 backbone-name: centernet
 
-module-type: cv
+module-type: cv-keypoint_detection
 
 fine-tunable: True
 
@@ -14,11 +14,11 @@ model-version: 1.8
 
 train-dataset: coco2017
 
-evaluation: mAP51.9 | AP50acc78.8 | AP75acc55.5 | medium44.5 | large63.9
+evaluation: mAP52.2
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/centernet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/centernet_ascend_v180_coco2017_research_cv_mAP51.9_AP50acc78.8_AP75acc55.5_medium44.5_large63.9.ckpt>
-    asset-sha256: 9c6fbfe8d3e47807d63f3c59726201bff036ddcdbb011a73e6276a4364a4c041
+    asset-link: <https://download.mindspore.cn/models/r1.8/centernet_ascend_v180_coco2017_research_cv_mAP52.2.ckpt>
+    asset-sha256: d406dd0132b33fc3ff2e3bf9f32a2fdadf7f71af81a7002de94cf1aaee9a97fc
 
 license: Apache2.0
 

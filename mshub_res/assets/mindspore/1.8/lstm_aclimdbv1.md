@@ -6,19 +6,19 @@ model-name: lstm
 
 backbone-name: lstm
 
-module-type: nlp
+module-type: nlp-emotion_classification
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: aclimdbv1
+train-dataset: AclImdb_v1
 
-evaluation: acc83.27
+evaluation: acc83.0
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/lstm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/lstm_ascend_v180_aclimdbv1_official_nlp_acc83.27.ckpt>
-    asset-sha256: 1753803072319f6538e5850d309afcad306f15b3b0fee995ce2234f1a2bb7e7e
+    asset-link: <https://download.mindspore.cn/models/r1.8/lstm_ascend_v180_aclimdbv1_official_nlp_acc83.0.ckpt>
+    asset-sha256: c5006b0b41e3f766bfe0f20f65ee6f244f0fed3b8ba04ede171c77f8d1595c9a
 
 license: Apache2.0
 

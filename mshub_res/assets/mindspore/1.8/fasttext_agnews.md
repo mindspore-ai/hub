@@ -6,19 +6,19 @@ model-name: fasttext
 
 backbone-name: fasttext
 
-module-type: nlp
+module-type: nlp-natural_language_understanding
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: agnews
+train-dataset: AG's News Topic Classification Dataset
 
-evaluation: acc92.58
+evaluation: acc92.5
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/fasttext>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/fasttext_ascend_v180_agnews_official_nlp_acc92.58.ckpt>
-    asset-sha256: 067f30b7b6cd19bb8a79601f1da365a1189881a3050f82d610b4f107c4d75d97
+    asset-link: <https://download.mindspore.cn/models/r1.8/fasttext_ascend_v180_agnews_official_nlp_acc92.5.ckpt>
+    asset-sha256: f75ac4df146b304231a5fbccd3814cde33c0ce6328627081d00f4917e985325a
 
 license: Apache2.0
 

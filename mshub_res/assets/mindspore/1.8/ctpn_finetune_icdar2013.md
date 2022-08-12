@@ -1,26 +1,26 @@
-# crnn
+# ctpn
 
 ---
 
-model-name: crnn
+model-name: ctpn
 
-backbone-name: crnn
+backbone-name: ctpn
 
-module-type: cv
+module-type: cv-object_detection
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: synth
+train-dataset: ICDAR2013
 
-evaluation: svtacc80.83 | iiit5kacc79.73
+evaluation: acc87.69
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/crnn>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/ctpn>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/crnn_ascend_v180_synth_official_cv_svtacc80.83_iiit5kacc79.73.ckpt>
-    asset-sha256: 640dd154c7d4bbf93de2103f5e58e3595e0085d6fcd07731669666dc9d0745fd
+    asset-link: <https://download.mindspore.cn/models/r1.8/ctpn_finetune_ascend_v180_icdar2013_official_cv_acc87.69.ckpt>
+    asset-sha256: c1f1e86e62fafe3a18dff64ae95084691cd6e7e5213f2c809ad8185cc62a56b7
 
 license: Apache2.0
 
-summary: crnn is used for cv
+summary: ctpn is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of crnn from the MindSpore model zoo on Gitee at official/cv/crnn.
+This MindSpore Hub model uses the implementation of ctpn from the MindSpore model zoo on Gitee at official/cv/ctpn.
 
-crnn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/crnn](https://gitee.com/mindspore/models/blob/r1.8/official/cv/crnn/README.md).
+ctpn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/ctpn](https://gitee.com/mindspore/models/blob/r1.8/official/cv/ctpn/README.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.8/crnn_synth"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-Baoguang Shi, Xiang Bai, Cong Yao, "An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition", ArXiv, vol. abs/1507.05717, 2015.
+Zhi Tian, Weilin Huang, Tong He, Pan He, Yu Qiao, "Detecting Text in Natural Image with Connectionist Text Proposal Network", ArXiv, vol. abs/1609.03605, 2016.
 
 ## Disclaimer
 

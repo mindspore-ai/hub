@@ -6,19 +6,19 @@ model-name: fasttext
 
 backbone-name: fasttext
 
-module-type: nlp
+module-type: nlp-natural_language_understanding
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: yelp
+train-dataset: Yelp Review Polarity Dataset
 
-evaluation: acc95.86
+evaluation: acc95.85
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/nlp/fasttext>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/fasttext_ascend_v180_yelp_official_nlp_acc95.86.ckpt>
-    asset-sha256: c6156d218c0e9ee484c273558e709c6f733528b0a14fdefdde1117db4dfe35c0
+    asset-link: <https://download.mindspore.cn/models/r1.8/fasttext_ascend_v180_yelp_official_nlp_acc95.85.ckpt>
+    asset-sha256: f0c5150d7cd7733feeaacdf34f65981f04a284be3c54a2082c0d693712d190ec
 
 license: Apache2.0
 

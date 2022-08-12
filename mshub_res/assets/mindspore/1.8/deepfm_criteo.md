@@ -6,19 +6,19 @@ model-name: deepfm
 
 backbone-name: deepfm
 
-module-type: recommend
+module-type: recommend-click_through_rate_prediction
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: criteo
+train-dataset: Criteo
 
-evaluation: acc80.5
+evaluation: acc80.07
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-10
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/recommend/deepfm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/deepfm_ascend_v180_criteo_official_recommend_acc80.5.ckpt>
-    asset-sha256: 57e11deb538dd32a8612ee655c14fe1438afe993ecd1a98c6ba6cf9e9c73e22d
+    asset-link: <https://download.mindspore.cn/models/r1.8/deepfm_ascend_v180_criteo_official_recommend_acc80.07.ckpt>
+    asset-sha256: 78cb1dccc049a397a1495ead68c0ec33c800772f13d51876406f34b379901558
 
 license: Apache2.0
 
