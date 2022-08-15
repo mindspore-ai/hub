@@ -66,6 +66,12 @@ def hub_list(version=None, force_reload=True):
     if not isinstance(force_reload, bool):
         raise TypeError('`force_reload` must be a bool type.')
 
+    # branch_versions = _get_all_branch_version(hub_dir)
+    branch_versions = ('master', 'r1.0', 'r1.0.1', 'r1.1', 'r1.2', 'r1.3', 'r1.4', 'r1.5', 'r1.6', 'r1.8')
+    if version not in branch_versions:
+        raise ValueError('`version` must be a correct version: '
+                         f'{branch_versions}.')
+
     repo_link = 'https://gitee.com/mindspore/hub.git'
     hub_dir = get_hub_dir()
     res_dir = os.path.join(hub_dir, 'mshub_res')
@@ -75,15 +81,9 @@ def hub_list(version=None, force_reload=True):
             print(f'Warning. Can\'t find net cache, will reloading.')
         _create_if_not_exist(os.path.dirname(res_dir))
         tmp_dir = tempfile.TemporaryDirectory(dir=hub_dir)
-        _download_repo_from_url(repo_link, tmp_dir.name)
+        _download_repo_from_url(repo_link, tmp_dir.name, branch=version)
         _delete_if_exist(res_dir)
         os.rename(os.path.join(tmp_dir.name, 'hub.git', 'mshub_res'), res_dir)
-
-    # branch_versions = _get_all_branch_version(hub_dir)
-    branch_versions = ('master', 'r1.0', 'r1.0.1', 'r1.1', 'r1.2', 'r1.3', 'r1.4', 'r1.5', 'r1.6', 'r1.8')
-    if version not in branch_versions:
-        raise ValueError('`version` must be a correct version: '
-                         f'{branch_versions}.')
 
     assets = []
     for model_version in os.listdir(os.path.join(res_dir, 'assets', 'mindspore')):
