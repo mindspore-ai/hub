@@ -165,7 +165,7 @@ def _download_repo_from_url(url, path=get_hub_dir(), branch='master'):
     arg["git_ssh"] = repo_infos["git_ssh"]
     arg["path"] = path
     arg["model_path"] = repo_infos["dst_dir"]
-    arg["branch"] = repo_infos["branch"] if branch != 'master' else branch
+    arg["branch"] = repo_infos["branch"] if branch == 'master' else branch
     is_repo = repo_infos["is_repo"]
 
     with tempfile.TemporaryDirectory() as git_dir:
