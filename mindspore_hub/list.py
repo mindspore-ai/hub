@@ -86,10 +86,19 @@ def hub_list(version=None, force_reload=True):
         os.rename(os.path.join(tmp_dir.name, 'hub.git', 'mshub_res'), res_dir)
 
     assets = []
-    for model_version in os.listdir(os.path.join(res_dir, 'assets', 'mindspore')):
-        for md_file in os.listdir(os.path.join(res_dir, 'assets', 'mindspore', model_version)):
-            asset = md_file[:-len('.md')]
-            if asset not in assets:
-                assets.append(asset)
+    old_versions = ('r1.0', 'r1.0.1', 'r1.1', 'r1.2', 'r1.3', 'r1.4', 'r1.5', 'r1.6')
+    if version in old_versions:
+        for device in os.listdir(os.path.join(res_dir, 'assets', 'mindspore')):
+            for mindspore_version in os.listdir(os.path.join(res_dir, 'assets', 'mindspore', device)):
+                for md_file in os.listdir(os.path.join(res_dir, 'assets', 'mindspore', device, mindspore_version)):
+                    asset = md_file[:-len('.md')]
+                    if asset not in assets:
+                        assets.append(asset)
+    else:
+        for model_version in os.listdir(os.path.join(res_dir, 'assets', 'mindspore')):
+            for md_file in os.listdir(os.path.join(res_dir, 'assets', 'mindspore', model_version)):
+                asset = md_file[:-len('.md')]
+                if asset not in assets:
+                    assets.append(asset)
     assets.sort()
     return assets
