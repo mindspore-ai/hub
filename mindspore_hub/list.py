@@ -76,7 +76,8 @@ def hub_list(version=None, force_reload=True):
     hub_dir = get_hub_dir()
     res_dir = os.path.join(hub_dir, 'mshub_res')
 
-    if force_reload or (not os.path.isdir(res_dir)):
+    if force_reload or (not os.path.isdir(res_dir))\
+            or (not os.path.isfile(os.path.join(res_dir, 'version.txt'))):
         if not force_reload:
             print(f'Warning. Can\'t find net cache, will reloading.')
         _create_if_not_exist(os.path.dirname(res_dir))
@@ -84,6 +85,16 @@ def hub_list(version=None, force_reload=True):
         _download_repo_from_url(repo_link, tmp_dir.name, branch=version)
         _delete_if_exist(res_dir)
         os.rename(os.path.join(tmp_dir.name, 'hub.git', 'mshub_res'), res_dir)
+        with open(os.path.join(res_dir, 'version.txt'), 'w', encoding='UTF-8') as f:
+            f.write(version)
+    else:
+        with open(os.path.join(res_dir, 'version.txt'), 'r', encoding='UTF-8') as f:
+            current_version = f.read()
+        if version != current_version:
+            raise ValueError(
+                f'If `force_reload` is False, `version` must be the value you set last time: {current_version}.'
+                f'If you want a new `version` ({version}) , set `force_reload` True.'
+            )
 
     assets = []
     old_versions = ('r1.0', 'r1.0.1', 'r1.1', 'r1.2', 'r1.3', 'r1.4', 'r1.5', 'r1.6')
