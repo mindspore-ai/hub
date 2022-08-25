@@ -42,7 +42,7 @@ def _create_if_not_exist(path):
 
 
 def _delete_if_exist(path):
-    """Delete backpu files"""
+    """Delete backup files"""
     if os.path.exists(path):
         if os.path.isdir(path):
             shutil.rmtree(path)
@@ -190,6 +190,8 @@ def load(name, *args, source='gitee', pretrained=True, force_reload=True, **kwar
     if not isinstance(pretrained, bool):
         raise TypeError('`pretrained` must be a bool type.')
 
+    if source not in ('local', 'gitee'):
+        raise ValueError('`source` must be "local" or "gitee"')
     if source == 'local':
         warnings.warn('Use local directory, `pretrained` maybe not work.')
         name = os.path.realpath(os.path.expanduser(name))
