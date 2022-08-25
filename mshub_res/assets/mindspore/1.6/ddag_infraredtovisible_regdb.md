@@ -12,7 +12,7 @@ fine-tunable: True
 
 model-version: 1.6
 
-train-dataset: rgbdb
+train-dataset: regdb
 
 evaluation: rank1acc71.84 | mAP65.0
 
