@@ -1,26 +1,26 @@
-# ktnet
+# semantic_human_matting
 
 ---
 
-model-name: ktnet
+model-name: semantic_human_matting
 
-backbone-name: ktnet
+backbone-name: semantic_human_matting
 
-module-type: nlp
+module-type: cv
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: SQuAD1.1
+train-dataset: Matting Human Datasets
 
-evaluation: F1score91.0
+evaluation: avgsad5.41
 
 author: MindSpore team
 
 update-time: 2022-08-31
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/nlp/ktnet>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/cv/semantic_human_matting>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/ktnet_ascend_v180_squad_research_nlp_F1score91.0.ckpt>
-    asset-sha256: f430fa39810a30be45b5f410358580dd729f7e06b43037c57588dfafc0bcc3ca
+    asset-link: <https://download.mindspore.cn/models/r1.8/semantichumanmatting_ascend_v180_mattinghumandatasets_official_cv_avgsad5.41.ckpt>
+    asset-sha256: 76986b88a571922acb5d8dced71ac1c99e4d1ae644f8145ee7834161046a558e
 
 license: Apache2.0
 
-summary: ktnet is used for nlp
+summary: semantic_human_matting is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of ktnet from the MindSpore model zoo on Gitee at research/nlp/ktnet.
+This MindSpore Hub model uses the implementation of semantic_human_matting from the MindSpore model zoo on Gitee at official/cv/semantic_human_matting.
 
-ktnet is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/ktnet](https://gitee.com/mindspore/models/blob/r1.8/research/nlp/ktnet/README.md).
+semantic_human_matting is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/semantic_human_matting](https://gitee.com/mindspore/models/blob/r1.8/official/cv/semantic_human_matting/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Yang A ,  Wang Q ,  Liu J , et al. Enhancing Pre-Trained Language Representations with Rich Knowledge for Machine Reading Comprehension[C]// Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 2019.
+[Semantic Human Matting](https://arxiv.org/pdf/1809.01354.pdf): Quan Chen, Tiezheng Ge, Yanyu Xu, Zhiqiang Zhang, Xinxin Yang, Kun Gai.
 
 ## Disclaimer
 

@@ -1,26 +1,26 @@
-# ktnet
+# deeplabv3plus
 
 ---
 
-model-name: ktnet
+model-name: deeplabv3plus
 
-backbone-name: ktnet
+backbone-name: deeplabv3plus
 
-module-type: nlp
+module-type: cv
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: SQuAD1.1
+train-dataset: voc2012
 
-evaluation: F1score91.0
+evaluation: -
 
 author: MindSpore team
 
 update-time: 2022-08-31
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/nlp/ktnet>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/deeplabv3plus>
 
 user-id: MindSpore
 
@@ -32,26 +32,43 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/ktnet_ascend_v180_squad_research_nlp_F1score91.0.ckpt>
-    asset-sha256: f430fa39810a30be45b5f410358580dd729f7e06b43037c57588dfafc0bcc3ca
+    asset-link: <https://download.mindspore.cn/models/r1.8/deeplabv3plus_s8r1_ascend_v180_voc2012_research_cv.ckpt>
+    asset-sha256: 0ca5f70aba086ce1aaea9459f6d48e2474b0123b50985201e1b6adba923cf33b
 
 license: Apache2.0
 
-summary: ktnet is used for nlp
+summary: deeplabv3plus is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of ktnet from the MindSpore model zoo on Gitee at research/nlp/ktnet.
+This MindSpore Hub model uses the implementation of deeplabv3plus from the MindSpore model zoo on Gitee at research/cv/deeplabv3plus.
 
-ktnet is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/ktnet](https://gitee.com/mindspore/models/blob/r1.8/research/nlp/ktnet/README.md).
+deeplabv3plus is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/deeplabv3plus](https://gitee.com/mindspore/models/blob/r1.8/research/cv/deeplabv3plus/README_CN.md).
 
 All parameters in the module are trainable.
 
+## Usage
+
+```python
+import mindspore_hub as mshub
+from mindspore import context
+
+context.set_context(mode=context.GRAPH_MODE,
+                    device_target="Ascend",
+                    device_id=0)
+
+model = "mindspore/1.8/deeplabv3plus_s8r1_voc2012"
+network = mshub.load(model)
+network.set_train(False)
+
+# ...
+```
+
 ## Citation
 
-Yang A ,  Wang Q ,  Liu J , et al. Enhancing Pre-Trained Language Representations with Rich Knowledge for Machine Reading Comprehension[C]// Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 2019.
+Chen, Liang-Chieh, et al. "Encoder-decoder with atrous separable convolution for semantic image segmentation." Proceedings of the European conference on computer vision (ECCV). 2018.
 
 ## Disclaimer
 

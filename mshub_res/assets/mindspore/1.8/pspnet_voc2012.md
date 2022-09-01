@@ -14,11 +14,11 @@ model-version: 1.8
 
 train-dataset: voc2012
 
-evaluation: miou74.15 | allacc94.01
+evaluation: mIoU73.81 | allAcc92.94
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-31
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/PSPNet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/pspnet_ascend_v180_voc2012_research_cv_miou74.15_allacc94.01.ckpt>
-    asset-sha256: 38ea9ed6abdeb1e3904df8d1a1fdb1690dfb5f41fca34bc3dd19fc9202cd1683
+    asset-link: <https://download.mindspore.cn/models/r1.8/pspnet_ascend_v180_voc2012_research_cv_mIoU73.81_allAcc92.94.ckpt>
+    asset-sha256: 26ac428f0f0c0c9d5f0bed0cd500b6a43e2c2e4e0d7e4252fa37ada66c9e8725
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[paper](https://arxiv.org/abs/1612.01105) from CVPR2017
+Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, Jiaya Jia. Pyramid Scene Parsing Network 2017.
 
 ## Disclaimer
 
