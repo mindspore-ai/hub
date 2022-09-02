@@ -1,3 +1,23 @@
+# Release 1.9.0
+
+## Major Features and Improvements
+
+* Update 'hub_list' API to list all supported assets for version <= 1.6.0.
+* Update some model assets in mindspore/1.8.
+* Add AdaBin (ECCV 2022) and TokenFusion model (CVPR'22) in noah-cvlab.
+
+## Bugfixes
+
+* ...
+
+## Thanks to our Contributors
+
+Thanks goes to these wonderful people:
+fanglei hzf liyanliu96 leonwanghui wuxuejian yanzhenxiang2020 yoonlee666 zhouyaqiang0 zhaoting chenhaozhe1 qiuyunlei zhouyaqiang2 guoqi5 leiyuning zhunaipan peng.yuanpeng steven.dingjian yingjiangyong liangxhao daiyuxin
+...
+
+Contributions of any kind are welcome!
+
 # Release 1.8.0
 
 ## Major Features and Improvements
