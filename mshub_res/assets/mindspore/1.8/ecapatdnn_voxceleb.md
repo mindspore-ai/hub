@@ -18,7 +18,7 @@ evaluation: EER0.82
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-31
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/official/audio/ecapa_tdnn>
 
