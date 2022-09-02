@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: ade20k
+train-dataset: ADE20K
 
-evaluation: miou41.57 | allacc79.71
+evaluation: mIoU41.71 | allAcc79.86
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-31
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/PSPNet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/pspnet_ascend_v180_ade20k_research_cv_miou41.57_allacc79.71.ckpt>
-    asset-sha256: 2eacbc1c5b10f6bc5ca9b5c8ac3799c12a2b888ae66cf701ecf3e80ba3008d6f
+    asset-link: <https://download.mindspore.cn/models/r1.8/pspnet_ascend_v180_ade20k_research_cv_mIoU41.71_allAcc79.86.ckpt>
+    asset-sha256: 91b0a5bfe5d2d2b9d3685177992f20917440e73199616e928a9146f72e16766c
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[paper](https://arxiv.org/abs/1612.01105) from CVPR2017
+Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, Jiaya Jia. Pyramid Scene Parsing Network 2017.
 
 ## Disclaimer
 
