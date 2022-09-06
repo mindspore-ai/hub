@@ -95,7 +95,6 @@ def _get_network_from_cache(name, path, *args, **kwargs):
     Returns:
         Cell, return network.
     """
-    net = None
     sys.path.insert(0, path)
     config_path = os.path.join(os.path.abspath(path), HUB_CONFIG_FILE)
     if not os.path.exists(config_path):
@@ -189,17 +188,17 @@ def load(name, *args, source='gitee', pretrained=True, force_reload=True, **kwar
         raise TypeError('`force_reload` must be a bool type.')
     if not isinstance(pretrained, bool):
         raise TypeError('`pretrained` must be a bool type.')
-
     if source not in ('local', 'gitee'):
         raise ValueError('`source` must be "local" or "gitee"')
+
+    hub_dir = get_hub_dir()
+    _create_if_not_exist(hub_dir)
     if source == 'local':
         warnings.warn('Use local directory, `pretrained` maybe not work.')
-        name = os.path.realpath(os.path.expanduser(name))
-        target_path = os.path.dirname(name)
-        md_path = name
+        md_path = os.path.realpath(os.path.expanduser(name))
+        net_name = re.split(r'[_.]', os.path.basename(md_path))[0]
+        target_path = os.path.join(hub_dir, net_name)
     else:
-        hub_dir = get_hub_dir()
-        _create_if_not_exist(hub_dir)
         uid, md_name = _get_uid_and_md_name(name)
         target_path = os.path.dirname(os.path.join(hub_dir, uid))
         _create_if_not_exist(target_path)
@@ -208,16 +207,12 @@ def load(name, *args, source='gitee', pretrained=True, force_reload=True, **kwar
     info = CellInfo(md_path)
     basename = os.path.basename(info.repo_link).strip("<>")
     net_dir = os.path.join(target_path, basename)
-    hub_dir = get_hub_dir()
 
     if force_reload or (not os.path.isdir(net_dir)):
         if not force_reload:
             print(f'Warning. Can\'t find net cache, will reloading.')
-        _create_if_not_exist(os.path.dirname(net_dir))
-        tmp_dir = tempfile.TemporaryDirectory(dir=hub_dir)
-        _download_repo_from_url(info.repo_link, tmp_dir.name)
-        _delete_if_exist(net_dir)
-        os.rename(os.path.join(tmp_dir.name, basename), net_dir)
+        _create_if_not_exist(target_path)
+        _download_repo_from_url(info.repo_link, target_path)
 
     net = _get_network_from_cache(info.name, net_dir, *args, **kwargs)
     if not isinstance(net, nn.Cell):
@@ -249,13 +244,13 @@ def load_weights(name, source='gitee', force_reload=True):
         >>> url = 'https://gitee.com/mindspore/hub/blob/master/mshub_res/assets/mindspore/1.3/alexnet_cifar10.md'
         >>> param_dict = load_weights(url, source='gitee', force_reload=True)
     """
+    hub_dir = get_hub_dir()
+    _create_if_not_exist(hub_dir)
     if source == 'local':
-        name = os.path.realpath(os.path.expanduser(name))
-        target_path = os.path.dirname(name)
-        md_path = name
+        md_path = os.path.realpath(os.path.expanduser(name))
+        net_name = re.split(r'[_.]', os.path.basename(md_path))[0]
+        target_path = os.path.join(hub_dir, net_name)
     else:
-        hub_dir = get_hub_dir()
-        _create_if_not_exist(hub_dir)
         uid, md_name = _get_uid_and_md_name(name)
         target_path = os.path.dirname(os.path.join(hub_dir, uid))
         _create_if_not_exist(target_path)
