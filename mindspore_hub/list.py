@@ -58,6 +58,13 @@ def hub_list(version=None, force_reload=True):
 
     Returns:
         list, a list of assets supported by MindSpore Hub.
+
+    Examples:
+        >>> import mindspore_hub as ms_hub
+        >>> hub_list = ms_hub.hub_list()
+        >>> hub_list[:5]
+        >>> ['3dcnn_brast2017', '3ddensenet_iseg2017', 'adnet_vot2013vot2014', 'advancedeast_icpr2018',
+        'aecrnet_reside']
     """
     if version is None:
         version = 'master'
