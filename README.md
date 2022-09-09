@@ -17,6 +17,7 @@
 - [Contributing](#contributing)
 - [Release Notes](#release-notes)
 - [License](#license)
+- [FAQ](#FAQ)
 
 ## What is MindSpore Hub
 
