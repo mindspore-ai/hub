@@ -95,7 +95,6 @@ def _get_network_from_cache(name, path, *args, **kwargs):
     Returns:
         Cell, return network.
     """
-    net = None
     sys.path.insert(0, path)
     config_path = os.path.join(os.path.abspath(path), HUB_CONFIG_FILE)
     if not os.path.exists(config_path):
@@ -103,13 +102,10 @@ def _get_network_from_cache(name, path, *args, **kwargs):
     spec = importlib.util.spec_from_file_location(HUB_CONFIG_FILE, config_path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    cwd = os.getcwd()
-    os.chdir(path)
     if not hasattr(module, ENTRY_POINT):
         raise KeyError('Can\'t find `create_net` function.')
     func = getattr(module, ENTRY_POINT)
     net = func(name.lower(), *args, **kwargs)
-    os.chdir(cwd)
     return net
 
 
@@ -133,7 +129,7 @@ def _get_uid_from_url(url):
     return os.path.join(*values[-3:])
 
 
-def load(name, *args, source='gitee', pretrained=True, force_reload=True, **kwargs):
+def load(name, *args, source='gitee', pretrained=True, force_reload=False, **kwargs):
     r"""
     Load network with the given name. After loading, it can be used for inference verification, migration learning, etc.
 
@@ -142,7 +138,7 @@ def load(name, *args, source='gitee', pretrained=True, force_reload=True, **kwar
         args (tuple): Arguments for network initialization.
         source (str): Whether to parse `name` as gitee model URI, github model URI or local resource. Default: gitee.
         pretrained (bool): Whether to load the pretrained model. Default: True.
-        force_reload (bool): Whether to reload the network from url. Default: True.
+        force_reload (bool): Whether to reload the network from url. Default: False.
         kwargs (dict): Keyword arguments for network initialization.
 
     Returns:
@@ -197,8 +193,7 @@ def load(name, *args, source='gitee', pretrained=True, force_reload=True, **kwar
     if source == 'local':
         warnings.warn('Use local directory, `pretrained` maybe not work.')
         md_path = os.path.realpath(os.path.expanduser(name))
-        net_name = re.split(r'[_.]', os.path.basename(md_path))[0]
-        target_path = os.path.join(hub_dir, net_name)
+        target_path = os.path.dirname(md_path)
     else:
         uid, md_name = _get_uid_and_md_name(name)
         target_path = os.path.dirname(os.path.join(hub_dir, uid))
@@ -227,14 +222,14 @@ def load(name, *args, source='gitee', pretrained=True, force_reload=True, **kwar
     return net
 
 
-def load_weights(name, source='gitee', force_reload=True):
+def load_weights(name, source='gitee', force_reload=False):
     """
     Load a model from MindSpore mindspore_hub, with pertained weights.
 
     Args:
         name (str): Uid or url of the network.
         source (str): Whether to parse `name` as gitee model URI, github model URI or local resource. Default: gitee.
-        force_reload (bool, optional): Whether to force a fresh download unconditionally. Default: False.
+        force_reload (bool): Whether to force a fresh download unconditionally. Default: False.
 
     Returns:
         param_dict (dict) : Parameter dict for network weights.
@@ -249,8 +244,7 @@ def load_weights(name, source='gitee', force_reload=True):
     _create_if_not_exist(hub_dir)
     if source == 'local':
         md_path = os.path.realpath(os.path.expanduser(name))
-        net_name = re.split(r'[_.]', os.path.basename(md_path))[0]
-        target_path = os.path.join(hub_dir, net_name)
+        target_path = os.path.dirname(md_path)
     else:
         uid, md_name = _get_uid_and_md_name(name)
         target_path = os.path.dirname(os.path.join(hub_dir, uid))
@@ -268,6 +262,8 @@ def load_weights(name, source='gitee', force_reload=True):
         ckpt_name = os.path.basename(download_url.split("/")[-1])
         ckpt_path = os.path.join(target_path, ckpt_name)
         if not os.path.exists(ckpt_path):
+            print(f'Warning. The `{ckpt_name}` is not exist in local, '
+                  f'it will auto-download.')
             ckpt_path = _download_file_from_url(download_url, asset_sha256, target_path)
 
     param_dict = load_checkpoint(ckpt_path)
