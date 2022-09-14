@@ -7,8 +7,9 @@
 - [Environment Requirements](#environment-requirements)
     - [System Requirements and Software Dependencies](#system-requirements-and-software-dependencies)
 - [Installation](#installation)
-    - [Installation for development](#installation-for-development)
-    - [Binaries](#binaries)
+    - [Installation from source code](#Installation from source code)
+    - [Installation from pip command](#Installation from pip command)
+    - [Verification](#Verification)
 - [Quickstart](#quickstart)
 - [Docs](#docs)
 - [Community](#community)
@@ -45,7 +46,22 @@ Current pre-trained models in MindSpore Hub mainly cover four mainstream task sc
 
 ## Installation
 
-### Installation for development
+The Hub depends on MindSprore because the Hub depends on the models repository of MindSpore. Please follow the table below and install the corresponding MindSpore verision from [MindSpore download page](https://www.mindspore.cn/versions/en).
+
+| MindSpore Hub|                             Branch                    | MindSpore |
+| :----------: | :------------------------------------------------: | :-------: |
+|     1.9.0    | [r1.9](https://gitee.com/mindspore/hub/tree/r1.9/) |   1.9.0   |
+|     1.8.0    | [r1.8](https://gitee.com/mindspore/hub/tree/r1.8/) |   1.8.0   |
+|     1.6.0    | [r1.6](https://gitee.com/mindspore/hub/tree/r1.6/) |   1.6.0   |
+|     1.5.0    | [r1.5](https://gitee.com/mindspore/hub/tree/r1.5/) |   1.5.0   |
+|     1.4.0    | [r1.4](https://gitee.com/mindspore/hub/tree/r1.4/) |   1.4.0   |
+|     1.3.0    | [r1.3](https://gitee.com/mindspore/hub/tree/r1.3/) |   1.3.0   |
+|     1.2.0    | [r1.2](https://gitee.com/mindspore/hub/tree/r1.2/) |   1.2.0   |
+|     1.1.0    | [r1.1](https://gitee.com/mindspore/hub/tree/r1.1/) |   1.2.0   |
+|     1.0.1    | [r1.0.1](https://gitee.com/mindspore/hub/tree/r1.0.1/) |   1.2.0  |
+|     1.0.0    | [r1.0](https://gitee.com/mindspore/hub/tree/r1.0/) |   1.2.0   |
+
+### Installation from source code
 
 1. Download source code from Gitee.
 
@@ -60,22 +76,21 @@ Current pre-trained models in MindSpore Hub mainly cover four mainstream task sc
    python setup.py install
    ```
 
-### Binaries
+### Installation from pip command
 
-Install MindSpore Hub using `pip` command. `hub` depends on the MindSpore version used in current environment.
-
-1. Please download whl package from [MindSpore Hub download page](https://www.mindspore.cn/versions/en).
+Install MindSpore Hub using `pip` command. Please download whl package from [MindSpore Hub download page](https://www.mindspore.cn/versions/en).
 
    ```shell script
    pip install mindspore_hub-{version}-py3-none-any.whl
    ```
 
-2. Run the following command in a network-enabled environment to verify the installation.
+### Verification
 
-   ```python
-   import mindspore_hub as mshub
-   model = mshub.load("mindspore/1.6/googlenet_v1_cifar10", num_classes=10)
-   ```
+If you can successfully execute following command, then the installation is completed.
+
+```python
+import mindspore_hub as mshub
+```
 
 ## Quickstart
 
