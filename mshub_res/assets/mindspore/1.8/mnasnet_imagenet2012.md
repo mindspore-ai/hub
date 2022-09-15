@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc73.98 | top5acc91.68
+evaluation: top1acc73.94 | top5acc91.75
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-31
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/mnasnet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/mnasnet_ascend_v180_imagenet2012_research_cv_top1acc73.98_top5acc91.68.ckpt>
-    asset-sha256: d72b9a520a7687c0017289dc80cb480f84c01d8542fee1fa367ab914467f69c2
+    asset-link: <https://download.mindspore.cn/models/r1.8/mnasnet_ascend_v180_imagenet2012_research_cv_top1acc73.94_top5acc91.75.ckpt>
+    asset-sha256: ac2fe65ac34e0d3ec213726b5f19077f170d74fb36fa1813a252c70007c26d71
 
 license: Apache2.0
 

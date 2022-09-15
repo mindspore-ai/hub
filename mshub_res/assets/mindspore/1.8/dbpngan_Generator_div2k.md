@@ -1,26 +1,26 @@
-# ktnet
+# DBPN_GAN
 
 ---
 
-model-name: ktnet
+model-name: DBPN_GAN
 
-backbone-name: ktnet
+backbone-name: DBPN
 
-module-type: nlp
+module-type: cv
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: SQuAD1.1
+train-dataset: DIV2K
 
-evaluation: F1score91.0
+evaluation: PSNR28.32
 
 author: MindSpore team
 
 update-time: 2022-08-31
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/nlp/ktnet>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/DBPN>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/ktnet_ascend_v180_squad_research_nlp_F1score91.0.ckpt>
-    asset-sha256: f430fa39810a30be45b5f410358580dd729f7e06b43037c57588dfafc0bcc3ca
+    asset-link: <https://download.mindspore.cn/models/r1.8/dbpngan_Generator_ascend_v180_div2k_research_cv_PSNR28.32.ckpt>
+    asset-sha256: a05fd099200182e93e97ba1a5413fe2877ee62aa567871f902c35543f4e9113c
 
 license: Apache2.0
 
-summary: ktnet is used for nlp
+summary: DBPN is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of ktnet from the MindSpore model zoo on Gitee at research/nlp/ktnet.
+This MindSpore Hub model uses the implementation of DBPN from the MindSpore model zoo on Gitee at research/cv/DBPN.
 
-ktnet is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/ktnet](https://gitee.com/mindspore/models/blob/r1.8/research/nlp/ktnet/README.md).
+DBPN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/DBPN](https://gitee.com/mindspore/models/blob/r1.8/research/cv/DBPN/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Yang A ,  Wang Q ,  Liu J , et al. Enhancing Pre-Trained Language Representations with Rich Knowledge for Machine Reading Comprehension[C]// Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 2019.
+Muhammad Haris, Greg Shakhnarovich, Norimichi Ukita
 
 ## Disclaimer
 

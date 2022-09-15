@@ -1,26 +1,26 @@
-# ktnet
+# tacotron2
 
 ---
 
-model-name: ktnet
+model-name: tacotron2
 
-backbone-name: ktnet
+backbone-name: tacotron2
 
-module-type: nlp
+module-type: audio
 
 fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: SQuAD1.1
+train-dataset: LJSpeech-1.1
 
-evaluation: F1score91.0
+evaluation: -
 
 author: MindSpore team
 
 update-time: 2022-08-31
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/nlp/ktnet>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/audio/tacotron2>
 
 user-id: MindSpore
 
@@ -32,26 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/ktnet_ascend_v180_squad_research_nlp_F1score91.0.ckpt>
-    asset-sha256: f430fa39810a30be45b5f410358580dd729f7e06b43037c57588dfafc0bcc3ca
+    asset-link: <https://download.mindspore.cn/models/r1.8/tacotron2_ascend_v180_ljspeech11_research_audio.ckpt>
+    asset-sha256: d787066f14f9465676d5c3260221d4ff251a56909744bed6862c062f77ece26d
 
 license: Apache2.0
 
-summary: ktnet is used for nlp
+summary: tacotron2 is used for audio
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of ktnet from the MindSpore model zoo on Gitee at research/nlp/ktnet.
+This MindSpore Hub model uses the implementation of tacotron2 from the MindSpore model zoo on Gitee at research/audio/tacotron2.
 
-ktnet is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/ktnet](https://gitee.com/mindspore/models/blob/r1.8/research/nlp/ktnet/README.md).
+tacotron2 is a audio network. More details please refer to the MindSpore model zoo on Gitee at [research/audio/tacotron2](https://gitee.com/mindspore/models/blob/r1.8/research/audio/tacotron2/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Yang A ,  Wang Q ,  Liu J , et al. Enhancing Pre-Trained Language Representations with Rich Knowledge for Machine Reading Comprehension[C]// Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 2019.
+Jonathan, et al. Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions.
 
 ## Disclaimer
 
