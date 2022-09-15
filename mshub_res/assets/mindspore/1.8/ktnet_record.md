@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: record
+train-dataset: ReCoRD
 
-evaluation: f1score70.72
+evaluation: F1score70.45
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-31
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/nlp/ktnet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/ktnet_ascend_v180_record_research_nlp_f1score70.72.ckpt>
-    asset-sha256: 336bb72ac1724bae7d32699c0f4ef6fa737e185f9ed89bdc1b3b885398206238
+    asset-link: <https://download.mindspore.cn/models/r1.8/ktnet_ascend_v180_record_research_nlp_F1score70.45.ckpt>
+    asset-sha256: a0de3e0447d81e5705b029072e0588f6c46af825bb0ff9b79c706d6d28d1a113
 
 license: Apache2.0
 

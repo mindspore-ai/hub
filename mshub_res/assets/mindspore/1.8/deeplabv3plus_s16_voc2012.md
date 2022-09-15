@@ -14,11 +14,11 @@ model-version: 1.8
 
 train-dataset: voc2012
 
-evaluation: s16acc78.68 | s16multiscale79.69 | s16multiscaleflip79.93
+evaluation: s16acc79.06 | s16multiscale79.96 | s16multiscaleflip80.12
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-31
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/deeplabv3plus>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/deeplabv3plus_s16_ascend_v180_voc2012_research_cv_s16acc78.68_s16multiscale79.69_s16multiscaleflip79.93.ckpt>
-    asset-sha256: 40799dc071ec20d0376635d2cbe42c00159c594384625d6c33e4c65caa81eab4
+    asset-link: <https://download.mindspore.cn/models/r1.8/deeplabv3plus_s16_ascend_v180_voc2012_research_cv_s16acc79.06_s16multiscale79.96_s16multiscaleflip80.12.ckpt>
+    asset-sha256: 356a651b5ef605c2fdf571bc53847059a58efb88f08a4536f440ffe0588e137b
 
 license: Apache2.0
 

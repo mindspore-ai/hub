@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc64.59 | top5acc85.64
+evaluation: top1acc64.82 | top5acc85.66
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-31
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/SPPNet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/sppnet_mult_ascend_v180_imagenet2012_research_cv_top1acc64.59_top5acc85.64.ckpt>
-    asset-sha256: 77b5f5874010c82a05618475b1f89b65d0d5bd45994c82da672482cc1ba6f803
+    asset-link: <https://download.mindspore.cn/models/r1.8/sppnet_mult_ascend_v180_imagenet2012_research_cv_top1acc64.82_top5acc85.66.ckpt>
+    asset-sha256: e1909f126c78468ddc99f56020fca5bc8a49b1102f1e6f86115353ef3365b784
 
 license: Apache2.0
 

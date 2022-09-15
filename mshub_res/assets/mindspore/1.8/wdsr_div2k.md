@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.8
 
-train-dataset: div2k
+train-dataset: DIV2K
 
-evaluation: psnr35.35
+evaluation: PSNR33.62
 
 author: MindSpore team
 
-update-time: 2022-07-19
+update-time: 2022-08-31
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.8/research/cv/wdsr>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.8/wdsr_ascend_v180_div2k_research_cv_psnr35.35.ckpt>
-    asset-sha256: 2edcb77de7a0180158d2322f36454fa4a81701b1c9477f6380d8161a81a1e429
+    asset-link: <https://download.mindspore.cn/models/r1.8/wdsr_ascend_v180_div2k_research_cv_PSNR33.62.ckpt>
+    asset-sha256: 5afacb5bbd78341033284d7c9453b881c0732c13c711edc99c469f9d0a96f65a
 
 license: Apache2.0
 
