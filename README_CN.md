@@ -2,13 +2,14 @@
 
 [View English](./README.md)
 
-- [MindSpore Hub介绍](#mindspore_hub介绍)
+- [MindSpore Hub介绍](#MindSpore Hub介绍)
     - [特性](#特性)
 - [环境要求](#环境要求)
     - [系统要求和软件依赖](#系统要求和软件依赖)
 - [安装](#安装)
     - [源码安装](#源码安装)
-    - [二进制文件](#二进制文件)
+    - [pip安装](#pip)
+    - [验证是否安装成功](#验证是否安装成功)
 - [快速入门](#快速入门)
 - [文档](#文档)
 - [社区](#社区)
@@ -46,6 +47,25 @@ MindSpore Hub是MindSpore生态的预训练模型应用工具，作为模型开�
 
 ## 安装
 
+由于Hub直接使用MindSpore models仓代码，Hub对Mindspore版本有依赖。请按照根据下表中所指示的对应关系，在[MindSpore下载页面](https://www.mindspore.cn/versions)下载并安装对应的whl包。
+
+```shell
+pip install https://ms-release.obs.cn-north-4.myhuaweicloud.com/{MindSpore-Version}/MindSpore/cpu/ubuntu_x86/mindspore-{MindSpore-Version}-cp37-cp37m-linux_x86_64.whl
+```
+
+| MindSpore Hub|                             分支                    | MindSpore |
+| :----------: | :------------------------------------------------: | :-------: |
+|     1.9.0    | [r1.9](https://gitee.com/mindspore/hub/tree/r1.9/) |   1.9.0   |
+|     1.8.0    | [r1.8](https://gitee.com/mindspore/hub/tree/r1.8/) |   1.8.0   |
+|     1.6.0    | [r1.6](https://gitee.com/mindspore/hub/tree/r1.6/) |   1.6.0   |
+|     1.5.0    | [r1.5](https://gitee.com/mindspore/hub/tree/r1.5/) |   1.5.0   |
+|     1.4.0    | [r1.4](https://gitee.com/mindspore/hub/tree/r1.4/) |   1.4.0   |
+|     1.3.0    | [r1.3](https://gitee.com/mindspore/hub/tree/r1.3/) |   1.3.0   |
+|     1.2.0    | [r1.2](https://gitee.com/mindspore/hub/tree/r1.2/) |   1.2.0   |
+|     1.1.0    | [r1.1](https://gitee.com/mindspore/hub/tree/r1.1/) |   1.2.0   |
+|     1.0.1    | [r1.0.1](https://gitee.com/mindspore/hub/tree/r1.0.1/) |   1.2.0  |
+|     1.0.0    | [r1.0](https://gitee.com/mindspore/hub/tree/r1.0/) |   1.2.0   |
+
 ### 源码安装
 
 1. 从Gitee下载源码。
@@ -61,22 +81,21 @@ MindSpore Hub是MindSpore生态的预训练模型应用工具，作为模型开�
    python setup.py install
    ```
 
-### 二进制文件
+### pip安装
 
-使用`pip`命令安装，`hub`依赖当前环境中安装的MindSpore版本。
-
-1. 请从[MindSpore Hub下载页面](https://www.mindspore.cn/versions)下载并安装whl包。
+使用`pip`命令安装，请从[MindSpore Hub下载页面](https://www.mindspore.cn/versions)下载并安装whl包。
 
    ```shell script
    pip install mindspore_hub-{version}-py3-none-any.whl
    ```
 
-2. 在能联网的环境中执行以下命令，验证安装结果。
+### 验证是否安装成功
 
-   ```python
-   import mindspore_hub as mshub
-   model = mshub.load("mindspore/1.6/googlenet_cifar10", num_classes=10)
-   ```
+执行以下命令，验证安装结果。导入mindspore_hub模块不报错即安装成功。
+
+```python
+import mindspore_hub as mshub
+```
 
 ## 快速入门
 
