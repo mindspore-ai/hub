@@ -7,8 +7,8 @@
 - [Environment Requirements](#environment-requirements)
     - [System Requirements and Software Dependencies](#system-requirements-and-software-dependencies)
 - [Installation](#installation)
-    - [Installation from source code](#Installation from source code)
-    - [Installation from pip command](#Installation from pip command)
+    - [Installation from source code](#Installation-from-source-code)
+    - [Installation from pip command](#Installation-from-pip-command)
     - [Verification](#Verification)
 - [Quickstart](#quickstart)
 - [Docs](#docs)
@@ -167,4 +167,4 @@ def _get_network_from_cache(name, path, *args, **kwargs):
     ......
 ```
 
-  **Note**: Some files of the previous model may be replaced when the next model is loaded. However， necessary model files must exist during model training. Therefore, you must train the model before the next model loads.
+  **Note**: Some files of the previous model may be replaced when the next model is loaded. However， necessary model files must exist during model training. Therefore, you must finish training the previous model before the next model loads.

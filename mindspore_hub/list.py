@@ -48,13 +48,13 @@ def _get_all_branch_version(hub_dir):
     return versions
 
 
-def hub_list(version=None, force_reload=True):
+def hub_list(version=None, force_reload=False):
     r"""
     List all assets supported by MindSpore Hub.
 
     Args:
         version (str): Specify which version to list. None indicates the latest version. Default: None.
-        force_reload (bool): Whether to reload the network from url. Default: True.
+        force_reload (bool): Whether to reload the network from url. Default: False.
 
     Returns:
         list, a list of assets supported by MindSpore Hub.
