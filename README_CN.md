@@ -41,7 +41,7 @@ MindSpore Hub是MindSpore生态的预训练模型应用工具，作为模型开�
 
 | 版本号                 | 操作系统            | 可执行文件安装依赖                                           | 源码编译安装依赖         |
 | ---------------------- | :------------------ | :----------------------------------------------------------- | :----------------------- |
-| MindSpore Hub master | - Ubuntu 18.04 x86_64 <br> - Ubuntu 18.04 aarch64 <br> - EulerOS 2.8 aarch64 <br> - EulerOS 2.5 x86_64 <br> | - [Python](https://www.python.org/downloads/) 3.7.5 <br> - MindSpore master<br> - 其他依赖项参见[setup.py](https://gitee.com/mindspore/hub/blob/master/setup.py) | 与可执行文件安装依赖相同 |
+| MindSpore Hub master | - Ubuntu 18.04 x86_64 <br> - Ubuntu 18.04 aarch64 <br> - EulerOS 2.8 aarch64 <br> - EulerOS 2.5 x86_64 <br> | - [Python](https://www.python.org/downloads/) 3.7.5 <br> - MindSpore master<br> - 其他依赖项参见[setup.py](https://gitee.com/mindspore/hub/blob/r1.9/setup.py) | 与可执行文件安装依赖相同 |
 
 - 在联网状态下，安装whl包时会自动下载`setup.py`中的依赖项，其余情况需自行安装。
 
@@ -71,7 +71,7 @@ pip install https://ms-release.obs.cn-north-4.myhuaweicloud.com/{MindSpore-Versi
 1. 从Gitee下载源码。
 
    ```bash
-   git clone https://gitee.com/mindspore/hub.git
+   git clone https://gitee.com/mindspore/hub.git -b r1.9
    ```
 
 2. 编译安装MindSpore Hub。
@@ -99,11 +99,11 @@ import mindspore_hub as mshub
 
 ## 快速入门
 
-参考[从Hub加载模型](https://www.mindspore.cn/hub/docs/zh-CN/master/loading_model_from_hub.html)实现模型加载以及模型微调迁移。
+参考[从Hub加载模型](https://www.mindspore.cn/hub/docs/zh-CN/r1.9/loading_model_from_hub.html)实现模型加载以及模型微调迁移。
 
 ## 文档
 
-有关安装指南、教程和API的更多详细信息，请参阅[从Hub加载模型](https://www.mindspore.cn/hub/docs/zh-CN/master/loading_model_from_hub.html)和[发布模型](https://www.mindspore.cn/hub/docs/zh-CN/master/publish_model.html)。
+有关安装指南、教程和API的更多详细信息，请参阅[从Hub加载模型](https://www.mindspore.cn/hub/docs/zh-CN/r1.9/loading_model_from_hub.html)和[发布模型](https://www.mindspore.cn/hub/docs/zh-CN/r1.9/publish_model.html)。
 
 ## 社区
 

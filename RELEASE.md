@@ -99,7 +99,7 @@ Contributions of any kind are welcome!
 
 * Loading model in just one line of code, support to inference and fine-tuning
 * Publish models quickly and easily
-    * Follow the guides in [publish readme](https://gitee.com/mindspore/hub/blob/master/mshub_res/README.md), your model will be shown in less than 24 hours
+    * Follow the guides in [publish readme](https://gitee.com/mindspore/hub/blob/r1.9/mshub_res/README.md), your model will be shown in less than 24 hours
 * Allow searching models in [MindSpore Hub Website](https://www.mindspore.cn/resources/hub)
 * Supported model list
     * GoogleNet

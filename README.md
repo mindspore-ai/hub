@@ -40,7 +40,7 @@ Current pre-trained models in MindSpore Hub mainly cover four mainstream task sc
 
 | Version | Operating System | Executable File Installation Dependencies | Source Code Compilation and Installation Dependencies |
 | ---- | :--- | :--- | :--- |
-| MindSpore Hub master | - Ubuntu 18.04 x86_64 <br> - Ubuntu 18.04 aarch64 <br> - EulerOS 2.8 aarch64 <br> - EulerOS 2.5 x86_64 <br> | - [Python](https://www.python.org/downloads/) 3.7.5 <br> - MindSpore master <br> - For details about other dependency items, see [setup.py](https://gitee.com/mindspore/hub/blob/master/setup.py). | Same as the executable file installation dependencies. |
+| MindSpore Hub master | - Ubuntu 18.04 x86_64 <br> - Ubuntu 18.04 aarch64 <br> - EulerOS 2.8 aarch64 <br> - EulerOS 2.5 x86_64 <br> | - [Python](https://www.python.org/downloads/) 3.7.5 <br> - MindSpore master <br> - For details about other dependency items, see [setup.py](https://gitee.com/mindspore/hub/blob/r1.9/setup.py). | Same as the executable file installation dependencies. |
 
 - When the network is connected, dependency items in the `setup.py` file are automatically downloaded during .whl package installation. In other cases, you need to manually install dependency items.
 
@@ -66,7 +66,7 @@ The Hub depends on MindSprore because the Hub depends on the models repository o
 1. Download source code from Gitee.
 
    ```bash
-   git clone https://gitee.com/mindspore/hub.git
+   git clone https://gitee.com/mindspore/hub.git -b r1.9
    ```
 
 2. Compile and install in MindSpore Hub directory.
@@ -94,11 +94,11 @@ import mindspore_hub as mshub
 
 ## Quickstart
 
-See the [Loading the Model from Hub](https://www.mindspore.cn/hub/docs/en/master/loading_model_from_hub.html) to implement model loading and fine-tuning.
+See the [Loading the Model from Hub](https://www.mindspore.cn/hub/docs/en/r1.9/loading_model_from_hub.html) to implement model loading and fine-tuning.
 
 ## Docs
 
-For more information about installation guide, tutorials and APIs, please check out the [Loading the Model from Hub](https://www.mindspore.cn/hub/docs/en/master/loading_model_from_hub.html) and [Publishing Models using MindSpore Hub](https://www.mindspore.cn/hub/docs/en/master/publish_model.html).
+For more information about installation guide, tutorials and APIs, please check out the [Loading the Model from Hub](https://www.mindspore.cn/hub/docs/en/r1.9/loading_model_from_hub.html) and [Publishing Models using MindSpore Hub](https://www.mindspore.cn/hub/docs/en/r1.9/publish_model.html).
 
 ## Community
 

@@ -71,7 +71,7 @@ MindSpore Lite：True
 | 参数(M)             | 5.2                                                   | 11.9 |
 | FLOPs (M) | 142 | 591 |
 | 准确率 (Top1) | 73.9 |80.2 |
-![flops_latency](https://gitee.com/mindspore/hub/raw/master/mshub_res/assets/noah-cvlab/static/images/ghostnet_static_img.png)
+![flops_latency](https://gitee.com/mindspore/hub/raw/r1.9/mshub_res/assets/noah-cvlab/static/images/ghostnet_static_img.png)
 
 #### 在Oxford-IIIT Pet上的GhostNet
 
