@@ -161,10 +161,10 @@ def load(name, *args, source='gitee', pretrained=True, force_reload=False, **kwa
         >>> # 1.1.2. The preceding address is <D:\hub\mshub_res\assets\mindspore\1.3\alexnet_cifar10.md>.
         >>> #
         >>> # 1.2. Find the corresponding md file from the website.
-        >>> # 1.2.1. The prefix is fixed: <https://gitee.com/mindspore/hub/tree/master/mshub_res/assets/>
+        >>> # 1.2.1. The prefix is fixed: <https://gitee.com/mindspore/hub/tree/r1.9/mshub_res/assets/>
         >>> # + <address where you want to load the md file>.
         >>> # 1.2.2. The preceding address is
-        >>> # <https://gitee.com/mindspore/hub/tree/master/mshub_res/assets/
+        >>> # <https://gitee.com/mindspore/hub/tree/r1.9/mshub_res/assets/
         >>> # mindspore/1.3/alexnet_cifar10.md>.
         >>> #
         >>> # 2. Want to find more information about this network?
@@ -240,7 +240,7 @@ def load_weights(name, source='gitee', force_reload=False):
     Examples:
         >>> uid = 'mindspore/1.3/alexnet_cifar10'
         >>> param_dict = load_weights(uid, source='gitee', force_reload=True)
-        >>> url = 'https://gitee.com/mindspore/hub/blob/master/mshub_res/assets/mindspore/1.3/alexnet_cifar10.md'
+        >>> url = 'https://gitee.com/mindspore/hub/blob/r1.9/mshub_res/assets/mindspore/1.3/alexnet_cifar10.md'
         >>> param_dict = load_weights(url, source='gitee', force_reload=True)
     """
     hub_dir = get_hub_dir()

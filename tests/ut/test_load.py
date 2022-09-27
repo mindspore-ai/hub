@@ -54,7 +54,7 @@ class TestLoad:
             load('mindspore/1.6/test')
 
         with pytest.raises(Exception):
-            load('https://gitee.com/mindspore/hub/raw/master/mshub_res/assets/mindspore')
+            load('https://gitee.com/mindspore/hub/raw/r1.9/mshub_res/assets/mindspore')
 
     def test_load_type(self):
         """

@@ -116,5 +116,5 @@ When reporting issues, refer to this format:
 
 ## For Model Committer
 
-You should refer to [mshub_res/README](https://gitee.com/mindspore/hub/blob/master/mshub_res/README.md) before
+You should refer to [mshub_res/README](https://gitee.com/mindspore/hub/blob/r1.9/mshub_res/README.md) before
 you upload your own model into mindspore model hub.
