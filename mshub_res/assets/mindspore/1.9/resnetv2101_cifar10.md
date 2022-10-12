@@ -1,8 +1,8 @@
-# resnetv2_101
+# ResnetV2_101
 
 ---
 
-model-name: resnetv2_101
+model-name: ResnetV2_101
 
 backbone-name: resnetv2
 
@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: cifar10
 
-evaluation: acc95.21
+evaluation: top1acc94.86 | top5acc99.8
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/resnetv2>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/resnetv2101_ascend_v190_cifar10_research_cv_acc95.21.ckpt>
-    asset-sha256: 183f9e5feaef51c792c45f55ccafb2dd0467ae8809aee7537827d674c26633f5
+    asset-link: <https://download.mindspore.cn/models/r1.9/resnetv2101_ascend_v190_cifar10_research_cv_top1acc94.86_top5acc99.8.ckpt>
+    asset-sha256: 48fef93340bf450fb7d22e056b1cdcd0b2a3487ca7ffac11485fbcfce5c459bd
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun. "Identity Mappings in Deep Residual Networks"
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun. "Identity Mappings in Deep Residual Networks".
 
 ## Disclaimer
 

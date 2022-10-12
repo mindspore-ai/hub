@@ -6,7 +6,7 @@ model-name: east
 
 backbone-name: east
 
-module-type: cv-scene_text_detection
+module-type: cv
 
 fine-tunable: True
 
@@ -18,7 +18,7 @@ evaluation: acc84.47
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/east>
 

@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadtoothbrush
+train-dataset: MVtecAD_toothbrush
 
-evaluation: imagelevel93.06 | pixellevel98.62
+evaluation: image-level91.94 | pixel-level98.42
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/stpm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadtoothbrush_research_cv_imagelevel93.06_pixellevel98.62.ckpt>
-    asset-sha256: 36bbf1cdf2ae91b923a0e1697bfdc227a67a57d2d5b47523087c72950f1046a2
+    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadtoothbrush_research_cv_image-level91.94_pixel-level98.42.ckpt>
+    asset-sha256: c227df94b8d8c1ed8cda5e0310c8fa5153073520af33b8a179965a216c662843
 
 license: Apache2.0
 

@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadzipper
+train-dataset: MVtecAD_zipper
 
-evaluation: imagelevel89.21 | pixellevel98.33
+evaluation: image-level92.75 | pixel-level98.56
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/stpm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadzipper_research_cv_imagelevel89.21_pixellevel98.33.ckpt>
-    asset-sha256: 8141920ad91835549f6fc6c7ed989f16c85fcb73df733d831a84cf85a61dbe0e
+    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadzipper_research_cv_image-level92.75_pixel-level98.56.ckpt>
+    asset-sha256: ed119d95ca39fef965d2b574322def50a276be55da42b02d292d77692dfac56a
 
 license: Apache2.0
 

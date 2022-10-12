@@ -18,7 +18,7 @@ evaluation: mIoU41.71 | allAcc79.86
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/PSPNet>
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, Jiaya Jia. Pyramid Scene Parsing Network 2017.
+Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, Jiaya Jia. Pyramid Scene Parsing Network. 2017.
 
 ## Disclaimer
 

@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: ms1mv2
+train-dataset: MS1MV2
 
-evaluation: lwf99.82 | cfpfp98.44 | agedb98.2 | calfw96.1 | cplfw93.1 | IJBB97.72 | IJBC98.45
+evaluation: lfw99.8 | cfp-fp98.29 | agedb97.85 | calfw96.05 | cplfw92.97 | IJBB94.69 | IJBC96.07
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/arcface>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/arcface_ascend_v190_ms1mv2_research_cv_lwf99.82_cfpfp98.44_agedb98.2_calfw96.1_cplfw93.1_IJBB97.72_IJBC98.45.ckpt>
-    asset-sha256: 495e83ab06793f26ea49f292a95e7c5aa239b6480b98a3cfdd2c867249e27630
+    asset-link: <https://download.mindspore.cn/models/r1.9/arcface_ascend_v190_ms1mv2_research_cv_lfw99.8_cfp-fp98.29_agedb97.85_calfw96.05_cplfw92.97_IJBB94.69_IJBC96.07.ckpt>
+    asset-sha256: 78c5aa72e99157ec25a1c862c3917e6a03df21d5a5188cd51885b2ea88e3a2d3
 
 license: Apache2.0
 

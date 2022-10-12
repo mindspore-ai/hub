@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: cifar10
 
-evaluation: acc93.75
+evaluation: acc94.03
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/vgg19>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/vgg19_ascend_v190_cifar10_research_cv_acc93.75.ckpt>
-    asset-sha256: 4b65057fd7fe10d9e8bcf5387b27c639a2f993ec5cc8bb9e38f3db483ab0e943
+    asset-link: <https://download.mindspore.cn/models/r1.9/vgg19_ascend_v190_cifar10_research_cv_acc94.03.ckpt>
+    asset-sha256: 2edd3c342d0da83346eb771be236c38a8ea38f35f91e614d60a85e0a10f304eb
 
 license: Apache2.0
 

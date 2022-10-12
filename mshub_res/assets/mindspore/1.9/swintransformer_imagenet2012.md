@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc80.97 | top5acc95.36
+evaluation: top1acc81.1 | top5acc95.36
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/swin_transformer>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/swintransformer_ascend_v190_imagenet2012_research_cv_top1acc80.97_top5acc95.36.ckpt>
-    asset-sha256: 4b6b2c1b22f0cc633ab71e39b38d8c4567f1018f312c91d5b7e6a79650760b87
+    asset-link: <https://download.mindspore.cn/models/r1.9/swintransformer_ascend_v190_imagenet2012_research_cv_top1acc81.1_top5acc95.36.ckpt>
+    asset-sha256: a8fdb2425f316d07f903c7c5084b6e5961705996253d3155e0fd1b92d6e47158
 
 license: Apache2.0
 

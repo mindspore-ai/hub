@@ -18,7 +18,7 @@ evaluation: top1acc64.81 | top5acc85.77
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/SPPNet>
 

@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: coco2017
 
-evaluation: mAP25.17
+evaluation: mAP25.21
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/ssd_mobilenetV2>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/ssdmobilenetv2_ascend_v190_coco2017_research_cv_mAP25.17.ckpt>
-    asset-sha256: 29614ef2f9488c31a0e05ec2361170085cb826f96d94226d3171298f431e2766
+    asset-link: <https://download.mindspore.cn/models/r1.9/ssdmobilenetv2_ascend_v190_coco2017_research_cv_mAP25.21.ckpt>
+    asset-sha256: 6d4b147099e6e2eb69d6af37a4ca9139ae73770d059e3b8684e17a546c3b67e4
 
 license: Apache2.0
 
