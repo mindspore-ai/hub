@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadtransistor
+train-dataset: MVtecAD_transistor
 
-evaluation: imagelevel94.71 | pixellevel82.02
+evaluation: image-level95.04 | pixel-level81.82
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/stpm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadtransistor_research_cv_imagelevel94.71_pixellevel82.02.ckpt>
-    asset-sha256: b0780829c0410933c39f107f41ff0c1a41d5ec9023ba2527d0f56f5b08290563
+    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadtransistor_research_cv_image-level95.04_pixel-level81.82.ckpt>
+    asset-sha256: b94365e5a31c9e9f45a0160e2f24c97b6efc6eae9fef2dd31d4d9d07be792f0d
 
 license: Apache2.0
 

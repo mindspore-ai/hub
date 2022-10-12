@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: coco2017
 
-evaluation: mAP37.1
+evaluation: mAP36.9
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/yolov5>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/yolov5s_ascend_v190_coco2017_official_cv_mAP37.1.ckpt>
-    asset-sha256: 42edaabd69fbc7883c2ab3348fbdf66e5e846349b6b76eb02b6deae22cd91a4c
+    asset-link: <https://download.mindspore.cn/models/r1.9/yolov5s_ascend_v190_coco2017_official_cv_mAP36.9.ckpt>
+    asset-sha256: 5876eafe6b69a33397bccc77a76e2407dc264191eacac0cc9f5154bd2b6d7532
 
 license: Apache2.0
 

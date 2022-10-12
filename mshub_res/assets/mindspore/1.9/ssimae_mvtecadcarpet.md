@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadcarpet
+train-dataset: MVtecAD_carpet
 
-evaluation: ok98.9 | nok98.9 | avg85.5
+evaluation: ok100.0 | nok100.0 | avg81.2
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/ssim-ae>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/ssimae_ascend_v190_mvtecadcarpet_official_cv_ok98.9_nok98.9_avg85.5.ckpt>
-    asset-sha256: 5a7c910b586c8f1389d1e1a067694301dae8b3e228d8efe696e469d9f3db0231
+    asset-link: <https://download.mindspore.cn/models/r1.9/ssimae_ascend_v190_mvtecadcarpet_official_cv_ok100.0_nok100.0_avg81.2.ckpt>
+    asset-sha256: 29f5fe68a7f639de8a26db4aaff9acd8f8241553f01f41333442bb3282d8b71d
 
 license: Apache2.0
 

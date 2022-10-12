@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: coco2017
 
-evaluation: mAP39.8
+evaluation: mAP40.0
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/faster_rcnn_dcn>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/fasterrcnndcn_ascend_v190_coco2017_research_cv_mAP39.8.ckpt>
-    asset-sha256: 5f78ead585bb3772c49afcd525ac2f696819eea5864c33054ebd6cdf7eae3226
+    asset-link: <https://download.mindspore.cn/models/r1.9/fasterrcnndcn_ascend_v190_coco2017_research_cv_mAP40.0.ckpt>
+    asset-sha256: 68d2aaec8feaf841ff6b61be07b45b3a03a7fd44ec77cc3192f8f3f11101ea53
 
 license: Apache2.0
 
@@ -45,13 +45,14 @@ summary: faster_rcnn_dcn is used for cv
 
 This MindSpore Hub model uses the implementation of faster_rcnn_dcn from the MindSpore model zoo on Gitee at research/cv/faster_rcnn_dcn.
 
-faster_rcnn_dcn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/faster_rcnn_dcn](https://gitee.com/mindspore/models/blob/r1.9/research/cv/faster_rcnn_dcn/README_CN.md).
+faster_rcnn_dcn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/faster_rcnn_dcn](https://gitee.com/mindspore/models/blob/r1.9/research/cv/faster_rcnn_dcn/README.md).
 
 All parameters in the module are trainable.
 
 ## Citation
 
-Ren S , He K , Girshick R , et al. Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2015, 39(6).
+1. Ren S , He K , Girshick R , et al. Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2015, 39(6).
+2. Zhu X, Hu H, Lin S, et al. Deformable convnets v2: More deformable, better results[C].Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2019: 9308-9316.
 
 ## Disclaimer
 

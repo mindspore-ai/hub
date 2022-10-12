@@ -6,7 +6,7 @@ model-name: vnet
 
 backbone-name: vnet
 
-module-type: cv-semantic_segmentation
+module-type: cv
 
 fine-tunable: True
 
@@ -18,7 +18,7 @@ evaluation: AvgDice87.49 | AvgHausdorffDistance10.54
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/vnet>
 

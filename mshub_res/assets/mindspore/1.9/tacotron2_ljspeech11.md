@@ -18,9 +18,9 @@ evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/audio/tacotron2>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/audio/tacotron2>
 
 user-id: MindSpore
 
@@ -32,7 +32,7 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/tacotron2_ascend_v190_ljspeech11_research_audio.ckpt>
+    asset-link: <https://download.mindspore.cn/models/r1.9/tacotron2_ascend_v190_ljspeech11_official_audio.ckpt>
     asset-sha256: d787066f14f9465676d5c3260221d4ff251a56909744bed6862c062f77ece26d
 
 license: Apache2.0
@@ -43,9 +43,9 @@ summary: tacotron2 is used for audio
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of tacotron2 from the MindSpore model zoo on Gitee at research/audio/tacotron2.
+This MindSpore Hub model uses the implementation of tacotron2 from the MindSpore model zoo on Gitee at official/audio/tacotron2.
 
-tacotron2 is a audio network. More details please refer to the MindSpore model zoo on Gitee at [research/audio/tacotron2](https://gitee.com/mindspore/models/blob/r1.9/research/audio/tacotron2/README.md).
+tacotron2 is a audio network. More details please refer to the MindSpore model zoo on Gitee at [official/audio/tacotron2](https://gitee.com/mindspore/models/blob/r1.9/official/audio/tacotron2/README.md).
 
 All parameters in the module are trainable.
 

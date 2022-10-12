@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: coco2017
 
-evaluation: acc71.86
+evaluation: acc72.28
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/AlphaPose>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/alphapose_ascend_v190_coco2017_research_cv_acc71.86.ckpt>
-    asset-sha256: f8873c73702fb26bb7b8ae1fc877630d8b941057595fab4ddf56ff4ffd1c151e
+    asset-link: <https://download.mindspore.cn/models/r1.9/alphapose_ascend_v190_coco2017_research_cv_acc72.28.ckpt>
+    asset-sha256: cebc135d8fffbedd0d6312857257483ed0e1621f5fdd16e134ef722c19827ab4
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Fang H S , Xie S , Tai Y W , et al. RMPE: Regional Multi-person Pose Estimation
+Hao-Shu Fang, Shuqin Xie, Yu-Wing Tai, Cewu Lu. RMPE: Regional Multi-person Pose Estimation. 2016.
 
 ## Disclaimer
 

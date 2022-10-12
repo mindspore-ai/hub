@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: tacos
+train-dataset: TACoS
 
-evaluation: acc49.77
+evaluation: acc50.75
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/tall>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/tall_ascend_v190_tacos_research_cv_acc49.77.ckpt>
-    asset-sha256: 8c0efe6ac77283e6836cdecd4e8a7fdef18175b16751cd19615d936178877213
+    asset-link: <https://download.mindspore.cn/models/r1.9/tall_ascend_v190_tacos_research_cv_acc50.75.ckpt>
+    asset-sha256: ae8abfa377159b85b3698d27aeed9e15d9dddff95dac7c575268bae9175284bc
 
 license: Apache2.0
 

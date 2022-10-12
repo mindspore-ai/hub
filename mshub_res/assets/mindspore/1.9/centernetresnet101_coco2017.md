@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: coco2017
 
-evaluation: mAP33.9 | AP50acc52 | AP75acc36
+evaluation: mAP34.4 | AP50acc52.4 | AP75acc36.4
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/centernet_resnet101>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/centernetresnet101_ascend_v190_coco2017_research_cv_mAP33.9_AP50acc52_AP75acc36.ckpt>
-    asset-sha256: c8fe163020a1498f69b00317f6d6bd21a05dc47ddef3d36942a01aa575d92122
+    asset-link: <https://download.mindspore.cn/models/r1.9/centernetresnet101_ascend_v190_coco2017_research_cv_mAP34.4_AP50acc52.4_AP75acc36.4.ckpt>
+    asset-sha256: 0c4ea47862785b87e81333c728a268344dd5196b3d7c1d357902136bdd8917be
 
 license: Apache2.0
 
@@ -48,23 +48,6 @@ This MindSpore Hub model uses the implementation of centernet_resnet101 from the
 centernet_resnet101 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/centernet_resnet101](https://gitee.com/mindspore/models/blob/r1.9/research/cv/centernet_resnet101/README.md).
 
 All parameters in the module are trainable.
-
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.9/centernetresnet101_coco2017"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
 
 ## Citation
 

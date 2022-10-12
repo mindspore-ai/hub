@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadgrid
+train-dataset: MVtecAD_grid
 
-evaluation: imagelevel100.0 | pixellevel99.08
+evaluation: image-level99.83 | pixel-level99.13
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/stpm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadgrid_research_cv_imagelevel100.0_pixellevel99.08.ckpt>
-    asset-sha256: 142b79f2b608a1cfd7bbf80b9e8ae5fcfe7a582e29e5622cf3b95dac34a9b23c
+    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadgrid_research_cv_image-level99.83_pixel-level99.13.ckpt>
+    asset-sha256: 51e9cf87975faf294f218024f1323087f69dddde55c3444b78333789a66e1825
 
 license: Apache2.0
 

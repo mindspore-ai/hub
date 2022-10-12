@@ -6,7 +6,7 @@ model-name: vit
 
 backbone-name: vit
 
-module-type: cv-classification
+module-type: cv
 
 fine-tunable: True
 
@@ -18,7 +18,7 @@ evaluation: acc73.81
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/vit>
 

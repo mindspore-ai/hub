@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadleather
+train-dataset: MVtecAD_leather
 
-evaluation: imagelevel100.0 | pixellevel99.36
+evaluation: image-level100.0 | pixel-level99.39
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/stpm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadleather_research_cv_imagelevel100.0_pixellevel99.36.ckpt>
-    asset-sha256: 5a8662d5d338b81618d51ea3801b340ddb30a4cea65fdbaf0aa6694b42c0402e
+    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadleather_research_cv_image-level100.0_pixel-level99.39.ckpt>
+    asset-sha256: 2ea4e0075b1e241902340900348ab220bd43e52088b6ab3235a33d88bc7e4caa
 
 license: Apache2.0
 

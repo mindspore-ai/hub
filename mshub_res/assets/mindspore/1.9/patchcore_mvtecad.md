@@ -6,7 +6,7 @@ model-name: patchcore
 
 backbone-name: patchcore
 
-module-type: cv-defect_detection
+module-type: cv
 
 fine-tunable: True
 
@@ -18,7 +18,7 @@ evaluation: meanimage-level98.28 | meanpixel-level97.72
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/patchcore>
 
@@ -45,7 +45,7 @@ summary: patchcore is used for cv
 
 This MindSpore Hub model uses the implementation of patchcore from the MindSpore model zoo on Gitee at official/cv/patchcore.
 
-patchcore is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/patchcore](https://gitee.com/mindspore/models/blob/r1.9/official/cv/patchcore/README_CN.md).
+patchcore is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/patchcore](https://gitee.com/mindspore/models/blob/r1.9/official/cv/patchcore/README.md).
 
 All parameters in the module are trainable.
 

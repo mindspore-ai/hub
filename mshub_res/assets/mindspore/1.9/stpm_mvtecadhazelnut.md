@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadhazelnut
+train-dataset: MVtecAD_hazelnut
 
-evaluation: imagelevel100.0 | pixellevel98.82
+evaluation: image-level100.0 | pixel-level98.95
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/stpm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadhazelnut_research_cv_imagelevel100.0_pixellevel98.82.ckpt>
-    asset-sha256: f8bf7dcdac64105ac714f7134015cc1669802759cab743105421386284e4a939
+    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadhazelnut_research_cv_image-level100.0_pixel-level98.95.ckpt>
+    asset-sha256: 108cc8ac9747348606161d36f9fd7733f46763974118ce4f9175fd2f9cd39659
 
 license: Apache2.0
 

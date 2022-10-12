@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: coco2017
 
-evaluation: acc24.08
+evaluation: mAP24.13
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/ssd_resnet34>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/ssdresnet34_ascend_v190_coco2017_research_cv_acc24.08.ckpt>
-    asset-sha256: 33db66225ad886f0b6efb910d3982c1b15ca35b8a82b4e696e64155468a93ad3
+    asset-link: <https://download.mindspore.cn/models/r1.9/ssdresnet34_ascend_v190_coco2017_research_cv_mAP24.13.ckpt>
+    asset-sha256: 75f1f7095f2de958bd33217c3885c2cd000408973b78d0b33842f55caaf6a7e0
 
 license: Apache2.0
 

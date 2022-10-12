@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadcapsule
+train-dataset: MVtecAD_capsule
 
 evaluation: ok91.7 | nok91.7 | avg85.6
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/ssim-ae>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.9/ssimae_ascend_v190_mvtecadcapsule_official_cv_ok91.7_nok91.7_avg85.6.ckpt>
-    asset-sha256: 884ea5915f6e88ff39be9c094f0eba25266c95180844cf0951b52fa1ff7600ba
+    asset-sha256: 23225305f2eea57bac2c2f517f0c8c09caeb9245603a1120f82809bd1ec5f1ee
 
 license: Apache2.0
 

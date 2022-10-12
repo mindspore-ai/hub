@@ -1,10 +1,10 @@
-# ssd_resnet50
+# StarGAN
 
 ---
 
-model-name: ssd_resnet50
+model-name: StarGAN
 
-backbone-name: ssd_resnet50
+backbone-name: StarGAN
 
 module-type: cv
 
@@ -12,15 +12,15 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: coco2017
+train-dataset: CelebA
 
-evaluation: mAP32.0
+evaluation: -
 
 author: MindSpore team
 
 update-time: 2022-10-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/ssd_resnet50>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/StarGAN>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/ssdresnet50_ascend_V190_coco2017_research_cv_mAP32.0.ckpt>
-    asset-sha256: ac8d64b1a4f07cfbef58023354bd058e9830f8d3c5648f865b13df59a24811e2
+    asset-link: <https://download.mindspore.cn/models/r1.9/stargan_Generator_ascend_v190_celeba_research_cv.ckpt>
+    asset-sha256: 9ada632615378c855509f59f84252768981c243819420bf66db38c0ebea3c6e6
 
 license: Apache2.0
 
-summary: ssd_resnet50 is used for cv
+summary: StarGAN is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of ssd_resnet50 from the MindSpore model zoo on Gitee at research/cv/ssd_resnet50.
+This MindSpore Hub model uses the implementation of StarGAN from the MindSpore model zoo on Gitee at research/cv/StarGAN.
 
-ssd_resnet50 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/ssd_resnet50](https://gitee.com/mindspore/models/blob/r1.9/research/cv/ssd_resnet50/README.md).
+StarGAN is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/StarGAN](https://gitee.com/mindspore/models/blob/r1.9/research/cv/StarGAN/README.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.9/ssdresnet50_coco2017"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed, Cheng-Yang Fu, Alexander C. Berg.European Conference on Computer Vision (ECCV), 2016 (In press).
+Yunjey Choi, Minje Choi, Munyoung Kim, Jung-Woo Ha, Sunghun Kim, Jaegul Choo. StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation. 2017.
 
 ## Disclaimer
 

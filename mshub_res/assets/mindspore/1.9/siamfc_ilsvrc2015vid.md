@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: ilsvrc2015vid
+train-dataset: ILSVRC2015-VID
 
-evaluation: acc58.6
+evaluation: acc58.9
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/SiamFC>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/siamfc_ascend_v190_ilsvrc2015vid_research_cv_acc58.6.ckpt>
-    asset-sha256: 082586450b38aa49f4794fde27bb1368d65a515f9e9549ef78a37d74ff7e36aa
+    asset-link: <https://download.mindspore.cn/models/r1.9/siamfc_ascend_v190_ilsvrc2015vid_research_cv_acc58.9.ckpt>
+    asset-sha256: 6b21f6b3990f7f539a72359a5fddabf160dfe27d16c94ef293ffbda97d5362c4
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Luca Bertinetto Jack Valmadre Jo˜ao F. Henriques Andrea Vedaldi Philip H. S. Torr Department of Engineering Science, University of Oxford
+Luca Bertinetto Jack Valmadre Jo˜ao F. Henriques Andrea Vedaldi Philip H. S. Torr
 
 ## Disclaimer
 
