@@ -6,7 +6,7 @@ model-name: slowfast
 
 backbone-name: slowfast
 
-module-type: cv-video_classification
+module-type: cv
 
 fine-tunable: True
 
@@ -18,7 +18,7 @@ evaluation: acc21.93
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/slowfast>
 

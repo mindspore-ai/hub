@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadcable
+train-dataset: MVtecAD_cable
 
 evaluation: ok100.0 | nok100.0 | avg61.3
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/ssim-ae>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.9/ssimae_ascend_v190_mvtecadcable_official_cv_ok100.0_nok100.0_avg61.3.ckpt>
-    asset-sha256: b61638e78c8523898e3ec6fd068885b1d7d68556f59d79f1d0940060293e80da
+    asset-sha256: b1f790ae3ae6094e4cfbb7c10610b201e88335597a6372baf90207705684519e
 
 license: Apache2.0
 

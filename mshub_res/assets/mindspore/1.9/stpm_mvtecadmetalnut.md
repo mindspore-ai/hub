@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadmetalnut
+train-dataset: MVtecAD_metal_nut
 
-evaluation: imagelevel99.9 | pixellevel97.42
+evaluation: image-level99.76 | pixel-level97.53
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/stpm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadmetalnut_research_cv_imagelevel99.9_pixellevel97.42.ckpt>
-    asset-sha256: 6eb574fb1fde7edaefc5af5938c2fdd89b7f8dd04be88ed591a10851003f63db
+    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadmetalnut_research_cv_image-level99.76_pixel-level97.53.ckpt>
+    asset-sha256: ba51310d5a106a0d445ac8fb430edf571cd5d2742c720d7c46ba6c21f9a3e53d
 
 license: Apache2.0
 

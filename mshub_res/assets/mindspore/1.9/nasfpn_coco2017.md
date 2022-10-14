@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: coco2017
 
-evaluation: mAP41.5
+evaluation: mAP41.6
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/nas-fpn>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/nasfpn_ascend_v190_coco2017_research_cv_mAP41.5.ckpt>
-    asset-sha256: baf3ce544edce7a1eeaa4dfa34e447a64a572ae7c0be3c2c5f42938a78fb2e3c
+    asset-link: <https://download.mindspore.cn/models/r1.9/nasfpn_ascend_v190_coco2017_research_cv_mAP41.6.ckpt>
+    asset-sha256: 9f3d48be6e6e2aab0b908bc7d18b1dc4912ebc267d58c4f64992a9a387f9c539
 
 license: Apache2.0
 

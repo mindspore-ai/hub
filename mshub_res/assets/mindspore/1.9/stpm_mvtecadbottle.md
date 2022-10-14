@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadbottle
+train-dataset: MVtecAD_bottle
 
-evaluation: imagelevel100.0 | pixellevel98.8
+evaluation: image-level100.0 | pixel-level98.72
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/stpm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadbottle_research_cv_imagelevel100.0_pixellevel98.8.ckpt>
-    asset-sha256: e330f9f14ede4316917b5c2aec0ce414603db2bf16fcb727a73cd6db1d749640
+    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadbottle_research_cv_image-level100.0_pixel-level98.72.ckpt>
+    asset-sha256: d17665306d1fd0d65f001b163fa89d8a5c159773562d63f10c1daa3aa95dfce0
 
 license: Apache2.0
 

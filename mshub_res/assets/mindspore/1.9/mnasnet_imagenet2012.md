@@ -18,7 +18,7 @@ evaluation: top1acc73.94 | top5acc91.75
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/mnasnet>
 

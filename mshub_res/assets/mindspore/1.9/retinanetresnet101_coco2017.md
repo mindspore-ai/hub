@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: coco2017
 
-evaluation: mAP36.39
+evaluation: mAP36.72
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/retinanet_resnet101>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/retinanetresnet101_ascend_v190_coco2017_research_cv_mAP36.39.ckpt>
-    asset-sha256: c58400d46600ce74f4cb1f28f513ead9defb7ad4fe100a7dada92d5a77d313c7
+    asset-link: <https://download.mindspore.cn/models/r1.9/retinanetresnet101_ascend_v190_coco2017_research_cv_mAP36.72.ckpt>
+    asset-sha256: 7ca7b5844809cdaaf9a880c02b80205414321e2ada8272827bb0e1fb5d42d107
 
 license: Apache2.0
 
@@ -45,7 +45,7 @@ summary: retinanet_resnet101 is used for cv
 
 This MindSpore Hub model uses the implementation of retinanet_resnet101 from the MindSpore model zoo on Gitee at research/cv/retinanet_resnet101.
 
-retinanet_resnet101 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/retinanet_resnet101](https://gitee.com/mindspore/models/blob/r1.9/research/cv/retinanet_resnet101/README_CN.md).
+retinanet_resnet101 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/retinanet_resnet101](https://gitee.com/mindspore/models/blob/r1.9/research/cv/retinanet_resnet101/README.md).
 
 All parameters in the module are trainable.
 

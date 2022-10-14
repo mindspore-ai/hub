@@ -1,10 +1,10 @@
-# ssd_resnet50
+# FasterRCNN_ResNetV1_50
 
 ---
 
-model-name: ssd_resnet50
+model-name: FasterRCNN_ResNetV1_50
 
-backbone-name: ssd_resnet50
+backbone-name: faster_rcnn
 
 module-type: cv
 
@@ -14,13 +14,13 @@ model-version: 1.9
 
 train-dataset: coco2017
 
-evaluation: mAP32.0
+evaluation: AP50acc60.5
 
 author: MindSpore team
 
 update-time: 2022-10-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/ssd_resnet50>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/faster_rcnn>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/ssdresnet50_ascend_V190_coco2017_research_cv_mAP32.0.ckpt>
-    asset-sha256: ac8d64b1a4f07cfbef58023354bd058e9830f8d3c5648f865b13df59a24811e2
+    asset-link: <https://download.mindspore.cn/models/r1.9/fasterrcnn_resnetv150_ascend_v190_coco2017_official_cv_AP50acc60.5.ckpt>
+    asset-sha256: 7171792d5b82863cbc5d64c2f0f0a52315e752aa32f083cd7c89b886648eb6ed
 
 license: Apache2.0
 
-summary: ssd_resnet50 is used for cv
+summary: faster_rcnn is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of ssd_resnet50 from the MindSpore model zoo on Gitee at research/cv/ssd_resnet50.
+This MindSpore Hub model uses the implementation of faster_rcnn from the MindSpore model zoo on Gitee at official/cv/faster_rcnn.
 
-ssd_resnet50 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/ssd_resnet50](https://gitee.com/mindspore/models/blob/r1.9/research/cv/ssd_resnet50/README.md).
+faster_rcnn is a cv network. More details please refer to the MindSpore model zoo on Gitee at [official/cv/faster_rcnn](https://gitee.com/mindspore/models/blob/r1.9/official/cv/faster_rcnn/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/1.9/ssdresnet50_coco2017"
+model = "mindspore/1.9/fasterrcnn_resnetv150_coco2017"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed, Cheng-Yang Fu, Alexander C. Berg.European Conference on Computer Vision (ECCV), 2016 (In press).
+Ren S , He K , Girshick R , et al. Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2015, 39(6).
 
 ## Disclaimer
 
