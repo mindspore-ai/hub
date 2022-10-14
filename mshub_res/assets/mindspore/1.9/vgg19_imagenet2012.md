@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc74.21 | top5acc92.08
+evaluation: top1acc74.22 | top5acc91.99
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/vgg19>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/vgg19_ascend_v190_imagenet2012_research_cv_top1acc74.21_top5acc92.08.ckpt>
-    asset-sha256: 2963a8c584855a469fd63dd4b9f8035940652045cb3c8026f7946fa44c110c14
+    asset-link: <https://download.mindspore.cn/models/r1.9/vgg19_ascend_v190_imagenet2012_research_cv_top1acc74.22_top5acc91.99.ckpt>
+    asset-sha256: eba330c2cfa6ea158716ec7be81075538280a4f006c5afe0ee7053a3d65de998
 
 license: Apache2.0
 

@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc79.26 | top5acc94.61
+evaluation: top1acc79.46 | top5acc94.63
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/resnext>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/resnext101_ascend_v190_imagenet2012_official_cv_top1acc79.26_top5acc94.61.ckpt>
-    asset-sha256: 456b6fb7c80a7196fe13892958bff77b3855b91784a3792dc04df2decf8698e0
+    asset-link: <https://download.mindspore.cn/models/r1.9/resnext101_ascend_v190_imagenet2012_official_cv_top1acc79.46_top5acc94.63.ckpt>
+    asset-sha256: a0d4a10034b4919f07a09bf9658e4869623b3470a5fbb0a00a55321ea64e9da2
 
 license: Apache2.0
 

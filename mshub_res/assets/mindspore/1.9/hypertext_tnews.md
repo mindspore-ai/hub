@@ -6,7 +6,7 @@ model-name: hypertext
 
 backbone-name: hypertext
 
-module-type: nlp-text_classification
+module-type: nlp
 
 fine-tunable: True
 
@@ -18,7 +18,7 @@ evaluation: acc81.39
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/nlp/hypertext>
 

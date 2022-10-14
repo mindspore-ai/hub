@@ -14,11 +14,11 @@ model-version: 1.9
 
 train-dataset: DIV2K
 
-evaluation: PSNR28.32
+evaluation: PSNR26.31
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/DBPN>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/dbpngan_Generator_ascend_v190_div2k_research_cv_PSNR28.32.ckpt>
-    asset-sha256: a05fd099200182e93e97ba1a5413fe2877ee62aa567871f902c35543f4e9113c
+    asset-link: <https://download.mindspore.cn/models/r1.9/dbpngan_Generator_ascend_v190_div2k_research_cv_PSNR26.31.ckpt>
+    asset-sha256: c9c41fe06def3a454c60e1c2b9cf61ed614eec1e1b9eab70554d19261ee0169a
 
 license: Apache2.0
 

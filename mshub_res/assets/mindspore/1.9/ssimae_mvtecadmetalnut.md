@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadmetalnut
+train-dataset: MVtecAD_metal_nut
 
-evaluation: ok93.5 | nok93.5 | avg78.3
+evaluation: ok84.9 | nok84.9 | avg75.7
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/ssim-ae>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/ssimae_ascend_v190_mvtecadmetalnut_official_cv_ok93.5_nok93.5_avg78.3.ckpt>
-    asset-sha256: c15fc74c040e9ae4b555d4276e0952d4b849db828cc0fd0d003423c9f1fc7c63
+    asset-link: <https://download.mindspore.cn/models/r1.9/ssimae_ascend_v190_mvtecadmetalnut_official_cv_ok84.9_nok84.9_avg75.7.ckpt>
+    asset-sha256: 434df3baf1ee6aac546cd3213008eb5292bd21bde9d84ac0f7caecd55efd5959
 
 license: Apache2.0
 

@@ -1,26 +1,26 @@
-# ssd_resnet50
+# senta
 
 ---
 
-model-name: ssd_resnet50
+model-name: senta
 
-backbone-name: ssd_resnet50
+backbone-name: senta
 
-module-type: cv
+module-type: nlp
 
 fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: coco2017
+train-dataset: SST-2
 
-evaluation: mAP32.0
+evaluation: acc94.1
 
 author: MindSpore team
 
 update-time: 2022-10-12
 
-repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/ssd_resnet50>
+repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/nlp/senta>
 
 user-id: MindSpore
 
@@ -32,43 +32,26 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/ssdresnet50_ascend_V190_coco2017_research_cv_mAP32.0.ckpt>
-    asset-sha256: ac8d64b1a4f07cfbef58023354bd058e9830f8d3c5648f865b13df59a24811e2
+    asset-link: <https://download.mindspore.cn/models/r1.9/senta_ascend_v190_sst2_research_nlp_acc94.1.ckpt>
+    asset-sha256: 2e3612a195a63dce8fa4e91f73030eab7f70d87a47056f44a15ac9abbd05c1a2
 
 license: Apache2.0
 
-summary: ssd_resnet50 is used for cv
+summary: senta is used for nlp
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of ssd_resnet50 from the MindSpore model zoo on Gitee at research/cv/ssd_resnet50.
+This MindSpore Hub model uses the implementation of senta from the MindSpore model zoo on Gitee at research/nlp/senta.
 
-ssd_resnet50 is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/ssd_resnet50](https://gitee.com/mindspore/models/blob/r1.9/research/cv/ssd_resnet50/README.md).
+senta is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/senta](https://gitee.com/mindspore/models/blob/r1.9/research/nlp/senta/README_CN.md).
 
 All parameters in the module are trainable.
 
-## Usage
-
-```python
-import mindspore_hub as mshub
-from mindspore import context
-
-context.set_context(mode=context.GRAPH_MODE,
-                    device_target="Ascend",
-                    device_id=0)
-
-model = "mindspore/1.9/ssdresnet50_coco2017"
-network = mshub.load(model)
-network.set_train(False)
-
-# ...
-```
-
 ## Citation
 
-Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed, Cheng-Yang Fu, Alexander C. Berg.European Conference on Computer Vision (ECCV), 2016 (In press).
+[SKEP: Sentiment Knowledge Enhanced Pre-training for Sentiment Analysis](https://arxiv.org/abs/2005.05635)
 
 ## Disclaimer
 

@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc74.54 | top5acc91.77
+evaluation: top1acc74.55 | top5acc91.74
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/mobilenetv3_large>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/mobilenetv3large_ascend_v190_imagenet2012_research_cv_top1acc74.54_top5acc91.77.ckpt>
-    asset-sha256: 7f979e6256886df0070f9f4286ec0b32f21119b1430a127afddefeb10dd7bc31
+    asset-link: <https://download.mindspore.cn/models/r1.9/mobilenetv3large_ascend_v190_imagenet2012_research_cv_top1acc74.55_top5acc91.74.ckpt>
+    asset-sha256: 7efc7976c2496db8d39366d4e6167a4b6ed543de88a3897be6f14dea8c160f65
 
 license: Apache2.0
 

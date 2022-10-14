@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadscrew
+train-dataset: MVtecAD_screw
 
-evaluation: imagelevel92.83 | pixellevel96.53
+evaluation: image-level89.1 | pixel-level95.99
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/stpm>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadscrew_research_cv_imagelevel92.83_pixellevel96.53.ckpt>
-    asset-sha256: a1df0f528691daf0f01bd240bdf40220dfd6743becd28985ad868b2b4636769e
+    asset-link: <https://download.mindspore.cn/models/r1.9/stpm_ascend_v190_mvtecadscrew_research_cv_image-level89.1_pixel-level95.99.ckpt>
+    asset-sha256: 3b810060d8980320a3983e7963e5bb6edd191cb3e4ff579dfad05eb24bdb5f26
 
 license: Apache2.0
 

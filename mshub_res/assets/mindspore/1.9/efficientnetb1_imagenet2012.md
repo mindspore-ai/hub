@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc78.1 | top5acc94
+evaluation: top1acc77.9 | top5acc93.93
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/efficientnet-b1>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/efficientnetb1_ascend_v190_imagenet2012_research_cv_top1acc78.1_top5acc94.ckpt>
-    asset-sha256: 49dec0aa32348a08ff7ef17b857c6d542809411469205dc1d478e130b8f8eb48
+    asset-link: <https://download.mindspore.cn/models/r1.9/efficientnetb1_ascend_v190_imagenet2012_research_cv_top1acc77.9_top5acc93.93.ckpt>
+    asset-sha256: 1cebde63145b7ea7f6685827e2db81160a4f8b0e174a11032e0a82244e25660f
 
 license: Apache2.0
 

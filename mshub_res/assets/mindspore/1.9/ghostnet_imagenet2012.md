@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: imagenet2012
+train-dataset: ImageNet2012
 
-evaluation: top1acc73.8 | top5acc91.77
+evaluation: top1acc74.19 | top5acc91.78
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/ghostnet>
 
@@ -32,8 +32,8 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download.mindspore.cn/models/r1.9/ghostnet_ascend_v190_imagenet2012_research_cv_top1acc73.8_top5acc91.77.ckpt>
-    asset-sha256: 612f2fee612654057734283a50ff9eb9c967ee838c1b2f3b9b555e1689f53851
+    asset-link: <https://download.mindspore.cn/models/r1.9/ghostnet_ascend_v190_imagenet2012_research_cv_top1acc74.19_top5acc91.78.ckpt>
+    asset-sha256: 2c1db3f228a130e382356514215c388c2ebf758a637eee76e87e3f6562c4e663
 
 license: Apache2.0
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Kai Han, Yunhe Wang, Qi Tian."GhostNet: More Features From Cheap Operations"
+Kai Han, Yunhe Wang, Qi Tian."GhostNet: More Features From Cheap Operations".
 
 ## Disclaimer
 

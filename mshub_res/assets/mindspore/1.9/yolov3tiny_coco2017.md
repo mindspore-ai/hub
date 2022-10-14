@@ -18,7 +18,7 @@ evaluation: mAP17.5 | AP50acc36.0
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/yolov3_tiny>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.9/yolov3tiny_ascend_v190_coco2017_research_cv_mAP17.5_AP50acc36.0.ckpt>
-    asset-sha256: 6fa28f3a69243e659c8c7ffae490278faf7625840668bee2a49e1b3887b0711a
+    asset-sha256: e600862001d22019ea052452da5c3308172660048e33f411775411d834344528
 
 license: Apache2.0
 

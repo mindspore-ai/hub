@@ -18,7 +18,7 @@ evaluation: s16acc79.06 | s16multiscale79.96 | s16multiscaleflip80.12
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/research/cv/deeplabv3plus>
 

@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: mvtecadgrid
+train-dataset: MVtecAD_grid
 
 evaluation: ok94.7 | nok94.7 | avg96.2
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/ssim-ae>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.9/ssimae_ascend_v190_mvtecadgrid_official_cv_ok94.7_nok94.7_avg96.2.ckpt>
-    asset-sha256: f139ab4c3d0ecc87adc9d1f09cccc9bd489d9f13faad5d0db942e00753b909f7
+    asset-sha256: 8822a030df8d90cab05c4e3b0dd4865e32bf907ffa82174857be6752eaaf0440
 
 license: Apache2.0
 

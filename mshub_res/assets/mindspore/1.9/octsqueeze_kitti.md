@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 1.9
 
-train-dataset: kitti
+train-dataset: KITTI
 
 evaluation: -
 
 author: MindSpore team
 
-update-time: 2022-10-11
+update-time: 2022-10-12
 
 repo-link: <https://gitee.com/mindspore/models/tree/r1.9/official/cv/octsqueeze>
 
@@ -33,7 +33,7 @@ asset:
 -
     file-format: ckpt
     asset-link: <https://download.mindspore.cn/models/r1.9/octsqueeze_ascend_v190_kitti_official_cv.ckpt>
-    asset-sha256: 1c6aac507575e41940aa4da2c4ee23fd19864b0081310ecd804df371c475aace
+    asset-sha256: f7594da8e0758042ce725c05a828dfcb8a39bc2034206bd0990de0f0e6459936
 
 license: Apache2.0
 
