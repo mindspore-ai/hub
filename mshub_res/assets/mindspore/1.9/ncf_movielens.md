@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-He X, Liao L, Zhang H, et al. Neural collaborative filtering[C]//Proceedings of the 26th international conference on world wide web. 2017: 173-182.
+[Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)
 
 ## Disclaimer
 

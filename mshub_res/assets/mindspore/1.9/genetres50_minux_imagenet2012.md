@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-https://arxiv.org/abs/1810.12348
+[Gather-Excite: Exploiting Feature Context in Convolutional Neural Networks](https://arxiv.org/pdf/1810.12348.pdf)
 
 ## Disclaimer
 

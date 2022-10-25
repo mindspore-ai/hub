@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-http://rwightman.github.io/pytorch-image-models/models/
+[Deep High-Resolution Representation Learning for Visual Recognition](https://arxiv.org/pdf/1908.07919.pdf)
 
 ## Disclaimer
 

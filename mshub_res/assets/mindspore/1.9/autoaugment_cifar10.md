@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Cubuk, Ekin D., et al. "Autoaugment: Learning augmentation strategies from data." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2019.
+[AutoAugment: Learning Augmentation Strategies from Data](https://openaccess.thecvf.com/content_CVPR_2019/papers/Cubuk_AutoAugment_Learning_Augmentation_Strategies_From_Data_CVPR_2019_paper.pdf)
 
 ## Disclaimer
 

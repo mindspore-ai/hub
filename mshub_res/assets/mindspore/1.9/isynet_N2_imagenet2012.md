@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Alexey Letunovskiy, Vladimir Korviakov, Vladimir Polovnikov, Anastasiia Kargapoltseva, Ivan Mazurenko, Yepan Xiong. ISyNet: Convolutional Neural Networks design for AI accelerator.
+[ISyNet: Convolutional Neural Networks design for AI accelerator](https://arxiv.org/pdf/2109.01932.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-S. Zhang, L. Wen, X. Bian, Z. Lei and S. Z. Li, "Single-shot refinement neural network for object detection", Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit., pp. 4203-4212, Jun. 2018.
+[Single-Shot Refinement Neural Network for Object Detection](https://arxiv.org/pdf/1711.06897.pdf)
 
 ## Disclaimer
 

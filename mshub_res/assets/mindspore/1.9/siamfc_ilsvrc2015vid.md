@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Luca Bertinetto Jack Valmadre Jo˜ao F. Henriques Andrea Vedaldi Philip H. S. Torr
+[Fully-Convolutional Siamese Networks for Object Tracking](https://arxiv.org/pdf/1606.09549.pdf)
 
 ## Disclaimer
 

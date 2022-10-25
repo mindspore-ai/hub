@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Mingxing Tan, Quoc V. Le. EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. 2019.
+[EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/pdf/1905.11946.pdf)
 
 ## Disclaimer
 

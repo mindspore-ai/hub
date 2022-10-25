@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu."Squeeze-and-Excitation Networks"
+[Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf)
 
 ## Disclaimer
 

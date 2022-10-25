@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Chen, Lele, et al. "MRI tumor segmentation with densely connected 3D CNN." Medical Imaging 2018: Image Processing. Vol. 10574. International Society for Optics and Photonics, 2018.
+[MRI Tumor Segmentation with Densely Connected 3D CNN](https://arxiv.org/pdf/1802.02427v2.pdf)
 
 ## Disclaimer
 

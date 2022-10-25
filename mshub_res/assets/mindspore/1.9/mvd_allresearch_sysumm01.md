@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Farewell to Mutual Information: Variational Distillation for Cross-Modal Person Re-identification in CVPR 2021
+[Farewell to Mutual Information: Variational Distillation for Cross-Modal Person Re-Identification](https://openaccess.thecvf.com/content/CVPR2021/papers/Tian_Farewell_to_Mutual_Information_Variational_Distillation_for_Cross-Modal_Person_Re-Identification_CVPR_2021_paper.pdf)
 
 ## Disclaimer
 

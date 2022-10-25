@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Huang L, Wang S, Wong K, Liu J, Urtasun R. Octsqueeze: Octree-structured entropy model for lidar compression. InProceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2020
+[OctSqueeze: Octree-Structured Entropy Model for LiDAR Compression](https://arxiv.org/pdf/2005.07178.pdf)
 
 ## Disclaimer
 

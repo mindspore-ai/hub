@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Prototypical Networks for Few-shot Learning](https://arxiv.org/abs/1703.05175)
+[Prototypical Networks for Few-shot Learning](https://arxiv.org/pdf/1703.05175)
 
 ## Disclaimer
 

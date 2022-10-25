@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-guosheng.lin，anton.milan，et.al.RefineNet: Multi-Path Refinement Networks for High-Resolution Semantic Segmentation.arXiv:1611.06612v3 [cs.CV] 25 Nov 2016
+[RefineNet: Multi-Path Refinement Networks for High-Resolution Semantic Segmentation](https://arxiv.org/pdf/1611.06612v3.pdf)
 
 ## Disclaimer
 

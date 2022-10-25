@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Xiang Li, Wenhai Wang, Xiaolin Hu, Jian Yang. "Selective Kernel Networks"
+[Selective Kernel Networks](https://arxiv.org/pdf/1903.06586.pdf)
 
 ## Disclaimer
 

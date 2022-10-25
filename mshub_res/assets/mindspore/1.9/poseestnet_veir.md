@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Tang Z ,  Naphade M ,  Birchfield S , et al. PAMTRI: Pose-Aware Multi-Task Learning for Vehicle Re-Identification Using Highly Randomized Synthetic Data[J]. IEEE, 2020.
+[PAMTRI: Pose-Aware Multi-Task Learning for Vehicle Re-Identification Using Highly Randomized Synthetic Data](https://arxiv.org/pdf/2005.00673.pdf)
 
 ## Disclaimer
 

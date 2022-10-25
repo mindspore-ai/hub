@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Sun Y, Wang X, Tang X. Deep learning face representation from predicting 10,000 classes[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2014: 1891-1898.
+[Deep Learning Face Representation from Predicting 10,000 Classes](https://openaccess.thecvf.com/content_cvpr_2014/papers/Sun_Deep_Learning_Face_2014_CVPR_paper.pdf)
 
 ## Disclaimer
 

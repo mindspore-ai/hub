@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Chao P , Kao C Y , Ruan Y , et al. HarDNet: A Low Memory Traffic Network[C]// 2019 IEEE/CVF International Conference on Computer Vision (ICCV). IEEE, 2020.
+[HarDNet: A Low Memory Traffic Network](https://arxiv.org/pdf/1909.00948.pdf)
 
 ## Disclaimer
 

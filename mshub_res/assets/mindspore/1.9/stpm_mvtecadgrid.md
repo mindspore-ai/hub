@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Wang G ,  Han S ,  Ding E , et al. Student-Teacher Feature Pyramid Matching for Unsupervised Anomaly Detection[J].  2021.
+[Student-Teacher Feature Pyramid Matching for Unsupervised Anomaly Detection](https://arxiv.org/pdf/2103.04257v2.pdf)
 
 ## Disclaimer
 

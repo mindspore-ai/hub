@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Mohammadreza Zolfaghari, Kamaljeet Singh, Thomas Brox."ECO: Efficient Convolutional Network forOnline Video Understanding"
+[ECO: Efficient Convolutional Network for Online Video Understanding](https://arxiv.org/pdf/1804.09066.pdf)
 
 ## Disclaimer
 

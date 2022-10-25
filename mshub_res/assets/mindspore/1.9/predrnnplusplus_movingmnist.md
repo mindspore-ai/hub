@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Yunbo Wang, Zhifeng Gao, Mingsheng Long, Jian-Min Wang, Philip S. Yu, "PredRNN++: Towards A Resolution of the Deep-in-Time Dilemma in Spatiotemporal Predictive Learning", arXiv:1804.06300v2 [cs.LG] 19 Nov 2018
+[PredRNN++: Towards A Resolution of the Deep-in-Time Dilemma in Spatiotemporal Predictive Learning](https://arxiv.org/pdf/1804.06300v2.pdf)
 
 ## Disclaimer
 

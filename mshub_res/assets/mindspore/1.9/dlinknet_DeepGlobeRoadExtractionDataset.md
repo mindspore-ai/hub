@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-chen Zhou, Chuang Zhang, Ming Wu; Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2018, pp. 182-186
+[D-LinkNet: LinkNet with Pretrained Encoder and Dilated Convolution for High /Resolution Satellite Imagery Road Extraction](https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Zhou_D-LinkNet_LinkNet_With_CVPR_2018_paper.pdf)
 
 ## Disclaimer
 

@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Li Zhang, Tao Xiang, Shaogang Gong."Learning a Deep Embedding Model for Zero-Shot Learning" *Proceedings of the CVPR*.2017.
+[Learning a Deep Embedding Model for Zero-Shot Learning](https://arxiv.org/pdf/1611.05088.pdf)
 
 ## Disclaimer
 

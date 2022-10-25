@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Barret Zoph, Vijay Vasudevan, Jonathon Shlens, Quoc V. Le. Learning Transferable Architectures for Scalable Image Recognition. 2017.
+[Learning Transferable Architectures for Scalable Image Recognition](https://arxiv.org/pdf/1707.07012.pdf)
 
 ## Disclaimer
 

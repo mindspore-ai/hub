@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Bo Li,Junjie Yan,Wei Wu,Zheng Zhu,Xiaolin Hu, High Performance Visual Tracking with Siamese Region Proposal Network[C]// 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). IEEE, 2018.
+[High Performance Visual Tracking with Siamese Region Proposal Network](https://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf)
 
 ## Disclaimer
 

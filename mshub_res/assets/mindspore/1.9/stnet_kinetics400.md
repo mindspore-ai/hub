@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-"StNet: Local and Global Spatial-Temporal Modeling for Action Recognition."
+[StNet: Local and Global Spatial-Temporal Modeling for Action Recognition](https://arxiv.org/pdf/1811.01549.pdf)
 
 ## Disclaimer
 

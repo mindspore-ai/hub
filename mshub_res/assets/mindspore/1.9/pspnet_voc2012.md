@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, Jiaya Jia. Pyramid Scene Parsing Network. 2017.
+[Pyramid Scene Parsing Network](https://arxiv.org/pdf/1612.01105.pdf)
 
 ## Disclaimer
 

@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Min Sun, Ali Farhadi, Steve Seitz. Ranking Domain-Specific Highlights by Analyzing Edited Videos[J]. 2014.
+[Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/pdf/1512.00567.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Liu M, Ding Y, Xia M, et al. STGAN: A Unified Selective Transfer Network for Arbitrary Image Attribute Editing[C]. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). IEEE, 2019: 3668-3677.
+[STGAN: A Unified Selective Transfer Network for Arbitrary Image Attribute Editing](https://openaccess.thecvf.com/content_CVPR_2019/papers/Liu_STGAN_A_Unified_Selective_Transfer_Network_for_Arbitrary_Image_Attribute_CVPR_2019_paper.pdf)
 
 ## Disclaimer
 

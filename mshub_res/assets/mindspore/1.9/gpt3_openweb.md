@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Tom B.Brown, Benjamin Mann, Nick Ryder et al. Language Models are Few-Shot Learners. arXiv preprint arXiv:2005.14165
+[Language Models are Few-Shot Learners](https://arxiv.org/pdf/2005.14165.pdf)
 
 ## Disclaimer
 

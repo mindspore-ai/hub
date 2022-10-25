@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[**Exploring the structure of a real-time, arbitrary neural artistic stylization network.** ](https://arxiv.org/abs/1705.06830)
+[Exploring the structure of a real-time, arbitrary neural artistic stylization network](https://arxiv.org/pdf/1705.06830.pdf)
 
 ## Disclaimer
 

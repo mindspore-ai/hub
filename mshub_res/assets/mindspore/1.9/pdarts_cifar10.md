@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-https://arxiv.org/pdf/1904.12760.pdf
+[Progressive Differentiable Architecture Search: Bridging the Depth Gap between Search and Evaluation](https://arxiv.org/pdf/1904.12760.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Yixing Xu,  Kai Han, Chang Xu, Yehui Tang, Chunjing Xu, Yunhe Wang. Learning Frequency Domain Approximation for Binary Neural Networks. Accepted by NeurIPS 2021.
+[Learning Frequency Domain Approximation for Binary Neural Networks](https://arxiv.org/pdf/2103.00841.pdf)
 
 ## Disclaimer
 

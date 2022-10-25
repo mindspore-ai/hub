@@ -66,6 +66,10 @@ network.set_train(False)
 # ...
 ```
 
+## Citation
+
+[Tiny Darknet](https://pjreddie.com/darknet/tiny-darknet/)
+
 ## Disclaimer
 
 MindSpore ("we") do not own any ownership or intellectual property rights of the datasets, and the trained models are provided on an "as is" and "as available" basis. We make no representations or warranties of any kind of the datasets and trained models (collectively, “materials”) and will not be liable for any loss, damage, expense or cost arising from the materials. Please ensure that you have permission to use the dataset under the appropriate license for the dataset and in accordance with the terms of the relevant license agreement. The trained models provided are only for research and education purposes.

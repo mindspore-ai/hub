@@ -51,8 +51,8 @@ All parameters in the module are trainable.
 
 ## Citation
 
-1. E. Romera, J. M. Alvarez, L. M. Bergasa and R. Arroyo."ERFNet: Efficient Residual Factorized ConvNet for Real-time Semantic Segmentation"
-2. A. Paszke, A. Chaurasia, S. Kim, and E. Culurciello."ENet: A deep neural network architecture for real-time semantic segmentation."
+1. [ERFNet: Efficient Residual Factorized ConvNet for Real-time Semantic Segmentation](http://www.robesafe.uah.es/personal/eduardo.romera/pdfs/Romera17tits.pdf)
+2. [ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation](https://arxiv.org/pdf/1606.02147.pdf)
 
 ## Disclaimer
 

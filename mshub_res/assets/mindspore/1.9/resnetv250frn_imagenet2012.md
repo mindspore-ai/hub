@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Saurabh Singh, Shankar Krishnan. Filter Response Normalization Layer: Eliminating Batch Dependence in the Training of Deep Neural Networks. 2020.
+[Filter Response Normalization Layer: Eliminating Batch Dependence in the Training of Deep Neural Networks](https://arxiv.org/pdf/1911.09737v2.pdf)
 
 ## Disclaimer
 

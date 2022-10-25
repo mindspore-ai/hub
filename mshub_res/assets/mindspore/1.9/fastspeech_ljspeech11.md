@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-FastSpeech: Fast, Robust and Controllable Text to Speech.
+[FastSpeech: Fast, Robust and Controllable Text to Speech](https://arxiv.org/pdf/1905.09263v5.pdf)
 
 ## Disclaimer
 

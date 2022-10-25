@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Chen C, Chen Q, Xu J, et al. Learning to See in the Dark[C]// 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition. IEEE, 2018.
+[Learning to See in the Dark](https://arxiv.org/pdf/1805.01934v1.pdf)
 
 ## Disclaimer
 

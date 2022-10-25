@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Paper](https://arxiv.org/abs/1508.01991):  Zhiheng Huang, Wei Xu, Kai Yu. [Bidirectional LSTM-CRF Models for Sequence Tagging](https://arxiv.org/abs/1508.01991).
+[Bidirectional LSTM-CRF Models for Sequence Tagging](https://arxiv.org/pdf/1508.01991.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu. GhostNet: More Features from Cheap Operations. CVPR 2020.
+[GhostNet: More Features from Cheap Operations](https://openaccess.thecvf.com/content_CVPR_2020/papers/Han_GhostNet_More_Features_From_Cheap_Operations_CVPR_2020_paper.pdf)
 
 ## Disclaimer
 

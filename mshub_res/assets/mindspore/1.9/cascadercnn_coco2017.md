@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Cai Z, Vasconcelos N. Cascade r-cnn: Delving into high quality object detection[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2018: 6154-6162.
+[Cascade R-CNN: Delving into High Quality Object Detection](https://arxiv.org/pdf/1712.00726.pdf)
 
 ## Disclaimer
 

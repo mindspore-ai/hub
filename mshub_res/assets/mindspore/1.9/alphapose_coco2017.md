@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Hao-Shu Fang, Shuqin Xie, Yu-Wing Tai, Cewu Lu. RMPE: Regional Multi-person Pose Estimation. 2016.
+[RMPE: Regional Multi-Person Pose Estimation](https://arxiv.org/pdf/1612.00137.pdf)
 
 ## Disclaimer
 

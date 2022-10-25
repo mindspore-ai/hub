@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-YOLOv3: An Incremental Improvement.Joseph Redmon, Ali Farhadi, University of Washington
+[YOLOv3: An Incremental Improvement](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
 
 ## Disclaimer
 

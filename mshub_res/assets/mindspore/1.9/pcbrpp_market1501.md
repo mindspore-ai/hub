@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Sun Y., Zheng L., et al. “Beyond Part Models: Person Retrieval with Refined Part Pooling (and a Strong Convolutional Baseline)”. COMPUTER VISION - ECCV 2018, PT IV, (2018): 501-518.
+[Beyond Part Models: Person Retrieval with Refined Part Pooling (and a Strong Convolutional Baseline)](https://arxiv.org/pdf/1711.09349.pdf)
 
 ## Disclaimer
 
