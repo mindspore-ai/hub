@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Objects as Points. 2019. Xingyi Zhou(UT Austin) and Dequan Wang(UC Berkeley) and Philipp Krahenbuhl(UT Austin)
+[Objects as Points](https://arxiv.org/pdf/1904.07850.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Alex Graves, Santiago Fernández, Faustino J. Gomez, Jürgen Schmidhuber: Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks. ICML 2006: 369-376
+[Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks](https://www.cs.toronto.edu/~graves/icml_2006.pdf)
 
 ## Disclaimer
 

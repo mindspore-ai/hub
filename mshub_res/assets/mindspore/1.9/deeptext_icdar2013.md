@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Zhuoyao Zhong, Lianwen Jin, Shuangping Huang, South China University of Technology (SCUT), Published in ICASSP 2017.
+[DeepText: A Unified Framework for Text Proposal Generation and Text Detection in Natural Images](https://arxiv.org/pdf/1605.07314v1.pdf)
 
 ## Disclaimer
 

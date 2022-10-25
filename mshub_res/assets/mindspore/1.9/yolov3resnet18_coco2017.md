@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Joseph Redmon, Ali Farhadi. arXiv preprint arXiv:1804.02767, 2018. 2, 4, 7, 11.
+[YOLOv3: An Incremental Improvement](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
 
 ## Disclaimer
 

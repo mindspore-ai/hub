@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Karsten Roth, Latha Pemula, Joaquin Zepeda, Bernhard Scholkopf, Thomas Brox, Peter Gehler.Towards Total Recall in Industrial Anomaly Detection.2021.
+[Towards Total Recall in Industrial Anomaly Detection](https://arxiv.org/pdf/2106.08265.pdf)
 
 ## Disclaimer
 

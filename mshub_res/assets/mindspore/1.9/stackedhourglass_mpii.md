@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Stacked Hourglass Networks for Human Pose Estimation](https://arxiv.org/abs/1603.06937v2)
+[Stacked Hourglass Networks for Human Pose Estimation](https://arxiv.org/pdf/1603.06937v2.pdf)
 
 ## Disclaimer
 

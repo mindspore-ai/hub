@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Jiahui Yu, Thomas Huang."AutoSlim: Towards One-Shot Architecture Search for Channel Numbers".2019.
+[Network Slimming by Slimmable Networks: Towards One-Shot Architecture Search for Channel Numbers](https://arxiv.org/pdf/1903.11728v1.pdf)
 
 ## Disclaimer
 

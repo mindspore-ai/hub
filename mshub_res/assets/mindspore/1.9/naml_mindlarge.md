@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Chuhan Wu, Fangzhao Wu, Mingxiao An, Jianqiang Huang, Yongfeng Huang and Xing Xie: Neural News Recommendation with Attentive Multi-View Learning, IJCAI 2019
+[Neural News Recommendation with Attentive Multi-View Learning](https://arxiv.org/pdf/1907.05576.pdf)
 
 ## Disclaimer
 

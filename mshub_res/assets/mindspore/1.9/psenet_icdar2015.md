@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Wenhai Wang, Enze Xie, Xiang Li, Wenbo Hou, Tong Lu, Gang Yu, Shuai Shao; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 9336-9345
+[Shape Robust Text Detection with Progressive Scale Expansion Network](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Shape_Robust_Text_Detection_With_Progressive_Scale_Expansion_Network_CVPR_2019_paper.pdf)
 
 ## Disclaimer
 

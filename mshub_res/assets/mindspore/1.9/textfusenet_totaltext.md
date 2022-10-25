@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Jian Ye, Zhe Chen, Juhua Liu, Bo Du. "TextFuseNet: Scene Text Detection with Richer Fused Features"
+[TextFuseNet: Scene Text Detection with Richer Fused Features](https://www.ijcai.org/Proceedings/2020/0072.pdf)
 
 ## Disclaimer
 

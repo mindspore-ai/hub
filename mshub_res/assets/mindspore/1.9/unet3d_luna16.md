@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Unet3D: Learning Dense VolumetricSegmentation from Sparse Annotation.
+[3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation](https://arxiv.org/pdf/1606.06650v1.pdf)
 
 ## Disclaimer
 

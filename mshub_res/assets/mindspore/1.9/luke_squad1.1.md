@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-https://link.zhihu.com/?target=https%3A//www.aclweb.org/anthology/2020.emnlp-main.523.pdf
+[LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention](https://aclanthology.org/2020.emnlp-main.523.pdf)
 
 ## Disclaimer
 

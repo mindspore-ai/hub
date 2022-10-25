@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Yang A ,  Wang Q ,  Liu J , et al. Enhancing Pre-Trained Language Representations with Rich Knowledge for Machine Reading Comprehension[C]// Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 2019.
+[Enhancing Pre-Trained Language Representations with Rich Knowledge for Machine Reading Comprehension](https://aclanthology.org/P19-1226.pdf)
 
 ## Disclaimer
 

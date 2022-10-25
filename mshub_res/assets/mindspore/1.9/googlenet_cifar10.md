@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich. "Going deeper with convolutions." *Proceedings of the IEEE conference on computer vision and pattern recognition*. 2015.
+[Going Deeper with Convolutions](https://arxiv.org/pdf/1409.4842.pdf)
 
 ## Disclaimer
 

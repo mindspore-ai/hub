@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Kundan Kumar, Rithesh Kumar, Thibault de Boissiere, Lucas Gestin, Wei Zhen Teoh, Jose Sotelo, Alexandre de Brebisson, Yoshua Bengio, Aaron Courville. "MelGAN: Generative Adversarial Networks for Conditional Waveform Synthesis."
+[MelGAN: Generative Adversarial Networks for Conditional Waveform Synthesis](https://arxiv.org/pdf/1910.06711.pdf)
 
 ## Disclaimer
 

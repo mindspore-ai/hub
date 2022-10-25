@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-A ConvNet for the 2020s
+[A ConvNet for the 2020s](https://arxiv.org/pdf/2201.03545v2.pdf)
 
 ## Disclaimer
 

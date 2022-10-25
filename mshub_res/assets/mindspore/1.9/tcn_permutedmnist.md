@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling
+[An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling](https://arxiv.org/pdf/1803.01271.pdf)
 
 ## Disclaimer
 

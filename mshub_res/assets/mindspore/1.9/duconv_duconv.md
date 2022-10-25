@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Wu W, Guo Z, Zhou X, et al. Proactive human-machine conversation with explicit conversation goals[J]. arXiv preprint arXiv:1906.05572, 2019.
+[Proactive Human-Machine Conversation with Explicit Conversation Goals](https://arxiv.org/pdf/1906.05572v2.pdf)
 
 ## Disclaimer
 

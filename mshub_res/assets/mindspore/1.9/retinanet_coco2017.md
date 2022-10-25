@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Lin T Y , Goyal P , Girshick R , et al. Focal Loss for Dense Object Detection[C]// 2017 IEEE International Conference on Computer Vision (ICCV). IEEE, 2017:2999-3007.
+[Focal Loss for Dense Object Detection](https://arxiv.org/pdf/1708.02002.pdf)
 
 ## Disclaimer
 

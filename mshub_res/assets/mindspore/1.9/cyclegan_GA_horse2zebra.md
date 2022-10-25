@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Zhu J Y , Park T , Isola P , et al. Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks[J]. 2017.
+[Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/pdf/1703.10593.pdf)
 
 ## Disclaimer
 

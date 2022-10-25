@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang. Image Super-Resolution Using Deep Convolutional Networks. 2014.
+[Image Super-Resolution Using Deep Convolutional Networks](https://arxiv.org/pdf/1501.00092.pdf)
 
 ## Disclaimer
 

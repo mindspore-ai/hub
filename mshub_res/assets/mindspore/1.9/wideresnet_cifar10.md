@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Sergey Zagoruyko."Wide Residual Netwoks"](https://arxiv.org/pdf/1605.07146.pdf)
+[Wide Residual Networks](https://arxiv.org/pdf/1605.07146.pdf)
 
 ## Disclaimer
 

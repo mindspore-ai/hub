@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Y.Lecun, L.Bottou, Y.Bengio, P.Haffner. Gradient-Based Learning Applied to Document Recognition. *Proceedings of the IEEE*. 1998.
+[Gradient-based learning applied to document recognition](https://ieeexplore.ieee.org/document/726791)
 
 ## Disclaimer
 

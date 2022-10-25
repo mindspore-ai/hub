@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Dual Graph Convolutional Networks for Graph-Based Semi-Supervised Classification[C]// the 2018 World Wide Web Conference. 2018.
+[Dual Graph Convolutional Networks for Graph-Based Semi-Supervised Classification](https://www.researchgate.net/publication/324514333_Dual_Graph_Convolutional_Networks_for_Graph-Based_Semi-Supervised_Classification)
 
 ## Disclaimer
 

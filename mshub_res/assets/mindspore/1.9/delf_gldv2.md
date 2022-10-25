@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Noh, H. , et al. "Large-Scale Image Retrieval with Attentive Deep Local Features." 2017 IEEE International Conference on Computer Vision (ICCV) IEEE, 2017.
+[Large-Scale Image Retrieval with Attentive Deep Local Features](https://arxiv.org/pdf/1612.06321.pdf)
 
 ## Disclaimer
 

@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation
+[Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation](https://arxiv.org/pdf/1609.08144.pdf)
 
 ## Disclaimer
 

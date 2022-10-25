@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Mingqing Xiao, Shuxin Zheng, Chang Liu, Yaolong Wang, Di He, Guolin Ke, Jiang Bian, Zhouchen Lin, and Tie-Yan Liu. 2020. Invertible Image Rescaling. In European Conference on Computer Vision (ECCV).
+[Invertible Image Rescaling](https://arxiv.org/pdf/2005.05650v1.pdf)
 
 ## Disclaimer
 

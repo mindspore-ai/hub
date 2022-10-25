@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-FishNet: a versatile backbone for image, region, and pixel level prediction. In Proceedings of the 32nd International Conference on Neural Information Processing Systems (NIPS'18). Curran Associates Inc., Red Hook, NY, USA, 762–772.
+[FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction](https://proceedings.neurips.cc/paper/2018/file/75fc093c0ee742f6dddaa13fff98f104-Paper.pdf)
 
 ## Disclaimer
 

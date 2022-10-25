@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Yunpeng Chen, Jianan Li, Huaxin Xiao, Xiaojie Jin, Shuicheng Yan, Jiashi Feng. "Dual Path Networks" (NIPS17).
+[Dual Path Networks](https://arxiv.org/pdf/1707.01629v2.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Ct A ,  Yong X ,  Wz C . Image denoising using deep CNN with batch renormalization[J]. Neural Networks, 2020, 121:461-473.
+[Image denoising using deep CNN with batch renormalization](https://www.sciencedirect.com/science/article/abs/pii/S0893608019302394)
 
 ## Disclaimer
 

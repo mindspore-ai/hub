@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun. "Deep Residual Learning for Image Recognition"
+[Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
 
 ## Disclaimer
 

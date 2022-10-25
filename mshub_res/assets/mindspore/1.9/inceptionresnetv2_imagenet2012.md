@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi. Computer Vision and Pattern Recognition[J]. 2016.
+[Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/pdf/1512.00567.pdf)
 
 ## Disclaimer
 

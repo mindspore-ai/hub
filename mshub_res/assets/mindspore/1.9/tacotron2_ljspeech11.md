@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Jonathan, et al. Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions.
+[NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM PREDICTIONS](https://arxiv.org/pdf/1712.05884.pdf)
 
 ## Disclaimer
 

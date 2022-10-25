@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Yehui Tang, Yunhe Wang, Yixing Xu, Yiping Deng, Chao Xu, Dacheng Tao, Chang Xu. Manifold Regularized Dynamic Network Pruning. Submitted to CVPR 2021.
+[Manifold Regularized Dynamic Network Pruning](https://arxiv.org/pdf/2103.05861.pdf)
 
 ## Disclaimer
 

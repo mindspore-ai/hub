@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Simonyan K, zisserman A. Very Deep Convolutional Networks for Large-Scale Image Recognition[J]. arXiv preprint arXiv:1409.1556, 2014.
+[Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/pdf/1409.1556.pdf)
 
 ## Disclaimer
 

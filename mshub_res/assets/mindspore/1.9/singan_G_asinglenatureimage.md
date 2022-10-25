@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-SinGAN: Learning a Generative Model from a Single Natural Image.
+[SinGAN: Learning a Generative Model from a Single Natural Image](https://arxiv.org/pdf/1905.01164.pdf)
 
 ## Disclaimer
 

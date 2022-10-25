@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[TALL](https://openaccess.thecvf.com/content_iccv_2017/html/Gao_TALL_Temporal_Activity_ICCV_2017_paper.html)
+[TALL: Temporal Activity Localization via Language Query](https://openaccess.thecvf.com/content_ICCV_2017/papers/Gao_TALL_Temporal_Activity_ICCV_2017_paper.pdf)
 
 ## Disclaimer
 

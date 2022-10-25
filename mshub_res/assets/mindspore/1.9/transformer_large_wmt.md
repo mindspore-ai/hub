@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Ashish Vaswani, Noam Shazeer, Niki Parmar, JakobUszkoreit, Llion Jones, Aidan N Gomez, Ł ukaszKaiser, and Illia Polosukhin. 2017. Attention is all you need. In NIPS 2017, pages 5998–6008.
+[Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Zheng Z, Tao R, Wei Y , et al. VehicleNet: Learning Robust Visual Representation for Vehicle Re-identification[J]. 2020.
+[VehicleNet: Learning Robust Visual Representation for Vehicle Re-identification](https://arxiv.org/pdf/2004.06305.pdf)
 
 ## Disclaimer
 

@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-B. Xiao, H. Wu, and Y. Wei, “Simple baselines for human pose estimation and tracking,” in Proc. Eur. Conf. Comput. Vis., 2018, pp. 472–487.
+[Simple Baselines for Human Pose Estimation and Tracking](https://arxiv.org/pdf/1804.06208.pdf)
 
 ## Disclaimer
 

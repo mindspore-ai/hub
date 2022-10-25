@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-YOLOX: Exceeding YOLO Series in 2021
+[YOLOX: Exceeding YOLO Series in 2021](https://arxiv.org/pdf/2107.08430.pdf)
 
 ## Disclaimer
 

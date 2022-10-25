@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Huifeng Guo*, Bo Chen*, Ruiming Tang, Zhenguo Li, Xiuqiang He. AutoDis: Automatic Discretization for Embedding Numerical Features in CTR Prediction
+[An Embedding Learning Framework for Numerical Features in CTR Prediction](https://arxiv.org/pdf/2012.08986.pdf)
 
 ## Disclaimer
 

@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Z. Yang, T. Luo, D. Wang, Z. Hu, J. Gao, and L. Wang, Learning to navigate for fine-grained classification, in Proceedings of the European Conference on Computer Vision (ECCV), 2018.
+[Learning to Navigate for Fine-grained Classification](https://arxiv.org/pdf/1809.00287.pdf)
 
 ## Disclaimer
 

@@ -51,8 +51,8 @@ All parameters in the module are trainable.
 
 ## Citation
 
-1. Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee, "Enhanced Deep Residual Networks for Single Image Super-Resolution," *2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with CVPR 2017.
-2. Jiahui Yu, Yuchen Fan, Jianchao Yang, Ning Xu, Zhaowen Wang, Xinchao Wang, Thomas Huang, "Wide Activation for Efficient and Accurate Image Super-Resolution", arXiv preprint arXiv:1808.08718.
+1. [Enhanced Deep Residual Networks for Single Image Super-Resolution](https://arxiv.org/pdf/1707.02921.pdf)
+2. [Wide Activation for Efficient and Accurate Image Super-Resolution](https://arxiv.org/pdf/1808.08718.pdf)
 
 ## Disclaimer
 

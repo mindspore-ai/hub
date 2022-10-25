@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Yi R, Liu Y J, Lai Y K, et al. Apdrawinggan: Generating artistic portrait drawings from face photos with hierarchical gans[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2019: 10743-10752.
+[APDrawingGAN: Generating Artistic Portrait Drawings from Face Photos with Hierarchical GANs](https://openaccess.thecvf.com/content_CVPR_2019/papers/Yi_APDrawingGAN_Generating_Artistic_Portrait_Drawings_From_Face_Photos_With_Hierarchical_CVPR_2019_paper.pdf)
 
 ## Disclaimer
 

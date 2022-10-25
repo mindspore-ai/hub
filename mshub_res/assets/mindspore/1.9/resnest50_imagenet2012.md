@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Hang Zhang, Chongruo Wu, Alexander Smola et al. ResNeSt: Split-Attention Networks. 2020.
+[ResNeSt: Split-Attention Networks](https://arxiv.org/pdf/2004.08955.pdf)
 
 ## Disclaimer
 

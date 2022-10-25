@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Wide & Deep Learning for Recommender System
+[Wide & Deep Learning for Recommender System](https://arxiv.org/pdf/1606.07792.pdf)
 
 ## Disclaimer
 

@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Kaiming He, Georgia Gkioxari, Piotr Dollar and Ross Girshick. "MaskRCNN"
+[Mask R-CNN](https://arxiv.org/pdf/1703.06870.pdf)
 
 ## Disclaimer
 

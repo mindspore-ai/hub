@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[**U<sup>2</sup>-Net: Going deeper with nested U-structure for salient object detection** ](http://arxiv.org/abs/2005.09007)
+[U2-Net: Going Deeper with Nested U-Structure for Salient Object Detection](https://arxiv.org/pdf/2005.09007.pdf)
 
 ## Disclaimer
 

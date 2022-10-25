@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Xiangyu Zhang, Xinyu Zhou, Mengxiao Lin, Jian Sun. "ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices." *Proceedings of the IEEE conference on computer vision and pattern recognition*. 2018.
+[ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile](https://arxiv.org/pdf/1707.01083.pdf)
 
 ## Disclaimer
 
