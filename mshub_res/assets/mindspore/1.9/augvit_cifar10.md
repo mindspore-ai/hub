@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Yehui Tang, Kai Han, Chang Xu, An Xiao, Yiping Deng, Chao Xu, Yunhe Wang. Augmented Shortcuts for Vision Transformers. NeurIPS 2021.
+[Augmented Shortcuts for Vision Transformers](https://arxiv.org/pdf/2106.15941.pdf)
 
 ## Disclaimer
 

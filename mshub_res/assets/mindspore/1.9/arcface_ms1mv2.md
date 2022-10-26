@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Deng J ,  Guo J ,  Zafeiriou S . ArcFace: Additive Angular Margin Loss for Deep Face Recognition[J].  2018.
+[ArcFace: Additive Angular Margin Loss for Deep Face Recognition](https://arxiv.org/pdf/1801.07698v3.pdf)
 
 ## Disclaimer
 

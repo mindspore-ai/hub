@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Qi, Charles R., et al. "Pointnet++: Deep hierarchical feature learning on point sets in a metric space." arXiv preprint arXiv:1706.02413 (2017).
+[PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://arxiv.org/pdf/1706.02413.pdf)
 
 ## Disclaimer
 

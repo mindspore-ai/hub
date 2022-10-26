@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Dosovitskiy, A. , Beyer, L. , Kolesnikov, A. , Weissenborn, D. , & Houlsby, N.. (2020). An image is worth 16x16 words: transformers for image recognition at scale.
+[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/pdf/2010.11929.pdf)
 
 ## Disclaimer
 

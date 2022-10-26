@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Limin Wang, Yuanjun Xiong, Zhe Wang, Dahua Lin, Xiaoou Tang, Luc Van Gool. Temporal Segment Networks: Towards Good Practices for Deep Action Recognition. aeXiv preprint arXiv:1608.00859, 2016.
+[Temporal Segment Networks: Towards Good Practices for Deep Action Recognition](https://arxiv.org/pdf/1608.00859.pdf)
 
 ## Disclaimer
 

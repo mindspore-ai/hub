@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Andrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng, Christopher Potts. [Learning Word Vectors for Sentiment Analysis](https://www.aclweb.org/anthology/P11-1015/). Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies. 2011
+[Learning Word Vectors for Sentiment Analysis](https://aclanthology.org/P11-1015.pdf)
 
 ## Disclaimer
 

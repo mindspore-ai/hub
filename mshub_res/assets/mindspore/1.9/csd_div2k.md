@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Towards Compact Single Image Super-Resolution via Contrastive Self-distillation in IJCAI 2021.
+[Towards Compact Single Image Super-Resolution via Contrastive Self-distillation](https://arxiv.org/pdf/2105.11683.pdf)
 
 ## Disclaimer
 

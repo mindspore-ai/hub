@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Franois Chollet. Xception: Deep Learning with Depthwise Separable Convolutions. 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) IEEE, 2017.
+[Xception: Deep Learning with Depthwise Separable Convolutions](https://arxiv.org/pdf/1610.02357v3.pdf)
 
 ## Disclaimer
 

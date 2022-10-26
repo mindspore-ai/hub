@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Saining Xie, Zhuowen Tu. Holistically-Nested Edge Detection. arXiv preprint arXiv:1504.06375, 2015.(https://arxiv.org/abs/1504.06375)
+[Holistically-Nested Edge Detection](https://arxiv.org/pdf/1504.06375.pdf)
 
 ## Disclaimer
 

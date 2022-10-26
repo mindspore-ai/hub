@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-https://arxiv.org/abs/1608.06993
+[Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf)
 
 ## Disclaimer
 

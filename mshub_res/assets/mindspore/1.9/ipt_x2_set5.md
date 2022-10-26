@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Hanting Chen, Yunhe Wang, Tianyu Guo, Chang Xu, Yiping Deng, Zhenhua Liu, Siwei Ma, Chunjing Xu, Chao Xu, and Wen Gao. "Pre-trained image processing transformer". CVPR 2021.
+[Pre-Trained Image Processing Transformer](https://arxiv.org/pdf/2012.00364.pdf)
 
 ## Disclaimer
 

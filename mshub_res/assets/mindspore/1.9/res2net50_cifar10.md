@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Gao, Shang-Hua and Cheng, Ming-Ming and Zhao, Kai and Zhang, Xin-Yu and Yang, Ming-Hsuan and Torr, Philip. "Res2Net: A New Multi-scale Backbone Architecture"，TPAMI21
+[Res2Net: A New Multi-scale Backbone Architecture](https://arxiv.org/pdf/1904.01169.pdf)
 
 ## Disclaimer
 

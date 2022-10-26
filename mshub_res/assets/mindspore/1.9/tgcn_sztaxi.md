@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Zhao L, Song Y, Zhang C, et al. T-gcn: A temporal graph convolutional network for traffic prediction[J]. IEEE Transactions on Intelligent Transportation Systems, 2019, 21(9): 3848-3858.
+[T-GCN: A Temporal Graph ConvolutionalNetwork for Traffic Prediction](https://arxiv.org/pdf/1811.05320.pdf)
 
 ## Disclaimer
 

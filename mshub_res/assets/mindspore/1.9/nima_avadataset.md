@@ -51,8 +51,8 @@ All parameters in the module are trainable.
 
 ## Citation
 
-1. Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun."Deep Residual Learning for Image Recognition"
-2. H. Talebi and P. Milanfar, "NIMA: Neural Image Assessment"
+1. [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
+2. [NIMA: Neural Image Assessment](https://arxiv.org/pdf/1709.05424.pdf)
 
 ## Disclaimer
 

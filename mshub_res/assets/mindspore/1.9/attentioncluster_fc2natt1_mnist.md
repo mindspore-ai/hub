@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Attention Clusters: Purely Attention Based Local Feature Integration for Video Classification](https://arxiv.org/abs/1711.09550)
+[Attention Clusters: Purely Attention Based Local Feature Integration for Video Classification](https://arxiv.org/pdf/1711.09550.pdf)
 
 ## Disclaimer
 

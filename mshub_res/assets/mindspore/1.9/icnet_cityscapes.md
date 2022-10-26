@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[paper](https://arxiv.org/abs/1704.08545) from ECCV2018
+[ICNet for Real-Time Semantic Segmentation on High-Resolution Images](https://arxiv.org/pdf/1704.08545.pdf)
 
 ## Disclaimer
 

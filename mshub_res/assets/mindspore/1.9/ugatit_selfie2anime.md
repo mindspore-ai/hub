@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Kim J, Kim M, Kang H, et al. U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation[C]//International Conference on Learning Representations. 2019.
+[U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation](https://arxiv.org/pdf/1907.10830v4.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Huang H , Lin L , Tong R , et al. UNet 3+: A Full-Scale Connected UNet for Medical Image Segmentation[J]. arXiv, 2020.
+[UNet 3+: A Full-Scale Connected UNet for Medical Image Segmentation](https://arxiv.org/pdf/2004.08790.pdf)
 
 ## Disclaimer
 

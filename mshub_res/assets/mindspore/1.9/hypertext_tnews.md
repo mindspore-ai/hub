@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[HyperText: Endowing FastText with Hyperbolic Geometry](https://arxiv.org/abs/2010.16143)
+[HyperText: Endowing FastText with Hyperbolic Geometry](https://arxiv.org/pdf/2010.16143.pdf)
 
 ## Disclaimer
 

@@ -51,8 +51,8 @@ All parameters in the module are trainable.
 
 ## Citation
 
-1. CVPR2015 F Schroff, Kalenichenko D,Philbin J."FaceNet: A Unified Embedding for Face Recognition and Clustering"
-2. CVPR2017 Chen W, Chen X, Zhang J."Beyond triplet loss: A deep quadruplet network for person re-identification"
+1. [Beyond triplet loss: a deep quadruplet network for person re-identification](https://arxiv.org/pdf/1704.01719.pdf)
+2. [FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/pdf/1503.03832.pdf)
 
 ## Disclaimer
 

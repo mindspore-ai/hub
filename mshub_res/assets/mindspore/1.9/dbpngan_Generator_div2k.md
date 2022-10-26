@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Muhammad Haris, Greg Shakhnarovich, Norimichi Ukita
+[Deep Back-Projection Networks For Super-Resolution](https://arxiv.org/pdf/1803.02735.pdf)
 
 ## Disclaimer
 

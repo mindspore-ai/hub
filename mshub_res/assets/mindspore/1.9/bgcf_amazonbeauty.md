@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Sun J, Guo W, Zhang D, et al. A Framework for Recommending Accurate and Diverse Items Using Bayesian Graph Convolutional Neural Networks[C]//Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. 2020: 2030-2039.
+[A Framework for Recommending Accurate and Diverse ItemsUsing Bayesian Graph Convolutional Neural Networks](https://dl.acm.org/doi/abs/10.1145/3394486.3403254)
 
 ## Disclaimer
 

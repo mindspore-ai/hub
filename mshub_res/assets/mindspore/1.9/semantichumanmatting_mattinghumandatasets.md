@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Semantic Human Matting](https://arxiv.org/pdf/1809.01354.pdf): Quan Chen, Tiezheng Ge, Yanyu Xu, Zhiqiang Zhang, Xinxin Yang, Kun Gai.
+[Semantic Human Matting](https://arxiv.org/pdf/1809.01354.pdf)
 
 ## Disclaimer
 

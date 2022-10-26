@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun. "Identity Mappings in Deep Residual Networks"
+[Identity Mappings in Deep Residual Networks](https://arxiv.org/pdf/1603.05027.pdf)
 
 ## Disclaimer
 

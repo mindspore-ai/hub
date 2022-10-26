@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Meta-Baseline: Exploring Simple Meta-Learning for Few-Shot Learning.
+[Meta-Baseline: Exploring Simple Meta-Learning for Few-Shot Learning](https://arxiv.org/pdf/2003.04390.pdf)
 
 ## Disclaimer
 

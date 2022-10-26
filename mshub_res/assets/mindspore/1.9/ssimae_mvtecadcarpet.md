@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Improving Unsupervised Defect Segmentation by Applying Structural Similarity To Autoencoders
+[Improving Unsupervised Defect Segmentation by Applying Structural Similarity to Autoencoders](https://arxiv.org/pdf/1807.02011v3.pdf)
 
 ## Disclaimer
 

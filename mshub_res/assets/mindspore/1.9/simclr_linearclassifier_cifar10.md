@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Ting Chen and Simon Kornblith and Mohammad Norouzi and Geoffrey Hinton. A Simple Framework for Contrastive Learning of Visual Representations. *arXiv preprint arXiv:2002.05709*. 2020.
+[A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/pdf/2002.05709.pdf)
 
 ## Disclaimer
 

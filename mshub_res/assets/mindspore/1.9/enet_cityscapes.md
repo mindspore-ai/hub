@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-A. Paszke, A. Chaurasia, S. Kim, and E. Culurciello."ENet: A deep neural network architecture for real-time semantic segmentation."
+[ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation](https://arxiv.org/pdf/1606.02147.pdf)
 
 ## Disclaimer
 

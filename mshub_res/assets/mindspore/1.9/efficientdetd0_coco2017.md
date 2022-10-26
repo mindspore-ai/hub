@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Mingxing Tan, Ruoming Pang, Quoc V. Le
+[EfficientDet: Scalable and Efficient Object Detection](https://arxiv.org/pdf/1911.09070.pdf)
 
 ## Disclaimer
 

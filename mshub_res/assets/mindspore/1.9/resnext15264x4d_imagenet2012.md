@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Xie S, Girshick R, Dollár, Piotr, et al. Aggregated Residual Transformations for Deep Neural Networks. 2016.
+[Aggregated Residual Transformations for Deep Neural Networks](https://arxiv.org/pdf/1611.05431.pdf)
 
 ## Disclaimer
 

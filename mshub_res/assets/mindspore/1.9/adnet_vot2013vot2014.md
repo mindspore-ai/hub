@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Sangdoo Yun（Seoul National University, South Korea）. "Action-Decision Networks for Visual Tracking with Deep Reinforcement Learning'. Presented at CVPR 2017.
+[Action-Decision Networks for Visual Tracking with Deep Reinforcement Learning](https://openaccess.thecvf.com/content_cvpr_2017/papers/Yun_Action-Decision_Networks_for_CVPR_2017_paper.pdf)
 
 ## Disclaimer
 

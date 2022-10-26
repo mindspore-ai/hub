@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Zhou, Xiangyang , et al. "Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network." Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) 2018.
+[Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network](https://aclanthology.org/P18-1103.pdf)
 
 ## Disclaimer
 

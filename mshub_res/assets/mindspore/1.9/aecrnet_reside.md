@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Contrastive Learning for Compact Single Image Dehazing, CVPR2021](https://arxiv.org/abs/2104.09367)
+[Contrastive Learning for Compact Single Image Dehazing](https://arxiv.org/pdf/2104.09367.pdf)
 
 ## Disclaimer
 

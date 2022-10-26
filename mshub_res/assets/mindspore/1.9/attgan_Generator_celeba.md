@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Zhenliang He, Wangmeng Zuo, Meina Kan, Shiguang Shan, Xilin Chen, et al. AttGAN: Facial Attribute Editing by Only Changing What You Want[C]// 2017 CVPR. IEEE
+[AttGAN: Facial Attribute Editing by Only Changing What You Want](https://arxiv.org/pdf/1711.10678.pdf)
 
 ## Disclaimer
 

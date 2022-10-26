@@ -51,8 +51,8 @@ All parameters in the module are trainable.
 
 ## Citation
 
-1. L Zhang, J Han, H Wang, R Car, W E. Deep potential molecular dynamics: a scalable model with the accuracy of quantum mechanics. Physical review letters 120 (14), 143001 (2018).
-2. H Wang, L Zhang, J Han, W E. DeePMD-kit: A deep learning package for many-body potential energy representation and molecular dynamics. Computer Physics Communications 228, 178-184 (2018).
+1. [Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics](https://arxiv.org/pdf/1707.09571v2.pdf)
+2. [DeePMD-kit: A deep learning package for many-body potential energy representation and molecular dynamics](https://arxiv.org/pdf/1712.03641v2.pdf)
 
 ## Disclaimer
 

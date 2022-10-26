@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-*Dynamic Dual-Attentive Aggregation Learning for Visible-Infrared Person Re-Identification* in ECCV 2020
+[Dynamic Dual-Attentive Aggregation Learning for Visible-Infrared Person Re-Identification](https://arxiv.org/pdf/2007.09314.pdf)
 
 ## Disclaimer
 

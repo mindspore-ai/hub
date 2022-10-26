@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Yehui Tang, Yunhe Wang, Yixing Xu, Dacheng Tao, Chunjing Xu, Chao Xu, Chang Xu. Scientific Control for Reliable Neural Network Pruning. Submitted to NeurIPS 2020.
+[GhostNet: More Features from Cheap Operations](https://openaccess.thecvf.com/content_CVPR_2020/papers/Han_GhostNet_More_Features_From_Cheap_Operations_CVPR_2020_paper.pdf)
 
 ## Disclaimer
 

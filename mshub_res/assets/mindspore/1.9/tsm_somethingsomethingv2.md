@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Lin, Ji, Chuang Gan and Song Han. “TSM: Temporal Shift Module for Efficient Video Understanding.” 2019 IEEE/CVF International Conference on Computer Vision (ICCV) (2019): 7082-7092.
+[Temporal Shift Module for Efficient Video Understanding](https://arxiv.org/pdf/1811.08383v1.pdf)
 
 ## Disclaimer
 

@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Howard, Andrew, Mark Sandler, Grace Chu, Liang-Chieh Chen, Bo Chen, Mingxing Tan, Weijun Wang et al. "Searching for mobilenetv3." In Proceedings of the IEEE International Conference on Computer Vision, pp. 1314-1324. 2019.
+[Searching for MobileNetV3](https://arxiv.org/pdf/1905.02244.pdf)
 
 ## Disclaimer
 

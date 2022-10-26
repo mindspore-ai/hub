@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Kim Y. Convolutional neural networks for sentence classification[J]. arXiv preprint arXiv:1408.5882, 2014.
+[Convolutional Neural Networks for Sentence Classification](https://arxiv.org/pdf/1408.5882.pdf)
 
 ## Disclaimer
 

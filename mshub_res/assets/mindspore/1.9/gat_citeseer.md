@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Veličković, P., Cucurull, G., Casanova, A., Romero, A., Lio, P., & Bengio, Y. (2017).Graph attention networks. arXiv preprint arXiv:1710.10903.
+[Graph Attention Networks](https://arxiv.org/pdf/1710.10903.pdf)
 
 ## Disclaimer
 

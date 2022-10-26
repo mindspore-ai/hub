@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Huang T , Li S , Jia X , et al. Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images[J]. 2021.
+[Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images](https://arxiv.org/pdf/2101.02824.pdf)
 
 ## Disclaimer
 

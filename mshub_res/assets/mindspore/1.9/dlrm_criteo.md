@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Naumov M, Mudigere D, Shi H J M, et al. Deep learning recommendation model for personalization and recommendation systems[J]. arXiv preprint arXiv:1906.00091, 2019.
+[Deep Learning Recommendation Model for Personalization and Recommendation Systems](https://arxiv.org/pdf/1906.00091v1.pdf)
 
 ## Disclaimer
 

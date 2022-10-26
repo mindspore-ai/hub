@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Keunwoo Choi, George Fazekas, and Mark Sandler, “Automatic tagging using deep convolutional neural networks,” in International Society of Music Information Retrieval Conference. ISMIR, 2016.
+[Automatic tagging using deep convolutional neural networks](https://arxiv.org/pdf/1606.00298.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Ilya Sutskever, Oriol Vinyals, and Quoc V. Le. 2014. Sequence to sequence learning with neural networks. In Proceedings of the 27th International Conference on Neural Information Processing Systems - Volume 2 (NIPS'14). MIT Press, Cambridge, MA, USA, 3104–3112.
+[Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215.pdf)
 
 ## Disclaimer
 

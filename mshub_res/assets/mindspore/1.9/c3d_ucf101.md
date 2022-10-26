@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Learning Spatiotemporal Features with 3D Convolutional Networks
+[Learning Spatiotemporal Features with 3D Convolutional Networks](https://arxiv.org/pdf/1412.0767v4.pdf)
 
 ## Disclaimer
 

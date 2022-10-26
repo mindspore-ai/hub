@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[ERNIE: Enhanced Representation through Knowledge Integration](https://arxiv.org/abs/1904.09223): Yu Sun, Shuohuan Wang, Yukun Li, Shikun Feng, Xuyi Chen, Han Zhang, Xin Tian, Danxiang Zhu, Hao Tian, Hua Wu.
+[ERNIE: Enhanced Representation through Knowledge Integration](https://arxiv.org/pdf/1904.09223.pdf)
 
 ## Disclaimer
 

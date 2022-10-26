@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Junlin Zhang , Tongwen Huang , Zhiqi Zhang FAT-DeepFFM: Field Attentive Deep Field-aware Factorization Machine
+[FAT-DeepFFM: Field Attentive Deep Field-aware Factorization Machine](https://arxiv.org/pdf/1905.06336.pdf)
 
 ## Disclaimer
 
