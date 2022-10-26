@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Yixing Xu, Yunhe Wang, Kai Han, Yehui Tang, Shangling Jui, Chunjing Xu, Chang Xu. ReNAS: Relativistic Evaluation of Neural Architecture Search. Submitted to CVPR 2021.
+[ReNAS: Relativistic Evaluation of Neural Architecture Search](https://arxiv.org/pdf/1910.01523.pdf)
 
 ## Disclaimer
 

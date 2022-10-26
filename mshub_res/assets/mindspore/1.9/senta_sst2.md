@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[SKEP: Sentiment Knowledge Enhanced Pre-training for Sentiment Analysis](https://arxiv.org/abs/2005.05635)
+[SKEP: Sentiment Knowledge Enhanced Pre-training for Sentiment Analysis](https://arxiv.org/pdf/2005.05635.pdf)
 
 ## Disclaimer
 

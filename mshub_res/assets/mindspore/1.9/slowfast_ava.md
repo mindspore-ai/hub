@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Christoph Feichtenhofer, Haoqi Fan, Jitendra Malik, Kaiming He.Submitted on 10 Dec 2018 (v1), last revised 29 Oct 2019 (this version, v3).
+[SlowFast Networks for Video Recognition](https://arxiv.org/pdf/1812.03982.pdf)
 
 ## Disclaimer
 

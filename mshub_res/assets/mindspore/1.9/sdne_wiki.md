@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Wang D ,  Cui P ,  Zhu W. Structural Deep Network Embedding[C]// Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. August 2016.
+[Structural Deep Network Embedding](https://dl.acm.org/doi/10.1145/2939672.2939753)
 
 ## Disclaimer
 

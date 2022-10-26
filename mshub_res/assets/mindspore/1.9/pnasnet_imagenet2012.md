@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Chenxi Liu, etc. Progressive Neural Architecture Search. 2018.
+[Progressive Neural Architecture Search](https://arxiv.org/pdf/1712.00559v3.pdf)
 
 ## Disclaimer
 

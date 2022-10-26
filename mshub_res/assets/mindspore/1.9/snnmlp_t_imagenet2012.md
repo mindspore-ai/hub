@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Wenshuo Li, Hanting Chen, Jianyuan Guo, Ziyang Zhang, Yunhe Wang. Brain-inspired Multilayer Perceptron with Spiking Neurons. arxiv 2203.14679.
+[Brain-inspired Multilayer Perceptron with Spiking Neurons](https://arxiv.org/pdf/2203.14679.pdf)
 
 ## Disclaimer
 

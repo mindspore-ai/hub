@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-"Bag of Tricks for Efficient Text Classification", 2016, A. Joulin, E. Grave, P. Bojanowski, and T. Mikolov
+[Bag of Tricks for Efficient Text Classification](https://arxiv.org/pdf/1607.01759.pdf)
 
 ## Disclaimer
 

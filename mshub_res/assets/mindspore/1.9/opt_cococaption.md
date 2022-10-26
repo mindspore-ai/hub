@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Liu J, Zhu X, Liu F, et al. OPT: Omni-Perception Pre-Trainer for Cross-Modal Understanding and Generation[J]. arXiv preprint arXiv:2107.00249, 2021.
+[OPT: Omni-Perception Pre-Trainer for Cross-Modal Understanding and Generation](https://arxiv.org/pdf/2107.00249v2.pdf)
 
 ## Disclaimer
 

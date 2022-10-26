@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Pan X ,  Ping L ,  Shi J , et al. Two at Once: Enhancing Learning and Generalization Capacities via IBN-Net[C]// European Conference on Computer Vision. Springer, Cham, 2018.
+[Two at Once: Enhancing Learning and Generalization Capacities via IBN-Net](https://arxiv.org/pdf/1807.09441.pdf)
 
 ## Disclaimer
 

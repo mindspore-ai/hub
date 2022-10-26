@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Depth Map Prediction from a Single Image using a Multi-Scale Deep Network. David Eigen, Christian Puhrsch, Rob Fergus.
+[Depth Map Prediction from a Single Image using a Multi-Scale Deep Network](https://arxiv.org/pdf/1406.2283.pdf)
 
 ## Disclaimer
 

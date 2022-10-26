@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Sida Peng, Y. Liu, Qixing Huang, Hujun Bao, Xiaowei Zhou."PVNet: Pixel-Wise Voting Network for 6DoF Pose Estimation."2018, 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).
+[PVNet: Pixel-wise Voting Network for 6DoF Pose Estimation](https://arxiv.org/pdf/1812.11788v1.pdf)
 
 ## Disclaimer
 

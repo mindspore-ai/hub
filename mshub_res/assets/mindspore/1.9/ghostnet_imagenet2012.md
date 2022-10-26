@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Kai Han, Yunhe Wang, Qi Tian."GhostNet: More Features From Cheap Operations".
+[GhostNet: More Features from Cheap Operations](https://arxiv.org/pdf/1911.11907.pdf)
 
 ## Disclaimer
 

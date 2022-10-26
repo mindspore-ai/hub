@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Reverse Attention-Based Residual Network for Salient Object Detection
+[Reverse Attention-Based Residual Network for Salient Object Detection](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8966594)
 
 ## Disclaimer
 

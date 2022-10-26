@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Bo Chen*, Yichao Wang*, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Xiuqiang He. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models
+[Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models](https://dl.acm.org/doi/abs/10.1145/3459637.3481915)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Object-Contextual Representations for Semantic Segmentation](https://arxiv.org/pdf/1909.11065)
+[Segmentation Transformer: Object-Contextual Representations for Semantic Segmentation](https://arxiv.org/pdf/1909.11065.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Flood Sung, Yongxin Yang, Li Zhang, Tao Xiang, Philip H.S. Torr, Timothy M. Hospedales. Learning to Compare: Relation Network for Few-Shot Learning. 2018.
+[Learning to Compare: Relation Network for Few-Shot Learning](https://arxiv.org/pdf/1711.06025.pdf)
 
 ## Disclaimer
 

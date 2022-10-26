@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Thomas N. Kipf, Max Welling. 2016. Semi-Supervised Classification with Graph Convolutional Networks. In ICLR 2016.
+[Semi-Supervised Classification with Graph Convolutional Networks](https://arxiv.org/pdf/1609.02907.pdf)
 
 ## Disclaimer
 

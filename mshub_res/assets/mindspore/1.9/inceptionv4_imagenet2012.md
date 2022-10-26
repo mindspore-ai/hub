@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi. Computer Vision and Pattern Recognition[J]. 2016.
+[Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://arxiv.org/pdf/1602.07261.pdf)
 
 ## Disclaimer
 

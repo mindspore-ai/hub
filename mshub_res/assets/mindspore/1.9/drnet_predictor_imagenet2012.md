@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Mingjian Zhu, Kai Han,  Enhua Wu, Qiulin Zhang, Ying Nie, Zhenzhong Lan, Yunhe Wang. Dynamic Resolution Network. NeurIPS 2021.
+[Dynamic Resolution Network](https://arxiv.org/pdf/2106.02898.pdf)
 
 ## Disclaimer
 

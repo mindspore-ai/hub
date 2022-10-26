@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Nicolai Wojke, Alex Bewley, Dietrich Paulus. "SIMPLE ONLINE AND REALTIME TRACKING WITH A DEEP ASSOCIATION METRIC". *Presented at ICIP 2016*.
+[Simple Online and Realtime Tracking](https://arxiv.org/pdf/1602.00763.pdf)
 
 ## Disclaimer
 

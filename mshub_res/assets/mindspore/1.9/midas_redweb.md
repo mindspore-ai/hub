@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[Towards Robust Monocular Depth Estimation:Mixing Datasets for Zero-shot Cross-dataset Transfer](https://arxiv.org/pdf/1907.01341v3.pdf)
+[Towards Robust Monocular Depth Estimation: Mixing Datasets for Zero-shot Cross-dataset Transfer](https://arxiv.org/pdf/1907.01341v3.pdf)
 
 ## Disclaimer
 

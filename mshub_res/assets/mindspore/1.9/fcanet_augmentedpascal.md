@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Zheng Lin, Zhao Zhang, Lin-Zhuo Chen, Ming-Ming Cheng，Shao-Ping Lu，Interactive Image Segmentation with First Click Attention. (CVPR2020)
+[Interactive Image Segmentation with First Click Attention](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Interactive_Image_Segmentation_With_First_Click_Attention_CVPR_2020_paper.pdf)
 
 ## Disclaimer
 

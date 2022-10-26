@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Mao X J ,  Shen C ,  Yang Y B . [Image Restoration Using Very Deep Convolutional Encoder-Decoder Networks with Symmetric Skip Connections[J]](https://arxiv.org/pdf/1603.09056v2.pdf).  2016.
+[Image Restoration Using Very Deep Convolutional Encoder-Decoder Networks with Symmetric Skip Connections](https://arxiv.org/pdf/1603.09056v2.pdf)
 
 ## Disclaimer
 

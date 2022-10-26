@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Kaiyang Zhou, Yongxin Yang, Andrea Cavallaro, Tao Xiang, University of Surrey, Queen Mary University of London Samsung AI Center, Cambridge, Published in IEEE 2019.
+[Omni-Scale Feature Learning for Person Re-Identification](https://arxiv.org/pdf/1905.00953.pdf)
 
 ## Disclaimer
 

@@ -68,9 +68,9 @@ network.set_train(False)
 
 ## Citation
 
-1. Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun."Deep Residual Learning for Image Recognition"
-2. Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu."Squeeze-and-Excitation Networks"
-3. Tong He, Zhi Zhang, Hang Zhang, Zhongyue Zhang, Junyuan Xie, Mu Li."Bag of Tricks for Image Classification with Convolutional Neural Networks"
+1. [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
+2. [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf)
+3. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf)
 
 ## Disclaimer
 

@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Han Cai, Ligeng Zhu, Song Han. ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware. 2019.
+[ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware](https://arxiv.org/pdf/1812.00332v2.pdf)
 
 ## Disclaimer
 

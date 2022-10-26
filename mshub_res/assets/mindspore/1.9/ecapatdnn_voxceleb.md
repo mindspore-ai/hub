@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Brecht Desplanques, Jenthe Thienpondt, Kris Demuynck. Interspeech 2020.
+[ECAPA-TDNN: Emphasized Channel Attention, Propagation and Aggregation in TDNN Based Speaker Verification](https://arxiv.org/pdf/2005.07143.pdf)
 
 ## Disclaimer
 

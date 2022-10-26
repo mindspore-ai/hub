@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-CenterFace: Joint Face Detection and Alignment Using Face as Point. Xu, Yuanyuan(Huaqiao University) and Yan, Wan(StarClouds) and Sun, Haixin(Xiamen University) and Yang, Genke(Shanghai Jiaotong University) and Luo, Jiliang(Huaqiao University)
+[CenterFace: Joint Face Detection and Alignment Using Face as Point](https://arxiv.org/ftp/arxiv/papers/1911/1911.03599.pdf)
 
 ## Disclaimer
 

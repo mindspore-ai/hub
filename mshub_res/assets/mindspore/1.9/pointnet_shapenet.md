@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Qi, Charles R., et al. "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation" arXiv preprint arXiv:1612.00593 (2017).
+[PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://arxiv.org/pdf/1612.00593.pdf)
 
 ## Disclaimer
 

@@ -68,8 +68,8 @@ network.set_train(False)
 
 ## Citation
 
-1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805.
-2. Junqiu Wei, Xiaozhe Ren, Xiaoguang Li, Wenyong Huang, Yi Liao, Yasheng Wang, Jiashu Lin, Xin Jiang, Xiao Chen, Qun Liu. NEZHA: Neural Contextualized Representation for Chinese Language Understanding. arXiv preprint arXiv:1909.00204.
+1. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf)
+2. [NEZHA: Neural Contextualized Representation for Chinese Language Understanding](https://arxiv.org/pdf/1909.00204.pdf)
 
 ## Disclaimer
 

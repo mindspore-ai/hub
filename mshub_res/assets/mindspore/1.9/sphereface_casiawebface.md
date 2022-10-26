@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj, Le Song."SphereFace: Deep Hypersphere Embedding for Face Recognition."*Proceedings of the IEEE conference on computer vision and pattern recognition*.2017.
+[SphereFace: Deep Hypersphere Embedding for Face Recognition](https://arxiv.org/pdf/1704.08063.pdf)
 
 ## Disclaimer
 

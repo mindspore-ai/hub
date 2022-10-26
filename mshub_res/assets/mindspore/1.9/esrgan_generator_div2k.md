@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Xintao Wang, Ke Yu, Shixiang Wu, Jinjin Gu, Yihao Liu, Chao Dong, Chen Change Loy, Yu Qiao, Xiaoou Tang.
+[ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/pdf/1809.00219.pdf)
 
 ## Disclaimer
 

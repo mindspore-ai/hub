@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514)
+[High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/pdf/1904.04514.pdf)
 
 ## Disclaimer
 

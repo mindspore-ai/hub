@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Goodfellow I, Pouget-Abadie J, Mirza M, et al. Generative adversarial nets[J]. Advances in neural information processing systems, 2014, 27.
+[Generative Adversarial Nets](https://proceedings.neurips.cc/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf)
 
 ## Disclaimer
 

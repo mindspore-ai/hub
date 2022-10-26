@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Xinyu Zhou, Cong Yao, He Wen, Yuzhi Wang, Shuchang Zhou, Weiran He, and Jiajun Liang Megvii Technology Inc., Beijing, China, Published in CVPR 2017.
+[EAST: An Efficient and Accurate Scene Text Detector](https://arxiv.org/pdf/1704.03155.pdf)
 
 ## Disclaimer
 

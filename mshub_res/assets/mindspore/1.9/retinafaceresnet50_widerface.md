@@ -4,7 +4,7 @@
 
 model-name: retinaface
 
-backbone-name: ResNet50
+backbone-name: retinaface
 
 module-type: cv
 
@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Jiankang Deng, Jia Guo, Yuxiang Zhou, Jinke Yu, Irene Kotsia, Stefanos Zafeiriou. "RetinaFace: Single-stage Dense Face Localisation in the Wild". 2019.
+[RetinaFace: Single-stage Dense Face Localisation in the Wild](https://arxiv.org/pdf/1905.00641v2.pdf)
 
 ## Disclaimer
 

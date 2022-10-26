@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Zhao J X, Liu J J, Fan D P, et al. EGNet: Edge guidance network for salient object detection[C]//Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019: 8779-8788.
+[EGNet:Edge Guidance Network for Salient Object Detection](https://arxiv.org/pdf/1908.08297.pdf)
 
 ## Disclaimer
 

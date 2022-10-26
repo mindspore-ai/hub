@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed, Cheng-Yang Fu, Alexander C. Berg.European Conference on Computer Vision (ECCV), 2016 (In press).
+[SSD: Single Shot MultiBox Detector](https://arxiv.org/pdf/1512.02325.pdf)
 
 ## Disclaimer
 

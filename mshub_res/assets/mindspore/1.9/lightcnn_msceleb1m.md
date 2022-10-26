@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Wu, Xiang, et al. "A light cnn for deep face representation with noisy labels." IEEE Transactions on Information Forensics and Security 13.11 (2018): 2884-2896.
+[A Light CNN for Deep Face Representation with Noisy Labels](https://arxiv.org/pdf/1511.02683.pdf)
 
 ## Disclaimer
 

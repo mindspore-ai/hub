@@ -51,7 +51,7 @@ All parameters in the module are trainable.
 
 ## Citation
 
-Du T ,  Wang H ,  Torresani L , et al. A Closer Look at Spatiotemporal Convolutions for Action Recognition[C]// IEEE/CVF Conference on Computer Vision and Pattern Recognition. 0.
+[A Closer Look at Spatiotemporal Convolutions for Action Recognition](https://arxiv.org/pdf/1711.11248v1.pdf)
 
 ## Disclaimer
 

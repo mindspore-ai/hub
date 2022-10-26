@@ -68,7 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-Song, Kaitao, Xu Tan, Tao Qin, Jianfeng Lu and Tie-Yan Liu.“MASS: Masked Sequence to Sequence Pre-training for Language Generation.”ICML (2019).
+[MASS: Masked Sequence to Sequence Pre-training for Language Generation](https://www.microsoft.com/en-us/research/uploads/prod/2019/06/MASS-paper-updated-002.pdf)
 
 ## Disclaimer
 
