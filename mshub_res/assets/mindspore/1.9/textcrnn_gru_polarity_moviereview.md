@@ -45,7 +45,7 @@ summary: textrcnn is used for nlp
 
 This MindSpore Hub model uses the implementation of textrcnn from the MindSpore model zoo on Gitee at research/nlp/textrcnn.
 
-textrcnn is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/textrcnn](https://gitee.com/mindspore/models/blob/r1.9/research/nlp/textrcnn/readme.md).
+textrcnn is a nlp network. More details please refer to the MindSpore model zoo on Gitee at [research/nlp/textrcnn](https://gitee.com/mindspore/models/blob/r1.9/research/nlp/textrcnn/README.md).
 
 All parameters in the module are trainable.
 

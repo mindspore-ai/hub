@@ -45,7 +45,7 @@ summary: dgcn is used for gnn
 
 This MindSpore Hub model uses the implementation of dgcn from the MindSpore model zoo on Gitee at research/gnn/dgcn.
 
-dgcn is a gnn network. More details please refer to the MindSpore model zoo on Gitee at [research/gnn/dgcn](https://gitee.com/mindspore/models/blob/r1.9/research/gnn/dgcn/readme_CN.md).
+dgcn is a gnn network. More details please refer to the MindSpore model zoo on Gitee at [research/gnn/dgcn](https://gitee.com/mindspore/models/blob/r1.9/research/gnn/dgcn/README_CN.md).
 
 All parameters in the module are trainable.
 

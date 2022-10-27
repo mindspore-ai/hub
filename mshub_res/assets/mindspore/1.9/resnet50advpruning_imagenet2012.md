@@ -45,7 +45,7 @@ summary: resnet50_adv_pruning is used for cv
 
 This MindSpore Hub model uses the implementation of resnet50_adv_pruning from the MindSpore model zoo on Gitee at research/cv/resnet50_adv_pruning.
 
-resnet50_adv_pruning is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/resnet50_adv_pruning](https://gitee.com/mindspore/models/blob/r1.9/research/cv/resnet50_adv_pruning/Readme.md).
+resnet50_adv_pruning is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/resnet50_adv_pruning](https://gitee.com/mindspore/models/blob/r1.9/research/cv/resnet50_adv_pruning/README.md).
 
 All parameters in the module are trainable.
 
