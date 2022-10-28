@@ -45,7 +45,7 @@ summary: snn_mlp is used for cv
 
 This MindSpore Hub model uses the implementation of snn_mlp from the MindSpore model zoo on Gitee at research/cv/snn_mlp.
 
-snn_mlp is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/snn_mlp](https://gitee.com/mindspore/models/blob/r1.9/research/cv/snn_mlp/readme.md).
+snn_mlp is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/snn_mlp](https://gitee.com/mindspore/models/blob/r1.9/research/cv/snn_mlp/README.md).
 
 All parameters in the module are trainable.
 

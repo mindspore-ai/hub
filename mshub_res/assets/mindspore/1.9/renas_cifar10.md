@@ -45,7 +45,7 @@ summary: renas is used for cv
 
 This MindSpore Hub model uses the implementation of renas from the MindSpore model zoo on Gitee at research/cv/renas.
 
-renas is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/renas](https://gitee.com/mindspore/models/blob/r1.9/research/cv/renas/Readme.md).
+renas is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/renas](https://gitee.com/mindspore/models/blob/r1.9/research/cv/renas/README.md).
 
 All parameters in the module are trainable.
 

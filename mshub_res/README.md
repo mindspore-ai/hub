@@ -51,10 +51,10 @@ See sections below for more details.
 
 The MindSpore Hub repository supports multiple kinds of model file-formats, including:
 
-* [MindSpore CKPT](https://www.mindspore.cn/docs/api/en/r1.9/api_python/mindspore/mindspore.save_checkpoint.html#mindspore.save_checkpoint)
-* [AIR](https://www.mindspore.cn/docs/api/en/r1.9/api_python/mindspore/mindspore.export.html#mindspore.export)
-* [MindIR](https://www.mindspore.cn/docs/api/en/r1.9/api_python/mindspore/mindspore.export.html#mindspore.export)
-* [ONNX](https://www.mindspore.cn/docs/api/en/r1.9/api_python/mindspore/mindspore.export.html#mindspore.export)
+* [MindSpore CKPT](https://mindspore.cn/docs/en/r1.9/api_python/mindspore/mindspore.save_checkpoint.html#mindspore.save_checkpoint)
+* [AIR](https://mindspore.cn/docs/en/r1.9/api_python/mindspore/mindspore.export.html#mindspore.export)
+* [MindIR](https://mindspore.cn/docs/en/r1.9/api_python/mindspore/mindspore.export.html#mindspore.export)
+* [ONNX](https://mindspore.cn/docs/en/r1.9/api_python/mindspore/mindspore.export.html#mindspore.export)
 * [MSLite](https://www.mindspore.cn/lite/docs/en/r1.9/use/converter_tool.html)
 
 ### Codes
