@@ -45,7 +45,7 @@ summary: ManiDP is used for cv
 
 This MindSpore Hub model uses the implementation of ManiDP from the MindSpore model zoo on Gitee at research/cv/ManiDP.
 
-ManiDP is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/ManiDP](https://gitee.com/mindspore/models/blob/r1.9/research/cv/ManiDP/Readme.md).
+ManiDP is a cv network. More details please refer to the MindSpore model zoo on Gitee at [research/cv/ManiDP](https://gitee.com/mindspore/models/blob/r1.9/research/cv/ManiDP/README.md).
 
 All parameters in the module are trainable.
 
