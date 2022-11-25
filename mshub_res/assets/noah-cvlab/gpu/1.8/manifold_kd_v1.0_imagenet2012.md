@@ -22,9 +22,9 @@ author: Noah's Ark Lab
 
 update-time: 2022-10-11
 
-vit-repo-link: https://gitee.com/mindspore/models/tree/master/official/cv/vit
+vit-repo-link: https://gitee.com/mindspore/models/tree/master/official/cv/VIT
 
-swin-repo-link: https://gitee.com/mindspore/models/tree/master/research/cv/swin_transformer
+swin-repo-link: https://gitee.com/mindspore/models/tree/master/official/cv/SwinTransformer
 
 user-id: Noah's Ark Lab
 
