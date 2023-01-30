@@ -2,7 +2,7 @@
 
 ---
 
-model-name: EDCN
+model-name: edcn
 
 backbone-name: EDCN
 

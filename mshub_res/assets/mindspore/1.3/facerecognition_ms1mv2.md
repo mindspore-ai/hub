@@ -2,7 +2,7 @@
 
 ---
 
-model-name: FaceRecognition
+model-name: facerecognition
 
 backbone-name: FaceRecognition
 

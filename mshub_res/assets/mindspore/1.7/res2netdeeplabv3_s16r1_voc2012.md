@@ -2,7 +2,7 @@
 
 ---
 
-model-name: res2net_deeplabv3
+model-name: deeplab_v3_s16
 
 backbone-name: res2net_deeplabv3
 

@@ -2,7 +2,7 @@
 
 ---
 
-model-name: mobilenetv3
+model-name: mobilenetv3_large
 
 backbone-name: mobilenetv3
 

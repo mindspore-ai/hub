@@ -2,7 +2,7 @@
 
 ---
 
-model-name: FaceDetection
+model-name: facedetection
 
 backbone-name: FaceDetection
 

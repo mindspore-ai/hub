@@ -2,7 +2,7 @@
 
 ---
 
-model-name: gnmt_v2
+model-name: gnmt
 
 backbone-name: gnmt_v2
 

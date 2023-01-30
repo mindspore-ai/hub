@@ -2,7 +2,7 @@
 
 ---
 
-model-name: FasterRCNN_ResNetV1_50
+model-name: faster_rcnn
 
 backbone-name: faster_rcnn
 

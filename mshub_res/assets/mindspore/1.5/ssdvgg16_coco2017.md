@@ -2,7 +2,7 @@
 
 ---
 
-model-name: ssd_vgg16
+model-name: ssd300
 
 backbone-name: ssd
 

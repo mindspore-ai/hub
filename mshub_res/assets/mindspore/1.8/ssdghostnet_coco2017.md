@@ -2,7 +2,7 @@
 
 ---
 
-model-name: ssd_ghostnet
+model-name: ghostnet_ssd
 
 backbone-name: ssd_ghostnet
 

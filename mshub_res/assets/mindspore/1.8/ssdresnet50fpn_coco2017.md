@@ -2,7 +2,7 @@
 
 ---
 
-model-name: ssd_resnet50_fpn
+model-name: ssd300
 
 backbone-name: ssd
 

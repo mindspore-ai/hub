@@ -2,7 +2,7 @@
 
 ---
 
-model-name: FaceQualityAssessment
+model-name: face_quality_assessment
 
 backbone-name: FaceQualityAssessment
 

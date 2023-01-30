@@ -2,7 +2,7 @@
 
 ---
 
-model-name: squeezenet_residual
+model-name: squeezenet
 
 backbone-name: squeezenet
 

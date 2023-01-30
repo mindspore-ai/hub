@@ -2,7 +2,7 @@
 
 ---
 
-model-name: autoaugment
+model-name: WRN
 
 backbone-name: autoaugment
 

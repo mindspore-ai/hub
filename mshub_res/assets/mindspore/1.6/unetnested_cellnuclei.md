@@ -2,7 +2,7 @@
 
 ---
 
-model-name: unet_nested
+model-name: unet2d
 
 backbone-name: unet
 
