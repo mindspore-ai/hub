@@ -2,7 +2,7 @@
 
 ---
 
-model-name: ssd_mobilenet_v1_fpn
+model-name: ssd300
 
 backbone-name: ssd
 

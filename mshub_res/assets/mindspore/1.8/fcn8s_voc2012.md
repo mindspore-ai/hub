@@ -2,7 +2,7 @@
 
 ---
 
-model-name: FCN8s
+model-name: fcn8s
 
 backbone-name: FCN8s
 

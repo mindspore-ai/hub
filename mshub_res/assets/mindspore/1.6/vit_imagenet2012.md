@@ -2,7 +2,7 @@
 
 ---
 
-model-name: vit
+model-name: vit_base_patch32
 
 backbone-name: vit
 

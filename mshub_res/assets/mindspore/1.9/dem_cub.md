@@ -2,7 +2,7 @@
 
 ---
 
-model-name: dem
+model-name: DEM
 
 backbone-name: dem
 

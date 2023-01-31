@@ -2,7 +2,7 @@
 
 ---
 
-model-name: FaceRecognitionForTracking
+model-name: face_recognition_for_tracking
 
 backbone-name: FaceRecognitionForTracking
 

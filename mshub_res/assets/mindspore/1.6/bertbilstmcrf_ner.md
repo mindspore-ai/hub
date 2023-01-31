@@ -2,7 +2,7 @@
 
 ---
 
-model-name: bert_bilstm_crf
+model-name: bert_base
 
 backbone-name: bert
 

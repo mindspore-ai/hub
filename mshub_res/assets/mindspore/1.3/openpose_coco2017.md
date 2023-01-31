@@ -2,7 +2,7 @@
 
 ---
 
-model-name: openpose
+model-name: openposenet
 
 backbone-name: openpose
 

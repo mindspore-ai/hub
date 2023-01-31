@@ -2,7 +2,7 @@
 
 ---
 
-model-name: bert_large
+model-name: bert_thor
 
 backbone-name: bert_thor
 

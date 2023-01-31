@@ -2,7 +2,7 @@
 
 ---
 
-model-name: deeplabv3plus
+model-name: DeepLabV3plus_s8
 
 backbone-name: deeplabv3plus
 

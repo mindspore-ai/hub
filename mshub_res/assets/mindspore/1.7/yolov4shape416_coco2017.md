@@ -2,7 +2,7 @@
 
 ---
 
-model-name: yolov4
+model-name: yolov4_shape416
 
 backbone-name: yolov4
 

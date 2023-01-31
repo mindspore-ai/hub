@@ -2,7 +2,7 @@
 
 ---
 
-model-name: fcn-4
+model-name: fcn4
 
 backbone-name: fcn-4
 

@@ -2,7 +2,7 @@
 
 ---
 
-model-name: res2net_yolov3
+model-name: yolov3_res2net
 
 backbone-name: res2net_yolov3
 

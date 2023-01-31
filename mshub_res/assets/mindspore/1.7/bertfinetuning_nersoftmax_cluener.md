@@ -2,7 +2,7 @@
 
 ---
 
-model-name: bert_finetuning
+model-name: bert_base
 
 backbone-name: bert
 
