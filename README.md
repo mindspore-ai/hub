@@ -50,6 +50,7 @@ The Hub depends on MindSprore because the Hub depends on the models repository o
 
 | MindSpore Hub|                             Branch                    | MindSpore |
 | :----------: | :------------------------------------------------: | :-------: |
+|     1.10.0    | [r1.10](https://gitee.com/mindspore/hub/tree/r1.10/) |   1.10.0   |
 |     1.9.0    | [r1.9](https://gitee.com/mindspore/hub/tree/r1.9/) |   1.9.0   |
 |     1.8.0    | [r1.8](https://gitee.com/mindspore/hub/tree/r1.8/) |   1.8.0   |
 |     1.6.0    | [r1.6](https://gitee.com/mindspore/hub/tree/r1.6/) |   1.6.0   |
