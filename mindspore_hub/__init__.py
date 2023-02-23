@@ -47,7 +47,8 @@ def _mindspore_version_check():
         '1.5.0': '1.5.0',
         '1.6.0': '1.6.0',
         '1.8.0': '1.8.0',
-        '1.9.0': '1.9.0'
+        '1.9.0': '1.9.0',
+        '1.10.0': '1.10.0'
     }
     ms_version = ms.__version__
     required_ms_version = hub_mindspore_version_map[__version__]
