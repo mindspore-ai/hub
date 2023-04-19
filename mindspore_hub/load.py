@@ -132,16 +132,17 @@ def _get_uid_from_url(url):
 def load(name, *args, source='gitee', pretrained=True, force_reload=False, **kwargs):
     r"""
     Load network with the given name. After loading, it can be used for inference verification, migration learning, etc.
-    If `source` is `local`, it will load the local model, if the model is not exist in local, it will auto-download.
-    If `pre_trained` is `True`, the model will load the local ckpt file, if the ckpt file is not exist in local,
+    If `source` is ``'local'``, it will load the local model, if the model is not exist in local, it will auto-download.
+    If `pre_trained` is ``True``, the model will load the local ckpt file, if the ckpt file is not exist in local,
     it will auto-download and load the downloaded ckpt file.
 
     Args:
         name (str): Uid or url of the network or local path.
         args (tuple): Arguments for network initialization.
-        source (str): Whether to parse `name` as gitee model URI, github model URI or local resource. Default: gitee.
-        pretrained (bool): Whether to load the pretrained model. Default: True.
-        force_reload (bool): Whether to reload the network and the ckpt file from url. Default: False.
+        source (str, optional): Whether to parse `name` as gitee model URI, github model URI or local resource.
+            Default: ``'gitee'``.
+        pretrained (bool, optional): Whether to load the pretrained model. Default: ``True``.
+        force_reload (bool, optional): Whether to reload the network and the ckpt file from url. Default: ``False``.
         kwargs (dict): Keyword arguments for network initialization.
 
     Returns:
