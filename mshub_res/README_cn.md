@@ -51,10 +51,10 @@ MindSpore Hub网站将在24小时内更新。
 
 MindSpore Hub仓库支持多种模型文件格式，包括：
 
-* [MindSpore CKPT](https://www.mindspore.cn/docs/api/zh-CN/master/api_python/mindspore/mindspore.save_checkpoint.html#mindspore.save_checkpoint)
-* [AIR](https://www.mindspore.cn/docs/api/zh-CN/master/api_python/mindspore/mindspore.export.html#mindspore.export)
-* [MindIR](https://www.mindspore.cn/docs/api/zh-CN/master/api_python/mindspore/mindspore.export.html#mindspore.export)
-* [ONNX](https://www.mindspore.cn/docs/api/zh-CN/master/api_python/mindspore/mindspore.export.html#mindspore.export)
+* [MindSpore CKPT](https://www.mindspore.cn/docs/zh-CN/master/api_python/mindspore/mindspore.save_checkpoint.html#mindspore.save_checkpoint)
+* [AIR](https://www.mindspore.cn/docs/zh-CN/master/api_python/mindspore/mindspore.export.html#mindspore.export)
+* [MindIR](https://www.mindspore.cn/docs/zh-CN/master/api_python/mindspore/mindspore.export.html#mindspore.export)
+* [ONNX](https://www.mindspore.cn/docs/zh-CN/master/api_python/mindspore/mindspore.export.html#mindspore.export)
 * [MSLite](https://www.mindspore.cn/lite/docs/zh-CN/master/use/converter_tool.html)
 
 ### 代码
