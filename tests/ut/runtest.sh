@@ -24,7 +24,7 @@ run_test() {
     echo "Start to run test."
     cd "$PROJECT_DIR" || exit
 
-    pytest "$UT_PATH"
+    python -m pytest "$UT_PATH"
 
     echo "Test all use cases success."
 }
