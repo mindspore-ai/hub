@@ -1,10 +1,10 @@
-# resnet50
+# resnetv2_50
 
 ---
 
-model-name: resnet50
+model-name: resnetv2_50
 
-backbone-name: resnet
+backbone-name: resnetv2
 
 module-type: cv
 
@@ -14,13 +14,13 @@ model-version: 2.3
 
 train-dataset: ImageNet2012
 
-evaluation: top1acc76.76 | top5acc93.31
+evaluation: top1acc77.03 | top5acc93.29
 
 author: MindSpore team
 
 update-time: 2024-8-1
 
-repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/resnet>
+repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/resnetv2>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/resnet/resnet50-f369a08d-910v2.ckpt>
-    asset-sha256: f369a08d
+    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/resnetv2/resnetv2_50-a0b9f7f8-910v2.ckpt>
+    asset-sha256: a0b9f7f8
 
 license: Apache2.0
 
-summary: resnet is used for cv
+summary: resnetv2 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of resnet from the MindSpore.
+This MindSpore Hub model uses the implementation of resnetv2 from the MindSpore.
 
-resnet is a cv network. More details please refer to the MindSpore-Lab on GitHub at [resnet](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/resnet/README.md).
+resnetv2 is a cv network. More details please refer to the MindSpore-Lab on GitHub at [resnetv2](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/resnetv2/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/2.3/resnet50_imagenet2012"
+model = "mindspore/2.3/resnetv2_50_imagenet2012"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,9 +68,10 @@ network.set_train(False)
 
 ## Citation
 
-1. [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
-2. [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf)
-3. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf)
+1. [Identity Mappings in Deep Residual Networks](https://arxiv.org/pdf/1603.05027.pdf)
+2. [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
+3. [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf)
+4. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf)
 
 ## Disclaimer
 

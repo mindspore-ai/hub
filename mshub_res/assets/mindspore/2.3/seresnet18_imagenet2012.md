@@ -1,8 +1,8 @@
-# resnet50
+# seresnet18
 
 ---
 
-model-name: resnet50
+model-name: seresnet18
 
 backbone-name: resnet
 
@@ -14,13 +14,13 @@ model-version: 2.3
 
 train-dataset: ImageNet2012
 
-evaluation: top1acc76.76 | top5acc93.31
+evaluation: top1acc72.05 | top5acc90.59
 
 author: MindSpore team
 
 update-time: 2024-8-1
 
-repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/resnet>
+repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/senet>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/resnet/resnet50-f369a08d-910v2.ckpt>
-    asset-sha256: f369a08d
+    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/senet/seresnet18-7b971c78-910v2.ckpt>
+    asset-sha256: 7b971c78
 
 license: Apache2.0
 
-summary: resnet is used for cv
+summary: senet is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of resnet from the MindSpore.
+This MindSpore Hub model uses the implementation of senet from the MindSpore.
 
-resnet is a cv network. More details please refer to the MindSpore-Lab on GitHub at [resnet](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/resnet/README.md).
+senet is a cv network. More details please refer to the MindSpore-Lab on GitHub at [senet](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/senet/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/2.3/resnet50_imagenet2012"
+model = "mindspore/2.3/seresnet18_imagenet2012"
 network = mshub.load(model)
 network.set_train(False)
 
