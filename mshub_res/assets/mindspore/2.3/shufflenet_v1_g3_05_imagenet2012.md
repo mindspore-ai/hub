@@ -1,10 +1,10 @@
-# resnet50
+# shufflenet_v1_g3_05
 
 ---
 
-model-name: resnet50
+model-name: shufflenet_v1_g3_05
 
-backbone-name: resnet
+backbone-name: shufflenetv1
 
 module-type: cv
 
@@ -14,13 +14,13 @@ model-version: 2.3
 
 train-dataset: ImageNet2012
 
-evaluation: top1acc76.76 | top5acc93.31
+evaluation: top1acc57.08 | top5acc79.89
 
 author: MindSpore team
 
 update-time: 2024-8-1
 
-repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/resnet>
+repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/shufflenetv1>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/resnet/resnet50-f369a08d-910v2.ckpt>
-    asset-sha256: f369a08d
+    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/shufflenet/shufflenetv1/shufflenet_v1_g3_05-56209ef3-910v2.ckpt>
+    asset-sha256: 56209ef3
 
 license: Apache2.0
 
-summary: resnet is used for cv
+summary: shufflenetv1 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of resnet from the MindSpore.
+This MindSpore Hub model uses the implementation of shufflenetv1 from the MindSpore.
 
-resnet is a cv network. More details please refer to the MindSpore-Lab on GitHub at [resnet](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/resnet/README.md).
+shufflenetv1 is a cv network. More details please refer to the MindSpore-Lab on GitHub at [shufflenetv1](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/shufflenetv1/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/2.3/resnet50_imagenet2012"
+model = "mindspore/2.3/shufflenet_v1_g3_05_imagenet2012"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,9 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-1. [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
-2. [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf)
-3. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf)
+[ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile](https://arxiv.org/pdf/1707.01083.pdf)
 
 ## Disclaimer
 

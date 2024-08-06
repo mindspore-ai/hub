@@ -1,10 +1,10 @@
-# resnet50
+# efficientnet_b0
 
 ---
 
-model-name: resnet50
+model-name: efficientnet_b0
 
-backbone-name: resnet
+backbone-name: efficientnet
 
 module-type: cv
 
@@ -14,13 +14,13 @@ model-version: 2.3
 
 train-dataset: ImageNet2012
 
-evaluation: top1acc76.76 | top5acc93.31
+evaluation: top1acc76.88 | top5acc93.28
 
 author: MindSpore team
 
 update-time: 2024-8-1
 
-repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/resnet>
+repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/efficientnet>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/resnet/resnet50-f369a08d-910v2.ckpt>
-    asset-sha256: f369a08d
+    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/efficientnet/efficientnet_b0-f8d7aa2a-910v2.ckpt>
+    asset-sha256: f8d7aa2a
 
 license: Apache2.0
 
-summary: resnet is used for cv
+summary: efficientnet_b0 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of resnet from the MindSpore.
+This MindSpore Hub model uses the implementation of efficientnet_b0 from the MindSpore.
 
-resnet is a cv network. More details please refer to the MindSpore-Lab on GitHub at [resnet](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/resnet/README.md).
+efficientnet_b0 is a cv network. More details please refer to the MindSpore-Lab on GitHub at [efficientnet_b0](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/efficientnet/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/2.3/resnet50_imagenet2012"
+model = "mindspore/2.3/efficientnet_b0_imagenet2012"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,9 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-1. [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
-2. [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf)
-3. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf)
+[EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/pdf/1905.11946.pdf)
 
 ## Disclaimer
 

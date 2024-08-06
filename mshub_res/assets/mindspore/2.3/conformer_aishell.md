@@ -1,26 +1,26 @@
-# resnet50
+# conformer
 
 ---
 
-model-name: resnet50
+model-name: conformer
 
-backbone-name: resnet
+backbone-name: conformer
 
-module-type: cv
+module-type: audio
 
 fine-tunable: True
 
 model-version: 2.3
 
-train-dataset: ImageNet2012
+train-dataset: AISHELL-1
 
-evaluation: top1acc76.76 | top5acc93.31
+evaluation: ctc greedy search CER5.62 | ctc prefix beam search CER5.62 | attention rescoring CER5.12
 
 author: MindSpore team
 
 update-time: 2024-8-1
 
-repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/resnet>
+repo-link: <https://github.com/mindspore-lab/mindaudio/tree/v0.4.0/examples/conformer>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/resnet/resnet50-f369a08d-910v2.ckpt>
-    asset-sha256: f369a08d
+    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindaudio/conformer/conformer_avg_30-692d57b3-910v2.ckpt>
+    asset-sha256: 692d57b3
 
 license: Apache2.0
 
-summary: resnet is used for cv
+summary: conformer is used for audio
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of resnet from the MindSpore.
+This MindSpore Hub model uses the implementation of conformer from the MindSpore.
 
-resnet is a cv network. More details please refer to the MindSpore-Lab on GitHub at [resnet](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/resnet/README.md).
+conformer is an audio network. More details please refer to the MindSpore-Lab on GitHub at [conformer](https://github.com/mindspore-lab/mindaudio/blob/v0.4.0/examples/conformer/readme.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/2.3/resnet50_imagenet2012"
+model = "mindspore/2.3/conformer_aishell"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,9 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-1. [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
-2. [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf)
-3. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf)
+[Conformer: Convolution-augmented Transformer for Speech Recognition](https://arxiv.org/pdf/2005.08100.pdf)
 
 ## Disclaimer
 

@@ -1,10 +1,10 @@
-# resnet50
+# mobilenet_v1_025
 
 ---
 
-model-name: resnet50
+model-name: mobilenet_v1_025
 
-backbone-name: resnet
+backbone-name: mobilenet_v1
 
 module-type: cv
 
@@ -14,13 +14,13 @@ model-version: 2.3
 
 train-dataset: ImageNet2012
 
-evaluation: top1acc76.76 | top5acc93.31
+evaluation: top1acc54.05 | top5acc77.74
 
 author: MindSpore team
 
 update-time: 2024-8-1
 
-repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/resnet>
+repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/mobilenetv1>
 
 user-id: MindSpore
 
@@ -32,20 +32,20 @@ asset:
 
 -
     file-format: ckpt
-    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/resnet/resnet50-f369a08d-910v2.ckpt>
-    asset-sha256: f369a08d
+    asset-link: <https://download-mindspore.osinfra.cn/toolkits/mindcv/mobilenet/mobilenetv1/mobilenet_v1_025-cbe3d3b3-910v2.ckpt>
+    asset-sha256: cbe3d3b3
 
 license: Apache2.0
 
-summary: resnet is used for cv
+summary: mobilenetv1 is used for cv
 
 ---
 
 ## Introduction
 
-This MindSpore Hub model uses the implementation of resnet from the MindSpore.
+This MindSpore Hub model uses the implementation of mobilenetv1 from the MindSpore.
 
-resnet is a cv network. More details please refer to the MindSpore-Lab on GitHub at [resnet](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/resnet/README.md).
+mobilenetv1 is a cv network. More details please refer to the MindSpore-Lab on GitHub at [mobilenetv1](https://github.com/mindspore-lab/mindcv/blob/v0.4.0/configs/mobilenetv1/README.md).
 
 All parameters in the module are trainable.
 
@@ -59,7 +59,7 @@ context.set_context(mode=context.GRAPH_MODE,
                     device_target="Ascend",
                     device_id=0)
 
-model = "mindspore/2.3/resnet50_imagenet2012"
+model = "mindspore/2.3/mobilenetv1_025_imagenet2012"
 network = mshub.load(model)
 network.set_train(False)
 
@@ -68,9 +68,7 @@ network.set_train(False)
 
 ## Citation
 
-1. [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
-2. [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf)
-3. [Bag of Tricks for Image Classification with Convolutional Neural Networks](https://arxiv.org/pdf/1812.01187.pdf)
+[MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/pdf/1704.04861.pdf)
 
 ## Disclaimer
 
