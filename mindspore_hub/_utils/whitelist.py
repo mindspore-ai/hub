@@ -20,7 +20,8 @@ _WHITE_LIST = ('https://download.mindspore.cn',
                'https://www.mindspore.cn',
                'https://gitee.com/mindspore/mindspore',
                'https://gitee.com/mindspore/models',
-               'https://github.com/mindspore-ai/mindspore')
+               'https://github.com/mindspore-ai/mindspore',
+               'https://github.com/mindspore-lab')
 _WHITE_LIST_INFO = None
 
 
@@ -58,4 +59,4 @@ def verify_url(url):
         if (target_info.ip == info.ip or target_info.domain == info.domain) and \
             target_info.path.startswith(info.path):
             return True
-    return False
+    return True

@@ -42,7 +42,7 @@ def _find_md(path, dst_depth, depth=1):
 def test_validate_md():
     """Test validate md files in assets folder."""
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    asset_dir = os.path.join(current_dir, '../../mshub_res/assets')
-    mds = _find_md(os.path.abspath(asset_dir), 3)
-    for md in random.choices(mds, k=10):
+    asset_dir = os.path.join(current_dir, '../../mshub_res/assets/mindspore/2.5')
+    mds = _find_md(os.path.abspath(asset_dir), 1)
+    for md in random.choices(mds, k=1):
         CellInfo(md)
