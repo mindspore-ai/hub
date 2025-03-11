@@ -18,7 +18,7 @@ evaluation: top1acc82.39 | top5acc95.95
 
 author: MindSpore team
 
-update-time: 2025-3-10
+update-time: 2025-03-10
 
 repo-link: <https://github.com/mindspore-lab/mindcv/tree/v0.4.0/configs/convnextv2>
 
@@ -95,13 +95,11 @@ Please download the [ImageNet-1K](https://www.image-net.org/challenges/LSVRC/201
 It is easy to reproduce the reported results with the pre-defined training recipe. For distributed training on multiple Ascend 910 devices, please run
 
 ```shell
-# distributed training on multiple GPU/Ascend devices
+# distributed training on multiple Ascend devices
 mpirun -n 8 python train.py --config configs/convnextv2/convnextv2_tiny_ascend.yaml --data_dir /path/to/imagenet
 ```
 
 > If the script is executed by the root user, the `--allow-run-as-root` parameter must be added to `mpirun`.
-
-Similarly, you can train the model on multiple GPU devices with the above `mpirun` command.
 
 For detailed illustration of all hyper-parameters, please refer to [config.py](https://github.com/mindspore-lab/mindcv/blob/main/config.py).
 
@@ -112,7 +110,7 @@ For detailed illustration of all hyper-parameters, please refer to [config.py](h
 If you want to train or finetune the model on a smaller dataset without distributed training, please run:
 
 ```shell
-# standalone training on a CPU/GPU/Ascend device
+# standalone training on a CPU/Ascend device
 python train.py --config configs/convnextv2/convnextv2_tiny_ascend.yaml --data_dir /path/to/dataset --distribute False
 ```
 
