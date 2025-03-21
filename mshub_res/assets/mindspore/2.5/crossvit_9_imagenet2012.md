@@ -44,6 +44,12 @@ summary: crossvit is used for cv
 
 > [CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification](https://arxiv.org/abs/2103.14899)
 
+## Requirements
+
+| mindspore | ascend driver |  firmware   | cann toolkit/kernel |
+| :-------: | :-----------: | :---------: | :-----------------: |
+|   2.5.0   |    24.1.0     | 7.5.0.3.220 |     8.0.0.beta1     |
+
 ## Introduction
 
 CrossViT is a type of vision transformer that uses a dual-branch architecture to extract multi-scale feature representations for image classification. The architecture combines image patches (i.e. tokens in a transformer) of different sizes to produce stronger visual features for image classification. It processes small and large patch tokens with two separate branches of different computational complexities and these tokens are fused together multiple times to complement each other.
@@ -57,24 +63,25 @@ Fusion is achieved by an efficient cross-attention module, in which each transfo
   <em>Figure 1. Architecture of CrossViT [<a href="#references">1</a>] </em>
 </p>
 
-## Results
+## Performance
 
 Our reproduced model performance on ImageNet-1K is reported as follows.
 
-<div align="center">
+Experiments are tested on ascend 910\* with mindspore 2.5.0 graph mode.
 
-| Model       | Context  | Top-1 (%) | Top-5 (%) | Params (M) | Recipe                                                                                             | Download                                                                                            |
-| ----------- | -------- | --------- | --------- | ---------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| crossvit_9  | D910x8-G | 73.56     | 91.79     | 8.55       | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/crossvit/crossvit_9_ascend.yaml)  | [weights](https://download-mindspore.osinfra.cn/toolkits/mindcv/crossvit/crossvit_9-e74c8e18.ckpt)  |
-| crossvit_15 | D910x8-G | 81.08     | 95.33     | 27.27      | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/crossvit/crossvit_15_ascend.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindcv/crossvit/crossvit_15-eaa43c02.ckpt) |
-| crossvit_18 | D910x8-G | 81.93     | 95.75     | 43.27      | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/crossvit/crossvit_18_ascend.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindcv/crossvit/crossvit_18-ca0a2e43.ckpt) |
+| model name | params(M) | cards | batch size | resolution | jit level | graph compile | ms/step | img/s   | acc@top1 | acc@top5 | recipe                                                                                            | weight                                                                                                   |
+| ---------- | --------- | ----- | ---------- | ---------- | --------- | ------------- | ------- | ------- | -------- | -------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| crossvit_9 | 8.55      | 8     | 256        | 240x240    | O2        | 221s          | 514.36  | 3984.44 | 73.38    | 91.51    | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/crossvit/crossvit_9_ascend.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindcv/crossvit/crossvit_9-32c69c96-910v2.ckpt) |
 
-</div>
+Experiments are tested on ascend 910 with mindspore 2.5.0 graph mode.
+
+| model name | params(M) | cards | batch size | resolution | jit level | graph compile | ms/step | img/s   | acc@top1 | acc@top5 | recipe                                                                                            | weight                                                                                     |
+| ---------- | --------- | ----- | ---------- | ---------- | --------- | ------------- | ------- | ------- | -------- | -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| crossvit_9 | 8.55      | 8     | 256        | 240x240    | O2        | 206s          | 550.79  | 3719.30 | 73.56    | 91.79    | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/crossvit/crossvit_9_ascend.yaml) | [weights](https://download.mindspore.cn/toolkits/mindcv/crossvit/crossvit_9-e74c8e18.ckpt) |
 
 ### Notes
 
-- Context: Training context denoted as {device}x{pieces}-{MS mode}, where mindspore mode can be G - graph mode or F - pynative mode with ms function. For example, D910x8-G is for training on 8 pieces of Ascend 910 NPU using graph mode.
-- Top-1 and Top-5: Accuracy reported on the validation set of ImageNet-1K.
+- top-1 and top-5: Accuracy reported on the validation set of ImageNet-1K.
 
 ## Quick Start
 
@@ -82,7 +89,7 @@ Our reproduced model performance on ImageNet-1K is reported as follows.
 
 #### Installation
 
-Please refer to the [installation instruction](https://github.com/mindspore-ecosystem/mindcv#installation) in MindCV.
+Please refer to the [installation instruction](https://mindspore-lab.github.io/mindcv/installation/) in MindCV.
 
 #### Dataset Preparation
 
@@ -95,11 +102,9 @@ Please download the [ImageNet-1K](https://www.image-net.org/challenges/LSVRC/201
   It is easy to reproduce the reported results with the pre-defined training recipe. For distributed training on multiple Ascend 910 devices, please run
 
   ```shell
-  # distributed training on multiple Ascend devices
-  mpirun -n 8 python train.py --config configs/crossvit/crossvit_15_ascend.yaml --data_dir /path/to/imagenet
+  # distributed training on multiple NPU devices
+  msrun --bind_core=True --worker_num 8 python train.py --config configs/crossvit/crossvit_15_ascend.yaml --data_dir /path/to/imagenet
   ```
-
-  > If the script is executed by the root user, the `--allow-run-as-root` parameter must be added to `mpirun`.
 
   For detailed illustration of all hyper-parameters, please refer to [config.py](https://github.com/mindspore-lab/mindcv/blob/main/config.py).
 
@@ -110,7 +115,7 @@ Please download the [ImageNet-1K](https://www.image-net.org/challenges/LSVRC/201
   If you want to train or finetune the model on a smaller dataset without distributed training, please run:
 
   ```shell
-  # standalone training on a CPU/Ascend device
+  # standalone training on single NPU device
   python train.py --config configs/crossvit/crossvit_15_ascend.yaml --data_dir /path/to/dataset --distribute False
   ```
 
@@ -121,10 +126,6 @@ To validate the accuracy of the trained model, you can use `validate.py` and par
 ```shell
 python validate.py -c configs/crossvit/crossvit_15_ascend.yaml --data_dir /path/to/imagenet --ckpt_path /path/to/ckpt
 ```
-
-### Deployment
-
-Please refer to the [deployment tutorial](https://mindspore-lab.github.io/mindcv/zh/tutorials/inference/) in MindCV.
 
 ## References
 

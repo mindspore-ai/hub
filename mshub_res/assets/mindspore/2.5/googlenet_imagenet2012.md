@@ -44,6 +44,12 @@ summary: googlenet is used for cv
 
 > [GoogLeNet: Going Deeper with Convolutions](https://arxiv.org/abs/1409.4842)
 
+## Requirements
+
+| mindspore | ascend driver |  firmware   | cann toolkit/kernel |
+| :-------: | :-----------: | :---------: | :-----------------: |
+|   2.5.0   |    24.1.0     | 7.5.0.3.220 |     8.0.0.beta1     |
+
 ## Introduction
 
 GoogLeNet is a new deep learning structure proposed by Christian Szegedy in 2014. Prior to this, AlexNet, VGG and other
@@ -60,22 +66,25 @@ training results.[[1](#references)]
   <em>Figure 1. Architecture of GoogLeNet [<a href="#references">1</a>] </em>
 </p>
 
-## Results
+## Performance
 
 Our reproduced model performance on ImageNet-1K is reported as follows.
 
-<div align="center">
+Experiments are tested on ascend 910\* with mindspore 2.5.0 graph mode.
 
-| Model     | Context  | Top-1 (%) | Top-5 (%) | Params (M) | Recipe                                                                                            | Download                                                                                           |
-| --------- | -------- | --------- | --------- | ---------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| googlenet | D910x8-G | 72.68     | 90.89     | 6.99       | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/googlenet/googlenet_ascend.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindcv/googlenet/googlenet-5552fcd3.ckpt) |
+| model name | params(M) | cards | batch size | resolution | jit level | graph compile | ms/step | img/s    | acc@top1 | acc@top5 | recipe                                                                                            | weight                                                                                                   |
+| ---------- | --------- | ----- | ---------- | ---------- | --------- | ------------- | ------- | -------- | -------- | -------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| googlenet  | 6.99      | 8     | 32         | 224x224    | O2        | 113s          | 23.5    | 10893.62 | 72.89    | 90.89    | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/googlenet/googlenet_ascend.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindcv/googlenet/googlenet-de74c31d-910v2.ckpt) |
 
-</div>
+Experiments are tested on ascend 910 with mindspore 2.5.0 graph mode.
+
+| model name | params(M) | cards | batch size | resolution | jit level | graph compile | ms/step | img/s    | acc@top1 | acc@top5 | recipe                                                                                            | weight                                                                                     |
+| ---------- | --------- | ----- | ---------- | ---------- | --------- | ------------- | ------- | -------- | -------- | -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| googlenet  | 6.99      | 8     | 32         | 224x224    | O2        | 72s           | 21.40   | 11962.62 | 72.68    | 90.89    | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/googlenet/googlenet_ascend.yaml) | [weights](https://download.mindspore.cn/toolkits/mindcv/googlenet/googlenet-5552fcd3.ckpt) |
 
 ### Notes
 
-- Context: Training context denoted as {device}x{pieces}-{MS mode}, where mindspore mode can be G - graph mode or F - pynative mode with ms function. For example, D910x8-G is for training on 8 pieces of Ascend 910 NPU using graph mode.
-- Top-1 and Top-5: Accuracy reported on the validation set of ImageNet-1K.
+- top-1 and top-5: Accuracy reported on the validation set of ImageNet-1K.
 
 ## Quick Start
 
@@ -83,7 +92,7 @@ Our reproduced model performance on ImageNet-1K is reported as follows.
 
 #### Installation
 
-Please refer to the [installation instruction](https://github.com/mindspore-ecosystem/mindcv#installation) in MindCV.
+Please refer to the [installation instruction](https://mindspore-lab.github.io/mindcv/installation/) in MindCV.
 
 #### Dataset Preparation
 
@@ -96,11 +105,9 @@ Please download the [ImageNet-1K](https://www.image-net.org/challenges/LSVRC/201
   It is easy to reproduce the reported results with the pre-defined training recipe. For distributed training on multiple Ascend 910 devices, please run
 
   ```shell
-  # distributed training on multiple Ascend devices
-  mpirun -n 8 python train.py --config configs/googlenet/googlenet_ascend.yaml --data_dir /path/to/imagenet
+  # distributed training on multiple NPU devices
+  msrun --bind_core=True --worker_num 8 python train.py --config configs/googlenet/googlenet_ascend.yaml --data_dir /path/to/imagenet
   ```
-
-  > If the script is executed by the root user, the `--allow-run-as-root` parameter must be added to `mpirun`.
 
   For detailed illustration of all hyper-parameters, please refer to [config.py](https://github.com/mindspore-lab/mindcv/blob/main/config.py).
 
@@ -111,7 +118,7 @@ Please download the [ImageNet-1K](https://www.image-net.org/challenges/LSVRC/201
   If you want to train or finetune the model on a smaller dataset without distributed training, please run:
 
   ```shell
-  # standalone training on a CPU/Ascend device
+  # standalone training on single NPU device
   python train.py --config configs/googlenet/googlenet_ascend.yaml --data_dir /path/to/dataset --distribute False
   ```
 
@@ -122,10 +129,6 @@ To validate the accuracy of the trained model, you can use `validate.py` and par
 ```shell
 python validate.py -c configs/googlenet/googlenet_ascend.yaml --data_dir /path/to/imagenet --ckpt_path /path/to/ckpt
 ```
-
-### Deployment
-
-Please refer to the [deployment tutorial](https://mindspore-lab.github.io/mindcv/zh/tutorials/inference/) in MindCV.
 
 ## References
 
