@@ -45,6 +45,7 @@ summary: dbnet_mobilenetv3 is used for cv
 <!--- Guideline: use url linked to abstract in ArXiv instead of PDF for fast loading.  -->
 
 > DBNet: [Real-time Scene Text Detection with Differentiable Binarization](https://arxiv.org/abs/1911.08947)
+>
 > DBNet++: [Real-Time Scene Text Detection with Differentiable Binarization and Adaptive Scale Fusion](https://arxiv.org/abs/2202.10304)
 
 ## Introduction

@@ -141,13 +141,6 @@ Experiments are tested on Ascend 910\* with mindspore 2.5.0 graph mode.
 | :--------: | :----------: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :-------------------: | :---------------------------------------------------------------------------------------------------------------------------: |
 |   YOLOv4   | CSPDarknet53 |   8   |     16     |  608x608   |    O2     |    467.47s    | 308.43  | 415.01 | 46.1% | [yaml](./yolov4.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindyolo/yolov4/yolov4-cspdarknet53_320e_map454-64b8506f-910v2.ckpt) |
 
-Experiments are tested on Ascend 910 with mindspore 2.5.0 graph mode.
-
-| model name |      backbone      | cards | batch size | resolution | jit level | graph compile | ms/step | img/s  |  map  |           recipe           |                                                        weight                                                        |
-| :--------: | :----------------: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :------------------------: | :------------------------------------------------------------------------------------------------------------------: |
-|   YOLOv4   |    CSPDarknet53    |   8   |     16     |  608x608   |    O2     |    188.52s    | 505.98  | 252.97 | 45.4% |   [yaml](./yolov4.yaml)    |   [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov4/yolov4-cspdarknet53_320e_map454-50172f93.ckpt)    |
-|   YOLOv4   | CSPDarknet53(silu) |   8   |     16     |  608x608   |    O2     |    274.18s    | 443.21  | 288.80 | 45.8% | [yaml](./yolov4-silu.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov4/yolov4-cspdarknet53_silu_320e_map458-bdfc3205.ckpt) |
-
 <br>
 
 ### Notes

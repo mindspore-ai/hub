@@ -109,14 +109,6 @@ Experiments are tested on Ascend 910\* with mindspore 2.5.0 graph mode.
 | :--------: | :---: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
 |   YOLOv7   | Tiny  |   8   |     16     |  640x640   |    O2     |    363.74s    | 352.92  | 362.69 | 37.5% | [yaml](./yolov7-tiny.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindyolo/yolov7/yolov7-tiny_300e_mAP375-1d2ddf4b-910v2.ckpt) |
 
-Experiments are tested on Ascend 910 with mindspore 2.5.0 graph mode.
-
-| model name | scale | cards | batch size | resolution | jit level | graph compile | ms/step | img/s  |  map  |           recipe           |                                                 weight                                                  |
-| :--------: | :---: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :------------------------: | :-----------------------------------------------------------------------------------------------------: |
-|   YOLOv7   | Tiny  |   8   |     16     |  640x640   |    O2     |    232.63s    | 472.37  | 270.97 | 37.5% | [yaml](./yolov7-tiny.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov7/yolov7-tiny_300e_mAP375-d8972c94.ckpt) |
-|   YOLOv7   |   L   |   8   |     16     |  640x640   |    O2     |    290.93s    | 678.07  | 188.77 | 50.8% |   [yaml](./yolov7.yaml)    |   [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov7/yolov7_300e_mAP508-734ac919.ckpt)    |
-|   YOLOv7   |   X   |   8   |     12     |  640x640   |    O2     |    404.77s    | 636.36  | 150.86 | 52.4% |  [yaml](./yolov7-x.yaml)   |  [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov7/yolov7-x_300e_mAP524-e2f58741.ckpt)   |
-
 <br>
 
 ### Notes

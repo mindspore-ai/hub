@@ -71,12 +71,6 @@ Experiments are tested on ascend 910\* with mindspore 2.5.0 graph mode.
 | ----------- | --------- | ----- | ---------- | ---------- | --------- | ------------- | ------- | -------- | -------- | -------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | mnasnet_075 | 3.20      | 8     | 256        | 224x224    | O2        | 144s          | 175.85  | 11646.29 | 71.77    | 90.52    | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/mnasnet/mnasnet_0.75_ascend.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindcv/mnasnet/mnasnet_075-083b2bc4-910v2.ckpt) |
 
-Experiments are tested on ascend 910 with mindspore 2.5.0 graph mode.
-
-| model name  | params(M) | cards | batch size | resolution | jit level | graph compile | ms/step | img/s    | acc@top1 | acc@top5 | recipe                                                                                             | weight                                                                                     |
-| ----------- | --------- | ----- | ---------- | ---------- | --------- | ------------- | ------- | -------- | -------- | -------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| mnasnet_075 | 3.20      | 8     | 256        | 224x224    | O2        | 140s          | 165.43  | 12379.86 | 71.81    | 90.53    | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/mnasnet/mnasnet_0.75_ascend.yaml) | [weights](https://download.mindspore.cn/toolkits/mindcv/mnasnet/mnasnet_075-465d366d.ckpt) |
-
 ### Notes
 
 - top-1 and top-5: Accuracy reported on the validation set of ImageNet-1K.
