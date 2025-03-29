@@ -110,27 +110,11 @@ Experiments are tested on Ascend 910\* with mindspore 2.5.0 graph mode.
 |   YOLOv8   |   N   |   8   |     16     |  640x640   |    O2     |    145.89s    | 252.79  | 506.35 | 37.3% | [yaml](./yolov8n.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindyolo/yolov8/yolov8-n_500e_mAP372-0e737186-910v2.ckpt) |
 |   YOLOv8   |   S   |   8   |     16     |  640x640   |    O2     |    172.22s    | 251.30  | 509.35 | 44.7% | [yaml](./yolov8s.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindyolo/yolov8/yolov8-s_500e_mAP446-fae4983f-910v2.ckpt) |
 
-Experiments are tested on Ascend 910 with mindspore 2.5.0 graph mode.
-
-| model name | scale | cards | batch size | resolution | jit level | graph compile | ms/step | img/s  |  map  |         recipe         |                                                weight                                                |
-| :--------: | :---: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :--------------------: | :--------------------------------------------------------------------------------------------------: |
-|   YOLOv8   |   N   |   8   |     16     |  640x640   |    O2     |    195.63s    | 265.13  | 482.78 | 37.2% | [yaml](./yolov8n.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov8/yolov8-n_500e_mAP372-cc07f5bd.ckpt) |
-|   YOLOv8   |   S   |   8   |     16     |  640x640   |    O2     |    115.60s    | 292.68  | 437.34 | 44.6% | [yaml](./yolov8s.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov8/yolov8-s_500e_mAP446-3086f0c9.ckpt) |
-|   YOLOv8   |   M   |   8   |     16     |  640x640   |    O2     |    185.25s    | 383.72  | 333.58 | 50.5% | [yaml](./yolov8m.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov8/yolov8-m_500e_mAP505-8ff7a728.ckpt) |
-|   YOLOv8   |   L   |   8   |     16     |  640x640   |    O2     |    175.08s    | 429.02  | 298.35 | 52.8% | [yaml](./yolov8l.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov8/yolov8-l_500e_mAP528-6e96d6bb.ckpt) |
-|   YOLOv8   |   X   |   8   |     16     |  640x640   |    O2     |    183.68s    | 521.97  | 245.22 | 53.7% | [yaml](./yolov8x.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov8/yolov8-x_500e_mAP537-b958e1c7.ckpt) |
-
 ### Segmentation
 
 Experiments are tested on Ascend 910 with mindspore 2.5.0 graph mode.
 
 _coming soon_
-
-Experiments are tested on Ascend 910 with mindspore 2.5.0 graph mode.
-
-| model Name | scale | cards | batch size | resolution | jit level | graph compile | ms/step | img/s  |  map  | mask map |             recipe             |                                                     weight                                                     |
-| :--------: | :---: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :------: | :----------------------------: | :------------------------------------------------------------------------------------------------------------: |
-| YOLOv8-seg |   X   |   8   |     16     |  640x640   |    O2     |    183.68s    | 641.25  | 199.61 | 52.5% |  42.9%   | [yaml](./seg/yolov8x-seg.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov8/yolov8-x-seg_300e_mAP_mask_429-b4920557.ckpt) |
 
 ### Notes
 

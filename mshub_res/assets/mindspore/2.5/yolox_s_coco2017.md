@@ -107,18 +107,6 @@ Experiments are tested on Ascend 910\* with mindspore 2.5.0 graph mode.
 | :--------: | :---: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :--------------------: | :--------------------------------------------------------------------------------------------------------------: |
 |   YOLOX    |   S   |   8   |     8      |  640x640   |    O2     |    299.01s    | 177.65  | 360.26 | 41.0% | [yaml](./yolox-s.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindyolo/yolox/yolox-s_300e_map407-cebd0183-910v2.ckpt) |
 
-Experiments are tested on Ascend 910 with mindspore 2.5.0 graph mode.
-
-| model name |   scale   | cards | batch size | resolution | jit level | graph compile | ms/step | img/s  |  map  |             recipe             |                                                   weight                                                   |
-| :--------: | :-------: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :----------------------------: | :--------------------------------------------------------------------------------------------------------: |
-|   YOLOX    |     N     |   8   |     8      |  416x416   |    O2     |    202.49s    | 138.84  | 460.96 | 24.1% |   [yaml](./yolox-nano.yaml)    |     [weights](https://download.mindspore.cn/toolkits/mindyolo/yolox/yolox-n_300e_map241-ec9815e3.ckpt)     |
-|   YOLOX    |   Tiny    |   8   |     8      |  416x416   |    O2     |    169.71s    | 126.85  | 504.53 | 33.3% |   [yaml](./yolox-tiny.yaml)    |   [weights](https://download.mindspore.cn/toolkits/mindyolo/yolox/yolox-tiny_300e_map333-e5ae3a2e.ckpt)    |
-|   YOLOX    |     S     |   8   |     8      |  640x640   |    O2     |    202.46s    | 243.99  | 262.31 | 40.7% |     [yaml](./yolox-s.yaml)     |     [weights](https://download.mindspore.cn/toolkits/mindyolo/yolox/yolox-s_300e_map407-0983e07f.ckpt)     |
-|   YOLOX    |     M     |   8   |     8      |  640x640   |    O2     |    212.78s    | 267.68  | 239.09 | 46.7% |     [yaml](./yolox-m.yaml)     |     [weights](https://download.mindspore.cn/toolkits/mindyolo/yolox/yolox-m_300e_map467-1db321ee.ckpt)     |
-|   YOLOX    |     L     |   8   |     8      |  640x640   |    O2     |    262.52s    | 316.78  | 202.03 | 49.2% |     [yaml](./yolox-l.yaml)     |     [weights](https://download.mindspore.cn/toolkits/mindyolo/yolox/yolox-l_300e_map492-52a4ab80.ckpt)     |
-|   YOLOX    |     X     |   8   |     8      |  640x640   |    O2     |    341.33s    | 415.67  | 153.97 | 51.6% |     [yaml](./yolox-x.yaml)     |     [weights](https://download.mindspore.cn/toolkits/mindyolo/yolox/yolox-x_300e_map516-52216d90.ckpt)     |
-|   YOLOX    | Darknet53 |   8   |     8      |  640x640   |    O2     |    198.15s    | 407.53  | 157.04 | 47.7% | [yaml](./yolox-darknet53.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolox/yolox-darknet53_300e_map477-b5fcaba9.ckpt) |
-
 <br>
 
 ### Notes

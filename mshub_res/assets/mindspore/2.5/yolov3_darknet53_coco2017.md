@@ -119,12 +119,6 @@ Experiments are tested on Ascend 910\* with mindspore 2.5.0 graph mode.
 | :--------: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :-------------------: | :------------------------------------------------------------------------------------------------------------------------: |
 |   YOLOv3   |   8   |     16     |  640x640   |    O2     |    274.32s    | 383.68  | 333.61 | 46.6% | [yaml](./yolov3.yaml) | [weights](https://download-mindspore.osinfra.cn/toolkits/mindyolo/yolov3/yolov3-darknet53_300e_mAP455-81895f09-910v2.ckpt) |
 
-Experiments are tested on Ascend 910 with mindspore 2.5.0 graph mode.
-
-| model name | cards | batch size | resolution | jit level | graph compile | ms/step | img/s  |  map  |        recipe         |                                                    weight                                                    |
-| :--------: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :-------------------: | :----------------------------------------------------------------------------------------------------------: |
-|   YOLOv3   |   8   |     16     |  640x640   |    O2     |    160.80s    | 409.66  | 312.45 | 45.5% | [yaml](./yolov3.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov3/yolov3-darknet53_300e_mAP455-adfb27af.ckpt) |
-
 <br>
 
 ### Notes

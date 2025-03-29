@@ -132,11 +132,11 @@ Here we used the datasets under `training/` folders for **training**, and the un
 **Training:** (total 14,442,049 samples)
 
 - [MJSynth (MJ)](http://www.robots.ox.ac.uk/~vgg/data/text/)
-- Train: 21.2 GB, 7224586 samples
-- Valid: 2.36 GB, 802731 samples
-- Test: 2.61 GB, 891924 samples
+    - Train: 21.2 GB, 7224586 samples
+    - Valid: 2.36 GB, 802731 samples
+    - Test: 2.61 GB, 891924 samples
 - [SynthText (ST)](https://academictorrents.com/details/2dba9518166cbd141534cbf381aa3e99a087e83c)
-- Train: 16.0 GB, 5522808 samples
+    - Train: 16.0 GB, 5522808 samples
 
 **Validation:**
 

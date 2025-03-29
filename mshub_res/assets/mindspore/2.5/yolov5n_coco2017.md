@@ -119,16 +119,6 @@ Experiments are tested on Ascend 910\* with mindspore 2.5.0 graph mode.
 |   YOLOv5   |  L6   |   8   |     16     | 1280x1280  |    O2     |    800.34s    | 894.65  | 143.07 | 53.6% | [yaml](./yolov5l6.yaml) |   [weights](https://download-mindspore.osinfra.cn/toolkits/mindyolo/yolov5/yolov5l6_300e_mAP536-617a1cc1.ckpt)    |
 |   YOLOv5   |  X6   |   8   |     8      | 1280x1280  |    O2     |    995.73s    | 864.43  | 74.04  | 54.5% | [yaml](./yolov5x6.yaml) |   [weights](https://download-mindspore.osinfra.cn/toolkits/mindyolo/yolov5/yolov5x6_300e_mAP545-81ebdca9.ckpt)    |
 
-Experiments are tested on Ascend 910 with mindspore 2.5.0 graph mode.
-
-| model name | scale | cards | batch size | resolution | jit level | graph compile | ms/step | img/s  |  map  |         recipe         |                                               weight                                                |
-| :--------: | :---: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :--------------------: | :-------------------------------------------------------------------------------------------------: |
-|   YOLOv5   |   N   |   8   |     32     |  640x640   |    O2     |    233.25s    | 650.57  | 393.50 | 27.3% | [yaml](./yolov5n.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov5/yolov5n_300e_mAP273-9b16bd7b.ckpt) |
-|   YOLOv5   |   S   |   8   |     32     |  640x640   |    O2     |    166.00s    | 650.14  | 393.76 | 37.6% | [yaml](./yolov5s.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov5/yolov5s_300e_mAP376-860bcf3b.ckpt) |
-|   YOLOv5   |   M   |   8   |     32     |  640x640   |    O2     |    256.51s    | 712.31  | 359.39 | 44.9% | [yaml](./yolov5m.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov5/yolov5m_300e_mAP449-e7bbf695.ckpt) |
-|   YOLOv5   |   L   |   8   |     32     |  640x640   |    O2     |    274.15s    | 723.35  | 353.91 | 48.5% | [yaml](./yolov5l.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov5/yolov5l_300e_mAP485-a28bce73.ckpt) |
-|   YOLOv5   |   X   |   8   |     16     |  640x640   |    O2     |    436.18s    | 569.96  | 224.58 | 50.5% | [yaml](./yolov5x.yaml) | [weights](https://download.mindspore.cn/toolkits/mindyolo/yolov5/yolov5x_300e_mAP505-97d36ddc.ckpt) |
-
 <br>
 
 ### Notes
