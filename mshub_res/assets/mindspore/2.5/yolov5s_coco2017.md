@@ -107,7 +107,7 @@ python test.py --config ./configs/yolov5/yolov5n6.yaml --device_target Ascend --
 
 ## Performance
 
-Experiments are tested on Ascend 910\* with mindspore 2.5.0 graph mode.
+Experiments are tested on Ascend Atlas 800T A2 machines with mindspore 2.5.0 graph mode.
 
 | model name | scale | cards | batch size | resolution | jit level | graph compile | ms/step | img/s  |  map  |         recipe          |                                                      weight                                                       |
 | :--------: | :---: | :---: | :--------: | :--------: | :-------: | :-----------: | :-----: | :----: | :---: | :---------------------: | :---------------------------------------------------------------------------------------------------------------: |
