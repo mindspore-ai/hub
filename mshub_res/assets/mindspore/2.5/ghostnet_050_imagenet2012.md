@@ -74,9 +74,11 @@ dataset.[[1](#references)]
 
 Our reproduced model performance on ImageNet-1K is reported as follows.
 
-Experiments are tested on ascend 910\* with mindspore 2.5.0 graph mode.
+Experiments are tested on Ascend Atlas 800T A2 machines with mindspore 2.5.0 graph mode.
 
-_coming soon_
+|   model name    | params(M) | cards |  batch size  |  resolution  |  jit level  |  graph compile  |  ms/step  |   img/s   |  acc@top1  |  acc@top5  |                                               recipe                                               |                                                  weight                                                   |
+|:---------------:|:---------:|:-----:|:------------:|:------------:|:-----------:|:---------------:|:---------:|:---------:|:----------:|:----------:|:--------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------:|
+|  ghostnet_050   |    2.6    |   8   | 128        | 224x224    | O2        | 125s          | 201.46  | 5082.89 | 65.93    | 86.65    | [yaml](https://github.com/mindspore-lab/mindcv/blob/main/configs/ghostnet/ghostnet_050_ascend.yaml)   | [weights](https://download-mindspore.osinfra.cn/toolkits/mindcv/ghostnet/ghostnet_050-ae7771cb-910v2.ckpt)   |
 
 ### Notes
 
