@@ -94,7 +94,8 @@ pip install -r requirements.txt
 
 ### Model Weights
 
-<details>
+<details open>
+<summary><b>View More</b></summary>
 
 | Model name               | HF Weight                                                      | Modelscope                                                                | Wisemodel                                                               |
 | ------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
@@ -120,7 +121,8 @@ python python convert_weights.py --safetensor_path ORIGINAL_MODEL.safetensors --
 An inference script is provided in `scripts/infer_img_gen.sh`.<br>
 An example to generate image is as follows:
 
-<details>
+<details open>
+<summary><b>View More</b></summary>
 
 ```python
 from emu3.mllm import Emu3ForCausalLM, Emu3Processor, Emu3Tokenizer
@@ -229,7 +231,8 @@ for idx, im in enumerate(mm_list):
 An inference script is provided in `scripts/infer_vqa.sh`.<br>
 An example is as follows:
 
-<details>
+<details open>
+<summary><b>View More</b></summary>
 
 ```python
 from emu3.mllm import Emu3ForCausalLM, Emu3Tokenizer

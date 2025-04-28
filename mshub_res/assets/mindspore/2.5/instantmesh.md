@@ -94,9 +94,9 @@ InstantMesh [[1]](#acknowledgements) synergizes the strengths of a multiview dif
 
 Using the multiview images input from 3D mesh extracted from [the sv3d pipeline](../sv3d/simple_video_sample.py), we extracted 3D meshes as below. Please kindly find the input illustrated by following the link to the sv3d pipeline above.
 
-| <p align="center"> akun </p>                                                                                                                                                                                                                                                                                                                                                               | <p align="center"> anya </p>                                                                                                                                                                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div class="sketchfab-embed-wrapper"><iframe title="akun_ms" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c8b5b475529d48589b85746aab638d2b/embed"></iframe></div> | <div class="sketchfab-embed-wrapper"><iframe title="anya_ms" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/180fd247ba2f4437ac665114a4cd4dca/embed"></iframe></div> |
+| <p align="center"> akun </p>                                                    | <p align="center"> anya </p>                                                    |
+|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [3D model](https://sketchfab.com/models/c8b5b475529d48589b85746aab638d2b/embed) | [3D model](https://sketchfab.com/models/180fd247ba2f4437ac665114a4cd4dca/embed) |
 
 The illustrations here are better viewed in viewers than with HTML support (e.g., the vscode built-in viewer).
 
@@ -185,7 +185,7 @@ Notice that there is no diffusion model in InstantMesh, therefore the reported t
 
 ### Training
 
-#### ms 2.5.0
+#### mindspore 2.5.0
 
 | model name  | stage | precision | batch size | cards | image size | recompute | steps/s | frames/s | step time (s) |
 | :---------: | :---: | :-------: | :--------: | :---: | :--------: | :-------: | :-----: | :------: | :-----------: |
