@@ -126,7 +126,7 @@ Some generated example images of are shown below:
 
 ### Training Performance
 
-- Mindspore 2.5.0
+- mindspore 2.5.0
 
 | model name | cards | batch size | resolution | recompute | sink | jit level | graph compile | s/step | img/s |
 | :--------: | :---: | :--------: | :--------: | :-------: | :--: | :-------: | :-----------: | :----: | :---: |

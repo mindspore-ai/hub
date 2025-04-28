@@ -178,7 +178,9 @@ python sample_t2i.py --infer-mode fa --prompt "渔舟唱晚" --no-enhance --use-
 python sample_t2i.py --infer-mode fa --prompt "渔舟唱晚" --image-size 1280 768 --use-fp16
 ```
 
-<details onclose>
+<details>
+<summary>detail</summary>
+
 More example prompts can be found in [example_prompts.txt](example_prompts.txt)
 
 ### Using Previous versions

@@ -50,43 +50,43 @@ The following videos are generated based on MindSpore and Ascend Atlas 800T A2 m
 
 - Text-to-Video
 
-https://github.com/user-attachments/assets/f6705d28-7755-447b-a256-6727f66d693b
+  https://github.com/user-attachments/assets/f6705d28-7755-447b-a256-6727f66d693b
 
-```text
-prompt: A sepia-toned vintage photograph depicting a whimsical bicycle race featuring several dogs wearing goggles and tiny cycling outfits. The canine racers, with determined expressions and blurred motion, pedal miniature bicycles on a dusty road. Spectators in period clothing line the sides, adding to the nostalgic atmosphere. Slightly grainy and blurred, mimicking old photos, with soft side lighting enhancing the warm tones and rustic charm of the scene. 'Bicycle Race' captures this unique moment in a medium shot, focusing on both the racers and the lively crowd.
-```
+  ```text
+  prompt: A sepia-toned vintage photograph depicting a whimsical bicycle race featuring several dogs wearing goggles and tiny cycling outfits. The canine racers, with determined expressions and blurred motion, pedal miniature bicycles on a dusty road. Spectators in period clothing line the sides, adding to the nostalgic atmosphere. Slightly grainy and blurred, mimicking old photos, with soft side lighting enhancing the warm tones and rustic charm of the scene. 'Bicycle Race' captures this unique moment in a medium shot, focusing on both the racers and the lively crowd.
+  ```
 
-https://github.com/user-attachments/assets/1e1da53a-9112-4fc3-bb8e-b458497c4806
+  https://github.com/user-attachments/assets/1e1da53a-9112-4fc3-bb8e-b458497c4806
 
-```text
-prompt: Film quality, professional quality, rich details. The video begins to show the surface of a pond, and the camera slowly zooms in to a close-up. The water surface begins to bubble, and then a blonde woman is seen coming out of the lotus pond soaked all over, showing the subtle changes in her facial expression, creating a dreamy atmosphere.
-```
+  ```text
+  prompt: Film quality, professional quality, rich details. The video begins to show the surface of a pond, and the camera slowly zooms in to a close-up. The water surface begins to bubble, and then a blonde woman is seen coming out of the lotus pond soaked all over, showing the subtle changes in her facial expression, creating a dreamy atmosphere.
+  ```
 
-https://github.com/user-attachments/assets/34e4501f-a207-40bb-bb6c-b162ff6505b0
+  https://github.com/user-attachments/assets/34e4501f-a207-40bb-bb6c-b162ff6505b0
 
-```text
-prompt: Two anthropomorphic cats wearing boxing suits and bright gloves fiercely battled on the boxing ring under the spotlight. Their muscles are tight, displaying the strength and agility of professional boxers. A spotted dog judge stood aside. The animals in the audience around cheered and cheered, adding a lively atmosphere to the competition. The cat's boxing movements are quick and powerful, with its paws tracing blurry trajectories in the air. The screen adopts a dynamic blur effect, close ups, and focuses on the intense confrontation on the boxing ring.
-```
+  ```text
+  prompt: Two anthropomorphic cats wearing boxing suits and bright gloves fiercely battled on the boxing ring under the spotlight. Their muscles are tight, displaying the strength and agility of professional boxers. A spotted dog judge stood aside. The animals in the audience around cheered and cheered, adding a lively atmosphere to the competition. The cat's boxing movements are quick and powerful, with its paws tracing blurry trajectories in the air. The screen adopts a dynamic blur effect, close ups, and focuses on the intense confrontation on the boxing ring.
+  ```
 
-https://github.com/user-attachments/assets/aceda253-78a2-4fa5-9edc-83f035c7c2ea
+  https://github.com/user-attachments/assets/aceda253-78a2-4fa5-9edc-83f035c7c2ea
 
-```text
-prompt: Sports photography full of dynamism, several motorcycles fiercely compete on the loess flying track, their wheels rolling up the dust in the sky. The motorcyclist is wearing professional racing clothes. The camera uses a high-speed shutter to capture moments, follows from the side and rear, and finally freezes in a close-up of a motorcycle, showcasing its exquisite body lines and powerful mechanical beauty, creating a tense and exciting racing atmosphere. Close up dynamic perspective, perfectly presenting the visual impact of speed and power.
-```
+  ```text
+  prompt: Sports photography full of dynamism, several motorcycles fiercely compete on the loess flying track, their wheels rolling up the dust in the sky. The motorcyclist is wearing professional racing clothes. The camera uses a high-speed shutter to capture moments, follows from the side and rear, and finally freezes in a close-up of a motorcycle, showcasing its exquisite body lines and powerful mechanical beauty, creating a tense and exciting racing atmosphere. Close up dynamic perspective, perfectly presenting the visual impact of speed and power.
+  ```
 
-https://github.com/user-attachments/assets/c00ca7b8-5e05-4776-8c72-ae19e6bd44f5
+  https://github.com/user-attachments/assets/c00ca7b8-5e05-4776-8c72-ae19e6bd44f5
 
-```text
-prompt: 电影画质，专业质量，丰富细节。一名宇航员身穿太空服，面朝镜头骑着一匹机械马在火星表面驰骋。红色的荒凉地表延伸至远方，点缀着巨大的陨石坑和奇特的岩石结构。机械马的步伐稳健，扬起微弱的尘埃，展现出未来科技与原始探索的完美结合。宇航员手持操控装置，目光坚定，仿佛正在开辟人类的新疆域。背景是深邃的宇宙和蔚蓝的地球，画面既科幻又充满希望，让人不禁畅想未来的星际生活。
-```
+  ```text
+  prompt: 电影画质，专业质量，丰富细节。一名宇航员身穿太空服，面朝镜头骑着一匹机械马在火星表面驰骋。红色的荒凉地表延伸至远方，点缀着巨大的陨石坑和奇特的岩石结构。机械马的步伐稳健，扬起微弱的尘埃，展现出未来科技与原始探索的完美结合。宇航员手持操控装置，目光坚定，仿佛正在开辟人类的新疆域。背景是深邃的宇宙和蔚蓝的地球，画面既科幻又充满希望，让人不禁畅想未来的星际生活。
+  ```
 
 - Image-to-Video
 
-https://github.com/user-attachments/assets/d37bf480-595e-4a41-95f8-acbc421b7428
+  https://github.com/user-attachments/assets/d37bf480-595e-4a41-95f8-acbc421b7428
 
-```text
-prompt: Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.
-```
+  ```text
+  prompt: Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.
+  ```
 
 ## 🔥 Latest News
 
@@ -196,38 +196,38 @@ To facilitate implementation, we will start with a basic version of the inferenc
 
 - Single-NPU inference
 
-```sh
-python generate.py \
-    --task t2v-14B \
-    --size 1280*720 \
-    --ckpt_dir ./Wan2.1-T2V-14B \
-    --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."
-```
+  ```sh
+  python generate.py \
+      --task t2v-14B \
+      --size 1280*720 \
+      --ckpt_dir ./Wan2.1-T2V-14B \
+      --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."
+  ```
 
-```sh
-python generate.py \
-    --task t2v-1.3B \
-    --size 832*480 \
-    --ckpt_dir ./Wan2.1-T2V-1.3B \
-    --sample_shift 8 \
-    --sample_guide_scale 6 \
-    --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."
-```
+  ```sh
+  python generate.py \
+      --task t2v-1.3B \
+      --size 832*480 \
+      --ckpt_dir ./Wan2.1-T2V-1.3B \
+      --sample_shift 8 \
+      --sample_guide_scale 6 \
+      --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."
+  ```
 
-> 💡Note: If you are using the `T2V-1.3B` model, we recommend setting the parameter `--sample_guide_scale 6`. The `--sample_shift parameter` can be adjusted within the range of 8 to 12 based on the performance.
+  > 💡Note: If you are using the `T2V-1.3B` model, we recommend setting the parameter `--sample_guide_scale 6`. The `--sample_shift parameter` can be adjusted within the range of 8 to 12 based on the performance.
 
 - Multi-NPU inference
 
-```sh
-msrun --worker_num=2 --local_worker_num=2 generate.py \
-    --task t2v-14B \
-    --size 1280*720 \
-    --ckpt_dir ./Wan2.1-T2V-14B \
-    --dit_zero3 --t5_zero3 --ulysses_sp \
-    --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."
-```
+  ```sh
+  msrun --worker_num=2 --local_worker_num=2 generate.py \
+      --task t2v-14B \
+      --size 1280*720 \
+      --ckpt_dir ./Wan2.1-T2V-14B \
+      --dit_zero3 --t5_zero3 --ulysses_sp \
+      --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."
+  ```
 
-> 💡 We support 720 T2V inference using only 1 card. But using more cards can accelerate the generation process.
+  > 💡 We support 720 T2V inference using only 1 card. But using more cards can accelerate the generation process.
 
 #### (2) Using Prompt Extension
 
@@ -255,10 +255,10 @@ msrun --worker_num=2 --local_worker_num=2 generate.py \
 
 - Single-NPU inference (1.3B model only)
 
-```sh
-cd gradio
-python t2v_1.3B_singleNPU.py --ckpt_dir ../Wan2.1-T2V-1.3B
-```
+  ```sh
+  cd gradio
+  python t2v_1.3B_singleNPU.py --ckpt_dir ../Wan2.1-T2V-1.3B
+  ```
 
 ### Run Image-to-Video Generation
 
@@ -296,29 +296,29 @@ Similar to Text-to-Video, Image-to-Video supports different resolutions. The spe
 
 - Single-NPU inference
 
-```sh
-python generate.py \
-    --task i2v-14B \
-    --size 832*480 \
-    --ckpt_dir ./Wan2.1-I2V-14B-480P \
-    --image examples/i2v_input.JPG \
-    --prompt "Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside."
-```
+  ```sh
+  python generate.py \
+      --task i2v-14B \
+      --size 832*480 \
+      --ckpt_dir ./Wan2.1-I2V-14B-480P \
+      --image examples/i2v_input.JPG \
+      --prompt "Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside."
+  ```
 
-> 💡For the Image-to-Video task, the `size` parameter represents the area of the generated video, with the aspect ratio following that of the original input image.
+  > 💡For the Image-to-Video task, the `size` parameter represents the area of the generated video, with the aspect ratio following that of the original input image.
 
 - Multi-NPU inference
 
-```sh
-msrun --worker_num=2 --local_worker_num=2 generate.py \
-    --task i2v-14B --size 1280*720 \
-    --ckpt_dir ./Wan2.1-I2V-14B-720P \
-    --dit_zero3 --t5_zero3 --ulysses_sp \
-    --image examples/i2v_input.JPG \
-    --prompt "Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside."
-```
+  ```sh
+  msrun --worker_num=2 --local_worker_num=2 generate.py \
+      --task i2v-14B --size 1280*720 \
+      --ckpt_dir ./Wan2.1-I2V-14B-720P \
+      --dit_zero3 --t5_zero3 --ulysses_sp \
+      --image examples/i2v_input.JPG \
+      --prompt "Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside."
+  ```
 
-> 💡At least 2 cards are required to run 720P I2V generation to avoid OOM. 8 cards will accelerate the generation process at most.
+  > 💡At least 2 cards are required to run 720P I2V generation to avoid OOM. 8 cards will accelerate the generation process at most.
 
 #### (2) Using Prompt Extension
 
@@ -344,38 +344,38 @@ Wan2.1 is a unified model for both image and video generation. Since it was trai
 
 - Single-NPU inference
 
-```sh
-python generate.py \
-    --task t2i-14B \
-    --size 1024*1024 \
-    --ckpt_dir ./Wan2.1-T2V-14B \
-    --prompt '一个朴素端庄的美人'
-```
+  ```sh
+  python generate.py \
+      --task t2i-14B \
+      --size 1024*1024 \
+      --ckpt_dir ./Wan2.1-T2V-14B \
+      --prompt '一个朴素端庄的美人'
+  ```
 
 - Multi-NPU inference
 
-```sh
-msrun --worker_num=2 --local_worker_num=2 generate.py \
-    --task t2i-14B \
-    --size 1024*1024 \
-    --ckpt_dir ./Wan2.1-T2V-14B \
-    --dit_zero3 --t5_zero3 --ulysses_sp \
-    --prompt '一个朴素端庄的美人'
-```
+  ```sh
+  msrun --worker_num=2 --local_worker_num=2 generate.py \
+      --task t2i-14B \
+      --size 1024*1024 \
+      --ckpt_dir ./Wan2.1-T2V-14B \
+      --dit_zero3 --t5_zero3 --ulysses_sp \
+      --prompt '一个朴素端庄的美人'
+  ```
 
 #### (2) With Prompt Extension
 
 - Multi-NPU inference
 
-```sh
-msrun --worker_num=2 --local_worker_num=2 generate.py \
-    --task t2i-14B \
-    --size 1024*1024 \
-    --ckpt_dir ./Wan2.1-T2V-14B \
-    --dit_zero3 --t5_zero3 --qwen_zero3 --ulysses_sp \
-    --prompt '一个朴素端庄的美人' \
-    --use_prompt_extend
-```
+  ```sh
+  msrun --worker_num=2 --local_worker_num=2 generate.py \
+      --task t2i-14B \
+      --size 1024*1024 \
+      --ckpt_dir ./Wan2.1-T2V-14B \
+      --dit_zero3 --t5_zero3 --qwen_zero3 --ulysses_sp \
+      --prompt '一个朴素端庄的美人' \
+      --use_prompt_extend
+  ```
 
 ## Performance
 

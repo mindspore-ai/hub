@@ -39,7 +39,7 @@ This repository is the MindSpore implementation of [VAR](https://arxiv.org/abs/2
 VAR, a new generation paradigm that redefines the autoregressive learning on images as coarse-to-fine “next-scale prediction” or “next-resolution prediction”, diverging from the standard raster-scan “next-token prediction”.
 
 <p align="center">
-  <img width="430" alt="Image" src="https://github.com/user-attachments/assets/1e1024b4-61b4-49a8-9628-bda3ea4bd6ea" />
+  <img width="430" alt="Image" src="https://gitee.com/liuchuting/hub/raw/source/mshub_res/assets/mindspore/2.5/source/425350431-1e1024b4-61b4-49a8-9628-bda3ea4bd6ea.png" />
 </p>
 <p align="center">
   <em> Figure 1. Standard autoregressive modeling (AR) vs. visual autoregressive modeling (VAR) [<a href="#references">1</a>] </em>
@@ -135,7 +135,7 @@ Experiments are tested on Ascend Atlas 800T A2 machines with mindspore 2.5.0 pyn
 Here are some inference results
 
 <p float="center">
-<img alt="Image" src="https://github.com/user-attachments/assets/5a8da3e4-93bb-4f1d-b8c3-ddda290c5bcd" />
+  <img alt="Image" src="https://gitee.com/liuchuting/hub/raw/source/mshub_res/assets/mindspore/2.5/source/425404361-5a8da3e4-93bb-4f1d-b8c3-ddda290c5bcd.png" />
 </p>
 
 ## References

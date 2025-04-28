@@ -60,7 +60,7 @@ The following videos are generated based on MindSpore and Ascend Atlas 800T A2 m
 
 |                                                  Input                                                  |                                                             +VEnhancer                                                              |
 | :-----------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://github.com/user-attachments/assets/77a8f492-b5d4-4f4c-910f-e89f22a9c41d" width="380"> | <img src="https://github.com/Songyuanwei/mindone/releases/download/untagged-d03637bad55dd54911a9/output_astronaut.gif" width="380"> |
+| <img src="https://github.com/user-attachments/assets/77a8f492-b5d4-4f4c-910f-e89f22a9c41d" width="380"> | <img src="https://gitee.com/liuchuting/hub/raw/source/mshub_res/assets/mindspore/2.5/source/output_astronaut.gif" width="380"> |
 
 ## Inference
 
