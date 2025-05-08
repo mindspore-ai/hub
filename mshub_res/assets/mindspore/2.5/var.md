@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/var>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/var>
 
 user-id: MindSpore
 

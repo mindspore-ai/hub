@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: UCF-101 | WebVid | MixKit
+train-dataset: UCF-101
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/opensora_hpcai>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/opensora_hpcai>
 
 user-id: MindSpore
 
@@ -32,13 +32,13 @@ summary: OpenSora-HPCAI is a large video generation model for text-to-video gene
 
 ---
 
-## Open-Sora: Democratizing Efficient Video Production for All
+# Open-Sora: Democratizing Efficient Video Production for All
 
 Here we provide an efficient MindSpore implementation of [OpenSora](https://github.com/hpcaitech/Open-Sora), an open-source project that aims to foster innovation, creativity, and inclusivity within the field of content creation.
 
 This repository is built on the models and code released by HPC-AI Tech. We are grateful for their exceptional work and generous contribution to open source.
 
-<h4>Open-Sora is still at an early stage and under active development.</h4>
+Open-Sora is still at an early stage and under active development.
 
 ## 📰 News & States
 
@@ -46,10 +46,10 @@ This repository is built on the models and code released by HPC-AI Tech. We are 
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | **[2025.03.12]** 🔥 We released **Open-Sora 2.0** (11B). 🎬 11B model achieves [on-par performance](#evaluation) with 11B HunyuanVideo & 30B Step-Video on 📐VBench & 📊Human Preference. 🛠️ Fully open-source: checkpoints and training codes for training with only **$200K**. [[report]](https://arxiv.org/abs/2503.09642)                                                 | Inference                                                                                      |
 | **[2024.06.17]** 🔥 HPC-AI released **Open-Sora 1.2**, which includes **3D-VAE**, **rectified flow**, and **score condition**. The video quality is greatly improved. [[checkpoints]](#model-weights) [[report]](https://github.com/hpcaitech/Open-Sora/blob/main/docs/report_03.md)                                                                                          | Text-to-Video                                                                                  |
-| **[2024.04.25]** 🤗 HPC-AI Tech released the [Gradio demo for Open-Sora](https://huggingface.co/spaces/hpcai-tech/open-sora) on Hugging Face Spaces.                                                                                                                                                                                                                          | N.A.                                                                                           |
+| **[2024.04.25]** 🤗 HPC-AI Tech released the [Gradio demo for Open-Sora](https://huggingface.co/spaces/hpcai-tech/open-sora) on Hugging Face Spaces.                                                                                                                                                                                                                          | N/A                                                                                           |
 | **[2024.04.25]** 🔥 HPC-AI Tech released **Open-Sora 1.1**, which supports **2s~15s, 144p to 720p, any aspect ratio** text-to-image, **text-to-video, image-to-video, video-to-video, infinite time** generation. In addition, a full video processing pipeline is released. [[checkpoints]]() [[report]](https://github.com/hpcaitech/Open-Sora/blob/main/docs/report_02.md) | Image/Video-to-Video; Infinite time generation; Variable resolutions, aspect ratios, durations |
-| **[2024.03.18]** HPC-AI Tech released **Open-Sora 1.0**, a fully open-source project for video generation.                                                                                                                                                                                                                                                                    | ✅ VAE + STDiT training and inference                                                          |
-| **[2024.03.04]** HPC-AI Tech Open-Sora provides training with 46% cost reduction                                                                                                                                                                                                                                                                                              | ✅ Parallel training on Ascend devices                                                         |
+| **[2024.03.18]** HPC-AI Tech released **Open-Sora 1.0**, a fully open-source project for video generation.                                                                                                                                                                                                                                                                    | ✔ VAE + STDiT training and inference                                                          |
+| **[2024.03.04]** HPC-AI Tech Open-Sora provides training with 46% cost reduction                                                                                                                                                                                                                                                                                              | ✔ Parallel training on Ascend devices                                                         |
 
 ## Requirements
 
@@ -64,10 +64,10 @@ The following videos are generated based on MindSpore and Ascend Atlas 800T A2 m
 ### OpenSora 2.0 Demo
 
 | 3s 576×1024                                                                                                                                                                                                                                                                                                                                                           | 5s 576×1024                                                                                                                                                                                                                                                                                                                           |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <video src="https://github.com/user-attachments/assets/e9335efb-bbbd-4a20-b5b2-e44bd39bfd2b" />                                                                                                                                                                                                                                                                       | <video src="https://github.com/user-attachments/assets/f61f8df4-7f34-4231-8abc-d2a4eec130ac" />                                                                                                                                                                                                                                       |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [video](https://gitee.com/liuchuting/hub/raw/source/mshub_res/assets/mindspore/2.5/source/0001.mp4)                                                                                                                                                                                                                                                                   | [video](https://gitee.com/liuchuting/hub/raw/source/mshub_res/assets/mindspore/2.5/source/0005.mp4)                                                                                                                                                                                                                                   |
 | <details><summary>Caption</summary>A playful dog in a pink coat with a red leash dashes across a muddy field with sparse crops. The camera tracks its energetic movement from right to left against a backdrop of trees and distant power lines under an overcast sky. The realistic, medium shot captures a candid, lively moment in soft, diffused light.</details> | <details><summary>Caption</summary>A coastal landscape painting with a prominent archway is displayed on an easel in a bright studio. A camera pan reveals a table cluttered with art supplies and a potted plant, enhancing the artistic vibe. Large windows and soft natural lighting create a cozy, creative atmosphere.</details> |
-| <video src="https://github.com/user-attachments/assets/4766752e-0752-4b2a-8847-b20ddbc4a3c8" />                                                                                                                                                                                                                                                                       | <video src="https://github.com/user-attachments/assets/a05c3313-6b97-456a-a480-87abbbe31fb0" />                                                                                                                                                                                                                                       |
+| [video](https://gitee.com/liuchuting/hub/raw/source/mshub_res/assets/mindspore/2.5/source/0000.mp4)                                                                                                                                                                                                                                                                   | [video](https://gitee.com/liuchuting/hub/raw/source/mshub_res/assets/mindspore/2.5/source/0004.mp4)                                                                                                                                                                                                                                   |
 | <details><summary>Caption</summary>Two women sit on a beige couch in a cozy, warmly lit room with a brick wall backdrop. They engage in a cheerful conversation, smiling and toasting red wine in an intimate medium shot.</details>                                                                                                                                  | <details><summary>Caption</summary>A drone camera circles a historic church on a rocky outcrop along the Amalfi Coast, highlighting its stunning architecture, tiered patios, and the dramatic coastal views with waves crashing below and people enjoying the scene in the warm afternoon light.</details>                           |
 
 > [!TIP]
@@ -78,9 +78,9 @@ The following videos are generated based on MindSpore and Ascend Atlas 800T A2 m
 <details>
 <summary>Demo</summary>
 
-| 4s 720×1280                                                                                     | 4s 720×1280                                                                                     | 4s 720×1280                                                                                     |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| <video src="https://github.com/user-attachments/assets/7d9c812b-1642-4019-99da-dabf94c41596" /> | <video src="https://github.com/user-attachments/assets/9f463262-9ee0-4931-9d39-63fe925cbe6e" /> | <video src="https://github.com/user-attachments/assets/e0fa61bd-8bd0-40aa-9ea6-c587d492482a" /> |
+| 4s 720×1280                                                                              | 4s 720×1280                                                                              | 4s 720×1280                                                                              |
+|------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| [video](https://github.com/user-attachments/assets/7d9c812b-1642-4019-99da-dabf94c41596) | [video](https://github.com/user-attachments/assets/9f463262-9ee0-4931-9d39-63fe925cbe6e) | [video](https://github.com/user-attachments/assets/e0fa61bd-8bd0-40aa-9ea6-c587d492482a) |
 
 > [!TIP]
 > To generate better-looking videos, you can try generating in two stages: Text-to-Image and then Image-to-Video.
@@ -154,47 +154,47 @@ Videos are downsampled to `.gif` for display. Click for original videos. Prompts
 - 📍 **Open-Sora 2.0** released. Model weights are available [here](#model-weights).
   See [report 1.2](https://arxiv.org/abs/2503.09642) for more details.
 
-    - ✅ New backbone that is based on Flux.
-    - ✅ Uses reduced patch size of 1 for better training stability and finer details in video generation.
-    - ✅ Employs full attention and 3D RoPE.
-    - ✅ Uses Deep Compression Autoencoder (DC-AE) for increased spatial compression of 32x with an increased number of 128
+    - ✔ New backbone that is based on Flux.
+    - ✔ Uses reduced patch size of 1 for better training stability and finer details in video generation.
+    - ✔ Employs full attention and 3D RoPE.
+    - ✔ Uses Deep Compression Autoencoder (DC-AE) for increased spatial compression of 32x with an increased number of 128
     latent channels.
-    - ✅ Employs two text encoders: T5, which captures complex textual semantics, and CLIP-Large, which improves alignment
+    - ✔ Employs two text encoders: T5, which captures complex textual semantics, and CLIP-Large, which improves alignment
     between text and visual concepts.
 
 - 📍 **Open-Sora 1.2** released. Model weights are available [here](#model-weights). See [report 1.2](https://github.com/hpcaitech/Open-Sora/blob/main/docs/report_03.md) for more details.
 
-    - ✅ Support rectified flow scheduling.
-    - ✅ Support more conditioning including fps, aesthetic score, motion strength and camera motion.
-    - ✅ Trained our 3D-VAE for temporal dimension compression.
+    - ✔ Support rectified flow scheduling.
+    - ✔ Support more conditioning including fps, aesthetic score, motion strength and camera motion.
+    - ✔ Trained our 3D-VAE for temporal dimension compression.
 
 - 📍 **Open-Sora 1.1** with the following features
 
-    - ✅ Improved ST-DiT architecture includes Rotary Position Embedding (RoPE), QK Normalization, longer text length, etc.
-    - ✅ Support image and video conditioning and video editing, and thus support animating images, connecting videos, etc.
-    - ✅ Support training with any resolution, aspect ratio, and duration.
+    - ✔ Improved ST-DiT architecture includes Rotary Position Embedding (RoPE), QK Normalization, longer text length, etc.
+    - ✔ Support image and video conditioning and video editing, and thus support animating images, connecting videos, etc.
+    - ✔ Support training with any resolution, aspect ratio, and duration.
 
 - 📍 **Open-Sora 1.0** with the following features
-    - ✅ Text-to-video generation in 256x256 or 512x512 resolution and up to 64 frames.
-    - ✅ Three-stage training: i) 16x256x256 video pretraining, ii) 16x512x512 video fine-tuning, and iii) 64x512x512 videos
-    - ✅ Optimized training recipes for MindSpore+Ascend framework (see `configs/opensora/train/xxx_ms.yaml`)
-    - ✅ Acceleration methods: flash attention, recompute (gradient checkpointing), data sink, mixed precision, and graph compilation.
-    - ✅ Data parallelism + Optimizer parallelism, allow training on 300x512x512 videos
+    - ✔ Text-to-video generation in 256x256 or 512x512 resolution and up to 64 frames.
+    - ✔ Three-stage training: i) 16x256x256 video pretraining, ii) 16x512x512 video fine-tuning, and iii) 64x512x512 videos
+    - ✔ Optimized training recipes for MindSpore+Ascend framework (see `configs/opensora/train/xxx_ms.yaml`)
+    - ✔ Acceleration methods: flash attention, recompute (gradient checkpointing), data sink, mixed precision, and graph compilation.
+    - ✔ Data parallelism + Optimizer parallelism, allow training on 300x512x512 videos
 
 <details>
 <summary>View more</summary>
 
-- ✅ Following the findings in OpenSora, we also adopt the VAE from Stable Diffusion for video latent encoding.
-- ✅ We pick the **STDiT** model as our video diffusion transformer following the best practice in OpenSora.
-- ✅ Support T5 text conditioning.
+- ✔ Following the findings in OpenSora, we also adopt the VAE from Stable Diffusion for video latent encoding.
+- ✔ We pick the **STDiT** model as our video diffusion transformer following the best practice in OpenSora.
+- ✔ Support T5 text conditioning.
 
 </details>
 
 <details>
 <summary>View more</summary>
 
-- [ ] Evaluation pipeline.
-- [ ] Complete the data processing pipeline (including dense optical flow, aesthetics scores, text-image similarity, etc.).
+- ✖ Evaluation pipeline.
+- ✖ Complete the data processing pipeline (including dense optical flow, aesthetics scores, text-image similarity, etc.).
 
 </details>
 
@@ -231,6 +231,7 @@ In case `decord` package is not available, try `pip install eva-decord`.
 For EulerOS, instructions on ffmpeg and decord installation are as follows.
 
 <details onclose>
+<summary>How to install ffmpeg and decord</summary>
 
 ```shell
 1. install ffmpeg 4, referring to https://ffmpeg.org/releases
@@ -835,12 +836,12 @@ Open-Sora 1.2 based on MindSpore and Ascend Atlas 800T A2 machines supports 0s\~
 
 |      | image | 2s  | 4s  | 8s  | 16s |
 | ---- | ----- | --- | --- | --- | --- |
-| 240p | ✅    | ✅  | ✅  | ✅  | ✅  |
-| 360p | ✅    | ✅  | ✅  | ✅  | ✅  |
-| 480p | ✅    | ✅  | ✅  | ✅  | 🆗  |
-| 720p | ✅    | ✅  | ✅  | 🆗  | 🆗  |
+| 240p | ✔    | ✔  | ✔  | ✔  | ✔  |
+| 360p | ✔    | ✔  | ✔  | ✔  | ✔  |
+| 480p | ✔    | ✔  | ✔  | ✔  | 🆗  |
+| 720p | ✔    | ✔  | ✔  | 🆗  | 🆗  |
 
-Here ✅ means that the data is seen during training, and 🆗 means although not trained, the model can inference at that config. Inference for 🆗 requires sequence parallelism.
+Here ✔ means that the data is seen during training, and 🆗 means although not trained, the model can inference at that config. Inference for 🆗 requires sequence parallelism.
 
 #### Training Performance
 

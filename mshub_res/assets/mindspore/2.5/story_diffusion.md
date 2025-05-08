@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/story_diffusion>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/story_diffusion>
 
 user-id: MindSpore
 
@@ -47,9 +47,9 @@ The current implementation only supports text-to-image generation with consisten
 
 ## TODOs
 
-- [x] Comic Generation Inference script
-- [x] Gradio demo of comic generation
-- [ ] Motion predictor with condition images
+- ✔ Comic Generation Inference script
+- ✔ Gradio demo of comic generation
+- ✖ Motion predictor with condition images
 
 ## 📦 Requirements
 

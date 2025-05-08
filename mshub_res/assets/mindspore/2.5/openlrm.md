@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2025-03-10
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/openlrm>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/openlrm>
 
 user-id: MindSpore
 

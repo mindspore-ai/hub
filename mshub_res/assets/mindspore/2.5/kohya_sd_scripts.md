@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2025-03-10
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/kohya_sd_scripts>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/kohya_sd_scripts>
 
 user-id: MindSpore
 
@@ -38,9 +38,9 @@ Here we provide a MindSpore implementation of [Kohya's Stable Diffusion trainers
 
 Currently, we support
 
-- [x] SDXL LoRA training
-- [x] SDXL LoRA (Dreambooth) training
-- [x] SDXL Inference
+- ✔ SDXL LoRA training
+- ✔ SDXL LoRA (Dreambooth) training
+- ✔ SDXL Inference
 
 > Notes: Basically, we've tried to provide a consistent implementation with the torch Kohya SD trainer, but we have limitations due to differences in the framework. Refer to the main difference between the two codebases listed [here](./Limitations.md) if needed.
 

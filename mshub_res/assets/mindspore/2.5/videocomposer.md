@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/videocomposer>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/videocomposer>
 
 user-id: MindSpore
 
@@ -160,16 +160,16 @@ MindSpore implementation & optimization of [VideoComposer: Compositional Video S
 
 ## Main Features
 
-- [x] Conditional Video Generation including the following tasks:
-    - [x] Motion transfer from a video to a single image (exp02)
-    - [x] Single sketch to videos with or without style guidance (exp03 and exp04)
-    - [x] Depth to video with or without style guidance (exp5 and exp6)
-    - [x] Generate videos based on multiple conditions: depth maps, local image, masks, motion, and sketch
-- [x] Model Training (vanilla finetuning) supporting both Ascend 910 and Atlas 800T A2 machines
-- [x] Acceleration and Memory Reduction
-    - [x] Mixed Precision
-    - [x] Graph Mode for Training
-    - [x] Recompute
+- ✔ Conditional Video Generation including the following tasks:
+    - ✔ Motion transfer from a video to a single image (exp02)
+    - ✔ Single sketch to videos with or without style guidance (exp03 and exp04)
+    - ✔ Depth to video with or without style guidance (exp5 and exp6)
+    - ✔ Generate videos based on multiple conditions: depth maps, local image, masks, motion, and sketch
+- ✔ Model Training (vanilla finetuning) supporting both Ascend 910 and Atlas 800T A2 machines
+- ✔ Acceleration and Memory Reduction
+    - ✔ Mixed Precision
+    - ✔ Graph Mode for Training
+    - ✔ Recompute
 
 <div align="center">
 <img src="https://github.com/SamitHuang/mindone/assets/8156835/eb8a19d3-9ce2-4a31-9696-d6a13857e986" width="720" />
@@ -189,9 +189,10 @@ Python: 3.7 or higher.
 Then run `pip install -r requirements.txt` to install the necessary packages.
 
 For `ffmpeg`, install by
-`shell
-    conda install ffmpeg
-    `
+
+```shell
+conda install ffmpeg
+```
 
 If case you fail to install `motion-vector-extractor` via pip, please manually install it referring to the [official](https://github.com/LukasBommes/mv-extractor) repo.
 
@@ -383,7 +384,7 @@ conditions_for_train: ["text", "local_image", "motion"]
 
 ### Distributed Training
 
-Please generate the HCCL config file on your running server at first referring to [this tutorial](https://github.com/mindspore-lab/mindocr/blob/main/docs/cn/tutorials/distribute_train.md#12-%E9%85%8D%E7%BD%AErank_table_file%E8%BF%9B%E8%A1%8C%E8%AE%AD%E7%BB%83). Then update `scripts/run_train_distribute.sh` by setting
+Please generate the HCCL config file on your running server at first referring to [this tutorial](https://github.com/mindspore-lab/mindocr/blob/v0.4.0/docs/cn/tutorials/distribute_train.md). Then update `scripts/run_train_distribute.sh` by setting
 
 ```shell
 rank_table_file=path/to/hccl_8p_01234567_xxx.json

@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/janus>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/janus>
 
 user-id: MindSpore
 
@@ -58,7 +58,7 @@ summary: Janus is a unified multimodal understanding and generation model
 
 We provide an efficient MindSpore implementation of [JanusPro](https://github.com/deepseek-ai/Janus). This repository is built on the models and code released by DeepSeek. We are grateful for their exceptional work and generous contribution to open source.
 
-## News
+# Janus-Pro based on MindSpore
 
 **2025.03.12**: We have reproduced the multi-modal training pipelines referring to the JanusPro [paper](https://github.com/deepseek-ai/Janus), see [docs/training.md](docs/training.md).
 

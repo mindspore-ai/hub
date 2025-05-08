@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/hunyuanvideo-i2v>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/hunyuanvideo-i2v>
 
 user-id: MindSpore
 
@@ -32,6 +32,8 @@ summary: HunyuanVideo-I2V is used for image-to-video generation
 
 ---
 
+# HunyuanVideo-I2V based on MindSpore
+
 This is a **MindSpore** implementation of [HunyuanVideo-I2V](https://github.com/Tencent/HunyuanVideo-I2V). It contains the code for **training** and **inference** of HunyuanVideo and 3D CausalVAE.
 
 ## 📑 Development Plan
@@ -39,13 +41,13 @@ This is a **MindSpore** implementation of [HunyuanVideo-I2V](https://github.com/
 Here is the development plan of the project:
 
 - CausalVAE:
-    - [x] Inference
-    - [ ] Evaluation
-    - [ ] Training
+    - ✔ Inference
+    - ✖ Evaluation
+    - ✖ Training
 - HunyuanVideo (13B):
-    - [x] Inference (w. and w.o. LoRA weight)
-    - [ ] Training
-    - [ ] LoRA finetune
+    - ✔ Inference (w. and w.o. LoRA weight)
+    - ✖ Training
+    - ✖ LoRA finetune
 
 ## 📦 Requirements
 

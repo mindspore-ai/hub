@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/animatediff>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/animatediff>
 
 user-id: MindSpore
 
@@ -38,11 +38,11 @@ This repository is the MindSpore implementation of [AnimateDiff](https://arxiv.o
 
 ## Features
 
-- [x] Text-to-video generation with AnimdateDiff v2, supporting 16 frames @512x512 resolution on Ascend Atlas 800T A2 machines
-- [x] MotionLoRA inference
-- [x] Motion Module Training
-- [x] Motion LoRA Training
-- [x] AnimateDiff v3 Inference
+- ✔ Text-to-video generation with AnimdateDiff v2, supporting 16 frames @512x512 resolution on Ascend Atlas 800T A2 machines
+- ✔ MotionLoRA inference
+- ✔ Motion Module Training
+- ✔ Motion LoRA Training
+- ✔ AnimateDiff v3 Inference
 
 ## Requirements
 

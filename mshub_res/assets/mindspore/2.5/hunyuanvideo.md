@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/hunyuanvideo>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/hunyuanvideo>
 
 user-id: MindSpore
 
@@ -41,18 +41,18 @@ This is a **MindSpore** implementation of [HunyuanVideo](https://arxiv.org/abs/2
 Here is the development plan of the project:
 
 - CausalVAE:
-    - [x] Inference
-    - [x] Evaluation
-    - [x] Training
+    - ✔ Inference
+    - ✔ Evaluation
+    - ✔ Training
 - HunyuanVideo (13B):
-    - [x] Inference
-    - [x] Sequence Parallel (Ulysses SP)
-    - [x] VAE latent cache
-    - [x] Training up to `544x960x129` and `720x1280x129` with SP and VAE latent cache
-    - [x] Training stage 1: T2I 256px
-    - [ ] Training stage 2: T2I 256px 512px (buckets)
-    - [ ] Training stage 3: T2I/V up to 720x1280x129 (buckets)
-    - [ ] LoRA finetune
+    - ✔ Inference
+    - ✔ Sequence Parallel (Ulysses SP)
+    - ✔ VAE latent cache
+    - ✔ Training up to `544x960x129` and `720x1280x129` with SP and VAE latent cache
+    - ✔ Training stage 1: T2I 256px
+    - ✖ Training stage 2: T2I 256px 512px (buckets)
+    - ✖ Training stage 3: T2I/V up to 720x1280x129 (buckets)
+    - ✖ LoRA finetune
 
 ## 📦 Requirements
 
@@ -137,7 +137,7 @@ If you want to run T2V inference using sequence parallel (Ulysses SP), please us
 
 ### Run Image-to-Video Inference
 
-Please find more information about HunyuanVideo Image-to-Video Inference at this [url](https://github.com/mindspore-lab/mindone/tree/master/examples/hunyuanvideo-i2v).
+Please find more information about HunyuanVideo Image-to-Video Inference at this [url](https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/hunyuanvideo-i2v).
 
 ## 🔑 Training
 

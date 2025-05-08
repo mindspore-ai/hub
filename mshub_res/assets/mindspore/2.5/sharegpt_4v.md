@@ -12,7 +12,7 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 evaluation: BLEU0.17
 
@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/sharegpt_4v>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/sharegpt_4v>
 
 user-id: MindSpore
 
@@ -46,7 +46,7 @@ Here we provide a MindSpore version of ShareGPT4V.
 
 Currently, we support
 
-- [x] ShareGPT4V Inference
+- ✔ ShareGPT4V Inference
 
 ## Requirements
 
