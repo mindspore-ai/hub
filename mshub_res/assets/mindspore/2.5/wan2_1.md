@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/wan2_1>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/wan2_1>
 
 user-id: MindSpore
 
@@ -31,6 +31,8 @@ license: Apache2.0
 summary: Wan2.1 is an open and advanced large-scale video generative model
 
 ---
+
+# Wan2.1 based on MindSpore
 
 <div align="center">
 <h1>🚀 Wan: Open and Advanced Large-Scale Video Generative Models </h1>
@@ -95,15 +97,15 @@ The following videos are generated based on MindSpore and Ascend Atlas 800T A2 m
 ## 📑 Todo List
 
 - Wan2.1 Text-to-Video
-    - [x] Single-NPU inference code of the 14B and 1.3B models
-    - [x] Multi-NPU inference acceleration for the 14B models
-    - [x] Prompt extension support
-    - [x] Gradio demo
+    - ✔ Single-NPU inference code of the 14B and 1.3B models
+    - ✔ Multi-NPU inference acceleration for the 14B models
+    - ✔ Prompt extension support
+    - ✔ Gradio demo
 - Wan2.1 Image-to-Video
-    - [x] Single-NPU inference code of the 14B model
-    - [x] Multi-NPU inference acceleration for the 14B model
-    - [x] Prompt extension support
-    - [ ] Gradio demo
+    - ✔ Single-NPU inference code of the 14B model
+    - ✔ Multi-NPU inference acceleration for the 14B model
+    - ✔ Prompt extension support
+    - ✖ Gradio demo
 
 ## Quickstart
 

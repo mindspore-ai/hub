@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/hunyuan_dit>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/hunyuan_dit>
 
 user-id: MindSpore
 
@@ -54,9 +54,9 @@ summary: HunyuanDiT is a multi-resolution diffusion transformer with fine-graine
 
 ### TODO
 
-- [ ] EMA
-- [ ] ControlNet training
-- [ ] Enhance prompt
+- ✖ EMA
+- ✖ ControlNet training
+- ✖ Enhance prompt
 
 ## Dependencies and Installation
 

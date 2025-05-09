@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/instantmesh>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/instantmesh>
 
 user-id: MindSpore
 
@@ -128,8 +128,6 @@ huggingface-cli download zxhezexin/openlrm-base-obj-1.0  # do this if your proxy
 ### Update in 2025
 
 Hurray! Now `mindone.transformers` supported pretrained ckpt loading for `xx_model.bin`. You can now bypass the conversion above.
-
----
 
 The image features are extracted with dino-vit, which depends on HuggingFace's transformer package. We reuse [the MindSpore's implementation](https://github.com/mindspore-lab/mindone/blob/master/mindone/transformers/modeling_utils.py#L499) and the only challenge remains to be that `.bin` checkpoint of [dino-vit](https://huggingface.co/facebook/dino-vitb16/tree/main) is not supported by MindSpore off-the-shelf. The checkpoint script above serves easy conversion purposes and ensures that dino-vit is still based on `MSPreTrainedModel` safe and sound.
 

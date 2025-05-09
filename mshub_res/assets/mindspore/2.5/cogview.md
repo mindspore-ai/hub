@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/cogview>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/cogview>
 
 user-id: MindSpore team
 
@@ -32,7 +32,7 @@ summary: CogView4 is used for text-to-image generation
 
 ---
 
-## News
+# CogView4 based on MindSpore
 
 - 🔥🔥 `2025/03/05`: We have reproduced the inference of the excellent work CogView4, which was open-sourced by THUDM, on MindSpore.
 

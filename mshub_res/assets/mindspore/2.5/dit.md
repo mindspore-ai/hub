@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/dit>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/dit>
 
 user-id: MindSpore
 

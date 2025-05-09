@@ -12,13 +12,13 @@ fine-tunable: True
 
 model-version: 2.5
 
-train-dataset: N·A
+train-dataset: N/A
 
 author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/venhancer>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/venhancer>
 
 user-id: MindSpore
 
@@ -31,6 +31,8 @@ license: Apache2.0
 summary: VEnhancer is a generative space-time enhancement framework for video generation
 
 ---
+
+# VEnhancer based on MindSpore
 
 This repository is the MindSpore implementation of [VEnhancer](https://arxiv.org/abs/2407.07667)[<a href="#references">1</a>].
 

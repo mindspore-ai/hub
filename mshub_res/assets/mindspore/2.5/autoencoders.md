@@ -20,7 +20,7 @@ author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/autoencoders>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/autoencoders>
 
 user-id: MindSpore
 
@@ -41,8 +41,8 @@ This repository contains SoTA image and video autoencoders and their training an
 ## Features
 
 - VAE (Image Variational AutoEncoder)
-    - [x] KL-reg with GAN loss (SD VAE)
-    - [x] VQ-reg with GAN loss (VQ-GAN)
+    - ✔ KL-reg with GAN loss (SD VAE)
+    - ✔ VQ-reg with GAN loss (VQ-GAN)
 
 ## Requirements
 

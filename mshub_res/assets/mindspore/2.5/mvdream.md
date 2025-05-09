@@ -18,7 +18,7 @@ author: MindSpore team
 
 update-time: 2025-04-22
 
-repo-link: <https://github.com/mindspore-lab/mindone/tree/master/examples/mvdream>
+repo-link: <https://github.com/mindspore-lab/mindone/tree/v0.3.0/examples/mvdream>
 
 user-id: MindSpore
 
@@ -31,6 +31,8 @@ license: Apache2.0
 summary: MVDream is a diffusion model for multi-view consistent 3D generation
 
 ---
+
+# MVDream based on MindSpore
 
 We support the training/inference pipeline of a diffusion-prior based, neural implicit field rendered, 3D mesh generation work called MVDream here.
 
